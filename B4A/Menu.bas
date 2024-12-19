@@ -67,7 +67,8 @@ End Sub
 
 
 Private Sub PnlMaquinaria_Click
-	B4XPages.ShowPage("Form")	
+	'B4XPages.ShowPage("Form")
+	B4XPages.ShowPage("FormLabores")	
 End Sub
 
 Private Sub pnlPersonal_Click
