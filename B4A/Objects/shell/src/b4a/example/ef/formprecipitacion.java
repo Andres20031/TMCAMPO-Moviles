@@ -36,6 +36,7 @@ public static b4a.example.ef.starter _starter = null;
 public static b4a.example.ef.b4xcollections _b4xcollections = null;
 public static b4a.example.ef.b4xpages _b4xpages = null;
 public static b4a.example.ef.httputils2service _httputils2service = null;
+public static b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public static Object[] GetGlobals(RemoteObject _ref) throws Exception {
 		return new Object[] {"AS_DatePicker1",_ref.getField(false, "_as_datepicker1"),"CustomListView1Geral",_ref.getField(false, "_customlistview1geral"),"DateUtils",_ref.getField(false, "_dateutils"),"EditTextHoraFin",_ref.getField(false, "_edittexthorafin"),"fecha",_ref.getField(false, "_fecha"),"Label13Time",_ref.getField(false, "_label13time"),"Label3",_ref.getField(false, "_label3"),"Panel12",_ref.getField(false, "_panel12"),"Panel1geral",_ref.getField(false, "_panel1geral"),"pluviometroMap",_ref.getField(false, "_pluviometromap"),"rdcLink",_ref.getField(false, "_rdclink"),"Root",_ref.getField(false, "_root"),"SD_xComboBoxPluviometro",_ref.getField(false, "_sd_xcomboboxpluviometro"),"selectedCdgo_Plvmtro",_ref.getField(false, "_selectedcdgo_plvmtro"),"selectedHda_Pvlmtro",_ref.getField(false, "_selectedhda_pvlmtro"),"selectedNit_Plvmtro",_ref.getField(false, "_selectednit_plvmtro"),"selectedNombre_Plvmtro",_ref.getField(false, "_selectednombre_plvmtro"),"textoCapturado",_ref.getField(false, "_textocapturado"),"utilClass",_ref.getField(false, "_utilclass"),"xui",_ref.getField(false, "_xui")};
 }

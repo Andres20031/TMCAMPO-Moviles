@@ -40,7 +40,6 @@ Sub Class_Globals
 	Private SD_xComboBoxInsumo As SD_xComboBox
 	Private EditTextCantidadInsumo As EditText
 	Private ButtonAddInsumo As Button
-	Private Table1 As Table
 	Private ButtonDeleteInsumo As Button
 	Private Panel0geral As Panel
 	
@@ -49,11 +48,20 @@ Sub Class_Globals
 	Private CANTINSUMO As String
 	
 	Private LabelCantidadInsumos As Label
+	Private B4XTable1 As B4XTable
+	Private data As List
+	
+	Private PanelInsumoSelect As Panel
+	Private PanelTittleInsumo As Panel
+	Private LabelInsumoSelect As Label
+	
+	Dim idEliminarTabla As Int
 End Sub
 
 'You can add more parameters here.
 Public Sub Initialize As Object
 	Return Me
+	
 End Sub
 
 'This event will be called once, before the page becomes visible.
@@ -130,6 +138,7 @@ Private Sub B4XPage_Appear
 	SD_xComboBoxTypeForm.Add("Siembra",1)
 	SD_xComboBoxTypeForm.Add("Riego",2)
 	
+	data.Initialize
 	
 End Sub
 
@@ -343,14 +352,12 @@ Private Sub SD_xComboBoxTypeForm_ItemClick (Position As Int, Value As Object)
 				RemoveForm3IfExists 
 				CustomListView1Geral.Add(CreateItemInsumo,"form0")
 				LlenarComboBoxInsumo
-				Table1.SetHeader(Array As String("ID", "NOMBRE", "CANTIDAD"))
-				Table1.SetColumnDataTypes(Array As String("T", "T", "T"))
-				' Configurar las fuentes para los encabezados
-				Private tf() As Typeface
-				tf = Array As Typeface(Typeface.DEFAULT_BOLD, Typeface.DEFAULT_BOLD, Typeface.DEFAULT_BOLD)
-				Table1.SetTextColors(Array As Int(Colors.White, Colors.White,Colors.White))
-				Table1.SetHeaderTypeFaces(tf)
-				Table1.SelectedCellTextColor= Colors.White
+				Dim INSUMOCOLUM As B4XTableColumn = B4XTable1.AddColumn("#", B4XTable1.COLUMN_TYPE_NUMBERS)
+				INSUMOCOLUM.Width = 50dip
+				B4XTable1.AddColumn("ID", B4XTable1.COLUMN_TYPE_TEXT)
+				B4XTable1.AddColumn("NOMBRE", B4XTable1.COLUMN_TYPE_TEXT)
+				B4XTable1.AddColumn("CANTIDAD", B4XTable1.COLUMN_TYPE_TEXT)
+				
 				cantidadInsumos = 0
 				LabelCantidadInsumos.Text = cantidadInsumos
 				CANTINSUMO = ""
@@ -539,12 +546,7 @@ Private Sub SD_xComboBoxInsumo_ItemClick (Position As Int, Value As Object)
 End Sub
 
 Private Sub EditTextCantidadInsumo_TextChanged (Old As String, New As String)
-	If New == " " Then
-		Log("EL NEW: "&New)
-		Log("EL OLD: "&Old)
-	Else
-		ButtonAddInsumo.Enabled = True
-	End If
+	ButtonAddInsumo.Enabled = True
 	CANTINSUMO = New
 End Sub
 
@@ -552,28 +554,63 @@ Private Sub ButtonAddInsumo_Click
 	If NAMEINSUMO == "" And IDINSUMO == "" And CANTINSUMO == "" Then
 		MsgboxAsync("Selecciona un Insumo y la cantidad antes de agregarlo","Error")
 		Else
-		Table1.AddRow(Array As String(IDINSUMO,NAMEINSUMO,CANTINSUMO))
 		cantidadInsumos = cantidadInsumos + 1
+		Dim numberInsumo As Int = cantidadInsumos
+		data.Add(Array As Object(numberInsumo,IDINSUMO,NAMEINSUMO,CANTINSUMO))
+		B4XTable1.SetData(data)
 		LabelCantidadInsumos.Text = cantidadInsumos
 		EditTextCantidadInsumo.Text = ""
 	End If
 End Sub
 
-Private Sub Table1_CellClick(col As Int, row As Int)
-	ButtonDeleteInsumo.Visible=True
-	
-End Sub
 
 Private Sub ButtonDeleteInsumo_Click
-	Private lst As List
-	Private i, row As Int
-	lst = Table1.SelectedRows
-	lst.Sort(True)
-	For i = lst.Size - 1 To 0 Step -1
-		row = lst.Get(i)
-		Table1.RemoveRow(row)
-	Next
+	
+	RemoveInsumoFromData(idEliminarTabla)
+	
 	ButtonDeleteInsumo.Visible = False
 	cantidadInsumos = cantidadInsumos - 1
 	LabelCantidadInsumos.Text = cantidadInsumos
+	PanelTittleInsumo.Visible = False
+	PanelInsumoSelect.Visible = False
+	ButtonDeleteInsumo.Visible = False
+End Sub
+
+
+Private Sub B4XTable1_CellClicked (ColumnId As String, RowId As Long)
+	Log("COLUM ID"&ColumnId)
+	Log("ROW ID"&RowId)
+	PanelTittleInsumo.Visible = True
+	Dim rowData As Map = B4XTable1.GetRow(RowId)
+	Dim nombreInsu As String = rowData.Get("NOMBRE")
+	Dim cantidadInsu As Int = rowData.Get("CANTIDAD")
+	LabelInsumoSelect.Text = "- "&nombreInsu&" / "&"Cantidad: "&cantidadInsu
+	PanelInsumoSelect.Visible = True
+	ButtonDeleteInsumo.Visible = True
+	' Borrar la fila seleccionada
+	idEliminarTabla = rowData.Get("#")
+	Log(idEliminarTabla)
+End Sub
+
+' Función para eliminar un insumo específico de la lista
+Sub RemoveInsumoFromData(insumoID As Int)
+	
+	For i = data.Size - 1 To 0 Step -1
+		' Obtener el array actual
+		Dim arrayElement() As Object = data.Get(i)
+    
+		' Verificar si el primer elemento coincide con el número que deseas eliminar
+		If arrayElement(0) = insumoID Then
+			' Eliminar el array correspondiente
+			data.RemoveAt(i)
+			B4XTable1.SetData(data)
+		End If
+	Next
+
+End Sub
+
+
+
+Private Sub Label1Back_Click
+	B4XPages.ClosePage(Me)
 End Sub

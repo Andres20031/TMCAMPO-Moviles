@@ -58,7 +58,8 @@ public static b4a.example.ef.main _main = null;
 public static b4a.example.ef.b4xcollections _b4xcollections = null;
 public static b4a.example.ef.b4xpages _b4xpages = null;
 public static b4a.example.ef.httputils2service _httputils2service = null;
+public static b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
   public Object[] GetGlobals() {
-		return new Object[] {"B4XCollections",Debug.moduleToString(b4a.example.ef.b4xcollections.class),"B4XPages",Debug.moduleToString(b4a.example.ef.b4xpages.class),"DateUtils",starter.mostCurrent._dateutils,"HttpUtils2Service",Debug.moduleToString(b4a.example.ef.httputils2service.class),"Main",Debug.moduleToString(b4a.example.ef.main.class),"rdcLink",starter._rdclink,"Service",starter.mostCurrent._service,"SQL1",starter._sql1};
+		return new Object[] {"B4XCollections",Debug.moduleToString(b4a.example.ef.b4xcollections.class),"B4XPages",Debug.moduleToString(b4a.example.ef.b4xpages.class),"DateUtils",starter.mostCurrent._dateutils,"HttpUtils2Service",Debug.moduleToString(b4a.example.ef.httputils2service.class),"Main",Debug.moduleToString(b4a.example.ef.main.class),"rdcLink",starter._rdclink,"Service",starter.mostCurrent._service,"SQL1",starter._sql1,"XUIViewsUtils",Debug.moduleToString(b4a.example.ef.xuiviewsutils.class)};
 }
 }

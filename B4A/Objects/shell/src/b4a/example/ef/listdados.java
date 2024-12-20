@@ -37,6 +37,7 @@ public static b4a.example.ef.starter _starter = null;
 public static b4a.example.ef.b4xcollections _b4xcollections = null;
 public static b4a.example.ef.b4xpages _b4xpages = null;
 public static b4a.example.ef.httputils2service _httputils2service = null;
+public static b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public static Object[] GetGlobals(RemoteObject _ref) throws Exception {
 		return new Object[] {"Button1agendar",_ref.getField(false, "_button1agendar"),"Button1Check",_ref.getField(false, "_button1check"),"Button2Del",_ref.getField(false, "_button2del"),"cd",_ref.getField(false, "_cd"),"CLV_Persons",_ref.getField(false, "_clv_persons"),"Datepicker",_ref.getField(false, "_datepicker"),"DateUtils",_ref.getField(false, "_dateutils"),"EditText1Area",_ref.getField(false, "_edittext1area"),"EditText1TextArea",_ref.getField(false, "_edittext1textarea"),"Label1Details",_ref.getField(false, "_label1details"),"Label1Details2",_ref.getField(false, "_label1details2"),"Label1IdMaquina",_ref.getField(false, "_label1idmaquina"),"Label2",_ref.getField(false, "_label2"),"Label20Desc",_ref.getField(false, "_label20desc"),"Label3",_ref.getField(false, "_label3"),"Label3Inicial",_ref.getField(false, "_label3inicial"),"Label4Final",_ref.getField(false, "_label4final"),"Mycalendar",_ref.getField(false, "_mycalendar"),"Root",_ref.getField(false, "_root"),"utilClass",_ref.getField(false, "_utilclass"),"xui",_ref.getField(false, "_xui")};
 }

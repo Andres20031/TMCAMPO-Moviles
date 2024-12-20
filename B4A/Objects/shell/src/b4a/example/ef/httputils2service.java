@@ -55,7 +55,8 @@ public static b4a.example.ef.main _main = null;
 public static b4a.example.ef.starter _starter = null;
 public static b4a.example.ef.b4xcollections _b4xcollections = null;
 public static b4a.example.ef.b4xpages _b4xpages = null;
+public static b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
   public Object[] GetGlobals() {
-		return new Object[] {"B4XCollections",Debug.moduleToString(b4a.example.ef.b4xcollections.class),"B4XPages",Debug.moduleToString(b4a.example.ef.b4xpages.class),"DateUtils",httputils2service.mostCurrent._dateutils,"hc",httputils2service._hc,"Main",Debug.moduleToString(b4a.example.ef.main.class),"Receiver",httputils2service.mostCurrent._receiver,"Starter",Debug.moduleToString(b4a.example.ef.starter.class),"taskCounter",httputils2service._taskcounter,"TaskIdToJob",httputils2service._taskidtojob,"TempFolder",httputils2service._tempfolder};
+		return new Object[] {"B4XCollections",Debug.moduleToString(b4a.example.ef.b4xcollections.class),"B4XPages",Debug.moduleToString(b4a.example.ef.b4xpages.class),"DateUtils",httputils2service.mostCurrent._dateutils,"hc",httputils2service._hc,"Main",Debug.moduleToString(b4a.example.ef.main.class),"Receiver",httputils2service.mostCurrent._receiver,"Starter",Debug.moduleToString(b4a.example.ef.starter.class),"taskCounter",httputils2service._taskcounter,"TaskIdToJob",httputils2service._taskidtojob,"TempFolder",httputils2service._tempfolder,"XUIViewsUtils",Debug.moduleToString(b4a.example.ef.xuiviewsutils.class)};
 }
 }

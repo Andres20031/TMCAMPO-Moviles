@@ -332,3 +332,7 @@ Private Sub Button1AddIsumo_Click
 	B4XPages.GetPage("form").As(Form).idMaquina=Rnd(0001,9999)
 	B4XPages.ShowPage("Form")
 End Sub
+
+Private Sub Label1Back_Click
+	B4XPages.ClosePage(Me)
+End Sub

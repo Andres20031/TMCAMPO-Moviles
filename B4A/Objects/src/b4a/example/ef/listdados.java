@@ -57,6 +57,7 @@ public b4a.example.ef.starter _starter = null;
 public b4a.example.ef.b4xcollections _b4xcollections = null;
 public b4a.example.ef.b4xpages _b4xpages = null;
 public b4a.example.ef.httputils2service _httputils2service = null;
+public b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public Object  _initialize(b4a.example.ef.listdados __ref,anywheresoftware.b4a.BA _ba) throws Exception{
 __ref = this;
 innerInitialize(_ba);
@@ -126,10 +127,10 @@ RDebugUtils.currentLine=7143431;
 _cursor.setPosition(_i);
 RDebugUtils.currentLine=7143432;
  //BA.debugLineNum = 7143432;BA.debugLine="Log(\"=====Maquinas #\"&i&\"=====\")";
-__c.LogImpl("37143432","=====Maquinas #"+BA.NumberToString(_i)+"=====",0);
+__c.LogImpl("57143432","=====Maquinas #"+BA.NumberToString(_i)+"=====",0);
 RDebugUtils.currentLine=7143433;
  //BA.debugLineNum = 7143433;BA.debugLine="Log(Cursor.GetString(\"id\"))";
-__c.LogImpl("37143433",_cursor.GetString("id"),0);
+__c.LogImpl("57143433",_cursor.GetString("id"),0);
 RDebugUtils.currentLine=7143435;
  //BA.debugLineNum = 7143435;BA.debugLine="Dim Hacienda As String=Cursor.GetString(\"haciend";
 _hacienda = _cursor.GetString("hacienda");
@@ -146,7 +147,7 @@ __ref._clv_persons /*b4a.example3.customlistview*/ ._add((anywheresoftware.b4a.o
 };
 RDebugUtils.currentLine=7143440;
  //BA.debugLineNum = 7143440;BA.debugLine="Log(i)";
-__c.LogImpl("37143440",BA.NumberToString(_i),0);
+__c.LogImpl("57143440",BA.NumberToString(_i),0);
 RDebugUtils.currentLine=7143441;
  //BA.debugLineNum = 7143441;BA.debugLine="If i=0 Then";
 if (_i==0) { 
@@ -290,7 +291,7 @@ RDebugUtils.currentLine=7536641;
 __ref._button1agendar /*anywheresoftware.b4a.objects.ButtonWrapper*/  = (anywheresoftware.b4a.objects.ButtonWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ButtonWrapper(), (android.widget.Button)(parent.__c.Sender(ba)));
 RDebugUtils.currentLine=7536642;
  //BA.debugLineNum = 7536642;BA.debugLine="Log(Button1agendar.Tag)";
-parent.__c.LogImpl("37536642",BA.ObjectToString(__ref._button1agendar /*anywheresoftware.b4a.objects.ButtonWrapper*/ .getTag()),0);
+parent.__c.LogImpl("57536642",BA.ObjectToString(__ref._button1agendar /*anywheresoftware.b4a.objects.ButtonWrapper*/ .getTag()),0);
 RDebugUtils.currentLine=7536644;
  //BA.debugLineNum = 7536644;BA.debugLine="Dim	id As Int=Button1agendar.Tag";
 _id = (int)(BA.ObjectToNumber(__ref._button1agendar /*anywheresoftware.b4a.objects.ButtonWrapper*/ .getTag()));
@@ -348,19 +349,19 @@ case 3:
 this.state = 4;
 RDebugUtils.currentLine=7536655;
  //BA.debugLineNum = 7536655;BA.debugLine="Log(\"DADOS:\")";
-parent.__c.LogImpl("37536655","DADOS:",0);
+parent.__c.LogImpl("57536655","DADOS:",0);
 RDebugUtils.currentLine=7536657;
  //BA.debugLineNum = 7536657;BA.debugLine="Log(Label3Inicial.Text)";
-parent.__c.LogImpl("37536657",__ref._label3inicial /*anywheresoftware.b4a.objects.LabelWrapper*/ .getText(),0);
+parent.__c.LogImpl("57536657",__ref._label3inicial /*anywheresoftware.b4a.objects.LabelWrapper*/ .getText(),0);
 RDebugUtils.currentLine=7536658;
  //BA.debugLineNum = 7536658;BA.debugLine="Log(Label4Final.Text)";
-parent.__c.LogImpl("37536658",__ref._label4final /*anywheresoftware.b4a.objects.LabelWrapper*/ .getText(),0);
+parent.__c.LogImpl("57536658",__ref._label4final /*anywheresoftware.b4a.objects.LabelWrapper*/ .getText(),0);
 RDebugUtils.currentLine=7536659;
  //BA.debugLineNum = 7536659;BA.debugLine="Log(EditText1Area.Text)";
-parent.__c.LogImpl("37536659",__ref._edittext1area /*anywheresoftware.b4a.objects.EditTextWrapper*/ .getText(),0);
+parent.__c.LogImpl("57536659",__ref._edittext1area /*anywheresoftware.b4a.objects.EditTextWrapper*/ .getText(),0);
 RDebugUtils.currentLine=7536660;
  //BA.debugLineNum = 7536660;BA.debugLine="Log(\"=======================\")";
-parent.__c.LogImpl("37536660","=======================",0);
+parent.__c.LogImpl("57536660","=======================",0);
  if (true) break;
 
 case 4:
@@ -440,7 +441,7 @@ RDebugUtils.currentLine=7471105;
 __ref._button1check /*anywheresoftware.b4a.objects.ButtonWrapper*/  = (anywheresoftware.b4a.objects.ButtonWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ButtonWrapper(), (android.widget.Button)(parent.__c.Sender(ba)));
 RDebugUtils.currentLine=7471106;
  //BA.debugLineNum = 7471106;BA.debugLine="Log(Button1Check.Tag)";
-parent.__c.LogImpl("37471106",BA.ObjectToString(__ref._button1check /*anywheresoftware.b4a.objects.ButtonWrapper*/ .getTag()),0);
+parent.__c.LogImpl("57471106",BA.ObjectToString(__ref._button1check /*anywheresoftware.b4a.objects.ButtonWrapper*/ .getTag()),0);
 RDebugUtils.currentLine=7471107;
  //BA.debugLineNum = 7471107;BA.debugLine="Dim	id As Int=Button1Check.Tag";
 _id = (int)(BA.ObjectToNumber(__ref._button1check /*anywheresoftware.b4a.objects.ButtonWrapper*/ .getTag()));
@@ -495,16 +496,16 @@ case 3:
 this.state = 4;
 RDebugUtils.currentLine=7471118;
  //BA.debugLineNum = 7471118;BA.debugLine="Log(\"DADOS:\")";
-parent.__c.LogImpl("37471118","DADOS:",0);
+parent.__c.LogImpl("57471118","DADOS:",0);
 RDebugUtils.currentLine=7471120;
  //BA.debugLineNum = 7471120;BA.debugLine="Log(Label3Inicial.Text)";
-parent.__c.LogImpl("37471120",__ref._label3inicial /*anywheresoftware.b4a.objects.LabelWrapper*/ .getText(),0);
+parent.__c.LogImpl("57471120",__ref._label3inicial /*anywheresoftware.b4a.objects.LabelWrapper*/ .getText(),0);
 RDebugUtils.currentLine=7471121;
  //BA.debugLineNum = 7471121;BA.debugLine="Log(Label4Final.Text)";
-parent.__c.LogImpl("37471121",__ref._label4final /*anywheresoftware.b4a.objects.LabelWrapper*/ .getText(),0);
+parent.__c.LogImpl("57471121",__ref._label4final /*anywheresoftware.b4a.objects.LabelWrapper*/ .getText(),0);
 RDebugUtils.currentLine=7471123;
  //BA.debugLineNum = 7471123;BA.debugLine="Log(\"=======================\")";
-parent.__c.LogImpl("37471123","=======================",0);
+parent.__c.LogImpl("57471123","=======================",0);
  if (true) break;
 
 case 4:
@@ -556,7 +557,7 @@ RDebugUtils.currentLine=7405569;
 __ref._button2del /*anywheresoftware.b4a.objects.ButtonWrapper*/  = (anywheresoftware.b4a.objects.ButtonWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ButtonWrapper(), (android.widget.Button)(parent.__c.Sender(ba)));
 RDebugUtils.currentLine=7405570;
  //BA.debugLineNum = 7405570;BA.debugLine="Log(Button2Del.Tag)";
-parent.__c.LogImpl("37405570",BA.ObjectToString(__ref._button2del /*anywheresoftware.b4a.objects.ButtonWrapper*/ .getTag()),0);
+parent.__c.LogImpl("57405570",BA.ObjectToString(__ref._button2del /*anywheresoftware.b4a.objects.ButtonWrapper*/ .getTag()),0);
 RDebugUtils.currentLine=7405571;
  //BA.debugLineNum = 7405571;BA.debugLine="Dim id As Int=Button2Del.Tag";
 _id = (int)(BA.ObjectToNumber(__ref._button2del /*anywheresoftware.b4a.objects.ButtonWrapper*/ .getTag()));
@@ -617,13 +618,13 @@ case 3:
 this.state = 4;
 RDebugUtils.currentLine=7405583;
  //BA.debugLineNum = 7405583;BA.debugLine="Log(\"DADOS:\")";
-parent.__c.LogImpl("37405583","DADOS:",0);
+parent.__c.LogImpl("57405583","DADOS:",0);
 RDebugUtils.currentLine=7405584;
  //BA.debugLineNum = 7405584;BA.debugLine="Log(EditText1TextArea.Text)";
-parent.__c.LogImpl("37405584",__ref._edittext1textarea /*anywheresoftware.b4a.objects.EditTextWrapper*/ .getText(),0);
+parent.__c.LogImpl("57405584",__ref._edittext1textarea /*anywheresoftware.b4a.objects.EditTextWrapper*/ .getText(),0);
 RDebugUtils.currentLine=7405585;
  //BA.debugLineNum = 7405585;BA.debugLine="Log(\"=======================\")";
-parent.__c.LogImpl("37405585","=======================",0);
+parent.__c.LogImpl("57405585","=======================",0);
 RDebugUtils.currentLine=7405586;
  //BA.debugLineNum = 7405586;BA.debugLine="Starter.SQL1.ExecNonQuery2(\"DELETE from dados wh";
 parent._starter._sql1 /*anywheresoftware.b4a.sql.SQL*/ .ExecNonQuery2("DELETE from dados where Consecutivo=?",anywheresoftware.b4a.keywords.Common.ArrayToList(new Object[]{(Object)(_id)}));
@@ -687,7 +688,7 @@ RDebugUtils.currentLine=7077893;
 _cursor.setPosition(_i);
 RDebugUtils.currentLine=7077894;
  //BA.debugLineNum = 7077894;BA.debugLine="Log(Cursor.GetString(\"Consecutivo\"))";
-__c.LogImpl("37077894",_cursor.GetString("Consecutivo"),0);
+__c.LogImpl("57077894",_cursor.GetString("Consecutivo"),0);
 RDebugUtils.currentLine=7077896;
  //BA.debugLineNum = 7077896;BA.debugLine="CLV_Persons.Add(CreateItem(Cursor.GetString(\"Con";
 __ref._clv_persons /*b4a.example3.customlistview*/ ._add((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(__ref._createitem /*anywheresoftware.b4a.objects.PanelWrapper*/ (null,_cursor.GetString("Consecutivo"),_cursor.GetString("Fecha_programa"),_cursor.GetString("NIT"),_cursor.GetString("Hacienda"),_cursor.GetString("Lote"),_cursor.GetString("labor")).getObject())),(Object)(_i));
@@ -822,7 +823,7 @@ case 0:
 this.state = -1;
 RDebugUtils.currentLine=8060929;
  //BA.debugLineNum = 8060929;BA.debugLine="Log(Value)";
-parent.__c.LogImpl("38060929",BA.ObjectToString(_value),0);
+parent.__c.LogImpl("58060929",BA.ObjectToString(_value),0);
 RDebugUtils.currentLine=8060930;
  //BA.debugLineNum = 8060930;BA.debugLine="B4XPages.ClosePage(B4XPages.GetPage(\"form\"))";
 parent._b4xpages._closepage /*String*/ (ba,parent._b4xpages._getpage /*Object*/ (ba,"form"));
@@ -1026,6 +1027,20 @@ RDebugUtils.currentLine=7340033;
 _b4xpages._closepage /*String*/ (ba,this);
 RDebugUtils.currentLine=7340034;
  //BA.debugLineNum = 7340034;BA.debugLine="End Sub";
+return "";
+}
+public String  _label1back_click(b4a.example.ef.listdados __ref) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="listdados";
+if (Debug.shouldDelegate(ba, "label1back_click", false))
+	 {return ((String) Debug.delegate(ba, "label1back_click", null));}
+RDebugUtils.currentLine=81854464;
+ //BA.debugLineNum = 81854464;BA.debugLine="Private Sub Label1Back_Click";
+RDebugUtils.currentLine=81854465;
+ //BA.debugLineNum = 81854465;BA.debugLine="B4XPages.ClosePage(Me)";
+_b4xpages._closepage /*String*/ (ba,this);
+RDebugUtils.currentLine=81854466;
+ //BA.debugLineNum = 81854466;BA.debugLine="End Sub";
 return "";
 }
 public String  _label2_click(b4a.example.ef.listdados __ref) throws Exception{

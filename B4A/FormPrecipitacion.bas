@@ -104,7 +104,7 @@ End Sub
 
 
 Private Sub Label1Back_Click
-	
+	B4XPages.ClosePage(Me)
 End Sub
 
 Private Sub Label2Save_Click

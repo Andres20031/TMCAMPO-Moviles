@@ -27,6 +27,7 @@ public static b4a.example.ef.starter _starter = null;
 public static b4a.example.ef.b4xcollections _b4xcollections = null;
 public static b4a.example.ef.b4xpages _b4xpages = null;
 public static b4a.example.ef.httputils2service _httputils2service = null;
+public static b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public static Object[] GetGlobals(RemoteObject _ref) throws Exception {
 		return new Object[] {"DateUtils",_ref.getField(false, "_dateutils"),"Panel1Precipitacion2",_ref.getField(false, "_panel1precipitacion2"),"pnlCosecha",_ref.getField(false, "_pnlcosecha"),"PnlMaquinaria",_ref.getField(false, "_pnlmaquinaria"),"pnlPersonal",_ref.getField(false, "_pnlpersonal"),"pnlPrecipitacion",_ref.getField(false, "_pnlprecipitacion"),"pnlPrograma_de_labores",_ref.getField(false, "_pnlprograma_de_labores"),"pnlTaller",_ref.getField(false, "_pnltaller"),"Root",_ref.getField(false, "_root"),"utilClass",_ref.getField(false, "_utilclass"),"xui",_ref.getField(false, "_xui")};
 }

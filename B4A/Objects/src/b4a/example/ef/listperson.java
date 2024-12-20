@@ -47,6 +47,7 @@ public b4a.example.ef.starter _starter = null;
 public b4a.example.ef.b4xcollections _b4xcollections = null;
 public b4a.example.ef.b4xpages _b4xpages = null;
 public b4a.example.ef.httputils2service _httputils2service = null;
+public b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public Object  _initialize(b4a.example.ef.listperson __ref,anywheresoftware.b4a.BA _ba) throws Exception{
 __ref = this;
 innerInitialize(_ba);
@@ -225,7 +226,7 @@ case 9:
 this.state = 10;
 RDebugUtils.currentLine=1310753;
  //BA.debugLineNum = 1310753;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("31310753","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("51310753","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:

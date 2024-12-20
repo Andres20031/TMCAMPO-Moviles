@@ -50,7 +50,8 @@ public static b4a.example.ef.main _main = null;
 public static b4a.example.ef.starter _starter = null;
 public static b4a.example.ef.b4xpages _b4xpages = null;
 public static b4a.example.ef.httputils2service _httputils2service = null;
+public static b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
   public Object[] GetGlobals() {
-		return new Object[] {"B4XPages",Debug.moduleToString(b4a.example.ef.b4xpages.class),"DateUtils",b4xcollections.mostCurrent._dateutils,"HttpUtils2Service",Debug.moduleToString(b4a.example.ef.httputils2service.class),"Main",Debug.moduleToString(b4a.example.ef.main.class),"Starter",Debug.moduleToString(b4a.example.ef.starter.class)};
+		return new Object[] {"B4XPages",Debug.moduleToString(b4a.example.ef.b4xpages.class),"DateUtils",b4xcollections.mostCurrent._dateutils,"HttpUtils2Service",Debug.moduleToString(b4a.example.ef.httputils2service.class),"Main",Debug.moduleToString(b4a.example.ef.main.class),"Starter",Debug.moduleToString(b4a.example.ef.starter.class),"XUIViewsUtils",Debug.moduleToString(b4a.example.ef.xuiviewsutils.class)};
 }
 }

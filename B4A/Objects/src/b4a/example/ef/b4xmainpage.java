@@ -61,6 +61,7 @@ public b4a.example.ef.starter _starter = null;
 public b4a.example.ef.b4xcollections _b4xcollections = null;
 public b4a.example.ef.b4xpages _b4xpages = null;
 public b4a.example.ef.httputils2service _httputils2service = null;
+public b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public String  _b4xpage_appear(b4a.example.ef.b4xmainpage __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4xmainpage";
@@ -484,7 +485,7 @@ case 18:
 this.state = 21;
 RDebugUtils.currentLine=917554;
  //BA.debugLineNum = 917554;BA.debugLine="Log(\"Usuario: \"&parametrosUsuario)";
-parent.__c.LogImpl("3917554","Usuario: "+__ref._parametrosusuario /*String*/ ,0);
+parent.__c.LogImpl("5917554","Usuario: "+__ref._parametrosusuario /*String*/ ,0);
  if (true) break;
 
 case 20:
@@ -513,7 +514,7 @@ case 24:
 this.state = 25;
 RDebugUtils.currentLine=917561;
  //BA.debugLineNum = 917561;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("3917561","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("5917561","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 25:

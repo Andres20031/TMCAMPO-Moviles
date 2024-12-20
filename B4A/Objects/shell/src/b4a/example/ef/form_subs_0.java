@@ -173,7 +173,7 @@ Debug.ShouldStop(524288);
 __ref.setField ("_haciendaupdate" /*RemoteObject*/ ,_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("hacienda"))));
  BA.debugLineNum = 118;BA.debugLine="Log(\"NIT: \"&nitUpdate)";
 Debug.ShouldStop(2097152);
-parent.__c.runVoidMethod ("LogImpl","32555933",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_nitupdate" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","52555933",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_nitupdate" /*RemoteObject*/ )),0);
  if (true) break;
 if (true) break;
 
@@ -189,7 +189,7 @@ case 12:
 this.state = 13;
  BA.debugLineNum = 121;BA.debugLine="Log(\"NIT: \"&nit)";
 Debug.ShouldStop(16777216);
-parent.__c.runVoidMethod ("LogImpl","32555936",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_nit" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","52555936",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_nit" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 13:
@@ -229,7 +229,7 @@ this.state = 16;
 this.catchState = 0;
  BA.debugLineNum = 135;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(64);
-parent.__c.runVoidMethod ("LogImpl","32555950",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+parent.__c.runVoidMethod ("LogImpl","52555950",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  if (true) break;
 if (true) break;
 
@@ -304,7 +304,7 @@ __ref.runClassMethod (b4a.example.ef.form.class, "_listinsumos" /*RemoteObject*/
        catch (Exception e7) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e7.toString()); BA.debugLineNum = 940;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(2048);
-form.__c.runVoidMethod ("LogImpl","34980744",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+form.__c.runVoidMethod ("LogImpl","54980744",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  };
  BA.debugLineNum = 943;BA.debugLine="End Sub";
 Debug.ShouldStop(16384);
@@ -708,7 +708,7 @@ __ref.runClassMethod (b4a.example.ef.form.class, "_selectsql" /*void*/ ,(Object)
        catch (Exception e7) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e7.toString()); BA.debugLineNum = 977;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(65536);
-form.__c.runVoidMethod ("LogImpl","35111817",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+form.__c.runVoidMethod ("LogImpl","55111817",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  };
  BA.debugLineNum = 979;BA.debugLine="End Sub";
 Debug.ShouldStop(262144);
@@ -827,7 +827,7 @@ Debug.ShouldStop(8388608);
 _cursor.runMethod(true,"setPosition",BA.numberCast(int.class, _i));
  BA.debugLineNum = 249;BA.debugLine="Log(Cursor.GetString(\"name\"))";
 Debug.ShouldStop(16777216);
-parent.__c.runVoidMethod ("LogImpl","32818058",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name"))),0);
+parent.__c.runVoidMethod ("LogImpl","52818058",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name"))),0);
  BA.debugLineNum = 250;BA.debugLine="Spinner1NameInsumo.Add(Cursor.GetString(\"name\")";
 Debug.ShouldStop(33554432);
 __ref.getField(false,"_spinner1nameinsumo" /*RemoteObject*/ ).runVoidMethod ("Add",(Object)(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name")))));
@@ -916,7 +916,7 @@ this.state = 17;
 this.catchState = 0;
  BA.debugLineNum = 266;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(512);
-parent.__c.runVoidMethod ("LogImpl","32818075",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+parent.__c.runVoidMethod ("LogImpl","52818075",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  if (true) break;
 if (true) break;
 
@@ -1176,7 +1176,7 @@ case 13:
 this.state = 14;
  BA.debugLineNum = 879;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(16384);
-parent.__c.runVoidMethod ("LogImpl","34587548",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","54587548",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 14:
@@ -1406,10 +1406,10 @@ Debug.locals.put("record", _record);
 ;
  BA.debugLineNum = 704;BA.debugLine="Log(\"cadena: \"&cadena)";
 Debug.ShouldStop(-2147483648);
-parent.__c.runVoidMethod ("LogImpl","34194330",RemoteObject.concat(RemoteObject.createImmutable("cadena: "),_cadena),0);
+parent.__c.runVoidMethod ("LogImpl","54194330",RemoteObject.concat(RemoteObject.createImmutable("cadena: "),_cadena),0);
  BA.debugLineNum = 705;BA.debugLine="Log(\"hacienda: \"&haciendaUpdate)";
 Debug.ShouldStop(1);
-parent.__c.runVoidMethod ("LogImpl","34194331",RemoteObject.concat(RemoteObject.createImmutable("hacienda: "),__ref.getField(true,"_haciendaupdate" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","54194331",RemoteObject.concat(RemoteObject.createImmutable("hacienda: "),__ref.getField(true,"_haciendaupdate" /*RemoteObject*/ )),0);
  BA.debugLineNum = 706;BA.debugLine="If cadena.Contains(haciendaUpdate) Then";
 Debug.ShouldStop(2);
 if (true) break;
@@ -1473,7 +1473,7 @@ case 19:
 this.state = 20;
  BA.debugLineNum = 720;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(32768);
-parent.__c.runVoidMethod ("LogImpl","34194346",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","54194346",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 20:
@@ -1718,7 +1718,7 @@ case 13:
 this.state = 14;
  BA.debugLineNum = 846;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(8192);
-parent.__c.runVoidMethod ("LogImpl","34522013",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","54522013",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 14:
@@ -1946,7 +1946,7 @@ case 13:
 this.state = 14;
  BA.debugLineNum = 764;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(134217728);
-parent.__c.runVoidMethod ("LogImpl","34325399",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","54325399",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 14:
@@ -2180,7 +2180,7 @@ case 13:
 this.state = 14;
  BA.debugLineNum = 811;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(1024);
-parent.__c.runVoidMethod ("LogImpl","34456475",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","54456475",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 14:
@@ -2435,7 +2435,7 @@ case 13:
 this.state = 16;
  BA.debugLineNum = 660;BA.debugLine="Log(\"NIT: \"&nitUpdate)";
 Debug.ShouldStop(524288);
-parent.__c.runVoidMethod ("LogImpl","34128798",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_nitupdate" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","54128798",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_nitupdate" /*RemoteObject*/ )),0);
  BA.debugLineNum = 663;BA.debugLine="SD_xComboBoxNit.Add(nitUpdate,INTRegistros)";
 Debug.ShouldStop(4194304);
 __ref.getField(false,"_sd_xcomboboxnit" /*RemoteObject*/ ).runClassMethod (b4a.example.ef.sd_xcombobox.class, "_add" /*RemoteObject*/ ,(Object)(__ref.getField(true,"_nitupdate" /*RemoteObject*/ )),(Object)((_intregistros)));
@@ -2471,7 +2471,7 @@ case 19:
 this.state = 20;
  BA.debugLineNum = 672;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(-2147483648);
-parent.__c.runVoidMethod ("LogImpl","34128810",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","54128810",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 20:
@@ -2603,13 +2603,13 @@ Debug.ShouldStop(2048);
 _cursor.runMethod(true,"setPosition",BA.numberCast(int.class, _i));
  BA.debugLineNum = 429;BA.debugLine="Log(\"=====ITEM #\"&i&\"=====\")";
 Debug.ShouldStop(4096);
-parent.__c.runVoidMethod ("LogImpl","33473416",RemoteObject.concat(RemoteObject.createImmutable("=====ITEM #"),RemoteObject.createImmutable(_i),RemoteObject.createImmutable("=====")),0);
+parent.__c.runVoidMethod ("LogImpl","53473416",RemoteObject.concat(RemoteObject.createImmutable("=====ITEM #"),RemoteObject.createImmutable(_i),RemoteObject.createImmutable("=====")),0);
  BA.debugLineNum = 430;BA.debugLine="Log(Cursor.GetString(\"idmaquina\"))";
 Debug.ShouldStop(8192);
-parent.__c.runVoidMethod ("LogImpl","33473417",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("idmaquina"))),0);
+parent.__c.runVoidMethod ("LogImpl","53473417",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("idmaquina"))),0);
  BA.debugLineNum = 431;BA.debugLine="Log(Cursor.GetString(\"name\")&\"--\"&Cursor.GetStri";
 Debug.ShouldStop(16384);
-parent.__c.runVoidMethod ("LogImpl","33473418",RemoteObject.concat(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name"))),RemoteObject.createImmutable("--"),_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("qnt")))),0);
+parent.__c.runVoidMethod ("LogImpl","53473418",RemoteObject.concat(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name"))),RemoteObject.createImmutable("--"),_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("qnt")))),0);
  BA.debugLineNum = 432;BA.debugLine="sb.Append(Cursor.GetString(\"name\")&\"--\"&Cursor.G";
 Debug.ShouldStop(32768);
 _sb.runMethod(false,"Append",(Object)(RemoteObject.concat(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name"))),RemoteObject.createImmutable("--"),_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("qnt")))))).runVoidMethod ("Append",(Object)(parent.__c.getField(true,"CRLF")));
@@ -2623,7 +2623,7 @@ Debug.locals.put("i", _i);
 ;
  BA.debugLineNum = 435;BA.debugLine="Log(sb.ToString)";
 Debug.ShouldStop(262144);
-parent.__c.runVoidMethod ("LogImpl","33473422",_sb.runMethod(true,"ToString"),0);
+parent.__c.runVoidMethod ("LogImpl","53473422",_sb.runMethod(true,"ToString"),0);
  BA.debugLineNum = 437;BA.debugLine="Dim Cursor As Cursor";
 Debug.ShouldStop(1048576);
 _cursor = RemoteObject.createNew ("anywheresoftware.b4a.sql.SQL.CursorWrapper");Debug.locals.put("Cursor", _cursor);
@@ -2665,10 +2665,10 @@ Debug.ShouldStop(8388608);
 _cursor.runMethod(true,"setPosition",BA.numberCast(int.class, _i));
  BA.debugLineNum = 441;BA.debugLine="Log(\"=====Maquinas #\"&i&\"=====\")";
 Debug.ShouldStop(16777216);
-parent.__c.runVoidMethod ("LogImpl","33473428",RemoteObject.concat(RemoteObject.createImmutable("=====Maquinas #"),RemoteObject.createImmutable(_i),RemoteObject.createImmutable("=====")),0);
+parent.__c.runVoidMethod ("LogImpl","53473428",RemoteObject.concat(RemoteObject.createImmutable("=====Maquinas #"),RemoteObject.createImmutable(_i),RemoteObject.createImmutable("=====")),0);
  BA.debugLineNum = 442;BA.debugLine="Log(Cursor.GetString(\"id\"))'&\"--\"&Cursor.GetStr";
 Debug.ShouldStop(33554432);
-parent.__c.runVoidMethod ("LogImpl","33473429",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("id"))),0);
+parent.__c.runVoidMethod ("LogImpl","53473429",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("id"))),0);
  if (true) break;
 if (true) break;
 
@@ -2695,7 +2695,7 @@ this.state = 14;
 this.catchState = 0;
  BA.debugLineNum = 449;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(1);
-parent.__c.runVoidMethod ("LogImpl","33473436",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+parent.__c.runVoidMethod ("LogImpl","53473436",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  if (true) break;
 if (true) break;
 
@@ -2839,7 +2839,7 @@ case 3:
 this.state = 4;
  BA.debugLineNum = 501;BA.debugLine="Log(\"Inserted successfully!\")";
 Debug.ShouldStop(1048576);
-parent.__c.runVoidMethod ("LogImpl","33670023",RemoteObject.createImmutable("Inserted successfully!"),0);
+parent.__c.runVoidMethod ("LogImpl","53670023",RemoteObject.createImmutable("Inserted successfully!"),0);
  if (true) break;
 
 case 4:
@@ -2957,7 +2957,7 @@ Debug.ShouldStop(131072);
 __ref.getField(false,"_label1removeinsumo" /*RemoteObject*/ ).setObject (form.__c.runMethod(false,"Sender",__ref.getField(false, "ba")));
  BA.debugLineNum = 947;BA.debugLine="Log(Label1RemoveInsumo.Tag)";
 Debug.ShouldStop(262144);
-form.__c.runVoidMethod ("LogImpl","35046274",BA.ObjectToString(__ref.getField(false,"_label1removeinsumo" /*RemoteObject*/ ).runMethod(false,"getTag")),0);
+form.__c.runVoidMethod ("LogImpl","55046274",BA.ObjectToString(__ref.getField(false,"_label1removeinsumo" /*RemoteObject*/ ).runMethod(false,"getTag")),0);
  BA.debugLineNum = 948;BA.debugLine="Dim id As Int=Label1RemoveInsumo.Tag";
 Debug.ShouldStop(524288);
 _id = BA.numberCast(int.class, __ref.getField(false,"_label1removeinsumo" /*RemoteObject*/ ).runMethod(false,"getTag"));Debug.locals.put("id", _id);Debug.locals.put("id", _id);
@@ -2997,24 +2997,24 @@ Debug.ShouldStop(8388608);
 __ref.runClassMethod (b4a.example.ef.form.class, "_insertrecord" /*void*/ ,(Object)(form._main._pdbname /*RemoteObject*/ ),(Object)(BA.ObjectToString("99")),(Object)(BA.numberCast(int.class, _salario)));
  BA.debugLineNum = 475;BA.debugLine="Log(Label10.text&\"----\"&Label13Time.text)";
 Debug.ShouldStop(67108864);
-form.__c.runVoidMethod ("LogImpl","33604488",RemoteObject.concat(__ref.getField(false,"_label10" /*RemoteObject*/ ).runMethod(true,"getText"),RemoteObject.createImmutable("----"),__ref.getField(false,"_label13time" /*RemoteObject*/ ).runMethod(true,"getText")),0);
+form.__c.runVoidMethod ("LogImpl","53604488",RemoteObject.concat(__ref.getField(false,"_label10" /*RemoteObject*/ ).runMethod(true,"getText"),RemoteObject.createImmutable("----"),__ref.getField(false,"_label13time" /*RemoteObject*/ ).runMethod(true,"getText")),0);
  BA.debugLineNum = 476;BA.debugLine="Log(\"HACIENDA: \"&haciendaUpdate)";
 Debug.ShouldStop(134217728);
-form.__c.runVoidMethod ("LogImpl","33604489",RemoteObject.concat(RemoteObject.createImmutable("HACIENDA: "),__ref.getField(true,"_haciendaupdate" /*RemoteObject*/ )),0);
+form.__c.runVoidMethod ("LogImpl","53604489",RemoteObject.concat(RemoteObject.createImmutable("HACIENDA: "),__ref.getField(true,"_haciendaupdate" /*RemoteObject*/ )),0);
  BA.debugLineNum = 477;BA.debugLine="If tipo=\"new\" Then";
 Debug.ShouldStop(268435456);
 if (RemoteObject.solveBoolean("=",__ref.getField(true,"_tipo" /*RemoteObject*/ ),BA.ObjectToString("new"))) { 
  }else {
  BA.debugLineNum = 484;BA.debugLine="Log(\"update\")";
 Debug.ShouldStop(8);
-form.__c.runVoidMethod ("LogImpl","33604497",RemoteObject.createImmutable("update"),0);
+form.__c.runVoidMethod ("LogImpl","53604497",RemoteObject.createImmutable("update"),0);
  };
  Debug.CheckDeviceExceptions();
 } 
        catch (Exception e12) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e12.toString()); BA.debugLineNum = 488;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(128);
-form.__c.runVoidMethod ("LogImpl","33604501",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+form.__c.runVoidMethod ("LogImpl","53604501",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  };
  BA.debugLineNum = 491;BA.debugLine="End Sub";
 Debug.ShouldStop(1024);
@@ -3074,13 +3074,13 @@ Debug.ShouldStop(67108864);
 _id = BA.numberCast(int.class, _cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("id"))));Debug.locals.put("id", _id);Debug.locals.put("id", _id);
  BA.debugLineNum = 156;BA.debugLine="Log(Cursor.GetString(\"id\"))";
 Debug.ShouldStop(134217728);
-form.__c.runVoidMethod ("LogImpl","32621453",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("id"))),0);
+form.__c.runVoidMethod ("LogImpl","52621453",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("id"))),0);
  BA.debugLineNum = 157;BA.debugLine="Log(Cursor.GetString(\"name\"))";
 Debug.ShouldStop(268435456);
-form.__c.runVoidMethod ("LogImpl","32621454",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name"))),0);
+form.__c.runVoidMethod ("LogImpl","52621454",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name"))),0);
  BA.debugLineNum = 158;BA.debugLine="Log(Cursor.GetString(\"qnt\"))";
 Debug.ShouldStop(536870912);
-form.__c.runVoidMethod ("LogImpl","32621455",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("qnt"))),0);
+form.__c.runVoidMethod ("LogImpl","52621455",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("qnt"))),0);
  BA.debugLineNum = 159;BA.debugLine="CustomListView1Geral.Add(CreateItemInsumos(i+1,i";
 Debug.ShouldStop(1073741824);
 __ref.getField(false,"_customlistview1geral" /*RemoteObject*/ ).runVoidMethod ("_add",RemoteObject.declareNull("anywheresoftware.b4a.AbsObjectWrapper").runMethod(false, "ConvertToWrapper", RemoteObject.createNew("anywheresoftware.b4a.objects.B4XViewWrapper"), __ref.runClassMethod (b4a.example.ef.form.class, "_createiteminsumos" /*RemoteObject*/ ,(Object)(RemoteObject.solve(new RemoteObject[] {RemoteObject.createImmutable(_i),RemoteObject.createImmutable(1)}, "+",1, 1)),(Object)(_id),(Object)(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name")))),(Object)(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("qnt"))))).getObject()),(Object)((RemoteObject.createImmutable("insumo"))));
@@ -3267,7 +3267,7 @@ if (RemoteObject.solveBoolean("!",__ref.getField(false,"_customlistview1geral" /
 Debug.ShouldStop(536870912);
 try { BA.debugLineNum = 192;BA.debugLine="LogColor(\"REMOVE: \"&iw,Colors.Red)";
 Debug.ShouldStop(-2147483648);
-form.__c.runVoidMethod ("LogImpl","32686982",RemoteObject.concat(RemoteObject.createImmutable("REMOVE: "),RemoteObject.createImmutable(_iw)),form.__c.getField(false,"Colors").getField(true,"Red"));
+form.__c.runVoidMethod ("LogImpl","52686982",RemoteObject.concat(RemoteObject.createImmutable("REMOVE: "),RemoteObject.createImmutable(_iw)),form.__c.getField(false,"Colors").getField(true,"Red"));
  BA.debugLineNum = 193;BA.debugLine="CustomListView1Geral.RemoveAt(iw)";
 Debug.ShouldStop(1);
 __ref.getField(false,"_customlistview1geral" /*RemoteObject*/ ).runVoidMethod ("_removeat",(Object)(BA.numberCast(int.class, _iw)));
@@ -3276,7 +3276,7 @@ __ref.getField(false,"_customlistview1geral" /*RemoteObject*/ ).runVoidMethod ("
        catch (Exception e7) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e7.toString()); BA.debugLineNum = 196;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(8);
-form.__c.runVoidMethod ("LogImpl","32686986",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+form.__c.runVoidMethod ("LogImpl","52686986",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  };
  };
  }
@@ -3302,7 +3302,7 @@ Debug.locals.put("Value", _value);
 Debug.ShouldStop(1048576);
  BA.debugLineNum = 728;BA.debugLine="Log(Value)";
 Debug.ShouldStop(8388608);
-form.__c.runVoidMethod ("LogImpl","34259843",BA.ObjectToString(_value),0);
+form.__c.runVoidMethod ("LogImpl","54259843",BA.ObjectToString(_value),0);
  BA.debugLineNum = 730;BA.debugLine="SD_xComboBoxLote.Clear";
 Debug.ShouldStop(33554432);
 __ref.getField(false,"_sd_xcomboboxlote" /*RemoteObject*/ ).runClassMethod (b4a.example.ef.sd_xcombobox.class, "_clear" /*RemoteObject*/ );
@@ -3320,7 +3320,7 @@ Debug.ShouldStop(-2147483648);
 __ref.setField ("_hacienda" /*RemoteObject*/ ,__ref.getField(true,"_hacienda" /*RemoteObject*/ ).runMethod(true,"substring",(Object)(BA.numberCast(int.class, 0)),(Object)(BA.numberCast(int.class, 3))));
  BA.debugLineNum = 737;BA.debugLine="Log(hacienda)";
 Debug.ShouldStop(1);
-form.__c.runVoidMethod ("LogImpl","34259852",__ref.getField(true,"_hacienda" /*RemoteObject*/ ),0);
+form.__c.runVoidMethod ("LogImpl","54259852",__ref.getField(true,"_hacienda" /*RemoteObject*/ ),0);
  BA.debugLineNum = 738;BA.debugLine="GetRecordLotes (Main.pDBName,Main.pNit, hacienda)";
 Debug.ShouldStop(2);
 __ref.runClassMethod (b4a.example.ef.form.class, "_getrecordlotes" /*void*/ ,(Object)(form._main._pdbname /*RemoteObject*/ ),(Object)(form._main._pnit /*RemoteObject*/ ),(Object)(__ref.getField(true,"_hacienda" /*RemoteObject*/ )));
@@ -3362,13 +3362,13 @@ Debug.locals.put("Value", _value);
 Debug.ShouldStop(2);
  BA.debugLineNum = 776;BA.debugLine="Log(Position & \" - \" & Value)";
 Debug.ShouldStop(128);
-form.__c.runVoidMethod ("LogImpl","34390918",RemoteObject.concat(_position,RemoteObject.createImmutable(" - "),_value),0);
+form.__c.runVoidMethod ("LogImpl","54390918",RemoteObject.concat(_position,RemoteObject.createImmutable(" - "),_value),0);
  BA.debugLineNum = 778;BA.debugLine="lote = Value";
 Debug.ShouldStop(512);
 __ref.setField ("_lote" /*RemoteObject*/ ,BA.ObjectToString(_value));
  BA.debugLineNum = 780;BA.debugLine="Log(hacienda)";
 Debug.ShouldStop(2048);
-form.__c.runVoidMethod ("LogImpl","34390922",__ref.getField(true,"_hacienda" /*RemoteObject*/ ),0);
+form.__c.runVoidMethod ("LogImpl","54390922",__ref.getField(true,"_hacienda" /*RemoteObject*/ ),0);
  BA.debugLineNum = 781;BA.debugLine="GetRecordLotesArea (Main.pDBName,nit, hacienda,lo";
 Debug.ShouldStop(4096);
 __ref.runClassMethod (b4a.example.ef.form.class, "_getrecordlotesarea" /*void*/ ,(Object)(form._main._pdbname /*RemoteObject*/ ),(Object)(__ref.getField(true,"_nit" /*RemoteObject*/ )),(Object)(__ref.getField(true,"_hacienda" /*RemoteObject*/ )),(Object)(__ref.getField(true,"_lote" /*RemoteObject*/ )));
@@ -3499,7 +3499,7 @@ this.state = 10;
 this.catchState = 0;
  BA.debugLineNum = 995;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(4);
-parent.__c.runVoidMethod ("LogImpl","35177357",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+parent.__c.runVoidMethod ("LogImpl","55177357",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  if (true) break;
 if (true) break;
 
@@ -3552,10 +3552,10 @@ Debug.ShouldStop(512);
 __ref.getField(false,"_spinner1nameinsumo" /*RemoteObject*/ ).setObject (form.__c.runMethod(false,"Sender",__ref.getField(false, "ba")));
  BA.debugLineNum = 1003;BA.debugLine="Log(Spinner1NameInsumo.Tag)";
 Debug.ShouldStop(1024);
-form.__c.runVoidMethod ("LogImpl","35242882",BA.ObjectToString(__ref.getField(false,"_spinner1nameinsumo" /*RemoteObject*/ ).runMethod(false,"getTag")),0);
+form.__c.runVoidMethod ("LogImpl","55242882",BA.ObjectToString(__ref.getField(false,"_spinner1nameinsumo" /*RemoteObject*/ ).runMethod(false,"getTag")),0);
  BA.debugLineNum = 1004;BA.debugLine="Log(Spinner1NameInsumo.SelectedItem)";
 Debug.ShouldStop(2048);
-form.__c.runVoidMethod ("LogImpl","35242883",__ref.getField(false,"_spinner1nameinsumo" /*RemoteObject*/ ).runMethod(true,"getSelectedItem"),0);
+form.__c.runVoidMethod ("LogImpl","55242883",__ref.getField(false,"_spinner1nameinsumo" /*RemoteObject*/ ).runMethod(true,"getSelectedItem"),0);
  BA.debugLineNum = 1005;BA.debugLine="Dim id As Int=Spinner1NameInsumo.Tag";
 Debug.ShouldStop(4096);
 _id = BA.numberCast(int.class, __ref.getField(false,"_spinner1nameinsumo" /*RemoteObject*/ ).runMethod(false,"getTag"));Debug.locals.put("id", _id);Debug.locals.put("id", _id);
@@ -3621,7 +3621,7 @@ Debug.locals.put("Value", _value);
 Debug.ShouldStop(8388608);
  BA.debugLineNum = 889;BA.debugLine="Log(Value)";
 Debug.ShouldStop(16777216);
-form.__c.runVoidMethod ("LogImpl","34653057",BA.ObjectToString(_value),0);
+form.__c.runVoidMethod ("LogImpl","54653057",BA.ObjectToString(_value),0);
  BA.debugLineNum = 890;BA.debugLine="End Sub";
 Debug.ShouldStop(33554432);
 return RemoteObject.createImmutable("");

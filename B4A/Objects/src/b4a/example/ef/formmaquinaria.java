@@ -80,6 +80,7 @@ public b4a.example.ef.starter _starter = null;
 public b4a.example.ef.b4xcollections _b4xcollections = null;
 public b4a.example.ef.b4xpages _b4xpages = null;
 public b4a.example.ef.httputils2service _httputils2service = null;
+public b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public Object  _initialize(b4a.example.ef.formmaquinaria __ref,anywheresoftware.b4a.BA _ba) throws Exception{
 __ref = this;
 innerInitialize(_ba);
@@ -329,7 +330,7 @@ case 9:
 this.state = 10;
 RDebugUtils.currentLine=9437207;
  //BA.debugLineNum = 9437207;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j2.Err";
-parent.__c.LogImpl("39437207","Error en la consulta de Maquina: "+_j2._errormessage /*String*/ ,0);
+parent.__c.LogImpl("59437207","Error en la consulta de Maquina: "+_j2._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -434,7 +435,7 @@ case 19:
 this.state = 20;
 RDebugUtils.currentLine=9437224;
  //BA.debugLineNum = 9437224;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j3.Err";
-parent.__c.LogImpl("39437224","Error en la consulta de Maquina: "+_j3._errormessage /*String*/ ,0);
+parent.__c.LogImpl("59437224","Error en la consulta de Maquina: "+_j3._errormessage /*String*/ ,0);
  if (true) break;
 
 case 20:
@@ -539,7 +540,7 @@ case 29:
 this.state = 30;
 RDebugUtils.currentLine=9437241;
  //BA.debugLineNum = 9437241;BA.debugLine="Log(\"Error en la consulta de NITs: \" & j.ErrorMe";
-parent.__c.LogImpl("39437241","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("59437241","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 30:
@@ -644,7 +645,7 @@ case 39:
 this.state = 40;
 RDebugUtils.currentLine=9437258;
  //BA.debugLineNum = 9437258;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j4.Err";
-parent.__c.LogImpl("39437258","Error en la consulta de Maquina: "+_j4._errormessage /*String*/ ,0);
+parent.__c.LogImpl("59437258","Error en la consulta de Maquina: "+_j4._errormessage /*String*/ ,0);
  if (true) break;
 
 case 40:
@@ -755,7 +756,7 @@ case 49:
 this.state = 50;
 RDebugUtils.currentLine=9437277;
  //BA.debugLineNum = 9437277;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j5.Err";
-parent.__c.LogImpl("39437277","Error en la consulta de Maquina: "+_j5._errormessage /*String*/ ,0);
+parent.__c.LogImpl("59437277","Error en la consulta de Maquina: "+_j5._errormessage /*String*/ ,0);
  if (true) break;
 
 case 50:
@@ -860,7 +861,7 @@ case 59:
 this.state = 60;
 RDebugUtils.currentLine=9437294;
  //BA.debugLineNum = 9437294;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j6.Err";
-parent.__c.LogImpl("39437294","Error en la consulta de Maquina: "+_j6._errormessage /*String*/ ,0);
+parent.__c.LogImpl("59437294","Error en la consulta de Maquina: "+_j6._errormessage /*String*/ ,0);
  if (true) break;
 
 case 60:
@@ -1016,61 +1017,61 @@ RDebugUtils.currentLine=10354703;
 __ref._devicename /*String*/  = __ref._getdevicename /*String*/ (null);
 RDebugUtils.currentLine=10354705;
  //BA.debugLineNum = 10354705;BA.debugLine="Log(\"Ascdo_Maq_Mvto_Maq: \" & Ascdo_Maq_Mvto_Maq)";
-parent.__c.LogImpl("310354705","Ascdo_Maq_Mvto_Maq: "+__ref._ascdo_maq_mvto_maq /*String*/ ,0);
+parent.__c.LogImpl("510354705","Ascdo_Maq_Mvto_Maq: "+__ref._ascdo_maq_mvto_maq /*String*/ ,0);
 RDebugUtils.currentLine=10354706;
  //BA.debugLineNum = 10354706;BA.debugLine="Log(\"maquina: \" & maquina)";
-parent.__c.LogImpl("310354706","maquina: "+__ref._maquina /*String*/ ,0);
+parent.__c.LogImpl("510354706","maquina: "+__ref._maquina /*String*/ ,0);
 RDebugUtils.currentLine=10354707;
  //BA.debugLineNum = 10354707;BA.debugLine="Log(\"fecha: \" & fecha)";
-parent.__c.LogImpl("310354707","fecha: "+__ref._fecha /*String*/ ,0);
+parent.__c.LogImpl("510354707","fecha: "+__ref._fecha /*String*/ ,0);
 RDebugUtils.currentLine=10354708;
  //BA.debugLineNum = 10354708;BA.debugLine="Log(\"labor: \" & labor)";
-parent.__c.LogImpl("310354708","labor: "+__ref._labor /*String*/ ,0);
+parent.__c.LogImpl("510354708","labor: "+__ref._labor /*String*/ ,0);
 RDebugUtils.currentLine=10354709;
  //BA.debugLineNum = 10354709;BA.debugLine="Log(\"nitEmpresaCBX: \" & nitEmpresaCBX)";
-parent.__c.LogImpl("310354709","nitEmpresaCBX: "+__ref._nitempresacbx /*String*/ ,0);
+parent.__c.LogImpl("510354709","nitEmpresaCBX: "+__ref._nitempresacbx /*String*/ ,0);
 RDebugUtils.currentLine=10354710;
  //BA.debugLineNum = 10354710;BA.debugLine="Log(\"haciendaCBX: \" & haciendaCBX)";
-parent.__c.LogImpl("310354710","haciendaCBX: "+__ref._haciendacbx /*String*/ ,0);
+parent.__c.LogImpl("510354710","haciendaCBX: "+__ref._haciendacbx /*String*/ ,0);
 RDebugUtils.currentLine=10354711;
  //BA.debugLineNum = 10354711;BA.debugLine="Log(\"Lote: \" & Lote)";
-parent.__c.LogImpl("310354711","Lote: "+__ref._lote /*String*/ ,0);
+parent.__c.LogImpl("510354711","Lote: "+__ref._lote /*String*/ ,0);
 RDebugUtils.currentLine=10354712;
  //BA.debugLineNum = 10354712;BA.debugLine="Log(\"implemento: \" & implemento)";
-parent.__c.LogImpl("310354712","implemento: "+__ref._implemento /*String*/ ,0);
+parent.__c.LogImpl("510354712","implemento: "+__ref._implemento /*String*/ ,0);
 RDebugUtils.currentLine=10354713;
  //BA.debugLineNum = 10354713;BA.debugLine="Log(\"horainicio: \" & horainicio)";
-parent.__c.LogImpl("310354713","horainicio: "+__ref._horainicio /*String*/ ,0);
+parent.__c.LogImpl("510354713","horainicio: "+__ref._horainicio /*String*/ ,0);
 RDebugUtils.currentLine=10354714;
  //BA.debugLineNum = 10354714;BA.debugLine="Log(\"horafin: \" & horafin)";
-parent.__c.LogImpl("310354714","horafin: "+__ref._horafin /*String*/ ,0);
+parent.__c.LogImpl("510354714","horafin: "+__ref._horafin /*String*/ ,0);
 RDebugUtils.currentLine=10354715;
  //BA.debugLineNum = 10354715;BA.debugLine="Log(\"combustible: \" & combustible)";
-parent.__c.LogImpl("310354715","combustible: "+__ref._combustible /*String*/ ,0);
+parent.__c.LogImpl("510354715","combustible: "+__ref._combustible /*String*/ ,0);
 RDebugUtils.currentLine=10354716;
  //BA.debugLineNum = 10354716;BA.debugLine="Log(\"observaciones: \" & observaciones)";
-parent.__c.LogImpl("310354716","observaciones: "+__ref._observaciones /*String*/ ,0);
+parent.__c.LogImpl("510354716","observaciones: "+__ref._observaciones /*String*/ ,0);
 RDebugUtils.currentLine=10354717;
  //BA.debugLineNum = 10354717;BA.debugLine="Log(\"operario: \" & operario)";
-parent.__c.LogImpl("310354717","operario: "+__ref._operario /*String*/ ,0);
+parent.__c.LogImpl("510354717","operario: "+__ref._operario /*String*/ ,0);
 RDebugUtils.currentLine=10354718;
  //BA.debugLineNum = 10354718;BA.debugLine="Log(\"implemento2: \" & implemento2)";
-parent.__c.LogImpl("310354718","implemento2: "+__ref._implemento2 /*String*/ ,0);
+parent.__c.LogImpl("510354718","implemento2: "+__ref._implemento2 /*String*/ ,0);
 RDebugUtils.currentLine=10354719;
  //BA.debugLineNum = 10354719;BA.debugLine="Log(\"area: \" & area)";
-parent.__c.LogImpl("310354719","area: "+__ref._area /*String*/ ,0);
+parent.__c.LogImpl("510354719","area: "+__ref._area /*String*/ ,0);
 RDebugUtils.currentLine=10354720;
  //BA.debugLineNum = 10354720;BA.debugLine="Log(\"fechaHoy: \" & fechaHoy)";
-parent.__c.LogImpl("310354720","fechaHoy: "+__ref._fechahoy /*String*/ ,0);
+parent.__c.LogImpl("510354720","fechaHoy: "+__ref._fechahoy /*String*/ ,0);
 RDebugUtils.currentLine=10354721;
  //BA.debugLineNum = 10354721;BA.debugLine="Log(\"horaActual: \" & horaActual)";
-parent.__c.LogImpl("310354721","horaActual: "+__ref._horaactual /*String*/ ,0);
+parent.__c.LogImpl("510354721","horaActual: "+__ref._horaactual /*String*/ ,0);
 RDebugUtils.currentLine=10354722;
  //BA.debugLineNum = 10354722;BA.debugLine="Log(\"user: \" & user)";
-parent.__c.LogImpl("310354722","user: "+__ref._user /*String*/ ,0);
+parent.__c.LogImpl("510354722","user: "+__ref._user /*String*/ ,0);
 RDebugUtils.currentLine=10354723;
  //BA.debugLineNum = 10354723;BA.debugLine="Log(\"DeviceName: \" & DeviceName)";
-parent.__c.LogImpl("310354723","DeviceName: "+__ref._devicename /*String*/ ,0);
+parent.__c.LogImpl("510354723","DeviceName: "+__ref._devicename /*String*/ ,0);
 RDebugUtils.currentLine=10354726;
  //BA.debugLineNum = 10354726;BA.debugLine="Dim Req As DBRequestManager";
 _req = new b4a.example.ef.dbrequestmanager();
@@ -1134,7 +1135,7 @@ case 8:
 this.state = 9;
 RDebugUtils.currentLine=10354741;
  //BA.debugLineNum = 10354741;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
-parent.__c.LogImpl("310354741","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("510354741","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 9:
@@ -1149,7 +1150,7 @@ this.state = 12;
 this.catchState = 0;
 RDebugUtils.currentLine=10354744;
  //BA.debugLineNum = 10354744;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
-parent.__c.LogImpl("310354744","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
+parent.__c.LogImpl("510354744","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
  if (true) break;
 if (true) break;
 
@@ -1354,6 +1355,20 @@ RDebugUtils.currentLine=9699330;
  //BA.debugLineNum = 9699330;BA.debugLine="End Sub";
 return "";
 }
+public String  _label1back_click(b4a.example.ef.formmaquinaria __ref) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="formmaquinaria";
+if (Debug.shouldDelegate(ba, "label1back_click", false))
+	 {return ((String) Debug.delegate(ba, "label1back_click", null));}
+RDebugUtils.currentLine=81788928;
+ //BA.debugLineNum = 81788928;BA.debugLine="Private Sub Label1Back_Click";
+RDebugUtils.currentLine=81788929;
+ //BA.debugLineNum = 81788929;BA.debugLine="B4XPages.ClosePage(Me)";
+_b4xpages._closepage /*String*/ (ba,this);
+RDebugUtils.currentLine=81788930;
+ //BA.debugLineNum = 81788930;BA.debugLine="End Sub";
+return "";
+}
 public void  _sd_xcomboboxhacienda_itemclick(b4a.example.ef.formmaquinaria __ref,int _position,Object _value) throws Exception{
 RDebugUtils.currentModule="formmaquinaria";
 if (Debug.shouldDelegate(ba, "sd_xcomboboxhacienda_itemclick", false))
@@ -1499,7 +1514,7 @@ case 9:
 this.state = 10;
 RDebugUtils.currentLine=9568284;
  //BA.debugLineNum = 9568284;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-parent.__c.LogImpl("39568284","Error: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("59568284","Error: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -1571,7 +1586,7 @@ RDebugUtils.currentLine=10027009;
 __ref._lote /*String*/  = BA.ObjectToString(_value);
 RDebugUtils.currentLine=10027010;
  //BA.debugLineNum = 10027010;BA.debugLine="Log(Lote)";
-__c.LogImpl("310027010",__ref._lote /*String*/ ,0);
+__c.LogImpl("510027010",__ref._lote /*String*/ ,0);
 RDebugUtils.currentLine=10027011;
  //BA.debugLineNum = 10027011;BA.debugLine="End Sub";
 return "";
@@ -1736,7 +1751,7 @@ case 9:
 this.state = 10;
 RDebugUtils.currentLine=9502748;
  //BA.debugLineNum = 9502748;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-parent.__c.LogImpl("39502748","Error: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("59502748","Error: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:

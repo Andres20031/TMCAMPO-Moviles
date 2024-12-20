@@ -37,6 +37,7 @@ public b4a.example.ef.starter _starter = null;
 public b4a.example.ef.b4xcollections _b4xcollections = null;
 public b4a.example.ef.b4xpages _b4xpages = null;
 public b4a.example.ef.httputils2service _httputils2service = null;
+public b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public String  _initialize(b4a.example.ef.util __ref,anywheresoftware.b4a.BA _ba) throws Exception{
 __ref = this;
 innerInitialize(_ba);
@@ -97,7 +98,7 @@ _window.RunMethod("setNavigationBarColor",new Object[]{(Object)(_clr1)});
        catch (Exception e14) {
 			ba.setLastException(e14);RDebugUtils.currentLine=5439502;
  //BA.debugLineNum = 5439502;BA.debugLine="Log(LastException)";
-__c.LogImpl("35439502",BA.ObjectToString(__c.LastException(getActivityBA())),0);
+__c.LogImpl("55439502",BA.ObjectToString(__c.LastException(getActivityBA())),0);
  };
 RDebugUtils.currentLine=5439505;
  //BA.debugLineNum = 5439505;BA.debugLine="End Sub";

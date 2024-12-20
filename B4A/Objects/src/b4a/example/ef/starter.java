@@ -144,6 +144,7 @@ public b4a.example.ef.main _main = null;
 public b4a.example.ef.b4xcollections _b4xcollections = null;
 public b4a.example.ef.b4xpages _b4xpages = null;
 public b4a.example.ef.httputils2service _httputils2service = null;
+public b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public static String  _updateinsumo(String _name,String _qnt,int _id,String _idmaquina) throws Exception{
 RDebugUtils.currentModule="starter";
 if (Debug.shouldDelegate(processBA, "updateinsumo", false))
@@ -170,7 +171,7 @@ _sql1.ExecNonQuery2("UPDATE insumo set  qnt= ?, idMaquina=? where id=?",anywhere
        catch (Exception e9) {
 			processBA.setLastException(e9);RDebugUtils.currentLine=6357003;
  //BA.debugLineNum = 6357003;BA.debugLine="Log(\"Erro 0005: \"&LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("36357003","Erro 0005: "+BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(processBA)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("56357003","Erro 0005: "+BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(processBA)),0);
  };
 RDebugUtils.currentLine=6357006;
  //BA.debugLineNum = 6357006;BA.debugLine="End Sub";
@@ -303,7 +304,7 @@ case 3:
 this.state = 20;
 RDebugUtils.currentLine=6291461;
  //BA.debugLineNum = 6291461;BA.debugLine="Log(\"JA EXISTEM ITENS\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("36291461","JA EXISTEM ITENS",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("56291461","JA EXISTEM ITENS",0);
  if (true) break;
 
 case 5:
@@ -462,7 +463,7 @@ case 18:
 this.state = 19;
 RDebugUtils.currentLine=6291492;
  //BA.debugLineNum = 6291492;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("36291492","ERROR: "+_j._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("56291492","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 19:
@@ -519,7 +520,7 @@ _insertnamesinsumos(mostCurrent._main._pdbname /*String*/ );
        catch (Exception e10) {
 			processBA.setLastException(e10);RDebugUtils.currentLine=6225935;
  //BA.debugLineNum = 6225935;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("36225935",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(processBA)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("56225935",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(processBA)),0);
  };
 RDebugUtils.currentLine=6225937;
  //BA.debugLineNum = 6225937;BA.debugLine="End Sub";

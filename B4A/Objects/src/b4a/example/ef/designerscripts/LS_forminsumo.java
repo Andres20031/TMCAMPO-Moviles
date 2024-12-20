@@ -32,8 +32,16 @@ views.get("buttonaddinsumo").vw.setLeft((int)((2d / 100 * width)));
 views.get("buttonaddinsumo").vw.setWidth((int)((98d / 100 * width) - ((2d / 100 * width))));
 views.get("buttondeleteinsumo").vw.setLeft((int)((1d / 100 * width)));
 views.get("buttondeleteinsumo").vw.setWidth((int)((93d / 100 * width) - ((1d / 100 * width))));
-views.get("table1").vw.setLeft((int)((1d / 100 * width)));
-views.get("table1").vw.setWidth((int)((99d / 100 * width) - ((1d / 100 * width))));
+views.get("b4xtable1").vw.setLeft((int)((0d / 100 * width)));
+views.get("b4xtable1").vw.setWidth((int)((100d / 100 * width) - ((0d / 100 * width))));
+views.get("paneltittleinsumo").vw.setLeft((int)((0d / 100 * width)));
+views.get("paneltittleinsumo").vw.setWidth((int)((100d / 100 * width) - ((0d / 100 * width))));
+views.get("label3").vw.setLeft((int)((0d / 100 * width)));
+views.get("label3").vw.setWidth((int)((100d / 100 * width) - ((0d / 100 * width))));
+views.get("panelinsumoselect").vw.setLeft((int)((0d / 100 * width)));
+views.get("panelinsumoselect").vw.setWidth((int)((100d / 100 * width) - ((0d / 100 * width))));
+views.get("labelinsumoselect").vw.setLeft((int)((0d / 100 * width)));
+views.get("labelinsumoselect").vw.setWidth((int)((100d / 100 * width) - ((0d / 100 * width))));
 
 }
 }

@@ -40,6 +40,7 @@ public b4a.example.ef.starter _starter = null;
 public b4a.example.ef.b4xcollections _b4xcollections = null;
 public b4a.example.ef.b4xpages _b4xpages = null;
 public b4a.example.ef.httputils2service _httputils2service = null;
+public b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public String  _initialize(b4a.example.ef.dbrequestmanager __ref,anywheresoftware.b4a.BA _ba,Object _target,String _connectorlink) throws Exception{
 __ref = this;
 innerInitialize(_ba);
@@ -153,7 +154,7 @@ case 3:
 this.state = 4;
 RDebugUtils.currentLine=8847366;
  //BA.debugLineNum = 8847366;BA.debugLine="Log(\"Error reading response: \" & LastException)";
-parent.__c.LogImpl("38847366","Error reading response: "+BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
+parent.__c.LogImpl("58847366","Error reading response: "+BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
 RDebugUtils.currentLine=8847367;
  //BA.debugLineNum = 8847367;BA.debugLine="Return";
 if (true) return ;
@@ -352,7 +353,7 @@ case 3:
 this.state = 4;
 RDebugUtils.currentLine=8650757;
  //BA.debugLineNum = 8650757;BA.debugLine="Log(\"Error building command: \" & LastException)";
-parent.__c.LogImpl("38650757","Error building command: "+BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
+parent.__c.LogImpl("58650757","Error building command: "+BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
 RDebugUtils.currentLine=8650758;
  //BA.debugLineNum = 8650758;BA.debugLine="Return";
 if (true) return ;
@@ -503,7 +504,7 @@ RDebugUtils.currentLine=9109504;
  //BA.debugLineNum = 9109504;BA.debugLine="Public Sub PrintTable(Table As DBResult)";
 RDebugUtils.currentLine=9109505;
  //BA.debugLineNum = 9109505;BA.debugLine="Log(\"Tag: \" & Table.Tag & \", Columns: \" & Table.C";
-__c.LogImpl("39109505","Tag: "+BA.ObjectToString(_table.Tag /*Object*/ )+", Columns: "+BA.NumberToString(_table.Columns /*anywheresoftware.b4a.objects.collections.Map*/ .getSize())+", Rows: "+BA.NumberToString(_table.Rows /*anywheresoftware.b4a.objects.collections.List*/ .getSize()),0);
+__c.LogImpl("59109505","Tag: "+BA.ObjectToString(_table.Tag /*Object*/ )+", Columns: "+BA.NumberToString(_table.Columns /*anywheresoftware.b4a.objects.collections.Map*/ .getSize())+", Rows: "+BA.NumberToString(_table.Rows /*anywheresoftware.b4a.objects.collections.List*/ .getSize()),0);
 RDebugUtils.currentLine=9109506;
  //BA.debugLineNum = 9109506;BA.debugLine="Dim sb As StringBuilder";
 _sb = new anywheresoftware.b4a.keywords.StringBuilderWrapper();
@@ -526,7 +527,7 @@ _sb.Append(BA.ObjectToString(_col)).Append(__c.TAB);
 };
 RDebugUtils.currentLine=9109511;
  //BA.debugLineNum = 9109511;BA.debugLine="Log(sb.ToString)";
-__c.LogImpl("39109511",_sb.ToString(),0);
+__c.LogImpl("59109511",_sb.ToString(),0);
 RDebugUtils.currentLine=9109512;
  //BA.debugLineNum = 9109512;BA.debugLine="For Each row() As Object In Table.Rows";
 {
@@ -558,7 +559,7 @@ _sb.Append(BA.ObjectToString(_record)).Append(__c.TAB);
 };
 RDebugUtils.currentLine=9109518;
  //BA.debugLineNum = 9109518;BA.debugLine="Log(sb.ToString)";
-__c.LogImpl("39109518",_sb.ToString(),0);
+__c.LogImpl("59109518",_sb.ToString(),0);
  }
 };
 RDebugUtils.currentLine=9109520;

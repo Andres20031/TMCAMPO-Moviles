@@ -187,7 +187,7 @@ case 3:
 this.state = 4;
  BA.debugLineNum = 65;BA.debugLine="Log(\"Error building command: \" & LastException)";
 Debug.ShouldStop(1);
-parent.__c.runVoidMethod ("LogImpl","38650757",RemoteObject.concat(RemoteObject.createImmutable("Error building command: "),parent.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
+parent.__c.runVoidMethod ("LogImpl","58650757",RemoteObject.concat(RemoteObject.createImmutable("Error building command: "),parent.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
  BA.debugLineNum = 66;BA.debugLine="Return";
 Debug.ShouldStop(2);
 if (true) return ;
@@ -428,7 +428,7 @@ case 3:
 this.state = 4;
  BA.debugLineNum = 95;BA.debugLine="Log(\"Error reading response: \" & LastException)";
 Debug.ShouldStop(1073741824);
-parent.__c.runVoidMethod ("LogImpl","38847366",RemoteObject.concat(RemoteObject.createImmutable("Error reading response: "),parent.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
+parent.__c.runVoidMethod ("LogImpl","58847366",RemoteObject.concat(RemoteObject.createImmutable("Error reading response: "),parent.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
  BA.debugLineNum = 96;BA.debugLine="Return";
 Debug.ShouldStop(-2147483648);
 if (true) return ;
@@ -535,7 +535,7 @@ Debug.locals.put("Table", _table);
 Debug.ShouldStop(64);
  BA.debugLineNum = 136;BA.debugLine="Log(\"Tag: \" & Table.Tag & \", Columns: \" & Table.C";
 Debug.ShouldStop(128);
-dbrequestmanager.__c.runVoidMethod ("LogImpl","39109505",RemoteObject.concat(RemoteObject.createImmutable("Tag: "),_table.getField(false,"Tag" /*RemoteObject*/ ),RemoteObject.createImmutable(", Columns: "),_table.getField(false,"Columns" /*RemoteObject*/ ).runMethod(true,"getSize"),RemoteObject.createImmutable(", Rows: "),_table.getField(false,"Rows" /*RemoteObject*/ ).runMethod(true,"getSize")),0);
+dbrequestmanager.__c.runVoidMethod ("LogImpl","59109505",RemoteObject.concat(RemoteObject.createImmutable("Tag: "),_table.getField(false,"Tag" /*RemoteObject*/ ),RemoteObject.createImmutable(", Columns: "),_table.getField(false,"Columns" /*RemoteObject*/ ).runMethod(true,"getSize"),RemoteObject.createImmutable(", Rows: "),_table.getField(false,"Rows" /*RemoteObject*/ ).runMethod(true,"getSize")),0);
  BA.debugLineNum = 137;BA.debugLine="Dim sb As StringBuilder";
 Debug.ShouldStop(256);
 _sb = RemoteObject.createNew ("anywheresoftware.b4a.keywords.StringBuilderWrapper");Debug.locals.put("sb", _sb);
@@ -560,7 +560,7 @@ _sb.runMethod(false,"Append",(Object)(BA.ObjectToString(_col))).runVoidMethod ("
 ;
  BA.debugLineNum = 142;BA.debugLine="Log(sb.ToString)";
 Debug.ShouldStop(8192);
-dbrequestmanager.__c.runVoidMethod ("LogImpl","39109511",_sb.runMethod(true,"ToString"),0);
+dbrequestmanager.__c.runVoidMethod ("LogImpl","59109511",_sb.runMethod(true,"ToString"),0);
  BA.debugLineNum = 143;BA.debugLine="For Each row() As Object In Table.Rows";
 Debug.ShouldStop(16384);
 {
@@ -595,7 +595,7 @@ _sb.runMethod(false,"Append",(Object)(BA.ObjectToString(_record))).runVoidMethod
 ;
  BA.debugLineNum = 149;BA.debugLine="Log(sb.ToString)";
 Debug.ShouldStop(1048576);
-dbrequestmanager.__c.runVoidMethod ("LogImpl","39109518",_sb.runMethod(true,"ToString"),0);
+dbrequestmanager.__c.runVoidMethod ("LogImpl","59109518",_sb.runMethod(true,"ToString"),0);
  }
 }Debug.locals.put("row", _row);
 ;

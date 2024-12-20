@@ -8,7 +8,7 @@ public class formprecipitacion_subs_0 {
 
 public static RemoteObject  _as_datepicker1_selecteddatechanged(RemoteObject __ref,RemoteObject _date) throws Exception{
 try {
-		Debug.PushSubsStack("AS_DatePicker1_SelectedDateChanged (formprecipitacion) ","formprecipitacion",15,__ref.getField(false, "ba"),__ref,134);
+		Debug.PushSubsStack("AS_DatePicker1_SelectedDateChanged (formprecipitacion) ","formprecipitacion",14,__ref.getField(false, "ba"),__ref,134);
 if (RapidSub.canDelegate("as_datepicker1_selecteddatechanged")) { return __ref.runUserSub(false, "formprecipitacion","as_datepicker1_selecteddatechanged", __ref, _date);}
 RemoteObject _formatteddate = RemoteObject.createImmutable("");
 Debug.locals.put("Date", _date);
@@ -34,7 +34,7 @@ Debug.ShouldStop(4194304);
 __ref.setField ("_fecha" /*RemoteObject*/ ,_formatteddate);
  BA.debugLineNum = 154;BA.debugLine="Log(fecha)";
 Debug.ShouldStop(33554432);
-formprecipitacion.__c.runVoidMethod ("LogImpl","330343188",__ref.getField(true,"_fecha" /*RemoteObject*/ ),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","517498132",__ref.getField(true,"_fecha" /*RemoteObject*/ ),0);
  BA.debugLineNum = 155;BA.debugLine="End Sub";
 Debug.ShouldStop(67108864);
 return RemoteObject.createImmutable("");
@@ -47,7 +47,7 @@ finally {
 		}}
 public static void  _b4xpage_appear(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("B4XPage_Appear (formprecipitacion) ","formprecipitacion",15,__ref.getField(false, "ba"),__ref,36);
+		Debug.PushSubsStack("B4XPage_Appear (formprecipitacion) ","formprecipitacion",14,__ref.getField(false, "ba"),__ref,36);
 if (RapidSub.canDelegate("b4xpage_appear")) { __ref.runUserSub(false, "formprecipitacion","b4xpage_appear", __ref); return;}
 ResumableSub_B4XPage_Appear rsub = new ResumableSub_B4XPage_Appear(null,__ref);
 rsub.resume(null, null);
@@ -83,7 +83,7 @@ int groupLen15;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("B4XPage_Appear (formprecipitacion) ","formprecipitacion",15,__ref.getField(false, "ba"),__ref,36);
+		Debug.PushSubsStack("B4XPage_Appear (formprecipitacion) ","formprecipitacion",14,__ref.getField(false, "ba"),__ref,36);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -244,7 +244,7 @@ case 9:
 this.state = 10;
  BA.debugLineNum = 73;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j2.Err";
 Debug.ShouldStop(256);
-parent.__c.runVoidMethod ("LogImpl","329884453",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de Maquina: "),_j2.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","517039397",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de Maquina: "),_j2.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 10:
@@ -274,7 +274,7 @@ public static void  _req_pluviometro_result(RemoteObject __ref,RemoteObject _res
 }
 public static RemoteObject  _b4xpage_created(RemoteObject __ref,RemoteObject _root1) throws Exception{
 try {
-		Debug.PushSubsStack("B4XPage_Created (formprecipitacion) ","formprecipitacion",15,__ref.getField(false, "ba"),__ref,30);
+		Debug.PushSubsStack("B4XPage_Created (formprecipitacion) ","formprecipitacion",14,__ref.getField(false, "ba"),__ref,30);
 if (RapidSub.canDelegate("b4xpage_created")) { return __ref.runUserSub(false, "formprecipitacion","b4xpage_created", __ref, _root1);}
 Debug.locals.put("Root1", _root1);
  BA.debugLineNum = 30;BA.debugLine="Private Sub B4XPage_Created (Root1 As B4XView)";
@@ -294,7 +294,7 @@ finally {
 		}}
 public static void  _button1_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Button1_Click (formprecipitacion) ","formprecipitacion",15,__ref.getField(false, "ba"),__ref,170);
+		Debug.PushSubsStack("Button1_Click (formprecipitacion) ","formprecipitacion",14,__ref.getField(false, "ba"),__ref,170);
 if (RapidSub.canDelegate("button1_click")) { __ref.runUserSub(false, "formprecipitacion","button1_click", __ref); return;}
 ResumableSub_Button1_Click rsub = new ResumableSub_Button1_Click(null,__ref);
 rsub.resume(null, null);
@@ -320,7 +320,7 @@ RemoteObject _j = RemoteObject.declareNull("b4a.example.ef.httpjob");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Button1_Click (formprecipitacion) ","formprecipitacion",15,__ref.getField(false, "ba"),__ref,170);
+		Debug.PushSubsStack("Button1_Click (formprecipitacion) ","formprecipitacion",14,__ref.getField(false, "ba"),__ref,170);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -397,7 +397,7 @@ case 8:
 this.state = 9;
  BA.debugLineNum = 186;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
 Debug.ShouldStop(33554432);
-parent.__c.runVoidMethod ("LogImpl","330474256",RemoteObject.concat(RemoteObject.createImmutable("Error al ejecutar la consulta: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","517629200",RemoteObject.concat(RemoteObject.createImmutable("Error al ejecutar la consulta: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 9:
@@ -413,7 +413,7 @@ this.state = 12;
 this.catchState = 0;
  BA.debugLineNum = 189;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
 Debug.ShouldStop(268435456);
-parent.__c.runVoidMethod ("LogImpl","330474259",RemoteObject.concat(RemoteObject.createImmutable("Error al agregar datos: "),parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba")).runMethod(true,"getMessage")),0);
+parent.__c.runVoidMethod ("LogImpl","517629203",RemoteObject.concat(RemoteObject.createImmutable("Error al agregar datos: "),parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba")).runMethod(true,"getMessage")),0);
  if (true) break;
 if (true) break;
 
@@ -488,7 +488,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _createcommand(RemoteObject __ref,RemoteObject _name,RemoteObject _parameters) throws Exception{
 try {
-		Debug.PushSubsStack("CreateCommand (formprecipitacion) ","formprecipitacion",15,__ref.getField(false, "ba"),__ref,91);
+		Debug.PushSubsStack("CreateCommand (formprecipitacion) ","formprecipitacion",14,__ref.getField(false, "ba"),__ref,91);
 if (RapidSub.canDelegate("createcommand")) { return __ref.runUserSub(false, "formprecipitacion","createcommand", __ref, _name, _parameters);}
 RemoteObject _cmd = RemoteObject.declareNull("b4a.example.ef.main._dbcommand");
 Debug.locals.put("Name", _name);
@@ -523,7 +523,7 @@ finally {
 		}}
 public static RemoteObject  _createitem(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("CreateItem (formprecipitacion) ","formprecipitacion",15,__ref.getField(false, "ba"),__ref,80);
+		Debug.PushSubsStack("CreateItem (formprecipitacion) ","formprecipitacion",14,__ref.getField(false, "ba"),__ref,80);
 if (RapidSub.canDelegate("createitem")) { return __ref.runUserSub(false, "formprecipitacion","createitem", __ref);}
 RemoteObject _panel = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
  BA.debugLineNum = 80;BA.debugLine="Private Sub CreateItem As Panel";
@@ -556,7 +556,7 @@ finally {
 		}}
 public static RemoteObject  _edittexthorafin_textchanged(RemoteObject __ref,RemoteObject _old,RemoteObject _new) throws Exception{
 try {
-		Debug.PushSubsStack("EditTextHoraFin_TextChanged (formprecipitacion) ","formprecipitacion",15,__ref.getField(false, "ba"),__ref,157);
+		Debug.PushSubsStack("EditTextHoraFin_TextChanged (formprecipitacion) ","formprecipitacion",14,__ref.getField(false, "ba"),__ref,157);
 if (RapidSub.canDelegate("edittexthorafin_textchanged")) { return __ref.runUserSub(false, "formprecipitacion","edittexthorafin_textchanged", __ref, _old, _new);}
 Debug.locals.put("Old", _old);
 Debug.locals.put("New", _new);
@@ -564,16 +564,16 @@ Debug.locals.put("New", _new);
 Debug.ShouldStop(268435456);
  BA.debugLineNum = 158;BA.debugLine="Log(\"Texto anterior: \" & Old)";
 Debug.ShouldStop(536870912);
-formprecipitacion.__c.runVoidMethod ("LogImpl","330408705",RemoteObject.concat(RemoteObject.createImmutable("Texto anterior: "),_old),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","517563649",RemoteObject.concat(RemoteObject.createImmutable("Texto anterior: "),_old),0);
  BA.debugLineNum = 159;BA.debugLine="Log(\"Texto nuevo: \" & New)";
 Debug.ShouldStop(1073741824);
-formprecipitacion.__c.runVoidMethod ("LogImpl","330408706",RemoteObject.concat(RemoteObject.createImmutable("Texto nuevo: "),_new),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","517563650",RemoteObject.concat(RemoteObject.createImmutable("Texto nuevo: "),_new),0);
  BA.debugLineNum = 165;BA.debugLine="textoCapturado = New";
 Debug.ShouldStop(16);
 __ref.setField ("_textocapturado" /*RemoteObject*/ ,_new);
  BA.debugLineNum = 166;BA.debugLine="Log(\"El texto es mayor de 5 caracteres: \" & texto";
 Debug.ShouldStop(32);
-formprecipitacion.__c.runVoidMethod ("LogImpl","330408713",RemoteObject.concat(RemoteObject.createImmutable("El texto es mayor de 5 caracteres: "),__ref.getField(true,"_textocapturado" /*RemoteObject*/ )),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","517563657",RemoteObject.concat(RemoteObject.createImmutable("El texto es mayor de 5 caracteres: "),__ref.getField(true,"_textocapturado" /*RemoteObject*/ )),0);
  BA.debugLineNum = 168;BA.debugLine="End Sub";
 Debug.ShouldStop(128);
 return RemoteObject.createImmutable("");
@@ -586,7 +586,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (formprecipitacion) ","formprecipitacion",15,__ref.getField(false, "ba"),__ref,25);
+		Debug.PushSubsStack("Initialize (formprecipitacion) ","formprecipitacion",14,__ref.getField(false, "ba"),__ref,25);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "formprecipitacion","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -607,7 +607,7 @@ finally {
 		}}
 public static RemoteObject  _label13time_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Label13Time_Click (formprecipitacion) ","formprecipitacion",15,__ref.getField(false, "ba"),__ref,108);
+		Debug.PushSubsStack("Label13Time_Click (formprecipitacion) ","formprecipitacion",14,__ref.getField(false, "ba"),__ref,108);
 if (RapidSub.canDelegate("label13time_click")) { return __ref.runUserSub(false, "formprecipitacion","label13time_click", __ref);}
  BA.debugLineNum = 108;BA.debugLine="Private Sub Label13Time_Click";
 Debug.ShouldStop(2048);
@@ -626,7 +626,7 @@ finally {
 		}}
 public static RemoteObject  _label1back_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Label1Back_Click (formprecipitacion) ","formprecipitacion",15,__ref.getField(false, "ba"),__ref,100);
+		Debug.PushSubsStack("Label1Back_Click (formprecipitacion) ","formprecipitacion",14,__ref.getField(false, "ba"),__ref,100);
 if (RapidSub.canDelegate("label1back_click")) { return __ref.runUserSub(false, "formprecipitacion","label1back_click", __ref);}
  BA.debugLineNum = 100;BA.debugLine="Private Sub Label1Back_Click";
 Debug.ShouldStop(8);
@@ -642,7 +642,7 @@ finally {
 		}}
 public static RemoteObject  _label2save_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Label2Save_Click (formprecipitacion) ","formprecipitacion",15,__ref.getField(false, "ba"),__ref,104);
+		Debug.PushSubsStack("Label2Save_Click (formprecipitacion) ","formprecipitacion",14,__ref.getField(false, "ba"),__ref,104);
 if (RapidSub.canDelegate("label2save_click")) { return __ref.runUserSub(false, "formprecipitacion","label2save_click", __ref);}
  BA.debugLineNum = 104;BA.debugLine="Private Sub Label2Save_Click";
 Debug.ShouldStop(128);
@@ -658,7 +658,7 @@ finally {
 		}}
 public static RemoteObject  _sd_xcomboboxpluviometro_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxPluviometro_ItemClick (formprecipitacion) ","formprecipitacion",15,__ref.getField(false, "ba"),__ref,112);
+		Debug.PushSubsStack("SD_xComboBoxPluviometro_ItemClick (formprecipitacion) ","formprecipitacion",14,__ref.getField(false, "ba"),__ref,112);
 if (RapidSub.canDelegate("sd_xcomboboxpluviometro_itemclick")) { return __ref.runUserSub(false, "formprecipitacion","sd_xcomboboxpluviometro_itemclick", __ref, _position, _value);}
 RemoteObject _detailsmap = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 Debug.locals.put("Position", _position);
@@ -667,7 +667,7 @@ Debug.locals.put("Value", _value);
 Debug.ShouldStop(32768);
  BA.debugLineNum = 113;BA.debugLine="Log(\"VALOR COMBOBOX: \" & Value)";
 Debug.ShouldStop(65536);
-formprecipitacion.__c.runVoidMethod ("LogImpl","330277633",RemoteObject.concat(RemoteObject.createImmutable("VALOR COMBOBOX: "),_value),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","517432577",RemoteObject.concat(RemoteObject.createImmutable("VALOR COMBOBOX: "),_value),0);
  BA.debugLineNum = 115;BA.debugLine="If pluviometroMap.ContainsKey(Value) Then";
 Debug.ShouldStop(262144);
 if (__ref.getField(false,"_pluviometromap" /*RemoteObject*/ ).runMethod(true,"ContainsKey",(Object)(_value)).<Boolean>get().booleanValue()) { 
@@ -689,20 +689,20 @@ Debug.ShouldStop(16777216);
 __ref.setField ("_selectedhda_pvlmtro" /*RemoteObject*/ ,BA.ObjectToString(_detailsmap.runMethod(false,"Get",(Object)((RemoteObject.createImmutable("Hda"))))));
  BA.debugLineNum = 124;BA.debugLine="Log(\"Código: \" & selectedCdgo_Plvmtro)";
 Debug.ShouldStop(134217728);
-formprecipitacion.__c.runVoidMethod ("LogImpl","330277644",RemoteObject.concat(RemoteObject.createImmutable("Código: "),__ref.getField(true,"_selectedcdgo_plvmtro" /*RemoteObject*/ )),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","517432588",RemoteObject.concat(RemoteObject.createImmutable("Código: "),__ref.getField(true,"_selectedcdgo_plvmtro" /*RemoteObject*/ )),0);
  BA.debugLineNum = 125;BA.debugLine="Log(\"Nombre: \" & selectedNombre_Plvmtro)";
 Debug.ShouldStop(268435456);
-formprecipitacion.__c.runVoidMethod ("LogImpl","330277645",RemoteObject.concat(RemoteObject.createImmutable("Nombre: "),__ref.getField(true,"_selectednombre_plvmtro" /*RemoteObject*/ )),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","517432589",RemoteObject.concat(RemoteObject.createImmutable("Nombre: "),__ref.getField(true,"_selectednombre_plvmtro" /*RemoteObject*/ )),0);
  BA.debugLineNum = 126;BA.debugLine="Log(\"NIT: \" & selectedNit_Plvmtro)";
 Debug.ShouldStop(536870912);
-formprecipitacion.__c.runVoidMethod ("LogImpl","330277646",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_selectednit_plvmtro" /*RemoteObject*/ )),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","517432590",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_selectednit_plvmtro" /*RemoteObject*/ )),0);
  BA.debugLineNum = 127;BA.debugLine="Log(\"Hacienda: \" & selectedHda_Pvlmtro)";
 Debug.ShouldStop(1073741824);
-formprecipitacion.__c.runVoidMethod ("LogImpl","330277647",RemoteObject.concat(RemoteObject.createImmutable("Hacienda: "),__ref.getField(true,"_selectedhda_pvlmtro" /*RemoteObject*/ )),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","517432591",RemoteObject.concat(RemoteObject.createImmutable("Hacienda: "),__ref.getField(true,"_selectedhda_pvlmtro" /*RemoteObject*/ )),0);
  }else {
  BA.debugLineNum = 129;BA.debugLine="Log(\"Error: No se encontraron detalles para el c";
 Debug.ShouldStop(1);
-formprecipitacion.__c.runVoidMethod ("LogImpl","330277649",RemoteObject.createImmutable("Error: No se encontraron detalles para el código seleccionado."),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","517432593",RemoteObject.createImmutable("Error: No se encontraron detalles para el código seleccionado."),0);
  };
  BA.debugLineNum = 131;BA.debugLine="End Sub";
 Debug.ShouldStop(4);

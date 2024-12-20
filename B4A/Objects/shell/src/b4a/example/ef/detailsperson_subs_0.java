@@ -357,7 +357,7 @@ case 18:
 this.state = 19;
  BA.debugLineNum = 94;BA.debugLine="Log(\"ERROR al obtener el nombre del cliente:";
 Debug.ShouldStop(536870912);
-parent.__c.runVoidMethod ("LogImpl","31835070",RemoteObject.concat(RemoteObject.createImmutable("ERROR al obtener el nombre del cliente: "),_j2.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","51835070",RemoteObject.concat(RemoteObject.createImmutable("ERROR al obtener el nombre del cliente: "),_j2.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 19:
@@ -459,7 +459,7 @@ case 28:
 this.state = 29;
  BA.debugLineNum = 110;BA.debugLine="Log(\"ERROR al obtener el nombre de la haciend";
 Debug.ShouldStop(8192);
-parent.__c.runVoidMethod ("LogImpl","31835086",RemoteObject.concat(RemoteObject.createImmutable("ERROR al obtener el nombre de la hacienda: "),_j3.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","51835086",RemoteObject.concat(RemoteObject.createImmutable("ERROR al obtener el nombre de la hacienda: "),_j3.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 29:
@@ -501,7 +501,7 @@ case 35:
 this.state = 36;
  BA.debugLineNum = 121;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(16777216);
-parent.__c.runVoidMethod ("LogImpl","31835097",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","51835097",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 36:
@@ -584,7 +584,7 @@ detailsperson._b4xpages.runVoidMethod ("_showpage" /*RemoteObject*/ ,__ref.getFi
        catch (Exception e6) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e6.toString()); BA.debugLineNum = 202;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(512);
-detailsperson.__c.runVoidMethod ("LogImpl","32031625",BA.ObjectToString(detailsperson.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+detailsperson.__c.runVoidMethod ("LogImpl","52031625",BA.ObjectToString(detailsperson.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  };
  BA.debugLineNum = 204;BA.debugLine="End Sub";
 Debug.ShouldStop(2048);
@@ -662,7 +662,7 @@ Debug.ShouldStop(128);
 _index = BA.numberCast(int.class, _btn.runMethod(false,"getTag"));Debug.locals.put("index", _index);Debug.locals.put("index", _index);
  BA.debugLineNum = 169;BA.debugLine="Log(index)";
 Debug.ShouldStop(256);
-parent.__c.runVoidMethod ("LogImpl","31966085",BA.NumberToString(_index),0);
+parent.__c.runVoidMethod ("LogImpl","51966085",BA.NumberToString(_index),0);
  BA.debugLineNum = 171;BA.debugLine="If index >= 0 And index < CLV_Persons.Size Then";
 Debug.ShouldStop(1024);
 if (true) break;
@@ -725,7 +725,7 @@ case 12:
 this.state = 13;
  BA.debugLineNum = 183;BA.debugLine="Log(\"Error: el índice está fuera de los límites";
 Debug.ShouldStop(4194304);
-parent.__c.runVoidMethod ("LogImpl","31966099",RemoteObject.createImmutable("Error: el índice está fuera de los límites de la lista."),0);
+parent.__c.runVoidMethod ("LogImpl","51966099",RemoteObject.createImmutable("Error: el índice está fuera de los límites de la lista."),0);
  if (true) break;
 
 case 13:
@@ -741,7 +741,7 @@ this.state = 16;
 this.catchState = 0;
  BA.debugLineNum = 188;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(134217728);
-parent.__c.runVoidMethod ("LogImpl","31966104",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+parent.__c.runVoidMethod ("LogImpl","51966104",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  if (true) break;
 if (true) break;
 

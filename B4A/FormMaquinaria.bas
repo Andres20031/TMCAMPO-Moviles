@@ -426,3 +426,7 @@ Private Sub Button1_Click
 		Log("Error al agregar datos: " & LastException.Message) ' Log del error con más detalles
 	End Try
 End Sub
+
+Private Sub Label1Back_Click
+	B4XPages.ClosePage(Me)
+End Sub

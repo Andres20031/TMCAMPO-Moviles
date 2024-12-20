@@ -8,7 +8,7 @@ public class sd_xcombobox_subs_0 {
 
 public static RemoteObject  _add(RemoteObject __ref,RemoteObject _text,RemoteObject _returnvalue) throws Exception{
 try {
-		Debug.PushSubsStack("Add (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,280);
+		Debug.PushSubsStack("Add (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,280);
 if (RapidSub.canDelegate("add")) { return __ref.runUserSub(false, "sd_xcombobox","add", __ref, _text, _returnvalue);}
 RemoteObject _m = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 Debug.locals.put("Text", _text);
@@ -45,7 +45,7 @@ finally {
 		}}
 public static RemoteObject  _addall(RemoteObject __ref,RemoteObject _l) throws Exception{
 try {
-		Debug.PushSubsStack("AddAll (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,291);
+		Debug.PushSubsStack("AddAll (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,291);
 if (RapidSub.canDelegate("addall")) { return __ref.runUserSub(false, "sd_xcombobox","addall", __ref, _l);}
 RemoteObject _text = RemoteObject.createImmutable("");
 RemoteObject _m = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
@@ -95,7 +95,7 @@ finally {
 		}}
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,199);
+		Debug.PushSubsStack("Base_Resize (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,199);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "sd_xcombobox","base_resize", __ref, _width, _height);}
 Debug.locals.put("Width", _width);
 Debug.locals.put("Height", _height);
@@ -210,7 +210,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _clear(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Clear (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,308);
+		Debug.PushSubsStack("Clear (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,308);
 if (RapidSub.canDelegate("clear")) { return __ref.runUserSub(false, "sd_xcombobox","clear", __ref);}
  BA.debugLineNum = 308;BA.debugLine="Public Sub Clear";
 Debug.JustUpdateDeviceLine();
@@ -239,7 +239,7 @@ finally {
 		}}
 public static RemoteObject  _closedropdown(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("CloseDropDown (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,324);
+		Debug.PushSubsStack("CloseDropDown (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,324);
 if (RapidSub.canDelegate("closedropdown")) { return __ref.runUserSub(false, "sd_xcombobox","closedropdown", __ref);}
  BA.debugLineNum = 324;BA.debugLine="Public Sub CloseDropDown";
 Debug.JustUpdateDeviceLine();
@@ -258,7 +258,7 @@ finally {
 		}}
 public static RemoteObject  _createlabel(RemoteObject __ref,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("CreateLabel (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,702);
+		Debug.PushSubsStack("CreateLabel (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,702);
 if (RapidSub.canDelegate("createlabel")) { return __ref.runUserSub(false, "sd_xcombobox","createlabel", __ref, _eventname);}
 RemoteObject _l = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
 Debug.locals.put("EventName", _eventname);
@@ -285,7 +285,7 @@ finally {
 		}}
 public static RemoteObject  _createtextview(RemoteObject __ref,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("CreateTextView (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,708);
+		Debug.PushSubsStack("CreateTextView (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,708);
 if (RapidSub.canDelegate("createtextview")) { return __ref.runUserSub(false, "sd_xcombobox","createtextview", __ref, _eventname);}
 RemoteObject _t = RemoteObject.declareNull("anywheresoftware.b4a.objects.EditTextWrapper");
 Debug.locals.put("EventName", _eventname);
@@ -312,7 +312,7 @@ finally {
 		}}
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,84);
+		Debug.PushSubsStack("DesignerCreateView (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,84);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "sd_xcombobox","designercreateview", __ref, _base, _lbl, _props);}
 RemoteObject _can = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XCanvas");
 RemoteObject _rec = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XCanvas.B4XRect");
@@ -570,7 +570,7 @@ finally {
 		}}
 public static void  _drawlistbox(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("DrawListBox (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,650);
+		Debug.PushSubsStack("DrawListBox (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,650);
 if (RapidSub.canDelegate("drawlistbox")) { __ref.runUserSub(false, "sd_xcombobox","drawlistbox", __ref); return;}
 ResumableSub_DrawListBox rsub = new ResumableSub_DrawListBox(null,__ref);
 rsub.resume(null, null);
@@ -599,7 +599,7 @@ int limit5;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("DrawListBox (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,650);
+		Debug.PushSubsStack("DrawListBox (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,650);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -813,7 +813,7 @@ finally {
 }
 public static RemoteObject  _fixpanel(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("fixPanel (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,599);
+		Debug.PushSubsStack("fixPanel (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,599);
 if (RapidSub.canDelegate("fixpanel")) { return __ref.runUserSub(false, "sd_xcombobox","fixpanel", __ref);}
 RemoteObject _left = RemoteObject.createImmutable(0);
 RemoteObject _top = RemoteObject.createImmutable(0);
@@ -867,7 +867,7 @@ _pnl = _pnl.runMethod(false,"getParent");Debug.locals.put("pnl", _pnl);
        catch (Exception e15) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e15.toString()); BA.debugLineNum = 616;BA.debugLine="Log(LastException.Message)";
 Debug.JustUpdateDeviceLine();
-sd_xcombobox.__c.runVoidMethod ("LogImpl","955509009",sd_xcombobox.__c.runMethod(false,"LastException",__ref.getField(false, "ba")).runMethod(true,"getMessage"),0);
+sd_xcombobox.__c.runVoidMethod ("LogImpl","960227601",sd_xcombobox.__c.runMethod(false,"LastException",__ref.getField(false, "ba")).runMethod(true,"getMessage"),0);
  };
  BA.debugLineNum = 618;BA.debugLine="If xui.IsB4i Then pnl=prec";
 Debug.JustUpdateDeviceLine();
@@ -929,7 +929,7 @@ finally {
 		}}
 public static RemoteObject  _getbase(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("GetBase (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,222);
+		Debug.PushSubsStack("GetBase (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,222);
 if (RapidSub.canDelegate("getbase")) { return __ref.runUserSub(false, "sd_xcombobox","getbase", __ref);}
  BA.debugLineNum = 222;BA.debugLine="Public Sub GetBase As B4XView";
 Debug.JustUpdateDeviceLine();
@@ -948,7 +948,7 @@ finally {
 		}}
 public static RemoteObject  _getcombotext(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getComboText (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,273);
+		Debug.PushSubsStack("getComboText (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,273);
 if (RapidSub.canDelegate("getcombotext")) { return __ref.runUserSub(false, "sd_xcombobox","getcombotext", __ref);}
  BA.debugLineNum = 273;BA.debugLine="Public Sub getComboText As String";
 Debug.JustUpdateDeviceLine();
@@ -967,7 +967,7 @@ finally {
 		}}
 public static RemoteObject  _getenabled(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getEnabled (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,413);
+		Debug.PushSubsStack("getEnabled (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,413);
 if (RapidSub.canDelegate("getenabled")) { return __ref.runUserSub(false, "sd_xcombobox","getenabled", __ref);}
  BA.debugLineNum = 413;BA.debugLine="Public Sub getEnabled As Boolean";
 Debug.JustUpdateDeviceLine();
@@ -986,7 +986,7 @@ finally {
 		}}
 public static RemoteObject  _gethint(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getHint (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,233);
+		Debug.PushSubsStack("getHint (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,233);
 if (RapidSub.canDelegate("gethint")) { return __ref.runUserSub(false, "sd_xcombobox","gethint", __ref);}
  BA.debugLineNum = 233;BA.debugLine="Public Sub getHint As String";
 Debug.JustUpdateDeviceLine();
@@ -1005,7 +1005,7 @@ finally {
 		}}
 public static RemoteObject  _gethintfont(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getHintFont (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,241);
+		Debug.PushSubsStack("getHintFont (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,241);
 if (RapidSub.canDelegate("gethintfont")) { return __ref.runUserSub(false, "sd_xcombobox","gethintfont", __ref);}
  BA.debugLineNum = 241;BA.debugLine="Public Sub getHintFont As B4XFont";
 Debug.JustUpdateDeviceLine();
@@ -1024,7 +1024,7 @@ finally {
 		}}
 public static RemoteObject  _getitem(RemoteObject __ref,RemoteObject _position) throws Exception{
 try {
-		Debug.PushSubsStack("GetItem (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,332);
+		Debug.PushSubsStack("GetItem (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,332);
 if (RapidSub.canDelegate("getitem")) { return __ref.runUserSub(false, "sd_xcombobox","getitem", __ref, _position);}
 RemoteObject _ret = RemoteObject.createImmutable("");
 Debug.locals.put("Position", _position);
@@ -1055,7 +1055,7 @@ finally {
 		}}
 public static RemoteObject  _getselectedindex(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSelectedIndex (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,352);
+		Debug.PushSubsStack("getSelectedIndex (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,352);
 if (RapidSub.canDelegate("getselectedindex")) { return __ref.runUserSub(false, "sd_xcombobox","getselectedindex", __ref);}
  BA.debugLineNum = 352;BA.debugLine="Public Sub getSelectedIndex As Int";
 Debug.JustUpdateDeviceLine();
@@ -1074,7 +1074,7 @@ finally {
 		}}
 public static RemoteObject  _getselectedtextitem(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSelectedTextItem (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,375);
+		Debug.PushSubsStack("getSelectedTextItem (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,375);
 if (RapidSub.canDelegate("getselectedtextitem")) { return __ref.runUserSub(false, "sd_xcombobox","getselectedtextitem", __ref);}
  BA.debugLineNum = 375;BA.debugLine="Public Sub getSelectedTextItem As String";
 Debug.JustUpdateDeviceLine();
@@ -1093,7 +1093,7 @@ finally {
 		}}
 public static RemoteObject  _getselectedvalueitem(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSelectedValueItem (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,394);
+		Debug.PushSubsStack("getSelectedValueItem (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,394);
 if (RapidSub.canDelegate("getselectedvalueitem")) { return __ref.runUserSub(false, "sd_xcombobox","getselectedvalueitem", __ref);}
  BA.debugLineNum = 394;BA.debugLine="Public Sub getSelectedValueItem As Object";
 Debug.JustUpdateDeviceLine();
@@ -1112,7 +1112,7 @@ finally {
 		}}
 public static RemoteObject  _getselectionlength(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSelectionLength (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,265);
+		Debug.PushSubsStack("getSelectionLength (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,265);
 if (RapidSub.canDelegate("getselectionlength")) { return __ref.runUserSub(false, "sd_xcombobox","getselectionlength", __ref);}
  BA.debugLineNum = 265;BA.debugLine="Public Sub getSelectionLength As Int";
 Debug.JustUpdateDeviceLine();
@@ -1131,7 +1131,7 @@ finally {
 		}}
 public static RemoteObject  _getselectionstart(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSelectionStart (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,261);
+		Debug.PushSubsStack("getSelectionStart (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,261);
 if (RapidSub.canDelegate("getselectionstart")) { return __ref.runUserSub(false, "sd_xcombobox","getselectionstart", __ref);}
  BA.debugLineNum = 261;BA.debugLine="Public Sub getSelectionStart As Int";
 Debug.JustUpdateDeviceLine();
@@ -1150,7 +1150,7 @@ finally {
 		}}
 public static RemoteObject  _gettextfont(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getTextFont (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,257);
+		Debug.PushSubsStack("getTextFont (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,257);
 if (RapidSub.canDelegate("gettextfont")) { return __ref.runUserSub(false, "sd_xcombobox","gettextfont", __ref);}
  BA.debugLineNum = 257;BA.debugLine="Public Sub getTextFont As B4XFont";
 Debug.JustUpdateDeviceLine();
@@ -1169,7 +1169,7 @@ finally {
 		}}
 public static RemoteObject  _getvalue(RemoteObject __ref,RemoteObject _position) throws Exception{
 try {
-		Debug.PushSubsStack("GetValue (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,342);
+		Debug.PushSubsStack("GetValue (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,342);
 if (RapidSub.canDelegate("getvalue")) { return __ref.runUserSub(false, "sd_xcombobox","getvalue", __ref, _position);}
 RemoteObject _ret = RemoteObject.declareNull("Object");
 Debug.locals.put("Position", _position);
@@ -1204,7 +1204,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,50);
+		Debug.PushSubsStack("Initialize (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,50);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "sd_xcombobox","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 RemoteObject _sc = RemoteObject.declareNull("anywheresoftware.b4a.objects.ScrollViewWrapper");
@@ -1264,7 +1264,7 @@ finally {
 		}}
 public static RemoteObject  _isdropdownopen(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("isDropDownOpen (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,328);
+		Debug.PushSubsStack("isDropDownOpen (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,328);
 if (RapidSub.canDelegate("isdropdownopen")) { return __ref.runUserSub(false, "sd_xcombobox","isdropdownopen", __ref);}
  BA.debugLineNum = 328;BA.debugLine="Public Sub isDropDownOpen As Boolean";
 Debug.JustUpdateDeviceLine();
@@ -1283,7 +1283,7 @@ finally {
 		}}
 public static RemoteObject  _kk_heightchanged(RemoteObject __ref,RemoteObject _newheight,RemoteObject _oldheight) throws Exception{
 try {
-		Debug.PushSubsStack("kk_HeightChanged (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,544);
+		Debug.PushSubsStack("kk_HeightChanged (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,544);
 if (RapidSub.canDelegate("kk_heightchanged")) { return __ref.runUserSub(false, "sd_xcombobox","kk_heightchanged", __ref, _newheight, _oldheight);}
 Debug.locals.put("NewHeight", _newheight);
 Debug.locals.put("OldHeight", _oldheight);
@@ -1317,7 +1317,7 @@ finally {
 		}}
 public static void  _labselect_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("LabSelect_Click (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,431);
+		Debug.PushSubsStack("LabSelect_Click (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,431);
 if (RapidSub.canDelegate("labselect_click")) { __ref.runUserSub(false, "sd_xcombobox","labselect_click", __ref); return;}
 ResumableSub_LabSelect_Click rsub = new ResumableSub_LabSelect_Click(null,__ref);
 rsub.resume(null, null);
@@ -1342,7 +1342,7 @@ RemoteObject _index = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("LabSelect_Click (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,431);
+		Debug.PushSubsStack("LabSelect_Click (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,431);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1413,7 +1413,7 @@ finally {
 }
 public static RemoteObject  _mylabel_action(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("MyLabel_Action (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,462);
+		Debug.PushSubsStack("MyLabel_Action (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,462);
 if (RapidSub.canDelegate("mylabel_action")) { return __ref.runUserSub(false, "sd_xcombobox","mylabel_action", __ref);}
  BA.debugLineNum = 462;BA.debugLine="Private Sub MyLabel_Action";
 Debug.JustUpdateDeviceLine();
@@ -1432,7 +1432,7 @@ finally {
 		}}
 public static RemoteObject  _mylabel_beginedit(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("MyLabel_BeginEdit (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,458);
+		Debug.PushSubsStack("MyLabel_BeginEdit (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,458);
 if (RapidSub.canDelegate("mylabel_beginedit")) { return __ref.runUserSub(false, "sd_xcombobox","mylabel_beginedit", __ref);}
  BA.debugLineNum = 458;BA.debugLine="Private Sub MyLabel_BeginEdit";
 Debug.JustUpdateDeviceLine();
@@ -1451,7 +1451,7 @@ finally {
 		}}
 public static RemoteObject  _mylabel_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("MyLabel_Click (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,441);
+		Debug.PushSubsStack("MyLabel_Click (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,441);
 if (RapidSub.canDelegate("mylabel_click")) { return __ref.runUserSub(false, "sd_xcombobox","mylabel_click", __ref);}
  BA.debugLineNum = 441;BA.debugLine="Private Sub MyLabel_Click";
 Debug.JustUpdateDeviceLine();
@@ -1473,7 +1473,7 @@ finally {
 		}}
 public static RemoteObject  _mylabel_endedit(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("MyLabel_EndEdit (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,472);
+		Debug.PushSubsStack("MyLabel_EndEdit (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,472);
 if (RapidSub.canDelegate("mylabel_endedit")) { return __ref.runUserSub(false, "sd_xcombobox","mylabel_endedit", __ref);}
  BA.debugLineNum = 472;BA.debugLine="Private Sub MyLabel_EndEdit";
 Debug.JustUpdateDeviceLine();
@@ -1495,7 +1495,7 @@ finally {
 		}}
 public static RemoteObject  _mylabel_enterpressed(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("MyLabel_EnterPressed (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,467);
+		Debug.PushSubsStack("MyLabel_EnterPressed (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,467);
 if (RapidSub.canDelegate("mylabel_enterpressed")) { return __ref.runUserSub(false, "sd_xcombobox","mylabel_enterpressed", __ref);}
  BA.debugLineNum = 467;BA.debugLine="Private Sub MyLabel_EnterPressed";
 Debug.JustUpdateDeviceLine();
@@ -1514,7 +1514,7 @@ finally {
 		}}
 public static RemoteObject  _mylabel_focuschanged(RemoteObject __ref,RemoteObject _hasfocus) throws Exception{
 try {
-		Debug.PushSubsStack("MyLabel_FocusChanged (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,446);
+		Debug.PushSubsStack("MyLabel_FocusChanged (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,446);
 if (RapidSub.canDelegate("mylabel_focuschanged")) { return __ref.runUserSub(false, "sd_xcombobox","mylabel_focuschanged", __ref, _hasfocus);}
 Debug.locals.put("HasFocus", _hasfocus);
  BA.debugLineNum = 446;BA.debugLine="Private Sub MyLabel_FocusChanged (HasFocus As Bool";
@@ -1545,7 +1545,7 @@ finally {
 		}}
 public static RemoteObject  _mylabel_textchanged(RemoteObject __ref,RemoteObject _oldtext,RemoteObject _newtext) throws Exception{
 try {
-		Debug.PushSubsStack("MyLabel_TextChanged (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,493);
+		Debug.PushSubsStack("MyLabel_TextChanged (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,493);
 if (RapidSub.canDelegate("mylabel_textchanged")) { return __ref.runUserSub(false, "sd_xcombobox","mylabel_textchanged", __ref, _oldtext, _newtext);}
 int _i = 0;
 RemoteObject _v = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
@@ -1673,7 +1673,7 @@ finally {
 		}}
 public static RemoteObject  _opendropdown(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("OpenDropDown (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,316);
+		Debug.PushSubsStack("OpenDropDown (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,316);
 if (RapidSub.canDelegate("opendropdown")) { return __ref.runUserSub(false, "sd_xcombobox","opendropdown", __ref);}
  BA.debugLineNum = 316;BA.debugLine="Public Sub OpenDropDown";
 Debug.JustUpdateDeviceLine();
@@ -1695,7 +1695,7 @@ finally {
 		}}
 public static RemoteObject  _outlistpanel_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("outListPanel_Click (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,425);
+		Debug.PushSubsStack("outListPanel_Click (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,425);
 if (RapidSub.canDelegate("outlistpanel_click")) { return __ref.runUserSub(false, "sd_xcombobox","outlistpanel_click", __ref);}
  BA.debugLineNum = 425;BA.debugLine="Private Sub outListPanel_Click";
 Debug.JustUpdateDeviceLine();
@@ -1721,7 +1721,7 @@ finally {
 		}}
 public static void  _selecteditem(RemoteObject __ref,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SelectedItem (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,479);
+		Debug.PushSubsStack("SelectedItem (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,479);
 if (RapidSub.canDelegate("selecteditem")) { __ref.runUserSub(false, "sd_xcombobox","selecteditem", __ref, _value); return;}
 ResumableSub_SelectedItem rsub = new ResumableSub_SelectedItem(null,__ref,_value);
 rsub.resume(null, null);
@@ -1746,7 +1746,7 @@ RemoteObject _value;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("SelectedItem (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,479);
+		Debug.PushSubsStack("SelectedItem (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,479);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1846,7 +1846,7 @@ finally {
 }
 public static RemoteObject  _setenabled(RemoteObject __ref,RemoteObject _b) throws Exception{
 try {
-		Debug.PushSubsStack("setEnabled (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,417);
+		Debug.PushSubsStack("setEnabled (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,417);
 if (RapidSub.canDelegate("setenabled")) { return __ref.runUserSub(false, "sd_xcombobox","setenabled", __ref, _b);}
 Debug.locals.put("B", _b);
  BA.debugLineNum = 417;BA.debugLine="Public Sub setEnabled(B As Boolean)";
@@ -1866,7 +1866,7 @@ finally {
 		}}
 public static RemoteObject  _sethint(RemoteObject __ref,RemoteObject _text) throws Exception{
 try {
-		Debug.PushSubsStack("setHint (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,229);
+		Debug.PushSubsStack("setHint (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,229);
 if (RapidSub.canDelegate("sethint")) { return __ref.runUserSub(false, "sd_xcombobox","sethint", __ref, _text);}
 Debug.locals.put("Text", _text);
  BA.debugLineNum = 229;BA.debugLine="Public Sub setHint(Text As String)";
@@ -1886,7 +1886,7 @@ finally {
 		}}
 public static RemoteObject  _sethintfont(RemoteObject __ref,RemoteObject _fnt) throws Exception{
 try {
-		Debug.PushSubsStack("setHintFont (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,237);
+		Debug.PushSubsStack("setHintFont (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,237);
 if (RapidSub.canDelegate("sethintfont")) { return __ref.runUserSub(false, "sd_xcombobox","sethintfont", __ref, _fnt);}
 Debug.locals.put("Fnt", _fnt);
  BA.debugLineNum = 237;BA.debugLine="Public Sub setHintFont(Fnt As B4XFont)";
@@ -1906,7 +1906,7 @@ finally {
 		}}
 public static RemoteObject  _setselectedindex(RemoteObject __ref,RemoteObject _position) throws Exception{
 try {
-		Debug.PushSubsStack("setSelectedIndex (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,356);
+		Debug.PushSubsStack("setSelectedIndex (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,356);
 if (RapidSub.canDelegate("setselectedindex")) { return __ref.runUserSub(false, "sd_xcombobox","setselectedindex", __ref, _position);}
 RemoteObject _pos = RemoteObject.createImmutable(0);
 Debug.locals.put("Position", _position);
@@ -1948,7 +1948,7 @@ finally {
 		}}
 public static RemoteObject  _setselectedtextitem(RemoteObject __ref,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("setSelectedTextItem (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,379);
+		Debug.PushSubsStack("setSelectedTextItem (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,379);
 if (RapidSub.canDelegate("setselectedtextitem")) { return __ref.runUserSub(false, "sd_xcombobox","setselectedtextitem", __ref, _value);}
 int _i = 0;
 RemoteObject _v = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
@@ -2003,7 +2003,7 @@ finally {
 		}}
 public static RemoteObject  _setselectedvalueitem(RemoteObject __ref,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("setSelectedValueItem (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,398);
+		Debug.PushSubsStack("setSelectedValueItem (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,398);
 if (RapidSub.canDelegate("setselectedvalueitem")) { return __ref.runUserSub(false, "sd_xcombobox","setselectedvalueitem", __ref, _value);}
 int _i = 0;
 RemoteObject _v = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
@@ -2058,7 +2058,7 @@ finally {
 		}}
 public static RemoteObject  _setselection(RemoteObject __ref,RemoteObject _start,RemoteObject _length) throws Exception{
 try {
-		Debug.PushSubsStack("SetSelection (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,269);
+		Debug.PushSubsStack("SetSelection (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,269);
 if (RapidSub.canDelegate("setselection")) { return __ref.runUserSub(false, "sd_xcombobox","setselection", __ref, _start, _length);}
 Debug.locals.put("Start", _start);
 Debug.locals.put("Length", _length);
@@ -2079,7 +2079,7 @@ finally {
 		}}
 public static RemoteObject  _settextfont(RemoteObject __ref,RemoteObject _fnt) throws Exception{
 try {
-		Debug.PushSubsStack("setTextFont (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,253);
+		Debug.PushSubsStack("setTextFont (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,253);
 if (RapidSub.canDelegate("settextfont")) { return __ref.runUserSub(false, "sd_xcombobox","settextfont", __ref, _fnt);}
 Debug.locals.put("Fnt", _fnt);
  BA.debugLineNum = 253;BA.debugLine="Public Sub setTextFont(Fnt As B4XFont)";
@@ -2099,7 +2099,7 @@ finally {
 		}}
 public static RemoteObject  _size(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Size (sd_xcombobox) ","sd_xcombobox",31,__ref.getField(false, "ba"),__ref,304);
+		Debug.PushSubsStack("Size (sd_xcombobox) ","sd_xcombobox",33,__ref.getField(false, "ba"),__ref,304);
 if (RapidSub.canDelegate("size")) { return __ref.runUserSub(false, "sd_xcombobox","size", __ref);}
  BA.debugLineNum = 304;BA.debugLine="public Sub Size As Int";
 Debug.JustUpdateDeviceLine();

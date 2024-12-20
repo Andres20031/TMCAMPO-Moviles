@@ -175,7 +175,7 @@ Debug.ShouldStop(1024);
 __ref.getField(false,"_button1agendar" /*RemoteObject*/ ).setObject (parent.__c.runMethod(false,"Sender",__ref.getField(false, "ba")));
  BA.debugLineNum = 236;BA.debugLine="Log(Button1agendar.Tag)";
 Debug.ShouldStop(2048);
-parent.__c.runVoidMethod ("LogImpl","37536642",BA.ObjectToString(__ref.getField(false,"_button1agendar" /*RemoteObject*/ ).runMethod(false,"getTag")),0);
+parent.__c.runVoidMethod ("LogImpl","57536642",BA.ObjectToString(__ref.getField(false,"_button1agendar" /*RemoteObject*/ ).runMethod(false,"getTag")),0);
  BA.debugLineNum = 238;BA.debugLine="Dim	id As Int=Button1agendar.Tag";
 Debug.ShouldStop(8192);
 _id = BA.numberCast(int.class, __ref.getField(false,"_button1agendar" /*RemoteObject*/ ).runMethod(false,"getTag"));Debug.locals.put("id", _id);Debug.locals.put("id", _id);
@@ -233,19 +233,19 @@ case 3:
 this.state = 4;
  BA.debugLineNum = 249;BA.debugLine="Log(\"DADOS:\")";
 Debug.ShouldStop(16777216);
-parent.__c.runVoidMethod ("LogImpl","37536655",RemoteObject.createImmutable("DADOS:"),0);
+parent.__c.runVoidMethod ("LogImpl","57536655",RemoteObject.createImmutable("DADOS:"),0);
  BA.debugLineNum = 251;BA.debugLine="Log(Label3Inicial.Text)";
 Debug.ShouldStop(67108864);
-parent.__c.runVoidMethod ("LogImpl","37536657",__ref.getField(false,"_label3inicial" /*RemoteObject*/ ).runMethod(true,"getText"),0);
+parent.__c.runVoidMethod ("LogImpl","57536657",__ref.getField(false,"_label3inicial" /*RemoteObject*/ ).runMethod(true,"getText"),0);
  BA.debugLineNum = 252;BA.debugLine="Log(Label4Final.Text)";
 Debug.ShouldStop(134217728);
-parent.__c.runVoidMethod ("LogImpl","37536658",__ref.getField(false,"_label4final" /*RemoteObject*/ ).runMethod(true,"getText"),0);
+parent.__c.runVoidMethod ("LogImpl","57536658",__ref.getField(false,"_label4final" /*RemoteObject*/ ).runMethod(true,"getText"),0);
  BA.debugLineNum = 253;BA.debugLine="Log(EditText1Area.Text)";
 Debug.ShouldStop(268435456);
-parent.__c.runVoidMethod ("LogImpl","37536659",__ref.getField(false,"_edittext1area" /*RemoteObject*/ ).runMethod(true,"getText"),0);
+parent.__c.runVoidMethod ("LogImpl","57536659",__ref.getField(false,"_edittext1area" /*RemoteObject*/ ).runMethod(true,"getText"),0);
  BA.debugLineNum = 254;BA.debugLine="Log(\"=======================\")";
 Debug.ShouldStop(536870912);
-parent.__c.runVoidMethod ("LogImpl","37536660",RemoteObject.createImmutable("======================="),0);
+parent.__c.runVoidMethod ("LogImpl","57536660",RemoteObject.createImmutable("======================="),0);
  if (true) break;
 
 case 4:
@@ -354,7 +354,7 @@ Debug.ShouldStop(262144);
 __ref.getField(false,"_button1check" /*RemoteObject*/ ).setObject (parent.__c.runMethod(false,"Sender",__ref.getField(false, "ba")));
  BA.debugLineNum = 212;BA.debugLine="Log(Button1Check.Tag)";
 Debug.ShouldStop(524288);
-parent.__c.runVoidMethod ("LogImpl","37471106",BA.ObjectToString(__ref.getField(false,"_button1check" /*RemoteObject*/ ).runMethod(false,"getTag")),0);
+parent.__c.runVoidMethod ("LogImpl","57471106",BA.ObjectToString(__ref.getField(false,"_button1check" /*RemoteObject*/ ).runMethod(false,"getTag")),0);
  BA.debugLineNum = 213;BA.debugLine="Dim	id As Int=Button1Check.Tag";
 Debug.ShouldStop(1048576);
 _id = BA.numberCast(int.class, __ref.getField(false,"_button1check" /*RemoteObject*/ ).runMethod(false,"getTag"));Debug.locals.put("id", _id);Debug.locals.put("id", _id);
@@ -409,16 +409,16 @@ case 3:
 this.state = 4;
  BA.debugLineNum = 224;BA.debugLine="Log(\"DADOS:\")";
 Debug.ShouldStop(-2147483648);
-parent.__c.runVoidMethod ("LogImpl","37471118",RemoteObject.createImmutable("DADOS:"),0);
+parent.__c.runVoidMethod ("LogImpl","57471118",RemoteObject.createImmutable("DADOS:"),0);
  BA.debugLineNum = 226;BA.debugLine="Log(Label3Inicial.Text)";
 Debug.ShouldStop(2);
-parent.__c.runVoidMethod ("LogImpl","37471120",__ref.getField(false,"_label3inicial" /*RemoteObject*/ ).runMethod(true,"getText"),0);
+parent.__c.runVoidMethod ("LogImpl","57471120",__ref.getField(false,"_label3inicial" /*RemoteObject*/ ).runMethod(true,"getText"),0);
  BA.debugLineNum = 227;BA.debugLine="Log(Label4Final.Text)";
 Debug.ShouldStop(4);
-parent.__c.runVoidMethod ("LogImpl","37471121",__ref.getField(false,"_label4final" /*RemoteObject*/ ).runMethod(true,"getText"),0);
+parent.__c.runVoidMethod ("LogImpl","57471121",__ref.getField(false,"_label4final" /*RemoteObject*/ ).runMethod(true,"getText"),0);
  BA.debugLineNum = 229;BA.debugLine="Log(\"=======================\")";
 Debug.ShouldStop(16);
-parent.__c.runVoidMethod ("LogImpl","37471123",RemoteObject.createImmutable("======================="),0);
+parent.__c.runVoidMethod ("LogImpl","57471123",RemoteObject.createImmutable("======================="),0);
  if (true) break;
 
 case 4:
@@ -485,7 +485,7 @@ Debug.ShouldStop(2048);
 __ref.getField(false,"_button2del" /*RemoteObject*/ ).setObject (parent.__c.runMethod(false,"Sender",__ref.getField(false, "ba")));
  BA.debugLineNum = 173;BA.debugLine="Log(Button2Del.Tag)";
 Debug.ShouldStop(4096);
-parent.__c.runVoidMethod ("LogImpl","37405570",BA.ObjectToString(__ref.getField(false,"_button2del" /*RemoteObject*/ ).runMethod(false,"getTag")),0);
+parent.__c.runVoidMethod ("LogImpl","57405570",BA.ObjectToString(__ref.getField(false,"_button2del" /*RemoteObject*/ ).runMethod(false,"getTag")),0);
  BA.debugLineNum = 174;BA.debugLine="Dim id As Int=Button2Del.Tag";
 Debug.ShouldStop(8192);
 _id = BA.numberCast(int.class, __ref.getField(false,"_button2del" /*RemoteObject*/ ).runMethod(false,"getTag"));Debug.locals.put("id", _id);Debug.locals.put("id", _id);
@@ -546,13 +546,13 @@ case 3:
 this.state = 4;
  BA.debugLineNum = 186;BA.debugLine="Log(\"DADOS:\")";
 Debug.ShouldStop(33554432);
-parent.__c.runVoidMethod ("LogImpl","37405583",RemoteObject.createImmutable("DADOS:"),0);
+parent.__c.runVoidMethod ("LogImpl","57405583",RemoteObject.createImmutable("DADOS:"),0);
  BA.debugLineNum = 187;BA.debugLine="Log(EditText1TextArea.Text)";
 Debug.ShouldStop(67108864);
-parent.__c.runVoidMethod ("LogImpl","37405584",__ref.getField(false,"_edittext1textarea" /*RemoteObject*/ ).runMethod(true,"getText"),0);
+parent.__c.runVoidMethod ("LogImpl","57405584",__ref.getField(false,"_edittext1textarea" /*RemoteObject*/ ).runMethod(true,"getText"),0);
  BA.debugLineNum = 188;BA.debugLine="Log(\"=======================\")";
 Debug.ShouldStop(134217728);
-parent.__c.runVoidMethod ("LogImpl","37405585",RemoteObject.createImmutable("======================="),0);
+parent.__c.runVoidMethod ("LogImpl","57405585",RemoteObject.createImmutable("======================="),0);
  BA.debugLineNum = 189;BA.debugLine="Starter.SQL1.ExecNonQuery2(\"DELETE from dados wh";
 Debug.ShouldStop(268435456);
 parent._starter._sql1 /*RemoteObject*/ .runVoidMethod ("ExecNonQuery2",(Object)(BA.ObjectToString("DELETE from dados where Consecutivo=?")),(Object)(parent.__c.runMethod(false, "ArrayToList", (Object)(RemoteObject.createNewArray("Object",new int[] {1},new Object[] {(_id)})))));
@@ -683,7 +683,7 @@ Debug.locals.put("Index", _index);
 Debug.locals.put("Value", _value);
  BA.debugLineNum = 310;BA.debugLine="Log(Value)";
 Debug.ShouldStop(2097152);
-parent.__c.runVoidMethod ("LogImpl","38060929",BA.ObjectToString(_value),0);
+parent.__c.runVoidMethod ("LogImpl","58060929",BA.ObjectToString(_value),0);
  BA.debugLineNum = 311;BA.debugLine="B4XPages.ClosePage(B4XPages.GetPage(\"form\"))";
 Debug.ShouldStop(4194304);
 parent._b4xpages.runVoidMethod ("_closepage" /*RemoteObject*/ ,__ref.getField(false, "ba"),(Object)(parent._b4xpages.runMethod(false,"_getpage" /*RemoteObject*/ ,__ref.getField(false, "ba"),(Object)(RemoteObject.createImmutable("form")))));
@@ -946,6 +946,25 @@ catch (Exception e) {
 finally {
 			Debug.PopSubsStack();
 		}}
+public static RemoteObject  _label1back_click(RemoteObject __ref) throws Exception{
+try {
+		Debug.PushSubsStack("Label1Back_Click (listdados) ","listdados",8,__ref.getField(false, "ba"),__ref,330);
+if (RapidSub.canDelegate("label1back_click")) { return __ref.runUserSub(false, "listdados","label1back_click", __ref);}
+ BA.debugLineNum = 330;BA.debugLine="Private Sub Label1Back_Click";
+Debug.ShouldStop(512);
+ BA.debugLineNum = 331;BA.debugLine="B4XPages.ClosePage(Me)";
+Debug.ShouldStop(1024);
+listdados._b4xpages.runVoidMethod ("_closepage" /*RemoteObject*/ ,__ref.getField(false, "ba"),(Object)(__ref));
+ BA.debugLineNum = 332;BA.debugLine="End Sub";
+Debug.ShouldStop(2048);
+return RemoteObject.createImmutable("");
+}
+catch (Exception e) {
+			throw Debug.ErrorCaught(e);
+		} 
+finally {
+			Debug.PopSubsStack();
+		}}
 public static RemoteObject  _label2_click(RemoteObject __ref) throws Exception{
 try {
 		Debug.PushSubsStack("Label2_Click (listdados) ","listdados",8,__ref.getField(false, "ba"),__ref,318);
@@ -1043,10 +1062,10 @@ Debug.ShouldStop(2048);
 _cursor.runMethod(true,"setPosition",BA.numberCast(int.class, _i));
  BA.debugLineNum = 77;BA.debugLine="Log(\"=====Maquinas #\"&i&\"=====\")";
 Debug.ShouldStop(4096);
-listdados.__c.runVoidMethod ("LogImpl","37143432",RemoteObject.concat(RemoteObject.createImmutable("=====Maquinas #"),RemoteObject.createImmutable(_i),RemoteObject.createImmutable("=====")),0);
+listdados.__c.runVoidMethod ("LogImpl","57143432",RemoteObject.concat(RemoteObject.createImmutable("=====Maquinas #"),RemoteObject.createImmutable(_i),RemoteObject.createImmutable("=====")),0);
  BA.debugLineNum = 78;BA.debugLine="Log(Cursor.GetString(\"id\"))";
 Debug.ShouldStop(8192);
-listdados.__c.runVoidMethod ("LogImpl","37143433",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("id"))),0);
+listdados.__c.runVoidMethod ("LogImpl","57143433",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("id"))),0);
  BA.debugLineNum = 80;BA.debugLine="Dim Hacienda As String=Cursor.GetString(\"haciend";
 Debug.ShouldStop(32768);
 _hacienda = _cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("hacienda")));Debug.locals.put("Hacienda", _hacienda);Debug.locals.put("Hacienda", _hacienda);
@@ -1064,7 +1083,7 @@ __ref.getField(false,"_clv_persons" /*RemoteObject*/ ).runVoidMethod ("_add",Rem
 ;
  BA.debugLineNum = 85;BA.debugLine="Log(i)";
 Debug.ShouldStop(1048576);
-listdados.__c.runVoidMethod ("LogImpl","37143440",BA.NumberToString(_i),0);
+listdados.__c.runVoidMethod ("LogImpl","57143440",BA.NumberToString(_i),0);
  BA.debugLineNum = 86;BA.debugLine="If i=0 Then";
 Debug.ShouldStop(2097152);
 if (RemoteObject.solveBoolean("=",RemoteObject.createImmutable(_i),BA.numberCast(double.class, 0))) { 
@@ -1125,7 +1144,7 @@ Debug.ShouldStop(2097152);
 _cursor.runMethod(true,"setPosition",BA.numberCast(int.class, _i));
  BA.debugLineNum = 55;BA.debugLine="Log(Cursor.GetString(\"Consecutivo\"))";
 Debug.ShouldStop(4194304);
-listdados.__c.runVoidMethod ("LogImpl","37077894",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("Consecutivo"))),0);
+listdados.__c.runVoidMethod ("LogImpl","57077894",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("Consecutivo"))),0);
  BA.debugLineNum = 57;BA.debugLine="CLV_Persons.Add(CreateItem(Cursor.GetString(\"Con";
 Debug.ShouldStop(16777216);
 __ref.getField(false,"_clv_persons" /*RemoteObject*/ ).runVoidMethod ("_add",RemoteObject.declareNull("anywheresoftware.b4a.AbsObjectWrapper").runMethod(false, "ConvertToWrapper", RemoteObject.createNew("anywheresoftware.b4a.objects.B4XViewWrapper"), __ref.runClassMethod (b4a.example.ef.listdados.class, "_createitem" /*RemoteObject*/ ,(Object)(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("Consecutivo")))),(Object)(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("Fecha_programa")))),(Object)(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("NIT")))),(Object)(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("Hacienda")))),(Object)(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("Lote")))),(Object)(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("labor"))))).getObject()),(Object)(RemoteObject.createImmutable((_i))));

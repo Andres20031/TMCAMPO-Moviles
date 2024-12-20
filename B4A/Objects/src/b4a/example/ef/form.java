@@ -78,6 +78,7 @@ public b4a.example.ef.starter _starter = null;
 public b4a.example.ef.b4xcollections _b4xcollections = null;
 public b4a.example.ef.b4xpages _b4xpages = null;
 public b4a.example.ef.httputils2service _httputils2service = null;
+public b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public Object  _initialize(b4a.example.ef.form __ref,anywheresoftware.b4a.BA _ba) throws Exception{
 __ref = this;
 innerInitialize(_ba);
@@ -249,7 +250,7 @@ RDebugUtils.currentLine=2555931;
 __ref._haciendaupdate /*String*/  = _cursor.GetString("hacienda");
 RDebugUtils.currentLine=2555933;
  //BA.debugLineNum = 2555933;BA.debugLine="Log(\"NIT: \"&nitUpdate)";
-parent.__c.LogImpl("32555933","NIT: "+__ref._nitupdate /*String*/ ,0);
+parent.__c.LogImpl("52555933","NIT: "+__ref._nitupdate /*String*/ ,0);
  if (true) break;
 if (true) break;
 
@@ -264,7 +265,7 @@ case 12:
 this.state = 13;
 RDebugUtils.currentLine=2555936;
  //BA.debugLineNum = 2555936;BA.debugLine="Log(\"NIT: \"&nit)";
-parent.__c.LogImpl("32555936","NIT: "+__ref._nit /*String*/ ,0);
+parent.__c.LogImpl("52555936","NIT: "+__ref._nit /*String*/ ,0);
  if (true) break;
 
 case 13:
@@ -303,7 +304,7 @@ this.state = 16;
 this.catchState = 0;
 RDebugUtils.currentLine=2555950;
  //BA.debugLineNum = 2555950;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("32555950",BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("52555950",BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 if (true) break;
 
@@ -570,7 +571,7 @@ case 13:
 this.state = 16;
 RDebugUtils.currentLine=4128798;
  //BA.debugLineNum = 4128798;BA.debugLine="Log(\"NIT: \"&nitUpdate)";
-parent.__c.LogImpl("34128798","NIT: "+__ref._nitupdate /*String*/ ,0);
+parent.__c.LogImpl("54128798","NIT: "+__ref._nitupdate /*String*/ ,0);
 RDebugUtils.currentLine=4128801;
  //BA.debugLineNum = 4128801;BA.debugLine="SD_xComboBoxNit.Add(nitUpdate,INTRegistros)";
 __ref._sd_xcomboboxnit /*b4a.example.ef.sd_xcombobox*/ ._add /*String*/ (null,__ref._nitupdate /*String*/ ,(Object)(_intregistros));
@@ -605,7 +606,7 @@ case 19:
 this.state = 20;
 RDebugUtils.currentLine=4128810;
  //BA.debugLineNum = 4128810;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("34128810","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("54128810","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 20:
@@ -809,10 +810,10 @@ this.state = 11;
 ;
 RDebugUtils.currentLine=4194330;
  //BA.debugLineNum = 4194330;BA.debugLine="Log(\"cadena: \"&cadena)";
-parent.__c.LogImpl("34194330","cadena: "+_cadena,0);
+parent.__c.LogImpl("54194330","cadena: "+_cadena,0);
 RDebugUtils.currentLine=4194331;
  //BA.debugLineNum = 4194331;BA.debugLine="Log(\"hacienda: \"&haciendaUpdate)";
-parent.__c.LogImpl("34194331","hacienda: "+__ref._haciendaupdate /*String*/ ,0);
+parent.__c.LogImpl("54194331","hacienda: "+__ref._haciendaupdate /*String*/ ,0);
 RDebugUtils.currentLine=4194332;
  //BA.debugLineNum = 4194332;BA.debugLine="If cadena.Contains(haciendaUpdate) Then";
 if (true) break;
@@ -875,7 +876,7 @@ case 19:
 this.state = 20;
 RDebugUtils.currentLine=4194346;
  //BA.debugLineNum = 4194346;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("34194346","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("54194346","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 20:
@@ -1098,7 +1099,7 @@ case 13:
 this.state = 14;
 RDebugUtils.currentLine=4522013;
  //BA.debugLineNum = 4522013;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("34522013","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("54522013","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 14:
@@ -1321,7 +1322,7 @@ case 13:
 this.state = 14;
 RDebugUtils.currentLine=4587548;
  //BA.debugLineNum = 4587548;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("34587548","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("54587548","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 14:
@@ -1387,13 +1388,13 @@ RDebugUtils.currentLine=2621452;
 _id = (int)(Double.parseDouble(_cursor.GetString("id")));
 RDebugUtils.currentLine=2621453;
  //BA.debugLineNum = 2621453;BA.debugLine="Log(Cursor.GetString(\"id\"))";
-__c.LogImpl("32621453",_cursor.GetString("id"),0);
+__c.LogImpl("52621453",_cursor.GetString("id"),0);
 RDebugUtils.currentLine=2621454;
  //BA.debugLineNum = 2621454;BA.debugLine="Log(Cursor.GetString(\"name\"))";
-__c.LogImpl("32621454",_cursor.GetString("name"),0);
+__c.LogImpl("52621454",_cursor.GetString("name"),0);
 RDebugUtils.currentLine=2621455;
  //BA.debugLineNum = 2621455;BA.debugLine="Log(Cursor.GetString(\"qnt\"))";
-__c.LogImpl("32621455",_cursor.GetString("qnt"),0);
+__c.LogImpl("52621455",_cursor.GetString("qnt"),0);
 RDebugUtils.currentLine=2621456;
  //BA.debugLineNum = 2621456;BA.debugLine="CustomListView1Geral.Add(CreateItemInsumos(i+1,i";
 __ref._customlistview1geral /*b4a.example3.customlistview*/ ._add((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(__ref._createiteminsumos /*anywheresoftware.b4a.objects.PanelWrapper*/ (null,(int) (_i+1),_id,_cursor.GetString("name"),_cursor.GetString("qnt")).getObject())),(Object)("insumo"));
@@ -1478,7 +1479,7 @@ __ref._listinsumos /*String*/ (null);
        catch (Exception e7) {
 			ba.setLastException(e7);RDebugUtils.currentLine=4980744;
  //BA.debugLineNum = 4980744;BA.debugLine="Log(LastException)";
-__c.LogImpl("34980744",BA.ObjectToString(__c.LastException(ba)),0);
+__c.LogImpl("54980744",BA.ObjectToString(__c.LastException(ba)),0);
  };
 RDebugUtils.currentLine=4980747;
  //BA.debugLineNum = 4980747;BA.debugLine="End Sub";
@@ -1861,7 +1862,7 @@ RDebugUtils.currentLine=2818057;
 _cursor.setPosition(_i);
 RDebugUtils.currentLine=2818058;
  //BA.debugLineNum = 2818058;BA.debugLine="Log(Cursor.GetString(\"name\"))";
-parent.__c.LogImpl("32818058",_cursor.GetString("name"),0);
+parent.__c.LogImpl("52818058",_cursor.GetString("name"),0);
 RDebugUtils.currentLine=2818059;
  //BA.debugLineNum = 2818059;BA.debugLine="Spinner1NameInsumo.Add(Cursor.GetString(\"name\")";
 __ref._spinner1nameinsumo /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .Add(_cursor.GetString("name"));
@@ -1945,7 +1946,7 @@ this.state = 17;
 this.catchState = 0;
 RDebugUtils.currentLine=2818075;
  //BA.debugLineNum = 2818075;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("32818075",BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("52818075",BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 if (true) break;
 
@@ -2053,7 +2054,7 @@ __ref._selectsql /*void*/ (null,_id);
        catch (Exception e7) {
 			ba.setLastException(e7);RDebugUtils.currentLine=5111817;
  //BA.debugLineNum = 5111817;BA.debugLine="Log(LastException)";
-__c.LogImpl("35111817",BA.ObjectToString(__c.LastException(ba)),0);
+__c.LogImpl("55111817",BA.ObjectToString(__c.LastException(ba)),0);
  };
 RDebugUtils.currentLine=5111819;
  //BA.debugLineNum = 5111819;BA.debugLine="End Sub";
@@ -2162,7 +2163,7 @@ this.state = 10;
 this.catchState = 0;
 RDebugUtils.currentLine=5177357;
  //BA.debugLineNum = 5177357;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("35177357",BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("55177357",BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 if (true) break;
 
@@ -2381,7 +2382,7 @@ case 13:
 this.state = 14;
 RDebugUtils.currentLine=4325399;
  //BA.debugLineNum = 4325399;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("34325399","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("54325399","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 14:
@@ -2590,7 +2591,7 @@ case 13:
 this.state = 14;
 RDebugUtils.currentLine=4456475;
  //BA.debugLineNum = 4456475;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("34456475","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("54456475","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 14:
@@ -2705,13 +2706,13 @@ RDebugUtils.currentLine=3473415;
 _cursor.setPosition(_i);
 RDebugUtils.currentLine=3473416;
  //BA.debugLineNum = 3473416;BA.debugLine="Log(\"=====ITEM #\"&i&\"=====\")";
-parent.__c.LogImpl("33473416","=====ITEM #"+BA.NumberToString(_i)+"=====",0);
+parent.__c.LogImpl("53473416","=====ITEM #"+BA.NumberToString(_i)+"=====",0);
 RDebugUtils.currentLine=3473417;
  //BA.debugLineNum = 3473417;BA.debugLine="Log(Cursor.GetString(\"idmaquina\"))";
-parent.__c.LogImpl("33473417",_cursor.GetString("idmaquina"),0);
+parent.__c.LogImpl("53473417",_cursor.GetString("idmaquina"),0);
 RDebugUtils.currentLine=3473418;
  //BA.debugLineNum = 3473418;BA.debugLine="Log(Cursor.GetString(\"name\")&\"--\"&Cursor.GetStri";
-parent.__c.LogImpl("33473418",_cursor.GetString("name")+"--"+_cursor.GetString("qnt"),0);
+parent.__c.LogImpl("53473418",_cursor.GetString("name")+"--"+_cursor.GetString("qnt"),0);
 RDebugUtils.currentLine=3473419;
  //BA.debugLineNum = 3473419;BA.debugLine="sb.Append(Cursor.GetString(\"name\")&\"--\"&Cursor.G";
 _sb.Append(_cursor.GetString("name")+"--"+_cursor.GetString("qnt")).Append(parent.__c.CRLF);
@@ -2724,7 +2725,7 @@ this.state = 8;
 ;
 RDebugUtils.currentLine=3473422;
  //BA.debugLineNum = 3473422;BA.debugLine="Log(sb.ToString)";
-parent.__c.LogImpl("33473422",_sb.ToString(),0);
+parent.__c.LogImpl("53473422",_sb.ToString(),0);
 RDebugUtils.currentLine=3473424;
  //BA.debugLineNum = 3473424;BA.debugLine="Dim Cursor As Cursor";
 _cursor = new anywheresoftware.b4a.sql.SQL.CursorWrapper();
@@ -2764,10 +2765,10 @@ RDebugUtils.currentLine=3473427;
 _cursor.setPosition(_i);
 RDebugUtils.currentLine=3473428;
  //BA.debugLineNum = 3473428;BA.debugLine="Log(\"=====Maquinas #\"&i&\"=====\")";
-parent.__c.LogImpl("33473428","=====Maquinas #"+BA.NumberToString(_i)+"=====",0);
+parent.__c.LogImpl("53473428","=====Maquinas #"+BA.NumberToString(_i)+"=====",0);
 RDebugUtils.currentLine=3473429;
  //BA.debugLineNum = 3473429;BA.debugLine="Log(Cursor.GetString(\"id\"))'&\"--\"&Cursor.GetStr";
-parent.__c.LogImpl("33473429",_cursor.GetString("id"),0);
+parent.__c.LogImpl("53473429",_cursor.GetString("id"),0);
  if (true) break;
 if (true) break;
 
@@ -2792,7 +2793,7 @@ this.state = 14;
 this.catchState = 0;
 RDebugUtils.currentLine=3473436;
  //BA.debugLineNum = 3473436;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("33473436",BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("53473436",BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 if (true) break;
 
@@ -2897,7 +2898,7 @@ case 3:
 this.state = 4;
 RDebugUtils.currentLine=3670023;
  //BA.debugLineNum = 3670023;BA.debugLine="Log(\"Inserted successfully!\")";
-parent.__c.LogImpl("33670023","Inserted successfully!",0);
+parent.__c.LogImpl("53670023","Inserted successfully!",0);
  if (true) break;
 
 case 4:
@@ -3037,7 +3038,7 @@ RDebugUtils.currentLine=5046273;
 __ref._label1removeinsumo /*anywheresoftware.b4a.objects.LabelWrapper*/  = (anywheresoftware.b4a.objects.LabelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.LabelWrapper(), (android.widget.TextView)(__c.Sender(ba)));
 RDebugUtils.currentLine=5046274;
  //BA.debugLineNum = 5046274;BA.debugLine="Log(Label1RemoveInsumo.Tag)";
-__c.LogImpl("35046274",BA.ObjectToString(__ref._label1removeinsumo /*anywheresoftware.b4a.objects.LabelWrapper*/ .getTag()),0);
+__c.LogImpl("55046274",BA.ObjectToString(__ref._label1removeinsumo /*anywheresoftware.b4a.objects.LabelWrapper*/ .getTag()),0);
 RDebugUtils.currentLine=5046275;
  //BA.debugLineNum = 5046275;BA.debugLine="Dim id As Int=Label1RemoveInsumo.Tag";
 _id = (int)(BA.ObjectToNumber(__ref._label1removeinsumo /*anywheresoftware.b4a.objects.LabelWrapper*/ .getTag()));
@@ -3072,23 +3073,23 @@ RDebugUtils.currentLine=3604485;
 __ref._insertrecord /*void*/ (null,_main._pdbname /*String*/ ,"99",(int)(Double.parseDouble(_salario)));
 RDebugUtils.currentLine=3604488;
  //BA.debugLineNum = 3604488;BA.debugLine="Log(Label10.text&\"----\"&Label13Time.text)";
-__c.LogImpl("33604488",__ref._label10 /*anywheresoftware.b4a.objects.LabelWrapper*/ .getText()+"----"+__ref._label13time /*anywheresoftware.b4a.objects.LabelWrapper*/ .getText(),0);
+__c.LogImpl("53604488",__ref._label10 /*anywheresoftware.b4a.objects.LabelWrapper*/ .getText()+"----"+__ref._label13time /*anywheresoftware.b4a.objects.LabelWrapper*/ .getText(),0);
 RDebugUtils.currentLine=3604489;
  //BA.debugLineNum = 3604489;BA.debugLine="Log(\"HACIENDA: \"&haciendaUpdate)";
-__c.LogImpl("33604489","HACIENDA: "+__ref._haciendaupdate /*String*/ ,0);
+__c.LogImpl("53604489","HACIENDA: "+__ref._haciendaupdate /*String*/ ,0);
 RDebugUtils.currentLine=3604490;
  //BA.debugLineNum = 3604490;BA.debugLine="If tipo=\"new\" Then";
 if ((__ref._tipo /*String*/ ).equals("new")) { 
  }else {
 RDebugUtils.currentLine=3604497;
  //BA.debugLineNum = 3604497;BA.debugLine="Log(\"update\")";
-__c.LogImpl("33604497","update",0);
+__c.LogImpl("53604497","update",0);
  };
  } 
        catch (Exception e12) {
 			ba.setLastException(e12);RDebugUtils.currentLine=3604501;
  //BA.debugLineNum = 3604501;BA.debugLine="Log(LastException)";
-__c.LogImpl("33604501",BA.ObjectToString(__c.LastException(ba)),0);
+__c.LogImpl("53604501",BA.ObjectToString(__c.LastException(ba)),0);
  };
 RDebugUtils.currentLine=3604504;
  //BA.debugLineNum = 3604504;BA.debugLine="End Sub";
@@ -3116,7 +3117,7 @@ RDebugUtils.currentLine=2686980;
  //BA.debugLineNum = 2686980;BA.debugLine="Try";
 try {RDebugUtils.currentLine=2686982;
  //BA.debugLineNum = 2686982;BA.debugLine="LogColor(\"REMOVE: \"&iw,Colors.Red)";
-__c.LogImpl("32686982","REMOVE: "+BA.NumberToString(_iw),__c.Colors.Red);
+__c.LogImpl("52686982","REMOVE: "+BA.NumberToString(_iw),__c.Colors.Red);
 RDebugUtils.currentLine=2686983;
  //BA.debugLineNum = 2686983;BA.debugLine="CustomListView1Geral.RemoveAt(iw)";
 __ref._customlistview1geral /*b4a.example3.customlistview*/ ._removeat(_iw);
@@ -3124,7 +3125,7 @@ __ref._customlistview1geral /*b4a.example3.customlistview*/ ._removeat(_iw);
        catch (Exception e7) {
 			ba.setLastException(e7);RDebugUtils.currentLine=2686986;
  //BA.debugLineNum = 2686986;BA.debugLine="Log(LastException)";
-__c.LogImpl("32686986",BA.ObjectToString(__c.LastException(ba)),0);
+__c.LogImpl("52686986",BA.ObjectToString(__c.LastException(ba)),0);
  };
  };
  }
@@ -3184,7 +3185,7 @@ RDebugUtils.currentLine=4259840;
  //BA.debugLineNum = 4259840;BA.debugLine="Sub SD_xComboBoxHda_ItemClick (Position As Int, Va";
 RDebugUtils.currentLine=4259843;
  //BA.debugLineNum = 4259843;BA.debugLine="Log(Value)";
-__c.LogImpl("34259843",BA.ObjectToString(_value),0);
+__c.LogImpl("54259843",BA.ObjectToString(_value),0);
 RDebugUtils.currentLine=4259845;
  //BA.debugLineNum = 4259845;BA.debugLine="SD_xComboBoxLote.Clear";
 __ref._sd_xcomboboxlote /*b4a.example.ef.sd_xcombobox*/ ._clear /*String*/ (null);
@@ -3202,7 +3203,7 @@ RDebugUtils.currentLine=4259851;
 __ref._hacienda /*String*/  = __ref._hacienda /*String*/ .substring((int) (0),(int) (3));
 RDebugUtils.currentLine=4259852;
  //BA.debugLineNum = 4259852;BA.debugLine="Log(hacienda)";
-__c.LogImpl("34259852",__ref._hacienda /*String*/ ,0);
+__c.LogImpl("54259852",__ref._hacienda /*String*/ ,0);
 RDebugUtils.currentLine=4259853;
  //BA.debugLineNum = 4259853;BA.debugLine="GetRecordLotes (Main.pDBName,Main.pNit, hacienda)";
 __ref._getrecordlotes /*void*/ (null,_main._pdbname /*String*/ ,_main._pnit /*String*/ ,__ref._hacienda /*String*/ );
@@ -3230,13 +3231,13 @@ RDebugUtils.currentLine=4390912;
  //BA.debugLineNum = 4390912;BA.debugLine="Sub SD_xComboBoxLote_ItemClick (Position As Int, V";
 RDebugUtils.currentLine=4390918;
  //BA.debugLineNum = 4390918;BA.debugLine="Log(Position & \" - \" & Value)";
-__c.LogImpl("34390918",BA.NumberToString(_position)+" - "+BA.ObjectToString(_value),0);
+__c.LogImpl("54390918",BA.NumberToString(_position)+" - "+BA.ObjectToString(_value),0);
 RDebugUtils.currentLine=4390920;
  //BA.debugLineNum = 4390920;BA.debugLine="lote = Value";
 __ref._lote /*String*/  = BA.ObjectToString(_value);
 RDebugUtils.currentLine=4390922;
  //BA.debugLineNum = 4390922;BA.debugLine="Log(hacienda)";
-__c.LogImpl("34390922",__ref._hacienda /*String*/ ,0);
+__c.LogImpl("54390922",__ref._hacienda /*String*/ ,0);
 RDebugUtils.currentLine=4390923;
  //BA.debugLineNum = 4390923;BA.debugLine="GetRecordLotesArea (Main.pDBName,nit, hacienda,lo";
 __ref._getrecordlotesarea /*void*/ (null,_main._pdbname /*String*/ ,__ref._nit /*String*/ ,__ref._hacienda /*String*/ ,__ref._lote /*String*/ );
@@ -3257,10 +3258,10 @@ RDebugUtils.currentLine=5242881;
 __ref._spinner1nameinsumo /*anywheresoftware.b4a.objects.SpinnerWrapper*/  = (anywheresoftware.b4a.objects.SpinnerWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.SpinnerWrapper(), (anywheresoftware.b4a.objects.SpinnerWrapper.B4ASpinner)(__c.Sender(ba)));
 RDebugUtils.currentLine=5242882;
  //BA.debugLineNum = 5242882;BA.debugLine="Log(Spinner1NameInsumo.Tag)";
-__c.LogImpl("35242882",BA.ObjectToString(__ref._spinner1nameinsumo /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .getTag()),0);
+__c.LogImpl("55242882",BA.ObjectToString(__ref._spinner1nameinsumo /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .getTag()),0);
 RDebugUtils.currentLine=5242883;
  //BA.debugLineNum = 5242883;BA.debugLine="Log(Spinner1NameInsumo.SelectedItem)";
-__c.LogImpl("35242883",__ref._spinner1nameinsumo /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .getSelectedItem(),0);
+__c.LogImpl("55242883",__ref._spinner1nameinsumo /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .getSelectedItem(),0);
 RDebugUtils.currentLine=5242884;
  //BA.debugLineNum = 5242884;BA.debugLine="Dim id As Int=Spinner1NameInsumo.Tag";
 _id = (int)(BA.ObjectToNumber(__ref._spinner1nameinsumo /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .getTag()));
@@ -3305,7 +3306,7 @@ RDebugUtils.currentLine=4653056;
  //BA.debugLineNum = 4653056;BA.debugLine="Private Sub SpinnerNit_ItemClick (Position As Int,";
 RDebugUtils.currentLine=4653057;
  //BA.debugLineNum = 4653057;BA.debugLine="Log(Value)";
-__c.LogImpl("34653057",BA.ObjectToString(_value),0);
+__c.LogImpl("54653057",BA.ObjectToString(_value),0);
 RDebugUtils.currentLine=4653058;
  //BA.debugLineNum = 4653058;BA.debugLine="End Sub";
 return "";

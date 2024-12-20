@@ -50,6 +50,7 @@ public b4a.example.ef.starter _starter = null;
 public b4a.example.ef.b4xcollections _b4xcollections = null;
 public b4a.example.ef.b4xpages _b4xpages = null;
 public b4a.example.ef.httputils2service _httputils2service = null;
+public b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public Object  _initialize(b4a.example.ef.detailsperson __ref,anywheresoftware.b4a.BA _ba) throws Exception{
 __ref = this;
 innerInitialize(_ba);
@@ -403,7 +404,7 @@ case 18:
 this.state = 19;
 RDebugUtils.currentLine=1835070;
  //BA.debugLineNum = 1835070;BA.debugLine="Log(\"ERROR al obtener el nombre del cliente:";
-parent.__c.LogImpl("31835070","ERROR al obtener el nombre del cliente: "+_j2._errormessage /*String*/ ,0);
+parent.__c.LogImpl("51835070","ERROR al obtener el nombre del cliente: "+_j2._errormessage /*String*/ ,0);
  if (true) break;
 
 case 19:
@@ -502,7 +503,7 @@ case 28:
 this.state = 29;
 RDebugUtils.currentLine=1835086;
  //BA.debugLineNum = 1835086;BA.debugLine="Log(\"ERROR al obtener el nombre de la haciend";
-parent.__c.LogImpl("31835086","ERROR al obtener el nombre de la hacienda: "+_j3._errormessage /*String*/ ,0);
+parent.__c.LogImpl("51835086","ERROR al obtener el nombre de la hacienda: "+_j3._errormessage /*String*/ ,0);
  if (true) break;
 
 case 29:
@@ -543,7 +544,7 @@ case 35:
 this.state = 36;
 RDebugUtils.currentLine=1835097;
  //BA.debugLineNum = 1835097;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("31835097","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("51835097","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 36:
@@ -736,7 +737,7 @@ _b4xpages._showpage /*String*/ (ba,"FormPerson");
        catch (Exception e6) {
 			ba.setLastException(e6);RDebugUtils.currentLine=2031625;
  //BA.debugLineNum = 2031625;BA.debugLine="Log(LastException)";
-__c.LogImpl("32031625",BA.ObjectToString(__c.LastException(ba)),0);
+__c.LogImpl("52031625",BA.ObjectToString(__c.LastException(ba)),0);
  };
 RDebugUtils.currentLine=2031627;
  //BA.debugLineNum = 2031627;BA.debugLine="End Sub";
@@ -799,7 +800,7 @@ RDebugUtils.currentLine=1966084;
 _index = (int)(BA.ObjectToNumber(_btn.getTag()));
 RDebugUtils.currentLine=1966085;
  //BA.debugLineNum = 1966085;BA.debugLine="Log(index)";
-parent.__c.LogImpl("31966085",BA.NumberToString(_index),0);
+parent.__c.LogImpl("51966085",BA.NumberToString(_index),0);
 RDebugUtils.currentLine=1966087;
  //BA.debugLineNum = 1966087;BA.debugLine="If index >= 0 And index < CLV_Persons.Size Then";
 if (true) break;
@@ -862,7 +863,7 @@ case 12:
 this.state = 13;
 RDebugUtils.currentLine=1966099;
  //BA.debugLineNum = 1966099;BA.debugLine="Log(\"Error: el índice está fuera de los límites";
-parent.__c.LogImpl("31966099","Error: el índice está fuera de los límites de la lista.",0);
+parent.__c.LogImpl("51966099","Error: el índice está fuera de los límites de la lista.",0);
  if (true) break;
 
 case 13:
@@ -877,7 +878,7 @@ this.state = 16;
 this.catchState = 0;
 RDebugUtils.currentLine=1966104;
  //BA.debugLineNum = 1966104;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("31966104",BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("51966104",BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 if (true) break;
 
