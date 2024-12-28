@@ -315,7 +315,7 @@ Private Sub AS_DatePicker1_SelectedDateChanged(Date As Long)
 	fecha = formattedDate
     
 	' Log para verificar el valor de la fecha
-	
+
 End Sub
 
 
@@ -409,7 +409,7 @@ Private Sub Button1_Click
 	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
 
 	' Crear el comando con los parámetros
-	Dim cmd As DBCommand = CreateCommand("insert_Mvto_Maq", Array(Ascdo_Maq_Mvto_Maq, maquina, fecha, labor, nitEmpresaCBX, haciendaCBX, Lote, implemento, horainicio, horafin, combustible, observaciones, operario, implemento2, area, fechaHoy, horaActual, user, DeviceName))
+	Dim cmd As DBCommand = CreateCommand("insert_Mvto_Maq", Array(Ascdo_Maq_Mvto_Maq, maquina, fecha, labor, nitEmpresaCBX, haciendaCBX, Lote, implemento, horainicio, horafin, combustible, observaciones, operario, implemento2, area, fechaHoy, horaActual, user , DeviceName))
 
 	' Ejecutar el comando
 	Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)

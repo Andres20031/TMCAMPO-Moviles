@@ -10,7 +10,7 @@ Version=9.85
 #End Region
 
 Sub Process_Globals
-	'These global variables will be declared once when the application starts.
+	'These global variables will be declared once when the application starts.FormLabores
 	'These variables can be accessed from all modules.
 	Dim SQL1 As SQL
 

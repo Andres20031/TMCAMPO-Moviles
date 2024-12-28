@@ -17,8 +17,16 @@ Sub Class_Globals
 	Private const rdcLink As String = "http://84.46.255.129:17178/rdc"
 	Dim fechaInicio As String
 	Dim fechaFin As String
-	
+	Dim fechafmrto As String
+	Dim horaSistema As String
 
+	Private loteCBX As String
+	Private elementoLabor As String
+	Private elementoGasto As String
+	Private areaLabor As Int
+	Private areaLote As Int
+	Dim consecutivo As Int
+	Private tipoLabor As String
 	Private SD_xComboBoxNit As SD_xComboBox
 	Private SD_xComboBoxHacienda As SD_xComboBox
 	Private SD_xComboBoxLote As SD_xComboBox
@@ -56,6 +64,26 @@ Sub Class_Globals
 	Private LabelInsumoSelect As Label
 	
 	Dim idEliminarTabla As Int
+	
+	Dim tipoRiego As String
+	Dim procedenciaRiego As String
+	Dim caudalRiego As String
+	Dim cantidadRiego As String
+	
+	Dim codigoSiembra As String
+	Dim distanciaSiembra As Int
+	Dim bandereoSiembra As Int
+	Dim toneladaSemillaSiembra As Int
+	Dim procedenciaSiembra As String
+	Dim tipoLabranzaSiembra As String
+	Dim numeroPaquetesSiembra As Int
+	Dim numeroMacolloSiembra As Int
+	
+	Dim DeviceName As String
+	Dim user As String
+
+	Dim fechaActual As String
+	Dim consecutivoSiembra As Int
 End Sub
 
 'You can add more parameters here.
@@ -69,6 +97,13 @@ Private Sub B4XPage_Created (Root1 As B4XView)
 	Root = Root1
 	'load the layout to Root
 	
+End Sub
+
+Sub GetDeviceName As String
+	Dim p As Phone
+	Dim Manufacturer As String = p.Manufacturer
+	Dim Model As String = p.Model
+	Return Manufacturer & " " & Model
 End Sub
 
 Private Sub B4XPage_Appear
@@ -140,6 +175,46 @@ Private Sub B4XPage_Appear
 	
 	data.Initialize
 	
+	
+	Dim cmdUltimoRegistro As DBCommand = CreateCommand("select_maxIdLabor", Null)
+	Wait For (Req.ExecuteQuery(cmdUltimoRegistro, 0, Null)) JobDone(j5 As HttpJob)
+
+	If j5.Success Then
+		Req.HandleJobAsync(j5, "req_ultimoRegistro")
+		Wait For (Req) req_ultimoRegistro_Result(resUltimoRegistro As DBResult)
+    
+		For Each rowRegistro() As Object In resUltimoRegistro.Rows
+			Dim ultimoRegistro As Int = rowRegistro(0) ' Numero_Registro_Labor
+			Log("Último Registro obtenido: " & ultimoRegistro)
+			' Aquí puedes asignar el valor a una variable o realizar otra acción
+		Next
+	Else
+		Log("Error en la consulta select_maxIdLabor: " & j5.ErrorMessage)
+	End If
+
+   consecutivo = ultimoRegistro + 1
+   
+	Log(consecutivo)
+   
+	Dim cmdUltimoRegistro As DBCommand = CreateCommand("select_maxIdSiembra", Null)
+	Wait For (Req.ExecuteQuery(cmdUltimoRegistro, 0, Null)) JobDone(j5 As HttpJob)
+
+	If j5.Success Then
+		Req.HandleJobAsync(j5, "req_ultimoRegistro")
+		Wait For (Req) req_ultimoRegistro_Result(resUltimoRegistro As DBResult)
+    
+		For Each rowRegistro() As Object In resUltimoRegistro.Rows
+			Dim ultimoRegistroSiembra As Int = rowRegistro(0) ' Numero_Registro_Labor
+			Log("Último Registro Siembra  obtenido: " & ultimoRegistroSiembra)
+			' Aquí puedes asignar el valor a una variable o realizar otra acción
+		Next
+	Else
+		Log("Error en la consulta select_maxIdLabor: " & j5.ErrorMessage)
+	End If
+
+	consecutivoSiembra = ultimoRegistroSiembra + 1
+   
+	Log(consecutivoSiembra)
 End Sub
 
 
@@ -210,45 +285,68 @@ End Sub
 Private Sub AS_DatePicker1_SelectedDateChanged(Date As Long)
 	' Obtener la fecha seleccionada
 	Dim formattedDate As String = DateTime.Date(Date)
-    
-	' Reemplazar cualquier '/' por '-' en caso de que la fecha sea en formato con '/'
+
+	' Reemplazar cualquier '/' por '-' en caso de que la fecha esté en formato con '/'
 	formattedDate = formattedDate.Replace("/", "-")
-    
+
+	' Usar Split para dividir la fecha
+	Dim dateParts() As String = Regex.Split("-", formattedDate)
+
+	' Verificar que la fecha esté en el formato dd-MM-yyyy
+	If dateParts.Length = 3 Then
+		' Reformatear la fecha como yyyy-MM-dd
+		formattedDate = dateParts(2) & "-" & dateParts(1) & "-" & dateParts(0)
+	End If
+
 	' Agregar la parte de la hora
 	formattedDate = formattedDate & " 00:00:00"
-    
+
 	' Mostrar la fecha formateada en el Label
 	Label13Time.Text = formattedDate
-    
+
 	' Hacer invisible el Panel
 	Panel12.Visible = False
-    
-	' Obtener la fecha y guardarla en la variable fecha
+
+	' Guardar la fecha en la variable pública
 	fechaInicio = formattedDate
-    
-	' Log para verificar el valor de la fecha
+
+	' Mostrar el valor de la fecha en un log
+	Log("Fecha inicio: " & fechaInicio)
+
 End Sub
 
 Private Sub AS_DatePicker2_SelectedDateChanged(Date As Long)
 	' Obtener la fecha seleccionada
 	Dim formattedDate As String = DateTime.Date(Date)
-    
-	' Reemplazar cualquier '/' por '-' en caso de que la fecha sea en formato con '/'
+
+	' Reemplazar cualquier '/' por '-' en caso de que la fecha esté en formato con '/'
 	formattedDate = formattedDate.Replace("/", "-")
-    
+
+	' Usar Split para dividir la fecha
+	Dim dateParts() As String = Regex.Split("-", formattedDate)
+
+	' Verificar que la fecha esté en el formato dd-MM-yyyy
+	If dateParts.Length = 3 Then
+		' Reformatear la fecha como yyyy-MM-dd (invertir el orden de las partes)
+		formattedDate = dateParts(2) & "-" & dateParts(1) & "-" & dateParts(0)
+	End If
+
 	' Agregar la parte de la hora
 	formattedDate = formattedDate & " 00:00:00"
-    
+
 	' Mostrar la fecha formateada en el Label
 	Label14Time.Text = formattedDate
-    
+
 	' Hacer invisible el Panel
 	Panel3.Visible = False
-    
+
 	' Obtener la fecha y guardarla en la variable fecha
 	fechaFin = formattedDate
-    
+
 	' Log para verificar el valor de la fecha
+	Log("Fecha fin: " & fechaFin)
+
+
 End Sub
 
 Sub CreateCommand(Name As String, Parameters() As Object) As DBCommand
@@ -292,6 +390,8 @@ Private Sub SD_xComboBoxNit_ItemClick (Position As Int, Value As Object)
 	' Libera el trabajo HTTP
 	j.Release
 	' FIN DE LA CONSULTA DE LOS NITS
+	
+	Log("Nit seleccionado" &  nitEmpresaCBX)
 End Sub
 
 Private Sub SD_xComboBoxHacienda_ItemClick (Position As Int, Value As Object)
@@ -328,22 +428,53 @@ Private Sub SD_xComboBoxHacienda_ItemClick (Position As Int, Value As Object)
 	' Libera el trabajo HTTP
 	j.Release
 	' FIN DE LA CONSULTA DE LOS NITS
+	
+	Log("Hacienda" & haciendaCBX)
 End Sub
 
 Private Sub SD_xComboBoxLote_ItemClick (Position As Int, Value As Object)
 	
+	loteCBX = Value
+	Log("Lotecbx" & loteCBX)
 End Sub
 
 Private Sub SD_xComboBoxLabor_ItemClick (Position As Int, Value As Object)
 	
+	elementoLabor = Value
+	
+	Log("Elemento labor" & elementoLabor)
 End Sub
 
 Private Sub SD_xComboBoxElemento_ItemClick (Position As Int, Value As Object)
 	
+	' Asumimos que Value es un String
+	elementoGasto = Value
+    
+	' Obtener las dos primeras letras y asignarlas nuevamente a elementoGasto
+	elementoGasto = elementoGasto.SubString2(0, 3)
+    
+	' Log de las dos primeras letras
+	Log("Las dos primeras letras del Elemento Gasto son: " & elementoGasto)
+End Sub
+
+Private Sub EditTextAreaLabor_TextChanged (Old As String, New As String)
+	
+	areaLabor = New
+	
+	Log("Area Labor " & areaLabor)
+End Sub
+
+
+Private Sub EditTextAreaLote_TextChanged (Old As String, New As String)
+	
+	areaLote = New
+	
+	Log("Area lote " & areaLote )
 End Sub
 
 Private Sub SD_xComboBoxTypeForm_ItemClick (Position As Int, Value As Object)
 	
+    tipoLabor = Value
 	' Aseguramos que Value sea un número antes de compararlo
 	If IsNumber(Value) Then
 		Select Case Value
@@ -378,21 +509,34 @@ Private Sub SD_xComboBoxTypeForm_ItemClick (Position As Int, Value As Object)
 	Else
 		Log("Error: Value no es un número válido.")
 	End If
+	
+	Log("Tipo labor " & tipoLabor)
 End Sub
 
 Private Sub EditTextProcedencia_TextChanged (Old As String, New As String)
 	
+	procedenciaRiego = New
+	
+	Log("procedencia" & procedenciaRiego)
 End Sub
 
 Private Sub EditTextCaudalAplicado_TextChanged (Old As String, New As String)
+    caudalRiego = New
 	
+	Log("caudal" & caudalRiego)
 End Sub
 
 Private Sub EditTextCantidadAgua_TextChanged (Old As String, New As String)
-	
+   cantidadRiego = New
+   
+   Log("cantidad" & cantidadRiego)
+
 End Sub
 
 Private Sub SD_xComboBoxTipoRiego_ItemClick (Position As Int, Value As Object)
+	tipoRiego = Value
+	
+	Log("tipo riego" & tipoRiego)
 	
 End Sub
 
@@ -430,35 +574,55 @@ End Sub
 
 
 Private Sub SD_xComboBoxCodigoVariedad_ItemClick (Position As Int, Value As Object)
+	codigoSiembra = Value
 	
+	Log("codigo " & codigoSiembra)
 End Sub
 
 Private Sub EditTextDistanciaSiembra_TextChanged (Old As String, New As String)
+	distanciaSiembra = New
 	
+	Log("Distancia de siembra " & distanciaSiembra)
 End Sub
 
 Private Sub EditTextBandereo_TextChanged (Old As String, New As String)
 	
+	bandereoSiembra = New 
+	
+	Log("bandereo " & bandereoSiembra)
 End Sub
 
 Private Sub EditTextToneladaSemilla_TextChanged (Old As String, New As String)
 	
+	toneladaSemillaSiembra = New
+	
+	Log("tonelada Semilla "& toneladaSemillaSiembra)
 End Sub
 
 Private Sub EditTextProcedenciaDestino_TextChanged (Old As String, New As String)
+	procedenciaSiembra = New
 	
+	Log("procedencia "& procedenciaSiembra)
 End Sub
 
 Private Sub SD_xComboBoxTipoLabranza_ItemClick (Position As Int, Value As Object)
 	
+	tipoLabranzaSiembra = Value
+	
+	Log("tipo labranza "&tipoLabranzaSiembra)
 End Sub
 
 Private Sub EditTextNumeroPaquetes_TextChanged (Old As String, New As String)
 	
+	numeroPaquetesSiembra = New
+	
+	Log("numero de paquetes " & numeroPaquetesSiembra)
 End Sub
 
 Private Sub EditTextNumeroMacollos_TextChanged (Old As String, New As String)
+	numeroMacolloSiembra = New
 	
+	Log("numero de macollos " & numeroMacolloSiembra )
 End Sub
 
 Private Sub LlenarComboBoxRiego
@@ -582,6 +746,7 @@ Private Sub B4XTable1_CellClicked (ColumnId As String, RowId As Long)
 	Log("ROW ID"&RowId)
 	PanelTittleInsumo.Visible = True
 	Dim rowData As Map = B4XTable1.GetRow(RowId)
+	Dim ID As String  = rowData.Get("ID")
 	Dim nombreInsu As String = rowData.Get("NOMBRE")
 	Dim cantidadInsu As Int = rowData.Get("CANTIDAD")
 	LabelInsumoSelect.Text = "- "&nombreInsu&" / "&"Cantidad: "&cantidadInsu
@@ -609,8 +774,258 @@ Sub RemoveInsumoFromData(insumoID As Int)
 
 End Sub
 
-
-
 Private Sub Label1Back_Click
 	B4XPages.ClosePage(Me)
+End Sub
+
+
+Private Sub ButtonInsumo_Click
+		
+	
+	' Iterar sobre las filas visibles en la tabla
+	For i = 0 To B4XTable1.VisibleRowIds.Size - 1
+		' Obtener el ID de la fila actual
+		Dim RowId As Long = B4XTable1.VisibleRowIds.Get(i)
+    
+		' Obtener los datos de la fila actual como un mapa
+		Dim rowData As Map = B4XTable1.GetRow(RowId)
+        
+		' Verificar si el mapa contiene la clave "ID"
+		Dim ID As String
+		If rowData.ContainsKey("ID") And rowData.Get("ID") <> Null Then
+			ID = rowData.Get("ID")
+		Else
+			ID = "No ID" ' Valor predeterminado si no se encuentra
+		End If
+
+		' Verificar si el mapa contiene la clave "NOMBRE"
+		Dim nombreInsu As String
+		If rowData.ContainsKey("NOMBRE") And rowData.Get("NOMBRE") <> Null Then
+			nombreInsu = rowData.Get("NOMBRE")
+		Else
+			nombreInsu = "Desconocido"
+		End If
+
+		' Verificar si el mapa contiene la clave "CANTIDAD"
+		Dim cantidadInsu As Int
+		If rowData.ContainsKey("CANTIDAD") And rowData.Get("CANTIDAD") <> Null Then
+			Try
+				cantidadInsu = rowData.Get("CANTIDAD")
+				' Registrar los valores en el log
+				Log("Fila " & (i + 1) & ":")
+				Log(" - ID: " & ID)
+				Log(" - NOMBRE: " & nombreInsu)
+				Log(" - CANTIDAD: " & cantidadInsu)
+			
+			
+				Dim Req As DBRequestManager
+				Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
+
+				' Crear el comando con los parámetros
+				Dim cmd As DBCommand = CreateCommand("insert_laborInsumo", Array(consecutivo,ID,cantidadInsu))
+
+				' Ejecutar el comando
+				Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
+				Wait For(j) JobDone(j As HttpJob)
+				
+				consecutivo  = consecutivo + 1
+
+			Catch
+				cantidadInsu = 0 ' Valor predeterminado si no es un número válido
+			End Try
+		Else
+			cantidadInsu = 0
+		End If
+		    
+	Next
+	
+	Dim horaSistema As String = DateTime.Time(DateTime.Now)
+	user = Main.pUser
+	DeviceName = GetDeviceName
+	Dim fecha As Long = DateTime.Now ' Obtiene el tiempo actual
+	DateTime.DateFormat = "yyyy-MM-dd HH:mm:ss" ' Configura el formato de la fecha con hora, minutos y segundos
+	fechaActual = DateTime.Date(fecha) ' Almacena la fecha y hora formateada en la variable global
+
+	fechafmrto = DateTime.Date(fecha)
+	
+	Dim Req As DBRequestManager
+	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
+
+	' Crear el comando con los parámetros
+	Dim cmd As DBCommand = CreateCommand("insert_labor", Array(nitEmpresaCBX, haciendaCBX, loteCBX, fechafmrto, "CA", tipoLabor, fechaInicio, fechaFin, elementoGasto, areaLabor, consecutivo, Null, areaLote, Null, fechaActual, horaSistema, user, DeviceName))
+
+	' Ejecutar el comando
+	Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
+	Wait For(j) JobDone(j As HttpJob)
+
+	' Manejar la respuesta
+	Try
+		If j.Success Then
+			
+			MsgboxAsync("Se ha insertado correctamente.", "Éxito")
+		Else
+			' En caso de error, registrar los parámetros enviados
+			Log("Error al ejecutar la consulta: " & j.ErrorMessage)
+
+		End If
+	Catch
+		Log("Error al agregar datos: " & LastException.Message) ' Log del error con más detalles
+		
+	End Try
+	
+	
+End Sub
+
+
+
+Private Sub ButtonRiego_Click
+	
+
+	
+	Dim Req As DBRequestManager
+	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
+
+	' Crear el comando con los parámetros
+	Dim cmd As DBCommand = CreateCommand("insert_laborRiego", Array(consecutivo,tipoRiego,procedenciaRiego,caudalRiego,cantidadRiego))
+
+	' Ejecutar el comando
+	Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
+	Wait For(j) JobDone(j As HttpJob)
+
+	' Manejar la respuesta
+	Try
+		If j.Success Then
+			MsgboxAsync("Se ha insertado correctamente.", "Éxito")
+		Else
+			Log("Error al ejecutar la consulta: " & j.ErrorMessage) ' Agregar más detalles si hay error en la solicitud
+		End If
+	Catch
+		Log("Error al agregar datos: " & LastException.Message) ' Log del error con más detalles
+	End Try
+	
+	
+	Dim horaSistema As String = DateTime.Time(DateTime.Now)
+	user = Main.pUser
+	DeviceName = GetDeviceName
+	Dim fecha As Long = DateTime.Now ' Obtiene el tiempo actual
+	DateTime.DateFormat = "yyyy-MM-dd HH:mm:ss" ' Configura el formato de la fecha con hora, minutos y segundos
+	fechaActual = DateTime.Date(fecha) ' Almacena la fecha y hora formateada en la variable global
+
+	fechafmrto = DateTime.Date(fecha)
+	
+	Dim Req As DBRequestManager
+	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
+
+	' Crear el comando con los parámetros
+	Dim cmd As DBCommand = CreateCommand("insert_labor", Array(nitEmpresaCBX, haciendaCBX, loteCBX, fechafmrto, "CA", tipoLabor, fechaInicio, fechaFin, elementoGasto, areaLabor, consecutivo, Null, areaLote, Null, fechaActual, horaSistema, user, DeviceName))
+
+	' Ejecutar el comando
+	Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
+	Wait For(j) JobDone(j As HttpJob)
+
+	' Manejar la respuesta
+	Try
+		If j.Success Then
+			
+			MsgboxAsync("Se ha insertado correctamente.", "Éxito")
+		Else
+			' En caso de error, registrar los parámetros enviados
+			Log("Error al ejecutar la consulta: " & j.ErrorMessage)
+
+		End If
+	Catch
+		Log("Error al agregar datos: " & LastException.Message) ' Log del error con más detalles
+		
+	End Try
+End Sub
+
+Private Sub ButtonSimbra_Click
+	
+	Dim Req As DBRequestManager
+	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
+	
+	Dim cmdUltimoRegistro As DBCommand = CreateCommand("select_maxIdSiembra", Null)
+	Wait For (Req.ExecuteQuery(cmdUltimoRegistro, 0, Null)) JobDone(j5 As HttpJob)
+
+	If j5.Success Then
+		Req.HandleJobAsync(j5, "req_ultimoRegistro")
+		Wait For (Req) req_ultimoRegistro_Result(resUltimoRegistro As DBResult)
+    
+		For Each rowRegistro() As Object In resUltimoRegistro.Rows
+			Dim ultimoRegistroSiembra As Int = rowRegistro(0) ' Numero_Registro_Labor
+			Log("Último Registro Siembra  obtenido: " & ultimoRegistroSiembra)
+			' Aquí puedes asignar el valor a una variable o realizar otra acción
+		Next
+	Else
+		Log("Error en la consulta select_maxIdLabor: " & j5.ErrorMessage)
+	End If
+
+	consecutivoSiembra = ultimoRegistroSiembra + 1
+   
+	Log(consecutivoSiembra)
+	
+	
+
+	' Crear el comando con los parámetros
+	Dim cmd As DBCommand = CreateCommand("insert_laborSiembra", Array(consecutivoSiembra, codigoSiembra, distanciaSiembra, toneladaSemillaSiembra, numeroPaquetesSiembra, procedenciaSiembra, tipoLabranzaSiembra, bandereoSiembra, numeroMacolloSiembra))
+
+	' Ejecutar el comando
+	Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
+	Wait For(j) JobDone(j As HttpJob)
+
+	' Manejar la respuesta
+	Try
+		If j.Success Then
+			
+		Else
+			' Registrar detalles específicos del error
+			Log("Error al agregar datos: " & LastException) ' Detalles completos del error
+			Log("Error al ejecutar la consulta: " & j.ErrorMessage) ' Mensaje de error de la solicitud
+			Log("Valores enviados: consecutivo=" & consecutivo & ", codigoSiembra=" & codigoSiembra & _
+            ", distanciaSiembra=" & distanciaSiembra & ", toneladaSemillaSiembra=" & toneladaSemillaSiembra & _
+            ", numeroPaquetesSiembra=" & numeroPaquetesSiembra & ", procedenciaSiembra=" & procedenciaSiembra & _
+            ", tipoLabranzaSiembra=" & tipoLabranzaSiembra & ", bandereoSiembra=" & bandereoSiembra & _
+            ", numeroMacolloSiembra=" & numeroMacolloSiembra)
+		End If
+	Catch
+		' Registrar la excepción con detalles completos
+		Log("Excepción capturada: " & LastException)
+	End Try
+
+
+	
+	Dim horaSistema As String = DateTime.Time(DateTime.Now)
+	user = Main.pUser
+	DeviceName = GetDeviceName
+	Dim fecha As Long = DateTime.Now ' Obtiene el tiempo actual
+	DateTime.DateFormat = "yyyy-MM-dd HH:mm:ss" ' Configura el formato de la fecha con hora, minutos y segundos
+	fechaActual = DateTime.Date(fecha) ' Almacena la fecha y hora formateada en la variable global
+
+	fechafmrto = DateTime.Date(fecha)
+	
+	Dim Req As DBRequestManager
+	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
+
+	' Crear el comando con los parámetros
+	Dim cmd As DBCommand = CreateCommand("insert_labor", Array(nitEmpresaCBX, haciendaCBX, loteCBX, fechafmrto, "CA", tipoLabor, fechaInicio, fechaFin, elementoGasto, areaLabor, consecutivo, Null, areaLote, Null, fechaActual, horaSistema, user, DeviceName))
+
+	' Ejecutar el comando
+	Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
+	Wait For(j) JobDone(j As HttpJob)
+
+	' Manejar la respuesta
+	Try
+		If j.Success Then
+			
+			MsgboxAsync("Se ha insertado correctamente.", "Éxito")
+		Else
+			' En caso de error, registrar los parámetros enviados
+			Log("Error al ejecutar la consulta: " & j.ErrorMessage)
+
+		End If
+	Catch
+		Log("Error al agregar datos: " & LastException.Message) ' Log del error con más detalles
+		
+	End Try
+
 End Sub
