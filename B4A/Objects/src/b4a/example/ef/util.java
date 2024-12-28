@@ -73,7 +73,7 @@ _window.RunMethod("setNavigationBarColor",new Object[]{(Object)(_clr1)});
  } 
        catch (Exception e14) {
 			ba.setLastException(e14); //BA.debugLineNum = 24;BA.debugLine="Log(LastException)";
-__c.LogImpl("25439502",BA.ObjectToString(__c.LastException(getActivityBA())),0);
+__c.LogImpl("054853646",BA.ObjectToString(__c.LastException(getActivityBA())),0);
  };
  //BA.debugLineNum = 27;BA.debugLine="End Sub";
 return "";

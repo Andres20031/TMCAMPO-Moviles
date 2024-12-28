@@ -194,7 +194,7 @@ int _lastrow = 0;
  //BA.debugLineNum = 1222;BA.debugLine="If Values.Length <> mNumberOfColumns Then";
 if (_values.length!=_mnumberofcolumns) { 
  //BA.debugLineNum = 1223;BA.debugLine="Log(\"Wrong number of values =\" & Values.Length &";
-__c.LogImpl("219988482","Wrong number of values ="+BA.NumberToString(_values.length)+" col="+BA.NumberToString(_mnumberofcolumns),0);
+__c.LogImpl("069402626","Wrong number of values ="+BA.NumberToString(_values.length)+" col="+BA.NumberToString(_mnumberofcolumns),0);
  //BA.debugLineNum = 1224;BA.debugLine="Return";
 if (true) return "";
  };
@@ -225,7 +225,7 @@ _i = 0;
  //BA.debugLineNum = 1247;BA.debugLine="If Values.Length <> mNumberOfColumns Then";
 if (_values.length!=_mnumberofcolumns) { 
  //BA.debugLineNum = 1248;BA.debugLine="Log(\"Wrong number of values =\" & Values.Length &";
-__c.LogImpl("220054020","Wrong number of values ="+BA.NumberToString(_values.length)+" col="+BA.NumberToString(_mnumberofcolumns),0);
+__c.LogImpl("069468164","Wrong number of values ="+BA.NumberToString(_values.length)+" col="+BA.NumberToString(_mnumberofcolumns),0);
  //BA.debugLineNum = 1249;BA.debugLine="Return";
 if (true) return "";
  };
@@ -2886,11 +2886,11 @@ case 0:
 //C
 this.state = 1;
  //BA.debugLineNum = 1706;BA.debugLine="Log(\"You may get this warning:\")";
-parent.__c.LogImpl("221037057","You may get this warning:",0);
+parent.__c.LogImpl("070451201","You may get this warning:",0);
  //BA.debugLineNum = 1707;BA.debugLine="Log(\"Unexpected event (missing RaiseSynchronousEv";
-parent.__c.LogImpl("221037058","Unexpected event (missing RaiseSynchronousEvents): sv_scrollchanged",0);
+parent.__c.LogImpl("070451202","Unexpected event (missing RaiseSynchronousEvents): sv_scrollchanged",0);
  //BA.debugLineNum = 1708;BA.debugLine="Log(\"Ignore it, it is NOT harmful !\")";
-parent.__c.LogImpl("221037059","Ignore it, it is NOT harmful !",0);
+parent.__c.LogImpl("070451203","Ignore it, it is NOT harmful !",0);
  //BA.debugLineNum = 1709;BA.debugLine="Dim rc As RowCol";
 _rc = new b4a.example.ef.table._rowcol();
  //BA.debugLineNum = 1711;BA.debugLine="rc.Row = Row";
@@ -4817,7 +4817,7 @@ if (_data.getSize()>0) {
  //BA.debugLineNum = 3853;BA.debugLine="ToastMessageShow(\"Table.ScaleTable must be calle";
 __c.ToastMessageShow(BA.ObjectToCharSequence("Table.ScaleTable must be called before filling the Table"),__c.False);
  //BA.debugLineNum = 3854;BA.debugLine="Log(\"Table.ScaleTable must be called before fill";
-__c.LogImpl("228442627","Table.ScaleTable must be called before filling the Table",0);
+__c.LogImpl("077856771","Table.ScaleTable must be called before filling the Table",0);
  //BA.debugLineNum = 3855;BA.debugLine="Return";
 if (true) return "";
  };
@@ -6572,7 +6572,7 @@ if (_headertypefaces.length!=_mnumberofcolumns) {
  //BA.debugLineNum = 3728;BA.debugLine="ToastMessageShow(\"Invalid number of columns\", F";
 __c.ToastMessageShow(BA.ObjectToCharSequence("Invalid number of columns"),__c.False);
  //BA.debugLineNum = 3729;BA.debugLine="Log(\"SetHeaderTypeFaces: Invalid number of colu";
-__c.LogImpl("227918365","SetHeaderTypeFaces: Invalid number of columns",0);
+__c.LogImpl("077332509","SetHeaderTypeFaces: Invalid number of columns",0);
  //BA.debugLineNum = 3730;BA.debugLine="Return";
 if (true) return "";
  }else {
@@ -8990,7 +8990,7 @@ _bdatatempdone = __c.True;
  //BA.debugLineNum = 4321;BA.debugLine="If arrDataSorted(Col) = False Then";
 if (_arrdatasorted[_col]==__c.False) { 
  //BA.debugLineNum = 4322;BA.debugLine="Log(\"SortTable2, cColumnDataType(\" & Col & \"): \"";
-__c.LogImpl("231129633","SortTable2, cColumnDataType("+BA.NumberToString(_col)+"): "+_ccolumndatatype[_col],0);
+__c.LogImpl("080543777","SortTable2, cColumnDataType("+BA.NumberToString(_col)+"): "+_ccolumndatatype[_col],0);
  //BA.debugLineNum = 4323;BA.debugLine="Select Case cColumnDataType(Col)";
 switch (BA.switchObjectToInt(_ccolumndatatype[_col],"I","L","R","T","N","B")) {
 case 0: 
@@ -9070,7 +9070,7 @@ _bdomulticolumnsort = _mmulticolumnsort && _bvalidarrsortindex && _mnumberofcolu
  //BA.debugLineNum = 4367;BA.debugLine="If arrDataSorted(Col) = False Then";
 if (_arrdatasorted[_col]==__c.False) { 
  //BA.debugLineNum = 4368;BA.debugLine="Log(\"SortTable2, cColumnDataType(\" & Col & \"): \"";
-__c.LogImpl("231129679","SortTable2, cColumnDataType("+BA.NumberToString(_col)+"): "+_ccolumndatatype[_col],0);
+__c.LogImpl("080543823","SortTable2, cColumnDataType("+BA.NumberToString(_col)+"): "+_ccolumndatatype[_col],0);
  //BA.debugLineNum = 4369;BA.debugLine="Select Case cColumnDataType(Col)";
 switch (BA.switchObjectToInt(_ccolumndatatype[_col],"I","L","R","T","N","B")) {
 case 0: 
