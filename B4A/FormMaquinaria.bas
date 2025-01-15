@@ -100,7 +100,7 @@ Private Sub B4XPage_Appear
 		For Each rowMaquina() As Object In resMaquina.Rows
 			Dim codigoMaquina As String = rowMaquina(0) ' Cdgo_Dstno
 			Dim descripcionMaquina As String = rowMaquina(1) ' Dscrpcion_Dstno
-			SD_xComboBoxMaquina.Add(descripcionMaquina & " - " & codigoMaquina, codigoMaquina)
+			SD_xComboBoxMaquina.Add(descripcionMaquina, codigoMaquina)
 		Next
 	Else
 		Log("Error en la consulta de Maquina: " & j2.ErrorMessage)
@@ -117,7 +117,7 @@ Private Sub B4XPage_Appear
 		For Each rowLaborMaquina() As Object In resLaborMaquina.Rows
 			Dim codigoLaborMaquina As String = rowLaborMaquina(0) ' Cdgo_Dstno
 			Dim descripcionLaborMaquina As String = rowLaborMaquina(1) ' Dscrpcion_Dstno
-			SD_xComboBoxLabor.Add(descripcionLaborMaquina & " - " & codigoLaborMaquina, codigoLaborMaquina)
+			SD_xComboBoxLabor.Add(descripcionLaborMaquina, codigoLaborMaquina)
 		Next
 	Else
 		Log("Error en la consulta de Maquina: " & j3.ErrorMessage)
@@ -150,8 +150,8 @@ Private Sub B4XPage_Appear
 		For Each rowImple() As Object In resImple.Rows
 			Dim codigoImple As String = rowImple(0) ' Cdgo_Dstno
 			Dim descripcionImple As String = rowImple(1) ' Dscrpcion_Dstno
-			SD_xComboBoxImplemento.Add(descripcionImple & " - " & codigoImple, codigoImple)
-			SD_xComboBoxImplemento2.Add(descripcionImple & " - " & codigoImple, codigoImple)
+			SD_xComboBoxImplemento.Add(descripcionImple, codigoImple)
+			SD_xComboBoxImplemento2.Add(descripcionImple, codigoImple)
 		Next
 	Else
 		Log("Error en la consulta de Maquina: " & j4.ErrorMessage)
@@ -187,7 +187,7 @@ Private Sub B4XPage_Appear
 		For Each rowObser() As Object In resObser.Rows
 			Dim codigoObser As String = rowObser(0)
 			Dim desObser As String = rowObser(1)
-			SD_xComboBoxObservaciones.Add(desObser&"-"&codigoObser ,codigoObser)
+			SD_xComboBoxObservaciones.Add(desObser ,codigoObser)
 		Next
 	Else
 		Log("Error en la consulta de Maquina: " & j6.ErrorMessage)
@@ -202,10 +202,10 @@ End Sub
 
 Private Sub SD_xComboBoxNit_ItemClick (Position As Int, Value As Object)
 	nitEmpresaCBX=Value
-
+	SD_xComboBoxHacienda.Clear
 	Dim Req As DBRequestManager
 	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
-	Dim cmd As DBCommand = CreateCommand("select_haciendas", Array("N"))
+	Dim cmd As DBCommand = CreateCommand("select_haciendas", Array(Value))
 
 	' Ejecuta la consulta
 	Wait For (Req.ExecuteQuery(cmd, 0, Null)) JobDone(j As HttpJob)
@@ -223,7 +223,7 @@ Private Sub SD_xComboBoxNit_ItemClick (Position As Int, Value As Object)
 			Dim NombreHacienda As String = row(1)
         
 			' Agregar la información al ComboBox (ajusta según el formato requerido)
-			SD_xComboBoxHacienda.Add(NombreHacienda & " - " & Codg_Hacienda, Codg_Hacienda)
+			SD_xComboBoxHacienda.Add(NombreHacienda, Codg_Hacienda)
 		Next
     
 	Else
@@ -258,7 +258,7 @@ Private Sub SD_xComboBoxHacienda_ItemClick (Position As Int, Value As Object)
 			Dim Codg_Hacienda As String = row(0)
         
 			' Agregar la información al ComboBox (ajusta según el formato requerido)
-			SD_xComboBoxLote.Add("Codigo: "&Codg_Hacienda, Codg_Hacienda)
+			SD_xComboBoxLote.Add(Codg_Hacienda, Codg_Hacienda)
 		Next
     
 	Else

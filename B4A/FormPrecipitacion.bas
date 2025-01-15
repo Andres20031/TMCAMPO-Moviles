@@ -73,7 +73,7 @@ Private Sub B4XPage_Appear
 			pluviometroMap.Put(cdgo_Plvmtro, detailsMap)
     
 			' Agrega al ComboBox
-			SD_xComboBoxPluviometro.Add(cdgo_Plvmtro & " - " & Nombre_Plvmtro, cdgo_Plvmtro)
+			SD_xComboBoxPluviometro.Add(Nombre_Plvmtro, cdgo_Plvmtro)
 		Next
 	Else
 		Log("Error en la consulta de Maquina: " & j2.ErrorMessage)

@@ -173,7 +173,7 @@ Sub B4XPage_Appear
 		For Each rowLabor() As Object In resLabor.Rows
 			Dim codigoDestino As String = rowLabor(0) ' Cdgo_Dstno
 			Dim descripcionDestino As String = rowLabor(1) ' Dscrpcion_Dstno
-			SD_xComboBoxLabor.Add(descripcionDestino & " - " & codigoDestino, codigoDestino)
+			SD_xComboBoxLabor.Add(descripcionDestino, codigoDestino)
 		Next
 	Else
 		Log("Error en la consulta de destinos: " & j2.ErrorMessage)
@@ -206,7 +206,7 @@ Sub B4XPage_Appear
 			Dim dstjo_Cncpto As String = rowConcep(2)
 			
 			' Agregar la información al ComboBox
-			SD_xComboBoxConcepto.Add(Des_Concept & " - " & Cod_Concept, Cod_Concept)
+			SD_xComboBoxConcepto.Add(Des_Concept, Cod_Concept)
 			
 			' Guardar dstjo_Cncpto en el Map usando Cod_Concept como clave
 			ConceptoDataMap.Put(Cod_Concept, dstjo_Cncpto)
@@ -239,7 +239,7 @@ Sub B4XPage_Appear
 			Dim Turno As String = rowConcep(0) ' Código del concepto
 			Dim Des_Turno As String = rowConcep(1) ' Descripción del concepto
 			' Agregar la información al ComboBox
-			SD_xComboBoxTurno.Add(Turno & " - " , Des_Turno)
+			SD_xComboBoxTurno.Add(Turno , Des_Turno)
 		Next
 	Else
 		' Si hay un error, mostrar el mensaje
@@ -583,7 +583,7 @@ End Sub
 
 Private Sub SD_xComboBoxNitPerson_ItemClick (Position As Int, Value As Object)
 	nitEmpresaCBX=Value
-	
+	SD_xComboBoxHacienda.Clear
 	If Value = "" Then
 		nitEmpresaCBX = Null
 	Else
@@ -598,7 +598,7 @@ Private Sub SD_xComboBoxNitPerson_ItemClick (Position As Int, Value As Object)
 
 	Dim Req As DBRequestManager
 	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
-	Dim cmd As DBCommand = CreateCommand("select_haciendas", Array("N"))
+	Dim cmd As DBCommand = CreateCommand("select_haciendas", Array(Value))
 
 	' Ejecuta la consulta
 	Wait For (Req.ExecuteQuery(cmd, 0, Null)) JobDone(j As HttpJob)
@@ -616,7 +616,7 @@ Private Sub SD_xComboBoxNitPerson_ItemClick (Position As Int, Value As Object)
 			Dim NombreHacienda As String = row(1)
         
 			' Agregar la información al ComboBox (ajusta según el formato requerido)
-			SD_xComboBoxHacienda.Add(NombreHacienda & " - " & Codg_Hacienda, Codg_Hacienda)
+			SD_xComboBoxHacienda.Add(NombreHacienda, Codg_Hacienda)
 		Next
     
 	Else
@@ -659,7 +659,7 @@ Private Sub SD_xComboBoxHacienda_ItemClick (Position As Int, Value As Object)
 			Dim Codg_Hacienda As String = row(0)
         
 			' Agregar la información al ComboBox (ajusta según el formato requerido)
-			SD_xComboBoxLote.Add("Codigo: "&Codg_Hacienda, Codg_Hacienda)
+			SD_xComboBoxLote.Add(Codg_Hacienda, Codg_Hacienda)
 		Next
     
 	Else

@@ -14,7 +14,7 @@ public class starter extends android.app.Service{
 			android.content.Intent in = new android.content.Intent(context, starter.class);
 			if (intent != null)
 				in.putExtra("b4a_internal_intent", intent);
-            ServiceHelper.StarterHelper.startServiceFromReceiver (context, in, true, BA.class);
+            ServiceHelper.StarterHelper.startServiceFromReceiver (context, in, true, anywheresoftware.b4a.ShellBA.class);
 		}
 
 	}
@@ -29,7 +29,7 @@ public class starter extends android.app.Service{
         super.onCreate();
         mostCurrent = this;
         if (processBA == null) {
-		    processBA = new BA(this, null, null, "b4a.example.ef", "b4a.example.ef.starter");
+		    processBA = new anywheresoftware.b4a.ShellBA(this, null, null, "b4a.example.ef", "b4a.example.ef.starter");
             if (BA.isShellModeRuntimeCheck(processBA)) {
                 processBA.raiseEvent2(null, true, "SHELL", false);
 		    }
@@ -135,7 +135,8 @@ public class starter extends android.app.Service{
 @Override
 	public android.os.IBinder onBind(android.content.Intent intent) {
 		return null;
-	}public anywheresoftware.b4a.keywords.Common __c = null;
+	}
+public anywheresoftware.b4a.keywords.Common __c = null;
 public static anywheresoftware.b4a.sql.SQL _sql1 = null;
 public static String _rdclink = "";
 public b4a.example.dateutils _dateutils = null;
@@ -145,42 +146,69 @@ public b4a.example.ef.b4xpages _b4xpages = null;
 public b4a.example.ef.httputils2service _httputils2service = null;
 public b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public static boolean  _application_error(anywheresoftware.b4a.objects.B4AException _error,String _stacktrace) throws Exception{
- //BA.debugLineNum = 151;BA.debugLine="Sub Application_Error (Error As Exception, StackTr";
- //BA.debugLineNum = 152;BA.debugLine="Return True";
+RDebugUtils.currentModule="starter";
+if (Debug.shouldDelegate(processBA, "application_error", false))
+	 {return ((Boolean) Debug.delegate(processBA, "application_error", new Object[] {_error,_stacktrace}));}
+RDebugUtils.currentLine=1507328;
+ //BA.debugLineNum = 1507328;BA.debugLine="Sub Application_Error (Error As Exception, StackTr";
+RDebugUtils.currentLine=1507329;
+ //BA.debugLineNum = 1507329;BA.debugLine="Return True";
 if (true) return anywheresoftware.b4a.keywords.Common.True;
- //BA.debugLineNum = 153;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1507330;
+ //BA.debugLineNum = 1507330;BA.debugLine="End Sub";
 return false;
 }
 public static b4a.example.ef.main._dbcommand  _createcommand(String _name,Object[] _parameters) throws Exception{
+RDebugUtils.currentModule="starter";
+if (Debug.shouldDelegate(processBA, "createcommand", false))
+	 {return ((b4a.example.ef.main._dbcommand) Debug.delegate(processBA, "createcommand", new Object[] {_name,_parameters}));}
 b4a.example.ef.main._dbcommand _cmd = null;
- //BA.debugLineNum = 167;BA.debugLine="Sub CreateCommand(Name As String, Parameters() As";
- //BA.debugLineNum = 168;BA.debugLine="Dim cmd As DBCommand";
+RDebugUtils.currentLine=1703936;
+ //BA.debugLineNum = 1703936;BA.debugLine="Sub CreateCommand(Name As String, Parameters() As";
+RDebugUtils.currentLine=1703937;
+ //BA.debugLineNum = 1703937;BA.debugLine="Dim cmd As DBCommand";
 _cmd = new b4a.example.ef.main._dbcommand();
- //BA.debugLineNum = 169;BA.debugLine="cmd.Initialize";
+RDebugUtils.currentLine=1703938;
+ //BA.debugLineNum = 1703938;BA.debugLine="cmd.Initialize";
 _cmd.Initialize();
- //BA.debugLineNum = 170;BA.debugLine="cmd.Name = Name";
+RDebugUtils.currentLine=1703939;
+ //BA.debugLineNum = 1703939;BA.debugLine="cmd.Name = Name";
 _cmd.Name /*String*/  = _name;
- //BA.debugLineNum = 171;BA.debugLine="If Parameters <> Null Then cmd.Parameters = Param";
+RDebugUtils.currentLine=1703940;
+ //BA.debugLineNum = 1703940;BA.debugLine="If Parameters <> Null Then cmd.Parameters = Param";
 if (_parameters!= null) { 
 _cmd.Parameters /*Object[]*/  = _parameters;};
- //BA.debugLineNum = 172;BA.debugLine="Return cmd";
+RDebugUtils.currentLine=1703941;
+ //BA.debugLineNum = 1703941;BA.debugLine="Return cmd";
 if (true) return _cmd;
- //BA.debugLineNum = 173;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1703942;
+ //BA.debugLineNum = 1703942;BA.debugLine="End Sub";
 return null;
 }
 public static b4a.example.ef.dbrequestmanager  _createrequest(String _db) throws Exception{
+RDebugUtils.currentModule="starter";
+if (Debug.shouldDelegate(processBA, "createrequest", false))
+	 {return ((b4a.example.ef.dbrequestmanager) Debug.delegate(processBA, "createrequest", new Object[] {_db}));}
 b4a.example.ef.dbrequestmanager _req = null;
- //BA.debugLineNum = 161;BA.debugLine="Sub CreateRequest (Db As String) As DBRequestManag";
- //BA.debugLineNum = 162;BA.debugLine="Dim req As DBRequestManager";
+RDebugUtils.currentLine=1638400;
+ //BA.debugLineNum = 1638400;BA.debugLine="Sub CreateRequest (Db As String) As DBRequestManag";
+RDebugUtils.currentLine=1638401;
+ //BA.debugLineNum = 1638401;BA.debugLine="Dim req As DBRequestManager";
 _req = new b4a.example.ef.dbrequestmanager();
- //BA.debugLineNum = 163;BA.debugLine="req.Initialize(Me, rdcLink & \"?DBName=\" & Db)";
-_req._initialize /*String*/ (processBA,starter.getObject(),_rdclink+"?DBName="+_db);
- //BA.debugLineNum = 164;BA.debugLine="Return req";
+RDebugUtils.currentLine=1638402;
+ //BA.debugLineNum = 1638402;BA.debugLine="req.Initialize(Me, rdcLink & \"?DBName=\" & Db)";
+_req._initialize /*String*/ (null,processBA,starter.getObject(),_rdclink+"?DBName="+_db);
+RDebugUtils.currentLine=1638403;
+ //BA.debugLineNum = 1638403;BA.debugLine="Return req";
 if (true) return _req;
- //BA.debugLineNum = 165;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1638404;
+ //BA.debugLineNum = 1638404;BA.debugLine="End Sub";
 return null;
 }
 public static void  _insertnamesinsumos(String _usedb) throws Exception{
+RDebugUtils.currentModule="starter";
+if (Debug.shouldDelegate(processBA, "insertnamesinsumos", false))
+	 {Debug.delegate(processBA, "insertnamesinsumos", new Object[] {_usedb}); return;}
 ResumableSub_insertNamesInsumos rsub = new ResumableSub_insertNamesInsumos(null,_usedb);
 rsub.resume(processBA, null);
 }
@@ -210,6 +238,7 @@ int groupLen18;
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
+RDebugUtils.currentModule="starter";
 
     while (true) {
         switch (state) {
@@ -219,11 +248,14 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 73;BA.debugLine="File.Delete(File.DirInternal, \"1.txt\")";
+RDebugUtils.currentLine=1245185;
+ //BA.debugLineNum = 1245185;BA.debugLine="File.Delete(File.DirInternal, \"1.txt\")";
 anywheresoftware.b4a.keywords.Common.File.Delete(anywheresoftware.b4a.keywords.Common.File.getDirInternal(),"1.txt");
- //BA.debugLineNum = 74;BA.debugLine="SQL1.ExecNonQuery(\"DELETE FROM namesinsumo\")";
+RDebugUtils.currentLine=1245186;
+ //BA.debugLineNum = 1245186;BA.debugLine="SQL1.ExecNonQuery(\"DELETE FROM namesinsumo\")";
 parent._sql1.ExecNonQuery("DELETE FROM namesinsumo");
- //BA.debugLineNum = 76;BA.debugLine="If File.Exists(File.DirInternal, \"1.txt\") Then";
+RDebugUtils.currentLine=1245188;
+ //BA.debugLineNum = 1245188;BA.debugLine="If File.Exists(File.DirInternal, \"1.txt\") Then";
 if (true) break;
 
 case 1:
@@ -238,25 +270,32 @@ this.state = 5;
 case 3:
 //C
 this.state = 20;
- //BA.debugLineNum = 77;BA.debugLine="Log(\"JA EXISTEM ITENS\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("055705605","JA EXISTEM ITENS",0);
+RDebugUtils.currentLine=1245189;
+ //BA.debugLineNum = 1245189;BA.debugLine="Log(\"JA EXISTEM ITENS\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("21245189","JA EXISTEM ITENS",0);
  if (true) break;
 
 case 5:
 //C
 this.state = 6;
- //BA.debugLineNum = 80;BA.debugLine="Dim req As DBRequestManager = CreateRequest(UseD";
+RDebugUtils.currentLine=1245192;
+ //BA.debugLineNum = 1245192;BA.debugLine="Dim req As DBRequestManager = CreateRequest(UseD";
 _req = _createrequest(_usedb);
- //BA.debugLineNum = 81;BA.debugLine="Dim cmd As DBCommand = CreateCommand(\"select_ins";
+RDebugUtils.currentLine=1245193;
+ //BA.debugLineNum = 1245193;BA.debugLine="Dim cmd As DBCommand = CreateCommand(\"select_ins";
 _cmd = _createcommand("select_insumos",(Object[])(anywheresoftware.b4a.keywords.Common.Null));
- //BA.debugLineNum = 83;BA.debugLine="Dim cadena As String";
+RDebugUtils.currentLine=1245195;
+ //BA.debugLineNum = 1245195;BA.debugLine="Dim cadena As String";
 _cadena = "";
- //BA.debugLineNum = 84;BA.debugLine="Dim separador As String";
+RDebugUtils.currentLine=1245196;
+ //BA.debugLineNum = 1245196;BA.debugLine="Dim separador As String";
 _separador = "";
- //BA.debugLineNum = 85;BA.debugLine="Dim longitud As Int";
+RDebugUtils.currentLine=1245197;
+ //BA.debugLineNum = 1245197;BA.debugLine="Dim longitud As Int";
 _longitud = 0;
- //BA.debugLineNum = 87;BA.debugLine="Wait For (req.ExecuteQuery(cmd, 0, id)) JobDone(";
-anywheresoftware.b4a.keywords.Common.WaitFor("jobdone", processBA, this, (Object)(_req._executequery /*b4a.example.ef.httpjob*/ (_cmd,(int) (0),(Object)(_id))));
+RDebugUtils.currentLine=1245199;
+ //BA.debugLineNum = 1245199;BA.debugLine="Wait For (req.ExecuteQuery(cmd, 0, id)) JobDone(";
+anywheresoftware.b4a.keywords.Common.WaitFor("jobdone", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "starter", "insertnamesinsumos"), (Object)(_req._executequery /*b4a.example.ef.httpjob*/ (null,_cmd,(int) (0),(Object)(_id))));
 this.state = 21;
 return;
 case 21:
@@ -264,7 +303,8 @@ case 21:
 this.state = 6;
 _j = (b4a.example.ef.httpjob) result[0];
 ;
- //BA.debugLineNum = 88;BA.debugLine="If j.Success Then";
+RDebugUtils.currentLine=1245200;
+ //BA.debugLineNum = 1245200;BA.debugLine="If j.Success Then";
 if (true) break;
 
 case 6:
@@ -279,10 +319,12 @@ this.state = 18;
 case 8:
 //C
 this.state = 9;
- //BA.debugLineNum = 89;BA.debugLine="req.HandleJobAsync(j, \"req\")";
-_req._handlejobasync /*void*/ (_j,"req");
- //BA.debugLineNum = 90;BA.debugLine="Wait For (req) req_Result(res As DBResult)";
-anywheresoftware.b4a.keywords.Common.WaitFor("req_result", processBA, this, (Object)(_req));
+RDebugUtils.currentLine=1245201;
+ //BA.debugLineNum = 1245201;BA.debugLine="req.HandleJobAsync(j, \"req\")";
+_req._handlejobasync /*void*/ (null,_j,"req");
+RDebugUtils.currentLine=1245202;
+ //BA.debugLineNum = 1245202;BA.debugLine="Wait For (req) req_Result(res As DBResult)";
+anywheresoftware.b4a.keywords.Common.WaitFor("req_result", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "starter", "insertnamesinsumos"), (Object)(_req));
 this.state = 22;
 return;
 case 22:
@@ -290,7 +332,8 @@ case 22:
 this.state = 9;
 _res = (b4a.example.ef.main._dbresult) result[0];
 ;
- //BA.debugLineNum = 94;BA.debugLine="For Each row() As Object In res.Rows";
+RDebugUtils.currentLine=1245206;
+ //BA.debugLineNum = 1245206;BA.debugLine="For Each row() As Object In res.Rows";
 if (true) break;
 
 case 9:
@@ -319,11 +362,14 @@ if (true) break;
 case 11:
 //C
 this.state = 12;
- //BA.debugLineNum = 95;BA.debugLine="cadena = \"\"";
+RDebugUtils.currentLine=1245207;
+ //BA.debugLineNum = 1245207;BA.debugLine="cadena = \"\"";
 _cadena = "";
- //BA.debugLineNum = 96;BA.debugLine="separador=\" - \"";
+RDebugUtils.currentLine=1245208;
+ //BA.debugLineNum = 1245208;BA.debugLine="separador=\" - \"";
 _separador = " - ";
- //BA.debugLineNum = 97;BA.debugLine="For Each record As Object In row";
+RDebugUtils.currentLine=1245209;
+ //BA.debugLineNum = 1245209;BA.debugLine="For Each record As Object In row";
 if (true) break;
 
 case 12:
@@ -352,7 +398,8 @@ if (true) break;
 case 14:
 //C
 this.state = 26;
- //BA.debugLineNum = 98;BA.debugLine="cadena=cadena & record '& separador";
+RDebugUtils.currentLine=1245210;
+ //BA.debugLineNum = 1245210;BA.debugLine="cadena=cadena & record '& separador";
 _cadena = _cadena+BA.ObjectToString(_record);
  if (true) break;
 if (true) break;
@@ -361,11 +408,14 @@ case 15:
 //C
 this.state = 24;
 ;
- //BA.debugLineNum = 102;BA.debugLine="SQL1.ExecNonQuery2(\"INSERT INTO namesinsumo VA";
+RDebugUtils.currentLine=1245214;
+ //BA.debugLineNum = 1245214;BA.debugLine="SQL1.ExecNonQuery2(\"INSERT INTO namesinsumo VA";
 parent._sql1.ExecNonQuery2("INSERT INTO namesinsumo VALUES (?,?)",anywheresoftware.b4a.keywords.Common.ArrayToList(new Object[]{anywheresoftware.b4a.keywords.Common.Null,(Object)(_cadena)}));
- //BA.debugLineNum = 103;BA.debugLine="File.WriteString(File.DirInternal, \"1.txt\", \"\"";
+RDebugUtils.currentLine=1245215;
+ //BA.debugLineNum = 1245215;BA.debugLine="File.WriteString(File.DirInternal, \"1.txt\", \"\"";
 anywheresoftware.b4a.keywords.Common.File.WriteString(anywheresoftware.b4a.keywords.Common.File.getDirInternal(),"1.txt","");
- //BA.debugLineNum = 104;BA.debugLine="cadena=\"\"";
+RDebugUtils.currentLine=1245216;
+ //BA.debugLineNum = 1245216;BA.debugLine="cadena=\"\"";
 _cadena = "";
  if (true) break;
 if (true) break;
@@ -379,103 +429,134 @@ this.state = 19;
 case 18:
 //C
 this.state = 19;
- //BA.debugLineNum = 108;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("055705636","ERROR: "+_j._errormessage /*String*/ ,0);
+RDebugUtils.currentLine=1245220;
+ //BA.debugLineNum = 1245220;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
+anywheresoftware.b4a.keywords.Common.LogImpl("21245220","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 19:
 //C
 this.state = 20;
 ;
- //BA.debugLineNum = 110;BA.debugLine="j.Release";
-_j._release /*String*/ ();
+RDebugUtils.currentLine=1245222;
+ //BA.debugLineNum = 1245222;BA.debugLine="j.Release";
+_j._release /*String*/ (null);
  if (true) break;
 
 case 20:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 124;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1245236;
+ //BA.debugLineNum = 1245236;BA.debugLine="End Sub";
 if (true) break;
 
             }
         }
     }
 }
-public static void  _jobdone(b4a.example.ef.httpjob _j) throws Exception{
-}
-public static void  _req_result(b4a.example.ef.main._dbresult _res) throws Exception{
-}
-public static String  _process_globals() throws Exception{
- //BA.debugLineNum = 6;BA.debugLine="Sub Process_Globals";
- //BA.debugLineNum = 9;BA.debugLine="Dim SQL1 As SQL";
-_sql1 = new anywheresoftware.b4a.sql.SQL();
- //BA.debugLineNum = 11;BA.debugLine="Private const rdcLink As String = \"http://84.46.2";
-_rdclink = "http://84.46.255.129:17178/rdc";
- //BA.debugLineNum = 13;BA.debugLine="End Sub";
-return "";
-}
 public static String  _service_create() throws Exception{
- //BA.debugLineNum = 15;BA.debugLine="Sub Service_Create";
- //BA.debugLineNum = 18;BA.debugLine="Try";
-try { //BA.debugLineNum = 19;BA.debugLine="SQL1.Initialize(File.DirInternal, \"data_base8088";
+RDebugUtils.currentModule="starter";
+if (Debug.shouldDelegate(processBA, "service_create", false))
+	 {return ((String) Debug.delegate(processBA, "service_create", null));}
+RDebugUtils.currentLine=1179648;
+ //BA.debugLineNum = 1179648;BA.debugLine="Sub Service_Create";
+RDebugUtils.currentLine=1179651;
+ //BA.debugLineNum = 1179651;BA.debugLine="Try";
+try {RDebugUtils.currentLine=1179652;
+ //BA.debugLineNum = 1179652;BA.debugLine="SQL1.Initialize(File.DirInternal, \"data_base8088";
 _sql1.Initialize(anywheresoftware.b4a.keywords.Common.File.getDirInternal(),"data_base8088.db",anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 20;BA.debugLine="SQL1.ExecNonQuery(\"CREATE TABLE IF NOT EXISTS in";
+RDebugUtils.currentLine=1179653;
+ //BA.debugLineNum = 1179653;BA.debugLine="SQL1.ExecNonQuery(\"CREATE TABLE IF NOT EXISTS in";
 _sql1.ExecNonQuery("CREATE TABLE IF NOT EXISTS insumo (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, qnt TEXT, idmaquina INTEGER)");
- //BA.debugLineNum = 21;BA.debugLine="SQL1.ExecNonQuery(\"CREATE TABLE IF NOT EXISTS na";
+RDebugUtils.currentLine=1179654;
+ //BA.debugLineNum = 1179654;BA.debugLine="SQL1.ExecNonQuery(\"CREATE TABLE IF NOT EXISTS na";
 _sql1.ExecNonQuery("CREATE TABLE IF NOT EXISTS namesinsumo (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)");
- //BA.debugLineNum = 23;BA.debugLine="SQL1.ExecNonQuery(\"CREATE TABLE IF NOT EXISTS ma";
+RDebugUtils.currentLine=1179656;
+ //BA.debugLineNum = 1179656;BA.debugLine="SQL1.ExecNonQuery(\"CREATE TABLE IF NOT EXISTS ma";
 _sql1.ExecNonQuery("CREATE TABLE IF NOT EXISTS maquina (id INTEGER PRIMARY KEY, fechaInicio TEXT, fechaFim Text, Nit Text, arealabor INTEGER,hacienda TEXT,Lote TEXT, labor TEXT)");
- //BA.debugLineNum = 24;BA.debugLine="SQL1.ExecNonQuery(\"CREATE TABLE IF NOT EXISTS da";
+RDebugUtils.currentLine=1179657;
+ //BA.debugLineNum = 1179657;BA.debugLine="SQL1.ExecNonQuery(\"CREATE TABLE IF NOT EXISTS da";
 _sql1.ExecNonQuery("CREATE TABLE IF NOT EXISTS dados (id INTEGER PRIMARY KEY AUTOINCREMENT, Consecutivo TEXT,Fecha_programa TEXT,NIT TEXT, Hacienda TEXT, Lote TEXT, labor TEXT)");
- //BA.debugLineNum = 26;BA.debugLine="SQL1.ExecNonQuery(\"DELETE FROM maquina\")";
+RDebugUtils.currentLine=1179659;
+ //BA.debugLineNum = 1179659;BA.debugLine="SQL1.ExecNonQuery(\"DELETE FROM maquina\")";
 _sql1.ExecNonQuery("DELETE FROM maquina");
- //BA.debugLineNum = 28;BA.debugLine="insertNamesInsumos(Main.pDBName)";
+RDebugUtils.currentLine=1179661;
+ //BA.debugLineNum = 1179661;BA.debugLine="insertNamesInsumos(Main.pDBName)";
 _insertnamesinsumos(mostCurrent._main._pdbname /*String*/ );
  } 
        catch (Exception e10) {
-			processBA.setLastException(e10); //BA.debugLineNum = 30;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("055640079",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(processBA)),0);
+			processBA.setLastException(e10);RDebugUtils.currentLine=1179663;
+ //BA.debugLineNum = 1179663;BA.debugLine="Log(LastException)";
+anywheresoftware.b4a.keywords.Common.LogImpl("21179663",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(processBA)),0);
  };
- //BA.debugLineNum = 32;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1179665;
+ //BA.debugLineNum = 1179665;BA.debugLine="End Sub";
 return "";
 }
 public static String  _service_destroy() throws Exception{
- //BA.debugLineNum = 155;BA.debugLine="Sub Service_Destroy";
- //BA.debugLineNum = 157;BA.debugLine="End Sub";
+RDebugUtils.currentModule="starter";
+if (Debug.shouldDelegate(processBA, "service_destroy", false))
+	 {return ((String) Debug.delegate(processBA, "service_destroy", null));}
+RDebugUtils.currentLine=1572864;
+ //BA.debugLineNum = 1572864;BA.debugLine="Sub Service_Destroy";
+RDebugUtils.currentLine=1572866;
+ //BA.debugLineNum = 1572866;BA.debugLine="End Sub";
 return "";
 }
 public static String  _service_start(anywheresoftware.b4a.objects.IntentWrapper _startingintent) throws Exception{
- //BA.debugLineNum = 142;BA.debugLine="Sub Service_Start (StartingIntent As Intent)";
- //BA.debugLineNum = 143;BA.debugLine="Service.StopAutomaticForeground 'Starter service";
+RDebugUtils.currentModule="starter";
+if (Debug.shouldDelegate(processBA, "service_start", false))
+	 {return ((String) Debug.delegate(processBA, "service_start", new Object[] {_startingintent}));}
+RDebugUtils.currentLine=1376256;
+ //BA.debugLineNum = 1376256;BA.debugLine="Sub Service_Start (StartingIntent As Intent)";
+RDebugUtils.currentLine=1376257;
+ //BA.debugLineNum = 1376257;BA.debugLine="Service.StopAutomaticForeground 'Starter service";
 mostCurrent._service.StopAutomaticForeground();
- //BA.debugLineNum = 144;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1376258;
+ //BA.debugLineNum = 1376258;BA.debugLine="End Sub";
 return "";
 }
 public static String  _service_taskremoved() throws Exception{
- //BA.debugLineNum = 146;BA.debugLine="Sub Service_TaskRemoved";
- //BA.debugLineNum = 148;BA.debugLine="End Sub";
+RDebugUtils.currentModule="starter";
+if (Debug.shouldDelegate(processBA, "service_taskremoved", false))
+	 {return ((String) Debug.delegate(processBA, "service_taskremoved", null));}
+RDebugUtils.currentLine=1441792;
+ //BA.debugLineNum = 1441792;BA.debugLine="Sub Service_TaskRemoved";
+RDebugUtils.currentLine=1441794;
+ //BA.debugLineNum = 1441794;BA.debugLine="End Sub";
 return "";
 }
 public static String  _updateinsumo(String _name,String _qnt,int _id,String _idmaquina) throws Exception{
- //BA.debugLineNum = 127;BA.debugLine="public Sub updateInsumo( name As String, qnt As St";
- //BA.debugLineNum = 129;BA.debugLine="Try";
-try { //BA.debugLineNum = 130;BA.debugLine="If name<>\"\" Then";
+RDebugUtils.currentModule="starter";
+if (Debug.shouldDelegate(processBA, "updateinsumo", false))
+	 {return ((String) Debug.delegate(processBA, "updateinsumo", new Object[] {_name,_qnt,_id,_idmaquina}));}
+RDebugUtils.currentLine=1310720;
+ //BA.debugLineNum = 1310720;BA.debugLine="public Sub updateInsumo( name As String, qnt As St";
+RDebugUtils.currentLine=1310722;
+ //BA.debugLineNum = 1310722;BA.debugLine="Try";
+try {RDebugUtils.currentLine=1310723;
+ //BA.debugLineNum = 1310723;BA.debugLine="If name<>\"\" Then";
 if ((_name).equals("") == false) { 
- //BA.debugLineNum = 131;BA.debugLine="SQL1.ExecNonQuery2(\"UPDATE insumo set name=?, i";
+RDebugUtils.currentLine=1310724;
+ //BA.debugLineNum = 1310724;BA.debugLine="SQL1.ExecNonQuery2(\"UPDATE insumo set name=?, i";
 _sql1.ExecNonQuery2("UPDATE insumo set name=?, idMaquina=? where id=?",anywheresoftware.b4a.keywords.Common.ArrayToList(new Object[]{(Object)(_name),(Object)(_idmaquina),(Object)(_id)}));
  };
- //BA.debugLineNum = 134;BA.debugLine="If qnt<>\"\" Then";
+RDebugUtils.currentLine=1310727;
+ //BA.debugLineNum = 1310727;BA.debugLine="If qnt<>\"\" Then";
 if ((_qnt).equals("") == false) { 
- //BA.debugLineNum = 135;BA.debugLine="SQL1.ExecNonQuery2(\"UPDATE insumo set  qnt= ?,";
+RDebugUtils.currentLine=1310728;
+ //BA.debugLineNum = 1310728;BA.debugLine="SQL1.ExecNonQuery2(\"UPDATE insumo set  qnt= ?,";
 _sql1.ExecNonQuery2("UPDATE insumo set  qnt= ?, idMaquina=? where id=?",anywheresoftware.b4a.keywords.Common.ArrayToList(new Object[]{(Object)(_qnt),(Object)(_idmaquina),(Object)(_id)}));
  };
  } 
        catch (Exception e9) {
-			processBA.setLastException(e9); //BA.debugLineNum = 138;BA.debugLine="Log(\"Erro 0005: \"&LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("055771147","Erro 0005: "+BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(processBA)),0);
+			processBA.setLastException(e9);RDebugUtils.currentLine=1310731;
+ //BA.debugLineNum = 1310731;BA.debugLine="Log(\"Erro 0005: \"&LastException)";
+anywheresoftware.b4a.keywords.Common.LogImpl("21310731","Erro 0005: "+BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(processBA)),0);
  };
- //BA.debugLineNum = 141;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1310734;
+ //BA.debugLineNum = 1310734;BA.debugLine="End Sub";
 return "";
 }
 }

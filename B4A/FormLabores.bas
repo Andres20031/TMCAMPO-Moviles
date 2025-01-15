@@ -142,7 +142,7 @@ Private Sub B4XPage_Appear
 		For Each rowLaborMaquina() As Object In resLaborMaquina.Rows
 			Dim codigoLaborMaquina As String = rowLaborMaquina(0) ' Cdgo_Dstno
 			Dim descripcionLaborMaquina As String = rowLaborMaquina(1) ' Dscrpcion_Dstno
-			SD_xComboBoxLabor.Add(descripcionLaborMaquina & " - " & codigoLaborMaquina, codigoLaborMaquina)
+			SD_xComboBoxLabor.Add(descripcionLaborMaquina, codigoLaborMaquina)
 		Next
 	Else
 		Log("Error en la consulta de Maquina: " & j3.ErrorMessage)
@@ -159,7 +159,7 @@ Private Sub B4XPage_Appear
 		For Each rowElementoGasto() As Object In resElementoGasto.Rows
 			Dim codigoElementoGasto As String = rowElementoGasto(0) ' Cdgo_Dstno
 			Dim descripcionElementoGasto As String = rowElementoGasto(1) ' Dscrpcion_Dstno
-			SD_xComboBoxElemento.Add(descripcionElementoGasto & " - " & codigoElementoGasto, codigoElementoGasto)
+			SD_xComboBoxElemento.Add(descripcionElementoGasto, codigoElementoGasto)
 		Next
 	Else
 		Log("Error en la consulta de Maquina: " & j4.ErrorMessage)
@@ -359,10 +359,10 @@ End Sub
 
 Private Sub SD_xComboBoxNit_ItemClick (Position As Int, Value As Object)
 	nitEmpresaCBX=Value
-	
+	SD_xComboBoxHacienda.Clear
 	Dim Req As DBRequestManager
 	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
-	Dim cmd As DBCommand = CreateCommand("select_haciendas", Array("N"))
+	Dim cmd As DBCommand = CreateCommand("select_haciendas", Array(Value))
 
 	' Ejecuta la consulta
 	Wait For (Req.ExecuteQuery(cmd, 0, Null)) JobDone(j As HttpJob)
@@ -380,7 +380,7 @@ Private Sub SD_xComboBoxNit_ItemClick (Position As Int, Value As Object)
 			Dim NombreHacienda As String = row(1)
         
 			' Agregar la información al ComboBox (ajusta según el formato requerido)
-			SD_xComboBoxHacienda.Add(NombreHacienda & " - " & Codg_Hacienda, Codg_Hacienda)
+			SD_xComboBoxHacienda.Add(NombreHacienda, Codg_Hacienda)
 		Next
     
 	Else
@@ -417,7 +417,7 @@ Private Sub SD_xComboBoxHacienda_ItemClick (Position As Int, Value As Object)
 			Dim Codg_Hacienda As String = row(0)
         
 			' Agregar la información al ComboBox (ajusta según el formato requerido)
-			SD_xComboBoxLote.Add("Codigo: "&Codg_Hacienda, Codg_Hacienda)
+			SD_xComboBoxLote.Add(Codg_Hacienda, Codg_Hacienda)
 		Next
     
 	Else
@@ -637,7 +637,7 @@ Private Sub LlenarComboBoxRiego
 		For Each row() As Object In res.Rows
 			Dim Cdgo_Tipo_Riego As String = row(0)
 			Dim Dscrpcion_Tipo_Riego As String = row(1)
-			SD_xComboBoxTipoRiego.Add(Dscrpcion_Tipo_Riego & " - " & Cdgo_Tipo_Riego, Cdgo_Tipo_Riego)
+			SD_xComboBoxTipoRiego.Add(Dscrpcion_Tipo_Riego, Cdgo_Tipo_Riego)
 		Next
 	Else
 		Log("Error en la consulta de NITs: " & j.ErrorMessage)
@@ -674,7 +674,7 @@ Private Sub LlenarComboBoxSiembra
 		For Each rowTipoLabranza() As Object In resTipoLabranza.Rows
 			Dim Cdgo_Tipo_Labranza As String = rowTipoLabranza(0) ' Cdgo_Dstno
 			Dim Dscrpcion_Tipo_Labranza As String = rowTipoLabranza(1) ' Dscrpcion_Dstno
-			SD_xComboBoxTipoLabranza.Add(Dscrpcion_Tipo_Labranza & " - " & Cdgo_Tipo_Labranza, Cdgo_Tipo_Labranza)
+			SD_xComboBoxTipoLabranza.Add(Dscrpcion_Tipo_Labranza, Cdgo_Tipo_Labranza)
 		Next
 	Else
 		Log("Error en la consulta de Tipo_Labranza: " & j4.ErrorMessage)
@@ -695,7 +695,7 @@ Private Sub LlenarComboBoxInsumo
 		For Each row() As Object In res.Rows
 			Dim Cdgo_Producto As String = row(0)
 			Dim Dscrpcion_Producto As String = row(1)
-			SD_xComboBoxInsumo.Add(Dscrpcion_Producto & " - " & Cdgo_Producto, Dscrpcion_Producto &" - "&Cdgo_Producto )
+			SD_xComboBoxInsumo.Add(Dscrpcion_Producto, Dscrpcion_Producto &" - "&Cdgo_Producto )
 		Next
 	Else
 		Log("Error en la consulta de NITs: " & j.ErrorMessage)
