@@ -100,7 +100,7 @@ RDebugUtils.currentLine=17432593;
 __ref._fecha /*String*/  = _formatteddate;
 RDebugUtils.currentLine=17432596;
  //BA.debugLineNum = 17432596;BA.debugLine="Log(fecha)";
-__c.LogImpl("217432596",__ref._fecha /*String*/ ,0);
+__c.LogImpl("117432596",__ref._fecha /*String*/ ,0);
 RDebugUtils.currentLine=17432597;
  //BA.debugLineNum = 17432597;BA.debugLine="End Sub";
 return "";
@@ -292,7 +292,7 @@ case 9:
 this.state = 10;
 RDebugUtils.currentLine=16973861;
  //BA.debugLineNum = 16973861;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j2.Err";
-parent.__c.LogImpl("216973861","Error en la consulta de Maquina: "+_j2._errormessage /*String*/ ,0);
+parent.__c.LogImpl("116973861","Error en la consulta de Maquina: "+_j2._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -476,7 +476,7 @@ case 8:
 this.state = 9;
 RDebugUtils.currentLine=17563664;
  //BA.debugLineNum = 17563664;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
-parent.__c.LogImpl("217563664","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("117563664","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 9:
@@ -491,7 +491,7 @@ this.state = 12;
 this.catchState = 0;
 RDebugUtils.currentLine=17563667;
  //BA.debugLineNum = 17563667;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
-parent.__c.LogImpl("217563667","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
+parent.__c.LogImpl("117563667","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
  if (true) break;
 if (true) break;
 
@@ -590,16 +590,16 @@ RDebugUtils.currentLine=17498112;
  //BA.debugLineNum = 17498112;BA.debugLine="Private Sub EditTextHoraFin_TextChanged (Old As St";
 RDebugUtils.currentLine=17498113;
  //BA.debugLineNum = 17498113;BA.debugLine="Log(\"Texto anterior: \" & Old)";
-__c.LogImpl("217498113","Texto anterior: "+_old,0);
+__c.LogImpl("117498113","Texto anterior: "+_old,0);
 RDebugUtils.currentLine=17498114;
  //BA.debugLineNum = 17498114;BA.debugLine="Log(\"Texto nuevo: \" & New)";
-__c.LogImpl("217498114","Texto nuevo: "+_new,0);
+__c.LogImpl("117498114","Texto nuevo: "+_new,0);
 RDebugUtils.currentLine=17498120;
  //BA.debugLineNum = 17498120;BA.debugLine="textoCapturado = New";
 __ref._textocapturado /*String*/  = _new;
 RDebugUtils.currentLine=17498121;
  //BA.debugLineNum = 17498121;BA.debugLine="Log(\"El texto es mayor de 5 caracteres: \" & texto";
-__c.LogImpl("217498121","El texto es mayor de 5 caracteres: "+__ref._textocapturado /*String*/ ,0);
+__c.LogImpl("117498121","El texto es mayor de 5 caracteres: "+__ref._textocapturado /*String*/ ,0);
 RDebugUtils.currentLine=17498123;
  //BA.debugLineNum = 17498123;BA.debugLine="End Sub";
 return "";
@@ -653,7 +653,7 @@ RDebugUtils.currentLine=17367040;
  //BA.debugLineNum = 17367040;BA.debugLine="Private Sub SD_xComboBoxPluviometro_ItemClick (Pos";
 RDebugUtils.currentLine=17367041;
  //BA.debugLineNum = 17367041;BA.debugLine="Log(\"VALOR COMBOBOX: \" & Value)";
-__c.LogImpl("217367041","VALOR COMBOBOX: "+BA.ObjectToString(_value),0);
+__c.LogImpl("117367041","VALOR COMBOBOX: "+BA.ObjectToString(_value),0);
 RDebugUtils.currentLine=17367043;
  //BA.debugLineNum = 17367043;BA.debugLine="If pluviometroMap.ContainsKey(Value) Then";
 if (__ref._pluviometromap /*anywheresoftware.b4a.objects.collections.Map*/ .ContainsKey(_value)) { 
@@ -675,20 +675,20 @@ RDebugUtils.currentLine=17367049;
 __ref._selectedhda_pvlmtro /*String*/  = BA.ObjectToString(_detailsmap.Get((Object)("Hda")));
 RDebugUtils.currentLine=17367052;
  //BA.debugLineNum = 17367052;BA.debugLine="Log(\"Código: \" & selectedCdgo_Plvmtro)";
-__c.LogImpl("217367052","Código: "+__ref._selectedcdgo_plvmtro /*String*/ ,0);
+__c.LogImpl("117367052","Código: "+__ref._selectedcdgo_plvmtro /*String*/ ,0);
 RDebugUtils.currentLine=17367053;
  //BA.debugLineNum = 17367053;BA.debugLine="Log(\"Nombre: \" & selectedNombre_Plvmtro)";
-__c.LogImpl("217367053","Nombre: "+__ref._selectednombre_plvmtro /*String*/ ,0);
+__c.LogImpl("117367053","Nombre: "+__ref._selectednombre_plvmtro /*String*/ ,0);
 RDebugUtils.currentLine=17367054;
  //BA.debugLineNum = 17367054;BA.debugLine="Log(\"NIT: \" & selectedNit_Plvmtro)";
-__c.LogImpl("217367054","NIT: "+__ref._selectednit_plvmtro /*String*/ ,0);
+__c.LogImpl("117367054","NIT: "+__ref._selectednit_plvmtro /*String*/ ,0);
 RDebugUtils.currentLine=17367055;
  //BA.debugLineNum = 17367055;BA.debugLine="Log(\"Hacienda: \" & selectedHda_Pvlmtro)";
-__c.LogImpl("217367055","Hacienda: "+__ref._selectedhda_pvlmtro /*String*/ ,0);
+__c.LogImpl("117367055","Hacienda: "+__ref._selectedhda_pvlmtro /*String*/ ,0);
  }else {
 RDebugUtils.currentLine=17367057;
  //BA.debugLineNum = 17367057;BA.debugLine="Log(\"Error: No se encontraron detalles para el c";
-__c.LogImpl("217367057","Error: No se encontraron detalles para el código seleccionado.",0);
+__c.LogImpl("117367057","Error: No se encontraron detalles para el código seleccionado.",0);
  };
 RDebugUtils.currentLine=17367059;
  //BA.debugLineNum = 17367059;BA.debugLine="End Sub";

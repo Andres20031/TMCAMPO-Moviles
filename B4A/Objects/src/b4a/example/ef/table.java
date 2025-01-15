@@ -208,7 +208,7 @@ RDebugUtils.currentLine=19791873;
 if (_values.length!=__ref._mnumberofcolumns /*int*/ ) { 
 RDebugUtils.currentLine=19791874;
  //BA.debugLineNum = 19791874;BA.debugLine="Log(\"Wrong number of values =\" & Values.Length &";
-__c.LogImpl("219791874","Wrong number of values ="+BA.NumberToString(_values.length)+" col="+BA.NumberToString(__ref._mnumberofcolumns /*int*/ ),0);
+__c.LogImpl("119791874","Wrong number of values ="+BA.NumberToString(_values.length)+" col="+BA.NumberToString(__ref._mnumberofcolumns /*int*/ ),0);
 RDebugUtils.currentLine=19791875;
  //BA.debugLineNum = 19791875;BA.debugLine="Return";
 if (true) return "";
@@ -1013,7 +1013,7 @@ RDebugUtils.currentLine=19857411;
 if (_values.length!=__ref._mnumberofcolumns /*int*/ ) { 
 RDebugUtils.currentLine=19857412;
  //BA.debugLineNum = 19857412;BA.debugLine="Log(\"Wrong number of values =\" & Values.Length &";
-__c.LogImpl("219857412","Wrong number of values ="+BA.NumberToString(_values.length)+" col="+BA.NumberToString(__ref._mnumberofcolumns /*int*/ ),0);
+__c.LogImpl("119857412","Wrong number of values ="+BA.NumberToString(_values.length)+" col="+BA.NumberToString(__ref._mnumberofcolumns /*int*/ ),0);
 RDebugUtils.currentLine=19857413;
  //BA.debugLineNum = 19857413;BA.debugLine="Return";
 if (true) return "";
@@ -4992,7 +4992,7 @@ RDebugUtils.currentLine=30933024;
 if (__ref._arrdatasorted /*boolean[]*/ [_col]==__c.False) { 
 RDebugUtils.currentLine=30933025;
  //BA.debugLineNum = 30933025;BA.debugLine="Log(\"SortTable2, cColumnDataType(\" & Col & \"): \"";
-__c.LogImpl("230933025","SortTable2, cColumnDataType("+BA.NumberToString(_col)+"): "+__ref._ccolumndatatype /*String[]*/ [_col],0);
+__c.LogImpl("130933025","SortTable2, cColumnDataType("+BA.NumberToString(_col)+"): "+__ref._ccolumndatatype /*String[]*/ [_col],0);
 RDebugUtils.currentLine=30933026;
  //BA.debugLineNum = 30933026;BA.debugLine="Select Case cColumnDataType(Col)";
 switch (BA.switchObjectToInt(__ref._ccolumndatatype /*String[]*/ [_col],"I","L","R","T","N","B")) {
@@ -5092,7 +5092,7 @@ RDebugUtils.currentLine=30933070;
 if (__ref._arrdatasorted /*boolean[]*/ [_col]==__c.False) { 
 RDebugUtils.currentLine=30933071;
  //BA.debugLineNum = 30933071;BA.debugLine="Log(\"SortTable2, cColumnDataType(\" & Col & \"): \"";
-__c.LogImpl("230933071","SortTable2, cColumnDataType("+BA.NumberToString(_col)+"): "+__ref._ccolumndatatype /*String[]*/ [_col],0);
+__c.LogImpl("130933071","SortTable2, cColumnDataType("+BA.NumberToString(_col)+"): "+__ref._ccolumndatatype /*String[]*/ [_col],0);
 RDebugUtils.currentLine=30933072;
  //BA.debugLineNum = 30933072;BA.debugLine="Select Case cColumnDataType(Col)";
 switch (BA.switchObjectToInt(__ref._ccolumndatatype /*String[]*/ [_col],"I","L","R","T","N","B")) {
@@ -6144,13 +6144,13 @@ case 0:
 this.state = 1;
 RDebugUtils.currentLine=20840449;
  //BA.debugLineNum = 20840449;BA.debugLine="Log(\"You may get this warning:\")";
-parent.__c.LogImpl("220840449","You may get this warning:",0);
+parent.__c.LogImpl("120840449","You may get this warning:",0);
 RDebugUtils.currentLine=20840450;
  //BA.debugLineNum = 20840450;BA.debugLine="Log(\"Unexpected event (missing RaiseSynchronousEv";
-parent.__c.LogImpl("220840450","Unexpected event (missing RaiseSynchronousEvents): sv_scrollchanged",0);
+parent.__c.LogImpl("120840450","Unexpected event (missing RaiseSynchronousEvents): sv_scrollchanged",0);
 RDebugUtils.currentLine=20840451;
  //BA.debugLineNum = 20840451;BA.debugLine="Log(\"Ignore it, it is NOT harmful !\")";
-parent.__c.LogImpl("220840451","Ignore it, it is NOT harmful !",0);
+parent.__c.LogImpl("120840451","Ignore it, it is NOT harmful !",0);
 RDebugUtils.currentLine=20840452;
  //BA.debugLineNum = 20840452;BA.debugLine="Dim rc As RowCol";
 _rc = new b4a.example.ef.table._rowcol();
@@ -8957,7 +8957,7 @@ RDebugUtils.currentLine=28246018;
 __c.ToastMessageShow(BA.ObjectToCharSequence("Table.ScaleTable must be called before filling the Table"),__c.False);
 RDebugUtils.currentLine=28246019;
  //BA.debugLineNum = 28246019;BA.debugLine="Log(\"Table.ScaleTable must be called before fill";
-__c.LogImpl("228246019","Table.ScaleTable must be called before filling the Table",0);
+__c.LogImpl("128246019","Table.ScaleTable must be called before filling the Table",0);
 RDebugUtils.currentLine=28246020;
  //BA.debugLineNum = 28246020;BA.debugLine="Return";
 if (true) return "";
@@ -10866,7 +10866,7 @@ RDebugUtils.currentLine=27721756;
 __c.ToastMessageShow(BA.ObjectToCharSequence("Invalid number of columns"),__c.False);
 RDebugUtils.currentLine=27721757;
  //BA.debugLineNum = 27721757;BA.debugLine="Log(\"SetHeaderTypeFaces: Invalid number of colu";
-__c.LogImpl("227721757","SetHeaderTypeFaces: Invalid number of columns",0);
+__c.LogImpl("127721757","SetHeaderTypeFaces: Invalid number of columns",0);
 RDebugUtils.currentLine=27721758;
  //BA.debugLineNum = 27721758;BA.debugLine="Return";
 if (true) return "";

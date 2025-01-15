@@ -57,13 +57,13 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="detailsperson";
 if (Debug.shouldDelegate(ba, "initialize", false))
 	 {return ((Object) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
-RDebugUtils.currentLine=5505024;
- //BA.debugLineNum = 5505024;BA.debugLine="Public Sub Initialize As Object";
-RDebugUtils.currentLine=5505025;
- //BA.debugLineNum = 5505025;BA.debugLine="Return Me";
+RDebugUtils.currentLine=16121856;
+ //BA.debugLineNum = 16121856;BA.debugLine="Public Sub Initialize As Object";
+RDebugUtils.currentLine=16121857;
+ //BA.debugLineNum = 16121857;BA.debugLine="Return Me";
 if (true) return this;
-RDebugUtils.currentLine=5505026;
- //BA.debugLineNum = 5505026;BA.debugLine="End Sub";
+RDebugUtils.currentLine=16121858;
+ //BA.debugLineNum = 16121858;BA.debugLine="End Sub";
 return null;
 }
 public void  _b4xpage_appear(b4a.example.ef.detailsperson __ref) throws Exception{
@@ -136,35 +136,35 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=5636097;
- //BA.debugLineNum = 5636097;BA.debugLine="CLV_Persons.Clear";
+RDebugUtils.currentLine=16252929;
+ //BA.debugLineNum = 16252929;BA.debugLine="CLV_Persons.Clear";
 __ref._clv_persons /*b4a.example3.customlistview*/ ._clear();
-RDebugUtils.currentLine=5636098;
- //BA.debugLineNum = 5636098;BA.debugLine="Label3.Text=namePerson";
+RDebugUtils.currentLine=16252930;
+ //BA.debugLineNum = 16252930;BA.debugLine="Label3.Text=namePerson";
 __ref._label3 /*anywheresoftware.b4a.objects.LabelWrapper*/ .setText(BA.ObjectToCharSequence(__ref._nameperson /*String*/ ));
-RDebugUtils.currentLine=5636100;
- //BA.debugLineNum = 5636100;BA.debugLine="Dim idPerson As String";
+RDebugUtils.currentLine=16252932;
+ //BA.debugLineNum = 16252932;BA.debugLine="Dim idPerson As String";
 _idperson = "";
-RDebugUtils.currentLine=5636102;
- //BA.debugLineNum = 5636102;BA.debugLine="namePerson=namePerson.Replace(\" \",\"\")";
+RDebugUtils.currentLine=16252934;
+ //BA.debugLineNum = 16252934;BA.debugLine="namePerson=namePerson.Replace(\" \",\"\")";
 __ref._nameperson /*String*/  = __ref._nameperson /*String*/ .replace(" ","");
-RDebugUtils.currentLine=5636103;
- //BA.debugLineNum = 5636103;BA.debugLine="Dim parts() As String = Regex.Split(\"#\", namePers";
+RDebugUtils.currentLine=16252935;
+ //BA.debugLineNum = 16252935;BA.debugLine="Dim parts() As String = Regex.Split(\"#\", namePers";
 _parts = parent.__c.Regex.Split("#",__ref._nameperson /*String*/ );
-RDebugUtils.currentLine=5636104;
- //BA.debugLineNum = 5636104;BA.debugLine="idPerson=parts(1)";
+RDebugUtils.currentLine=16252936;
+ //BA.debugLineNum = 16252936;BA.debugLine="idPerson=parts(1)";
 _idperson = _parts[(int) (1)];
-RDebugUtils.currentLine=5636109;
- //BA.debugLineNum = 5636109;BA.debugLine="Dim Req As DBRequestManager";
+RDebugUtils.currentLine=16252941;
+ //BA.debugLineNum = 16252941;BA.debugLine="Dim Req As DBRequestManager";
 _req = new b4a.example.ef.dbrequestmanager();
-RDebugUtils.currentLine=5636110;
- //BA.debugLineNum = 5636110;BA.debugLine="Req.Initialize(Me, rdcLink & \"?DBName=\" & Main.pD";
+RDebugUtils.currentLine=16252942;
+ //BA.debugLineNum = 16252942;BA.debugLine="Req.Initialize(Me, rdcLink & \"?DBName=\" & Main.pD";
 _req._initialize /*String*/ (null,ba,parent,__ref._rdclink /*String*/ +"?DBName="+parent._main._pdbname /*String*/ );
-RDebugUtils.currentLine=5636111;
- //BA.debugLineNum = 5636111;BA.debugLine="Dim cmd As DBCommand = CreateCommand(\"select_deta";
+RDebugUtils.currentLine=16252943;
+ //BA.debugLineNum = 16252943;BA.debugLine="Dim cmd As DBCommand = CreateCommand(\"select_deta";
 _cmd = __ref._createcommand /*b4a.example.ef.main._dbcommand*/ (null,"select_detailsPerson",new Object[]{(Object)(_idperson),(Object)(_idperson)});
-RDebugUtils.currentLine=5636112;
- //BA.debugLineNum = 5636112;BA.debugLine="Wait For (Req.ExecuteQuery(cmd, 0, Null)) JobDone";
+RDebugUtils.currentLine=16252944;
+ //BA.debugLineNum = 16252944;BA.debugLine="Wait For (Req.ExecuteQuery(cmd, 0, Null)) JobDone";
 parent.__c.WaitFor("jobdone", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "detailsperson", "b4xpage_appear"), (Object)(_req._executequery /*b4a.example.ef.httpjob*/ (null,_cmd,(int) (0),parent.__c.Null)));
 this.state = 37;
 return;
@@ -173,8 +173,8 @@ case 37:
 this.state = 1;
 _j = (b4a.example.ef.httpjob) result[1];
 ;
-RDebugUtils.currentLine=5636114;
- //BA.debugLineNum = 5636114;BA.debugLine="If j.Success Then";
+RDebugUtils.currentLine=16252946;
+ //BA.debugLineNum = 16252946;BA.debugLine="If j.Success Then";
 if (true) break;
 
 case 1:
@@ -189,14 +189,14 @@ this.state = 35;
 case 3:
 //C
 this.state = 4;
-RDebugUtils.currentLine=5636115;
- //BA.debugLineNum = 5636115;BA.debugLine="sf.Initialize";
+RDebugUtils.currentLine=16252947;
+ //BA.debugLineNum = 16252947;BA.debugLine="sf.Initialize";
 __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvv1(ba);
-RDebugUtils.currentLine=5636116;
- //BA.debugLineNum = 5636116;BA.debugLine="Req.HandleJobAsync(j, \"req\")";
+RDebugUtils.currentLine=16252948;
+ //BA.debugLineNum = 16252948;BA.debugLine="Req.HandleJobAsync(j, \"req\")";
 _req._handlejobasync /*void*/ (null,_j,"req");
-RDebugUtils.currentLine=5636117;
- //BA.debugLineNum = 5636117;BA.debugLine="Wait For (Req) req_Result(res As DBResult)";
+RDebugUtils.currentLine=16252949;
+ //BA.debugLineNum = 16252949;BA.debugLine="Wait For (Req) req_Result(res As DBResult)";
 parent.__c.WaitFor("req_result", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "detailsperson", "b4xpage_appear"), (Object)(_req));
 this.state = 38;
 return;
@@ -205,8 +205,8 @@ case 38:
 this.state = 4;
 _res = (b4a.example.ef.main._dbresult) result[1];
 ;
-RDebugUtils.currentLine=5636119;
- //BA.debugLineNum = 5636119;BA.debugLine="If res.Rows.Size > 0 Then";
+RDebugUtils.currentLine=16252951;
+ //BA.debugLineNum = 16252951;BA.debugLine="If res.Rows.Size > 0 Then";
 if (true) break;
 
 case 4:
@@ -221,26 +221,26 @@ this.state = 32;
 case 6:
 //C
 this.state = 7;
-RDebugUtils.currentLine=5636120;
- //BA.debugLineNum = 5636120;BA.debugLine="Dim counter As Int";
+RDebugUtils.currentLine=16252952;
+ //BA.debugLineNum = 16252952;BA.debugLine="Dim counter As Int";
 _counter = 0;
-RDebugUtils.currentLine=5636121;
- //BA.debugLineNum = 5636121;BA.debugLine="counter = 0";
+RDebugUtils.currentLine=16252953;
+ //BA.debugLineNum = 16252953;BA.debugLine="counter = 0";
 _counter = (int) (0);
-RDebugUtils.currentLine=5636122;
- //BA.debugLineNum = 5636122;BA.debugLine="Dim nombreEMPRESA As String";
+RDebugUtils.currentLine=16252954;
+ //BA.debugLineNum = 16252954;BA.debugLine="Dim nombreEMPRESA As String";
 _nombreempresa = "";
-RDebugUtils.currentLine=5636123;
- //BA.debugLineNum = 5636123;BA.debugLine="Dim nombreHacienda As String";
+RDebugUtils.currentLine=16252955;
+ //BA.debugLineNum = 16252955;BA.debugLine="Dim nombreHacienda As String";
 _nombrehacienda = "";
-RDebugUtils.currentLine=5636124;
- //BA.debugLineNum = 5636124;BA.debugLine="Dim nombreEMPRESA_Limitado As String";
+RDebugUtils.currentLine=16252956;
+ //BA.debugLineNum = 16252956;BA.debugLine="Dim nombreEMPRESA_Limitado As String";
 _nombreempresa_limitado = "";
-RDebugUtils.currentLine=5636125;
- //BA.debugLineNum = 5636125;BA.debugLine="Dim nombreHacienda_Limitado As String";
+RDebugUtils.currentLine=16252957;
+ //BA.debugLineNum = 16252957;BA.debugLine="Dim nombreHacienda_Limitado As String";
 _nombrehacienda_limitado = "";
-RDebugUtils.currentLine=5636127;
- //BA.debugLineNum = 5636127;BA.debugLine="For Each row() As Object In res.Rows";
+RDebugUtils.currentLine=16252959;
+ //BA.debugLineNum = 16252959;BA.debugLine="For Each row() As Object In res.Rows";
 if (true) break;
 
 case 7:
@@ -269,54 +269,54 @@ if (true) break;
 case 9:
 //C
 this.state = 10;
-RDebugUtils.currentLine=5636128;
- //BA.debugLineNum = 5636128;BA.debugLine="Dim codigo As String = sf.Trim(row(0))";
+RDebugUtils.currentLine=16252960;
+ //BA.debugLineNum = 16252960;BA.debugLine="Dim codigo As String = sf.Trim(row(0))";
 _codigo = __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(BA.ObjectToString(_row[(int) (0)]));
-RDebugUtils.currentLine=5636129;
- //BA.debugLineNum = 5636129;BA.debugLine="Dim fecha As String = sf.Trim(row(1))";
+RDebugUtils.currentLine=16252961;
+ //BA.debugLineNum = 16252961;BA.debugLine="Dim fecha As String = sf.Trim(row(1))";
 _fecha = __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(BA.ObjectToString(_row[(int) (1)]));
-RDebugUtils.currentLine=5636130;
- //BA.debugLineNum = 5636130;BA.debugLine="Dim destino As String = sf.Trim(row(2))";
+RDebugUtils.currentLine=16252962;
+ //BA.debugLineNum = 16252962;BA.debugLine="Dim destino As String = sf.Trim(row(2))";
 _destino = __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(BA.ObjectToString(_row[(int) (2)]));
-RDebugUtils.currentLine=5636131;
- //BA.debugLineNum = 5636131;BA.debugLine="Dim concepto As String = sf.Trim(row(3))";
+RDebugUtils.currentLine=16252963;
+ //BA.debugLineNum = 16252963;BA.debugLine="Dim concepto As String = sf.Trim(row(3))";
 _concepto = __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(BA.ObjectToString(_row[(int) (3)]));
-RDebugUtils.currentLine=5636132;
- //BA.debugLineNum = 5636132;BA.debugLine="Dim hacienda As String = sf.Trim(row(4)) ' Cdg";
+RDebugUtils.currentLine=16252964;
+ //BA.debugLineNum = 16252964;BA.debugLine="Dim hacienda As String = sf.Trim(row(4)) ' Cdg";
 _hacienda = __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(BA.ObjectToString(_row[(int) (4)]));
-RDebugUtils.currentLine=5636133;
- //BA.debugLineNum = 5636133;BA.debugLine="Dim estado As String = sf.Trim(row(5))";
+RDebugUtils.currentLine=16252965;
+ //BA.debugLineNum = 16252965;BA.debugLine="Dim estado As String = sf.Trim(row(5))";
 _estado = __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(BA.ObjectToString(_row[(int) (5)]));
-RDebugUtils.currentLine=5636134;
- //BA.debugLineNum = 5636134;BA.debugLine="Dim horas As String = sf.Trim(row(6))";
+RDebugUtils.currentLine=16252966;
+ //BA.debugLineNum = 16252966;BA.debugLine="Dim horas As String = sf.Trim(row(6))";
 _horas = __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(BA.ObjectToString(_row[(int) (6)]));
-RDebugUtils.currentLine=5636135;
- //BA.debugLineNum = 5636135;BA.debugLine="Dim cantidad As String = sf.Trim(row(7))";
+RDebugUtils.currentLine=16252967;
+ //BA.debugLineNum = 16252967;BA.debugLine="Dim cantidad As String = sf.Trim(row(7))";
 _cantidad = __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(BA.ObjectToString(_row[(int) (7)]));
-RDebugUtils.currentLine=5636136;
- //BA.debugLineNum = 5636136;BA.debugLine="Dim valor As String = sf.Trim(row(8))";
+RDebugUtils.currentLine=16252968;
+ //BA.debugLineNum = 16252968;BA.debugLine="Dim valor As String = sf.Trim(row(8))";
 _valor = __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(BA.ObjectToString(_row[(int) (8)]));
-RDebugUtils.currentLine=5636137;
- //BA.debugLineNum = 5636137;BA.debugLine="Dim area As String = sf.Trim(row(9))";
+RDebugUtils.currentLine=16252969;
+ //BA.debugLineNum = 16252969;BA.debugLine="Dim area As String = sf.Trim(row(9))";
 _area = __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(BA.ObjectToString(_row[(int) (9)]));
-RDebugUtils.currentLine=5636138;
- //BA.debugLineNum = 5636138;BA.debugLine="Dim Nit As String = sf.Trim(row(10)) ' NIT del";
+RDebugUtils.currentLine=16252970;
+ //BA.debugLineNum = 16252970;BA.debugLine="Dim Nit As String = sf.Trim(row(10)) ' NIT del";
 _nit = __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(BA.ObjectToString(_row[(int) (10)]));
-RDebugUtils.currentLine=5636139;
- //BA.debugLineNum = 5636139;BA.debugLine="Dim codigoLote As String = sf.Trim(row(11))";
+RDebugUtils.currentLine=16252971;
+ //BA.debugLineNum = 16252971;BA.debugLine="Dim codigoLote As String = sf.Trim(row(11))";
 _codigolote = __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(BA.ObjectToString(_row[(int) (11)]));
-RDebugUtils.currentLine=5636142;
- //BA.debugLineNum = 5636142;BA.debugLine="Dim parts2() As String";
+RDebugUtils.currentLine=16252974;
+ //BA.debugLineNum = 16252974;BA.debugLine="Dim parts2() As String";
 _parts2 = new String[(int) (0)];
 java.util.Arrays.fill(_parts2,"");
-RDebugUtils.currentLine=5636143;
- //BA.debugLineNum = 5636143;BA.debugLine="parts2 = Regex.Split(\" \", fecha)";
+RDebugUtils.currentLine=16252975;
+ //BA.debugLineNum = 16252975;BA.debugLine="parts2 = Regex.Split(\" \", fecha)";
 _parts2 = parent.__c.Regex.Split(" ",_fecha);
-RDebugUtils.currentLine=5636146;
- //BA.debugLineNum = 5636146;BA.debugLine="Dim cmdNombre As DBCommand = CreateCommand(\"se";
+RDebugUtils.currentLine=16252978;
+ //BA.debugLineNum = 16252978;BA.debugLine="Dim cmdNombre As DBCommand = CreateCommand(\"se";
 _cmdnombre = __ref._createcommand /*b4a.example.ef.main._dbcommand*/ (null,"select_nit_details",new Object[]{(Object)(_nit)});
-RDebugUtils.currentLine=5636147;
- //BA.debugLineNum = 5636147;BA.debugLine="Wait For (Req.ExecuteQuery(cmdNombre, 0, Null)";
+RDebugUtils.currentLine=16252979;
+ //BA.debugLineNum = 16252979;BA.debugLine="Wait For (Req.ExecuteQuery(cmdNombre, 0, Null)";
 parent.__c.WaitFor("jobdone", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "detailsperson", "b4xpage_appear"), (Object)(_req._executequery /*b4a.example.ef.httpjob*/ (null,_cmdnombre,(int) (0),parent.__c.Null)));
 this.state = 41;
 return;
@@ -325,8 +325,8 @@ case 41:
 this.state = 10;
 _j2 = (b4a.example.ef.httpjob) result[1];
 ;
-RDebugUtils.currentLine=5636149;
- //BA.debugLineNum = 5636149;BA.debugLine="If j2.Success Then";
+RDebugUtils.currentLine=16252981;
+ //BA.debugLineNum = 16252981;BA.debugLine="If j2.Success Then";
 if (true) break;
 
 case 10:
@@ -341,11 +341,11 @@ this.state = 18;
 case 12:
 //C
 this.state = 13;
-RDebugUtils.currentLine=5636150;
- //BA.debugLineNum = 5636150;BA.debugLine="Req.HandleJobAsync(j2, \"req_nombre\")";
+RDebugUtils.currentLine=16252982;
+ //BA.debugLineNum = 16252982;BA.debugLine="Req.HandleJobAsync(j2, \"req_nombre\")";
 _req._handlejobasync /*void*/ (null,_j2,"req_nombre");
-RDebugUtils.currentLine=5636151;
- //BA.debugLineNum = 5636151;BA.debugLine="Wait For (Req) req_nombre_Result(resNombre As";
+RDebugUtils.currentLine=16252983;
+ //BA.debugLineNum = 16252983;BA.debugLine="Wait For (Req) req_nombre_Result(resNombre As";
 parent.__c.WaitFor("req_nombre_result", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "detailsperson", "b4xpage_appear"), (Object)(_req));
 this.state = 42;
 return;
@@ -354,8 +354,8 @@ case 42:
 this.state = 13;
 _resnombre = (b4a.example.ef.main._dbresult) result[1];
 ;
-RDebugUtils.currentLine=5636153;
- //BA.debugLineNum = 5636153;BA.debugLine="For Each rowNombre() As Object In resNombre.R";
+RDebugUtils.currentLine=16252985;
+ //BA.debugLineNum = 16252985;BA.debugLine="For Each rowNombre() As Object In resNombre.R";
 if (true) break;
 
 case 13:
@@ -384,11 +384,11 @@ if (true) break;
 case 15:
 //C
 this.state = 44;
-RDebugUtils.currentLine=5636154;
- //BA.debugLineNum = 5636154;BA.debugLine="nombreEMPRESA = sf.Trim(rowNombre(0)) ' El p";
+RDebugUtils.currentLine=16252986;
+ //BA.debugLineNum = 16252986;BA.debugLine="nombreEMPRESA = sf.Trim(rowNombre(0)) ' El p";
 _nombreempresa = __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(BA.ObjectToString(_rownombre[(int) (0)]));
-RDebugUtils.currentLine=5636155;
- //BA.debugLineNum = 5636155;BA.debugLine="nombreEMPRESA_Limitado = LimitarPalabras(nom";
+RDebugUtils.currentLine=16252987;
+ //BA.debugLineNum = 16252987;BA.debugLine="nombreEMPRESA_Limitado = LimitarPalabras(nom";
 _nombreempresa_limitado = __ref._limitarpalabras /*String*/ (null,_nombreempresa,(int) (3));
  if (true) break;
 if (true) break;
@@ -402,20 +402,20 @@ this.state = 19;
 case 18:
 //C
 this.state = 19;
-RDebugUtils.currentLine=5636158;
- //BA.debugLineNum = 5636158;BA.debugLine="Log(\"ERROR al obtener el nombre del cliente:";
-parent.__c.LogImpl("25636158","ERROR al obtener el nombre del cliente: "+_j2._errormessage /*String*/ ,0);
+RDebugUtils.currentLine=16252990;
+ //BA.debugLineNum = 16252990;BA.debugLine="Log(\"ERROR al obtener el nombre del cliente:";
+parent.__c.LogImpl("116252990","ERROR al obtener el nombre del cliente: "+_j2._errormessage /*String*/ ,0);
  if (true) break;
 
 case 19:
 //C
 this.state = 20;
 ;
-RDebugUtils.currentLine=5636162;
- //BA.debugLineNum = 5636162;BA.debugLine="Dim cmdHacienda As DBCommand = CreateCommand(\"";
+RDebugUtils.currentLine=16252994;
+ //BA.debugLineNum = 16252994;BA.debugLine="Dim cmdHacienda As DBCommand = CreateCommand(\"";
 _cmdhacienda = __ref._createcommand /*b4a.example.ef.main._dbcommand*/ (null,"select_hacienda_details",new Object[]{(Object)(_hacienda)});
-RDebugUtils.currentLine=5636163;
- //BA.debugLineNum = 5636163;BA.debugLine="Wait For (Req.ExecuteQuery(cmdHacienda, 0, Nul";
+RDebugUtils.currentLine=16252995;
+ //BA.debugLineNum = 16252995;BA.debugLine="Wait For (Req.ExecuteQuery(cmdHacienda, 0, Nul";
 parent.__c.WaitFor("jobdone", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "detailsperson", "b4xpage_appear"), (Object)(_req._executequery /*b4a.example.ef.httpjob*/ (null,_cmdhacienda,(int) (0),parent.__c.Null)));
 this.state = 45;
 return;
@@ -424,8 +424,8 @@ case 45:
 this.state = 20;
 _j3 = (b4a.example.ef.httpjob) result[1];
 ;
-RDebugUtils.currentLine=5636165;
- //BA.debugLineNum = 5636165;BA.debugLine="If j3.Success Then";
+RDebugUtils.currentLine=16252997;
+ //BA.debugLineNum = 16252997;BA.debugLine="If j3.Success Then";
 if (true) break;
 
 case 20:
@@ -440,11 +440,11 @@ this.state = 28;
 case 22:
 //C
 this.state = 23;
-RDebugUtils.currentLine=5636166;
- //BA.debugLineNum = 5636166;BA.debugLine="Req.HandleJobAsync(j3, \"req_hacienda\")";
+RDebugUtils.currentLine=16252998;
+ //BA.debugLineNum = 16252998;BA.debugLine="Req.HandleJobAsync(j3, \"req_hacienda\")";
 _req._handlejobasync /*void*/ (null,_j3,"req_hacienda");
-RDebugUtils.currentLine=5636167;
- //BA.debugLineNum = 5636167;BA.debugLine="Wait For (Req) req_hacienda_Result(resHaciend";
+RDebugUtils.currentLine=16252999;
+ //BA.debugLineNum = 16252999;BA.debugLine="Wait For (Req) req_hacienda_Result(resHaciend";
 parent.__c.WaitFor("req_hacienda_result", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "detailsperson", "b4xpage_appear"), (Object)(_req));
 this.state = 46;
 return;
@@ -453,8 +453,8 @@ case 46:
 this.state = 23;
 _reshacienda = (b4a.example.ef.main._dbresult) result[1];
 ;
-RDebugUtils.currentLine=5636169;
- //BA.debugLineNum = 5636169;BA.debugLine="For Each rowHacienda() As Object In resHacien";
+RDebugUtils.currentLine=16253001;
+ //BA.debugLineNum = 16253001;BA.debugLine="For Each rowHacienda() As Object In resHacien";
 if (true) break;
 
 case 23:
@@ -483,11 +483,11 @@ if (true) break;
 case 25:
 //C
 this.state = 48;
-RDebugUtils.currentLine=5636170;
- //BA.debugLineNum = 5636170;BA.debugLine="nombreHacienda = sf.Trim(rowHacienda(0)) ' E";
+RDebugUtils.currentLine=16253002;
+ //BA.debugLineNum = 16253002;BA.debugLine="nombreHacienda = sf.Trim(rowHacienda(0)) ' E";
 _nombrehacienda = __ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(BA.ObjectToString(_rowhacienda[(int) (0)]));
-RDebugUtils.currentLine=5636171;
- //BA.debugLineNum = 5636171;BA.debugLine="nombreHacienda_Limitado = LimitarPalabras(no";
+RDebugUtils.currentLine=16253003;
+ //BA.debugLineNum = 16253003;BA.debugLine="nombreHacienda_Limitado = LimitarPalabras(no";
 _nombrehacienda_limitado = __ref._limitarpalabras /*String*/ (null,_nombrehacienda,(int) (3));
  if (true) break;
 if (true) break;
@@ -501,20 +501,20 @@ this.state = 29;
 case 28:
 //C
 this.state = 29;
-RDebugUtils.currentLine=5636174;
- //BA.debugLineNum = 5636174;BA.debugLine="Log(\"ERROR al obtener el nombre de la haciend";
-parent.__c.LogImpl("25636174","ERROR al obtener el nombre de la hacienda: "+_j3._errormessage /*String*/ ,0);
+RDebugUtils.currentLine=16253006;
+ //BA.debugLineNum = 16253006;BA.debugLine="Log(\"ERROR al obtener el nombre de la haciend";
+parent.__c.LogImpl("116253006","ERROR al obtener el nombre de la hacienda: "+_j3._errormessage /*String*/ ,0);
  if (true) break;
 
 case 29:
 //C
 this.state = 40;
 ;
-RDebugUtils.currentLine=5636178;
- //BA.debugLineNum = 5636178;BA.debugLine="CLV_Persons.Add(CreateItem(counter, parts2(0),";
+RDebugUtils.currentLine=16253010;
+ //BA.debugLineNum = 16253010;BA.debugLine="CLV_Persons.Add(CreateItem(counter, parts2(0),";
 __ref._clv_persons /*b4a.example3.customlistview*/ ._add((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(__ref._createitem /*anywheresoftware.b4a.objects.PanelWrapper*/ (null,_counter,_parts2[(int) (0)],_nombreempresa_limitado,_hacienda+" - "+_nombrehacienda_limitado,_codigolote).getObject())),(Object)(_counter));
-RDebugUtils.currentLine=5636179;
- //BA.debugLineNum = 5636179;BA.debugLine="counter = counter + 1";
+RDebugUtils.currentLine=16253011;
+ //BA.debugLineNum = 16253011;BA.debugLine="counter = counter + 1";
 _counter = (int) (_counter+1);
  if (true) break;
 if (true) break;
@@ -528,8 +528,8 @@ this.state = 33;
 case 32:
 //C
 this.state = 33;
-RDebugUtils.currentLine=5636182;
- //BA.debugLineNum = 5636182;BA.debugLine="CLV_Persons.AddTextItem(\"NO HAY DATOS\", \"no_dat";
+RDebugUtils.currentLine=16253014;
+ //BA.debugLineNum = 16253014;BA.debugLine="CLV_Persons.AddTextItem(\"NO HAY DATOS\", \"no_dat";
 __ref._clv_persons /*b4a.example3.customlistview*/ ._addtextitem((Object)("NO HAY DATOS"),(Object)("no_data"));
  if (true) break;
 
@@ -542,17 +542,17 @@ this.state = 36;
 case 35:
 //C
 this.state = 36;
-RDebugUtils.currentLine=5636185;
- //BA.debugLineNum = 5636185;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("25636185","ERROR: "+_j._errormessage /*String*/ ,0);
+RDebugUtils.currentLine=16253017;
+ //BA.debugLineNum = 16253017;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
+parent.__c.LogImpl("116253017","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 36:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=5636190;
- //BA.debugLineNum = 5636190;BA.debugLine="End Sub";
+RDebugUtils.currentLine=16253022;
+ //BA.debugLineNum = 16253022;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -565,26 +565,26 @@ RDebugUtils.currentModule="detailsperson";
 if (Debug.shouldDelegate(ba, "createcommand", false))
 	 {return ((b4a.example.ef.main._dbcommand) Debug.delegate(ba, "createcommand", new Object[] {_name,_parameters}));}
 b4a.example.ef.main._dbcommand _cmd = null;
-RDebugUtils.currentLine=5963776;
- //BA.debugLineNum = 5963776;BA.debugLine="Sub CreateCommand(Name As String, Parameters() As";
-RDebugUtils.currentLine=5963777;
- //BA.debugLineNum = 5963777;BA.debugLine="Dim cmd As DBCommand";
+RDebugUtils.currentLine=16580608;
+ //BA.debugLineNum = 16580608;BA.debugLine="Sub CreateCommand(Name As String, Parameters() As";
+RDebugUtils.currentLine=16580609;
+ //BA.debugLineNum = 16580609;BA.debugLine="Dim cmd As DBCommand";
 _cmd = new b4a.example.ef.main._dbcommand();
-RDebugUtils.currentLine=5963778;
- //BA.debugLineNum = 5963778;BA.debugLine="cmd.Initialize";
+RDebugUtils.currentLine=16580610;
+ //BA.debugLineNum = 16580610;BA.debugLine="cmd.Initialize";
 _cmd.Initialize();
-RDebugUtils.currentLine=5963779;
- //BA.debugLineNum = 5963779;BA.debugLine="cmd.Name = Name";
+RDebugUtils.currentLine=16580611;
+ //BA.debugLineNum = 16580611;BA.debugLine="cmd.Name = Name";
 _cmd.Name /*String*/  = _name;
-RDebugUtils.currentLine=5963780;
- //BA.debugLineNum = 5963780;BA.debugLine="If Parameters <> Null Then cmd.Parameters = Param";
+RDebugUtils.currentLine=16580612;
+ //BA.debugLineNum = 16580612;BA.debugLine="If Parameters <> Null Then cmd.Parameters = Param";
 if (_parameters!= null) { 
 _cmd.Parameters /*Object[]*/  = _parameters;};
-RDebugUtils.currentLine=5963781;
- //BA.debugLineNum = 5963781;BA.debugLine="Return cmd";
+RDebugUtils.currentLine=16580613;
+ //BA.debugLineNum = 16580613;BA.debugLine="Return cmd";
 if (true) return _cmd;
-RDebugUtils.currentLine=5963782;
- //BA.debugLineNum = 5963782;BA.debugLine="End Sub";
+RDebugUtils.currentLine=16580614;
+ //BA.debugLineNum = 16580614;BA.debugLine="End Sub";
 return null;
 }
 public String  _limitarpalabras(b4a.example.ef.detailsperson __ref,String _texto,int _maxpalabras) throws Exception{
@@ -595,45 +595,45 @@ if (Debug.shouldDelegate(ba, "limitarpalabras", false))
 String[] _palabras = null;
 anywheresoftware.b4a.keywords.StringBuilderWrapper _resultado = null;
 int _i = 0;
-RDebugUtils.currentLine=6094848;
- //BA.debugLineNum = 6094848;BA.debugLine="Sub LimitarPalabras(texto As String, maxPalabras A";
-RDebugUtils.currentLine=6094849;
- //BA.debugLineNum = 6094849;BA.debugLine="Dim palabras() As String";
+RDebugUtils.currentLine=16711680;
+ //BA.debugLineNum = 16711680;BA.debugLine="Sub LimitarPalabras(texto As String, maxPalabras A";
+RDebugUtils.currentLine=16711681;
+ //BA.debugLineNum = 16711681;BA.debugLine="Dim palabras() As String";
 _palabras = new String[(int) (0)];
 java.util.Arrays.fill(_palabras,"");
-RDebugUtils.currentLine=6094850;
- //BA.debugLineNum = 6094850;BA.debugLine="palabras = Regex.Split(\"\\s+\", texto) ' Dividimos";
+RDebugUtils.currentLine=16711682;
+ //BA.debugLineNum = 16711682;BA.debugLine="palabras = Regex.Split(\"\\s+\", texto) ' Dividimos";
 _palabras = __c.Regex.Split("\\s+",_texto);
-RDebugUtils.currentLine=6094852;
- //BA.debugLineNum = 6094852;BA.debugLine="Dim resultado As StringBuilder";
+RDebugUtils.currentLine=16711684;
+ //BA.debugLineNum = 16711684;BA.debugLine="Dim resultado As StringBuilder";
 _resultado = new anywheresoftware.b4a.keywords.StringBuilderWrapper();
-RDebugUtils.currentLine=6094853;
- //BA.debugLineNum = 6094853;BA.debugLine="resultado.Initialize";
+RDebugUtils.currentLine=16711685;
+ //BA.debugLineNum = 16711685;BA.debugLine="resultado.Initialize";
 _resultado.Initialize();
-RDebugUtils.currentLine=6094856;
- //BA.debugLineNum = 6094856;BA.debugLine="For i = 0 To Min(palabras.Length - 1, maxPalabras";
+RDebugUtils.currentLine=16711688;
+ //BA.debugLineNum = 16711688;BA.debugLine="For i = 0 To Min(palabras.Length - 1, maxPalabras";
 {
 final int step5 = 1;
 final int limit5 = (int) (__c.Min(_palabras.length-1,_maxpalabras-1));
 _i = (int) (0) ;
 for (;_i <= limit5 ;_i = _i + step5 ) {
-RDebugUtils.currentLine=6094857;
- //BA.debugLineNum = 6094857;BA.debugLine="resultado.Append(palabras(i)).Append(\" \")";
+RDebugUtils.currentLine=16711689;
+ //BA.debugLineNum = 16711689;BA.debugLine="resultado.Append(palabras(i)).Append(\" \")";
 _resultado.Append(_palabras[_i]).Append(" ");
  }
 };
-RDebugUtils.currentLine=6094861;
- //BA.debugLineNum = 6094861;BA.debugLine="If palabras.Length > maxPalabras Then";
+RDebugUtils.currentLine=16711693;
+ //BA.debugLineNum = 16711693;BA.debugLine="If palabras.Length > maxPalabras Then";
 if (_palabras.length>_maxpalabras) { 
-RDebugUtils.currentLine=6094862;
- //BA.debugLineNum = 6094862;BA.debugLine="resultado.Append(\"...\")";
+RDebugUtils.currentLine=16711694;
+ //BA.debugLineNum = 16711694;BA.debugLine="resultado.Append(\"...\")";
 _resultado.Append("...");
  };
-RDebugUtils.currentLine=6094865;
- //BA.debugLineNum = 6094865;BA.debugLine="Return resultado.ToString.Trim";
+RDebugUtils.currentLine=16711697;
+ //BA.debugLineNum = 16711697;BA.debugLine="Return resultado.ToString.Trim";
 if (true) return _resultado.ToString().trim();
-RDebugUtils.currentLine=6094866;
- //BA.debugLineNum = 6094866;BA.debugLine="End Sub";
+RDebugUtils.currentLine=16711698;
+ //BA.debugLineNum = 16711698;BA.debugLine="End Sub";
 return "";
 }
 public anywheresoftware.b4a.objects.PanelWrapper  _createitem(b4a.example.ef.detailsperson __ref,int _position,String _fecha,String _nit,String _hacienda,String _lote) throws Exception{
@@ -643,50 +643,50 @@ if (Debug.shouldDelegate(ba, "createitem", false))
 	 {return ((anywheresoftware.b4a.objects.PanelWrapper) Debug.delegate(ba, "createitem", new Object[] {_position,_fecha,_nit,_hacienda,_lote}));}
 anywheresoftware.b4a.objects.B4XViewWrapper _panel = null;
 anywheresoftware.b4a.objects.CSBuilder _cs = null;
-RDebugUtils.currentLine=5701632;
- //BA.debugLineNum = 5701632;BA.debugLine="Private Sub CreateItem(position As Int, Fecha As S";
-RDebugUtils.currentLine=5701634;
- //BA.debugLineNum = 5701634;BA.debugLine="Dim panel As B4XView = xui.CreatePanel(\"\")";
+RDebugUtils.currentLine=16318464;
+ //BA.debugLineNum = 16318464;BA.debugLine="Private Sub CreateItem(position As Int, Fecha As S";
+RDebugUtils.currentLine=16318466;
+ //BA.debugLineNum = 16318466;BA.debugLine="Dim panel As B4XView = xui.CreatePanel(\"\")";
 _panel = new anywheresoftware.b4a.objects.B4XViewWrapper();
 _panel = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .CreatePanel(ba,"");
-RDebugUtils.currentLine=5701635;
- //BA.debugLineNum = 5701635;BA.debugLine="panel.SetLayoutAnimated(1, 0, 0, 100%X, 130dip)";
+RDebugUtils.currentLine=16318467;
+ //BA.debugLineNum = 16318467;BA.debugLine="panel.SetLayoutAnimated(1, 0, 0, 100%X, 130dip)";
 _panel.SetLayoutAnimated((int) (1),(int) (0),(int) (0),__c.PerXToCurrent((float) (100),ba),__c.DipToCurrent((int) (130)));
-RDebugUtils.currentLine=5701638;
- //BA.debugLineNum = 5701638;BA.debugLine="panel.LoadLayout(\"Cardp\")";
+RDebugUtils.currentLine=16318470;
+ //BA.debugLineNum = 16318470;BA.debugLine="panel.LoadLayout(\"Cardp\")";
 _panel.LoadLayout("Cardp",ba);
-RDebugUtils.currentLine=5701641;
- //BA.debugLineNum = 5701641;BA.debugLine="Dim cs As CSBuilder";
+RDebugUtils.currentLine=16318473;
+ //BA.debugLineNum = 16318473;BA.debugLine="Dim cs As CSBuilder";
 _cs = new anywheresoftware.b4a.objects.CSBuilder();
-RDebugUtils.currentLine=5701642;
- //BA.debugLineNum = 5701642;BA.debugLine="cs.Initialize";
+RDebugUtils.currentLine=16318474;
+ //BA.debugLineNum = 16318474;BA.debugLine="cs.Initialize";
 _cs.Initialize();
-RDebugUtils.currentLine=5701645;
- //BA.debugLineNum = 5701645;BA.debugLine="cs.Bold.Color(Colors.Black).Append(\"Fecha: \").Pop";
+RDebugUtils.currentLine=16318477;
+ //BA.debugLineNum = 16318477;BA.debugLine="cs.Bold.Color(Colors.Black).Append(\"Fecha: \").Pop";
 _cs.Bold().Color(__c.Colors.Black).Append(BA.ObjectToCharSequence("Fecha: ")).Pop().Color(__c.Colors.Gray).Append(BA.ObjectToCharSequence(_fecha+__c.CRLF)).Pop();
-RDebugUtils.currentLine=5701647;
- //BA.debugLineNum = 5701647;BA.debugLine="cs.Bold.Color(Colors.Black).Append(\"Nit: \").Pop.C";
+RDebugUtils.currentLine=16318479;
+ //BA.debugLineNum = 16318479;BA.debugLine="cs.Bold.Color(Colors.Black).Append(\"Nit: \").Pop.C";
 _cs.Bold().Color(__c.Colors.Black).Append(BA.ObjectToCharSequence("Nit: ")).Pop().Color(__c.Colors.Gray).Append(BA.ObjectToCharSequence(_nit+__c.CRLF)).Pop();
-RDebugUtils.currentLine=5701649;
- //BA.debugLineNum = 5701649;BA.debugLine="cs.Bold.Color(Colors.Black).Append(\"Hacienda: \").";
+RDebugUtils.currentLine=16318481;
+ //BA.debugLineNum = 16318481;BA.debugLine="cs.Bold.Color(Colors.Black).Append(\"Hacienda: \").";
 _cs.Bold().Color(__c.Colors.Black).Append(BA.ObjectToCharSequence("Hacienda: ")).Pop().Color(__c.Colors.Gray).Append(BA.ObjectToCharSequence(_hacienda+__c.CRLF)).Pop();
-RDebugUtils.currentLine=5701652;
- //BA.debugLineNum = 5701652;BA.debugLine="cs.Bold.Color(Colors.Black).Append(\"Lote: \").Pop.";
+RDebugUtils.currentLine=16318484;
+ //BA.debugLineNum = 16318484;BA.debugLine="cs.Bold.Color(Colors.Black).Append(\"Lote: \").Pop.";
 _cs.Bold().Color(__c.Colors.Black).Append(BA.ObjectToCharSequence("Lote: ")).Pop().Color(__c.Colors.Gray).Append(BA.ObjectToCharSequence(_lote+__c.CRLF)).PopAll();
-RDebugUtils.currentLine=5701655;
- //BA.debugLineNum = 5701655;BA.debugLine="Label20Desc.Text = cs";
+RDebugUtils.currentLine=16318487;
+ //BA.debugLineNum = 16318487;BA.debugLine="Label20Desc.Text = cs";
 __ref._label20desc /*anywheresoftware.b4a.objects.LabelWrapper*/ .setText(BA.ObjectToCharSequence(_cs.getObject()));
-RDebugUtils.currentLine=5701658;
- //BA.debugLineNum = 5701658;BA.debugLine="Button1Check.Tag = position";
+RDebugUtils.currentLine=16318490;
+ //BA.debugLineNum = 16318490;BA.debugLine="Button1Check.Tag = position";
 __ref._button1check /*anywheresoftware.b4a.objects.ButtonWrapper*/ .setTag((Object)(_position));
-RDebugUtils.currentLine=5701659;
- //BA.debugLineNum = 5701659;BA.debugLine="Button2Del.Tag = position";
+RDebugUtils.currentLine=16318491;
+ //BA.debugLineNum = 16318491;BA.debugLine="Button2Del.Tag = position";
 __ref._button2del /*anywheresoftware.b4a.objects.ButtonWrapper*/ .setTag((Object)(_position));
-RDebugUtils.currentLine=5701662;
- //BA.debugLineNum = 5701662;BA.debugLine="Return panel";
+RDebugUtils.currentLine=16318494;
+ //BA.debugLineNum = 16318494;BA.debugLine="Return panel";
 if (true) return (anywheresoftware.b4a.objects.PanelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.PanelWrapper(), (android.view.ViewGroup)(_panel.getObject()));
-RDebugUtils.currentLine=5701663;
- //BA.debugLineNum = 5701663;BA.debugLine="End Sub";
+RDebugUtils.currentLine=16318495;
+ //BA.debugLineNum = 16318495;BA.debugLine="End Sub";
 return null;
 }
 public String  _b4xpage_created(b4a.example.ef.detailsperson __ref,anywheresoftware.b4a.objects.B4XViewWrapper _root1) throws Exception{
@@ -694,22 +694,22 @@ __ref = this;
 RDebugUtils.currentModule="detailsperson";
 if (Debug.shouldDelegate(ba, "b4xpage_created", false))
 	 {return ((String) Debug.delegate(ba, "b4xpage_created", new Object[] {_root1}));}
-RDebugUtils.currentLine=5570560;
- //BA.debugLineNum = 5570560;BA.debugLine="Private Sub B4XPage_Created (Root1 As B4XView)";
-RDebugUtils.currentLine=5570561;
- //BA.debugLineNum = 5570561;BA.debugLine="Root = Root1";
+RDebugUtils.currentLine=16187392;
+ //BA.debugLineNum = 16187392;BA.debugLine="Private Sub B4XPage_Created (Root1 As B4XView)";
+RDebugUtils.currentLine=16187393;
+ //BA.debugLineNum = 16187393;BA.debugLine="Root = Root1";
 __ref._root /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = _root1;
-RDebugUtils.currentLine=5570562;
- //BA.debugLineNum = 5570562;BA.debugLine="utilClass.Initialize";
+RDebugUtils.currentLine=16187394;
+ //BA.debugLineNum = 16187394;BA.debugLine="utilClass.Initialize";
 __ref._utilclass /*b4a.example.ef.util*/ ._initialize /*String*/ (null,ba);
-RDebugUtils.currentLine=5570563;
- //BA.debugLineNum = 5570563;BA.debugLine="utilClass.SetStatusBarColor(Colors.White,Colors.W";
+RDebugUtils.currentLine=16187395;
+ //BA.debugLineNum = 16187395;BA.debugLine="utilClass.SetStatusBarColor(Colors.White,Colors.W";
 __ref._utilclass /*b4a.example.ef.util*/ ._setstatusbarcolor /*String*/ (null,__c.Colors.White,__c.Colors.White);
-RDebugUtils.currentLine=5570564;
- //BA.debugLineNum = 5570564;BA.debugLine="Root.LoadLayout(\"DetaiaPerson\")";
+RDebugUtils.currentLine=16187396;
+ //BA.debugLineNum = 16187396;BA.debugLine="Root.LoadLayout(\"DetaiaPerson\")";
 __ref._root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .LoadLayout("DetaiaPerson",ba);
-RDebugUtils.currentLine=5570565;
- //BA.debugLineNum = 5570565;BA.debugLine="End Sub";
+RDebugUtils.currentLine=16187397;
+ //BA.debugLineNum = 16187397;BA.debugLine="End Sub";
 return "";
 }
 public String  _button1check_click(b4a.example.ef.detailsperson __ref) throws Exception{
@@ -719,28 +719,28 @@ if (Debug.shouldDelegate(ba, "button1check_click", false))
 	 {return ((String) Debug.delegate(ba, "button1check_click", null));}
 anywheresoftware.b4a.objects.ButtonWrapper _btn = null;
 int _index = 0;
-RDebugUtils.currentLine=5832704;
- //BA.debugLineNum = 5832704;BA.debugLine="Private Sub Button1Check_Click";
-RDebugUtils.currentLine=5832705;
- //BA.debugLineNum = 5832705;BA.debugLine="Try";
-try {RDebugUtils.currentLine=5832707;
- //BA.debugLineNum = 5832707;BA.debugLine="Dim btn As Button = Sender";
+RDebugUtils.currentLine=16449536;
+ //BA.debugLineNum = 16449536;BA.debugLine="Private Sub Button1Check_Click";
+RDebugUtils.currentLine=16449537;
+ //BA.debugLineNum = 16449537;BA.debugLine="Try";
+try {RDebugUtils.currentLine=16449539;
+ //BA.debugLineNum = 16449539;BA.debugLine="Dim btn As Button = Sender";
 _btn = new anywheresoftware.b4a.objects.ButtonWrapper();
 _btn = (anywheresoftware.b4a.objects.ButtonWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ButtonWrapper(), (android.widget.Button)(__c.Sender(ba)));
-RDebugUtils.currentLine=5832708;
- //BA.debugLineNum = 5832708;BA.debugLine="Dim index As Int = btn.Tag";
+RDebugUtils.currentLine=16449540;
+ //BA.debugLineNum = 16449540;BA.debugLine="Dim index As Int = btn.Tag";
 _index = (int)(BA.ObjectToNumber(_btn.getTag()));
-RDebugUtils.currentLine=5832710;
- //BA.debugLineNum = 5832710;BA.debugLine="B4XPages.ShowPage(\"FormPerson\")";
+RDebugUtils.currentLine=16449542;
+ //BA.debugLineNum = 16449542;BA.debugLine="B4XPages.ShowPage(\"FormPerson\")";
 _b4xpages._showpage /*String*/ (ba,"FormPerson");
  } 
        catch (Exception e6) {
-			ba.setLastException(e6);RDebugUtils.currentLine=5832713;
- //BA.debugLineNum = 5832713;BA.debugLine="Log(LastException)";
-__c.LogImpl("25832713",BA.ObjectToString(__c.LastException(ba)),0);
+			ba.setLastException(e6);RDebugUtils.currentLine=16449545;
+ //BA.debugLineNum = 16449545;BA.debugLine="Log(LastException)";
+__c.LogImpl("116449545",BA.ObjectToString(__c.LastException(ba)),0);
  };
-RDebugUtils.currentLine=5832715;
- //BA.debugLineNum = 5832715;BA.debugLine="End Sub";
+RDebugUtils.currentLine=16449547;
+ //BA.debugLineNum = 16449547;BA.debugLine="End Sub";
 return "";
 }
 public void  _button2del_click(b4a.example.ef.detailsperson __ref) throws Exception{
@@ -776,8 +776,8 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=5767169;
- //BA.debugLineNum = 5767169;BA.debugLine="Try";
+RDebugUtils.currentLine=16384001;
+ //BA.debugLineNum = 16384001;BA.debugLine="Try";
 if (true) break;
 
 case 1:
@@ -791,18 +791,18 @@ case 3:
 //C
 this.state = 4;
 this.catchState = 15;
-RDebugUtils.currentLine=5767171;
- //BA.debugLineNum = 5767171;BA.debugLine="Dim btn As Button = Sender";
+RDebugUtils.currentLine=16384003;
+ //BA.debugLineNum = 16384003;BA.debugLine="Dim btn As Button = Sender";
 _btn = new anywheresoftware.b4a.objects.ButtonWrapper();
 _btn = (anywheresoftware.b4a.objects.ButtonWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ButtonWrapper(), (android.widget.Button)(parent.__c.Sender(ba)));
-RDebugUtils.currentLine=5767172;
- //BA.debugLineNum = 5767172;BA.debugLine="Dim index As Int = btn.Tag";
+RDebugUtils.currentLine=16384004;
+ //BA.debugLineNum = 16384004;BA.debugLine="Dim index As Int = btn.Tag";
 _index = (int)(BA.ObjectToNumber(_btn.getTag()));
-RDebugUtils.currentLine=5767173;
- //BA.debugLineNum = 5767173;BA.debugLine="Log(index)";
-parent.__c.LogImpl("25767173",BA.NumberToString(_index),0);
-RDebugUtils.currentLine=5767175;
- //BA.debugLineNum = 5767175;BA.debugLine="If index >= 0 And index < CLV_Persons.Size Then";
+RDebugUtils.currentLine=16384005;
+ //BA.debugLineNum = 16384005;BA.debugLine="Log(index)";
+parent.__c.LogImpl("116384005",BA.NumberToString(_index),0);
+RDebugUtils.currentLine=16384007;
+ //BA.debugLineNum = 16384007;BA.debugLine="If index >= 0 And index < CLV_Persons.Size Then";
 if (true) break;
 
 case 4:
@@ -817,11 +817,11 @@ this.state = 12;
 case 6:
 //C
 this.state = 7;
-RDebugUtils.currentLine=5767177;
- //BA.debugLineNum = 5767177;BA.debugLine="Msgbox2Async(\"¿Está seguro de que desea elimina";
+RDebugUtils.currentLine=16384009;
+ //BA.debugLineNum = 16384009;BA.debugLine="Msgbox2Async(\"¿Está seguro de que desea elimina";
 parent.__c.Msgbox2Async(BA.ObjectToCharSequence("¿Está seguro de que desea eliminar este elemento?"),BA.ObjectToCharSequence("Confirmación"),"Sí","Cancelar","No",(anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper(), (android.graphics.Bitmap)(parent.__c.Null)),ba,parent.__c.False);
-RDebugUtils.currentLine=5767178;
- //BA.debugLineNum = 5767178;BA.debugLine="Wait For Msgbox_Result(Result As Int)";
+RDebugUtils.currentLine=16384010;
+ //BA.debugLineNum = 16384010;BA.debugLine="Wait For Msgbox_Result(Result As Int)";
 parent.__c.WaitFor("msgbox_result", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "detailsperson", "button2del_click"), null);
 this.state = 17;
 return;
@@ -830,8 +830,8 @@ case 17:
 this.state = 7;
 _result = (Integer) result[1];
 ;
-RDebugUtils.currentLine=5767181;
- //BA.debugLineNum = 5767181;BA.debugLine="If Result = DialogResponse.POSITIVE Then";
+RDebugUtils.currentLine=16384013;
+ //BA.debugLineNum = 16384013;BA.debugLine="If Result = DialogResponse.POSITIVE Then";
 if (true) break;
 
 case 7:
@@ -844,11 +844,11 @@ this.state = 9;
 case 9:
 //C
 this.state = 10;
-RDebugUtils.currentLine=5767182;
- //BA.debugLineNum = 5767182;BA.debugLine="CLV_Persons.RemoveAt(index)";
+RDebugUtils.currentLine=16384014;
+ //BA.debugLineNum = 16384014;BA.debugLine="CLV_Persons.RemoveAt(index)";
 __ref._clv_persons /*b4a.example3.customlistview*/ ._removeat(_index);
-RDebugUtils.currentLine=5767183;
- //BA.debugLineNum = 5767183;BA.debugLine="CLV_Persons.Refresh";
+RDebugUtils.currentLine=16384015;
+ //BA.debugLineNum = 16384015;BA.debugLine="CLV_Persons.Refresh";
 __ref._clv_persons /*b4a.example3.customlistview*/ ._refresh();
  if (true) break;
 
@@ -861,9 +861,9 @@ this.state = 13;
 case 12:
 //C
 this.state = 13;
-RDebugUtils.currentLine=5767187;
- //BA.debugLineNum = 5767187;BA.debugLine="Log(\"Error: el índice está fuera de los límites";
-parent.__c.LogImpl("25767187","Error: el índice está fuera de los límites de la lista.",0);
+RDebugUtils.currentLine=16384019;
+ //BA.debugLineNum = 16384019;BA.debugLine="Log(\"Error: el índice está fuera de los límites";
+parent.__c.LogImpl("116384019","Error: el índice está fuera de los límites de la lista.",0);
  if (true) break;
 
 case 13:
@@ -876,9 +876,9 @@ case 15:
 //C
 this.state = 16;
 this.catchState = 0;
-RDebugUtils.currentLine=5767192;
- //BA.debugLineNum = 5767192;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("25767192",BA.ObjectToString(parent.__c.LastException(ba)),0);
+RDebugUtils.currentLine=16384024;
+ //BA.debugLineNum = 16384024;BA.debugLine="Log(LastException)";
+parent.__c.LogImpl("116384024",BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 if (true) break;
 
@@ -887,8 +887,8 @@ case 16:
 this.state = -1;
 this.catchState = 0;
 ;
-RDebugUtils.currentLine=5767194;
- //BA.debugLineNum = 5767194;BA.debugLine="End Sub";
+RDebugUtils.currentLine=16384026;
+ //BA.debugLineNum = 16384026;BA.debugLine="End Sub";
 if (true) break;
 }} 
        catch (Exception e0) {
@@ -905,52 +905,52 @@ ba.setLastException(e0);}
 public String  _class_globals(b4a.example.ef.detailsperson __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="detailsperson";
-RDebugUtils.currentLine=5439488;
- //BA.debugLineNum = 5439488;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=5439489;
- //BA.debugLineNum = 5439489;BA.debugLine="Private Root As B4XView 'ignore";
+RDebugUtils.currentLine=16056320;
+ //BA.debugLineNum = 16056320;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=16056321;
+ //BA.debugLineNum = 16056321;BA.debugLine="Private Root As B4XView 'ignore";
 _root = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=5439490;
- //BA.debugLineNum = 5439490;BA.debugLine="Private xui As XUI 'ignore";
+RDebugUtils.currentLine=16056322;
+ //BA.debugLineNum = 16056322;BA.debugLine="Private xui As XUI 'ignore";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
-RDebugUtils.currentLine=5439491;
- //BA.debugLineNum = 5439491;BA.debugLine="Private utilClass As util";
+RDebugUtils.currentLine=16056323;
+ //BA.debugLineNum = 16056323;BA.debugLine="Private utilClass As util";
 _utilclass = new b4a.example.ef.util();
-RDebugUtils.currentLine=5439492;
- //BA.debugLineNum = 5439492;BA.debugLine="Dim xui As XUI";
+RDebugUtils.currentLine=16056324;
+ //BA.debugLineNum = 16056324;BA.debugLine="Dim xui As XUI";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
-RDebugUtils.currentLine=5439493;
- //BA.debugLineNum = 5439493;BA.debugLine="Public namePerson As String=\"\"";
+RDebugUtils.currentLine=16056325;
+ //BA.debugLineNum = 16056325;BA.debugLine="Public namePerson As String=\"\"";
 _nameperson = "";
-RDebugUtils.currentLine=5439494;
- //BA.debugLineNum = 5439494;BA.debugLine="Public idPersona As String =\"\"";
+RDebugUtils.currentLine=16056326;
+ //BA.debugLineNum = 16056326;BA.debugLine="Public idPersona As String =\"\"";
 _idpersona = "";
-RDebugUtils.currentLine=5439495;
- //BA.debugLineNum = 5439495;BA.debugLine="Private CLV_Persons As CustomListView";
+RDebugUtils.currentLine=16056327;
+ //BA.debugLineNum = 16056327;BA.debugLine="Private CLV_Persons As CustomListView";
 _clv_persons = new b4a.example3.customlistview();
-RDebugUtils.currentLine=5439496;
- //BA.debugLineNum = 5439496;BA.debugLine="Private Label20Desc As Label";
+RDebugUtils.currentLine=16056328;
+ //BA.debugLineNum = 16056328;BA.debugLine="Private Label20Desc As Label";
 _label20desc = new anywheresoftware.b4a.objects.LabelWrapper();
-RDebugUtils.currentLine=5439497;
- //BA.debugLineNum = 5439497;BA.debugLine="Private Button1Check As Button";
+RDebugUtils.currentLine=16056329;
+ //BA.debugLineNum = 16056329;BA.debugLine="Private Button1Check As Button";
 _button1check = new anywheresoftware.b4a.objects.ButtonWrapper();
-RDebugUtils.currentLine=5439498;
- //BA.debugLineNum = 5439498;BA.debugLine="Private Button2Del As Button";
+RDebugUtils.currentLine=16056330;
+ //BA.debugLineNum = 16056330;BA.debugLine="Private Button2Del As Button";
 _button2del = new anywheresoftware.b4a.objects.ButtonWrapper();
-RDebugUtils.currentLine=5439499;
- //BA.debugLineNum = 5439499;BA.debugLine="Private Label3 As Label";
+RDebugUtils.currentLine=16056331;
+ //BA.debugLineNum = 16056331;BA.debugLine="Private Label3 As Label";
 _label3 = new anywheresoftware.b4a.objects.LabelWrapper();
-RDebugUtils.currentLine=5439500;
- //BA.debugLineNum = 5439500;BA.debugLine="Private const rdcLink As String = \"http://84.46.2";
+RDebugUtils.currentLine=16056332;
+ //BA.debugLineNum = 16056332;BA.debugLine="Private const rdcLink As String = \"http://84.46.2";
 _rdclink = "http://84.46.255.129:17178/rdc";
-RDebugUtils.currentLine=5439501;
- //BA.debugLineNum = 5439501;BA.debugLine="Dim sf As StringFunctions";
+RDebugUtils.currentLine=16056333;
+ //BA.debugLineNum = 16056333;BA.debugLine="Dim sf As StringFunctions";
 _sf = new ADR.stringdemo.stringfunctions();
-RDebugUtils.currentLine=5439502;
- //BA.debugLineNum = 5439502;BA.debugLine="Dim sf2 As StringFunctions";
+RDebugUtils.currentLine=16056334;
+ //BA.debugLineNum = 16056334;BA.debugLine="Dim sf2 As StringFunctions";
 _sf2 = new ADR.stringdemo.stringfunctions();
-RDebugUtils.currentLine=5439503;
- //BA.debugLineNum = 5439503;BA.debugLine="End Sub";
+RDebugUtils.currentLine=16056335;
+ //BA.debugLineNum = 16056335;BA.debugLine="End Sub";
 return "";
 }
 public String  _label1_click(b4a.example.ef.detailsperson __ref) throws Exception{
@@ -958,13 +958,13 @@ __ref = this;
 RDebugUtils.currentModule="detailsperson";
 if (Debug.shouldDelegate(ba, "label1_click", false))
 	 {return ((String) Debug.delegate(ba, "label1_click", null));}
-RDebugUtils.currentLine=5898240;
- //BA.debugLineNum = 5898240;BA.debugLine="Private Sub Label1_Click";
-RDebugUtils.currentLine=5898241;
- //BA.debugLineNum = 5898241;BA.debugLine="B4XPages.ClosePage(Me)";
+RDebugUtils.currentLine=16515072;
+ //BA.debugLineNum = 16515072;BA.debugLine="Private Sub Label1_Click";
+RDebugUtils.currentLine=16515073;
+ //BA.debugLineNum = 16515073;BA.debugLine="B4XPages.ClosePage(Me)";
 _b4xpages._closepage /*String*/ (ba,this);
-RDebugUtils.currentLine=5898242;
- //BA.debugLineNum = 5898242;BA.debugLine="End Sub";
+RDebugUtils.currentLine=16515074;
+ //BA.debugLineNum = 16515074;BA.debugLine="End Sub";
 return "";
 }
 public String  _label2_click(b4a.example.ef.detailsperson __ref) throws Exception{
@@ -972,13 +972,13 @@ __ref = this;
 RDebugUtils.currentModule="detailsperson";
 if (Debug.shouldDelegate(ba, "label2_click", false))
 	 {return ((String) Debug.delegate(ba, "label2_click", null));}
-RDebugUtils.currentLine=6029312;
- //BA.debugLineNum = 6029312;BA.debugLine="Private Sub Label2_Click";
-RDebugUtils.currentLine=6029313;
- //BA.debugLineNum = 6029313;BA.debugLine="B4XPages.ShowPage(\"FormPerson\")";
+RDebugUtils.currentLine=16646144;
+ //BA.debugLineNum = 16646144;BA.debugLine="Private Sub Label2_Click";
+RDebugUtils.currentLine=16646145;
+ //BA.debugLineNum = 16646145;BA.debugLine="B4XPages.ShowPage(\"FormPerson\")";
 _b4xpages._showpage /*String*/ (ba,"FormPerson");
-RDebugUtils.currentLine=6029314;
- //BA.debugLineNum = 6029314;BA.debugLine="End Sub";
+RDebugUtils.currentLine=16646146;
+ //BA.debugLineNum = 16646146;BA.debugLine="End Sub";
 return "";
 }
 }

@@ -34,7 +34,7 @@ Debug.ShouldStop(4194304);
 __ref.setField ("_fecha" /*RemoteObject*/ ,_formatteddate);
  BA.debugLineNum = 154;BA.debugLine="Log(fecha)";
 Debug.ShouldStop(33554432);
-formprecipitacion.__c.runVoidMethod ("LogImpl","217432596",__ref.getField(true,"_fecha" /*RemoteObject*/ ),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","117432596",__ref.getField(true,"_fecha" /*RemoteObject*/ ),0);
  BA.debugLineNum = 155;BA.debugLine="End Sub";
 Debug.ShouldStop(67108864);
 return RemoteObject.createImmutable("");
@@ -244,7 +244,7 @@ case 9:
 this.state = 10;
  BA.debugLineNum = 73;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j2.Err";
 Debug.ShouldStop(256);
-parent.__c.runVoidMethod ("LogImpl","216973861",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de Maquina: "),_j2.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","116973861",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de Maquina: "),_j2.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 10:
@@ -397,7 +397,7 @@ case 8:
 this.state = 9;
  BA.debugLineNum = 186;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
 Debug.ShouldStop(33554432);
-parent.__c.runVoidMethod ("LogImpl","217563664",RemoteObject.concat(RemoteObject.createImmutable("Error al ejecutar la consulta: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","117563664",RemoteObject.concat(RemoteObject.createImmutable("Error al ejecutar la consulta: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 9:
@@ -413,7 +413,7 @@ this.state = 12;
 this.catchState = 0;
  BA.debugLineNum = 189;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
 Debug.ShouldStop(268435456);
-parent.__c.runVoidMethod ("LogImpl","217563667",RemoteObject.concat(RemoteObject.createImmutable("Error al agregar datos: "),parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba")).runMethod(true,"getMessage")),0);
+parent.__c.runVoidMethod ("LogImpl","117563667",RemoteObject.concat(RemoteObject.createImmutable("Error al agregar datos: "),parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba")).runMethod(true,"getMessage")),0);
  if (true) break;
 if (true) break;
 
@@ -564,16 +564,16 @@ Debug.locals.put("New", _new);
 Debug.ShouldStop(268435456);
  BA.debugLineNum = 158;BA.debugLine="Log(\"Texto anterior: \" & Old)";
 Debug.ShouldStop(536870912);
-formprecipitacion.__c.runVoidMethod ("LogImpl","217498113",RemoteObject.concat(RemoteObject.createImmutable("Texto anterior: "),_old),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","117498113",RemoteObject.concat(RemoteObject.createImmutable("Texto anterior: "),_old),0);
  BA.debugLineNum = 159;BA.debugLine="Log(\"Texto nuevo: \" & New)";
 Debug.ShouldStop(1073741824);
-formprecipitacion.__c.runVoidMethod ("LogImpl","217498114",RemoteObject.concat(RemoteObject.createImmutable("Texto nuevo: "),_new),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","117498114",RemoteObject.concat(RemoteObject.createImmutable("Texto nuevo: "),_new),0);
  BA.debugLineNum = 165;BA.debugLine="textoCapturado = New";
 Debug.ShouldStop(16);
 __ref.setField ("_textocapturado" /*RemoteObject*/ ,_new);
  BA.debugLineNum = 166;BA.debugLine="Log(\"El texto es mayor de 5 caracteres: \" & texto";
 Debug.ShouldStop(32);
-formprecipitacion.__c.runVoidMethod ("LogImpl","217498121",RemoteObject.concat(RemoteObject.createImmutable("El texto es mayor de 5 caracteres: "),__ref.getField(true,"_textocapturado" /*RemoteObject*/ )),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","117498121",RemoteObject.concat(RemoteObject.createImmutable("El texto es mayor de 5 caracteres: "),__ref.getField(true,"_textocapturado" /*RemoteObject*/ )),0);
  BA.debugLineNum = 168;BA.debugLine="End Sub";
 Debug.ShouldStop(128);
 return RemoteObject.createImmutable("");
@@ -670,7 +670,7 @@ Debug.locals.put("Value", _value);
 Debug.ShouldStop(32768);
  BA.debugLineNum = 113;BA.debugLine="Log(\"VALOR COMBOBOX: \" & Value)";
 Debug.ShouldStop(65536);
-formprecipitacion.__c.runVoidMethod ("LogImpl","217367041",RemoteObject.concat(RemoteObject.createImmutable("VALOR COMBOBOX: "),_value),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","117367041",RemoteObject.concat(RemoteObject.createImmutable("VALOR COMBOBOX: "),_value),0);
  BA.debugLineNum = 115;BA.debugLine="If pluviometroMap.ContainsKey(Value) Then";
 Debug.ShouldStop(262144);
 if (__ref.getField(false,"_pluviometromap" /*RemoteObject*/ ).runMethod(true,"ContainsKey",(Object)(_value)).<Boolean>get().booleanValue()) { 
@@ -692,20 +692,20 @@ Debug.ShouldStop(16777216);
 __ref.setField ("_selectedhda_pvlmtro" /*RemoteObject*/ ,BA.ObjectToString(_detailsmap.runMethod(false,"Get",(Object)((RemoteObject.createImmutable("Hda"))))));
  BA.debugLineNum = 124;BA.debugLine="Log(\"Código: \" & selectedCdgo_Plvmtro)";
 Debug.ShouldStop(134217728);
-formprecipitacion.__c.runVoidMethod ("LogImpl","217367052",RemoteObject.concat(RemoteObject.createImmutable("Código: "),__ref.getField(true,"_selectedcdgo_plvmtro" /*RemoteObject*/ )),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","117367052",RemoteObject.concat(RemoteObject.createImmutable("Código: "),__ref.getField(true,"_selectedcdgo_plvmtro" /*RemoteObject*/ )),0);
  BA.debugLineNum = 125;BA.debugLine="Log(\"Nombre: \" & selectedNombre_Plvmtro)";
 Debug.ShouldStop(268435456);
-formprecipitacion.__c.runVoidMethod ("LogImpl","217367053",RemoteObject.concat(RemoteObject.createImmutable("Nombre: "),__ref.getField(true,"_selectednombre_plvmtro" /*RemoteObject*/ )),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","117367053",RemoteObject.concat(RemoteObject.createImmutable("Nombre: "),__ref.getField(true,"_selectednombre_plvmtro" /*RemoteObject*/ )),0);
  BA.debugLineNum = 126;BA.debugLine="Log(\"NIT: \" & selectedNit_Plvmtro)";
 Debug.ShouldStop(536870912);
-formprecipitacion.__c.runVoidMethod ("LogImpl","217367054",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_selectednit_plvmtro" /*RemoteObject*/ )),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","117367054",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_selectednit_plvmtro" /*RemoteObject*/ )),0);
  BA.debugLineNum = 127;BA.debugLine="Log(\"Hacienda: \" & selectedHda_Pvlmtro)";
 Debug.ShouldStop(1073741824);
-formprecipitacion.__c.runVoidMethod ("LogImpl","217367055",RemoteObject.concat(RemoteObject.createImmutable("Hacienda: "),__ref.getField(true,"_selectedhda_pvlmtro" /*RemoteObject*/ )),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","117367055",RemoteObject.concat(RemoteObject.createImmutable("Hacienda: "),__ref.getField(true,"_selectedhda_pvlmtro" /*RemoteObject*/ )),0);
  }else {
  BA.debugLineNum = 129;BA.debugLine="Log(\"Error: No se encontraron detalles para el c";
 Debug.ShouldStop(1);
-formprecipitacion.__c.runVoidMethod ("LogImpl","217367057",RemoteObject.createImmutable("Error: No se encontraron detalles para el código seleccionado."),0);
+formprecipitacion.__c.runVoidMethod ("LogImpl","117367057",RemoteObject.createImmutable("Error: No se encontraron detalles para el código seleccionado."),0);
  };
  BA.debugLineNum = 131;BA.debugLine="End Sub";
 Debug.ShouldStop(4);

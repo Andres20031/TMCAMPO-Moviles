@@ -223,19 +223,19 @@ Sub B4XPage_Appear
 	SD_xComboBoxTurno.Add("----Select----", "1")
 	
 	' Crear el comando para consultar los turnos
-	Dim cmdConcepto As DBCommand = CreateCommand("select_turnos", Null)
+	Dim cmdTurno As DBCommand = CreateCommand("select_turnos", Null)
 
 	' Ejecuta la consulta para los conceptos
-	Wait For (Req.ExecuteQuery(cmdConcepto, 0, Null)) JobDone(j4 As HttpJob)
+	Wait For (Req.ExecuteQuery(cmdTurno, 0, Null)) JobDone(j4 As HttpJob)
 
 	' Verificar si la consulta fue exitosa
 	If j4.Success Then
 		' Manejar el resultado de la consulta
-		Req.HandleJobAsync(j4, "req_concept")
-		Wait For (Req) req_concept_Result(resConc As DBResult)
+		Req.HandleJobAsync(j4, "req_turno")
+		Wait For (Req) req_turno_Result(resTurno As DBResult)
     
 		' Iterar sobre las filas y agregar los datos al ComboBox
-		For Each rowConcep() As Object In resConc.Rows
+		For Each rowTurno() As Object In resTurno.Rows
 			Dim Turno As String = rowConcep(0) ' Código del concepto
 			Dim Des_Turno As String = rowConcep(1) ' Descripción del concepto
 			' Agregar la información al ComboBox
