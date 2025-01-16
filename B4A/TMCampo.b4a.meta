@@ -49,6 +49,6 @@ ModuleClosedNodes6=6,7,8,10,11,12
 ModuleClosedNodes7=8
 ModuleClosedNodes8=12,13,14,19,20,22,25,26,27,30,31,32,33,34,35,36
 ModuleClosedNodes9=
-NavigationStack=FormPerson,GetRecordLotes,467,0,FormPerson,SD_xComboBoxHacienda_ItemClick,638,0,FormLabores,SD_xComboBoxHacienda_ItemClick,392,0,FormMaquinaria,SD_xComboBoxHacienda_ItemClick,237,0,Menu,Class_Globals,0,0,ListPerson,Class_Globals,0,0,DetailsPerson,Class_Globals,0,0,FormLabores,Class_Globals,0,0,FormLabores,SD_xComboBoxElemento_ItemClick,447,0,FormPerson,B4XPage_Appear,201,0
+NavigationStack=FormLabores,SD_xComboBoxHacienda_ItemClick,392,0,FormMaquinaria,SD_xComboBoxHacienda_ItemClick,237,0,Menu,Class_Globals,0,0,ListPerson,Class_Globals,0,0,DetailsPerson,Class_Globals,0,0,FormPerson,B4XPage_Appear,201,0,FormLabores,LlenarComboBoxSiembra,658,0,FormLabores,Class_Globals,27,0,FormLabores,B4XPage_Appear,157,0,FormLabores,SD_xComboBoxElemento_ItemClick,445,0
 SelectedBuild=0
 VisibleModules=1,14,13,12,4,8,6

@@ -449,12 +449,17 @@ Private Sub SD_xComboBoxElemento_ItemClick (Position As Int, Value As Object)
 	
 	' Asumimos que Value es un String
 	elementoGasto = Value
-    
-	' Obtener las dos primeras letras y asignarlas nuevamente a elementoGasto
-	elementoGasto = elementoGasto.SubString2(0, 3)
-    
-	' Log de las dos primeras letras
-	Log("Las dos primeras letras del Elemento Gasto son: " & elementoGasto)
+
+	' Verificar si hay contenido y obtener hasta las primeras 2 letras
+	If elementoGasto.Length > 0 Then
+		elementoGasto = elementoGasto.SubString2(0, Min(2, elementoGasto.Length))
+	Else
+		elementoGasto = "" ' Si está vacío, asignar cadena vacía
+	End If
+
+	' Log del resultado
+	Log("Las dos primeras letras (o menos si no hay suficientes): " & elementoGasto)
+
 End Sub
 
 Private Sub EditTextAreaLabor_TextChanged (Old As String, New As String)
