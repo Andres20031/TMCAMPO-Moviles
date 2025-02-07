@@ -271,7 +271,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 100;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j2.Err";
-parent.__c.LogImpl("064159767","Error en la consulta de Maquina: "+_j2._errormessage /*String*/ ,0);
+parent.__c.LogImpl("014483479","Error en la consulta de Maquina: "+_j2._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -365,7 +365,7 @@ case 19:
 //C
 this.state = 20;
  //BA.debugLineNum = 117;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j3.Err";
-parent.__c.LogImpl("064159784","Error en la consulta de Maquina: "+_j3._errormessage /*String*/ ,0);
+parent.__c.LogImpl("014483496","Error en la consulta de Maquina: "+_j3._errormessage /*String*/ ,0);
  if (true) break;
 
 case 20:
@@ -459,7 +459,7 @@ case 29:
 //C
 this.state = 30;
  //BA.debugLineNum = 134;BA.debugLine="Log(\"Error en la consulta de NITs: \" & j.ErrorMe";
-parent.__c.LogImpl("064159801","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("014483513","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 30:
@@ -553,7 +553,7 @@ case 39:
 //C
 this.state = 40;
  //BA.debugLineNum = 151;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j4.Err";
-parent.__c.LogImpl("064159818","Error en la consulta de Maquina: "+_j4._errormessage /*String*/ ,0);
+parent.__c.LogImpl("014483530","Error en la consulta de Maquina: "+_j4._errormessage /*String*/ ,0);
  if (true) break;
 
 case 40:
@@ -651,7 +651,7 @@ case 49:
 //C
 this.state = 50;
  //BA.debugLineNum = 170;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j5.Err";
-parent.__c.LogImpl("064159837","Error en la consulta de Maquina: "+_j5._errormessage /*String*/ ,0);
+parent.__c.LogImpl("014483549","Error en la consulta de Maquina: "+_j5._errormessage /*String*/ ,0);
  if (true) break;
 
 case 50:
@@ -745,7 +745,7 @@ case 59:
 //C
 this.state = 60;
  //BA.debugLineNum = 187;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j6.Err";
-parent.__c.LogImpl("064159854","Error en la consulta de Maquina: "+_j6._errormessage /*String*/ ,0);
+parent.__c.LogImpl("014483566","Error en la consulta de Maquina: "+_j6._errormessage /*String*/ ,0);
  if (true) break;
 
 case 60:
@@ -831,43 +831,43 @@ parent._horaactual = parent.__c.DateTime.Time(parent.__c.DateTime.getNow());
  //BA.debugLineNum = 379;BA.debugLine="DeviceName = GetDeviceName";
 parent._devicename = parent._getdevicename();
  //BA.debugLineNum = 381;BA.debugLine="Log(\"Ascdo_Maq_Mvto_Maq: \" & Ascdo_Maq_Mvto_Maq)";
-parent.__c.LogImpl("065077265","Ascdo_Maq_Mvto_Maq: "+parent._ascdo_maq_mvto_maq,0);
+parent.__c.LogImpl("015400977","Ascdo_Maq_Mvto_Maq: "+parent._ascdo_maq_mvto_maq,0);
  //BA.debugLineNum = 382;BA.debugLine="Log(\"maquina: \" & maquina)";
-parent.__c.LogImpl("065077266","maquina: "+parent._maquina,0);
+parent.__c.LogImpl("015400978","maquina: "+parent._maquina,0);
  //BA.debugLineNum = 383;BA.debugLine="Log(\"fecha: \" & fecha)";
-parent.__c.LogImpl("065077267","fecha: "+parent._fecha,0);
+parent.__c.LogImpl("015400979","fecha: "+parent._fecha,0);
  //BA.debugLineNum = 384;BA.debugLine="Log(\"labor: \" & labor)";
-parent.__c.LogImpl("065077268","labor: "+parent._labor,0);
+parent.__c.LogImpl("015400980","labor: "+parent._labor,0);
  //BA.debugLineNum = 385;BA.debugLine="Log(\"nitEmpresaCBX: \" & nitEmpresaCBX)";
-parent.__c.LogImpl("065077269","nitEmpresaCBX: "+parent._nitempresacbx,0);
+parent.__c.LogImpl("015400981","nitEmpresaCBX: "+parent._nitempresacbx,0);
  //BA.debugLineNum = 386;BA.debugLine="Log(\"haciendaCBX: \" & haciendaCBX)";
-parent.__c.LogImpl("065077270","haciendaCBX: "+parent._haciendacbx,0);
+parent.__c.LogImpl("015400982","haciendaCBX: "+parent._haciendacbx,0);
  //BA.debugLineNum = 387;BA.debugLine="Log(\"Lote: \" & Lote)";
-parent.__c.LogImpl("065077271","Lote: "+parent._lote,0);
+parent.__c.LogImpl("015400983","Lote: "+parent._lote,0);
  //BA.debugLineNum = 388;BA.debugLine="Log(\"implemento: \" & implemento)";
-parent.__c.LogImpl("065077272","implemento: "+parent._implemento,0);
+parent.__c.LogImpl("015400984","implemento: "+parent._implemento,0);
  //BA.debugLineNum = 389;BA.debugLine="Log(\"horainicio: \" & horainicio)";
-parent.__c.LogImpl("065077273","horainicio: "+parent._horainicio,0);
+parent.__c.LogImpl("015400985","horainicio: "+parent._horainicio,0);
  //BA.debugLineNum = 390;BA.debugLine="Log(\"horafin: \" & horafin)";
-parent.__c.LogImpl("065077274","horafin: "+parent._horafin,0);
+parent.__c.LogImpl("015400986","horafin: "+parent._horafin,0);
  //BA.debugLineNum = 391;BA.debugLine="Log(\"combustible: \" & combustible)";
-parent.__c.LogImpl("065077275","combustible: "+parent._combustible,0);
+parent.__c.LogImpl("015400987","combustible: "+parent._combustible,0);
  //BA.debugLineNum = 392;BA.debugLine="Log(\"observaciones: \" & observaciones)";
-parent.__c.LogImpl("065077276","observaciones: "+parent._observaciones,0);
+parent.__c.LogImpl("015400988","observaciones: "+parent._observaciones,0);
  //BA.debugLineNum = 393;BA.debugLine="Log(\"operario: \" & operario)";
-parent.__c.LogImpl("065077277","operario: "+parent._operario,0);
+parent.__c.LogImpl("015400989","operario: "+parent._operario,0);
  //BA.debugLineNum = 394;BA.debugLine="Log(\"implemento2: \" & implemento2)";
-parent.__c.LogImpl("065077278","implemento2: "+parent._implemento2,0);
+parent.__c.LogImpl("015400990","implemento2: "+parent._implemento2,0);
  //BA.debugLineNum = 395;BA.debugLine="Log(\"area: \" & area)";
-parent.__c.LogImpl("065077279","area: "+parent._area,0);
+parent.__c.LogImpl("015400991","area: "+parent._area,0);
  //BA.debugLineNum = 396;BA.debugLine="Log(\"fechaHoy: \" & fechaHoy)";
-parent.__c.LogImpl("065077280","fechaHoy: "+parent._fechahoy,0);
+parent.__c.LogImpl("015400992","fechaHoy: "+parent._fechahoy,0);
  //BA.debugLineNum = 397;BA.debugLine="Log(\"horaActual: \" & horaActual)";
-parent.__c.LogImpl("065077281","horaActual: "+parent._horaactual,0);
+parent.__c.LogImpl("015400993","horaActual: "+parent._horaactual,0);
  //BA.debugLineNum = 398;BA.debugLine="Log(\"user: \" & user)";
-parent.__c.LogImpl("065077282","user: "+parent._user,0);
+parent.__c.LogImpl("015400994","user: "+parent._user,0);
  //BA.debugLineNum = 399;BA.debugLine="Log(\"DeviceName: \" & DeviceName)";
-parent.__c.LogImpl("065077283","DeviceName: "+parent._devicename,0);
+parent.__c.LogImpl("015400995","DeviceName: "+parent._devicename,0);
  //BA.debugLineNum = 402;BA.debugLine="Dim Req As DBRequestManager";
 _req = new b4a.example.ef.dbrequestmanager();
  //BA.debugLineNum = 403;BA.debugLine="Req.Initialize(Me, rdcLink & \"?DBName=\" & Main.pD";
@@ -922,7 +922,7 @@ case 8:
 //C
 this.state = 9;
  //BA.debugLineNum = 417;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
-parent.__c.LogImpl("065077301","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("015401013","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 9:
@@ -936,7 +936,7 @@ case 11:
 this.state = 12;
 this.catchState = 0;
  //BA.debugLineNum = 420;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
-parent.__c.LogImpl("065077304","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
+parent.__c.LogImpl("015401016","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
  if (true) break;
 if (true) break;
 
@@ -1249,7 +1249,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 260;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-parent.__c.LogImpl("064290844","Error: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("014614556","Error: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -1291,7 +1291,7 @@ public String  _sd_xcomboboxlote_itemclick(int _position,Object _value) throws E
  //BA.debugLineNum = 338;BA.debugLine="Lote = Value";
 _lote = BA.ObjectToString(_value);
  //BA.debugLineNum = 339;BA.debugLine="Log(Lote)";
-__c.LogImpl("064749570",_lote,0);
+__c.LogImpl("015073282",_lote,0);
  //BA.debugLineNum = 340;BA.debugLine="End Sub";
 return "";
 }
@@ -1430,7 +1430,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 225;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-parent.__c.LogImpl("064225308","Error: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("014549020","Error: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:

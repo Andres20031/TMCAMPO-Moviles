@@ -144,7 +144,7 @@ case 3:
 //C
 this.state = 4;
  //BA.debugLineNum = 65;BA.debugLine="Log(\"Error building command: \" & LastException)";
-parent.__c.LogImpl("060424197","Error building command: "+BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
+parent.__c.LogImpl("010747909","Error building command: "+BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
  //BA.debugLineNum = 66;BA.debugLine="Return";
 if (true) return ;
  if (true) break;
@@ -284,7 +284,7 @@ case 3:
 //C
 this.state = 4;
  //BA.debugLineNum = 95;BA.debugLine="Log(\"Error reading response: \" & LastException)";
-parent.__c.LogImpl("060620806","Error reading response: "+BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
+parent.__c.LogImpl("010944518","Error reading response: "+BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
  //BA.debugLineNum = 96;BA.debugLine="Return";
 if (true) return ;
  if (true) break;
@@ -341,7 +341,7 @@ Object[] _row = null;
 Object _record = null;
  //BA.debugLineNum = 135;BA.debugLine="Public Sub PrintTable(Table As DBResult)";
  //BA.debugLineNum = 136;BA.debugLine="Log(\"Tag: \" & Table.Tag & \", Columns: \" & Table.C";
-__c.LogImpl("060882945","Tag: "+BA.ObjectToString(_table.Tag /*Object*/ )+", Columns: "+BA.NumberToString(_table.Columns /*anywheresoftware.b4a.objects.collections.Map*/ .getSize())+", Rows: "+BA.NumberToString(_table.Rows /*anywheresoftware.b4a.objects.collections.List*/ .getSize()),0);
+__c.LogImpl("011206657","Tag: "+BA.ObjectToString(_table.Tag /*Object*/ )+", Columns: "+BA.NumberToString(_table.Columns /*anywheresoftware.b4a.objects.collections.Map*/ .getSize())+", Rows: "+BA.NumberToString(_table.Rows /*anywheresoftware.b4a.objects.collections.List*/ .getSize()),0);
  //BA.debugLineNum = 137;BA.debugLine="Dim sb As StringBuilder";
 _sb = new anywheresoftware.b4a.keywords.StringBuilderWrapper();
  //BA.debugLineNum = 138;BA.debugLine="sb.Initialize";
@@ -359,7 +359,7 @@ _sb.Append(BA.ObjectToString(_col)).Append(__c.TAB);
  }
 };
  //BA.debugLineNum = 142;BA.debugLine="Log(sb.ToString)";
-__c.LogImpl("060882951",_sb.ToString(),0);
+__c.LogImpl("011206663",_sb.ToString(),0);
  //BA.debugLineNum = 143;BA.debugLine="For Each row() As Object In Table.Rows";
 {
 final anywheresoftware.b4a.BA.IterableList group8 = _table.Rows /*anywheresoftware.b4a.objects.collections.List*/ ;
@@ -385,7 +385,7 @@ _sb.Append(BA.ObjectToString(_record)).Append(__c.TAB);
  }
 };
  //BA.debugLineNum = 149;BA.debugLine="Log(sb.ToString)";
-__c.LogImpl("060882958",_sb.ToString(),0);
+__c.LogImpl("011206670",_sb.ToString(),0);
  }
 };
  //BA.debugLineNum = 151;BA.debugLine="End Sub";

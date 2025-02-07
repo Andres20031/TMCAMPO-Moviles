@@ -66,7 +66,7 @@ _panel12.setVisible(__c.False);
  //BA.debugLineNum = 151;BA.debugLine="fecha = formattedDate";
 _fecha = _formatteddate;
  //BA.debugLineNum = 154;BA.debugLine="Log(fecha)";
-__c.LogImpl("065863700",_fecha,0);
+__c.LogImpl("016187412",_fecha,0);
  //BA.debugLineNum = 155;BA.debugLine="End Sub";
 return "";
 }
@@ -223,7 +223,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 73;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j2.Err";
-parent.__c.LogImpl("065404965","Error en la consulta de Maquina: "+_j2._errormessage /*String*/ ,0);
+parent.__c.LogImpl("015728677","Error en la consulta de Maquina: "+_j2._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -330,7 +330,7 @@ case 8:
 //C
 this.state = 9;
  //BA.debugLineNum = 186;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
-parent.__c.LogImpl("065994768","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("016318480","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 9:
@@ -344,7 +344,7 @@ case 11:
 this.state = 12;
 this.catchState = 0;
  //BA.debugLineNum = 189;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
-parent.__c.LogImpl("065994771","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
+parent.__c.LogImpl("016318483","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
  if (true) break;
 if (true) break;
 
@@ -447,13 +447,13 @@ return null;
 public String  _edittexthorafin_textchanged(String _old,String _new) throws Exception{
  //BA.debugLineNum = 157;BA.debugLine="Private Sub EditTextHoraFin_TextChanged (Old As St";
  //BA.debugLineNum = 158;BA.debugLine="Log(\"Texto anterior: \" & Old)";
-__c.LogImpl("065929217","Texto anterior: "+_old,0);
+__c.LogImpl("016252929","Texto anterior: "+_old,0);
  //BA.debugLineNum = 159;BA.debugLine="Log(\"Texto nuevo: \" & New)";
-__c.LogImpl("065929218","Texto nuevo: "+_new,0);
+__c.LogImpl("016252930","Texto nuevo: "+_new,0);
  //BA.debugLineNum = 165;BA.debugLine="textoCapturado = New";
 _textocapturado = _new;
  //BA.debugLineNum = 166;BA.debugLine="Log(\"El texto es mayor de 5 caracteres: \" & texto";
-__c.LogImpl("065929225","El texto es mayor de 5 caracteres: "+_textocapturado,0);
+__c.LogImpl("016252937","El texto es mayor de 5 caracteres: "+_textocapturado,0);
  //BA.debugLineNum = 168;BA.debugLine="End Sub";
 return "";
 }
@@ -488,7 +488,7 @@ public String  _sd_xcomboboxpluviometro_itemclick(int _position,Object _value) t
 anywheresoftware.b4a.objects.collections.Map _detailsmap = null;
  //BA.debugLineNum = 112;BA.debugLine="Private Sub SD_xComboBoxPluviometro_ItemClick (Pos";
  //BA.debugLineNum = 113;BA.debugLine="Log(\"VALOR COMBOBOX: \" & Value)";
-__c.LogImpl("065798145","VALOR COMBOBOX: "+BA.ObjectToString(_value),0);
+__c.LogImpl("016121857","VALOR COMBOBOX: "+BA.ObjectToString(_value),0);
  //BA.debugLineNum = 115;BA.debugLine="If pluviometroMap.ContainsKey(Value) Then";
 if (_pluviometromap.ContainsKey(_value)) { 
  //BA.debugLineNum = 116;BA.debugLine="Dim detailsMap As Map = pluviometroMap.Get(Value";
@@ -503,16 +503,16 @@ _selectednit_plvmtro = BA.ObjectToString(_detailsmap.Get((Object)("Nit")));
  //BA.debugLineNum = 121;BA.debugLine="selectedHda_Pvlmtro = detailsMap.Get(\"Hda\")";
 _selectedhda_pvlmtro = BA.ObjectToString(_detailsmap.Get((Object)("Hda")));
  //BA.debugLineNum = 124;BA.debugLine="Log(\"Código: \" & selectedCdgo_Plvmtro)";
-__c.LogImpl("065798156","Código: "+_selectedcdgo_plvmtro,0);
+__c.LogImpl("016121868","Código: "+_selectedcdgo_plvmtro,0);
  //BA.debugLineNum = 125;BA.debugLine="Log(\"Nombre: \" & selectedNombre_Plvmtro)";
-__c.LogImpl("065798157","Nombre: "+_selectednombre_plvmtro,0);
+__c.LogImpl("016121869","Nombre: "+_selectednombre_plvmtro,0);
  //BA.debugLineNum = 126;BA.debugLine="Log(\"NIT: \" & selectedNit_Plvmtro)";
-__c.LogImpl("065798158","NIT: "+_selectednit_plvmtro,0);
+__c.LogImpl("016121870","NIT: "+_selectednit_plvmtro,0);
  //BA.debugLineNum = 127;BA.debugLine="Log(\"Hacienda: \" & selectedHda_Pvlmtro)";
-__c.LogImpl("065798159","Hacienda: "+_selectedhda_pvlmtro,0);
+__c.LogImpl("016121871","Hacienda: "+_selectedhda_pvlmtro,0);
  }else {
  //BA.debugLineNum = 129;BA.debugLine="Log(\"Error: No se encontraron detalles para el c";
-__c.LogImpl("065798161","Error: No se encontraron detalles para el código seleccionado.",0);
+__c.LogImpl("016121873","Error: No se encontraron detalles para el código seleccionado.",0);
  };
  //BA.debugLineNum = 131;BA.debugLine="End Sub";
 return "";

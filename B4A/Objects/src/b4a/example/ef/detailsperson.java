@@ -330,7 +330,7 @@ case 18:
 //C
 this.state = 19;
  //BA.debugLineNum = 94;BA.debugLine="Log(\"ERROR al obtener el nombre del cliente:";
-parent.__c.LogImpl("052559934","ERROR al obtener el nombre del cliente: "+_j2._errormessage /*String*/ ,0);
+parent.__c.LogImpl("02883646","ERROR al obtener el nombre del cliente: "+_j2._errormessage /*String*/ ,0);
  if (true) break;
 
 case 19:
@@ -420,7 +420,7 @@ case 28:
 //C
 this.state = 29;
  //BA.debugLineNum = 110;BA.debugLine="Log(\"ERROR al obtener el nombre de la haciend";
-parent.__c.LogImpl("052559950","ERROR al obtener el nombre de la hacienda: "+_j3._errormessage /*String*/ ,0);
+parent.__c.LogImpl("02883662","ERROR al obtener el nombre de la hacienda: "+_j3._errormessage /*String*/ ,0);
  if (true) break;
 
 case 29:
@@ -457,7 +457,7 @@ case 35:
 //C
 this.state = 36;
  //BA.debugLineNum = 121;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("052559961","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("02883673","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 36:
@@ -507,7 +507,7 @@ _b4xpages._showpage /*String*/ (ba,"FormPerson");
  } 
        catch (Exception e6) {
 			ba.setLastException(e6); //BA.debugLineNum = 202;BA.debugLine="Log(LastException)";
-__c.LogImpl("052756489",BA.ObjectToString(__c.LastException(ba)),0);
+__c.LogImpl("03080201",BA.ObjectToString(__c.LastException(ba)),0);
  };
  //BA.debugLineNum = 204;BA.debugLine="End Sub";
 return "";
@@ -558,7 +558,7 @@ _btn = (anywheresoftware.b4a.objects.ButtonWrapper) anywheresoftware.b4a.AbsObje
  //BA.debugLineNum = 168;BA.debugLine="Dim index As Int = btn.Tag";
 _index = (int)(BA.ObjectToNumber(_btn.getTag()));
  //BA.debugLineNum = 169;BA.debugLine="Log(index)";
-parent.__c.LogImpl("052690949",BA.NumberToString(_index),0);
+parent.__c.LogImpl("03014661",BA.NumberToString(_index),0);
  //BA.debugLineNum = 171;BA.debugLine="If index >= 0 And index < CLV_Persons.Size Then";
 if (true) break;
 
@@ -614,7 +614,7 @@ case 12:
 //C
 this.state = 13;
  //BA.debugLineNum = 183;BA.debugLine="Log(\"Error: el índice está fuera de los límites";
-parent.__c.LogImpl("052690963","Error: el índice está fuera de los límites de la lista.",0);
+parent.__c.LogImpl("03014675","Error: el índice está fuera de los límites de la lista.",0);
  if (true) break;
 
 case 13:
@@ -628,7 +628,7 @@ case 15:
 this.state = 16;
 this.catchState = 0;
  //BA.debugLineNum = 188;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("052690968",BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("03014680",BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 if (true) break;
 
