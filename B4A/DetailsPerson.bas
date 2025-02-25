@@ -34,7 +34,6 @@ Private Sub B4XPage_Created (Root1 As B4XView)
 	Root.LoadLayout("DetaiaPerson")
 End Sub
 
-
 Sub B4XPage_Appear
 	CLV_Persons.Clear
 	Label3.Text=namePerson
@@ -45,7 +44,6 @@ Sub B4XPage_Appear
 	Dim parts() As String = Regex.Split("#", namePerson)
 	idPerson=parts(1)
 	
-    
 	
 	' INICIALIZO LA BD
 	Dim Req As DBRequestManager

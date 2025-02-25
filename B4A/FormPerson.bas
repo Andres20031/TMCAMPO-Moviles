@@ -67,6 +67,22 @@ Sub Class_Globals
 	Private Panel13 As Panel
 	Public idPerson As String
 	Dim ConceptoDataMap As Map
+	
+
+	Private Dialog As B4XDialog
+	Private Base As B4XView
+	Private SwiftButtonNit As SwiftButton
+	Private SearchTemplateNit As B4XSearchTemplate
+	Private SwiftButtonHacienda As SwiftButton
+	Private SearchTemplateHacienda As B4XSearchTemplate
+	Private SwiftButtonLote As SwiftButton
+	Private SearchTemplateLote As B4XSearchTemplate
+	Private SwiftButtonLabor As SwiftButton
+	Private SearchTemplateLabor As B4XSearchTemplate
+	Private SwiftButtonConcepto As SwiftButton
+	Private SearchTemplateConcepto As B4XSearchTemplate
+	Private SwiftButtonTurno As SwiftButton
+	Private SearchTemplateTurno As B4XSearchTemplate
 End Sub
 
 
@@ -121,14 +137,45 @@ Private Sub B4XPage_Created (Root1 As B4XView)
 '	'DeleteRecord("Carlos")
 	'
 '	
+	Base = Root
+	Dialog.Initialize (Base)
+	Dialog.Title = "Buscador"
 End Sub
 
 Sub B4XPage_Appear
+
+    'Inicializo el Search Template 
+	SearchTemplateNit.Initialize
+	'Creo una Lista para los Nit
+	Dim ItemsNit As List
+	ItemsNit.Initialize
+	
+	
+	SearchTemplateHacienda.Initialize
+	
+	SearchTemplateLote.Initialize
+	
+	SearchTemplateLabor.Initialize
+	'Creo una Lista para las labores
+	Dim ItemsLabor As List
+	ItemsLabor.Initialize
+	
+	SearchTemplateConcepto.Initialize
+	Dim ItemsConcepto As List
+	ItemsConcepto.Initialize
+	
+	SearchTemplateTurno.Initialize
+	Dim ItemsTurno As List
+	ItemsTurno.Initialize
+	
+	
+	
 	' Obtener el nombre de la persona desde la página "DetailsPerson"
 	Label3Name.Text = B4XPages.GetPage("DetailsPerson").As(DetailsPerson).namePerson
 
 	' CONSULTAR LA BD PARA OBTENER LOS NITS
 	SD_xComboBoxNitPerson.Add("----Select----", "1")
+	ItemsNit.Add("Seleccionar:")
 
 	Dim Req As DBRequestManager
 	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
@@ -149,13 +196,14 @@ Sub B4XPage_Appear
 			Dim nit As String = row(1)
 			' Agregar la información al ComboBox
 			SD_xComboBoxNitPerson.Add(razonSocial & " - " & nit, nit)
+			ItemsNit.Add(razonSocial & "-" & nit)
 		Next
 
 	Else
 		' Si hay un error, muestra el mensaje
 		Log("Error en la consulta de NITs: " & j.ErrorMessage)
 	End If
-
+	SearchTemplateNit.SetItems(ItemsNit)
 
 	
 
@@ -164,7 +212,7 @@ Sub B4XPage_Appear
 
 	' CONSULTAR LA BD PARA OBTENER LOS DESTINOS (Llenar SD_xComboBoxLabor)
 	SD_xComboBoxLabor.Add("----Select----", "1")
-
+	ItemsLabor.Add("Seleccionar:")
 	Dim cmdLabor As DBCommand = CreateCommand("select_labor", Null)
 	Wait For (Req.ExecuteQuery(cmdLabor, 0, Null)) JobDone(j2 As HttpJob)
 	If j2.Success Then
@@ -174,16 +222,19 @@ Sub B4XPage_Appear
 			Dim codigoDestino As String = rowLabor(0) ' Cdgo_Dstno
 			Dim descripcionDestino As String = rowLabor(1) ' Dscrpcion_Dstno
 			SD_xComboBoxLabor.Add(descripcionDestino, codigoDestino)
+			ItemsLabor.Add(codigoDestino&":"&descripcionDestino)
 		Next
 	Else
 		Log("Error en la consulta de destinos: " & j2.ErrorMessage)
 	End If
+	SearchTemplateLabor.SetItems(ItemsLabor)
 	j2.Release
 	
 	
 	
 	' Inicializar el ComboBox de Conceptos
 	SD_xComboBoxConcepto.Add("----Select----", "1")
+	ItemsConcepto.Add("Seleccionar:")
 
 	' Crear el comando para consultar los conceptos
 	Dim cmdConcepto As DBCommand = CreateCommand("select_concepto", Null)
@@ -207,7 +258,7 @@ Sub B4XPage_Appear
 			
 			' Agregar la información al ComboBox
 			SD_xComboBoxConcepto.Add(Des_Concept, Cod_Concept)
-			
+			ItemsConcepto.Add(Cod_Concept&":"&Des_Concept)
 			' Guardar dstjo_Cncpto en el Map usando Cod_Concept como clave
 			ConceptoDataMap.Put(Cod_Concept, dstjo_Cncpto)
 		Next
@@ -215,13 +266,14 @@ Sub B4XPage_Appear
 		' Si hay un error, mostrar el mensaje
 		Log("Error en la consulta de conceptos: " & j3.ErrorMessage)
 	End If
+	SearchTemplateConcepto.SetItems(ItemsConcepto)
 
 	' Liberar el trabajo HTTP
 	j3.Release
 	
 	
 	SD_xComboBoxTurno.Add("----Select----", "1")
-	
+	ItemsTurno.Add("Seleccionar:")
 	' Crear el comando para consultar los turnos
 	Dim cmdTurno As DBCommand = CreateCommand("select_turnos", Null)
 
@@ -240,12 +292,13 @@ Sub B4XPage_Appear
 			Dim Des_Turno As String = rowConcep(1) ' Descripción del concepto
 			' Agregar la información al ComboBox
 			SD_xComboBoxTurno.Add(Turno , Des_Turno)
+			ItemsTurno.Add(Des_Turno&":"&Turno)
 		Next
 	Else
 		' Si hay un error, mostrar el mensaje
 		Log("Error en la consulta de conceptos: " & j4.ErrorMessage)
 	End If
-
+	SearchTemplateTurno.SetItems(ItemsTurno)
 	' Liberar el trabajo HTTP
 	j4.Release
 	
@@ -819,5 +872,154 @@ Private Sub SD_xComboBoxTurno_ItemClick (Position As Int, Value As Object)
 		TurnoCBX = Null ' Si el valor está vacío, asignar Null
 	Else
 		TurnoCBX = Value ' Si no está vacío, asignar el valor
+	End If
+End Sub
+
+
+Private Sub SwiftButton1Prueba_Click
+	
+	
+End Sub
+
+Private Sub SwiftButtonNit_Click
+	
+	Dim ItemsHacienda As List
+	ItemsHacienda.Initialize
+	
+	
+	Wait For (Dialog.ShowTemplate(SearchTemplateNit, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonNit.xLBL.Text = SearchTemplateNit.SelectedItem
+		Dim NITCOMPLETO As String = SearchTemplateNit.SelectedItem
+		Dim Partes() As String = Regex.Split("-", NITCOMPLETO)
+		nitEmpresaCBX = Partes(1)
+		ItemsHacienda.Clear
+		ItemsHacienda.Add("Seleccionar:")
+		SwiftButtonHacienda.xLBL.Text = ""
+		
+		'************** INICIO CONSULTA HACIENDA **************
+		Dim Req As DBRequestManager
+		Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
+		Dim cmd As DBCommand = CreateCommand("select_haciendas", Array(nitEmpresaCBX))
+
+		' Ejecuta la consulta
+		Wait For (Req.ExecuteQuery(cmd, 0, Null)) JobDone(j As HttpJob)
+
+		' Verificar si la consulta fue exitosa
+		If j.Success Then
+			' Maneja el resultado de la consulta
+			Req.HandleJobAsync(j, "req")
+			Wait For (Req) req_Result(res As DBResult)
+
+    
+			' Llenar el ComboBox con NITs y razones sociales
+			For Each row() As Object In res.Rows
+				Dim Codg_Hacienda As String = row(0)
+				Dim NombreHacienda As String = row(1)
+        
+				' Agregar la información al ComboBox (ajusta según el formato requerido)
+				SD_xComboBoxHacienda.Add(NombreHacienda, Codg_Hacienda)
+				
+				ItemsHacienda.Add(Codg_Hacienda&":"&NombreHacienda)
+			Next
+    
+		Else
+			' Si hay un error, muestra el mensaje
+			Log("Error: " & j.ErrorMessage)
+		End If
+		SearchTemplateHacienda.SetItems(ItemsHacienda)
+		SwiftButtonHacienda.Enabled = True
+		Log(nitEmpresaCBX)
+		' Libera el trabajo HTTP
+		j.Release
+		'*********** FIN CONSULTA HACIENDA **************'
+		
+		
+		
+	End If
+End Sub
+
+Private Sub SwiftButtonHacienda_Click
+	Dim ItemsLote As List
+	ItemsLote.Initialize
+	
+	
+	Wait For (Dialog.ShowTemplate(SearchTemplateHacienda, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonHacienda.xLBL.Text = SearchTemplateHacienda.SelectedItem
+		Dim HACIENDACOMPLETO As String = SearchTemplateHacienda.SelectedItem
+		Dim Partes() As String = Regex.Split(":", HACIENDACOMPLETO)
+		haciendaCBX = Partes(0)
+		ItemsLote.Clear
+		ItemsLote.Add("Seleccionar:")
+		SwiftButtonLote.xLBL.Text = ""
+		'***************** INICIO CONSULTA LOTE ************************
+		Dim Req As DBRequestManager
+		Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
+		Dim cmd As DBCommand = CreateCommand("select_lotes", Array(nitEmpresaCBX,haciendaCBX))
+
+		' Ejecuta la consulta
+		Wait For (Req.ExecuteQuery(cmd, 0, Null)) JobDone(j As HttpJob)
+
+		' Verificar si la consulta fue exitosa
+		If j.Success Then
+			' Maneja el resultado de la consulta
+			Req.HandleJobAsync(j, "req")
+			Wait For (Req) req_Result(res As DBResult)
+
+    
+			' Llenar el ComboBox con NITs y razones sociales
+			For Each row() As Object In res.Rows
+				Dim Codg_Hacienda As String = row(0)
+        
+				' Agregar la información al ComboBox (ajusta según el formato requerido)
+				SD_xComboBoxLote.Add(Codg_Hacienda, Codg_Hacienda)
+				ItemsLote.Add(Codg_Hacienda)
+			Next
+    
+		Else
+			' Si hay un error, muestra el mensaje
+			Log("Error: " & j.ErrorMessage)
+		End If
+		SearchTemplateLote.SetItems(ItemsLote)
+		SwiftButtonLote.Enabled = True
+		' Libera el trabajo HTTP
+		j.Release
+		'***************** FIN CONSULTA LOTE ************************
+	End If
+End Sub
+
+Private Sub SwiftButtonLote_Click
+	Wait For (Dialog.ShowTemplate(SearchTemplateLote, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+	SwiftButtonLote.xLBL.Text = SearchTemplateLote.SelectedItem
+	LoteCBX = SearchTemplateNit.SelectedItem
+	End If
+End Sub
+
+Private Sub SwiftButtonLabor_Click
+	Wait For (Dialog.ShowTemplate(SearchTemplateLabor, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonLabor.xLBL.Text = SearchTemplateLabor.SelectedItem
+		Dim LABORCOMPLETO As String = SearchTemplateLabor.SelectedItem
+		Dim Partes() As String = Regex.Split(":", LABORCOMPLETO)
+	LaborCBX = Partes(0)
+	End If
+End Sub
+
+Private Sub SwiftButtonConcepto_Click
+	Wait For (Dialog.ShowTemplate(SearchTemplateConcepto, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonConcepto.xLBL.Text = SearchTemplateConcepto.SelectedItem
+		Dim CONCEPTOCOMPLETO As String = SearchTemplateConcepto.SelectedItem
+		Dim Partes() As String = Regex.Split(":", CONCEPTOCOMPLETO)
+		ConceptoCBX = Partes(0)
+	End If
+End Sub
+
+Private Sub SwiftButtonTurno_Click
+	Wait For (Dialog.ShowTemplate(SearchTemplateTurno, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonTurno.xLBL.Text = SearchTemplateTurno.SelectedItem
 	End If
 End Sub
