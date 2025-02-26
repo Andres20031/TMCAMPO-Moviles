@@ -1004,6 +1004,7 @@ Private Sub SwiftButtonLabor_Click
 		Dim LABORCOMPLETO As String = SearchTemplateLabor.SelectedItem
 		Dim Partes() As String = Regex.Split(":", LABORCOMPLETO)
 	LaborCBX = Partes(0)
+	
 	End If
 End Sub
 
