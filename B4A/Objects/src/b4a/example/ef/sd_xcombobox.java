@@ -646,7 +646,7 @@ _pnl = _pnl.getParent();
  } 
        catch (Exception e15) {
 			ba.setLastException(e15); //BA.debugLineNum = 616;BA.debugLine="Log(LastException.Message)";
-__c.LogImpl("961276177",__c.LastException(ba).getMessage(),0);
+__c.LogImpl("961407249",__c.LastException(ba).getMessage(),0);
  };
  //BA.debugLineNum = 618;BA.debugLine="If xui.IsB4i Then pnl=prec";
 if (_xui.getIsB4i()) { 

@@ -112,7 +112,7 @@ _fechainicio = _formatteddate;
  //BA.debugLineNum = 315;BA.debugLine="Panel12.Visible = False";
 _panel12.setVisible(__c.False);
  //BA.debugLineNum = 318;BA.debugLine="Log(\"Fecha seleccionada: \" & FechaInicio)";
-__c.LogImpl("74063244","Fecha seleccionada: "+_fechainicio,0);
+__c.LogImpl("84063244","Fecha seleccionada: "+_fechainicio,0);
  //BA.debugLineNum = 319;BA.debugLine="End Sub";
 return "";
 }
@@ -133,11 +133,11 @@ _label13hfim.setText(BA.ObjectToCharSequence(_formatteddate));
  //BA.debugLineNum = 338;BA.debugLine="FechaFin = formattedDate";
 _fechafin = _formatteddate;
  //BA.debugLineNum = 340;BA.debugLine="Log(\"Fecha de fin\" & FechaFin )";
-__c.LogImpl("74259849","Fecha de fin"+_fechafin,0);
+__c.LogImpl("84259849","Fecha de fin"+_fechafin,0);
  //BA.debugLineNum = 342;BA.debugLine="Panel13.Visible = False";
 _panel13.setVisible(__c.False);
  //BA.debugLineNum = 345;BA.debugLine="Log(\"Fecha seleccionada: \" & formattedDate)";
-__c.LogImpl("74259854","Fecha seleccionada: "+_formatteddate,0);
+__c.LogImpl("84259854","Fecha seleccionada: "+_formatteddate,0);
  //BA.debugLineNum = 346;BA.debugLine="End Sub";
 return "";
 }
@@ -314,8 +314,8 @@ _razonsocial = BA.ObjectToString(_row[(int) (0)]);
 _nit = BA.ObjectToString(_row[(int) (1)]);
  //BA.debugLineNum = 192;BA.debugLine="SD_xComboBoxNitPerson.Add(razonSocial & \" - \" &";
 parent._sd_xcomboboxnitperson._add /*String*/ (_razonsocial+" - "+_nit,(Object)(_nit));
- //BA.debugLineNum = 193;BA.debugLine="ItemsNit.Add(razonSocial & \"-\" & nit)";
-_itemsnit.Add((Object)(_razonsocial+"-"+_nit));
+ //BA.debugLineNum = 193;BA.debugLine="ItemsNit.Add(nit&\":\"&razonSocial )";
+_itemsnit.Add((Object)(_nit+":"+_razonsocial));
  if (true) break;
 if (true) break;
 
@@ -329,7 +329,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 198;BA.debugLine="Log(\"Error en la consulta de NITs: \" & j.ErrorMe";
-parent.__c.LogImpl("73932219","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("83932219","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -431,7 +431,7 @@ case 19:
 //C
 this.state = 20;
  //BA.debugLineNum = 222;BA.debugLine="Log(\"Error en la consulta de destinos: \" & j2.Er";
-parent.__c.LogImpl("73932243","Error en la consulta de destinos: "+_j2._errormessage /*String*/ ,0);
+parent.__c.LogImpl("83932243","Error en la consulta de destinos: "+_j2._errormessage /*String*/ ,0);
  if (true) break;
 
 case 20:
@@ -539,7 +539,7 @@ case 29:
 //C
 this.state = 30;
  //BA.debugLineNum = 261;BA.debugLine="Log(\"Error en la consulta de conceptos: \" & j3.E";
-parent.__c.LogImpl("73932282","Error en la consulta de conceptos: "+_j3._errormessage /*String*/ ,0);
+parent.__c.LogImpl("83932282","Error en la consulta de conceptos: "+_j3._errormessage /*String*/ ,0);
  if (true) break;
 
 case 30:
@@ -641,7 +641,7 @@ case 39:
 //C
 this.state = 40;
  //BA.debugLineNum = 293;BA.debugLine="Log(\"Error en la consulta de conceptos: \" & j4.E";
-parent.__c.LogImpl("73932314","Error en la consulta de conceptos: "+_j4._errormessage /*String*/ ,0);
+parent.__c.LogImpl("83932314","Error en la consulta de conceptos: "+_j4._errormessage /*String*/ ,0);
  if (true) break;
 
 case 40:
@@ -784,14 +784,14 @@ this.state = 6;
  //BA.debugLineNum = 802;BA.debugLine="id = matcher.Group(1) ' Obtiene la parte después";
 _id = _matcher.Group((int) (1));
  //BA.debugLineNum = 803;BA.debugLine="Log(\"ID: \" & id) ' Aquí puedes usar id según tus";
-parent.__c.LogImpl("76619147","ID: "+_id,0);
+parent.__c.LogImpl("86619147","ID: "+_id,0);
  if (true) break;
 
 case 5:
 //C
 this.state = 6;
  //BA.debugLineNum = 805;BA.debugLine="Log(\"No se encontró el carácter # en la cadena.\"";
-parent.__c.LogImpl("76619149","No se encontró el carácter # en la cadena.",0);
+parent.__c.LogImpl("86619149","No se encontró el carácter # en la cadena.",0);
  if (true) break;
 
 case 6:
@@ -888,7 +888,7 @@ this.catchState = 17;
  //BA.debugLineNum = 834;BA.debugLine="MsgboxAsync(\"Se ha insertado correctamente.\",";
 parent.__c.MsgboxAsync(BA.ObjectToCharSequence("Se ha insertado correctamente."),BA.ObjectToCharSequence("Éxito"),ba);
  //BA.debugLineNum = 835;BA.debugLine="Log(\"Se han recuperado datos: propios \" & res.";
-parent.__c.LogImpl("76619179","Se han recuperado datos: propios "+BA.NumberToString(_res.Rows /*anywheresoftware.b4a.objects.collections.List*/ .getSize()),0);
+parent.__c.LogImpl("86619179","Se han recuperado datos: propios "+BA.NumberToString(_res.Rows /*anywheresoftware.b4a.objects.collections.List*/ .getSize()),0);
  if (true) break;
 
 case 17:
@@ -896,7 +896,7 @@ case 17:
 this.state = 18;
 this.catchState = 0;
  //BA.debugLineNum = 838;BA.debugLine="Log(\"Error al agregar datos: \" & LastException";
-parent.__c.LogImpl("76619182","Error al agregar datos: "+BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("86619182","Error al agregar datos: "+BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 if (true) break;
 
@@ -944,7 +944,7 @@ this.catchState = 25;
  //BA.debugLineNum = 849;BA.debugLine="MsgboxAsync(\"Se ha insertado correctamente.\",";
 parent.__c.MsgboxAsync(BA.ObjectToCharSequence("Se ha insertado correctamente."),BA.ObjectToCharSequence("Éxito"),ba);
  //BA.debugLineNum = 850;BA.debugLine="Log(\"No se encontraron datos para el ID: \" & i";
-parent.__c.LogImpl("76619194","No se encontraron datos para el ID: "+_id,0);
+parent.__c.LogImpl("86619194","No se encontraron datos para el ID: "+_id,0);
  if (true) break;
 
 case 25:
@@ -952,7 +952,7 @@ case 25:
 this.state = 26;
 this.catchState = 0;
  //BA.debugLineNum = 853;BA.debugLine="Log(\"Error al agregar datos: \" & LastException";
-parent.__c.LogImpl("76619197","Error al agregar datos: "+BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("86619197","Error al agregar datos: "+BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 if (true) break;
 
@@ -973,7 +973,7 @@ case 29:
 //C
 this.state = 30;
  //BA.debugLineNum = 858;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.ErrorM";
-parent.__c.LogImpl("76619202","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("86619202","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 30:
@@ -1180,7 +1180,7 @@ return "";
 public String  _edittext1percentage_textchanged(String _old,String _new) throws Exception{
  //BA.debugLineNum = 776;BA.debugLine="Private Sub EditText1percentage_TextChanged (Old A";
  //BA.debugLineNum = 777;BA.debugLine="Log(PorcentageText)";
-__c.LogImpl("76422529",_porcentagetext,0);
+__c.LogImpl("86422529",_porcentagetext,0);
  //BA.debugLineNum = 778;BA.debugLine="End Sub";
 return "";
 }
@@ -1189,7 +1189,7 @@ public String  _edittext2horas_textchanged(String _old,String _new) throws Excep
  //BA.debugLineNum = 770;BA.debugLine="HorasText = New";
 _horastext = _new;
  //BA.debugLineNum = 773;BA.debugLine="Log(HorasText)";
-__c.LogImpl("76356996",_horastext,0);
+__c.LogImpl("86356996",_horastext,0);
  //BA.debugLineNum = 774;BA.debugLine="End Sub";
 return "";
 }
@@ -1198,7 +1198,7 @@ public String  _edittext3cantidat_textchanged(String _old,String _new) throws Ex
  //BA.debugLineNum = 781;BA.debugLine="CantidadText = New";
 _cantidadtext = _new;
  //BA.debugLineNum = 783;BA.debugLine="Log(CantidadText)";
-__c.LogImpl("76488067",_cantidadtext,0);
+__c.LogImpl("86488067",_cantidadtext,0);
  //BA.debugLineNum = 784;BA.debugLine="End Sub";
 return "";
 }
@@ -1207,7 +1207,7 @@ public String  _edittext4obsv_textchanged(String _old,String _new) throws Except
  //BA.debugLineNum = 787;BA.debugLine="ObsvText =New";
 _obsvtext = _new;
  //BA.debugLineNum = 789;BA.debugLine="Log(ObsvText)";
-__c.LogImpl("76553603",_obsvtext,0);
+__c.LogImpl("86553603",_obsvtext,0);
  //BA.debugLineNum = 790;BA.debugLine="End Sub";
 return "";
 }
@@ -1286,7 +1286,7 @@ case 5:
 //C
 this.state = 6;
  //BA.debugLineNum = 479;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("75242890","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("85242890","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 6:
@@ -1478,7 +1478,7 @@ case 13:
 //C
 this.state = 14;
  //BA.debugLineNum = 463;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("75177372","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("85177372","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 14:
@@ -1670,7 +1670,7 @@ case 13:
 //C
 this.state = 14;
  //BA.debugLineNum = 576;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("75570588","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("85570588","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 14:
@@ -1852,7 +1852,7 @@ case 13:
 //C
 this.state = 14;
  //BA.debugLineNum = 543;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("75505048","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("85505048","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 14:
@@ -1998,9 +1998,9 @@ _conceptocbx = BA.ObjectToString(_value);
  //BA.debugLineNum = 753;BA.debugLine="Dim dstjo_Cncpto As String = ConceptoDataMap.Get(";
 _dstjo_cncpto = BA.ObjectToString(_conceptodatamap.Get(_value));
  //BA.debugLineNum = 756;BA.debugLine="Log(\"Valor seleccionado: \" & ConceptoCBX)";
-__c.LogImpl("76291467","Valor seleccionado: "+_conceptocbx,0);
+__c.LogImpl("86291467","Valor seleccionado: "+_conceptocbx,0);
  //BA.debugLineNum = 757;BA.debugLine="Log(\"Dato dstjo_Cncpto: \" & dstjo_Cncpto)";
-__c.LogImpl("76291468","Dato dstjo_Cncpto: "+_dstjo_cncpto,0);
+__c.LogImpl("86291468","Dato dstjo_Cncpto: "+_dstjo_cncpto,0);
  //BA.debugLineNum = 760;BA.debugLine="If dstjo_Cncpto = \"N\" Then ' Ajusta la condición";
 if ((_dstjo_cncpto).equals("N")) { 
  //BA.debugLineNum = 762;BA.debugLine="EditText3cantidat.Enabled = False";
@@ -2077,7 +2077,7 @@ case 6:
 this.state = 7;
 ;
  //BA.debugLineNum = 686;BA.debugLine="Log(haciendaCBX)";
-parent.__c.LogImpl("76094854",parent._haciendacbx,0);
+parent.__c.LogImpl("86094854",parent._haciendacbx,0);
  //BA.debugLineNum = 687;BA.debugLine="SD_xComboBoxLote.Clear";
 parent._sd_xcomboboxlote._clear /*String*/ ();
  //BA.debugLineNum = 688;BA.debugLine="SD_xComboBoxLote.Add(\"----Select----\", \"1\")";
@@ -2169,7 +2169,7 @@ case 15:
 //C
 this.state = 16;
  //BA.debugLineNum = 714;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-parent.__c.LogImpl("76094882","Error: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("86094882","Error: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 16:
@@ -2198,7 +2198,7 @@ _laborcbx = BA.ObjectToString(__c.Null);
 _laborcbx = BA.ObjectToString(_value);
  };
  //BA.debugLineNum = 742;BA.debugLine="Log(LaborCBX)";
-__c.LogImpl("76225928",_laborcbx,0);
+__c.LogImpl("86225928",_laborcbx,0);
  //BA.debugLineNum = 743;BA.debugLine="End Sub";
 return "";
 }
@@ -2215,7 +2215,7 @@ _lotecbx = BA.ObjectToString(__c.Null);
 _lotecbx = BA.ObjectToString(_value);
  };
  //BA.debugLineNum = 731;BA.debugLine="Log(LoteCBX)";
-__c.LogImpl("76160393",_lotecbx,0);
+__c.LogImpl("86160393",_lotecbx,0);
  //BA.debugLineNum = 732;BA.debugLine="End Sub";
 return "";
 }
@@ -2289,9 +2289,9 @@ case 6:
 this.state = 7;
 ;
  //BA.debugLineNum = 641;BA.debugLine="Log(\"Valor seleccionado: \" & nitEmpresaCBX)";
-parent.__c.LogImpl("76029322","Valor seleccionado: "+parent._nitempresacbx,0);
+parent.__c.LogImpl("86029322","Valor seleccionado: "+parent._nitempresacbx,0);
  //BA.debugLineNum = 643;BA.debugLine="Log(\"Posicion: \"&Position&\" VALUE: \"&Value)";
-parent.__c.LogImpl("76029324","Posicion: "+BA.NumberToString(_position)+" VALUE: "+BA.ObjectToString(_value),0);
+parent.__c.LogImpl("86029324","Posicion: "+BA.NumberToString(_position)+" VALUE: "+BA.ObjectToString(_value),0);
  //BA.debugLineNum = 644;BA.debugLine="SD_xComboBoxHacienda.Add(\"----Select----\", \"1\")";
 parent._sd_xcomboboxhacienda._add /*String*/ ("----Select----",(Object)("1"));
  //BA.debugLineNum = 646;BA.debugLine="Dim Req As DBRequestManager";
@@ -2383,7 +2383,7 @@ case 15:
 //C
 this.state = 16;
  //BA.debugLineNum = 671;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-parent.__c.LogImpl("76029352","Error: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("86029352","Error: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 16:
@@ -2391,7 +2391,7 @@ case 16:
 this.state = -1;
 ;
  //BA.debugLineNum = 674;BA.debugLine="Log(nitEmpresaCBX)";
-parent.__c.LogImpl("76029355",parent._nitempresacbx,0);
+parent.__c.LogImpl("86029355",parent._nitempresacbx,0);
  //BA.debugLineNum = 676;BA.debugLine="j.Release";
 _j._release /*String*/ ();
  //BA.debugLineNum = 678;BA.debugLine="End Sub";
@@ -2435,7 +2435,7 @@ _hacienda = "";
  //BA.debugLineNum = 509;BA.debugLine="Spinner3.Clear";
 _spinner3.Clear();
  //BA.debugLineNum = 511;BA.debugLine="Log(Position & \" - \" & Value)";
-__c.LogImpl("75439494",BA.NumberToString(_position)+" - "+BA.ObjectToString(_value),0);
+__c.LogImpl("85439494",BA.NumberToString(_position)+" - "+BA.ObjectToString(_value),0);
  //BA.debugLineNum = 512;BA.debugLine="nit= \"890307964\"";
 _nit = "890307964";
  //BA.debugLineNum = 513;BA.debugLine="hacienda = Value";
@@ -2704,7 +2704,7 @@ case 12:
 //C
 this.state = 13;
  //BA.debugLineNum = 976;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-parent.__c.LogImpl("76881320","Error: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("86881320","Error: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 13:
@@ -2923,10 +2923,10 @@ this.state = 4;
 parent._swiftbuttonnit._xlbl /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setText(BA.ObjectToCharSequence(parent._searchtemplatenit._selecteditem /*String*/ ));
  //BA.debugLineNum = 887;BA.debugLine="Dim NITCOMPLETO As String = SearchTemplateNit.Se";
 _nitcompleto = parent._searchtemplatenit._selecteditem /*String*/ ;
- //BA.debugLineNum = 888;BA.debugLine="Dim Partes() As String = Regex.Split(\"-\", NITCOM";
-_partes = parent.__c.Regex.Split("-",_nitcompleto);
- //BA.debugLineNum = 889;BA.debugLine="nitEmpresaCBX = Partes(1)";
-parent._nitempresacbx = _partes[(int) (1)];
+ //BA.debugLineNum = 888;BA.debugLine="Dim Partes() As String = Regex.Split(\":\", NITCOM";
+_partes = parent.__c.Regex.Split(":",_nitcompleto);
+ //BA.debugLineNum = 889;BA.debugLine="nitEmpresaCBX = Partes(0)";
+parent._nitempresacbx = _partes[(int) (0)];
  //BA.debugLineNum = 890;BA.debugLine="ItemsHacienda.Clear";
 _itemshacienda.Clear();
  //BA.debugLineNum = 891;BA.debugLine="ItemsHacienda.Add(\"Seleccionar:\")";
@@ -3024,7 +3024,7 @@ case 12:
 //C
 this.state = 13;
  //BA.debugLineNum = 922;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-parent.__c.LogImpl("76815788","Error: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("86815788","Error: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 13:
@@ -3036,7 +3036,7 @@ parent._searchtemplatehacienda._setitems /*Object*/ (_itemshacienda);
  //BA.debugLineNum = 925;BA.debugLine="SwiftButtonHacienda.Enabled = True";
 parent._swiftbuttonhacienda._setenabled /*boolean*/ (parent.__c.True);
  //BA.debugLineNum = 926;BA.debugLine="Log(nitEmpresaCBX)";
-parent.__c.LogImpl("76815792",parent._nitempresacbx,0);
+parent.__c.LogImpl("86815792",parent._nitempresacbx,0);
  //BA.debugLineNum = 928;BA.debugLine="j.Release";
 _j._release /*String*/ ();
  if (true) break;

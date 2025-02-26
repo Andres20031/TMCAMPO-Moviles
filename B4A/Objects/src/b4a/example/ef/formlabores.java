@@ -121,7 +121,7 @@ _panel12.setVisible(__c.False);
  //BA.debugLineNum = 305;BA.debugLine="fechaInicio = formattedDate";
 _fechainicio = _formatteddate;
  //BA.debugLineNum = 308;BA.debugLine="Log(\"Fecha inicio: \" & fechaInicio)";
-__c.LogImpl("712386333","Fecha inicio: "+_fechainicio,0);
+__c.LogImpl("812386333","Fecha inicio: "+_fechainicio,0);
  //BA.debugLineNum = 310;BA.debugLine="End Sub";
 return "";
 }
@@ -149,7 +149,7 @@ _panel3.setVisible(__c.False);
  //BA.debugLineNum = 338;BA.debugLine="fechaFin = formattedDate";
 _fechafin = _formatteddate;
  //BA.debugLineNum = 341;BA.debugLine="Log(\"Fecha fin: \" & fechaFin)";
-__c.LogImpl("712451869","Fecha fin: "+_fechafin,0);
+__c.LogImpl("812451869","Fecha fin: "+_fechafin,0);
  //BA.debugLineNum = 344;BA.debugLine="End Sub";
 return "";
 }
@@ -315,7 +315,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 126;BA.debugLine="Log(\"Error en la consulta de NITs: \" & j.ErrorMe";
-parent.__c.LogImpl("711927575","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("811927575","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -407,7 +407,7 @@ case 19:
 //C
 this.state = 20;
  //BA.debugLineNum = 142;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j3.Err";
-parent.__c.LogImpl("711927591","Error en la consulta de Maquina: "+_j3._errormessage /*String*/ ,0);
+parent.__c.LogImpl("811927591","Error en la consulta de Maquina: "+_j3._errormessage /*String*/ ,0);
  if (true) break;
 
 case 20:
@@ -501,7 +501,7 @@ case 29:
 //C
 this.state = 30;
  //BA.debugLineNum = 159;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j4.Err";
-parent.__c.LogImpl("711927608","Error en la consulta de Maquina: "+_j4._errormessage /*String*/ ,0);
+parent.__c.LogImpl("811927608","Error en la consulta de Maquina: "+_j4._errormessage /*String*/ ,0);
  if (true) break;
 
 case 30:
@@ -587,7 +587,7 @@ this.state = 66;
  //BA.debugLineNum = 181;BA.debugLine="Dim ultimoRegistro As Int = rowRegistro(0) ' Nu";
 _ultimoregistro = (int)(BA.ObjectToNumber(_rowregistro[(int) (0)]));
  //BA.debugLineNum = 182;BA.debugLine="Log(\"Último Registro obtenido: \" & ultimoRegist";
-parent.__c.LogImpl("711927631","Último Registro obtenido: "+BA.NumberToString(_ultimoregistro),0);
+parent.__c.LogImpl("811927631","Último Registro obtenido: "+BA.NumberToString(_ultimoregistro),0);
  if (true) break;
 if (true) break;
 
@@ -601,7 +601,7 @@ case 39:
 //C
 this.state = 40;
  //BA.debugLineNum = 186;BA.debugLine="Log(\"Error en la consulta select_maxIdLabor: \" &";
-parent.__c.LogImpl("711927635","Error en la consulta select_maxIdLabor: "+_j5._errormessage /*String*/ ,0);
+parent.__c.LogImpl("811927635","Error en la consulta select_maxIdLabor: "+_j5._errormessage /*String*/ ,0);
  if (true) break;
 
 case 40:
@@ -611,7 +611,7 @@ this.state = 41;
  //BA.debugLineNum = 189;BA.debugLine="consecutivo = ultimoRegistro + 1";
 parent._consecutivo = (int) (_ultimoregistro+1);
  //BA.debugLineNum = 191;BA.debugLine="Log(consecutivo)";
-parent.__c.LogImpl("711927640",BA.NumberToString(parent._consecutivo),0);
+parent.__c.LogImpl("811927640",BA.NumberToString(parent._consecutivo),0);
  //BA.debugLineNum = 193;BA.debugLine="Dim cmdUltimoRegistro As DBCommand = CreateComman";
 _cmdultimoregistro = parent._createcommand("select_maxIdSiembra",(Object[])(parent.__c.Null));
  //BA.debugLineNum = 194;BA.debugLine="Wait For (Req.ExecuteQuery(cmdUltimoRegistro, 0,";
@@ -681,7 +681,7 @@ this.state = 70;
  //BA.debugLineNum = 201;BA.debugLine="Dim ultimoRegistroSiembra As Int = rowRegistro(";
 _ultimoregistrosiembra = (int)(BA.ObjectToNumber(_rowregistro[(int) (0)]));
  //BA.debugLineNum = 202;BA.debugLine="Log(\"Último Registro Siembra  obtenido: \" & ult";
-parent.__c.LogImpl("711927651","Último Registro Siembra  obtenido: "+BA.NumberToString(_ultimoregistrosiembra),0);
+parent.__c.LogImpl("811927651","Último Registro Siembra  obtenido: "+BA.NumberToString(_ultimoregistrosiembra),0);
  if (true) break;
 if (true) break;
 
@@ -695,7 +695,7 @@ case 49:
 //C
 this.state = 50;
  //BA.debugLineNum = 206;BA.debugLine="Log(\"Error en la consulta select_maxIdLabor: \" &";
-parent.__c.LogImpl("711927655","Error en la consulta select_maxIdLabor: "+_j5._errormessage /*String*/ ,0);
+parent.__c.LogImpl("811927655","Error en la consulta select_maxIdLabor: "+_j5._errormessage /*String*/ ,0);
  if (true) break;
 
 case 50:
@@ -705,7 +705,7 @@ this.state = -1;
  //BA.debugLineNum = 209;BA.debugLine="consecutivoSiembra = ultimoRegistroSiembra + 1";
 parent._consecutivosiembra = (int) (_ultimoregistrosiembra+1);
  //BA.debugLineNum = 211;BA.debugLine="Log(consecutivoSiembra)";
-parent.__c.LogImpl("711927660",BA.NumberToString(parent._consecutivosiembra),0);
+parent.__c.LogImpl("811927660",BA.NumberToString(parent._consecutivosiembra),0);
  //BA.debugLineNum = 212;BA.debugLine="End Sub";
 if (true) break;
 
@@ -737,9 +737,9 @@ String _nombreinsu = "";
 int _cantidadinsu = 0;
  //BA.debugLineNum = 743;BA.debugLine="Private Sub B4XTable1_CellClicked (ColumnId As Str";
  //BA.debugLineNum = 744;BA.debugLine="Log(\"COLUM ID\"&ColumnId)";
-__c.LogImpl("714548993","COLUM ID"+_columnid,0);
+__c.LogImpl("814548993","COLUM ID"+_columnid,0);
  //BA.debugLineNum = 745;BA.debugLine="Log(\"ROW ID\"&RowId)";
-__c.LogImpl("714548994","ROW ID"+BA.NumberToString(_rowid),0);
+__c.LogImpl("814548994","ROW ID"+BA.NumberToString(_rowid),0);
  //BA.debugLineNum = 746;BA.debugLine="PanelTittleInsumo.Visible = True";
 _paneltittleinsumo.setVisible(__c.True);
  //BA.debugLineNum = 747;BA.debugLine="Dim rowData As Map = B4XTable1.GetRow(RowId)";
@@ -760,7 +760,7 @@ _buttondeleteinsumo.setVisible(__c.True);
  //BA.debugLineNum = 755;BA.debugLine="idEliminarTabla = rowData.Get(\"#\")";
 _ideliminartabla = (int)(BA.ObjectToNumber(_rowdata.Get((Object)("#"))));
  //BA.debugLineNum = 756;BA.debugLine="Log(idEliminarTabla)";
-__c.LogImpl("714549005",BA.NumberToString(_ideliminartabla),0);
+__c.LogImpl("814549005",BA.NumberToString(_ideliminartabla),0);
  //BA.debugLineNum = 757;BA.debugLine="End Sub";
 return "";
 }
@@ -972,13 +972,13 @@ this.catchState = 23;
  //BA.debugLineNum = 812;BA.debugLine="cantidadInsu = rowData.Get(\"CANTIDAD\")";
 _cantidadinsu = (int)(BA.ObjectToNumber(_rowdata.Get((Object)("CANTIDAD"))));
  //BA.debugLineNum = 814;BA.debugLine="Log(\"Fila \" & (i + 1) & \":\")";
-parent.__c.LogImpl("714745633","Fila "+BA.NumberToString((_i+1))+":",0);
+parent.__c.LogImpl("814745633","Fila "+BA.NumberToString((_i+1))+":",0);
  //BA.debugLineNum = 815;BA.debugLine="Log(\" - ID: \" & ID)";
-parent.__c.LogImpl("714745634"," - ID: "+_id,0);
+parent.__c.LogImpl("814745634"," - ID: "+_id,0);
  //BA.debugLineNum = 816;BA.debugLine="Log(\" - NOMBRE: \" & nombreInsu)";
-parent.__c.LogImpl("714745635"," - NOMBRE: "+_nombreinsu,0);
+parent.__c.LogImpl("814745635"," - NOMBRE: "+_nombreinsu,0);
  //BA.debugLineNum = 817;BA.debugLine="Log(\" - CANTIDAD: \" & cantidadInsu)";
-parent.__c.LogImpl("714745636"," - CANTIDAD: "+BA.NumberToString(_cantidadinsu),0);
+parent.__c.LogImpl("814745636"," - CANTIDAD: "+BA.NumberToString(_cantidadinsu),0);
  //BA.debugLineNum = 820;BA.debugLine="Dim Req As DBRequestManager";
 _req = new b4a.example.ef.dbrequestmanager();
  //BA.debugLineNum = 821;BA.debugLine="Req.Initialize(Me, rdcLink & \"?DBName=\" & Main";
@@ -1102,7 +1102,7 @@ case 36:
 //C
 this.state = 37;
  //BA.debugLineNum = 867;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
-parent.__c.LogImpl("714745686","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("814745686","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 37:
@@ -1116,7 +1116,7 @@ case 39:
 this.state = 40;
 this.catchState = 0;
  //BA.debugLineNum = 871;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
-parent.__c.LogImpl("714745690","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
+parent.__c.LogImpl("814745690","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
  if (true) break;
 if (true) break;
 
@@ -1220,7 +1220,7 @@ case 8:
 //C
 this.state = 9;
  //BA.debugLineNum = 899;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
-parent.__c.LogImpl("714811155","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("814811155","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 9:
@@ -1234,7 +1234,7 @@ case 11:
 this.state = 12;
 this.catchState = 0;
  //BA.debugLineNum = 902;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
-parent.__c.LogImpl("714811158","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
+parent.__c.LogImpl("814811158","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
  if (true) break;
 if (true) break;
 
@@ -1311,7 +1311,7 @@ case 20:
 //C
 this.state = 21;
  //BA.debugLineNum = 932;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
-parent.__c.LogImpl("714811188","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("814811188","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 21:
@@ -1325,7 +1325,7 @@ case 23:
 this.state = 24;
 this.catchState = 0;
  //BA.debugLineNum = 936;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
-parent.__c.LogImpl("714811192","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
+parent.__c.LogImpl("814811192","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
  if (true) break;
 if (true) break;
 
@@ -1456,7 +1456,7 @@ this.state = 38;
  //BA.debugLineNum = 954;BA.debugLine="Dim ultimoRegistroSiembra As Int = rowRegistro(";
 _ultimoregistrosiembra = (int)(BA.ObjectToNumber(_rowregistro[(int) (0)]));
  //BA.debugLineNum = 955;BA.debugLine="Log(\"Último Registro Siembra  obtenido: \" & ult";
-parent.__c.LogImpl("714876686","Último Registro Siembra  obtenido: "+BA.NumberToString(_ultimoregistrosiembra),0);
+parent.__c.LogImpl("814876686","Último Registro Siembra  obtenido: "+BA.NumberToString(_ultimoregistrosiembra),0);
  if (true) break;
 if (true) break;
 
@@ -1470,7 +1470,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 959;BA.debugLine="Log(\"Error en la consulta select_maxIdLabor: \" &";
-parent.__c.LogImpl("714876690","Error en la consulta select_maxIdLabor: "+_j5._errormessage /*String*/ ,0);
+parent.__c.LogImpl("814876690","Error en la consulta select_maxIdLabor: "+_j5._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -1480,7 +1480,7 @@ this.state = 11;
  //BA.debugLineNum = 962;BA.debugLine="consecutivoSiembra = ultimoRegistroSiembra + 1";
 parent._consecutivosiembra = (int) (_ultimoregistrosiembra+1);
  //BA.debugLineNum = 964;BA.debugLine="Log(consecutivoSiembra)";
-parent.__c.LogImpl("714876695",BA.NumberToString(parent._consecutivosiembra),0);
+parent.__c.LogImpl("814876695",BA.NumberToString(parent._consecutivosiembra),0);
  //BA.debugLineNum = 969;BA.debugLine="Dim cmd As DBCommand = CreateCommand(\"insert_labo";
 _cmd = parent._createcommand("insert_laborSiembra",new Object[]{(Object)(parent._consecutivosiembra),(Object)(parent._codigosiembra),(Object)(parent._distanciasiembra),(Object)(parent._toneladasemillasiembra),(Object)(parent._numeropaquetessiembra),(Object)(parent._procedenciasiembra),(Object)(parent._tipolabranzasiembra),(Object)(parent._bandereosiembra),(Object)(parent._numeromacollosiembra)});
  //BA.debugLineNum = 972;BA.debugLine="Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)";
@@ -1529,11 +1529,11 @@ case 18:
 //C
 this.state = 19;
  //BA.debugLineNum = 981;BA.debugLine="Log(\"Error al agregar datos: \" & LastException)";
-parent.__c.LogImpl("714876712","Error al agregar datos: "+BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("814876712","Error al agregar datos: "+BA.ObjectToString(parent.__c.LastException(ba)),0);
  //BA.debugLineNum = 982;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
-parent.__c.LogImpl("714876713","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("814876713","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
  //BA.debugLineNum = 983;BA.debugLine="Log(\"Valores enviados: consecutivo=\" & consecut";
-parent.__c.LogImpl("714876714","Valores enviados: consecutivo="+BA.NumberToString(parent._consecutivo)+", codigoSiembra="+parent._codigosiembra+", distanciaSiembra="+BA.NumberToString(parent._distanciasiembra)+", toneladaSemillaSiembra="+BA.NumberToString(parent._toneladasemillasiembra)+", numeroPaquetesSiembra="+BA.NumberToString(parent._numeropaquetessiembra)+", procedenciaSiembra="+parent._procedenciasiembra+", tipoLabranzaSiembra="+parent._tipolabranzasiembra+", bandereoSiembra="+BA.NumberToString(parent._bandereosiembra)+", numeroMacolloSiembra="+BA.NumberToString(parent._numeromacollosiembra),0);
+parent.__c.LogImpl("814876714","Valores enviados: consecutivo="+BA.NumberToString(parent._consecutivo)+", codigoSiembra="+parent._codigosiembra+", distanciaSiembra="+BA.NumberToString(parent._distanciasiembra)+", toneladaSemillaSiembra="+BA.NumberToString(parent._toneladasemillasiembra)+", numeroPaquetesSiembra="+BA.NumberToString(parent._numeropaquetessiembra)+", procedenciaSiembra="+parent._procedenciasiembra+", tipoLabranzaSiembra="+parent._tipolabranzasiembra+", bandereoSiembra="+BA.NumberToString(parent._bandereosiembra)+", numeroMacolloSiembra="+BA.NumberToString(parent._numeromacollosiembra),0);
  if (true) break;
 
 case 19:
@@ -1547,7 +1547,7 @@ case 21:
 this.state = 22;
 this.catchState = 0;
  //BA.debugLineNum = 991;BA.debugLine="Log(\"Excepción capturada: \" & LastException)";
-parent.__c.LogImpl("714876722","Excepción capturada: "+BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("814876722","Excepción capturada: "+BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 if (true) break;
 
@@ -1624,7 +1624,7 @@ case 30:
 //C
 this.state = 31;
  //BA.debugLineNum = 1022;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
-parent.__c.LogImpl("714876753","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("814876753","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 31:
@@ -1638,7 +1638,7 @@ case 33:
 this.state = 34;
 this.catchState = 0;
  //BA.debugLineNum = 1026;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
-parent.__c.LogImpl("714876757","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
+parent.__c.LogImpl("814876757","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
  if (true) break;
 if (true) break;
 
@@ -1888,7 +1888,7 @@ public String  _edittextarealabor_textchanged(String _old,String _new) throws Ex
  //BA.debugLineNum = 461;BA.debugLine="areaLabor = New";
 _arealabor = (int)(Double.parseDouble(_new));
  //BA.debugLineNum = 463;BA.debugLine="Log(\"Area Labor \" & areaLabor)";
-__c.LogImpl("712910596","Area Labor "+BA.NumberToString(_arealabor),0);
+__c.LogImpl("812910596","Area Labor "+BA.NumberToString(_arealabor),0);
  //BA.debugLineNum = 464;BA.debugLine="End Sub";
 return "";
 }
@@ -1897,7 +1897,7 @@ public String  _edittextarealote_textchanged(String _old,String _new) throws Exc
  //BA.debugLineNum = 469;BA.debugLine="areaLote = New";
 _arealote = (int)(Double.parseDouble(_new));
  //BA.debugLineNum = 471;BA.debugLine="Log(\"Area lote \" & areaLote )";
-__c.LogImpl("712976132","Area lote "+BA.NumberToString(_arealote),0);
+__c.LogImpl("812976132","Area lote "+BA.NumberToString(_arealote),0);
  //BA.debugLineNum = 472;BA.debugLine="End Sub";
 return "";
 }
@@ -1906,7 +1906,7 @@ public String  _edittextbandereo_textchanged(String _old,String _new) throws Exc
  //BA.debugLineNum = 589;BA.debugLine="bandereoSiembra = New";
 _bandereosiembra = (int)(Double.parseDouble(_new));
  //BA.debugLineNum = 591;BA.debugLine="Log(\"bandereo \" & bandereoSiembra)";
-__c.LogImpl("713697028","bandereo "+BA.NumberToString(_bandereosiembra),0);
+__c.LogImpl("813697028","bandereo "+BA.NumberToString(_bandereosiembra),0);
  //BA.debugLineNum = 592;BA.debugLine="End Sub";
 return "";
 }
@@ -1915,7 +1915,7 @@ public String  _edittextcantidadagua_textchanged(String _old,String _new) throws
  //BA.debugLineNum = 529;BA.debugLine="cantidadRiego = New";
 _cantidadriego = _new;
  //BA.debugLineNum = 531;BA.debugLine="Log(\"cantidad\" & cantidadRiego)";
-__c.LogImpl("713238275","cantidad"+_cantidadriego,0);
+__c.LogImpl("813238275","cantidad"+_cantidadriego,0);
  //BA.debugLineNum = 533;BA.debugLine="End Sub";
 return "";
 }
@@ -1933,7 +1933,7 @@ public String  _edittextcaudalaplicado_textchanged(String _old,String _new) thro
  //BA.debugLineNum = 523;BA.debugLine="caudalRiego = New";
 _caudalriego = _new;
  //BA.debugLineNum = 525;BA.debugLine="Log(\"caudal\" & caudalRiego)";
-__c.LogImpl("713172739","caudal"+_caudalriego,0);
+__c.LogImpl("813172739","caudal"+_caudalriego,0);
  //BA.debugLineNum = 526;BA.debugLine="End Sub";
 return "";
 }
@@ -1942,7 +1942,7 @@ public String  _edittextdistanciasiembra_textchanged(String _old,String _new) th
  //BA.debugLineNum = 582;BA.debugLine="distanciaSiembra = New";
 _distanciasiembra = (int)(Double.parseDouble(_new));
  //BA.debugLineNum = 584;BA.debugLine="Log(\"Distancia de siembra \" & distanciaSiembra)";
-__c.LogImpl("713631491","Distancia de siembra "+BA.NumberToString(_distanciasiembra),0);
+__c.LogImpl("813631491","Distancia de siembra "+BA.NumberToString(_distanciasiembra),0);
  //BA.debugLineNum = 585;BA.debugLine="End Sub";
 return "";
 }
@@ -1951,7 +1951,7 @@ public String  _edittextnumeromacollos_textchanged(String _old,String _new) thro
  //BA.debugLineNum = 622;BA.debugLine="numeroMacolloSiembra = New";
 _numeromacollosiembra = (int)(Double.parseDouble(_new));
  //BA.debugLineNum = 624;BA.debugLine="Log(\"numero de macollos \" & numeroMacolloSiembra";
-__c.LogImpl("714024707","numero de macollos "+BA.NumberToString(_numeromacollosiembra),0);
+__c.LogImpl("814024707","numero de macollos "+BA.NumberToString(_numeromacollosiembra),0);
  //BA.debugLineNum = 625;BA.debugLine="End Sub";
 return "";
 }
@@ -1960,7 +1960,7 @@ public String  _edittextnumeropaquetes_textchanged(String _old,String _new) thro
  //BA.debugLineNum = 616;BA.debugLine="numeroPaquetesSiembra = New";
 _numeropaquetessiembra = (int)(Double.parseDouble(_new));
  //BA.debugLineNum = 618;BA.debugLine="Log(\"numero de paquetes \" & numeroPaquetesSiembra";
-__c.LogImpl("713959172","numero de paquetes "+BA.NumberToString(_numeropaquetessiembra),0);
+__c.LogImpl("813959172","numero de paquetes "+BA.NumberToString(_numeropaquetessiembra),0);
  //BA.debugLineNum = 619;BA.debugLine="End Sub";
 return "";
 }
@@ -1969,7 +1969,7 @@ public String  _edittextprocedencia_textchanged(String _old,String _new) throws 
  //BA.debugLineNum = 517;BA.debugLine="procedenciaRiego = New";
 _procedenciariego = _new;
  //BA.debugLineNum = 519;BA.debugLine="Log(\"procedencia\" & procedenciaRiego)";
-__c.LogImpl("713107204","procedencia"+_procedenciariego,0);
+__c.LogImpl("813107204","procedencia"+_procedenciariego,0);
  //BA.debugLineNum = 520;BA.debugLine="End Sub";
 return "";
 }
@@ -1978,7 +1978,7 @@ public String  _edittextprocedenciadestino_textchanged(String _old,String _new) 
  //BA.debugLineNum = 602;BA.debugLine="procedenciaSiembra = New";
 _procedenciasiembra = _new;
  //BA.debugLineNum = 604;BA.debugLine="Log(\"procedencia \"& procedenciaSiembra)";
-__c.LogImpl("713828099","procedencia "+_procedenciasiembra,0);
+__c.LogImpl("813828099","procedencia "+_procedenciasiembra,0);
  //BA.debugLineNum = 605;BA.debugLine="End Sub";
 return "";
 }
@@ -1987,7 +1987,7 @@ public String  _edittexttoneladasemilla_textchanged(String _old,String _new) thr
  //BA.debugLineNum = 596;BA.debugLine="toneladaSemillaSiembra = New";
 _toneladasemillasiembra = (int)(Double.parseDouble(_new));
  //BA.debugLineNum = 598;BA.debugLine="Log(\"tonelada Semilla \"& toneladaSemillaSiembra)";
-__c.LogImpl("713762564","tonelada Semilla "+BA.NumberToString(_toneladasemillasiembra),0);
+__c.LogImpl("813762564","tonelada Semilla "+BA.NumberToString(_toneladasemillasiembra),0);
  //BA.debugLineNum = 599;BA.debugLine="End Sub";
 return "";
 }
@@ -2156,7 +2156,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 700;BA.debugLine="Log(\"Error en la consulta de NITs: \" & j.ErrorMe";
-parent.__c.LogImpl("714221327","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("814221327","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -2290,7 +2290,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 642;BA.debugLine="Log(\"Error en la consulta de NITs: \" & j.ErrorMe";
-parent.__c.LogImpl("714090255","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("814090255","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -2430,7 +2430,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 662;BA.debugLine="Log(\"Error en la consulta de NITs: \" & j.ErrorMe";
-parent.__c.LogImpl("714155791","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("814155791","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -2524,7 +2524,7 @@ case 19:
 //C
 this.state = 20;
  //BA.debugLineNum = 679;BA.debugLine="Log(\"Error en la consulta de Tipo_Labranza: \" &";
-parent.__c.LogImpl("714155808","Error en la consulta de Tipo_Labranza: "+_j4._errormessage /*String*/ ,0);
+parent.__c.LogImpl("814155808","Error en la consulta de Tipo_Labranza: "+_j4._errormessage /*String*/ ,0);
  if (true) break;
 
 case 20:
@@ -2634,7 +2634,7 @@ public String  _sd_xcomboboxcodigovariedad_itemclick(int _position,Object _value
  //BA.debugLineNum = 576;BA.debugLine="codigoSiembra = Value";
 _codigosiembra = BA.ObjectToString(_value);
  //BA.debugLineNum = 578;BA.debugLine="Log(\"codigo \" & codigoSiembra)";
-__c.LogImpl("713565955","codigo "+_codigosiembra,0);
+__c.LogImpl("813565955","codigo "+_codigosiembra,0);
  //BA.debugLineNum = 579;BA.debugLine="End Sub";
 return "";
 }
@@ -2651,7 +2651,7 @@ _elementogasto = _elementogasto.substring((int) (0),(int) (__c.Min(2,_elementoga
 _elementogasto = "";
  };
  //BA.debugLineNum = 455;BA.debugLine="Log(\"Las dos primeras letras (o menos si no hay s";
-__c.LogImpl("712845069","Las dos primeras letras (o menos si no hay suficientes): "+_elementogasto,0);
+__c.LogImpl("812845069","Las dos primeras letras (o menos si no hay suficientes): "+_elementogasto,0);
  //BA.debugLineNum = 457;BA.debugLine="End Sub";
 return "";
 }
@@ -2780,7 +2780,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 419;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-parent.__c.LogImpl("712648476","Error: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("812648476","Error: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -2790,7 +2790,7 @@ this.state = -1;
  //BA.debugLineNum = 423;BA.debugLine="j.Release";
 _j._release /*String*/ ();
  //BA.debugLineNum = 426;BA.debugLine="Log(\"Hacienda\" & haciendaCBX)";
-parent.__c.LogImpl("712648483","Hacienda"+parent._haciendacbx,0);
+parent.__c.LogImpl("812648483","Hacienda"+parent._haciendacbx,0);
  //BA.debugLineNum = 427;BA.debugLine="End Sub";
 if (true) break;
 
@@ -2815,7 +2815,7 @@ public String  _sd_xcomboboxlabor_itemclick(int _position,Object _value) throws 
  //BA.debugLineNum = 437;BA.debugLine="elementoLabor = Value";
 _elementolabor = BA.ObjectToString(_value);
  //BA.debugLineNum = 439;BA.debugLine="Log(\"Elemento labor\" & elementoLabor)";
-__c.LogImpl("712779524","Elemento labor"+_elementolabor,0);
+__c.LogImpl("812779524","Elemento labor"+_elementolabor,0);
  //BA.debugLineNum = 440;BA.debugLine="End Sub";
 return "";
 }
@@ -2824,7 +2824,7 @@ public String  _sd_xcomboboxlote_itemclick(int _position,Object _value) throws E
  //BA.debugLineNum = 431;BA.debugLine="loteCBX = Value";
 _lotecbx = BA.ObjectToString(_value);
  //BA.debugLineNum = 432;BA.debugLine="Log(\"Lotecbx\" & loteCBX)";
-__c.LogImpl("712713987","Lotecbx"+_lotecbx,0);
+__c.LogImpl("812713987","Lotecbx"+_lotecbx,0);
  //BA.debugLineNum = 433;BA.debugLine="End Sub";
 return "";
 }
@@ -2956,7 +2956,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 382;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-parent.__c.LogImpl("712582940","Error: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("812582940","Error: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -2966,7 +2966,7 @@ this.state = -1;
  //BA.debugLineNum = 385;BA.debugLine="j.Release";
 _j._release /*String*/ ();
  //BA.debugLineNum = 388;BA.debugLine="Log(\"Nit seleccionado\" &  nitEmpresaCBX)";
-parent.__c.LogImpl("712582946","Nit seleccionado"+parent._nitempresacbx,0);
+parent.__c.LogImpl("812582946","Nit seleccionado"+parent._nitempresacbx,0);
  //BA.debugLineNum = 389;BA.debugLine="End Sub";
 if (true) break;
 
@@ -2979,7 +2979,7 @@ public String  _sd_xcomboboxtipolabranza_itemclick(int _position,Object _value) 
  //BA.debugLineNum = 609;BA.debugLine="tipoLabranzaSiembra = Value";
 _tipolabranzasiembra = BA.ObjectToString(_value);
  //BA.debugLineNum = 611;BA.debugLine="Log(\"tipo labranza \"&tipoLabranzaSiembra)";
-__c.LogImpl("713893636","tipo labranza "+_tipolabranzasiembra,0);
+__c.LogImpl("813893636","tipo labranza "+_tipolabranzasiembra,0);
  //BA.debugLineNum = 612;BA.debugLine="End Sub";
 return "";
 }
@@ -2988,7 +2988,7 @@ public String  _sd_xcomboboxtiporiego_itemclick(int _position,Object _value) thr
  //BA.debugLineNum = 536;BA.debugLine="tipoRiego = Value";
 _tiporiego = BA.ObjectToString(_value);
  //BA.debugLineNum = 538;BA.debugLine="Log(\"tipo riego\" & tipoRiego)";
-__c.LogImpl("713303811","tipo riego"+_tiporiego,0);
+__c.LogImpl("813303811","tipo riego"+_tiporiego,0);
  //BA.debugLineNum = 540;BA.debugLine="End Sub";
 return "";
 }
@@ -3049,16 +3049,16 @@ _llenarcomboboxriego();
  break; }
 default: {
  //BA.debugLineNum = 506;BA.debugLine="Log(\"Valor no reconocido: \" & Value)";
-__c.LogImpl("713041696","Valor no reconocido: "+BA.ObjectToString(_value),0);
+__c.LogImpl("813041696","Valor no reconocido: "+BA.ObjectToString(_value),0);
  break; }
 }
 ;
  }else {
  //BA.debugLineNum = 509;BA.debugLine="Log(\"Error: Value no es un número válido.\")";
-__c.LogImpl("713041699","Error: Value no es un número válido.",0);
+__c.LogImpl("813041699","Error: Value no es un número válido.",0);
  };
  //BA.debugLineNum = 512;BA.debugLine="Log(\"Tipo labor \" & tipoLabor)";
-__c.LogImpl("713041702","Tipo labor "+_tipolabor,0);
+__c.LogImpl("813041702","Tipo labor "+_tipolabor,0);
  //BA.debugLineNum = 513;BA.debugLine="End Sub";
 return "";
 }

@@ -196,7 +196,7 @@ Sub B4XPage_Appear
 			Dim nit As String = row(1)
 			' Agregar la información al ComboBox
 			SD_xComboBoxNitPerson.Add(razonSocial & " - " & nit, nit)
-			ItemsNit.Add(razonSocial & "-" & nit)
+			ItemsNit.Add(nit&":"&razonSocial )
 		Next
 
 	Else
@@ -891,8 +891,8 @@ Private Sub SwiftButtonNit_Click
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonNit.xLBL.Text = SearchTemplateNit.SelectedItem
 		Dim NITCOMPLETO As String = SearchTemplateNit.SelectedItem
-		Dim Partes() As String = Regex.Split("-", NITCOMPLETO)
-		nitEmpresaCBX = Partes(1)
+		Dim Partes() As String = Regex.Split(":", NITCOMPLETO)
+		nitEmpresaCBX = Partes(0)
 		ItemsHacienda.Clear
 		ItemsHacienda.Add("Seleccionar:")
 		SwiftButtonHacienda.xLBL.Text = ""
