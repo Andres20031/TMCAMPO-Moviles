@@ -83,6 +83,9 @@ Sub Class_Globals
 	Private SearchTemplateConcepto As B4XSearchTemplate
 	Private SwiftButtonTurno As SwiftButton
 	Private SearchTemplateTurno As B4XSearchTemplate
+	
+	
+	
 End Sub
 
 
@@ -204,11 +207,9 @@ Sub B4XPage_Appear
 		Log("Error en la consulta de NITs: " & j.ErrorMessage)
 	End If
 	SearchTemplateNit.SetItems(ItemsNit)
-
-	
-
 	' Libera el trabajo HTTP de NITs
 	j.Release
+
 
 	' CONSULTAR LA BD PARA OBTENER LOS DESTINOS (Llenar SD_xComboBoxLabor)
 	SD_xComboBoxLabor.Add("----Select----", "1")

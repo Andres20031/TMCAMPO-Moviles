@@ -20,54 +20,54 @@ views.get("label4").vw.setWidth((int)((94d / 100 * width) - ((2d / 100 * width))
 //BA.debugLineNum = 5;BA.debugLine="Panel4.SetLeftAndRight(2%x,94%x)"[addLaboresUI/General script]
 views.get("panel4").vw.setLeft((int)((2d / 100 * width)));
 views.get("panel4").vw.setWidth((int)((94d / 100 * width) - ((2d / 100 * width))));
-//BA.debugLineNum = 6;BA.debugLine="SD_xComboBoxLabor.SetLeftAndRight(1%x,91%x)"[addLaboresUI/General script]
-views.get("sd_xcomboboxlabor").vw.setLeft((int)((1d / 100 * width)));
-views.get("sd_xcomboboxlabor").vw.setWidth((int)((91d / 100 * width) - ((1d / 100 * width))));
+//BA.debugLineNum = 6;BA.debugLine="SwiftButtonLabor.SetLeftAndRight(1%x,91%x)"[addLaboresUI/General script]
+views.get("swiftbuttonlabor").vw.setLeft((int)((1d / 100 * width)));
+views.get("swiftbuttonlabor").vw.setWidth((int)((91d / 100 * width) - ((1d / 100 * width))));
 //BA.debugLineNum = 8;BA.debugLine="Label7.SetLeftAndRight(2%x,94%x)"[addLaboresUI/General script]
 views.get("label7").vw.setLeft((int)((2d / 100 * width)));
 views.get("label7").vw.setWidth((int)((94d / 100 * width) - ((2d / 100 * width))));
 //BA.debugLineNum = 9;BA.debugLine="Panel5.SetLeftAndRight(2%x,94%x)"[addLaboresUI/General script]
 views.get("panel5").vw.setLeft((int)((2d / 100 * width)));
 views.get("panel5").vw.setWidth((int)((94d / 100 * width) - ((2d / 100 * width))));
-//BA.debugLineNum = 10;BA.debugLine="SD_xComboBoxNit.SetLeftAndRight(1%x,91%x)"[addLaboresUI/General script]
-views.get("sd_xcomboboxnit").vw.setLeft((int)((1d / 100 * width)));
-views.get("sd_xcomboboxnit").vw.setWidth((int)((91d / 100 * width) - ((1d / 100 * width))));
+//BA.debugLineNum = 10;BA.debugLine="SwiftButtonNit.SetLeftAndRight(1%x,91.5%x)"[addLaboresUI/General script]
+views.get("swiftbuttonnit").vw.setLeft((int)((1d / 100 * width)));
+views.get("swiftbuttonnit").vw.setWidth((int)((91.5d / 100 * width) - ((1d / 100 * width))));
 //BA.debugLineNum = 12;BA.debugLine="Label3.SetLeftAndRight(2%x,94%x)"[addLaboresUI/General script]
 views.get("label3").vw.setLeft((int)((2d / 100 * width)));
 views.get("label3").vw.setWidth((int)((94d / 100 * width) - ((2d / 100 * width))));
 //BA.debugLineNum = 13;BA.debugLine="Panel6.SetLeftAndRight(2%x,94%x)"[addLaboresUI/General script]
 views.get("panel6").vw.setLeft((int)((2d / 100 * width)));
 views.get("panel6").vw.setWidth((int)((94d / 100 * width) - ((2d / 100 * width))));
-//BA.debugLineNum = 14;BA.debugLine="SD_xComboBoxHacienda.SetLeftAndRight(1%x,91%x)"[addLaboresUI/General script]
-views.get("sd_xcomboboxhacienda").vw.setLeft((int)((1d / 100 * width)));
-views.get("sd_xcomboboxhacienda").vw.setWidth((int)((91d / 100 * width) - ((1d / 100 * width))));
+//BA.debugLineNum = 14;BA.debugLine="SwiftButtonHacienda.SetLeftAndRight(1%x,91%x)"[addLaboresUI/General script]
+views.get("swiftbuttonhacienda").vw.setLeft((int)((1d / 100 * width)));
+views.get("swiftbuttonhacienda").vw.setWidth((int)((91d / 100 * width) - ((1d / 100 * width))));
 //BA.debugLineNum = 16;BA.debugLine="Label5.SetLeftAndRight(2%x,94%x)"[addLaboresUI/General script]
 views.get("label5").vw.setLeft((int)((2d / 100 * width)));
 views.get("label5").vw.setWidth((int)((94d / 100 * width) - ((2d / 100 * width))));
 //BA.debugLineNum = 17;BA.debugLine="Panel1.SetLeftAndRight(2%x,94%x)"[addLaboresUI/General script]
 views.get("panel1").vw.setLeft((int)((2d / 100 * width)));
 views.get("panel1").vw.setWidth((int)((94d / 100 * width) - ((2d / 100 * width))));
-//BA.debugLineNum = 18;BA.debugLine="SD_xComboBoxLote.SetLeftAndRight(1%x,91%x)"[addLaboresUI/General script]
-views.get("sd_xcomboboxlote").vw.setLeft((int)((1d / 100 * width)));
-views.get("sd_xcomboboxlote").vw.setWidth((int)((91d / 100 * width) - ((1d / 100 * width))));
+//BA.debugLineNum = 18;BA.debugLine="SwiftButtonLote.SetLeftAndRight(1%x,91%x)"[addLaboresUI/General script]
+views.get("swiftbuttonlote").vw.setLeft((int)((1d / 100 * width)));
+views.get("swiftbuttonlote").vw.setWidth((int)((91d / 100 * width) - ((1d / 100 * width))));
 //BA.debugLineNum = 20;BA.debugLine="Label1.SetLeftAndRight(2%x,94%x)"[addLaboresUI/General script]
 views.get("label1").vw.setLeft((int)((2d / 100 * width)));
 views.get("label1").vw.setWidth((int)((94d / 100 * width) - ((2d / 100 * width))));
 //BA.debugLineNum = 21;BA.debugLine="Panel2.SetLeftAndRight(2%x,94%x)"[addLaboresUI/General script]
 views.get("panel2").vw.setLeft((int)((2d / 100 * width)));
 views.get("panel2").vw.setWidth((int)((94d / 100 * width) - ((2d / 100 * width))));
-//BA.debugLineNum = 22;BA.debugLine="SD_xComboBoxElemento.SetLeftAndRight(1%x,91%x)"[addLaboresUI/General script]
-views.get("sd_xcomboboxelemento").vw.setLeft((int)((1d / 100 * width)));
-views.get("sd_xcomboboxelemento").vw.setWidth((int)((91d / 100 * width) - ((1d / 100 * width))));
+//BA.debugLineNum = 22;BA.debugLine="SwiftButtonElemento.SetLeftAndRight(1%x,91%x)"[addLaboresUI/General script]
+views.get("swiftbuttonelemento").vw.setLeft((int)((1d / 100 * width)));
+views.get("swiftbuttonelemento").vw.setWidth((int)((91d / 100 * width) - ((1d / 100 * width))));
 //BA.debugLineNum = 24;BA.debugLine="Label8.SetLeftAndRight(2%x,94%x)"[addLaboresUI/General script]
 views.get("label8").vw.setLeft((int)((2d / 100 * width)));
 views.get("label8").vw.setWidth((int)((94d / 100 * width) - ((2d / 100 * width))));
 //BA.debugLineNum = 25;BA.debugLine="Panel7.SetLeftAndRight(2%x,94%x)"[addLaboresUI/General script]
 views.get("panel7").vw.setLeft((int)((2d / 100 * width)));
 views.get("panel7").vw.setWidth((int)((94d / 100 * width) - ((2d / 100 * width))));
-//BA.debugLineNum = 26;BA.debugLine="SD_xComboBoxTypeForm.SetLeftAndRight(1%x,91%x)"[addLaboresUI/General script]
-views.get("sd_xcomboboxtypeform").vw.setLeft((int)((1d / 100 * width)));
-views.get("sd_xcomboboxtypeform").vw.setWidth((int)((91d / 100 * width) - ((1d / 100 * width))));
+//BA.debugLineNum = 26;BA.debugLine="SwiftButtonTypeForm.SetLeftAndRight(1%x,91%x)"[addLaboresUI/General script]
+views.get("swiftbuttontypeform").vw.setLeft((int)((1d / 100 * width)));
+views.get("swiftbuttontypeform").vw.setWidth((int)((91d / 100 * width) - ((1d / 100 * width))));
 //BA.debugLineNum = 30;BA.debugLine="Label2.SetLeftAndRight(2%x,48%x)"[addLaboresUI/General script]
 views.get("label2").vw.setLeft((int)((2d / 100 * width)));
 views.get("label2").vw.setWidth((int)((48d / 100 * width) - ((2d / 100 * width))));
