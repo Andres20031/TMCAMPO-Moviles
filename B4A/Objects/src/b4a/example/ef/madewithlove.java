@@ -48,37 +48,37 @@ __ref = this;
 RDebugUtils.currentModule="madewithlove";
 if (Debug.shouldDelegate(ba, "base_resize", true))
 	 {return ((String) Debug.delegate(ba, "base_resize", new Object[] {_width,_height}));}
-RDebugUtils.currentLine=48103424;
- //BA.debugLineNum = 48103424;BA.debugLine="Private Sub Base_Resize (Width As Double, Height A";
-RDebugUtils.currentLine=48103425;
- //BA.debugLineNum = 48103425;BA.debugLine="mBase.GetView(0).SetLayoutAnimated(0, 0, 0, Wid";
+RDebugUtils.currentLine=63569920;
+ //BA.debugLineNum = 63569920;BA.debugLine="Private Sub Base_Resize (Width As Double, Height A";
+RDebugUtils.currentLine=63569921;
+ //BA.debugLineNum = 63569921;BA.debugLine="mBase.GetView(0).SetLayoutAnimated(0, 0, 0, Wid";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .GetView((int) (0)).SetLayoutAnimated((int) (0),(int) (0),(int) (0),(int) (_width),(int) (_height));
-RDebugUtils.currentLine=48103426;
- //BA.debugLineNum = 48103426;BA.debugLine="End Sub";
+RDebugUtils.currentLine=63569922;
+ //BA.debugLineNum = 63569922;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals(b4a.example.ef.madewithlove __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="madewithlove";
-RDebugUtils.currentLine=47906816;
- //BA.debugLineNum = 47906816;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=47906817;
- //BA.debugLineNum = 47906817;BA.debugLine="Private mEventName As String 'ignore";
+RDebugUtils.currentLine=63373312;
+ //BA.debugLineNum = 63373312;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=63373313;
+ //BA.debugLineNum = 63373313;BA.debugLine="Private mEventName As String 'ignore";
 _meventname = "";
-RDebugUtils.currentLine=47906818;
- //BA.debugLineNum = 47906818;BA.debugLine="Private mCallBack As Object 'ignore";
+RDebugUtils.currentLine=63373314;
+ //BA.debugLineNum = 63373314;BA.debugLine="Private mCallBack As Object 'ignore";
 _mcallback = new Object();
-RDebugUtils.currentLine=47906819;
- //BA.debugLineNum = 47906819;BA.debugLine="Public mBase As B4XView";
+RDebugUtils.currentLine=63373315;
+ //BA.debugLineNum = 63373315;BA.debugLine="Public mBase As B4XView";
 _mbase = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=47906820;
- //BA.debugLineNum = 47906820;BA.debugLine="Private xui As XUI 'ignore";
+RDebugUtils.currentLine=63373316;
+ //BA.debugLineNum = 63373316;BA.debugLine="Private xui As XUI 'ignore";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
-RDebugUtils.currentLine=47906821;
- //BA.debugLineNum = 47906821;BA.debugLine="Public Tag As Object";
+RDebugUtils.currentLine=63373317;
+ //BA.debugLineNum = 63373317;BA.debugLine="Public Tag As Object";
 _tag = new Object();
-RDebugUtils.currentLine=47906822;
- //BA.debugLineNum = 47906822;BA.debugLine="End Sub";
+RDebugUtils.currentLine=63373318;
+ //BA.debugLineNum = 63373318;BA.debugLine="End Sub";
 return "";
 }
 public String  _designercreateview(b4a.example.ef.madewithlove __ref,Object _base,anywheresoftware.b4a.objects.LabelWrapper _lbl,anywheresoftware.b4a.objects.collections.Map _props) throws Exception{
@@ -88,38 +88,38 @@ if (Debug.shouldDelegate(ba, "designercreateview", true))
 	 {return ((String) Debug.delegate(ba, "designercreateview", new Object[] {_base,_lbl,_props}));}
 anywheresoftware.b4a.objects.B4XViewWrapper _xlbl = null;
 anywheresoftware.b4a.objects.CSBuilder _cs = null;
-RDebugUtils.currentLine=48037888;
- //BA.debugLineNum = 48037888;BA.debugLine="Public Sub DesignerCreateView (Base As Object, Lbl";
-RDebugUtils.currentLine=48037889;
- //BA.debugLineNum = 48037889;BA.debugLine="mBase = Base";
+RDebugUtils.currentLine=63504384;
+ //BA.debugLineNum = 63504384;BA.debugLine="Public Sub DesignerCreateView (Base As Object, Lbl";
+RDebugUtils.currentLine=63504385;
+ //BA.debugLineNum = 63504385;BA.debugLine="mBase = Base";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_base));
-RDebugUtils.currentLine=48037890;
- //BA.debugLineNum = 48037890;BA.debugLine="Tag = mBase.Tag : mBase.Tag = Me";
+RDebugUtils.currentLine=63504386;
+ //BA.debugLineNum = 63504386;BA.debugLine="Tag = mBase.Tag : mBase.Tag = Me";
 __ref._tag /*Object*/  = __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getTag();
-RDebugUtils.currentLine=48037890;
- //BA.debugLineNum = 48037890;BA.debugLine="Tag = mBase.Tag : mBase.Tag = Me";
+RDebugUtils.currentLine=63504386;
+ //BA.debugLineNum = 63504386;BA.debugLine="Tag = mBase.Tag : mBase.Tag = Me";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setTag(this);
-RDebugUtils.currentLine=48037891;
- //BA.debugLineNum = 48037891;BA.debugLine="Dim xlbl As B4XView = Lbl";
+RDebugUtils.currentLine=63504387;
+ //BA.debugLineNum = 63504387;BA.debugLine="Dim xlbl As B4XView = Lbl";
 _xlbl = new anywheresoftware.b4a.objects.B4XViewWrapper();
 _xlbl = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_lbl.getObject()));
-RDebugUtils.currentLine=48037906;
- //BA.debugLineNum = 48037906;BA.debugLine="Dim cs As CSBuilder";
+RDebugUtils.currentLine=63504402;
+ //BA.debugLineNum = 63504402;BA.debugLine="Dim cs As CSBuilder";
 _cs = new anywheresoftware.b4a.objects.CSBuilder();
-RDebugUtils.currentLine=48037907;
- //BA.debugLineNum = 48037907;BA.debugLine="cs.Initialize.Append(\"Made with \").Typeface(Typef";
+RDebugUtils.currentLine=63504403;
+ //BA.debugLineNum = 63504403;BA.debugLine="cs.Initialize.Append(\"Made with \").Typeface(Typef";
 _cs.Initialize().Append(BA.ObjectToCharSequence("Made with ")).Typeface(__c.Typeface.getFONTAWESOME()).Color(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_Red).Append(BA.ObjectToCharSequence(__c.Chr(((int)0xf004)))).Pop().Pop().Append(BA.ObjectToCharSequence(" in B4X")).PopAll();
-RDebugUtils.currentLine=48037908;
- //BA.debugLineNum = 48037908;BA.debugLine="xlbl.Text = cs";
+RDebugUtils.currentLine=63504404;
+ //BA.debugLineNum = 63504404;BA.debugLine="xlbl.Text = cs";
 _xlbl.setText(BA.ObjectToCharSequence(_cs.getObject()));
-RDebugUtils.currentLine=48037909;
- //BA.debugLineNum = 48037909;BA.debugLine="xlbl.SetTextAlignment(\"CENTER\", \"CENTER\")";
+RDebugUtils.currentLine=63504405;
+ //BA.debugLineNum = 63504405;BA.debugLine="xlbl.SetTextAlignment(\"CENTER\", \"CENTER\")";
 _xlbl.SetTextAlignment("CENTER","CENTER");
-RDebugUtils.currentLine=48037910;
- //BA.debugLineNum = 48037910;BA.debugLine="mBase.AddView(xlbl, 0, 0, mBase.Width, mBase.Heig";
+RDebugUtils.currentLine=63504406;
+ //BA.debugLineNum = 63504406;BA.debugLine="mBase.AddView(xlbl, 0, 0, mBase.Width, mBase.Heig";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .AddView((android.view.View)(_xlbl.getObject()),(int) (0),(int) (0),__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getWidth(),__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getHeight());
-RDebugUtils.currentLine=48037918;
- //BA.debugLineNum = 48037918;BA.debugLine="End Sub";
+RDebugUtils.currentLine=63504414;
+ //BA.debugLineNum = 63504414;BA.debugLine="End Sub";
 return "";
 }
 public String  _initialize(b4a.example.ef.madewithlove __ref,anywheresoftware.b4a.BA _ba,Object _callback,String _eventname) throws Exception{
@@ -128,16 +128,16 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="madewithlove";
 if (Debug.shouldDelegate(ba, "initialize", true))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba,_callback,_eventname}));}
-RDebugUtils.currentLine=47972352;
- //BA.debugLineNum = 47972352;BA.debugLine="Public Sub Initialize (Callback As Object, EventNa";
-RDebugUtils.currentLine=47972353;
- //BA.debugLineNum = 47972353;BA.debugLine="mEventName = EventName";
+RDebugUtils.currentLine=63438848;
+ //BA.debugLineNum = 63438848;BA.debugLine="Public Sub Initialize (Callback As Object, EventNa";
+RDebugUtils.currentLine=63438849;
+ //BA.debugLineNum = 63438849;BA.debugLine="mEventName = EventName";
 __ref._meventname /*String*/  = _eventname;
-RDebugUtils.currentLine=47972354;
- //BA.debugLineNum = 47972354;BA.debugLine="mCallBack = Callback";
+RDebugUtils.currentLine=63438850;
+ //BA.debugLineNum = 63438850;BA.debugLine="mCallBack = Callback";
 __ref._mcallback /*Object*/  = _callback;
-RDebugUtils.currentLine=47972355;
- //BA.debugLineNum = 47972355;BA.debugLine="End Sub";
+RDebugUtils.currentLine=63438851;
+ //BA.debugLineNum = 63438851;BA.debugLine="End Sub";
 return "";
 }
 }

@@ -53,52 +53,52 @@ __ref = this;
 RDebugUtils.currentModule="b4xcombobox";
 if (Debug.shouldDelegate(ba, "base_resize", true))
 	 {return ((String) Debug.delegate(ba, "base_resize", new Object[] {_width,_height}));}
-RDebugUtils.currentLine=34209792;
- //BA.debugLineNum = 34209792;BA.debugLine="Private Sub Base_Resize (Width As Double, Height A";
-RDebugUtils.currentLine=34209793;
- //BA.debugLineNum = 34209793;BA.debugLine="mBase.GetView(0).SetLayoutAnimated(0, 0, 0, Width";
+RDebugUtils.currentLine=49676288;
+ //BA.debugLineNum = 49676288;BA.debugLine="Private Sub Base_Resize (Width As Double, Height A";
+RDebugUtils.currentLine=49676289;
+ //BA.debugLineNum = 49676289;BA.debugLine="mBase.GetView(0).SetLayoutAnimated(0, 0, 0, Width";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .GetView((int) (0)).SetLayoutAnimated((int) (0),(int) (0),(int) (0),(int) (_width),(int) (_height));
-RDebugUtils.currentLine=34209794;
- //BA.debugLineNum = 34209794;BA.debugLine="End Sub";
+RDebugUtils.currentLine=49676290;
+ //BA.debugLineNum = 49676290;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals(b4a.example.ef.b4xcombobox __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4xcombobox";
-RDebugUtils.currentLine=34013184;
- //BA.debugLineNum = 34013184;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=34013185;
- //BA.debugLineNum = 34013185;BA.debugLine="Private mEventName As String 'ignore";
+RDebugUtils.currentLine=49479680;
+ //BA.debugLineNum = 49479680;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=49479681;
+ //BA.debugLineNum = 49479681;BA.debugLine="Private mEventName As String 'ignore";
 _meventname = "";
-RDebugUtils.currentLine=34013186;
- //BA.debugLineNum = 34013186;BA.debugLine="Private mCallBack As Object 'ignore";
+RDebugUtils.currentLine=49479682;
+ //BA.debugLineNum = 49479682;BA.debugLine="Private mCallBack As Object 'ignore";
 _mcallback = new Object();
-RDebugUtils.currentLine=34013187;
- //BA.debugLineNum = 34013187;BA.debugLine="Public mBase As B4XView";
+RDebugUtils.currentLine=49479683;
+ //BA.debugLineNum = 49479683;BA.debugLine="Public mBase As B4XView";
 _mbase = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=34013188;
- //BA.debugLineNum = 34013188;BA.debugLine="Private xui As XUI 'ignore";
+RDebugUtils.currentLine=49479684;
+ //BA.debugLineNum = 49479684;BA.debugLine="Private xui As XUI 'ignore";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
-RDebugUtils.currentLine=34013189;
- //BA.debugLineNum = 34013189;BA.debugLine="Private LastSelectedIndex As Int";
+RDebugUtils.currentLine=49479685;
+ //BA.debugLineNum = 49479685;BA.debugLine="Private LastSelectedIndex As Int";
 _lastselectedindex = 0;
-RDebugUtils.currentLine=34013193;
- //BA.debugLineNum = 34013193;BA.debugLine="Public cmbBox As Spinner";
+RDebugUtils.currentLine=49479689;
+ //BA.debugLineNum = 49479689;BA.debugLine="Public cmbBox As Spinner";
 _cmbbox = new anywheresoftware.b4a.objects.SpinnerWrapper();
-RDebugUtils.currentLine=34013199;
- //BA.debugLineNum = 34013199;BA.debugLine="Public DelayBeforeChangeEvent As Int";
+RDebugUtils.currentLine=49479695;
+ //BA.debugLineNum = 49479695;BA.debugLine="Public DelayBeforeChangeEvent As Int";
 _delaybeforechangeevent = 0;
-RDebugUtils.currentLine=34013201;
- //BA.debugLineNum = 34013201;BA.debugLine="Private DelayIndex As Int";
+RDebugUtils.currentLine=49479697;
+ //BA.debugLineNum = 49479697;BA.debugLine="Private DelayIndex As Int";
 _delayindex = 0;
-RDebugUtils.currentLine=34013202;
- //BA.debugLineNum = 34013202;BA.debugLine="Public Tag As Object";
+RDebugUtils.currentLine=49479698;
+ //BA.debugLineNum = 49479698;BA.debugLine="Public Tag As Object";
 _tag = new Object();
-RDebugUtils.currentLine=34013203;
- //BA.debugLineNum = 34013203;BA.debugLine="Public B4iCancelButton As String = \"Cancel\"";
+RDebugUtils.currentLine=49479699;
+ //BA.debugLineNum = 49479699;BA.debugLine="Public B4iCancelButton As String = \"Cancel\"";
 _b4icancelbutton = "Cancel";
-RDebugUtils.currentLine=34013204;
- //BA.debugLineNum = 34013204;BA.debugLine="End Sub";
+RDebugUtils.currentLine=49479700;
+ //BA.debugLineNum = 49479700;BA.debugLine="End Sub";
 return "";
 }
 public String  _cmbbox_itemclick(b4a.example.ef.b4xcombobox __ref,int _position,Object _value) throws Exception{
@@ -106,13 +106,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xcombobox";
 if (Debug.shouldDelegate(ba, "cmbbox_itemclick", true))
 	 {return ((String) Debug.delegate(ba, "cmbbox_itemclick", new Object[] {_position,_value}));}
-RDebugUtils.currentLine=34799616;
- //BA.debugLineNum = 34799616;BA.debugLine="Private Sub CmbBox_ItemClick (Position As Int, Val";
-RDebugUtils.currentLine=34799617;
- //BA.debugLineNum = 34799617;BA.debugLine="RaiseEvent";
+RDebugUtils.currentLine=50266112;
+ //BA.debugLineNum = 50266112;BA.debugLine="Private Sub CmbBox_ItemClick (Position As Int, Val";
+RDebugUtils.currentLine=50266113;
+ //BA.debugLineNum = 50266113;BA.debugLine="RaiseEvent";
 __ref._raiseevent /*void*/ (null);
-RDebugUtils.currentLine=34799618;
- //BA.debugLineNum = 34799618;BA.debugLine="End Sub";
+RDebugUtils.currentLine=50266114;
+ //BA.debugLineNum = 50266114;BA.debugLine="End Sub";
 return "";
 }
 public void  _raiseevent(b4a.example.ef.b4xcombobox __ref) throws Exception{
@@ -145,11 +145,11 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=34734081;
- //BA.debugLineNum = 34734081;BA.debugLine="Dim index As Int = getSelectedIndex";
+RDebugUtils.currentLine=50200577;
+ //BA.debugLineNum = 50200577;BA.debugLine="Dim index As Int = getSelectedIndex";
 _index = __ref._getselectedindex /*int*/ (null);
-RDebugUtils.currentLine=34734082;
- //BA.debugLineNum = 34734082;BA.debugLine="If LastSelectedIndex = index Then Return";
+RDebugUtils.currentLine=50200578;
+ //BA.debugLineNum = 50200578;BA.debugLine="If LastSelectedIndex = index Then Return";
 if (true) break;
 
 case 1:
@@ -169,8 +169,8 @@ case 6:
 //C
 this.state = 7;
 ;
-RDebugUtils.currentLine=34734083;
- //BA.debugLineNum = 34734083;BA.debugLine="If DelayBeforeChangeEvent > 0 Then";
+RDebugUtils.currentLine=50200579;
+ //BA.debugLineNum = 50200579;BA.debugLine="If DelayBeforeChangeEvent > 0 Then";
 if (true) break;
 
 case 7:
@@ -183,14 +183,14 @@ this.state = 9;
 case 9:
 //C
 this.state = 10;
-RDebugUtils.currentLine=34734084;
- //BA.debugLineNum = 34734084;BA.debugLine="DelayIndex = DelayIndex + 1";
+RDebugUtils.currentLine=50200580;
+ //BA.debugLineNum = 50200580;BA.debugLine="DelayIndex = DelayIndex + 1";
 __ref._delayindex /*int*/  = (int) (__ref._delayindex /*int*/ +1);
-RDebugUtils.currentLine=34734085;
- //BA.debugLineNum = 34734085;BA.debugLine="Dim MyIndex As Int = DelayIndex";
+RDebugUtils.currentLine=50200581;
+ //BA.debugLineNum = 50200581;BA.debugLine="Dim MyIndex As Int = DelayIndex";
 _myindex = __ref._delayindex /*int*/ ;
-RDebugUtils.currentLine=34734086;
- //BA.debugLineNum = 34734086;BA.debugLine="Sleep(DelayBeforeChangeEvent)";
+RDebugUtils.currentLine=50200582;
+ //BA.debugLineNum = 50200582;BA.debugLine="Sleep(DelayBeforeChangeEvent)";
 parent.__c.Sleep(ba,new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "b4xcombobox", "raiseevent"),__ref._delaybeforechangeevent /*int*/ );
 this.state = 21;
 return;
@@ -198,8 +198,8 @@ case 21:
 //C
 this.state = 10;
 ;
-RDebugUtils.currentLine=34734087;
- //BA.debugLineNum = 34734087;BA.debugLine="If MyIndex <> DelayIndex Then Return";
+RDebugUtils.currentLine=50200583;
+ //BA.debugLineNum = 50200583;BA.debugLine="If MyIndex <> DelayIndex Then Return";
 if (true) break;
 
 case 10:
@@ -225,11 +225,11 @@ case 16:
 //C
 this.state = 17;
 ;
-RDebugUtils.currentLine=34734089;
- //BA.debugLineNum = 34734089;BA.debugLine="LastSelectedIndex = index";
+RDebugUtils.currentLine=50200585;
+ //BA.debugLineNum = 50200585;BA.debugLine="LastSelectedIndex = index";
 __ref._lastselectedindex /*int*/  = _index;
-RDebugUtils.currentLine=34734090;
- //BA.debugLineNum = 34734090;BA.debugLine="If xui.SubExists(mCallBack, mEventName & \"_Select";
+RDebugUtils.currentLine=50200586;
+ //BA.debugLineNum = 50200586;BA.debugLine="If xui.SubExists(mCallBack, mEventName & \"_Select";
 if (true) break;
 
 case 17:
@@ -242,8 +242,8 @@ this.state = 19;
 case 19:
 //C
 this.state = 20;
-RDebugUtils.currentLine=34734091;
- //BA.debugLineNum = 34734091;BA.debugLine="CallSub2(mCallBack, mEventName & \"_SelectedIndex";
+RDebugUtils.currentLine=50200587;
+ //BA.debugLineNum = 50200587;BA.debugLine="CallSub2(mCallBack, mEventName & \"_SelectedIndex";
 parent.__c.CallSubNew2(ba,__ref._mcallback /*Object*/ ,__ref._meventname /*String*/ +"_SelectedIndexChanged",(Object)(_index));
  if (true) break;
 
@@ -251,8 +251,8 @@ case 20:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=34734093;
- //BA.debugLineNum = 34734093;BA.debugLine="End Sub";
+RDebugUtils.currentLine=50200589;
+ //BA.debugLineNum = 50200589;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -265,32 +265,32 @@ RDebugUtils.currentModule="b4xcombobox";
 if (Debug.shouldDelegate(ba, "designercreateview", true))
 	 {return ((String) Debug.delegate(ba, "designercreateview", new Object[] {_base,_lbl,_props}));}
 anywheresoftware.b4a.objects.B4XViewWrapper _xlbl = null;
-RDebugUtils.currentLine=34144256;
- //BA.debugLineNum = 34144256;BA.debugLine="Public Sub DesignerCreateView (Base As Object, Lbl";
-RDebugUtils.currentLine=34144257;
- //BA.debugLineNum = 34144257;BA.debugLine="mBase = Base";
+RDebugUtils.currentLine=49610752;
+ //BA.debugLineNum = 49610752;BA.debugLine="Public Sub DesignerCreateView (Base As Object, Lbl";
+RDebugUtils.currentLine=49610753;
+ //BA.debugLineNum = 49610753;BA.debugLine="mBase = Base";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_base));
-RDebugUtils.currentLine=34144258;
- //BA.debugLineNum = 34144258;BA.debugLine="Tag = mBase.Tag : mBase.Tag = Me";
+RDebugUtils.currentLine=49610754;
+ //BA.debugLineNum = 49610754;BA.debugLine="Tag = mBase.Tag : mBase.Tag = Me";
 __ref._tag /*Object*/  = __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getTag();
-RDebugUtils.currentLine=34144258;
- //BA.debugLineNum = 34144258;BA.debugLine="Tag = mBase.Tag : mBase.Tag = Me";
+RDebugUtils.currentLine=49610754;
+ //BA.debugLineNum = 49610754;BA.debugLine="Tag = mBase.Tag : mBase.Tag = Me";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setTag(this);
-RDebugUtils.currentLine=34144259;
- //BA.debugLineNum = 34144259;BA.debugLine="Dim xlbl As B4XView = Lbl";
+RDebugUtils.currentLine=49610755;
+ //BA.debugLineNum = 49610755;BA.debugLine="Dim xlbl As B4XView = Lbl";
 _xlbl = new anywheresoftware.b4a.objects.B4XViewWrapper();
 _xlbl = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_lbl.getObject()));
-RDebugUtils.currentLine=34144266;
- //BA.debugLineNum = 34144266;BA.debugLine="cmbBox.Initialize(\"cmbBox\")";
+RDebugUtils.currentLine=49610762;
+ //BA.debugLineNum = 49610762;BA.debugLine="cmbBox.Initialize(\"cmbBox\")";
 __ref._cmbbox /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .Initialize(ba,"cmbBox");
-RDebugUtils.currentLine=34144267;
- //BA.debugLineNum = 34144267;BA.debugLine="cmbBox.TextSize = xlbl.TextSize";
+RDebugUtils.currentLine=49610763;
+ //BA.debugLineNum = 49610763;BA.debugLine="cmbBox.TextSize = xlbl.TextSize";
 __ref._cmbbox /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .setTextSize(_xlbl.getTextSize());
-RDebugUtils.currentLine=34144268;
- //BA.debugLineNum = 34144268;BA.debugLine="mBase.AddView(cmbBox, 0, 0, mBase.Width, mBase.He";
+RDebugUtils.currentLine=49610764;
+ //BA.debugLineNum = 49610764;BA.debugLine="mBase.AddView(cmbBox, 0, 0, mBase.Width, mBase.He";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .AddView((android.view.View)(__ref._cmbbox /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .getObject()),(int) (0),(int) (0),__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getWidth(),__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getHeight());
-RDebugUtils.currentLine=34144277;
- //BA.debugLineNum = 34144277;BA.debugLine="End Sub";
+RDebugUtils.currentLine=49610773;
+ //BA.debugLineNum = 49610773;BA.debugLine="End Sub";
 return "";
 }
 public String  _getitem(b4a.example.ef.b4xcombobox __ref,int _index) throws Exception{
@@ -298,13 +298,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xcombobox";
 if (Debug.shouldDelegate(ba, "getitem", true))
 	 {return ((String) Debug.delegate(ba, "getitem", new Object[] {_index}));}
-RDebugUtils.currentLine=34668544;
- //BA.debugLineNum = 34668544;BA.debugLine="Public Sub GetItem(Index As Int) As String";
-RDebugUtils.currentLine=34668548;
- //BA.debugLineNum = 34668548;BA.debugLine="Return cmbBox.GetItem(Index)";
+RDebugUtils.currentLine=50135040;
+ //BA.debugLineNum = 50135040;BA.debugLine="Public Sub GetItem(Index As Int) As String";
+RDebugUtils.currentLine=50135044;
+ //BA.debugLineNum = 50135044;BA.debugLine="Return cmbBox.GetItem(Index)";
 if (true) return __ref._cmbbox /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .GetItem(_index);
-RDebugUtils.currentLine=34668552;
- //BA.debugLineNum = 34668552;BA.debugLine="End Sub";
+RDebugUtils.currentLine=50135048;
+ //BA.debugLineNum = 50135048;BA.debugLine="End Sub";
 return "";
 }
 public int  _getselectedindex(b4a.example.ef.b4xcombobox __ref) throws Exception{
@@ -312,13 +312,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xcombobox";
 if (Debug.shouldDelegate(ba, "getselectedindex", true))
 	 {return ((Integer) Debug.delegate(ba, "getselectedindex", null));}
-RDebugUtils.currentLine=34471936;
- //BA.debugLineNum = 34471936;BA.debugLine="Public Sub getSelectedIndex As Int";
-RDebugUtils.currentLine=34471938;
- //BA.debugLineNum = 34471938;BA.debugLine="Return cmbBox.SelectedIndex";
+RDebugUtils.currentLine=49938432;
+ //BA.debugLineNum = 49938432;BA.debugLine="Public Sub getSelectedIndex As Int";
+RDebugUtils.currentLine=49938434;
+ //BA.debugLineNum = 49938434;BA.debugLine="Return cmbBox.SelectedIndex";
 if (true) return __ref._cmbbox /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .getSelectedIndex();
-RDebugUtils.currentLine=34471942;
- //BA.debugLineNum = 34471942;BA.debugLine="End Sub";
+RDebugUtils.currentLine=49938438;
+ //BA.debugLineNum = 49938438;BA.debugLine="End Sub";
 return 0;
 }
 public String  _getselecteditem(b4a.example.ef.b4xcombobox __ref) throws Exception{
@@ -327,20 +327,20 @@ RDebugUtils.currentModule="b4xcombobox";
 if (Debug.shouldDelegate(ba, "getselecteditem", true))
 	 {return ((String) Debug.delegate(ba, "getselecteditem", null));}
 int _i = 0;
-RDebugUtils.currentLine=34603008;
- //BA.debugLineNum = 34603008;BA.debugLine="Public Sub getSelectedItem As String";
-RDebugUtils.currentLine=34603009;
- //BA.debugLineNum = 34603009;BA.debugLine="Dim i As Int = getSelectedIndex";
+RDebugUtils.currentLine=50069504;
+ //BA.debugLineNum = 50069504;BA.debugLine="Public Sub getSelectedItem As String";
+RDebugUtils.currentLine=50069505;
+ //BA.debugLineNum = 50069505;BA.debugLine="Dim i As Int = getSelectedIndex";
 _i = __ref._getselectedindex /*int*/ (null);
-RDebugUtils.currentLine=34603010;
- //BA.debugLineNum = 34603010;BA.debugLine="If i = -1 Then Return \"\"";
+RDebugUtils.currentLine=50069506;
+ //BA.debugLineNum = 50069506;BA.debugLine="If i = -1 Then Return \"\"";
 if (_i==-1) { 
 if (true) return "";};
-RDebugUtils.currentLine=34603011;
- //BA.debugLineNum = 34603011;BA.debugLine="Return GetItem(i)";
+RDebugUtils.currentLine=50069507;
+ //BA.debugLineNum = 50069507;BA.debugLine="Return GetItem(i)";
 if (true) return __ref._getitem /*String*/ (null,_i);
-RDebugUtils.currentLine=34603012;
- //BA.debugLineNum = 34603012;BA.debugLine="End Sub";
+RDebugUtils.currentLine=50069508;
+ //BA.debugLineNum = 50069508;BA.debugLine="End Sub";
 return "";
 }
 public int  _getsize(b4a.example.ef.b4xcombobox __ref) throws Exception{
@@ -348,13 +348,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xcombobox";
 if (Debug.shouldDelegate(ba, "getsize", true))
 	 {return ((Integer) Debug.delegate(ba, "getsize", null));}
-RDebugUtils.currentLine=34340864;
- //BA.debugLineNum = 34340864;BA.debugLine="Public Sub getSize As Int";
-RDebugUtils.currentLine=34340868;
- //BA.debugLineNum = 34340868;BA.debugLine="Return cmbBox.Size";
+RDebugUtils.currentLine=49807360;
+ //BA.debugLineNum = 49807360;BA.debugLine="Public Sub getSize As Int";
+RDebugUtils.currentLine=49807364;
+ //BA.debugLineNum = 49807364;BA.debugLine="Return cmbBox.Size";
 if (true) return __ref._cmbbox /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .getSize();
-RDebugUtils.currentLine=34340872;
- //BA.debugLineNum = 34340872;BA.debugLine="End Sub";
+RDebugUtils.currentLine=49807368;
+ //BA.debugLineNum = 49807368;BA.debugLine="End Sub";
 return 0;
 }
 public int  _indexof(b4a.example.ef.b4xcombobox __ref,String _item) throws Exception{
@@ -362,13 +362,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xcombobox";
 if (Debug.shouldDelegate(ba, "indexof", true))
 	 {return ((Integer) Debug.delegate(ba, "indexof", new Object[] {_item}));}
-RDebugUtils.currentLine=34406400;
- //BA.debugLineNum = 34406400;BA.debugLine="Public Sub IndexOf(Item As String) As Int";
-RDebugUtils.currentLine=34406404;
- //BA.debugLineNum = 34406404;BA.debugLine="Return cmbBox.IndexOf(Item)";
+RDebugUtils.currentLine=49872896;
+ //BA.debugLineNum = 49872896;BA.debugLine="Public Sub IndexOf(Item As String) As Int";
+RDebugUtils.currentLine=49872900;
+ //BA.debugLineNum = 49872900;BA.debugLine="Return cmbBox.IndexOf(Item)";
 if (true) return __ref._cmbbox /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .IndexOf(_item);
-RDebugUtils.currentLine=34406408;
- //BA.debugLineNum = 34406408;BA.debugLine="End Sub";
+RDebugUtils.currentLine=49872904;
+ //BA.debugLineNum = 49872904;BA.debugLine="End Sub";
 return 0;
 }
 public String  _initialize(b4a.example.ef.b4xcombobox __ref,anywheresoftware.b4a.BA _ba,Object _callback,String _eventname) throws Exception{
@@ -377,23 +377,23 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="b4xcombobox";
 if (Debug.shouldDelegate(ba, "initialize", true))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba,_callback,_eventname}));}
-RDebugUtils.currentLine=34078720;
- //BA.debugLineNum = 34078720;BA.debugLine="Public Sub Initialize (Callback As Object, EventNa";
-RDebugUtils.currentLine=34078721;
- //BA.debugLineNum = 34078721;BA.debugLine="mEventName = EventName";
+RDebugUtils.currentLine=49545216;
+ //BA.debugLineNum = 49545216;BA.debugLine="Public Sub Initialize (Callback As Object, EventNa";
+RDebugUtils.currentLine=49545217;
+ //BA.debugLineNum = 49545217;BA.debugLine="mEventName = EventName";
 __ref._meventname /*String*/  = _eventname;
-RDebugUtils.currentLine=34078722;
- //BA.debugLineNum = 34078722;BA.debugLine="mCallBack = Callback";
+RDebugUtils.currentLine=49545218;
+ //BA.debugLineNum = 49545218;BA.debugLine="mCallBack = Callback";
 __ref._mcallback /*Object*/  = _callback;
-RDebugUtils.currentLine=34078723;
- //BA.debugLineNum = 34078723;BA.debugLine="LastSelectedIndex = -1";
+RDebugUtils.currentLine=49545219;
+ //BA.debugLineNum = 49545219;BA.debugLine="LastSelectedIndex = -1";
 __ref._lastselectedindex /*int*/  = (int) (-1);
-RDebugUtils.currentLine=34078724;
- //BA.debugLineNum = 34078724;BA.debugLine="If xui.IsB4J Then DelayBeforeChangeEvent = 500";
+RDebugUtils.currentLine=49545220;
+ //BA.debugLineNum = 49545220;BA.debugLine="If xui.IsB4J Then DelayBeforeChangeEvent = 500";
 if (__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4J()) { 
 __ref._delaybeforechangeevent /*int*/  = (int) (500);};
-RDebugUtils.currentLine=34078725;
- //BA.debugLineNum = 34078725;BA.debugLine="End Sub";
+RDebugUtils.currentLine=49545221;
+ //BA.debugLineNum = 49545221;BA.debugLine="End Sub";
 return "";
 }
 public String  _setitems(b4a.example.ef.b4xcombobox __ref,anywheresoftware.b4a.objects.collections.List _items) throws Exception{
@@ -401,20 +401,20 @@ __ref = this;
 RDebugUtils.currentModule="b4xcombobox";
 if (Debug.shouldDelegate(ba, "setitems", true))
 	 {return ((String) Debug.delegate(ba, "setitems", new Object[] {_items}));}
-RDebugUtils.currentLine=34275328;
- //BA.debugLineNum = 34275328;BA.debugLine="Public Sub SetItems(Items As List)";
-RDebugUtils.currentLine=34275333;
- //BA.debugLineNum = 34275333;BA.debugLine="cmbBox.Clear";
+RDebugUtils.currentLine=49741824;
+ //BA.debugLineNum = 49741824;BA.debugLine="Public Sub SetItems(Items As List)";
+RDebugUtils.currentLine=49741829;
+ //BA.debugLineNum = 49741829;BA.debugLine="cmbBox.Clear";
 __ref._cmbbox /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .Clear();
-RDebugUtils.currentLine=34275334;
- //BA.debugLineNum = 34275334;BA.debugLine="cmbBox.AddAll(Items)";
+RDebugUtils.currentLine=49741830;
+ //BA.debugLineNum = 49741830;BA.debugLine="cmbBox.AddAll(Items)";
 __ref._cmbbox /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .AddAll(_items);
-RDebugUtils.currentLine=34275341;
- //BA.debugLineNum = 34275341;BA.debugLine="If Items.Size > 0 Then setSelectedIndex(0)";
+RDebugUtils.currentLine=49741837;
+ //BA.debugLineNum = 49741837;BA.debugLine="If Items.Size > 0 Then setSelectedIndex(0)";
 if (_items.getSize()>0) { 
 __ref._setselectedindex /*String*/ (null,(int) (0));};
-RDebugUtils.currentLine=34275342;
- //BA.debugLineNum = 34275342;BA.debugLine="End Sub";
+RDebugUtils.currentLine=49741838;
+ //BA.debugLineNum = 49741838;BA.debugLine="End Sub";
 return "";
 }
 public String  _setselectedindex(b4a.example.ef.b4xcombobox __ref,int _i) throws Exception{
@@ -422,16 +422,16 @@ __ref = this;
 RDebugUtils.currentModule="b4xcombobox";
 if (Debug.shouldDelegate(ba, "setselectedindex", true))
 	 {return ((String) Debug.delegate(ba, "setselectedindex", new Object[] {_i}));}
-RDebugUtils.currentLine=34537472;
- //BA.debugLineNum = 34537472;BA.debugLine="Public Sub setSelectedIndex(i As Int)";
-RDebugUtils.currentLine=34537473;
- //BA.debugLineNum = 34537473;BA.debugLine="LastSelectedIndex = i";
+RDebugUtils.currentLine=50003968;
+ //BA.debugLineNum = 50003968;BA.debugLine="Public Sub setSelectedIndex(i As Int)";
+RDebugUtils.currentLine=50003969;
+ //BA.debugLineNum = 50003969;BA.debugLine="LastSelectedIndex = i";
 __ref._lastselectedindex /*int*/  = _i;
-RDebugUtils.currentLine=34537475;
- //BA.debugLineNum = 34537475;BA.debugLine="cmbBox.SelectedIndex = i";
+RDebugUtils.currentLine=50003971;
+ //BA.debugLineNum = 50003971;BA.debugLine="cmbBox.SelectedIndex = i";
 __ref._cmbbox /*anywheresoftware.b4a.objects.SpinnerWrapper*/ .setSelectedIndex(_i);
-RDebugUtils.currentLine=34537484;
- //BA.debugLineNum = 34537484;BA.debugLine="End Sub";
+RDebugUtils.currentLine=50003980;
+ //BA.debugLineNum = 50003980;BA.debugLine="End Sub";
 return "";
 }
 }

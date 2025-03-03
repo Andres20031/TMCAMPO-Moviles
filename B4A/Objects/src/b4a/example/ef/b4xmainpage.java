@@ -485,7 +485,7 @@ case 18:
 this.state = 21;
 RDebugUtils.currentLine=655410;
  //BA.debugLineNum = 655410;BA.debugLine="Log(\"Usuario: \"&parametrosUsuario)";
-parent.__c.LogImpl("8655410","Usuario: "+__ref._parametrosusuario /*String*/ ,0);
+parent.__c.LogImpl("5655410","Usuario: "+__ref._parametrosusuario /*String*/ ,0);
  if (true) break;
 
 case 20:
@@ -514,7 +514,7 @@ case 24:
 this.state = 25;
 RDebugUtils.currentLine=655417;
  //BA.debugLineNum = 655417;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("8655417","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("5655417","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 25:

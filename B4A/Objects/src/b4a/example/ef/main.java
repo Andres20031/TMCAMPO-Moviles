@@ -438,19 +438,19 @@ public static String  _activity_actionbarhomeclick() throws Exception{
 RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_actionbarhomeclick", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_actionbarhomeclick", null));}
-RDebugUtils.currentLine=50987008;
- //BA.debugLineNum = 50987008;BA.debugLine="Sub Activity_ActionBarHomeClick";
-RDebugUtils.currentLine=50987009;
- //BA.debugLineNum = 50987009;BA.debugLine="ActionBarHomeClicked = True";
+RDebugUtils.currentLine=66453504;
+ //BA.debugLineNum = 66453504;BA.debugLine="Sub Activity_ActionBarHomeClick";
+RDebugUtils.currentLine=66453505;
+ //BA.debugLineNum = 66453505;BA.debugLine="ActionBarHomeClicked = True";
 _actionbarhomeclicked = anywheresoftware.b4a.keywords.Common.True;
-RDebugUtils.currentLine=50987010;
- //BA.debugLineNum = 50987010;BA.debugLine="B4XPages.Delegate.Activity_ActionBarHomeClick";
+RDebugUtils.currentLine=66453506;
+ //BA.debugLineNum = 66453506;BA.debugLine="B4XPages.Delegate.Activity_ActionBarHomeClick";
 mostCurrent._b4xpages._delegate /*b4a.example.ef.b4xpagesdelegator*/ ._activity_actionbarhomeclick /*String*/ (null);
-RDebugUtils.currentLine=50987011;
- //BA.debugLineNum = 50987011;BA.debugLine="ActionBarHomeClicked = False";
+RDebugUtils.currentLine=66453507;
+ //BA.debugLineNum = 66453507;BA.debugLine="ActionBarHomeClicked = False";
 _actionbarhomeclicked = anywheresoftware.b4a.keywords.Common.False;
-RDebugUtils.currentLine=50987012;
- //BA.debugLineNum = 50987012;BA.debugLine="End Sub";
+RDebugUtils.currentLine=66453508;
+ //BA.debugLineNum = 66453508;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_create(boolean _firsttime) throws Exception{
@@ -474,13 +474,13 @@ public static boolean  _activity_keypress(int _keycode) throws Exception{
 RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_keypress", false))
 	 {return ((Boolean) Debug.delegate(mostCurrent.activityBA, "activity_keypress", new Object[] {_keycode}));}
-RDebugUtils.currentLine=51052544;
- //BA.debugLineNum = 51052544;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
-RDebugUtils.currentLine=51052545;
- //BA.debugLineNum = 51052545;BA.debugLine="Return B4XPages.Delegate.Activity_KeyPress(KeyCod";
+RDebugUtils.currentLine=66519040;
+ //BA.debugLineNum = 66519040;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
+RDebugUtils.currentLine=66519041;
+ //BA.debugLineNum = 66519041;BA.debugLine="Return B4XPages.Delegate.Activity_KeyPress(KeyCod";
 if (true) return mostCurrent._b4xpages._delegate /*b4a.example.ef.b4xpagesdelegator*/ ._activity_keypress /*boolean*/ (null,_keycode);
-RDebugUtils.currentLine=51052546;
- //BA.debugLineNum = 51052546;BA.debugLine="End Sub";
+RDebugUtils.currentLine=66519042;
+ //BA.debugLineNum = 66519042;BA.debugLine="End Sub";
 return false;
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
@@ -498,13 +498,13 @@ public static String  _activity_permissionresult(String _permission,boolean _res
 RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_permissionresult", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_permissionresult", new Object[] {_permission,_result}));}
-RDebugUtils.currentLine=51118080;
- //BA.debugLineNum = 51118080;BA.debugLine="Sub Activity_PermissionResult (Permission As Strin";
-RDebugUtils.currentLine=51118081;
- //BA.debugLineNum = 51118081;BA.debugLine="B4XPages.Delegate.Activity_PermissionResult(Permi";
+RDebugUtils.currentLine=66584576;
+ //BA.debugLineNum = 66584576;BA.debugLine="Sub Activity_PermissionResult (Permission As Strin";
+RDebugUtils.currentLine=66584577;
+ //BA.debugLineNum = 66584577;BA.debugLine="B4XPages.Delegate.Activity_PermissionResult(Permi";
 mostCurrent._b4xpages._delegate /*b4a.example.ef.b4xpagesdelegator*/ ._activity_permissionresult /*String*/ (null,_permission,_result);
-RDebugUtils.currentLine=51118082;
- //BA.debugLineNum = 51118082;BA.debugLine="End Sub";
+RDebugUtils.currentLine=66584578;
+ //BA.debugLineNum = 66584578;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
@@ -524,13 +524,13 @@ public static String  _create_menu(Object _menu) throws Exception{
 RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "create_menu", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "create_menu", new Object[] {_menu}));}
-RDebugUtils.currentLine=51183616;
- //BA.debugLineNum = 51183616;BA.debugLine="Sub Create_Menu (Menu As Object)";
-RDebugUtils.currentLine=51183617;
- //BA.debugLineNum = 51183617;BA.debugLine="B4XPages.Delegate.Create_Menu(Menu)";
+RDebugUtils.currentLine=66650112;
+ //BA.debugLineNum = 66650112;BA.debugLine="Sub Create_Menu (Menu As Object)";
+RDebugUtils.currentLine=66650113;
+ //BA.debugLineNum = 66650113;BA.debugLine="B4XPages.Delegate.Create_Menu(Menu)";
 mostCurrent._b4xpages._delegate /*b4a.example.ef.b4xpagesdelegator*/ ._create_menu /*String*/ (null,_menu);
-RDebugUtils.currentLine=51183618;
- //BA.debugLineNum = 51183618;BA.debugLine="End Sub";
+RDebugUtils.currentLine=66650114;
+ //BA.debugLineNum = 66650114;BA.debugLine="End Sub";
 return "";
 }
 public boolean _onCreateOptionsMenu(android.view.Menu menu) {

@@ -59,6 +59,35 @@ Sub Class_Globals
 	Private EditText1 As EditText
 	Private EditText2 As EditText
 	Dim fechaHoy As String
+	
+	Private Dialog As B4XDialog
+	Private Base As B4XView
+	Private SwiftButtonMaquina As SwiftButton
+	Private SearchTemplateMaquina As B4XSearchTemplate
+	
+	Private SwiftButtonLabor As SwiftButton
+	Private SearchTemplateLabor As B4XSearchTemplate
+	
+	Private SwiftButtonNit As SwiftButton
+	Private SearchTemplateNit As B4XSearchTemplate
+	
+	Private SwiftButtonHacienda As SwiftButton
+	Private SearchTemplateHacienda As B4XSearchTemplate
+	
+	Private SwiftButtonLote As SwiftButton
+	Private SearchTemplateLote As B4XSearchTemplate
+	
+	Private SwiftButtonImplemento As SwiftButton
+	Private SearchTemplateImplemento As B4XSearchTemplate
+	
+	Private SwiftButtonImplemento2 As SwiftButton
+	Private SearchTemplateImplemento2 As B4XSearchTemplate
+	
+	Private SwiftButtonOperario As SwiftButton
+	Private SearchTemplateOperario As B4XSearchTemplate
+	
+	Private SwiftButtonObservaciones As SwiftButton
+	Private SearchTemplateObservaciones As B4XSearchTemplate
 End Sub
 
 'You can add more parameters here.
@@ -70,7 +99,9 @@ End Sub
 Private Sub B4XPage_Created (Root1 As B4XView)
 	Root = Root1
 	'load the layout to Root
-	
+	Base = Root
+	Dialog.Initialize (Base)
+	Dialog.Title = "Buscador"
 End Sub
 
 Sub GetDeviceName As String
@@ -91,7 +122,13 @@ Private Sub B4XPage_Appear
 	Dim Req As DBRequestManager
 	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
 	
-	'CONSULTAR MAQUINA'
+	'****************CONSULTAR MAQUINA************'
+	SearchTemplateMaquina.Initialize
+	
+	Dim itemsMaquina As List
+	itemsMaquina.Initialize
+	itemsMaquina.Add("Seleccionar:")
+	
 	Dim cmdMaquina As DBCommand = CreateCommand("select_maquina", Null)
 	Wait For (Req.ExecuteQuery(cmdMaquina, 0, Null)) JobDone(j2 As HttpJob)
 	If j2.Success Then
@@ -101,14 +138,24 @@ Private Sub B4XPage_Appear
 			Dim codigoMaquina As String = rowMaquina(0) ' Cdgo_Dstno
 			Dim descripcionMaquina As String = rowMaquina(1) ' Dscrpcion_Dstno
 			SD_xComboBoxMaquina.Add(descripcionMaquina, codigoMaquina)
+			itemsMaquina.Add(codigoMaquina&":"&descripcionMaquina)
 		Next
 	Else
 		Log("Error en la consulta de Maquina: " & j2.ErrorMessage)
 	End If
+	SearchTemplateMaquina.SetItems(itemsMaquina)
 	j2.Release
-	'FIN CONSULTAR  MAQUINA'
 	
-	'CONSULTAR LABOR'
+	
+	'***************FIN CONSULTAR  MAQUINA*****************'
+	
+	'***************CONSULTAR LABOR***************'
+	SearchTemplateLabor.Initialize
+	
+	Dim itemsLaborMaquina As List
+	itemsLaborMaquina.Initialize
+	itemsLaborMaquina.Add("Seleccionar:")
+	
 	Dim cmdLaborMaquina As DBCommand = CreateCommand("select_labor_maq", Null)
 	Wait For (Req.ExecuteQuery(cmdLaborMaquina, 0, Null)) JobDone(j3 As HttpJob)
 	If j3.Success Then
@@ -118,14 +165,22 @@ Private Sub B4XPage_Appear
 			Dim codigoLaborMaquina As String = rowLaborMaquina(0) ' Cdgo_Dstno
 			Dim descripcionLaborMaquina As String = rowLaborMaquina(1) ' Dscrpcion_Dstno
 			SD_xComboBoxLabor.Add(descripcionLaborMaquina, codigoLaborMaquina)
+			itemsLaborMaquina.Add(codigoLaborMaquina&":"&descripcionLaborMaquina)
 		Next
 	Else
 		Log("Error en la consulta de Maquina: " & j3.ErrorMessage)
 	End If
+	SearchTemplateLabor.SetItems(itemsLaborMaquina)
 	j3.Release
-	'FIN CONSULTAR LABOR'
+	'**************FIN CONSULTAR LABOR****************************'
 	
-	'CONSULTAR NIT'
+	'*************CONSULTAR NIT******************'
+	SearchTemplateNit.Initialize
+	
+	Dim itemsNit As List
+	itemsNit.Initialize
+	itemsNit.Add("Seleccionar:")
+	
 	Dim cmd As DBCommand = CreateCommand("select_nit", Null)
 	Wait For (Req.ExecuteQuery(cmd, 0, Null)) JobDone(j As HttpJob)
 	If j.Success Then
@@ -135,13 +190,23 @@ Private Sub B4XPage_Appear
 			Dim razonSocial As String = row(0)
 			Dim nit As String = row(1)
 			SD_xComboBoxNit.Add(razonSocial & " - " & nit, nit)
+			itemsNit.Add(nit&":"&razonSocial)
 		Next
 	Else
 		Log("Error en la consulta de NITs: " & j.ErrorMessage)
 	End If
-	'FIN CONSULTAR NIT'
+	SearchTemplateNit.SetItems(itemsNit)
+	j.Release
+	'****************FIN CONSULTAR NIT**************'
 	
-	'CONSULTAR IMPLEMENTOS'
+	'*****************CONSULTAR IMPLEMENTOS***************'
+	SearchTemplateImplemento.Initialize
+	SearchTemplateImplemento2.Initialize
+	
+	Dim itemsImplemento As List
+	itemsImplemento.Initialize
+	itemsImplemento.Add("Seleccionar:")
+	
 	Dim cmdImple As DBCommand = CreateCommand("select_implemento", Null)
 	Wait For (Req.ExecuteQuery(cmdImple, 0, Null)) JobDone(j4 As HttpJob)
 	If j4.Success Then
@@ -152,14 +217,23 @@ Private Sub B4XPage_Appear
 			Dim descripcionImple As String = rowImple(1) ' Dscrpcion_Dstno
 			SD_xComboBoxImplemento.Add(descripcionImple, codigoImple)
 			SD_xComboBoxImplemento2.Add(descripcionImple, codigoImple)
+			itemsImplemento.Add(codigoImple&":"&descripcionImple)
 		Next
 	Else
 		Log("Error en la consulta de Maquina: " & j4.ErrorMessage)
 	End If
+	SearchTemplateImplemento.SetItems(itemsImplemento)
+	SearchTemplateImplemento2.SetItems(itemsImplemento)
 	j4.Release
-	'FIN CONSULTAR IMPLEMENTOS'
+	'****************FIN CONSULTAR IMPLEMENTOS******************'
 	
-	'CONSULTAR OPERARIO'
+	'***************CONSULTAR OPERARIO***********************'
+	SearchTemplateOperario.Initialize
+	
+	Dim itemsOperario As List
+	itemsOperario.Initialize
+	itemsOperario.Add("Seleccionar:")
+	
 	Dim cmdOper As DBCommand = CreateCommand("select_operario", Null)
 	Wait For (Req.ExecuteQuery(cmdOper, 0, Null)) JobDone(j5 As HttpJob)
 	If j5.Success Then
@@ -171,14 +245,21 @@ Private Sub B4XPage_Appear
 			Dim apellido2 As String = rowOper(2)
 			Dim nombre As String = rowOper(3)
 			SD_xComboBoxOperario.Add(apellido1&" "&apellido2&" "&nombre ,codigoOper)
+			itemsOperario.Add(codigoOper&":"&apellido1&" "&apellido2&" "&nombre)
 		Next
 	Else
 		Log("Error en la consulta de Maquina: " & j5.ErrorMessage)
 	End If
+	SearchTemplateOperario.SetItems(itemsOperario)
 	j5.Release
-	'FIN CONSULTAR OPERARIO'
+	'***************FIN CONSULTAR OPERARIO********************'
 	
-	'CONSULTAR OBSERVACIONES'
+	'***************CONSULTAR OBSERVACIONES*******************'
+	SearchTemplateObservaciones.Initialize
+	
+	Dim itemsObservaciones As List
+	itemsObservaciones.Initialize
+	itemsObservaciones.Add("Seleccionar:")
 	Dim cmdObser As DBCommand = CreateCommand("select_observaciones", Null)
 	Wait For (Req.ExecuteQuery(cmdObser, 0, Null)) JobDone(j6 As HttpJob)
 	If j6.Success Then
@@ -188,14 +269,18 @@ Private Sub B4XPage_Appear
 			Dim codigoObser As String = rowObser(0)
 			Dim desObser As String = rowObser(1)
 			SD_xComboBoxObservaciones.Add(desObser ,codigoObser)
+			itemsObservaciones.Add(codigoObser&":"&desObser)
 		Next
 	Else
 		Log("Error en la consulta de Maquina: " & j6.ErrorMessage)
 	End If
+	SearchTemplateObservaciones.SetItems(itemsObservaciones)
 	j6.Release
-	'FIN CONSULTAR OBSERVACIONES'
+	'**************FIN CONSULTAR OBSERVACIONES****************'
 	
+	SearchTemplateHacienda.Initialize
 	
+	SearchTemplateLote.Initialize
 	
 	
 End Sub
@@ -429,4 +514,155 @@ End Sub
 
 Private Sub Label1Back_Click
 	B4XPages.ClosePage(Me)
+End Sub
+
+Private Sub SwiftButtonMaquina_Click
+	Wait For (Dialog.ShowTemplate(SearchTemplateMaquina, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonMaquina.xLBL.Text = SearchTemplateMaquina.SelectedItem
+		Dim MAQUINACOMPLETO As String = SearchTemplateMaquina.SelectedItem
+	End If
+End Sub
+
+Private Sub SwiftButtonLabor_Click
+	Wait For (Dialog.ShowTemplate(SearchTemplateLabor, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonLabor.xLBL.Text = SearchTemplateLabor.SelectedItem
+		Dim LABORCOMPLETO As String = SearchTemplateLabor.SelectedItem
+	End If
+End Sub
+
+Private Sub SwiftButtonNit_Click
+	Dim ItemsHacienda As List
+	ItemsHacienda.Initialize
+	Wait For (Dialog.ShowTemplate(SearchTemplateNit, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonNit.xLBL.Text = SearchTemplateNit.SelectedItem
+		Dim NITCOMPLETO As String = SearchTemplateNit.SelectedItem
+		Dim Partes() As String = Regex.Split(":", NITCOMPLETO)
+		nitEmpresaCBX = Partes(0)
+		ItemsHacienda.Clear
+		ItemsHacienda.Add("Seleccionar:")
+		SwiftButtonHacienda.xLBL.Text = ""
+		'************** INICIO CONSULTA HACIENDA **************
+		Dim Req As DBRequestManager
+		Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
+		Dim cmd As DBCommand = CreateCommand("select_haciendas", Array(nitEmpresaCBX))
+
+		' Ejecuta la consulta
+		Wait For (Req.ExecuteQuery(cmd, 0, Null)) JobDone(j As HttpJob)
+
+		' Verificar si la consulta fue exitosa
+		If j.Success Then
+			' Maneja el resultado de la consulta
+			Req.HandleJobAsync(j, "req")
+			Wait For (Req) req_Result(res As DBResult)
+
+    
+			' Llenar el ComboBox con NITs y razones sociales
+			For Each row() As Object In res.Rows
+				Dim Codg_Hacienda As String = row(0)
+				Dim NombreHacienda As String = row(1)
+        
+				' Agregar la información al ComboBox (ajusta según el formato requerido)
+				
+				
+				ItemsHacienda.Add(Codg_Hacienda&":"&NombreHacienda)
+			Next
+    
+		Else
+			' Si hay un error, muestra el mensaje
+			Log("Error: " & j.ErrorMessage)
+		End If
+		SearchTemplateHacienda.SetItems(ItemsHacienda)
+		SwiftButtonHacienda.Enabled = True
+		Log(nitEmpresaCBX)
+		' Libera el trabajo HTTP
+		j.Release
+		'*********** FIN CONSULTA HACIENDA **************'
+	End If
+End Sub
+
+Private Sub SwiftButtonHacienda_Click
+	Dim ItemsLote As List
+	ItemsLote.Initialize
+	
+	Wait For (Dialog.ShowTemplate(SearchTemplateHacienda, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonHacienda.xLBL.Text = SearchTemplateHacienda.SelectedItem
+		Dim HACIENDACOMPLETO As String = SearchTemplateHacienda.SelectedItem
+		Dim Partes() As String = Regex.Split(":", HACIENDACOMPLETO)
+		haciendaCBX = Partes(0)
+		ItemsLote.Clear
+		ItemsLote.Add("Seleccionar:")
+		SwiftButtonLote.xLBL.Text = ""
+		'***************** INICIO CONSULTA LOTE ************************
+		Dim Req As DBRequestManager
+		Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
+		Dim cmd As DBCommand = CreateCommand("select_lotes", Array(nitEmpresaCBX,haciendaCBX))
+
+		' Ejecuta la consulta
+		Wait For (Req.ExecuteQuery(cmd, 0, Null)) JobDone(j As HttpJob)
+
+		' Verificar si la consulta fue exitosa
+		If j.Success Then
+			' Maneja el resultado de la consulta
+			Req.HandleJobAsync(j, "req")
+			Wait For (Req) req_Result(res As DBResult)
+
+    
+			' Llenar el ComboBox con NITs y razones sociales
+			For Each row() As Object In res.Rows
+				Dim Codg_Hacienda As String = row(0)
+        
+				' Agregar la información al ComboBox (ajusta según el formato requerido)
+				
+				ItemsLote.Add(Codg_Hacienda)
+			Next
+    
+		Else
+			' Si hay un error, muestra el mensaje
+			Log("Error: " & j.ErrorMessage)
+		End If
+		SearchTemplateLote.SetItems(ItemsLote)
+		SwiftButtonLote.Enabled = True
+		' Libera el trabajo HTTP
+		j.Release
+		'***************** FIN CONSULTA LOTE ************************
+	End If
+End Sub
+
+Private Sub SwiftButtonLote_Click
+	Wait For (Dialog.ShowTemplate(SearchTemplateLote, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonLote.xLBL.Text = SearchTemplateLote.SelectedItem
+	End If
+End Sub
+
+Private Sub SwiftButtonImplemento_Click
+	Wait For (Dialog.ShowTemplate(SearchTemplateImplemento, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonImplemento.xLBL.Text = SearchTemplateImplemento.SelectedItem
+	End If
+End Sub
+
+Private Sub SwiftButtonImplemento2_Click
+	Wait For (Dialog.ShowTemplate(SearchTemplateImplemento2, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonImplemento2.xLBL.Text = SearchTemplateImplemento2.SelectedItem
+	End If
+End Sub
+
+Private Sub SwiftButtonOperario_Click
+	Wait For (Dialog.ShowTemplate(SearchTemplateOperario, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonOperario.xLBL.Text = SearchTemplateOperario.SelectedItem
+	End If
+End Sub
+
+Private Sub SwiftButtonObservaciones_Click
+	Wait For (Dialog.ShowTemplate(SearchTemplateObservaciones, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonObservaciones.xLBL.Text = SearchTemplateObservaciones.SelectedItem
+	End If
 End Sub

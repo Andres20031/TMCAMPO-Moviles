@@ -47,16 +47,16 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="dbrequestmanager";
 if (Debug.shouldDelegate(ba, "initialize", false))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba,_target,_connectorlink}));}
-RDebugUtils.currentLine=57344000;
- //BA.debugLineNum = 57344000;BA.debugLine="Public Sub Initialize (Target As Object, Connector";
-RDebugUtils.currentLine=57344001;
- //BA.debugLineNum = 57344001;BA.debugLine="mTarget = Target";
+RDebugUtils.currentLine=10289152;
+ //BA.debugLineNum = 10289152;BA.debugLine="Public Sub Initialize (Target As Object, Connector";
+RDebugUtils.currentLine=10289153;
+ //BA.debugLineNum = 10289153;BA.debugLine="mTarget = Target";
 __ref._mtarget /*Object*/  = _target;
-RDebugUtils.currentLine=57344002;
- //BA.debugLineNum = 57344002;BA.debugLine="link = ConnectorLink";
+RDebugUtils.currentLine=10289154;
+ //BA.debugLineNum = 10289154;BA.debugLine="link = ConnectorLink";
 __ref._link /*String*/  = _connectorlink;
-RDebugUtils.currentLine=57344003;
- //BA.debugLineNum = 57344003;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10289155;
+ //BA.debugLineNum = 10289155;BA.debugLine="End Sub";
 return "";
 }
 public b4a.example.ef.httpjob  _executequery(b4a.example.ef.dbrequestmanager __ref,b4a.example.ef.main._dbcommand _command,int _limit,Object _tag) throws Exception{
@@ -66,19 +66,19 @@ if (Debug.shouldDelegate(ba, "executequery", false))
 	 {return ((b4a.example.ef.httpjob) Debug.delegate(ba, "executequery", new Object[] {_command,_limit,_tag}));}
 anywheresoftware.b4a.randomaccessfile.B4XSerializator _ser = null;
 byte[] _data = null;
-RDebugUtils.currentLine=57409536;
- //BA.debugLineNum = 57409536;BA.debugLine="Public Sub ExecuteQuery(Command As DBCommand, Limi";
-RDebugUtils.currentLine=57409537;
- //BA.debugLineNum = 57409537;BA.debugLine="Dim ser As B4XSerializator";
+RDebugUtils.currentLine=10354688;
+ //BA.debugLineNum = 10354688;BA.debugLine="Public Sub ExecuteQuery(Command As DBCommand, Limi";
+RDebugUtils.currentLine=10354689;
+ //BA.debugLineNum = 10354689;BA.debugLine="Dim ser As B4XSerializator";
 _ser = new anywheresoftware.b4a.randomaccessfile.B4XSerializator();
-RDebugUtils.currentLine=57409538;
- //BA.debugLineNum = 57409538;BA.debugLine="Dim data() As Byte = ser.ConvertObjectToBytes(Cre";
+RDebugUtils.currentLine=10354690;
+ //BA.debugLineNum = 10354690;BA.debugLine="Dim data() As Byte = ser.ConvertObjectToBytes(Cre";
 _data = _ser.ConvertObjectToBytes((Object)(__c.createMap(new Object[] {(Object)("command"),(Object)(_command),(Object)("limit"),(Object)(_limit),(Object)("version"),(Object)(__ref._version /*float*/ )}).getObject()));
-RDebugUtils.currentLine=57409539;
- //BA.debugLineNum = 57409539;BA.debugLine="Return SendJob(CreateJob, data, Tag, \"query2\")";
+RDebugUtils.currentLine=10354691;
+ //BA.debugLineNum = 10354691;BA.debugLine="Return SendJob(CreateJob, data, Tag, \"query2\")";
 if (true) return __ref._sendjob /*b4a.example.ef.httpjob*/ (null,__ref._createjob /*b4a.example.ef.httpjob*/ (null),_data,_tag,"query2");
-RDebugUtils.currentLine=57409540;
- //BA.debugLineNum = 57409540;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10354692;
+ //BA.debugLineNum = 10354692;BA.debugLine="End Sub";
 return null;
 }
 public void  _handlejobasync(b4a.example.ef.dbrequestmanager __ref,b4a.example.ef.httpjob _job,String _eventname) throws Exception{
@@ -118,17 +118,17 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=57868289;
- //BA.debugLineNum = 57868289;BA.debugLine="Dim ser As B4XSerializator";
+RDebugUtils.currentLine=10813441;
+ //BA.debugLineNum = 10813441;BA.debugLine="Dim ser As B4XSerializator";
 _ser = new anywheresoftware.b4a.randomaccessfile.B4XSerializator();
-RDebugUtils.currentLine=57868290;
- //BA.debugLineNum = 57868290;BA.debugLine="Dim data() As Byte = Bit.InputStreamToBytes(Job.G";
+RDebugUtils.currentLine=10813442;
+ //BA.debugLineNum = 10813442;BA.debugLine="Dim data() As Byte = Bit.InputStreamToBytes(Job.G";
 _data = parent.__c.Bit.InputStreamToBytes((java.io.InputStream)(_job._getinputstream /*anywheresoftware.b4a.objects.streams.File.InputStreamWrapper*/ (null).getObject()));
-RDebugUtils.currentLine=57868291;
- //BA.debugLineNum = 57868291;BA.debugLine="ser.ConvertBytesToObjectAsync(data, \"ser\")";
+RDebugUtils.currentLine=10813443;
+ //BA.debugLineNum = 10813443;BA.debugLine="ser.ConvertBytesToObjectAsync(data, \"ser\")";
 _ser.ConvertBytesToObjectAsync(ba,_data,"ser");
-RDebugUtils.currentLine=57868292;
- //BA.debugLineNum = 57868292;BA.debugLine="Wait For (ser) ser_BytesToObject (Success As Bool";
+RDebugUtils.currentLine=10813444;
+ //BA.debugLineNum = 10813444;BA.debugLine="Wait For (ser) ser_BytesToObject (Success As Bool";
 parent.__c.WaitFor("ser_bytestoobject", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "dbrequestmanager", "handlejobasync"), (Object)(_ser));
 this.state = 5;
 return;
@@ -138,8 +138,8 @@ this.state = 1;
 _success = (Boolean) result[1];
 _newobject = (Object) result[2];
 ;
-RDebugUtils.currentLine=57868293;
- //BA.debugLineNum = 57868293;BA.debugLine="If Success = False Then";
+RDebugUtils.currentLine=10813445;
+ //BA.debugLineNum = 10813445;BA.debugLine="If Success = False Then";
 if (true) break;
 
 case 1:
@@ -152,11 +152,11 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
-RDebugUtils.currentLine=57868294;
- //BA.debugLineNum = 57868294;BA.debugLine="Log(\"Error reading response: \" & LastException)";
-parent.__c.LogImpl("857868294","Error reading response: "+BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
-RDebugUtils.currentLine=57868295;
- //BA.debugLineNum = 57868295;BA.debugLine="Return";
+RDebugUtils.currentLine=10813446;
+ //BA.debugLineNum = 10813446;BA.debugLine="Log(\"Error reading response: \" & LastException)";
+parent.__c.LogImpl("510813446","Error reading response: "+BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
+RDebugUtils.currentLine=10813447;
+ //BA.debugLineNum = 10813447;BA.debugLine="Return";
 if (true) return ;
  if (true) break;
 
@@ -164,17 +164,17 @@ case 4:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=57868297;
- //BA.debugLineNum = 57868297;BA.debugLine="Dim res As DBResult = NewObject";
+RDebugUtils.currentLine=10813449;
+ //BA.debugLineNum = 10813449;BA.debugLine="Dim res As DBResult = NewObject";
 _res = (b4a.example.ef.main._dbresult)(_newobject);
-RDebugUtils.currentLine=57868298;
- //BA.debugLineNum = 57868298;BA.debugLine="res.Tag = Job.Tag";
+RDebugUtils.currentLine=10813450;
+ //BA.debugLineNum = 10813450;BA.debugLine="res.Tag = Job.Tag";
 _res.Tag /*Object*/  = _job._tag /*Object*/ ;
-RDebugUtils.currentLine=57868299;
- //BA.debugLineNum = 57868299;BA.debugLine="CallSubDelayed2(mTarget, EventName & \"_result\", r";
+RDebugUtils.currentLine=10813451;
+ //BA.debugLineNum = 10813451;BA.debugLine="CallSubDelayed2(mTarget, EventName & \"_result\", r";
 parent.__c.CallSubDelayed2(ba,__ref._mtarget /*Object*/ ,_eventname+"_result",(Object)(_res));
-RDebugUtils.currentLine=57868300;
- //BA.debugLineNum = 57868300;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10813452;
+ //BA.debugLineNum = 10813452;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -186,13 +186,13 @@ __ref = this;
 RDebugUtils.currentModule="dbrequestmanager";
 if (Debug.shouldDelegate(ba, "executecommand", false))
 	 {return ((b4a.example.ef.httpjob) Debug.delegate(ba, "executecommand", new Object[] {_command,_tag}));}
-RDebugUtils.currentLine=57737216;
- //BA.debugLineNum = 57737216;BA.debugLine="Public Sub ExecuteCommand(Command As DBCommand, Ta";
-RDebugUtils.currentLine=57737217;
- //BA.debugLineNum = 57737217;BA.debugLine="Return ExecuteBatch(Array As DBCommand(Command),";
+RDebugUtils.currentLine=10682368;
+ //BA.debugLineNum = 10682368;BA.debugLine="Public Sub ExecuteCommand(Command As DBCommand, Ta";
+RDebugUtils.currentLine=10682369;
+ //BA.debugLineNum = 10682369;BA.debugLine="Return ExecuteBatch(Array As DBCommand(Command),";
 if (true) return __ref._executebatch /*b4a.example.ef.httpjob*/ (null,anywheresoftware.b4a.keywords.Common.ArrayToList(new b4a.example.ef.main._dbcommand[]{_command}),_tag);
-RDebugUtils.currentLine=57737218;
- //BA.debugLineNum = 57737218;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10682370;
+ //BA.debugLineNum = 10682370;BA.debugLine="End Sub";
 return null;
 }
 public String  _printtable(b4a.example.ef.dbrequestmanager __ref,b4a.example.ef.main._dbresult _table) throws Exception{
@@ -204,19 +204,19 @@ anywheresoftware.b4a.keywords.StringBuilderWrapper _sb = null;
 Object _col = null;
 Object[] _row = null;
 Object _record = null;
-RDebugUtils.currentLine=58130432;
- //BA.debugLineNum = 58130432;BA.debugLine="Public Sub PrintTable(Table As DBResult)";
-RDebugUtils.currentLine=58130433;
- //BA.debugLineNum = 58130433;BA.debugLine="Log(\"Tag: \" & Table.Tag & \", Columns: \" & Table.C";
-__c.LogImpl("858130433","Tag: "+BA.ObjectToString(_table.Tag /*Object*/ )+", Columns: "+BA.NumberToString(_table.Columns /*anywheresoftware.b4a.objects.collections.Map*/ .getSize())+", Rows: "+BA.NumberToString(_table.Rows /*anywheresoftware.b4a.objects.collections.List*/ .getSize()),0);
-RDebugUtils.currentLine=58130434;
- //BA.debugLineNum = 58130434;BA.debugLine="Dim sb As StringBuilder";
+RDebugUtils.currentLine=11075584;
+ //BA.debugLineNum = 11075584;BA.debugLine="Public Sub PrintTable(Table As DBResult)";
+RDebugUtils.currentLine=11075585;
+ //BA.debugLineNum = 11075585;BA.debugLine="Log(\"Tag: \" & Table.Tag & \", Columns: \" & Table.C";
+__c.LogImpl("511075585","Tag: "+BA.ObjectToString(_table.Tag /*Object*/ )+", Columns: "+BA.NumberToString(_table.Columns /*anywheresoftware.b4a.objects.collections.Map*/ .getSize())+", Rows: "+BA.NumberToString(_table.Rows /*anywheresoftware.b4a.objects.collections.List*/ .getSize()),0);
+RDebugUtils.currentLine=11075586;
+ //BA.debugLineNum = 11075586;BA.debugLine="Dim sb As StringBuilder";
 _sb = new anywheresoftware.b4a.keywords.StringBuilderWrapper();
-RDebugUtils.currentLine=58130435;
- //BA.debugLineNum = 58130435;BA.debugLine="sb.Initialize";
+RDebugUtils.currentLine=11075587;
+ //BA.debugLineNum = 11075587;BA.debugLine="sb.Initialize";
 _sb.Initialize();
-RDebugUtils.currentLine=58130436;
- //BA.debugLineNum = 58130436;BA.debugLine="For Each col In Table.Columns.Keys";
+RDebugUtils.currentLine=11075588;
+ //BA.debugLineNum = 11075588;BA.debugLine="For Each col In Table.Columns.Keys";
 {
 final anywheresoftware.b4a.BA.IterableList group4 = _table.Columns /*anywheresoftware.b4a.objects.collections.Map*/ .Keys();
 final int groupLen4 = group4.getSize()
@@ -224,16 +224,16 @@ final int groupLen4 = group4.getSize()
 ;
 for (; index4 < groupLen4;index4++){
 _col = group4.Get(index4);
-RDebugUtils.currentLine=58130437;
- //BA.debugLineNum = 58130437;BA.debugLine="sb.Append(col).Append(TAB)";
+RDebugUtils.currentLine=11075589;
+ //BA.debugLineNum = 11075589;BA.debugLine="sb.Append(col).Append(TAB)";
 _sb.Append(BA.ObjectToString(_col)).Append(__c.TAB);
  }
 };
-RDebugUtils.currentLine=58130439;
- //BA.debugLineNum = 58130439;BA.debugLine="Log(sb.ToString)";
-__c.LogImpl("858130439",_sb.ToString(),0);
-RDebugUtils.currentLine=58130440;
- //BA.debugLineNum = 58130440;BA.debugLine="For Each row() As Object In Table.Rows";
+RDebugUtils.currentLine=11075591;
+ //BA.debugLineNum = 11075591;BA.debugLine="Log(sb.ToString)";
+__c.LogImpl("511075591",_sb.ToString(),0);
+RDebugUtils.currentLine=11075592;
+ //BA.debugLineNum = 11075592;BA.debugLine="For Each row() As Object In Table.Rows";
 {
 final anywheresoftware.b4a.BA.IterableList group8 = _table.Rows /*anywheresoftware.b4a.objects.collections.List*/ ;
 final int groupLen8 = group8.getSize()
@@ -241,14 +241,14 @@ final int groupLen8 = group8.getSize()
 ;
 for (; index8 < groupLen8;index8++){
 _row = (Object[])(group8.Get(index8));
-RDebugUtils.currentLine=58130441;
- //BA.debugLineNum = 58130441;BA.debugLine="Dim sb As StringBuilder";
+RDebugUtils.currentLine=11075593;
+ //BA.debugLineNum = 11075593;BA.debugLine="Dim sb As StringBuilder";
 _sb = new anywheresoftware.b4a.keywords.StringBuilderWrapper();
-RDebugUtils.currentLine=58130442;
- //BA.debugLineNum = 58130442;BA.debugLine="sb.Initialize";
+RDebugUtils.currentLine=11075594;
+ //BA.debugLineNum = 11075594;BA.debugLine="sb.Initialize";
 _sb.Initialize();
-RDebugUtils.currentLine=58130443;
- //BA.debugLineNum = 58130443;BA.debugLine="For Each record As Object In row";
+RDebugUtils.currentLine=11075595;
+ //BA.debugLineNum = 11075595;BA.debugLine="For Each record As Object In row";
 {
 final Object[] group11 = _row;
 final int groupLen11 = group11.length
@@ -256,18 +256,18 @@ final int groupLen11 = group11.length
 ;
 for (; index11 < groupLen11;index11++){
 _record = group11[index11];
-RDebugUtils.currentLine=58130444;
- //BA.debugLineNum = 58130444;BA.debugLine="sb.Append(record).Append(TAB)";
+RDebugUtils.currentLine=11075596;
+ //BA.debugLineNum = 11075596;BA.debugLine="sb.Append(record).Append(TAB)";
 _sb.Append(BA.ObjectToString(_record)).Append(__c.TAB);
  }
 };
-RDebugUtils.currentLine=58130446;
- //BA.debugLineNum = 58130446;BA.debugLine="Log(sb.ToString)";
-__c.LogImpl("858130446",_sb.ToString(),0);
+RDebugUtils.currentLine=11075598;
+ //BA.debugLineNum = 11075598;BA.debugLine="Log(sb.ToString)";
+__c.LogImpl("511075598",_sb.ToString(),0);
  }
 };
-RDebugUtils.currentLine=58130448;
- //BA.debugLineNum = 58130448;BA.debugLine="End Sub";
+RDebugUtils.currentLine=11075600;
+ //BA.debugLineNum = 11075600;BA.debugLine="End Sub";
 return "";
 }
 public anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper  _bytestoimage(b4a.example.ef.dbrequestmanager __ref,byte[] _bytes) throws Exception{
@@ -277,43 +277,43 @@ if (Debug.shouldDelegate(ba, "bytestoimage", false))
 	 {return ((anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) Debug.delegate(ba, "bytestoimage", new Object[] {_bytes}));}
 anywheresoftware.b4a.objects.streams.File.InputStreamWrapper _in = null;
 anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _bmp = null;
-RDebugUtils.currentLine=58064896;
- //BA.debugLineNum = 58064896;BA.debugLine="Public Sub BytesToImage(bytes() As Byte) As Bitmap";
-RDebugUtils.currentLine=58064897;
- //BA.debugLineNum = 58064897;BA.debugLine="Dim In As InputStream";
+RDebugUtils.currentLine=11010048;
+ //BA.debugLineNum = 11010048;BA.debugLine="Public Sub BytesToImage(bytes() As Byte) As Bitmap";
+RDebugUtils.currentLine=11010049;
+ //BA.debugLineNum = 11010049;BA.debugLine="Dim In As InputStream";
 _in = new anywheresoftware.b4a.objects.streams.File.InputStreamWrapper();
-RDebugUtils.currentLine=58064898;
- //BA.debugLineNum = 58064898;BA.debugLine="In.InitializeFromBytesArray(bytes, 0, bytes.Lengt";
+RDebugUtils.currentLine=11010050;
+ //BA.debugLineNum = 11010050;BA.debugLine="In.InitializeFromBytesArray(bytes, 0, bytes.Lengt";
 _in.InitializeFromBytesArray(_bytes,(int) (0),_bytes.length);
-RDebugUtils.currentLine=58064899;
- //BA.debugLineNum = 58064899;BA.debugLine="Dim bmp As Bitmap";
+RDebugUtils.currentLine=11010051;
+ //BA.debugLineNum = 11010051;BA.debugLine="Dim bmp As Bitmap";
 _bmp = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
-RDebugUtils.currentLine=58064900;
- //BA.debugLineNum = 58064900;BA.debugLine="bmp.Initialize2(In)";
+RDebugUtils.currentLine=11010052;
+ //BA.debugLineNum = 11010052;BA.debugLine="bmp.Initialize2(In)";
 _bmp.Initialize2((java.io.InputStream)(_in.getObject()));
-RDebugUtils.currentLine=58064901;
- //BA.debugLineNum = 58064901;BA.debugLine="Return bmp";
+RDebugUtils.currentLine=11010053;
+ //BA.debugLineNum = 11010053;BA.debugLine="Return bmp";
 if (true) return _bmp;
-RDebugUtils.currentLine=58064902;
- //BA.debugLineNum = 58064902;BA.debugLine="End Sub";
+RDebugUtils.currentLine=11010054;
+ //BA.debugLineNum = 11010054;BA.debugLine="End Sub";
 return null;
 }
 public String  _class_globals(b4a.example.ef.dbrequestmanager __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="dbrequestmanager";
-RDebugUtils.currentLine=57278464;
- //BA.debugLineNum = 57278464;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=57278465;
- //BA.debugLineNum = 57278465;BA.debugLine="Private mTarget As Object";
+RDebugUtils.currentLine=10223616;
+ //BA.debugLineNum = 10223616;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=10223617;
+ //BA.debugLineNum = 10223617;BA.debugLine="Private mTarget As Object";
 _mtarget = new Object();
-RDebugUtils.currentLine=57278466;
- //BA.debugLineNum = 57278466;BA.debugLine="Private link As String";
+RDebugUtils.currentLine=10223618;
+ //BA.debugLineNum = 10223618;BA.debugLine="Private link As String";
 _link = "";
-RDebugUtils.currentLine=57278467;
- //BA.debugLineNum = 57278467;BA.debugLine="Private VERSION As Float = 2";
+RDebugUtils.currentLine=10223619;
+ //BA.debugLineNum = 10223619;BA.debugLine="Private VERSION As Float = 2";
 _version = (float) (2);
-RDebugUtils.currentLine=57278468;
- //BA.debugLineNum = 57278468;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10223620;
+ //BA.debugLineNum = 10223620;BA.debugLine="End Sub";
 return "";
 }
 public b4a.example.ef.httpjob  _createjob(b4a.example.ef.dbrequestmanager __ref) throws Exception{
@@ -322,19 +322,19 @@ RDebugUtils.currentModule="dbrequestmanager";
 if (Debug.shouldDelegate(ba, "createjob", false))
 	 {return ((b4a.example.ef.httpjob) Debug.delegate(ba, "createjob", null));}
 b4a.example.ef.httpjob _j = null;
-RDebugUtils.currentLine=57540608;
- //BA.debugLineNum = 57540608;BA.debugLine="Private Sub CreateJob As HttpJob";
-RDebugUtils.currentLine=57540609;
- //BA.debugLineNum = 57540609;BA.debugLine="Dim j As HttpJob";
+RDebugUtils.currentLine=10485760;
+ //BA.debugLineNum = 10485760;BA.debugLine="Private Sub CreateJob As HttpJob";
+RDebugUtils.currentLine=10485761;
+ //BA.debugLineNum = 10485761;BA.debugLine="Dim j As HttpJob";
 _j = new b4a.example.ef.httpjob();
-RDebugUtils.currentLine=57540610;
- //BA.debugLineNum = 57540610;BA.debugLine="j.Initialize(\"DBRequest\", mTarget)";
+RDebugUtils.currentLine=10485762;
+ //BA.debugLineNum = 10485762;BA.debugLine="j.Initialize(\"DBRequest\", mTarget)";
 _j._initialize /*String*/ (null,ba,"DBRequest",__ref._mtarget /*Object*/ );
-RDebugUtils.currentLine=57540611;
- //BA.debugLineNum = 57540611;BA.debugLine="Return j";
+RDebugUtils.currentLine=10485763;
+ //BA.debugLineNum = 10485763;BA.debugLine="Return j";
 if (true) return _j;
-RDebugUtils.currentLine=57540612;
- //BA.debugLineNum = 57540612;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10485764;
+ //BA.debugLineNum = 10485764;BA.debugLine="End Sub";
 return null;
 }
 public b4a.example.ef.httpjob  _executebatch(b4a.example.ef.dbrequestmanager __ref,anywheresoftware.b4a.objects.collections.List _listofcommands,Object _tag) throws Exception{
@@ -343,19 +343,19 @@ RDebugUtils.currentModule="dbrequestmanager";
 if (Debug.shouldDelegate(ba, "executebatch", false))
 	 {return ((b4a.example.ef.httpjob) Debug.delegate(ba, "executebatch", new Object[] {_listofcommands,_tag}));}
 b4a.example.ef.httpjob _j = null;
-RDebugUtils.currentLine=57606144;
- //BA.debugLineNum = 57606144;BA.debugLine="Public Sub ExecuteBatch(ListOfCommands As List, Ta";
-RDebugUtils.currentLine=57606145;
- //BA.debugLineNum = 57606145;BA.debugLine="Dim j As HttpJob = CreateJob";
+RDebugUtils.currentLine=10551296;
+ //BA.debugLineNum = 10551296;BA.debugLine="Public Sub ExecuteBatch(ListOfCommands As List, Ta";
+RDebugUtils.currentLine=10551297;
+ //BA.debugLineNum = 10551297;BA.debugLine="Dim j As HttpJob = CreateJob";
 _j = __ref._createjob /*b4a.example.ef.httpjob*/ (null);
-RDebugUtils.currentLine=57606146;
- //BA.debugLineNum = 57606146;BA.debugLine="ExecuteBatchImpl(j, ListOfCommands, Tag)";
+RDebugUtils.currentLine=10551298;
+ //BA.debugLineNum = 10551298;BA.debugLine="ExecuteBatchImpl(j, ListOfCommands, Tag)";
 __ref._executebatchimpl /*void*/ (null,_j,_listofcommands,_tag);
-RDebugUtils.currentLine=57606147;
- //BA.debugLineNum = 57606147;BA.debugLine="Return j";
+RDebugUtils.currentLine=10551299;
+ //BA.debugLineNum = 10551299;BA.debugLine="Return j";
 if (true) return _j;
-RDebugUtils.currentLine=57606148;
- //BA.debugLineNum = 57606148;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10551300;
+ //BA.debugLineNum = 10551300;BA.debugLine="End Sub";
 return null;
 }
 public void  _executebatchimpl(b4a.example.ef.dbrequestmanager __ref,b4a.example.ef.httpjob _job,anywheresoftware.b4a.objects.collections.List _listofcommands,Object _tag) throws Exception{
@@ -395,14 +395,14 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=57671681;
- //BA.debugLineNum = 57671681;BA.debugLine="Dim ser As B4XSerializator";
+RDebugUtils.currentLine=10616833;
+ //BA.debugLineNum = 10616833;BA.debugLine="Dim ser As B4XSerializator";
 _ser = new anywheresoftware.b4a.randomaccessfile.B4XSerializator();
-RDebugUtils.currentLine=57671682;
- //BA.debugLineNum = 57671682;BA.debugLine="ser.ConvertObjectToBytesAsync(CreateMap(\"commands";
+RDebugUtils.currentLine=10616834;
+ //BA.debugLineNum = 10616834;BA.debugLine="ser.ConvertObjectToBytesAsync(CreateMap(\"commands";
 _ser.ConvertObjectToBytesAsync(ba,(Object)(parent.__c.createMap(new Object[] {(Object)("commands"),(Object)(_listofcommands.getObject()),(Object)("version"),(Object)(__ref._version /*float*/ )}).getObject()),"ser");
-RDebugUtils.currentLine=57671683;
- //BA.debugLineNum = 57671683;BA.debugLine="Wait For (ser) ser_ObjectToBytes (Success As Bool";
+RDebugUtils.currentLine=10616835;
+ //BA.debugLineNum = 10616835;BA.debugLine="Wait For (ser) ser_ObjectToBytes (Success As Bool";
 parent.__c.WaitFor("ser_objecttobytes", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "dbrequestmanager", "executebatchimpl"), (Object)(_ser));
 this.state = 5;
 return;
@@ -412,8 +412,8 @@ this.state = 1;
 _success = (Boolean) result[1];
 _bytes = (byte[]) result[2];
 ;
-RDebugUtils.currentLine=57671684;
- //BA.debugLineNum = 57671684;BA.debugLine="If Success = False Then";
+RDebugUtils.currentLine=10616836;
+ //BA.debugLineNum = 10616836;BA.debugLine="If Success = False Then";
 if (true) break;
 
 case 1:
@@ -426,11 +426,11 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
-RDebugUtils.currentLine=57671685;
- //BA.debugLineNum = 57671685;BA.debugLine="Log(\"Error building command: \" & LastException)";
-parent.__c.LogImpl("857671685","Error building command: "+BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
-RDebugUtils.currentLine=57671686;
- //BA.debugLineNum = 57671686;BA.debugLine="Return";
+RDebugUtils.currentLine=10616837;
+ //BA.debugLineNum = 10616837;BA.debugLine="Log(\"Error building command: \" & LastException)";
+parent.__c.LogImpl("510616837","Error building command: "+BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
+RDebugUtils.currentLine=10616838;
+ //BA.debugLineNum = 10616838;BA.debugLine="Return";
 if (true) return ;
  if (true) break;
 
@@ -438,14 +438,14 @@ case 4:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=57671688;
- //BA.debugLineNum = 57671688;BA.debugLine="Dim ser As B4XSerializator = Sender";
+RDebugUtils.currentLine=10616840;
+ //BA.debugLineNum = 10616840;BA.debugLine="Dim ser As B4XSerializator = Sender";
 _ser = (anywheresoftware.b4a.randomaccessfile.B4XSerializator)(parent.__c.Sender(parent.getActivityBA()));
-RDebugUtils.currentLine=57671689;
- //BA.debugLineNum = 57671689;BA.debugLine="SendJob(Job, Bytes, Tag, \"batch2\")";
+RDebugUtils.currentLine=10616841;
+ //BA.debugLineNum = 10616841;BA.debugLine="SendJob(Job, Bytes, Tag, \"batch2\")";
 __ref._sendjob /*b4a.example.ef.httpjob*/ (null,_job,_bytes,_tag,"batch2");
-RDebugUtils.currentLine=57671690;
- //BA.debugLineNum = 57671690;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10616842;
+ //BA.debugLineNum = 10616842;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -457,25 +457,25 @@ __ref = this;
 RDebugUtils.currentModule="dbrequestmanager";
 if (Debug.shouldDelegate(ba, "sendjob", false))
 	 {return ((b4a.example.ef.httpjob) Debug.delegate(ba, "sendjob", new Object[] {_j,_data,_tag,_method}));}
-RDebugUtils.currentLine=57475072;
- //BA.debugLineNum = 57475072;BA.debugLine="Private Sub SendJob(j As HttpJob, Data() As Byte,";
-RDebugUtils.currentLine=57475073;
- //BA.debugLineNum = 57475073;BA.debugLine="j.Tag = Tag";
+RDebugUtils.currentLine=10420224;
+ //BA.debugLineNum = 10420224;BA.debugLine="Private Sub SendJob(j As HttpJob, Data() As Byte,";
+RDebugUtils.currentLine=10420225;
+ //BA.debugLineNum = 10420225;BA.debugLine="j.Tag = Tag";
 _j._tag /*Object*/  = _tag;
-RDebugUtils.currentLine=57475074;
- //BA.debugLineNum = 57475074;BA.debugLine="If link.Contains(\"?\") Then link = link & \"&\" E";
+RDebugUtils.currentLine=10420226;
+ //BA.debugLineNum = 10420226;BA.debugLine="If link.Contains(\"?\") Then link = link & \"&\" E";
 if (__ref._link /*String*/ .contains("?")) { 
 __ref._link /*String*/  = __ref._link /*String*/ +"&";}
 else {
 __ref._link /*String*/  = __ref._link /*String*/ +"?";};
-RDebugUtils.currentLine=57475075;
- //BA.debugLineNum = 57475075;BA.debugLine="j.PostBytes(link & \"method=\" & Method , Data)";
+RDebugUtils.currentLine=10420227;
+ //BA.debugLineNum = 10420227;BA.debugLine="j.PostBytes(link & \"method=\" & Method , Data)";
 _j._postbytes /*String*/ (null,__ref._link /*String*/ +"method="+_method,_data);
-RDebugUtils.currentLine=57475076;
- //BA.debugLineNum = 57475076;BA.debugLine="Return j";
+RDebugUtils.currentLine=10420228;
+ //BA.debugLineNum = 10420228;BA.debugLine="Return j";
 if (true) return _j;
-RDebugUtils.currentLine=57475077;
- //BA.debugLineNum = 57475077;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10420229;
+ //BA.debugLineNum = 10420229;BA.debugLine="End Sub";
 return null;
 }
 public byte[]  _filetobytes(b4a.example.ef.dbrequestmanager __ref,String _dir,String _filename) throws Exception{
@@ -485,29 +485,29 @@ if (Debug.shouldDelegate(ba, "filetobytes", false))
 	 {return ((byte[]) Debug.delegate(ba, "filetobytes", new Object[] {_dir,_filename}));}
 anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper _out = null;
 anywheresoftware.b4a.objects.streams.File.InputStreamWrapper _in = null;
-RDebugUtils.currentLine=57933824;
- //BA.debugLineNum = 57933824;BA.debugLine="Public Sub FileToBytes(Dir As String, FileName As";
-RDebugUtils.currentLine=57933825;
- //BA.debugLineNum = 57933825;BA.debugLine="Dim out As OutputStream";
+RDebugUtils.currentLine=10878976;
+ //BA.debugLineNum = 10878976;BA.debugLine="Public Sub FileToBytes(Dir As String, FileName As";
+RDebugUtils.currentLine=10878977;
+ //BA.debugLineNum = 10878977;BA.debugLine="Dim out As OutputStream";
 _out = new anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper();
-RDebugUtils.currentLine=57933826;
- //BA.debugLineNum = 57933826;BA.debugLine="out.InitializeToBytesArray(0)";
+RDebugUtils.currentLine=10878978;
+ //BA.debugLineNum = 10878978;BA.debugLine="out.InitializeToBytesArray(0)";
 _out.InitializeToBytesArray((int) (0));
-RDebugUtils.currentLine=57933827;
- //BA.debugLineNum = 57933827;BA.debugLine="Dim In As InputStream = File.OpenInput(Dir, FileN";
+RDebugUtils.currentLine=10878979;
+ //BA.debugLineNum = 10878979;BA.debugLine="Dim In As InputStream = File.OpenInput(Dir, FileN";
 _in = new anywheresoftware.b4a.objects.streams.File.InputStreamWrapper();
 _in = __c.File.OpenInput(_dir,_filename);
-RDebugUtils.currentLine=57933828;
- //BA.debugLineNum = 57933828;BA.debugLine="File.Copy2(In, out)";
+RDebugUtils.currentLine=10878980;
+ //BA.debugLineNum = 10878980;BA.debugLine="File.Copy2(In, out)";
 __c.File.Copy2((java.io.InputStream)(_in.getObject()),(java.io.OutputStream)(_out.getObject()));
-RDebugUtils.currentLine=57933829;
- //BA.debugLineNum = 57933829;BA.debugLine="out.Close";
+RDebugUtils.currentLine=10878981;
+ //BA.debugLineNum = 10878981;BA.debugLine="out.Close";
 _out.Close();
-RDebugUtils.currentLine=57933830;
- //BA.debugLineNum = 57933830;BA.debugLine="Return out.ToBytesArray";
+RDebugUtils.currentLine=10878982;
+ //BA.debugLineNum = 10878982;BA.debugLine="Return out.ToBytesArray";
 if (true) return _out.ToBytesArray();
-RDebugUtils.currentLine=57933831;
- //BA.debugLineNum = 57933831;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10878983;
+ //BA.debugLineNum = 10878983;BA.debugLine="End Sub";
 return null;
 }
 public b4a.example.ef.main._dbresult  _handlejob(b4a.example.ef.dbrequestmanager __ref,b4a.example.ef.httpjob _job) throws Exception{
@@ -518,25 +518,25 @@ if (Debug.shouldDelegate(ba, "handlejob", false))
 anywheresoftware.b4a.randomaccessfile.B4XSerializator _ser = null;
 byte[] _data = null;
 b4a.example.ef.main._dbresult _res = null;
-RDebugUtils.currentLine=57802752;
- //BA.debugLineNum = 57802752;BA.debugLine="Public Sub HandleJob(Job As HttpJob) As DBResult";
-RDebugUtils.currentLine=57802753;
- //BA.debugLineNum = 57802753;BA.debugLine="Dim ser As B4XSerializator";
+RDebugUtils.currentLine=10747904;
+ //BA.debugLineNum = 10747904;BA.debugLine="Public Sub HandleJob(Job As HttpJob) As DBResult";
+RDebugUtils.currentLine=10747905;
+ //BA.debugLineNum = 10747905;BA.debugLine="Dim ser As B4XSerializator";
 _ser = new anywheresoftware.b4a.randomaccessfile.B4XSerializator();
-RDebugUtils.currentLine=57802754;
- //BA.debugLineNum = 57802754;BA.debugLine="Dim data() As Byte = Bit.InputStreamToBytes(Job.G";
+RDebugUtils.currentLine=10747906;
+ //BA.debugLineNum = 10747906;BA.debugLine="Dim data() As Byte = Bit.InputStreamToBytes(Job.G";
 _data = __c.Bit.InputStreamToBytes((java.io.InputStream)(_job._getinputstream /*anywheresoftware.b4a.objects.streams.File.InputStreamWrapper*/ (null).getObject()));
-RDebugUtils.currentLine=57802755;
- //BA.debugLineNum = 57802755;BA.debugLine="Dim res As DBResult = ser.ConvertBytesToObject(da";
+RDebugUtils.currentLine=10747907;
+ //BA.debugLineNum = 10747907;BA.debugLine="Dim res As DBResult = ser.ConvertBytesToObject(da";
 _res = (b4a.example.ef.main._dbresult)(_ser.ConvertBytesToObject(_data));
-RDebugUtils.currentLine=57802756;
- //BA.debugLineNum = 57802756;BA.debugLine="res.Tag = Job.Tag";
+RDebugUtils.currentLine=10747908;
+ //BA.debugLineNum = 10747908;BA.debugLine="res.Tag = Job.Tag";
 _res.Tag /*Object*/  = _job._tag /*Object*/ ;
-RDebugUtils.currentLine=57802757;
- //BA.debugLineNum = 57802757;BA.debugLine="Return res";
+RDebugUtils.currentLine=10747909;
+ //BA.debugLineNum = 10747909;BA.debugLine="Return res";
 if (true) return _res;
-RDebugUtils.currentLine=57802758;
- //BA.debugLineNum = 57802758;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10747910;
+ //BA.debugLineNum = 10747910;BA.debugLine="End Sub";
 return null;
 }
 public byte[]  _imagetobytes(b4a.example.ef.dbrequestmanager __ref,anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _image) throws Exception{
@@ -545,25 +545,25 @@ RDebugUtils.currentModule="dbrequestmanager";
 if (Debug.shouldDelegate(ba, "imagetobytes", false))
 	 {return ((byte[]) Debug.delegate(ba, "imagetobytes", new Object[] {_image}));}
 anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper _out = null;
-RDebugUtils.currentLine=57999360;
- //BA.debugLineNum = 57999360;BA.debugLine="Public Sub ImageToBytes(Image As Bitmap) As Byte()";
-RDebugUtils.currentLine=57999361;
- //BA.debugLineNum = 57999361;BA.debugLine="Dim out As OutputStream";
+RDebugUtils.currentLine=10944512;
+ //BA.debugLineNum = 10944512;BA.debugLine="Public Sub ImageToBytes(Image As Bitmap) As Byte()";
+RDebugUtils.currentLine=10944513;
+ //BA.debugLineNum = 10944513;BA.debugLine="Dim out As OutputStream";
 _out = new anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper();
-RDebugUtils.currentLine=57999362;
- //BA.debugLineNum = 57999362;BA.debugLine="out.InitializeToBytesArray(0)";
+RDebugUtils.currentLine=10944514;
+ //BA.debugLineNum = 10944514;BA.debugLine="out.InitializeToBytesArray(0)";
 _out.InitializeToBytesArray((int) (0));
-RDebugUtils.currentLine=57999363;
- //BA.debugLineNum = 57999363;BA.debugLine="Image.WriteToStream(out, 100, \"JPEG\")";
+RDebugUtils.currentLine=10944515;
+ //BA.debugLineNum = 10944515;BA.debugLine="Image.WriteToStream(out, 100, \"JPEG\")";
 _image.WriteToStream((java.io.OutputStream)(_out.getObject()),(int) (100),BA.getEnumFromString(android.graphics.Bitmap.CompressFormat.class,"JPEG"));
-RDebugUtils.currentLine=57999364;
- //BA.debugLineNum = 57999364;BA.debugLine="out.Close";
+RDebugUtils.currentLine=10944516;
+ //BA.debugLineNum = 10944516;BA.debugLine="out.Close";
 _out.Close();
-RDebugUtils.currentLine=57999365;
- //BA.debugLineNum = 57999365;BA.debugLine="Return out.ToBytesArray";
+RDebugUtils.currentLine=10944517;
+ //BA.debugLineNum = 10944517;BA.debugLine="Return out.ToBytesArray";
 if (true) return _out.ToBytesArray();
-RDebugUtils.currentLine=57999366;
- //BA.debugLineNum = 57999366;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10944518;
+ //BA.debugLineNum = 10944518;BA.debugLine="End Sub";
 return null;
 }
 }
