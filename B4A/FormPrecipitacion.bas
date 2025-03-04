@@ -25,6 +25,12 @@ Sub Class_Globals
 	Dim selectedHda_Pvlmtro As String
 	Dim textoCapturado As String 
 	Dim pluviometroMap As Map
+	
+	Private Dialog As B4XDialog
+	Private Base As B4XView
+	
+	Private SwiftButtonPluvimetro As SwiftButton
+	Private SearchTemplatePluvimetro As B4XSearchTemplate
 End Sub
 
 'You can add more parameters here.
@@ -36,7 +42,10 @@ End Sub
 Private Sub B4XPage_Created (Root1 As B4XView)
 	Root = Root1
 	'load the layout to Root
-	
+	'load the layout to Root
+	Base = Root
+	Dialog.Initialize (Base)
+	Dialog.Title = "Buscador"
 End Sub
 
 Private Sub B4XPage_Appear
@@ -51,7 +60,13 @@ Private Sub B4XPage_Appear
 	Dim Req As DBRequestManager
 	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
 	
-	'CONSULTAR MAQUINA'
+	SearchTemplatePluvimetro.Initialize
+	
+	Dim itemsPuvlimetro As List
+	itemsPuvlimetro.Initialize
+	itemsPuvlimetro.Add("Seleccionar:")
+	'****************CONSULTAR MAQUINA******************'
+	
 	Dim cmdPluviometro As DBCommand = CreateCommand("select_maquina_pluviometros", Null)
 	Wait For (Req.ExecuteQuery(cmdPluviometro, 0, Null)) JobDone(j2 As HttpJob)
 	If j2.Success Then
@@ -74,10 +89,12 @@ Private Sub B4XPage_Appear
     
 			' Agrega al ComboBox
 			SD_xComboBoxPluviometro.Add(Nombre_Plvmtro, cdgo_Plvmtro)
+			itemsPuvlimetro.Add(cdgo_Plvmtro&":"&Nombre_Plvmtro)
 		Next
 	Else
 		Log("Error en la consulta de Maquina: " & j2.ErrorMessage)
 	End If
+	SearchTemplatePluvimetro.SetItems(itemsPuvlimetro)
 	j2.Release
 	
 End Sub
@@ -194,4 +211,14 @@ Private Sub Button1_Click
 	Catch
 		Log("Error al agregar datos: " & LastException.Message) ' Log del error con más detalles
 	End Try
+End Sub
+
+Private Sub SwiftButtonPluvimetro_Click
+	Wait For (Dialog.ShowTemplate(SearchTemplatePluvimetro, "", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		SwiftButtonPluvimetro.xLBL.Text = SearchTemplatePluvimetro.SelectedItem
+		Dim Partes() As String = Regex.Split(":", SearchTemplatePluvimetro.SelectedItem)
+	End If
+
+	
 End Sub
