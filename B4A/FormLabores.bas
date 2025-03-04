@@ -358,7 +358,8 @@ Private Sub Label14Time_Click
 End Sub
 
 Private Sub AS_DatePicker1_SelectedDateChanged(Date As Long)
-	' Obtener la fecha seleccionada
+	' Obtener la fecha seleccionada en el formato predeterminado
+	DateTime.DateFormat = "dd-MM-yyyy"
 	Dim formattedDate As String = DateTime.Date(Date)
 
 	' Reemplazar cualquier '/' por '-' en caso de que la fecha esté en formato con '/'
@@ -387,11 +388,11 @@ Private Sub AS_DatePicker1_SelectedDateChanged(Date As Long)
 
 	' Mostrar el valor de la fecha en un log
 	Log("Fecha inicio: " & fechaInicio)
-
 End Sub
 
 Private Sub AS_DatePicker2_SelectedDateChanged(Date As Long)
-	' Obtener la fecha seleccionada
+	' Obtener la fecha seleccionada en el formato predeterminado
+	DateTime.DateFormat = "dd-MM-yyyy"
 	Dim formattedDate As String = DateTime.Date(Date)
 
 	' Reemplazar cualquier '/' por '-' en caso de que la fecha esté en formato con '/'
@@ -402,7 +403,7 @@ Private Sub AS_DatePicker2_SelectedDateChanged(Date As Long)
 
 	' Verificar que la fecha esté en el formato dd-MM-yyyy
 	If dateParts.Length = 3 Then
-		' Reformatear la fecha como yyyy-MM-dd (invertir el orden de las partes)
+		' Reformatear la fecha como yyyy-MM-dd
 		formattedDate = dateParts(2) & "-" & dateParts(1) & "-" & dateParts(0)
 	End If
 
@@ -415,14 +416,13 @@ Private Sub AS_DatePicker2_SelectedDateChanged(Date As Long)
 	' Hacer invisible el Panel
 	Panel3.Visible = False
 
-	' Obtener la fecha y guardarla en la variable fecha
+	' Guardar la fecha en la variable pública
 	fechaFin = formattedDate
 
-	' Log para verificar el valor de la fecha
+	' Mostrar el valor de la fecha en un log
 	Log("Fecha fin: " & fechaFin)
-
-
 End Sub
+
 
 Sub CreateCommand(Name As String, Parameters() As Object) As DBCommand
 	Dim cmd As DBCommand
@@ -926,27 +926,47 @@ Private Sub ButtonInsumo_Click
 				Log(" - ID: " & ID)
 				Log(" - NOMBRE: " & nombreInsu)
 				Log(" - CANTIDAD: " & cantidadInsu)
-			
-			
+            
+				' Inicializar el gestor de solicitudes de la base de datos
 				Dim Req As DBRequestManager
 				Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
 
 				' Crear el comando con los parámetros
-				Dim cmd As DBCommand = CreateCommand("insert_laborInsumo", Array(consecutivo,ID,cantidadInsu))
+				Dim cmd As DBCommand = CreateCommand("insert_laborInsumo", Array(consecutivo, ID, cantidadInsu))
 
+				Log("Comando SQL: insert_laborInsumo")
+				Log("Parámetro 1 - consecutivo: " & consecutivo)
+				Log("Parámetro 2 - ID: " & ID)
+				Log("Parámetro 3 - cantidadInsu: " & cantidadInsu)
 				' Ejecutar el comando
 				Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
-				Wait For(j) JobDone(j As HttpJob)
-				
-				consecutivo  = consecutivo + 1
+				Wait For (j) JobDone(j As HttpJob)
+            
+				' Verificar si la inserción fue exitosa
+				If j.Success Then
+					' Mostrar mensaje de éxito
+					Log("Inserción insumo exitosa para ID: " & ID)
+					ToastMessageShow("Inserción exitosa para ID: " & ID, True)
+				Else
+					' Mostrar mensaje de error
+					Log("Error en la inserción insumo para ID: " & ID & ". Error: " & j.ErrorMessage)
+					ToastMessageShow("Error en la inserción para ID: " & ID, False)
+				End If
+            
+				' Liberar el trabajo
+				j.Release
+            
+				' Incrementar el consecutivo
+				consecutivo = consecutivo + 1
 
 			Catch
 				cantidadInsu = 0 ' Valor predeterminado si no es un número válido
+				Log("Error al procesar insumo la cantidad para ID: " & ID)
+				ToastMessageShow("Error al procesar la cantidad para ID: " & ID, False)
 			End Try
 		Else
 			cantidadInsu = 0
 		End If
-		    
 	Next
 	
 	Dim horaSistema As String = DateTime.Time(DateTime.Now)
@@ -960,10 +980,27 @@ Private Sub ButtonInsumo_Click
 	
 	Dim Req As DBRequestManager
 	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
-
+	
 	' Crear el comando con los parámetros
-	Dim cmd As DBCommand = CreateCommand("insert_labor", Array(nitEmpresaCBX, haciendaCBX, loteCBX, fechafmrto, "CA", tipoLabor, fechaInicio, fechaFin, elementoGasto, areaLabor, consecutivo, Null, areaLote, Null, fechaActual, horaSistema, user, DeviceName))
+	Dim cmd As DBCommand = CreateCommand("insert_labor", Array(nitEmpresaCBX, haciendaCBX, loteCBX, "0000-", "CA", tipoLabor, fechaInicio, fechaFin, elementoGasto, areaLabor, consecutivo, Null, areaLote, Null, fechaActual, horaSistema, user, DeviceName))
 
+
+	' Log de las variables
+	Log("nitEmpresaCBX: " & nitEmpresaCBX)
+	Log("haciendaCBX: " & haciendaCBX)
+	Log("loteCBX: " & loteCBX)
+	Log("fechafmrto: " & fechafmrto)
+	Log("tipoLabor: " & tipoLabor)
+	Log("fechaInicio: " & fechaInicio)
+	Log("fechaFin: " & fechaFin)
+	Log("elementoGasto: " & elementoGasto)
+	Log("areaLabor: " & areaLabor)
+	Log("consecutivo: " & consecutivo)
+	Log("areaLote: " & areaLote)
+	Log("fechaActual: " & fechaActual)
+	Log("horaSistema: " & horaSistema)
+	Log("user: " & user)
+	Log("DeviceName: " & DeviceName)
 	' Ejecutar el comando
 	Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
 	Wait For(j) JobDone(j As HttpJob)
@@ -972,10 +1009,10 @@ Private Sub ButtonInsumo_Click
 	Try
 		If j.Success Then
 			
-			MsgboxAsync("Se ha insertado correctamente.", "Éxito")
+			MsgboxAsync("Se ha insertado correctamente la labor.", "Éxito")
 		Else
 			' En caso de error, registrar los parámetros enviados
-			Log("Error al ejecutar la consulta: " & j.ErrorMessage)
+			Log("Error al ejecutar la consulta labor: " & j.ErrorMessage)
 
 		End If
 	Catch
@@ -985,7 +1022,6 @@ Private Sub ButtonInsumo_Click
 	
 	
 End Sub
-
 
 
 Private Sub ButtonRiego_Click
@@ -998,6 +1034,13 @@ Private Sub ButtonRiego_Click
 	' Crear el comando con los parámetros
 	Dim cmd As DBCommand = CreateCommand("insert_laborRiego", Array(consecutivo,tipoRiego,procedenciaRiego,caudalRiego,cantidadRiego))
 
+	' Mostrar los valores en el Log
+	Log("Comando SQL: insert_laborRiego")
+	Log("Parámetro 1 - consecutivo: " & consecutivo)
+	Log("Parámetro 2 - tipoRiego: " & tipoRiego)
+	Log("Parámetro 3 - procedenciaRiego: " & procedenciaRiego)
+	Log("Parámetro 4 - caudalRiego: " & caudalRiego)
+	Log("Parámetro 5 - cantidadRiego: " & cantidadRiego)
 	' Ejecutar el comando
 	Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
 	Wait For(j) JobDone(j As HttpJob)
@@ -1005,7 +1048,7 @@ Private Sub ButtonRiego_Click
 	' Manejar la respuesta
 	Try
 		If j.Success Then
-			MsgboxAsync("Se ha insertado correctamente.", "Éxito")
+			MsgboxAsync("Se ha insertado correctamente. Riego", "Éxito")
 		Else
 			Log("Error al ejecutar la consulta: " & j.ErrorMessage) ' Agregar más detalles si hay error en la solicitud
 		End If
@@ -1027,8 +1070,25 @@ Private Sub ButtonRiego_Click
 	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
 
 	' Crear el comando con los parámetros
-	Dim cmd As DBCommand = CreateCommand("insert_labor", Array(nitEmpresaCBX, haciendaCBX, loteCBX, fechafmrto, "CA", tipoLabor, fechaInicio, fechaFin, elementoGasto, areaLabor, consecutivo, Null, areaLote, Null, fechaActual, horaSistema, user, DeviceName))
+	Dim cmd As DBCommand = CreateCommand("insert_labor", Array(nitEmpresaCBX, haciendaCBX, loteCBX, "0000-", "CA", tipoLabor, fechaInicio, fechaFin, elementoGasto, areaLabor, consecutivo, Null, areaLote, Null, fechaActual, horaSistema, user, DeviceName))
 
+
+	' Log de las variables
+	Log("nitEmpresaCBX: " & nitEmpresaCBX)
+	Log("haciendaCBX: " & haciendaCBX)
+	Log("loteCBX: " & loteCBX)
+	Log("fechafmrto: " & fechafmrto)
+	Log("tipoLabor: " & tipoLabor)
+	Log("fechaInicio: " & fechaInicio)
+	Log("fechaFin: " & fechaFin)
+	Log("elementoGasto: " & elementoGasto)
+	Log("areaLabor: " & areaLabor)
+	Log("consecutivo: " & consecutivo)
+	Log("areaLote: " & areaLote)
+	Log("fechaActual: " & fechaActual)
+	Log("horaSistema: " & horaSistema)
+	Log("user: " & user)
+	Log("DeviceName: " & DeviceName)
 	' Ejecutar el comando
 	Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
 	Wait For(j) JobDone(j As HttpJob)
@@ -1037,10 +1097,10 @@ Private Sub ButtonRiego_Click
 	Try
 		If j.Success Then
 			
-			MsgboxAsync("Se ha insertado correctamente.", "Éxito")
+			MsgboxAsync("Se ha insertado correctamente la labor.", "Éxito")
 		Else
 			' En caso de error, registrar los parámetros enviados
-			Log("Error al ejecutar la consulta: " & j.ErrorMessage)
+			Log("Error al ejecutar la consulta labor: " & j.ErrorMessage)
 
 		End If
 	Catch
@@ -1074,10 +1134,20 @@ Private Sub ButtonSimbra_Click
    
 	Log(consecutivoSiembra)
 	
-	
-
 	' Crear el comando con los parámetros
 	Dim cmd As DBCommand = CreateCommand("insert_laborSiembra", Array(consecutivoSiembra, codigoSiembra, distanciaSiembra, toneladaSemillaSiembra, numeroPaquetesSiembra, procedenciaSiembra, tipoLabranzaSiembra, bandereoSiembra, numeroMacolloSiembra))
+
+	' Mostrar los valores en el Log
+	Log("Comando SQL: insert_laborSiembra")
+	Log("Parámetro 1 - consecutivoSiembra: " & consecutivoSiembra)
+	Log("Parámetro 2 - codigoSiembra: " & codigoSiembra)
+	Log("Parámetro 3 - distanciaSiembra: " & distanciaSiembra)
+	Log("Parámetro 4 - toneladaSemillaSiembra: " & toneladaSemillaSiembra)
+	Log("Parámetro 5 - numeroPaquetesSiembra: " & numeroPaquetesSiembra)
+	Log("Parámetro 6 - procedenciaSiembra: " & procedenciaSiembra)
+	Log("Parámetro 7 - tipoLabranzaSiembra: " & tipoLabranzaSiembra)
+	Log("Parámetro 8 - bandereoSiembra: " & bandereoSiembra)
+	Log("Parámetro 9 - numeroMacolloSiembra: " & numeroMacolloSiembra)
 
 	' Ejecutar el comando
 	Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
@@ -1086,22 +1156,16 @@ Private Sub ButtonSimbra_Click
 	' Manejar la respuesta
 	Try
 		If j.Success Then
-			
+			Log("Datos insertados correctamente en insert_laborSiembra")
+			ToastMessageShow("Datos de Siembra guardados con éxito", False) ' Muestra un mensaje en pantalla
 		Else
-			' Registrar detalles específicos del error
-			Log("Error al agregar datos: " & LastException) ' Detalles completos del error
-			Log("Error al ejecutar la consulta: " & j.ErrorMessage) ' Mensaje de error de la solicitud
-			Log("Valores enviados: consecutivo=" & consecutivo & ", codigoSiembra=" & codigoSiembra & _
-            ", distanciaSiembra=" & distanciaSiembra & ", toneladaSemillaSiembra=" & toneladaSemillaSiembra & _
-            ", numeroPaquetesSiembra=" & numeroPaquetesSiembra & ", procedenciaSiembra=" & procedenciaSiembra & _
-            ", tipoLabranzaSiembra=" & tipoLabranzaSiembra & ", bandereoSiembra=" & bandereoSiembra & _
-            ", numeroMacolloSiembra=" & numeroMacolloSiembra)
+			ToastMessageShow("Error al guardar los datos", True) ' Muestra un mensaje de error en pantalla
 		End If
 	Catch
 		' Registrar la excepción con detalles completos
 		Log("Excepción capturada: " & LastException)
+		ToastMessageShow("Se produjo un error inesperado", True) ' Mensaje de error general
 	End Try
-
 
 	
 	Dim horaSistema As String = DateTime.Time(DateTime.Now)
@@ -1117,8 +1181,25 @@ Private Sub ButtonSimbra_Click
 	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
 
 	' Crear el comando con los parámetros
-	Dim cmd As DBCommand = CreateCommand("insert_labor", Array(nitEmpresaCBX, haciendaCBX, loteCBX, fechafmrto, "CA", tipoLabor, fechaInicio, fechaFin, elementoGasto, areaLabor, consecutivo, Null, areaLote, Null, fechaActual, horaSistema, user, DeviceName))
+	Dim cmd As DBCommand = CreateCommand("insert_labor", Array(nitEmpresaCBX, haciendaCBX, loteCBX, "0000-", "CA", tipoLabor, fechaInicio, fechaFin, elementoGasto, areaLabor, consecutivo, Null, areaLote, Null, fechaActual, horaSistema, user, DeviceName))
 
+
+	' Log de las variables
+	Log("nitEmpresaCBX: " & nitEmpresaCBX)
+	Log("haciendaCBX: " & haciendaCBX)
+	Log("loteCBX: " & loteCBX)
+	Log("fechafmrto: " & fechafmrto)
+	Log("tipoLabor: " & tipoLabor)
+	Log("fechaInicio: " & fechaInicio)
+	Log("fechaFin: " & fechaFin)
+	Log("elementoGasto: " & elementoGasto)
+	Log("areaLabor: " & areaLabor)
+	Log("consecutivo: " & consecutivo)
+	Log("areaLote: " & areaLote)
+	Log("fechaActual: " & fechaActual)
+	Log("horaSistema: " & horaSistema)
+	Log("user: " & user)
+	Log("DeviceName: " & DeviceName)
 	' Ejecutar el comando
 	Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
 	Wait For(j) JobDone(j As HttpJob)
@@ -1127,17 +1208,16 @@ Private Sub ButtonSimbra_Click
 	Try
 		If j.Success Then
 			
-			MsgboxAsync("Se ha insertado correctamente.", "Éxito")
+			MsgboxAsync("Se ha insertado correctamente la labor.", "Éxito")
 		Else
 			' En caso de error, registrar los parámetros enviados
-			Log("Error al ejecutar la consulta: " & j.ErrorMessage)
+			Log("Error al ejecutar la consulta labor: " & j.ErrorMessage)
 
 		End If
 	Catch
 		Log("Error al agregar datos: " & LastException.Message) ' Log del error con más detalles
 		
 	End Try
-
 End Sub
 
 
@@ -1236,6 +1316,7 @@ Private Sub SwiftButtonHacienda_Click
 		End If
 		SearchTemplateLote.SetItems(ItemsLote)
 		SwiftButtonLote.Enabled = True
+		Log(haciendaCBX)
 		' Libera el trabajo HTTP
 		j.Release
 		'***************** FIN CONSULTA LOTE ************************
@@ -1244,27 +1325,47 @@ End Sub
 
 Private Sub SwiftButtonLote_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateLote, "", "", "CANCEL")) Complete (Result As Int)
+    
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonLote.xLBL.Text = SearchTemplateLote.SelectedItem
-		loteCBX = SearchTemplateNit.SelectedItem
+		Dim Partes() As String = Regex.Split(":", SearchTemplateLote.SelectedItem)
+		loteCBX = Partes(0) ' Asignar solo la primera parte
 	End If
+	
+	Log(loteCBX)
 End Sub
 
 Private Sub SwiftButtonLabor_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateLabor, "", "", "CANCEL")) Complete (Result As Int)
+    
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonLabor.xLBL.Text = SearchTemplateLabor.SelectedItem
-		Dim LABORCOMPLETO As String = SearchTemplateLabor.SelectedItem
+		Dim Partes() As String = Regex.Split(":", SearchTemplateLabor.SelectedItem)
+		elementoLabor = Partes(0) ' Asignar solo la primera parte
 	End If
+	Log(elementoLabor)
 End Sub
+
 
 Private Sub SwiftButtonElemento_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateElemento, "", "", "CANCEL")) Complete (Result As Int)
+    
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonElemento.xLBL.Text = SearchTemplateElemento.SelectedItem
-		Dim ELEMENTOCOMPLETO As String = SearchTemplateElemento.SelectedItem
+		Dim Partes() As String = Regex.Split(":", SearchTemplateElemento.SelectedItem)
+		elementoGasto = Partes(0) ' Asignar solo la primera parte
+        
+		' Obtener solo las dos primeras letras de elementoGasto
+		If elementoGasto.Length >= 2 Then
+			elementoGasto = elementoGasto.SubString2(0, 2)
+		Else
+			' Si la cadena tiene menos de 2 caracteres, asignar la cadena completa
+			elementoGasto = elementoGasto
+		End If
 	End If
+	Log(elementoGasto)
 End Sub
+
 
 Private Sub SwiftButtonTypeForm_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateTypeForm, "", "", "CANCEL")) Complete (Result As Int)
@@ -1272,6 +1373,8 @@ Private Sub SwiftButtonTypeForm_Click
 		SwiftButtonTypeForm.xLBL.Text = SearchTemplateTypeForm.SelectedItem
 		Dim TYPEFORMCOMPLETO As String = SearchTemplateTypeForm.SelectedItem
 		Dim Partes() As String = Regex.Split(":", TYPEFORMCOMPLETO)
+		tipoLabor = Partes(0)
+		Log(tipoLabor)
 	Dim tipoForm As String = Partes(0)
 	
 	Select Case tipoForm
@@ -1316,28 +1419,46 @@ Private Sub SwiftButtonInsumo_Click
 		NAMEINSUMO = partes(1)
 		IDINSUMO = partes(0)
 	End If
+	Log(IDINSUMO)
 End Sub
 
 Private Sub SwiftButtonRiego_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateRiego, "", "", "CANCEL")) Complete (Result As Int)
+    
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonRiego.xLBL.Text = SearchTemplateRiego.SelectedItem
-		Dim RIEGOCOMPLETO As String = SearchTemplateRiego.SelectedItem
+		Dim Partes() As String = Regex.Split(":", SearchTemplateRiego.SelectedItem)
+		tipoRiego = Partes(0) ' Asignar solo la primera parte
 	End If
+	Log(tipoRiego)
 End Sub
+
 
 Private Sub SwiftButtonTipoLabranza_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateTipoLabranza, "", "", "CANCEL")) Complete (Result As Int)
+
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonTipoLabranza.xLBL.Text = SearchTemplateTipoLabranza.SelectedItem
-		Dim CODIGOLABRANZA As String = SearchTemplateTipoLabranza.SelectedItem
+		Dim Partes() As String = Regex.Split(":", SearchTemplateTipoLabranza.SelectedItem)
+        
+		' Obtener solo los últimos 2 caracteres
+		tipoLabranzaSiembra = Partes(0)
+		If tipoLabranzaSiembra.Length >= 2 Then
+			tipoLabranzaSiembra = tipoLabranzaSiembra.SubString(tipoLabranzaSiembra.Length - 2)
+		End If
 	End If
+
+	Log(tipoLabranzaSiembra)
 End Sub
+
 
 Private Sub SwiftButtonVariedad_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateVariedad, "", "", "CANCEL")) Complete (Result As Int)
+    
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonVariedad.xLBL.Text = SearchTemplateVariedad.SelectedItem
-		Dim LABRANZACOMPLETA As String = SearchTemplateVariedad.SelectedItem
+		Dim Partes() As String = Regex.Split(":", SearchTemplateVariedad.SelectedItem)
+		codigoSiembra = Partes(0)
 	End If
+	Log(codigoSiembra)
 End Sub

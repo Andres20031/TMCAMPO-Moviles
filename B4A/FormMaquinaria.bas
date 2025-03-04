@@ -518,18 +518,44 @@ End Sub
 
 Private Sub SwiftButtonMaquina_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateMaquina, "", "", "CANCEL")) Complete (Result As Int)
+    
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonMaquina.xLBL.Text = SearchTemplateMaquina.SelectedItem
-		Dim MAQUINACOMPLETO As String = SearchTemplateMaquina.SelectedItem
+        
+		' Verificar si el texto contiene ":"
+		If SearchTemplateMaquina.SelectedItem.Contains(":") Then
+			Dim Partes() As String = Regex.Split(":", SearchTemplateMaquina.SelectedItem)
+			maquina = Partes(0) ' Asignar solo la primera parte
+            
+			Log("Máquina seleccionada: " & maquina)
+		Else
+			Log("El texto no contiene ':' por lo que no se pudo dividir.")
+			maquina = SearchTemplateMaquina.SelectedItem ' Asignar el valor completo en caso de fallo
+		End If
 	End If
 End Sub
 
+
 Private Sub SwiftButtonLabor_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateLabor, "", "", "CANCEL")) Complete (Result As Int)
+    
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonLabor.xLBL.Text = SearchTemplateLabor.SelectedItem
-		Dim LABORCOMPLETO As String = SearchTemplateLabor.SelectedItem
+        
+		' Verificar si el texto contiene ":"
+		If SearchTemplateLabor.SelectedItem.Contains(":") Then
+			Dim Partes() As String = Regex.Split(":", SearchTemplateLabor.SelectedItem)
+			labor = Partes(0) ' Asignar solo la primera parte
+            
+			' Registrar en el log para verificar los valores obtenidos
+			Log("Texto completo: " & SearchTemplateLabor.SelectedItem)
+			Log("Labor seleccionada: " & labor)
+		Else
+			Log("El texto no contiene ':' por lo que no se pudo dividir.")
+			labor = SearchTemplateLabor.SelectedItem ' Asignar el valor completo en caso de fallo
+		End If
 	End If
+	Log(labor)
 End Sub
 
 Private Sub SwiftButtonNit_Click
@@ -627,6 +653,7 @@ Private Sub SwiftButtonHacienda_Click
 		SearchTemplateLote.SetItems(ItemsLote)
 		SwiftButtonLote.Enabled = True
 		' Libera el trabajo HTTP
+		Log(haciendaCBX)
 		j.Release
 		'***************** FIN CONSULTA LOTE ************************
 	End If
@@ -634,35 +661,94 @@ End Sub
 
 Private Sub SwiftButtonLote_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateLote, "", "", "CANCEL")) Complete (Result As Int)
+    
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonLote.xLBL.Text = SearchTemplateLote.SelectedItem
+        
+		Dim Partes() As String = Regex.Split(":", SearchTemplateLote.SelectedItem)
+		Lote= Partes(0) ' Asignar solo la primera parte
 	End If
+	Log(Lote)
 End Sub
+
 
 Private Sub SwiftButtonImplemento_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateImplemento, "", "", "CANCEL")) Complete (Result As Int)
+    
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonImplemento.xLBL.Text = SearchTemplateImplemento.SelectedItem
+        
+		' Verificar si el texto contiene ":"
+		If SearchTemplateImplemento.SelectedItem.Contains(":") Then
+			Dim Partes() As String = Regex.Split(":", SearchTemplateImplemento.SelectedItem)
+			implemento = Partes(0) ' Asignar solo la primera parte
+            
+	
+			Log("Implemento seleccionado: " & implemento)
+		Else
+			Log("El texto no contiene ':' por lo que no se pudo dividir.")
+			implemento = SearchTemplateImplemento.SelectedItem ' Asignar el valor completo en caso de fallo
+		End If
 	End If
 End Sub
+
 
 Private Sub SwiftButtonImplemento2_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateImplemento2, "", "", "CANCEL")) Complete (Result As Int)
+    
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonImplemento2.xLBL.Text = SearchTemplateImplemento2.SelectedItem
+        
+		' Verificar si el texto contiene ":"
+		If SearchTemplateImplemento2.SelectedItem.Contains(":") Then
+			Dim Partes() As String = Regex.Split(":", SearchTemplateImplemento2.SelectedItem)
+			implemento2 = Partes(0) ' Asignar solo la primera parte
+
+			Log("Implemento2 seleccionado: " & implemento2)
+		Else
+			Log("El texto no contiene ':' por lo que no se pudo dividir.")
+			implemento2 = SearchTemplateImplemento2.SelectedItem ' Asignar el valor completo en caso de fallo
+		End If
 	End If
 End Sub
+
 
 Private Sub SwiftButtonOperario_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateOperario, "", "", "CANCEL")) Complete (Result As Int)
+    
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonOperario.xLBL.Text = SearchTemplateOperario.SelectedItem
+        
+		' Verificar si el texto contiene ":"
+		If SearchTemplateOperario.SelectedItem.Contains(":") Then
+			Dim Partes() As String = Regex.Split(":", SearchTemplateOperario.SelectedItem)
+			operario = Partes(0) ' Asignar solo la primera parte
+            
+		
+			Log("Operario seleccionado: " & operario)
+		Else
+			Log("El texto no contiene ':' por lo que no se pudo dividir.")
+			operario = SearchTemplateOperario.SelectedItem ' Asignar el valor completo en caso de fallo
+		End If
 	End If
 End Sub
 
+
 Private Sub SwiftButtonObservaciones_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateObservaciones, "", "", "CANCEL")) Complete (Result As Int)
+    
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonObservaciones.xLBL.Text = SearchTemplateObservaciones.SelectedItem
+        
+		' Separar el texto por ":" y asignar la primera parte
+		Dim Partes() As String = Regex.Split(":", SearchTemplateObservaciones.SelectedItem)
+		Dim observaciones As String = Partes(0) ' Guardar solo la primera parte
+
+		' Registrar en el log para depuración
+		
+		Log("Primera parte (observacionCBX): " & observaciones)
+	Else
+		Log("Operación cancelada por el usuario.")
 	End If
 End Sub
+
