@@ -946,7 +946,7 @@ Private Sub ButtonInsumo_Click
 				If j.Success Then
 					' Mostrar mensaje de éxito
 					Log("Inserción insumo exitosa para ID: " & ID)
-					ToastMessageShow("Inserción exitosa para ID: " & ID, True)
+					ToastMessageShow("Inserción exitosa para Insumo : " & ID, True)
 				Else
 					' Mostrar mensaje de error
 					Log("Error en la inserción insumo para ID: " & ID & ". Error: " & j.ErrorMessage)
@@ -1026,8 +1026,6 @@ End Sub
 
 Private Sub ButtonRiego_Click
 	
-
-	
 	Dim Req As DBRequestManager
 	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
 
@@ -1048,15 +1046,16 @@ Private Sub ButtonRiego_Click
 	' Manejar la respuesta
 	Try
 		If j.Success Then
-			MsgboxAsync("Se ha insertado correctamente. Riego", "Éxito")
+			ToastMessageShow("Se ha insertado correctamente Insumo", False) ' Mensaje de éxito
 		Else
-			Log("Error al ejecutar la consulta: " & j.ErrorMessage) ' Agregar más detalles si hay error en la solicitud
+			ToastMessageShow("Error al insertar Insumo", True) ' Mensaje de error
+			Log("Error al ejecutar la consulta: " & j.ErrorMessage) ' Detalles del error
 		End If
 	Catch
+		ToastMessageShow("Error inesperado al insertar Insumo", True) ' Mensaje de error inesperado
 		Log("Error al agregar datos: " & LastException.Message) ' Log del error con más detalles
 	End Try
-	
-	
+
 	Dim horaSistema As String = DateTime.Time(DateTime.Now)
 	user = Main.pUser
 	DeviceName = GetDeviceName
@@ -1156,16 +1155,15 @@ Private Sub ButtonSimbra_Click
 	' Manejar la respuesta
 	Try
 		If j.Success Then
-			Log("Datos insertados correctamente en insert_laborSiembra")
-			ToastMessageShow("Datos de Siembra guardados con éxito", False) ' Muestra un mensaje en pantalla
+			Log("Datos insertados correctamente en insert_laborInsumo")
+			ToastMessageShow("Datos de Insumo guardados con éxito", False) ' Mensaje de éxito
 		Else
-			ToastMessageShow("Error al guardar los datos", True) ' Muestra un mensaje de error en pantalla
+			ToastMessageShow("Error al guardar los datos de Insumo", True) ' Mensaje de error
 		End If
 	Catch
-		' Registrar la excepción con detalles completos
-		Log("Excepción capturada: " & LastException)
+    Log("Excepción capturada en insert_laborInsumo: " & LastException)
 		ToastMessageShow("Se produjo un error inesperado", True) ' Mensaje de error general
-	End Try
+		End Try
 
 	
 	Dim horaSistema As String = DateTime.Time(DateTime.Now)

@@ -215,10 +215,26 @@ End Sub
 
 Private Sub SwiftButtonPluvimetro_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplatePluvimetro, "", "", "CANCEL")) Complete (Result As Int)
+    
 	If Result = xui.DialogResponse_Positive Then
 		SwiftButtonPluvimetro.xLBL.Text = SearchTemplatePluvimetro.SelectedItem
 		Dim Partes() As String = Regex.Split(":", SearchTemplatePluvimetro.SelectedItem)
-	End If
+		selectedCdgo_Plvmtro = Partes(0) ' Código del Pluviómetro
 
-	
+		' Buscar los datos en el Map
+		If pluviometroMap.ContainsKey(selectedCdgo_Plvmtro) Then
+			Dim details As Map = pluviometroMap.Get(selectedCdgo_Plvmtro)
+			selectedNombre_Plvmtro = details.Get("Nombre")
+			selectedNit_Plvmtro = details.Get("Nit")
+			selectedHda_Pvlmtro = details.Get("Hda")
+            
+			' Log para verificar los valores obtenidos
+			Log("Código: " & selectedCdgo_Plvmtro)
+			Log("Nombre: " & selectedNombre_Plvmtro)
+			Log("NIT: " & selectedNit_Plvmtro)
+			Log("Hacienda: " & selectedHda_Pvlmtro)
+		Else
+			Log("No se encontraron detalles para el código seleccionado.")
+		End If
+	End If
 End Sub
