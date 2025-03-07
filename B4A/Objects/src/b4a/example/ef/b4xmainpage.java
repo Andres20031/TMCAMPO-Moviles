@@ -38,6 +38,7 @@ public b4a.example.ef.listdados _listdados_c = null;
 public b4a.example.ef.formmaquinaria _formmaquinaria_c = null;
 public b4a.example.ef.formprecipitacion _formprecipitacion_c = null;
 public b4a.example.ef.formlabores _formlabores_c = null;
+public b4a.example.ef.programa_labores _pgprogramalabores = null;
 public String _rdclink = "";
 public String _parametrosusuario = "";
 public ADR.stringdemo.stringfunctions _sf = null;
@@ -56,99 +57,103 @@ public b4a.example.ef.b4xpages _b4xpages = null;
 public b4a.example.ef.httputils2service _httputils2service = null;
 public b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public String  _b4xpage_appear() throws Exception{
- //BA.debugLineNum = 101;BA.debugLine="Sub B4XPage_Appear";
- //BA.debugLineNum = 103;BA.debugLine="End Sub";
+ //BA.debugLineNum = 106;BA.debugLine="Sub B4XPage_Appear";
+ //BA.debugLineNum = 108;BA.debugLine="End Sub";
 return "";
 }
 public String  _b4xpage_created(anywheresoftware.b4a.objects.B4XViewWrapper _root1) throws Exception{
- //BA.debugLineNum = 50;BA.debugLine="Private Sub B4XPage_Created(Root1 As B4XView)";
- //BA.debugLineNum = 54;BA.debugLine="Root = Root1";
+ //BA.debugLineNum = 51;BA.debugLine="Private Sub B4XPage_Created(Root1 As B4XView)";
+ //BA.debugLineNum = 55;BA.debugLine="Root = Root1";
 _root = _root1;
- //BA.debugLineNum = 56;BA.debugLine="Root.LoadLayout(\"login\")";
+ //BA.debugLineNum = 57;BA.debugLine="Root.LoadLayout(\"login\")";
 _root.LoadLayout("login",ba);
- //BA.debugLineNum = 59;BA.debugLine="utilClass.Initialize";
+ //BA.debugLineNum = 60;BA.debugLine="utilClass.Initialize";
 _utilclass._initialize /*String*/ (ba);
- //BA.debugLineNum = 62;BA.debugLine="utilClass.SetStatusBarColor(0xB4008000,0xB4008000";
+ //BA.debugLineNum = 63;BA.debugLine="utilClass.SetStatusBarColor(0xB4008000,0xB4008000";
 _utilclass._setstatusbarcolor /*String*/ (((int)0xb4008000),((int)0xb4008000));
- //BA.debugLineNum = 65;BA.debugLine="EditText1Mail.Color = Colors.Transparent";
+ //BA.debugLineNum = 66;BA.debugLine="EditText1Mail.Color = Colors.Transparent";
 _edittext1mail.setColor(__c.Colors.Transparent);
- //BA.debugLineNum = 66;BA.debugLine="EditText2Pass.Color = Colors.Transparent";
+ //BA.debugLineNum = 67;BA.debugLine="EditText2Pass.Color = Colors.Transparent";
 _edittext2pass.setColor(__c.Colors.Transparent);
- //BA.debugLineNum = 69;BA.debugLine="menu_C.Initialize";
+ //BA.debugLineNum = 70;BA.debugLine="menu_C.Initialize";
 _menu_c._initialize /*Object*/ (ba);
- //BA.debugLineNum = 70;BA.debugLine="ListPerson_C.Initialize";
+ //BA.debugLineNum = 71;BA.debugLine="ListPerson_C.Initialize";
 _listperson_c._initialize /*Object*/ (ba);
- //BA.debugLineNum = 71;BA.debugLine="DetailsPerson_C.Initialize";
+ //BA.debugLineNum = 72;BA.debugLine="DetailsPerson_C.Initialize";
 _detailsperson_c._initialize /*Object*/ (ba);
- //BA.debugLineNum = 72;BA.debugLine="FormPerson_C.Initialize";
+ //BA.debugLineNum = 73;BA.debugLine="FormPerson_C.Initialize";
 _formperson_c._initialize /*Object*/ (ba);
- //BA.debugLineNum = 73;BA.debugLine="Form_C.Initialize";
+ //BA.debugLineNum = 74;BA.debugLine="Form_C.Initialize";
 _form_c._initialize /*Object*/ (ba);
- //BA.debugLineNum = 74;BA.debugLine="listDados_C.Initialize";
+ //BA.debugLineNum = 75;BA.debugLine="listDados_C.Initialize";
 _listdados_c._initialize /*Object*/ (ba);
- //BA.debugLineNum = 75;BA.debugLine="FormMaquinaria_C.Initialize";
+ //BA.debugLineNum = 76;BA.debugLine="FormMaquinaria_C.Initialize";
 _formmaquinaria_c._initialize /*Object*/ (ba);
- //BA.debugLineNum = 76;BA.debugLine="FormPrecipitacion_C.Initialize";
+ //BA.debugLineNum = 77;BA.debugLine="FormPrecipitacion_C.Initialize";
 _formprecipitacion_c._initialize /*Object*/ (ba);
- //BA.debugLineNum = 77;BA.debugLine="FormLabores_C.Initialize";
+ //BA.debugLineNum = 78;BA.debugLine="FormLabores_C.Initialize";
 _formlabores_c._initialize /*Object*/ (ba);
- //BA.debugLineNum = 80;BA.debugLine="B4XPages.AddPageAndCreate(\"menu\", menu_C)";
+ //BA.debugLineNum = 79;BA.debugLine="pgProgramaLabores.Initialize";
+_pgprogramalabores._initialize /*Object*/ (ba);
+ //BA.debugLineNum = 82;BA.debugLine="B4XPages.AddPageAndCreate(\"menu\", menu_C)";
 _b4xpages._addpageandcreate /*String*/ (ba,"menu",(Object)(_menu_c));
- //BA.debugLineNum = 82;BA.debugLine="B4XPages.AddPageAndCreate(\"ListPerson\", ListPerso";
+ //BA.debugLineNum = 84;BA.debugLine="B4XPages.AddPageAndCreate(\"ListPerson\", ListPerso";
 _b4xpages._addpageandcreate /*String*/ (ba,"ListPerson",(Object)(_listperson_c));
- //BA.debugLineNum = 84;BA.debugLine="B4XPages.AddPageAndCreate(\"DetailsPerson\", Detail";
+ //BA.debugLineNum = 86;BA.debugLine="B4XPages.AddPageAndCreate(\"DetailsPerson\", Detail";
 _b4xpages._addpageandcreate /*String*/ (ba,"DetailsPerson",(Object)(_detailsperson_c));
- //BA.debugLineNum = 86;BA.debugLine="B4XPages.AddPageAndCreate(\"FormPerson\", FormPerso";
+ //BA.debugLineNum = 88;BA.debugLine="B4XPages.AddPageAndCreate(\"FormPerson\", FormPerso";
 _b4xpages._addpageandcreate /*String*/ (ba,"FormPerson",(Object)(_formperson_c));
- //BA.debugLineNum = 88;BA.debugLine="B4XPages.AddPage(\"Form\", Form_C)";
+ //BA.debugLineNum = 90;BA.debugLine="B4XPages.AddPage(\"Form\", Form_C)";
 _b4xpages._addpage /*String*/ (ba,"Form",(Object)(_form_c));
- //BA.debugLineNum = 90;BA.debugLine="B4XPages.AddPageAndCreate(\"listDados\", listDados_";
+ //BA.debugLineNum = 92;BA.debugLine="B4XPages.AddPageAndCreate(\"listDados\", listDados_";
 _b4xpages._addpageandcreate /*String*/ (ba,"listDados",(Object)(_listdados_c));
- //BA.debugLineNum = 92;BA.debugLine="B4XPages.AddPageAndCreate(\"FormMaquinaria\", FormM";
+ //BA.debugLineNum = 94;BA.debugLine="B4XPages.AddPageAndCreate(\"FormMaquinaria\", FormM";
 _b4xpages._addpageandcreate /*String*/ (ba,"FormMaquinaria",(Object)(_formmaquinaria_c));
- //BA.debugLineNum = 94;BA.debugLine="B4XPages.AddPageAndCreate(\"FormPrecipitacion\", Fo";
+ //BA.debugLineNum = 96;BA.debugLine="B4XPages.AddPageAndCreate(\"FormPrecipitacion\", Fo";
 _b4xpages._addpageandcreate /*String*/ (ba,"FormPrecipitacion",(Object)(_formprecipitacion_c));
- //BA.debugLineNum = 96;BA.debugLine="B4XPages.AddPageAndCreate(\"FormLabores\", FormLabo";
+ //BA.debugLineNum = 98;BA.debugLine="B4XPages.AddPageAndCreate(\"FormLabores\", FormLabo";
 _b4xpages._addpageandcreate /*String*/ (ba,"FormLabores",(Object)(_formlabores_c));
- //BA.debugLineNum = 99;BA.debugLine="End Sub";
+ //BA.debugLineNum = 100;BA.debugLine="B4XPages.AddPageAndCreate(\"programa_labores\", pgP";
+_b4xpages._addpageandcreate /*String*/ (ba,"programa_labores",(Object)(_pgprogramalabores));
+ //BA.debugLineNum = 104;BA.debugLine="End Sub";
 return "";
 }
 public String  _button1login_click() throws Exception{
 String _usuario = "";
 String _contraseña = "";
- //BA.debugLineNum = 105;BA.debugLine="Private Sub Button1LOGIN_Click";
- //BA.debugLineNum = 107;BA.debugLine="Dim usuario As String";
+ //BA.debugLineNum = 110;BA.debugLine="Private Sub Button1LOGIN_Click";
+ //BA.debugLineNum = 112;BA.debugLine="Dim usuario As String";
 _usuario = "";
- //BA.debugLineNum = 108;BA.debugLine="Dim contraseña As String";
+ //BA.debugLineNum = 113;BA.debugLine="Dim contraseña As String";
 _contraseña = "";
- //BA.debugLineNum = 111;BA.debugLine="usuario = EditText1Mail.text";
+ //BA.debugLineNum = 116;BA.debugLine="usuario = EditText1Mail.text";
 _usuario = _edittext1mail.getText();
- //BA.debugLineNum = 112;BA.debugLine="contraseña = EditText2Pass.text";
+ //BA.debugLineNum = 117;BA.debugLine="contraseña = EditText2Pass.text";
 _contraseña = _edittext2pass.getText();
- //BA.debugLineNum = 115;BA.debugLine="If usuario = \"\" Or contraseña = \"\" Then";
+ //BA.debugLineNum = 120;BA.debugLine="If usuario = \"\" Or contraseña = \"\" Then";
 if ((_usuario).equals("") || (_contraseña).equals("")) { 
- //BA.debugLineNum = 116;BA.debugLine="MsgboxAsync(\"Usuario o contraseña invalido\", \"TM";
+ //BA.debugLineNum = 121;BA.debugLine="MsgboxAsync(\"Usuario o contraseña invalido\", \"TM";
 __c.MsgboxAsync(BA.ObjectToCharSequence("Usuario o contraseña invalido"),BA.ObjectToCharSequence("TM App"),ba);
  }else {
- //BA.debugLineNum = 119;BA.debugLine="GetRecordUser(Main.pDBNameSeguridad,usuario)";
+ //BA.debugLineNum = 124;BA.debugLine="GetRecordUser(Main.pDBNameSeguridad,usuario)";
 _getrecorduser(_main._pdbnameseguridad /*String*/ ,_usuario);
- //BA.debugLineNum = 121;BA.debugLine="If Main.pNit = \"890307964\" Or Main.pNit = Null T";
+ //BA.debugLineNum = 126;BA.debugLine="If Main.pNit = \"890307964\" Or Main.pNit = Null T";
 if ((_main._pnit /*String*/ ).equals("890307964") || _main._pnit /*String*/ == null) { 
- //BA.debugLineNum = 122;BA.debugLine="Panel1Precipitacion2.Enabled = False";
+ //BA.debugLineNum = 127;BA.debugLine="Panel1Precipitacion2.Enabled = False";
 _panel1precipitacion2.setEnabled(__c.False);
- //BA.debugLineNum = 123;BA.debugLine="pnlPrograma_de_labores.Enabled = False";
+ //BA.debugLineNum = 128;BA.debugLine="pnlPrograma_de_labores.Enabled = False";
 _pnlprograma_de_labores.setEnabled(__c.False);
- //BA.debugLineNum = 124;BA.debugLine="pnlPrecipitacion.Enabled = False";
+ //BA.debugLineNum = 129;BA.debugLine="pnlPrecipitacion.Enabled = False";
 _pnlprecipitacion.setEnabled(__c.False);
- //BA.debugLineNum = 125;BA.debugLine="pnlCosecha.Enabled = False";
+ //BA.debugLineNum = 130;BA.debugLine="pnlCosecha.Enabled = False";
 _pnlcosecha.setEnabled(__c.False);
- //BA.debugLineNum = 126;BA.debugLine="pnlTaller.Enabled = False";
+ //BA.debugLineNum = 131;BA.debugLine="pnlTaller.Enabled = False";
 _pnltaller.setEnabled(__c.False);
- //BA.debugLineNum = 127;BA.debugLine="PnlMaquinaria.Enabled = True";
+ //BA.debugLineNum = 132;BA.debugLine="PnlMaquinaria.Enabled = True";
 _pnlmaquinaria.setEnabled(__c.True);
  };
  };
- //BA.debugLineNum = 135;BA.debugLine="End Sub";
+ //BA.debugLineNum = 140;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals() throws Exception{
@@ -181,60 +186,62 @@ _formmaquinaria_c = new b4a.example.ef.formmaquinaria();
 _formprecipitacion_c = new b4a.example.ef.formprecipitacion();
  //BA.debugLineNum = 24;BA.debugLine="Private FormLabores_C As FormLabores";
 _formlabores_c = new b4a.example.ef.formlabores();
- //BA.debugLineNum = 26;BA.debugLine="Private const rdcLink As String = \"http://84.46.2";
+ //BA.debugLineNum = 25;BA.debugLine="Private pgProgramaLabores As programa_labores";
+_pgprogramalabores = new b4a.example.ef.programa_labores();
+ //BA.debugLineNum = 27;BA.debugLine="Private const rdcLink As String = \"http://84.46.2";
 _rdclink = "http://84.46.255.129:17178/rdc";
- //BA.debugLineNum = 27;BA.debugLine="Dim parametrosUsuario As String=\"\"";
+ //BA.debugLineNum = 28;BA.debugLine="Dim parametrosUsuario As String=\"\"";
 _parametrosusuario = "";
- //BA.debugLineNum = 29;BA.debugLine="Dim sf As StringFunctions";
+ //BA.debugLineNum = 30;BA.debugLine="Dim sf As StringFunctions";
 _sf = new ADR.stringdemo.stringfunctions();
- //BA.debugLineNum = 30;BA.debugLine="sf.Initialize";
+ //BA.debugLineNum = 31;BA.debugLine="sf.Initialize";
 _sf._vvv1(ba);
- //BA.debugLineNum = 32;BA.debugLine="Private Panel1Precipitacion2 As B4XView";
+ //BA.debugLineNum = 33;BA.debugLine="Private Panel1Precipitacion2 As B4XView";
 _panel1precipitacion2 = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 33;BA.debugLine="Private pnlPrograma_de_labores As B4XView";
+ //BA.debugLineNum = 34;BA.debugLine="Private pnlPrograma_de_labores As B4XView";
 _pnlprograma_de_labores = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 34;BA.debugLine="Private pnlPrecipitacion As B4XView";
+ //BA.debugLineNum = 35;BA.debugLine="Private pnlPrecipitacion As B4XView";
 _pnlprecipitacion = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 35;BA.debugLine="Private pnlCosecha As B4XView";
+ //BA.debugLineNum = 36;BA.debugLine="Private pnlCosecha As B4XView";
 _pnlcosecha = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 36;BA.debugLine="Private pnlTaller As B4XView";
+ //BA.debugLineNum = 37;BA.debugLine="Private pnlTaller As B4XView";
 _pnltaller = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 37;BA.debugLine="Private pnlPersonal As B4XView";
+ //BA.debugLineNum = 38;BA.debugLine="Private pnlPersonal As B4XView";
 _pnlpersonal = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 38;BA.debugLine="Private PnlMaquinaria As B4XView";
+ //BA.debugLineNum = 39;BA.debugLine="Private PnlMaquinaria As B4XView";
 _pnlmaquinaria = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 39;BA.debugLine="Private utilClass As util";
+ //BA.debugLineNum = 40;BA.debugLine="Private utilClass As util";
 _utilclass = new b4a.example.ef.util();
- //BA.debugLineNum = 42;BA.debugLine="End Sub";
+ //BA.debugLineNum = 43;BA.debugLine="End Sub";
 return "";
 }
 public b4a.example.ef.main._dbcommand  _createcommand(String _name,Object[] _parameters) throws Exception{
 b4a.example.ef.main._dbcommand _cmd = null;
- //BA.debugLineNum = 205;BA.debugLine="Sub CreateCommand(Name As String, Parameters() As";
- //BA.debugLineNum = 206;BA.debugLine="Dim cmd As DBCommand";
+ //BA.debugLineNum = 210;BA.debugLine="Sub CreateCommand(Name As String, Parameters() As";
+ //BA.debugLineNum = 211;BA.debugLine="Dim cmd As DBCommand";
 _cmd = new b4a.example.ef.main._dbcommand();
- //BA.debugLineNum = 207;BA.debugLine="cmd.Initialize";
+ //BA.debugLineNum = 212;BA.debugLine="cmd.Initialize";
 _cmd.Initialize();
- //BA.debugLineNum = 208;BA.debugLine="cmd.Name = Name";
+ //BA.debugLineNum = 213;BA.debugLine="cmd.Name = Name";
 _cmd.Name /*String*/  = _name;
- //BA.debugLineNum = 209;BA.debugLine="If Parameters <> Null Then cmd.Parameters = Param";
+ //BA.debugLineNum = 214;BA.debugLine="If Parameters <> Null Then cmd.Parameters = Param";
 if (_parameters!= null) { 
 _cmd.Parameters /*Object[]*/  = _parameters;};
- //BA.debugLineNum = 210;BA.debugLine="Return cmd";
+ //BA.debugLineNum = 215;BA.debugLine="Return cmd";
 if (true) return _cmd;
- //BA.debugLineNum = 211;BA.debugLine="End Sub";
+ //BA.debugLineNum = 216;BA.debugLine="End Sub";
 return null;
 }
 public b4a.example.ef.dbrequestmanager  _createrequest(String _db) throws Exception{
 b4a.example.ef.dbrequestmanager _req = null;
- //BA.debugLineNum = 199;BA.debugLine="Sub CreateRequest (Db As String) As DBRequestManag";
- //BA.debugLineNum = 200;BA.debugLine="Dim Req As DBRequestManager";
+ //BA.debugLineNum = 204;BA.debugLine="Sub CreateRequest (Db As String) As DBRequestManag";
+ //BA.debugLineNum = 205;BA.debugLine="Dim Req As DBRequestManager";
 _req = new b4a.example.ef.dbrequestmanager();
- //BA.debugLineNum = 201;BA.debugLine="Req.Initialize(Me, rdcLink & \"?DBName=\" &  Main.p";
+ //BA.debugLineNum = 206;BA.debugLine="Req.Initialize(Me, rdcLink & \"?DBName=\" &  Main.p";
 _req._initialize /*String*/ (ba,this,_rdclink+"?DBName="+_main._pdbnameseguridad /*String*/ );
- //BA.debugLineNum = 202;BA.debugLine="Return Req";
+ //BA.debugLineNum = 207;BA.debugLine="Return Req";
 if (true) return _req;
- //BA.debugLineNum = 203;BA.debugLine="End Sub";
+ //BA.debugLineNum = 208;BA.debugLine="End Sub";
 return null;
 }
 public void  _getrecorduser(String _usedbuser,String _usuario) throws Exception{
@@ -279,20 +286,20 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 139;BA.debugLine="Dim req As DBRequestManager = CreateRequest(UseDb";
+ //BA.debugLineNum = 144;BA.debugLine="Dim req As DBRequestManager = CreateRequest(UseDb";
 _req = parent._createrequest(_usedbuser);
- //BA.debugLineNum = 140;BA.debugLine="Dim cmd As DBCommand = CreateCommand(\"select_usua";
+ //BA.debugLineNum = 145;BA.debugLine="Dim cmd As DBCommand = CreateCommand(\"select_usua";
 _cmd = parent._createcommand("select_usuarioApp",new Object[]{(Object)(_usuario)});
- //BA.debugLineNum = 142;BA.debugLine="Dim cadena As String";
+ //BA.debugLineNum = 147;BA.debugLine="Dim cadena As String";
 _cadena = "";
- //BA.debugLineNum = 143;BA.debugLine="Dim separador As String";
+ //BA.debugLineNum = 148;BA.debugLine="Dim separador As String";
 _separador = "";
- //BA.debugLineNum = 144;BA.debugLine="Dim longitud As Int";
+ //BA.debugLineNum = 149;BA.debugLine="Dim longitud As Int";
 _longitud = 0;
- //BA.debugLineNum = 146;BA.debugLine="Dim parts() As String";
+ //BA.debugLineNum = 151;BA.debugLine="Dim parts() As String";
 _parts = new String[(int) (0)];
 java.util.Arrays.fill(_parts,"");
- //BA.debugLineNum = 148;BA.debugLine="Wait For (req.ExecuteQuery(cmd, 0, id)) JobDone(j";
+ //BA.debugLineNum = 153;BA.debugLine="Wait For (req.ExecuteQuery(cmd, 0, id)) JobDone(j";
 parent.__c.WaitFor("jobdone", ba, this, (Object)(_req._executequery /*b4a.example.ef.httpjob*/ (_cmd,(int) (0),(Object)(_id))));
 this.state = 26;
 return;
@@ -301,7 +308,7 @@ case 26:
 this.state = 1;
 _j = (b4a.example.ef.httpjob) result[0];
 ;
- //BA.debugLineNum = 149;BA.debugLine="If j.Success Then";
+ //BA.debugLineNum = 154;BA.debugLine="If j.Success Then";
 if (true) break;
 
 case 1:
@@ -316,11 +323,11 @@ this.state = 24;
 case 3:
 //C
 this.state = 4;
- //BA.debugLineNum = 150;BA.debugLine="Msgbox(\"¿Está seguro que desea iniciar sesión?\",";
+ //BA.debugLineNum = 155;BA.debugLine="Msgbox(\"¿Está seguro que desea iniciar sesión?\",";
 parent.__c.Msgbox(BA.ObjectToCharSequence("¿Está seguro que desea iniciar sesión?"),BA.ObjectToCharSequence("Confirmación"),ba);
- //BA.debugLineNum = 152;BA.debugLine="req.HandleJobAsync(j, \"req\")";
+ //BA.debugLineNum = 157;BA.debugLine="req.HandleJobAsync(j, \"req\")";
 _req._handlejobasync /*void*/ (_j,"req");
- //BA.debugLineNum = 153;BA.debugLine="Wait For (req) req_Result(res As DBResult)";
+ //BA.debugLineNum = 158;BA.debugLine="Wait For (req) req_Result(res As DBResult)";
 parent.__c.WaitFor("req_result", ba, this, (Object)(_req));
 this.state = 27;
 return;
@@ -329,7 +336,7 @@ case 27:
 this.state = 4;
 _res = (b4a.example.ef.main._dbresult) result[0];
 ;
- //BA.debugLineNum = 156;BA.debugLine="If res.Rows.Size > 0 Then";
+ //BA.debugLineNum = 161;BA.debugLine="If res.Rows.Size > 0 Then";
 if (true) break;
 
 case 4:
@@ -344,20 +351,20 @@ this.state = 8;
 case 6:
 //C
 this.state = 9;
- //BA.debugLineNum = 158;BA.debugLine="Main.pUser = sf.Trim(usuario)";
+ //BA.debugLineNum = 163;BA.debugLine="Main.pUser = sf.Trim(usuario)";
 parent._main._puser /*String*/  = parent._sf._vvvvv7(_usuario);
- //BA.debugLineNum = 160;BA.debugLine="B4XPages.ShowPage(\"menu\")";
+ //BA.debugLineNum = 165;BA.debugLine="B4XPages.ShowPage(\"menu\")";
 parent._b4xpages._showpage /*String*/ (ba,"menu");
  if (true) break;
 
 case 8:
 //C
 this.state = 9;
- //BA.debugLineNum = 163;BA.debugLine="MsgboxAsync(\"Usuario o contraseña inválidos\", \"";
+ //BA.debugLineNum = 168;BA.debugLine="MsgboxAsync(\"Usuario o contraseña inválidos\", \"";
 parent.__c.MsgboxAsync(BA.ObjectToCharSequence("Usuario o contraseña inválidos"),BA.ObjectToCharSequence("TM App"),ba);
  if (true) break;
 ;
- //BA.debugLineNum = 165;BA.debugLine="For Each row() As Object In res.Rows";
+ //BA.debugLineNum = 170;BA.debugLine="For Each row() As Object In res.Rows";
 
 case 9:
 //for
@@ -385,11 +392,11 @@ if (true) break;
 case 11:
 //C
 this.state = 12;
- //BA.debugLineNum = 166;BA.debugLine="cadena = \"\"";
+ //BA.debugLineNum = 171;BA.debugLine="cadena = \"\"";
 _cadena = "";
- //BA.debugLineNum = 167;BA.debugLine="separador=\" - \"";
+ //BA.debugLineNum = 172;BA.debugLine="separador=\" - \"";
 _separador = " - ";
- //BA.debugLineNum = 168;BA.debugLine="For Each record As Object In row";
+ //BA.debugLineNum = 173;BA.debugLine="For Each record As Object In row";
 if (true) break;
 
 case 12:
@@ -418,7 +425,7 @@ if (true) break;
 case 14:
 //C
 this.state = 31;
- //BA.debugLineNum = 170;BA.debugLine="cadena=cadena & record & separador";
+ //BA.debugLineNum = 175;BA.debugLine="cadena=cadena & record & separador";
 _cadena = _cadena+BA.ObjectToString(_record)+_separador;
  if (true) break;
 if (true) break;
@@ -427,31 +434,31 @@ case 15:
 //C
 this.state = 16;
 ;
- //BA.debugLineNum = 172;BA.debugLine="parts = Regex.Split(\"-\", cadena)";
+ //BA.debugLineNum = 177;BA.debugLine="parts = Regex.Split(\"-\", cadena)";
 _parts = parent.__c.Regex.Split("-",_cadena);
- //BA.debugLineNum = 173;BA.debugLine="Main.pUser = sf.Trim(usuario)";
+ //BA.debugLineNum = 178;BA.debugLine="Main.pUser = sf.Trim(usuario)";
 parent._main._puser /*String*/  = parent._sf._vvvvv7(_usuario);
- //BA.debugLineNum = 174;BA.debugLine="Main.puserActivo = sf.Trim(parts(0))";
+ //BA.debugLineNum = 179;BA.debugLine="Main.puserActivo = sf.Trim(parts(0))";
 parent._main._puseractivo /*String*/  = parent._sf._vvvvv7(_parts[(int) (0)]);
- //BA.debugLineNum = 175;BA.debugLine="Main.pDBName  = sf.Trim(parts(1))";
+ //BA.debugLineNum = 180;BA.debugLine="Main.pDBName  = sf.Trim(parts(1))";
 parent._main._pdbname /*String*/  = parent._sf._vvvvv7(_parts[(int) (1)]);
- //BA.debugLineNum = 176;BA.debugLine="Main.pNit = sf.Trim(parts(2))";
+ //BA.debugLineNum = 181;BA.debugLine="Main.pNit = sf.Trim(parts(2))";
 parent._main._pnit /*String*/  = parent._sf._vvvvv7(_parts[(int) (2)]);
- //BA.debugLineNum = 178;BA.debugLine="Main.pUserOpcionLabores = sf.Trim(parts(3))";
+ //BA.debugLineNum = 183;BA.debugLine="Main.pUserOpcionLabores = sf.Trim(parts(3))";
 parent._main._puseropcionlabores /*String*/  = parent._sf._vvvvv7(_parts[(int) (3)]);
- //BA.debugLineNum = 179;BA.debugLine="Main.pUserOpcionAgenda = sf.Trim(parts(4))";
+ //BA.debugLineNum = 184;BA.debugLine="Main.pUserOpcionAgenda = sf.Trim(parts(4))";
 parent._main._puseropcionagenda /*String*/  = parent._sf._vvvvv7(_parts[(int) (4)]);
- //BA.debugLineNum = 180;BA.debugLine="Main.pUserOpcionMaquinaria = sf.Trim(parts(5))";
+ //BA.debugLineNum = 185;BA.debugLine="Main.pUserOpcionMaquinaria = sf.Trim(parts(5))";
 parent._main._puseropcionmaquinaria /*String*/  = parent._sf._vvvvv7(_parts[(int) (5)]);
- //BA.debugLineNum = 181;BA.debugLine="Main.pUserOpcionPluviometros = sf.Trim(parts(6)";
+ //BA.debugLineNum = 186;BA.debugLine="Main.pUserOpcionPluviometros = sf.Trim(parts(6)";
 parent._main._puseropcionpluviometros /*String*/  = parent._sf._vvvvv7(_parts[(int) (6)]);
- //BA.debugLineNum = 182;BA.debugLine="Main.pUserOpcionMonotoreo = sf.Trim(parts(7))";
+ //BA.debugLineNum = 187;BA.debugLine="Main.pUserOpcionMonotoreo = sf.Trim(parts(7))";
 parent._main._puseropcionmonotoreo /*String*/  = parent._sf._vvvvv7(_parts[(int) (7)]);
- //BA.debugLineNum = 184;BA.debugLine="longitud = cadena.Length";
+ //BA.debugLineNum = 189;BA.debugLine="longitud = cadena.Length";
 _longitud = _cadena.length();
- //BA.debugLineNum = 185;BA.debugLine="cadena=cadena.SubString2(0, longitud - 3)";
+ //BA.debugLineNum = 190;BA.debugLine="cadena=cadena.SubString2(0, longitud - 3)";
 _cadena = _cadena.substring((int) (0),(int) (_longitud-3));
- //BA.debugLineNum = 186;BA.debugLine="If parametrosUsuario = cadena Then";
+ //BA.debugLineNum = 191;BA.debugLine="If parametrosUsuario = cadena Then";
 if (true) break;
 
 case 16:
@@ -466,14 +473,14 @@ this.state = 20;
 case 18:
 //C
 this.state = 21;
- //BA.debugLineNum = 187;BA.debugLine="Log(\"Usuario: \"&parametrosUsuario)";
+ //BA.debugLineNum = 192;BA.debugLine="Log(\"Usuario: \"&parametrosUsuario)";
 parent.__c.LogImpl("250331698","Usuario: "+parent._parametrosusuario,0);
  if (true) break;
 
 case 20:
 //C
 this.state = 21;
- //BA.debugLineNum = 189;BA.debugLine="cadena=\"\"";
+ //BA.debugLineNum = 194;BA.debugLine="cadena=\"\"";
 _cadena = "";
  if (true) break;
 
@@ -493,7 +500,7 @@ this.state = 25;
 case 24:
 //C
 this.state = 25;
- //BA.debugLineNum = 194;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
+ //BA.debugLineNum = 199;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 parent.__c.LogImpl("250331705","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
@@ -501,9 +508,9 @@ case 25:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 196;BA.debugLine="j.Release";
+ //BA.debugLineNum = 201;BA.debugLine="j.Release";
 _j._release /*String*/ ();
- //BA.debugLineNum = 197;BA.debugLine="End Sub";
+ //BA.debugLineNum = 202;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -516,12 +523,12 @@ public void  _req_result(b4a.example.ef.main._dbresult _res) throws Exception{
 }
 public String  _initialize(anywheresoftware.b4a.BA _ba) throws Exception{
 innerInitialize(_ba);
- //BA.debugLineNum = 44;BA.debugLine="Public Sub Initialize";
- //BA.debugLineNum = 45;BA.debugLine="B4XPages.GetManager.LogEvents = True";
+ //BA.debugLineNum = 45;BA.debugLine="Public Sub Initialize";
+ //BA.debugLineNum = 46;BA.debugLine="B4XPages.GetManager.LogEvents = True";
 _b4xpages._getmanager /*b4a.example.ef.b4xpagesmanager*/ (ba)._logevents /*boolean*/  = __c.True;
- //BA.debugLineNum = 46;BA.debugLine="B4XPages.GetManager.TransitionAnimationDuration =";
+ //BA.debugLineNum = 47;BA.debugLine="B4XPages.GetManager.TransitionAnimationDuration =";
 _b4xpages._getmanager /*b4a.example.ef.b4xpagesmanager*/ (ba)._transitionanimationduration /*int*/  = (int) (0);
- //BA.debugLineNum = 48;BA.debugLine="End Sub";
+ //BA.debugLineNum = 49;BA.debugLine="End Sub";
 return "";
 }
 public Object callSub(String sub, Object sender, Object[] args) throws Exception {

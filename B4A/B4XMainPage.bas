@@ -28,6 +28,7 @@ Sub Class_Globals
 	Private FormMaquinaria_C As FormMaquinaria
 	Private FormPrecipitacion_C As FormPrecipitacion
 	Private FormLabores_C As FormLabores
+	Private pgProgramaLabores As programa_labores
 
 	Private const rdcLink As String = "http://84.46.255.129:17178/rdc"
 	Dim parametrosUsuario As String=""
@@ -81,6 +82,7 @@ Private Sub B4XPage_Created(Root1 As B4XView)
 	FormMaquinaria_C.Initialize
 	FormPrecipitacion_C.Initialize
 	FormLabores_C.Initialize
+	pgProgramaLabores.Initialize
 
 	' Agrega una nueva página llamada "menu" y la crea
 	B4XPages.AddPageAndCreate("menu", menu_C)
@@ -100,6 +102,9 @@ Private Sub B4XPage_Created(Root1 As B4XView)
 	B4XPages.AddPageAndCreate("FormPrecipitacion", FormPrecipitacion_C)
 	' Agregra una nueva página llamada "FormPrecipitacion" y la crea
 	B4XPages.AddPageAndCreate("FormLabores", FormLabores_C)
+	
+	B4XPages.AddPageAndCreate("programa_labores", pgProgramaLabores)
+	
 
 'B4XPages.remove
 End Sub

@@ -96,6 +96,8 @@ Private Sub pnlPrograma_de_labores_Click
 
 End Sub
 
-Private Sub Panel1Precipitacion2_Click
-	
+
+
+Private Sub Panel3_Click
+	B4XPages.ShowPage("programa_labores")
 End Sub

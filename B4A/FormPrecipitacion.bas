@@ -57,8 +57,13 @@ Private Sub B4XPage_Appear
 	CustomListView1Geral.DefaultTextColor=Colors.White
 	CustomListView1Geral.Add(CreateItem,"formPreci")
 	
+	
+	
+	
 	Dim Req As DBRequestManager
 	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
+	
+	
 	
 	SearchTemplatePluvimetro.Initialize
 	

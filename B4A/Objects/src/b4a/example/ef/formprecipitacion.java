@@ -56,22 +56,22 @@ public b4a.example.ef.httputils2service _httputils2service = null;
 public b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
 public String  _as_datepicker1_selecteddatechanged(long _date) throws Exception{
 String _formatteddate = "";
- //BA.debugLineNum = 151;BA.debugLine="Private Sub AS_DatePicker1_SelectedDateChanged(Dat";
- //BA.debugLineNum = 153;BA.debugLine="Dim formattedDate As String = DateTime.Date(Date)";
+ //BA.debugLineNum = 156;BA.debugLine="Private Sub AS_DatePicker1_SelectedDateChanged(Dat";
+ //BA.debugLineNum = 158;BA.debugLine="Dim formattedDate As String = DateTime.Date(Date)";
 _formatteddate = __c.DateTime.Date(_date);
- //BA.debugLineNum = 156;BA.debugLine="formattedDate = formattedDate.Replace(\"/\", \"-\")";
+ //BA.debugLineNum = 161;BA.debugLine="formattedDate = formattedDate.Replace(\"/\", \"-\")";
 _formatteddate = _formatteddate.replace("/","-");
- //BA.debugLineNum = 159;BA.debugLine="formattedDate = formattedDate & \" 00:00:00\"";
+ //BA.debugLineNum = 164;BA.debugLine="formattedDate = formattedDate & \" 00:00:00\"";
 _formatteddate = _formatteddate+" 00:00:00";
- //BA.debugLineNum = 162;BA.debugLine="Label13Time.Text = formattedDate";
+ //BA.debugLineNum = 167;BA.debugLine="Label13Time.Text = formattedDate";
 _label13time.setText(BA.ObjectToCharSequence(_formatteddate));
- //BA.debugLineNum = 165;BA.debugLine="Panel12.Visible = False";
+ //BA.debugLineNum = 170;BA.debugLine="Panel12.Visible = False";
 _panel12.setVisible(__c.False);
- //BA.debugLineNum = 168;BA.debugLine="fecha = formattedDate";
+ //BA.debugLineNum = 173;BA.debugLine="fecha = formattedDate";
 _fecha = _formatteddate;
- //BA.debugLineNum = 171;BA.debugLine="Log(fecha)";
+ //BA.debugLineNum = 176;BA.debugLine="Log(fecha)";
 __c.LogImpl("261866004",_fecha,0);
- //BA.debugLineNum = 172;BA.debugLine="End Sub";
+ //BA.debugLineNum = 177;BA.debugLine="End Sub";
 return "";
 }
 public void  _b4xpage_appear() throws Exception{
@@ -123,21 +123,21 @@ parent._customlistview1geral._defaulttextbackgroundcolor = ((int)0xff25253d);
 parent._customlistview1geral._defaulttextcolor = parent.__c.Colors.White;
  //BA.debugLineNum = 52;BA.debugLine="CustomListView1Geral.Add(CreateItem,\"formPreci\")";
 parent._customlistview1geral._add((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(parent._createitem().getObject())),(Object)("formPreci"));
- //BA.debugLineNum = 54;BA.debugLine="Dim Req As DBRequestManager";
+ //BA.debugLineNum = 57;BA.debugLine="Dim Req As DBRequestManager";
 _req = new b4a.example.ef.dbrequestmanager();
- //BA.debugLineNum = 55;BA.debugLine="Req.Initialize(Me, rdcLink & \"?DBName=\" & Main.pD";
+ //BA.debugLineNum = 58;BA.debugLine="Req.Initialize(Me, rdcLink & \"?DBName=\" & Main.pD";
 _req._initialize /*String*/ (ba,parent,parent._rdclink+"?DBName="+parent._main._pdbname /*String*/ );
- //BA.debugLineNum = 57;BA.debugLine="SearchTemplatePluvimetro.Initialize";
+ //BA.debugLineNum = 62;BA.debugLine="SearchTemplatePluvimetro.Initialize";
 parent._searchtemplatepluvimetro._initialize /*String*/ (ba);
- //BA.debugLineNum = 59;BA.debugLine="Dim itemsPuvlimetro As List";
+ //BA.debugLineNum = 64;BA.debugLine="Dim itemsPuvlimetro As List";
 _itemspuvlimetro = new anywheresoftware.b4a.objects.collections.List();
- //BA.debugLineNum = 60;BA.debugLine="itemsPuvlimetro.Initialize";
+ //BA.debugLineNum = 65;BA.debugLine="itemsPuvlimetro.Initialize";
 _itemspuvlimetro.Initialize();
- //BA.debugLineNum = 61;BA.debugLine="itemsPuvlimetro.Add(\"Seleccionar:\")";
+ //BA.debugLineNum = 66;BA.debugLine="itemsPuvlimetro.Add(\"Seleccionar:\")";
 _itemspuvlimetro.Add((Object)("Seleccionar:"));
- //BA.debugLineNum = 64;BA.debugLine="Dim cmdPluviometro As DBCommand = CreateCommand(\"";
+ //BA.debugLineNum = 69;BA.debugLine="Dim cmdPluviometro As DBCommand = CreateCommand(\"";
 _cmdpluviometro = parent._createcommand("select_maquina_pluviometros",(Object[])(parent.__c.Null));
- //BA.debugLineNum = 65;BA.debugLine="Wait For (Req.ExecuteQuery(cmdPluviometro, 0, Nul";
+ //BA.debugLineNum = 70;BA.debugLine="Wait For (Req.ExecuteQuery(cmdPluviometro, 0, Nul";
 parent.__c.WaitFor("jobdone", ba, this, (Object)(_req._executequery /*b4a.example.ef.httpjob*/ (_cmdpluviometro,(int) (0),parent.__c.Null)));
 this.state = 11;
 return;
@@ -146,7 +146,7 @@ case 11:
 this.state = 1;
 _j2 = (b4a.example.ef.httpjob) result[0];
 ;
- //BA.debugLineNum = 66;BA.debugLine="If j2.Success Then";
+ //BA.debugLineNum = 71;BA.debugLine="If j2.Success Then";
 if (true) break;
 
 case 1:
@@ -161,9 +161,9 @@ this.state = 9;
 case 3:
 //C
 this.state = 4;
- //BA.debugLineNum = 67;BA.debugLine="Req.HandleJobAsync(j2, \"req_pluviometro\")";
+ //BA.debugLineNum = 72;BA.debugLine="Req.HandleJobAsync(j2, \"req_pluviometro\")";
 _req._handlejobasync /*void*/ (_j2,"req_pluviometro");
- //BA.debugLineNum = 68;BA.debugLine="Wait For (Req) req_pluviometro_Result(resPluviom";
+ //BA.debugLineNum = 73;BA.debugLine="Wait For (Req) req_pluviometro_Result(resPluviom";
 parent.__c.WaitFor("req_pluviometro_result", ba, this, (Object)(_req));
 this.state = 12;
 return;
@@ -172,7 +172,7 @@ case 12:
 this.state = 4;
 _respluviometro = (b4a.example.ef.main._dbresult) result[0];
 ;
- //BA.debugLineNum = 69;BA.debugLine="For Each rowPluviometro() As Object In resPluvio";
+ //BA.debugLineNum = 74;BA.debugLine="For Each rowPluviometro() As Object In resPluvio";
 if (true) break;
 
 case 4:
@@ -201,29 +201,29 @@ if (true) break;
 case 6:
 //C
 this.state = 14;
- //BA.debugLineNum = 70;BA.debugLine="Dim cdgo_Plvmtro As String = rowPluviometro(0)";
+ //BA.debugLineNum = 75;BA.debugLine="Dim cdgo_Plvmtro As String = rowPluviometro(0)";
 _cdgo_plvmtro = BA.ObjectToString(_rowpluviometro[(int) (0)]);
- //BA.debugLineNum = 71;BA.debugLine="Dim Nombre_Plvmtro As String = rowPluviometro(1";
+ //BA.debugLineNum = 76;BA.debugLine="Dim Nombre_Plvmtro As String = rowPluviometro(1";
 _nombre_plvmtro = BA.ObjectToString(_rowpluviometro[(int) (1)]);
- //BA.debugLineNum = 72;BA.debugLine="Dim Nit_Plvmtro As String = rowPluviometro(2)";
+ //BA.debugLineNum = 77;BA.debugLine="Dim Nit_Plvmtro As String = rowPluviometro(2)";
 _nit_plvmtro = BA.ObjectToString(_rowpluviometro[(int) (2)]);
- //BA.debugLineNum = 73;BA.debugLine="Dim Hda_Pvlmtro As String = rowPluviometro(3)";
+ //BA.debugLineNum = 78;BA.debugLine="Dim Hda_Pvlmtro As String = rowPluviometro(3)";
 _hda_pvlmtro = BA.ObjectToString(_rowpluviometro[(int) (3)]);
- //BA.debugLineNum = 76;BA.debugLine="Dim detailsMap As Map";
+ //BA.debugLineNum = 81;BA.debugLine="Dim detailsMap As Map";
 _detailsmap = new anywheresoftware.b4a.objects.collections.Map();
- //BA.debugLineNum = 77;BA.debugLine="detailsMap.Initialize";
+ //BA.debugLineNum = 82;BA.debugLine="detailsMap.Initialize";
 _detailsmap.Initialize();
- //BA.debugLineNum = 78;BA.debugLine="detailsMap.Put(\"Nombre\", Nombre_Plvmtro)";
+ //BA.debugLineNum = 83;BA.debugLine="detailsMap.Put(\"Nombre\", Nombre_Plvmtro)";
 _detailsmap.Put((Object)("Nombre"),(Object)(_nombre_plvmtro));
- //BA.debugLineNum = 79;BA.debugLine="detailsMap.Put(\"Nit\", Nit_Plvmtro)";
+ //BA.debugLineNum = 84;BA.debugLine="detailsMap.Put(\"Nit\", Nit_Plvmtro)";
 _detailsmap.Put((Object)("Nit"),(Object)(_nit_plvmtro));
- //BA.debugLineNum = 80;BA.debugLine="detailsMap.Put(\"Hda\", Hda_Pvlmtro)";
+ //BA.debugLineNum = 85;BA.debugLine="detailsMap.Put(\"Hda\", Hda_Pvlmtro)";
 _detailsmap.Put((Object)("Hda"),(Object)(_hda_pvlmtro));
- //BA.debugLineNum = 82;BA.debugLine="pluviometroMap.Put(cdgo_Plvmtro, detailsMap)";
+ //BA.debugLineNum = 87;BA.debugLine="pluviometroMap.Put(cdgo_Plvmtro, detailsMap)";
 parent._pluviometromap.Put((Object)(_cdgo_plvmtro),(Object)(_detailsmap.getObject()));
- //BA.debugLineNum = 85;BA.debugLine="SD_xComboBoxPluviometro.Add(Nombre_Plvmtro, cdg";
+ //BA.debugLineNum = 90;BA.debugLine="SD_xComboBoxPluviometro.Add(Nombre_Plvmtro, cdg";
 parent._sd_xcomboboxpluviometro._add /*String*/ (_nombre_plvmtro,(Object)(_cdgo_plvmtro));
- //BA.debugLineNum = 86;BA.debugLine="itemsPuvlimetro.Add(cdgo_Plvmtro&\":\"&Nombre_Plv";
+ //BA.debugLineNum = 91;BA.debugLine="itemsPuvlimetro.Add(cdgo_Plvmtro&\":\"&Nombre_Plv";
 _itemspuvlimetro.Add((Object)(_cdgo_plvmtro+":"+_nombre_plvmtro));
  if (true) break;
 if (true) break;
@@ -237,19 +237,19 @@ this.state = 10;
 case 9:
 //C
 this.state = 10;
- //BA.debugLineNum = 89;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j2.Err";
-parent.__c.LogImpl("261407276","Error en la consulta de Maquina: "+_j2._errormessage /*String*/ ,0);
+ //BA.debugLineNum = 94;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j2.Err";
+parent.__c.LogImpl("261407281","Error en la consulta de Maquina: "+_j2._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 91;BA.debugLine="SearchTemplatePluvimetro.SetItems(itemsPuvlimetro";
+ //BA.debugLineNum = 96;BA.debugLine="SearchTemplatePluvimetro.SetItems(itemsPuvlimetro";
 parent._searchtemplatepluvimetro._setitems /*Object*/ (_itemspuvlimetro);
- //BA.debugLineNum = 92;BA.debugLine="j2.Release";
+ //BA.debugLineNum = 97;BA.debugLine="j2.Release";
 _j2._release /*String*/ ();
- //BA.debugLineNum = 94;BA.debugLine="End Sub";
+ //BA.debugLineNum = 99;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -299,15 +299,15 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 188;BA.debugLine="Dim Req As DBRequestManager";
+ //BA.debugLineNum = 193;BA.debugLine="Dim Req As DBRequestManager";
 _req = new b4a.example.ef.dbrequestmanager();
- //BA.debugLineNum = 189;BA.debugLine="Req.Initialize(Me, rdcLink & \"?DBName=\" & Main.pD";
+ //BA.debugLineNum = 194;BA.debugLine="Req.Initialize(Me, rdcLink & \"?DBName=\" & Main.pD";
 _req._initialize /*String*/ (ba,parent,parent._rdclink+"?DBName="+parent._main._pdbname /*String*/ );
- //BA.debugLineNum = 192;BA.debugLine="Dim cmd As DBCommand = CreateCommand(\"insert.pluv";
+ //BA.debugLineNum = 197;BA.debugLine="Dim cmd As DBCommand = CreateCommand(\"insert.pluv";
 _cmd = parent._createcommand("insert.pluviometro",new Object[]{(Object)(parent._selectedcdgo_plvmtro),(Object)(parent._fecha),(Object)(parent._textocapturado),(Object)(parent._selectednit_plvmtro),(Object)(parent._selectedhda_pvlmtro)});
- //BA.debugLineNum = 195;BA.debugLine="Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)";
+ //BA.debugLineNum = 200;BA.debugLine="Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)";
 _j = _req._executecommand /*b4a.example.ef.httpjob*/ (_cmd,parent.__c.Null);
- //BA.debugLineNum = 196;BA.debugLine="Wait For(j) JobDone(j As HttpJob)";
+ //BA.debugLineNum = 201;BA.debugLine="Wait For(j) JobDone(j As HttpJob)";
 parent.__c.WaitFor("jobdone", ba, this, (Object)(_j));
 this.state = 13;
 return;
@@ -316,7 +316,7 @@ case 13:
 this.state = 1;
 _j = (b4a.example.ef.httpjob) result[0];
 ;
- //BA.debugLineNum = 199;BA.debugLine="Try";
+ //BA.debugLineNum = 204;BA.debugLine="Try";
 if (true) break;
 
 case 1:
@@ -330,7 +330,7 @@ case 3:
 //C
 this.state = 4;
 this.catchState = 11;
- //BA.debugLineNum = 200;BA.debugLine="If j.Success Then";
+ //BA.debugLineNum = 205;BA.debugLine="If j.Success Then";
 if (true) break;
 
 case 4:
@@ -345,14 +345,14 @@ this.state = 8;
 case 6:
 //C
 this.state = 9;
- //BA.debugLineNum = 201;BA.debugLine="MsgboxAsync(\"Se ha insertado correctamente.\", \"";
+ //BA.debugLineNum = 206;BA.debugLine="MsgboxAsync(\"Se ha insertado correctamente.\", \"";
 parent.__c.MsgboxAsync(BA.ObjectToCharSequence("Se ha insertado correctamente."),BA.ObjectToCharSequence("Éxito"),ba);
  if (true) break;
 
 case 8:
 //C
 this.state = 9;
- //BA.debugLineNum = 203;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
+ //BA.debugLineNum = 208;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
 parent.__c.LogImpl("261997072","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
@@ -366,7 +366,7 @@ case 11:
 //C
 this.state = 12;
 this.catchState = 0;
- //BA.debugLineNum = 206;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
+ //BA.debugLineNum = 211;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
 parent.__c.LogImpl("261997075","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
  if (true) break;
 if (true) break;
@@ -376,7 +376,7 @@ case 12:
 this.state = -1;
 this.catchState = 0;
 ;
- //BA.debugLineNum = 208;BA.debugLine="End Sub";
+ //BA.debugLineNum = 213;BA.debugLine="End Sub";
 if (true) break;
 }} 
        catch (Exception e0) {
@@ -443,49 +443,49 @@ return "";
 }
 public b4a.example.ef.main._dbcommand  _createcommand(String _name,Object[] _parameters) throws Exception{
 b4a.example.ef.main._dbcommand _cmd = null;
- //BA.debugLineNum = 108;BA.debugLine="Sub CreateCommand(Name As String, Parameters() As";
- //BA.debugLineNum = 109;BA.debugLine="Dim cmd As DBCommand";
+ //BA.debugLineNum = 113;BA.debugLine="Sub CreateCommand(Name As String, Parameters() As";
+ //BA.debugLineNum = 114;BA.debugLine="Dim cmd As DBCommand";
 _cmd = new b4a.example.ef.main._dbcommand();
- //BA.debugLineNum = 110;BA.debugLine="cmd.Initialize";
+ //BA.debugLineNum = 115;BA.debugLine="cmd.Initialize";
 _cmd.Initialize();
- //BA.debugLineNum = 111;BA.debugLine="cmd.Name = Name";
+ //BA.debugLineNum = 116;BA.debugLine="cmd.Name = Name";
 _cmd.Name /*String*/  = _name;
- //BA.debugLineNum = 112;BA.debugLine="If Parameters <> Null Then cmd.Parameters = Param";
+ //BA.debugLineNum = 117;BA.debugLine="If Parameters <> Null Then cmd.Parameters = Param";
 if (_parameters!= null) { 
 _cmd.Parameters /*Object[]*/  = _parameters;};
- //BA.debugLineNum = 113;BA.debugLine="Return cmd";
+ //BA.debugLineNum = 118;BA.debugLine="Return cmd";
 if (true) return _cmd;
- //BA.debugLineNum = 114;BA.debugLine="End Sub";
+ //BA.debugLineNum = 119;BA.debugLine="End Sub";
 return null;
 }
 public anywheresoftware.b4a.objects.PanelWrapper  _createitem() throws Exception{
 anywheresoftware.b4a.objects.B4XViewWrapper _panel = null;
- //BA.debugLineNum = 97;BA.debugLine="Private Sub CreateItem As Panel";
- //BA.debugLineNum = 99;BA.debugLine="Dim panel As B4XView = xui.CreatePanel(\"\")";
+ //BA.debugLineNum = 102;BA.debugLine="Private Sub CreateItem As Panel";
+ //BA.debugLineNum = 104;BA.debugLine="Dim panel As B4XView = xui.CreatePanel(\"\")";
 _panel = new anywheresoftware.b4a.objects.B4XViewWrapper();
 _panel = _xui.CreatePanel(ba,"");
- //BA.debugLineNum = 100;BA.debugLine="panel.SetLayoutAnimated(1, 0, 0, 100%X, 92%Y)";
+ //BA.debugLineNum = 105;BA.debugLine="panel.SetLayoutAnimated(1, 0, 0, 100%X, 92%Y)";
 _panel.SetLayoutAnimated((int) (1),(int) (0),(int) (0),__c.PerXToCurrent((float) (100),ba),__c.PerYToCurrent((float) (92),ba));
- //BA.debugLineNum = 102;BA.debugLine="panel.LoadLayout(\"addPrecipitacionUI\")";
+ //BA.debugLineNum = 107;BA.debugLine="panel.LoadLayout(\"addPrecipitacionUI\")";
 _panel.LoadLayout("addPrecipitacionUI",ba);
- //BA.debugLineNum = 103;BA.debugLine="panel.Height=Panel1geral.Height";
+ //BA.debugLineNum = 108;BA.debugLine="panel.Height=Panel1geral.Height";
 _panel.setHeight(_panel1geral.getHeight());
- //BA.debugLineNum = 105;BA.debugLine="Return panel";
+ //BA.debugLineNum = 110;BA.debugLine="Return panel";
 if (true) return (anywheresoftware.b4a.objects.PanelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.PanelWrapper(), (android.view.ViewGroup)(_panel.getObject()));
- //BA.debugLineNum = 106;BA.debugLine="End Sub";
+ //BA.debugLineNum = 111;BA.debugLine="End Sub";
 return null;
 }
 public String  _edittexthorafin_textchanged(String _old,String _new) throws Exception{
- //BA.debugLineNum = 174;BA.debugLine="Private Sub EditTextHoraFin_TextChanged (Old As St";
- //BA.debugLineNum = 175;BA.debugLine="Log(\"Texto anterior: \" & Old)";
+ //BA.debugLineNum = 179;BA.debugLine="Private Sub EditTextHoraFin_TextChanged (Old As St";
+ //BA.debugLineNum = 180;BA.debugLine="Log(\"Texto anterior: \" & Old)";
 __c.LogImpl("261931521","Texto anterior: "+_old,0);
- //BA.debugLineNum = 176;BA.debugLine="Log(\"Texto nuevo: \" & New)";
+ //BA.debugLineNum = 181;BA.debugLine="Log(\"Texto nuevo: \" & New)";
 __c.LogImpl("261931522","Texto nuevo: "+_new,0);
- //BA.debugLineNum = 182;BA.debugLine="textoCapturado = New";
+ //BA.debugLineNum = 187;BA.debugLine="textoCapturado = New";
 _textocapturado = _new;
- //BA.debugLineNum = 183;BA.debugLine="Log(\"El texto es mayor de 5 caracteres: \" & texto";
+ //BA.debugLineNum = 188;BA.debugLine="Log(\"El texto es mayor de 5 caracteres: \" & texto";
 __c.LogImpl("261931529","El texto es mayor de 5 caracteres: "+_textocapturado,0);
- //BA.debugLineNum = 185;BA.debugLine="End Sub";
+ //BA.debugLineNum = 190;BA.debugLine="End Sub";
 return "";
 }
 public Object  _initialize(anywheresoftware.b4a.BA _ba) throws Exception{
@@ -497,55 +497,55 @@ if (true) return this;
 return null;
 }
 public String  _label13time_click() throws Exception{
- //BA.debugLineNum = 125;BA.debugLine="Private Sub Label13Time_Click";
- //BA.debugLineNum = 126;BA.debugLine="Panel12.Visible = True";
+ //BA.debugLineNum = 130;BA.debugLine="Private Sub Label13Time_Click";
+ //BA.debugLineNum = 131;BA.debugLine="Panel12.Visible = True";
 _panel12.setVisible(__c.True);
- //BA.debugLineNum = 127;BA.debugLine="End Sub";
+ //BA.debugLineNum = 132;BA.debugLine="End Sub";
 return "";
 }
 public String  _label1back_click() throws Exception{
- //BA.debugLineNum = 117;BA.debugLine="Private Sub Label1Back_Click";
- //BA.debugLineNum = 118;BA.debugLine="B4XPages.ClosePage(Me)";
+ //BA.debugLineNum = 122;BA.debugLine="Private Sub Label1Back_Click";
+ //BA.debugLineNum = 123;BA.debugLine="B4XPages.ClosePage(Me)";
 _b4xpages._closepage /*String*/ (ba,this);
- //BA.debugLineNum = 119;BA.debugLine="End Sub";
+ //BA.debugLineNum = 124;BA.debugLine="End Sub";
 return "";
 }
 public String  _label2save_click() throws Exception{
- //BA.debugLineNum = 121;BA.debugLine="Private Sub Label2Save_Click";
- //BA.debugLineNum = 123;BA.debugLine="End Sub";
+ //BA.debugLineNum = 126;BA.debugLine="Private Sub Label2Save_Click";
+ //BA.debugLineNum = 128;BA.debugLine="End Sub";
 return "";
 }
 public String  _sd_xcomboboxpluviometro_itemclick(int _position,Object _value) throws Exception{
 anywheresoftware.b4a.objects.collections.Map _detailsmap = null;
- //BA.debugLineNum = 129;BA.debugLine="Private Sub SD_xComboBoxPluviometro_ItemClick (Pos";
- //BA.debugLineNum = 130;BA.debugLine="Log(\"VALOR COMBOBOX: \" & Value)";
+ //BA.debugLineNum = 134;BA.debugLine="Private Sub SD_xComboBoxPluviometro_ItemClick (Pos";
+ //BA.debugLineNum = 135;BA.debugLine="Log(\"VALOR COMBOBOX: \" & Value)";
 __c.LogImpl("261800449","VALOR COMBOBOX: "+BA.ObjectToString(_value),0);
- //BA.debugLineNum = 132;BA.debugLine="If pluviometroMap.ContainsKey(Value) Then";
+ //BA.debugLineNum = 137;BA.debugLine="If pluviometroMap.ContainsKey(Value) Then";
 if (_pluviometromap.ContainsKey(_value)) { 
- //BA.debugLineNum = 133;BA.debugLine="Dim detailsMap As Map = pluviometroMap.Get(Value";
+ //BA.debugLineNum = 138;BA.debugLine="Dim detailsMap As Map = pluviometroMap.Get(Value";
 _detailsmap = new anywheresoftware.b4a.objects.collections.Map();
 _detailsmap = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(_pluviometromap.Get(_value)));
- //BA.debugLineNum = 135;BA.debugLine="selectedCdgo_Plvmtro = Value";
+ //BA.debugLineNum = 140;BA.debugLine="selectedCdgo_Plvmtro = Value";
 _selectedcdgo_plvmtro = BA.ObjectToString(_value);
- //BA.debugLineNum = 136;BA.debugLine="selectedNombre_Plvmtro = detailsMap.Get(\"Nombre\"";
+ //BA.debugLineNum = 141;BA.debugLine="selectedNombre_Plvmtro = detailsMap.Get(\"Nombre\"";
 _selectednombre_plvmtro = BA.ObjectToString(_detailsmap.Get((Object)("Nombre")));
- //BA.debugLineNum = 137;BA.debugLine="selectedNit_Plvmtro = detailsMap.Get(\"Nit\")";
+ //BA.debugLineNum = 142;BA.debugLine="selectedNit_Plvmtro = detailsMap.Get(\"Nit\")";
 _selectednit_plvmtro = BA.ObjectToString(_detailsmap.Get((Object)("Nit")));
- //BA.debugLineNum = 138;BA.debugLine="selectedHda_Pvlmtro = detailsMap.Get(\"Hda\")";
+ //BA.debugLineNum = 143;BA.debugLine="selectedHda_Pvlmtro = detailsMap.Get(\"Hda\")";
 _selectedhda_pvlmtro = BA.ObjectToString(_detailsmap.Get((Object)("Hda")));
- //BA.debugLineNum = 141;BA.debugLine="Log(\"Código: \" & selectedCdgo_Plvmtro)";
+ //BA.debugLineNum = 146;BA.debugLine="Log(\"Código: \" & selectedCdgo_Plvmtro)";
 __c.LogImpl("261800460","Código: "+_selectedcdgo_plvmtro,0);
- //BA.debugLineNum = 142;BA.debugLine="Log(\"Nombre: \" & selectedNombre_Plvmtro)";
+ //BA.debugLineNum = 147;BA.debugLine="Log(\"Nombre: \" & selectedNombre_Plvmtro)";
 __c.LogImpl("261800461","Nombre: "+_selectednombre_plvmtro,0);
- //BA.debugLineNum = 143;BA.debugLine="Log(\"NIT: \" & selectedNit_Plvmtro)";
+ //BA.debugLineNum = 148;BA.debugLine="Log(\"NIT: \" & selectedNit_Plvmtro)";
 __c.LogImpl("261800462","NIT: "+_selectednit_plvmtro,0);
- //BA.debugLineNum = 144;BA.debugLine="Log(\"Hacienda: \" & selectedHda_Pvlmtro)";
+ //BA.debugLineNum = 149;BA.debugLine="Log(\"Hacienda: \" & selectedHda_Pvlmtro)";
 __c.LogImpl("261800463","Hacienda: "+_selectedhda_pvlmtro,0);
  }else {
- //BA.debugLineNum = 146;BA.debugLine="Log(\"Error: No se encontraron detalles para el c";
+ //BA.debugLineNum = 151;BA.debugLine="Log(\"Error: No se encontraron detalles para el c";
 __c.LogImpl("261800465","Error: No se encontraron detalles para el código seleccionado.",0);
  };
- //BA.debugLineNum = 148;BA.debugLine="End Sub";
+ //BA.debugLineNum = 153;BA.debugLine="End Sub";
 return "";
 }
 public void  _swiftbuttonpluvimetro_click() throws Exception{
@@ -572,7 +572,7 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 211;BA.debugLine="Wait For (Dialog.ShowTemplate(SearchTemplatePluvi";
+ //BA.debugLineNum = 216;BA.debugLine="Wait For (Dialog.ShowTemplate(SearchTemplatePluvi";
 parent.__c.WaitFor("complete", ba, this, parent._dialog._showtemplate /*anywheresoftware.b4a.keywords.Common.ResumableSubWrapper*/ ((Object)(parent._searchtemplatepluvimetro),(Object)(""),(Object)(""),(Object)("CANCEL")));
 this.state = 11;
 return;
@@ -581,7 +581,7 @@ case 11:
 this.state = 1;
 _result = (Integer) result[0];
 ;
- //BA.debugLineNum = 213;BA.debugLine="If Result = xui.DialogResponse_Positive Then";
+ //BA.debugLineNum = 218;BA.debugLine="If Result = xui.DialogResponse_Positive Then";
 if (true) break;
 
 case 1:
@@ -594,13 +594,13 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
- //BA.debugLineNum = 214;BA.debugLine="SwiftButtonPluvimetro.xLBL.Text = SearchTemplate";
+ //BA.debugLineNum = 219;BA.debugLine="SwiftButtonPluvimetro.xLBL.Text = SearchTemplate";
 parent._swiftbuttonpluvimetro._xlbl /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setText(BA.ObjectToCharSequence(parent._searchtemplatepluvimetro._selecteditem /*String*/ ));
- //BA.debugLineNum = 215;BA.debugLine="Dim Partes() As String = Regex.Split(\":\", Search";
+ //BA.debugLineNum = 220;BA.debugLine="Dim Partes() As String = Regex.Split(\":\", Search";
 _partes = parent.__c.Regex.Split(":",parent._searchtemplatepluvimetro._selecteditem /*String*/ );
- //BA.debugLineNum = 216;BA.debugLine="selectedCdgo_Plvmtro = Partes(0) ' Código del Pl";
+ //BA.debugLineNum = 221;BA.debugLine="selectedCdgo_Plvmtro = Partes(0) ' Código del Pl";
 parent._selectedcdgo_plvmtro = _partes[(int) (0)];
- //BA.debugLineNum = 219;BA.debugLine="If pluviometroMap.ContainsKey(selectedCdgo_Plvmt";
+ //BA.debugLineNum = 224;BA.debugLine="If pluviometroMap.ContainsKey(selectedCdgo_Plvmt";
 if (true) break;
 
 case 4:
@@ -615,29 +615,29 @@ this.state = 8;
 case 6:
 //C
 this.state = 9;
- //BA.debugLineNum = 220;BA.debugLine="Dim details As Map = pluviometroMap.Get(selecte";
+ //BA.debugLineNum = 225;BA.debugLine="Dim details As Map = pluviometroMap.Get(selecte";
 _details = new anywheresoftware.b4a.objects.collections.Map();
 _details = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(parent._pluviometromap.Get((Object)(parent._selectedcdgo_plvmtro))));
- //BA.debugLineNum = 221;BA.debugLine="selectedNombre_Plvmtro = details.Get(\"Nombre\")";
+ //BA.debugLineNum = 226;BA.debugLine="selectedNombre_Plvmtro = details.Get(\"Nombre\")";
 parent._selectednombre_plvmtro = BA.ObjectToString(_details.Get((Object)("Nombre")));
- //BA.debugLineNum = 222;BA.debugLine="selectedNit_Plvmtro = details.Get(\"Nit\")";
+ //BA.debugLineNum = 227;BA.debugLine="selectedNit_Plvmtro = details.Get(\"Nit\")";
 parent._selectednit_plvmtro = BA.ObjectToString(_details.Get((Object)("Nit")));
- //BA.debugLineNum = 223;BA.debugLine="selectedHda_Pvlmtro = details.Get(\"Hda\")";
+ //BA.debugLineNum = 228;BA.debugLine="selectedHda_Pvlmtro = details.Get(\"Hda\")";
 parent._selectedhda_pvlmtro = BA.ObjectToString(_details.Get((Object)("Hda")));
- //BA.debugLineNum = 226;BA.debugLine="Log(\"Código: \" & selectedCdgo_Plvmtro)";
+ //BA.debugLineNum = 231;BA.debugLine="Log(\"Código: \" & selectedCdgo_Plvmtro)";
 parent.__c.LogImpl("262062608","Código: "+parent._selectedcdgo_plvmtro,0);
- //BA.debugLineNum = 227;BA.debugLine="Log(\"Nombre: \" & selectedNombre_Plvmtro)";
+ //BA.debugLineNum = 232;BA.debugLine="Log(\"Nombre: \" & selectedNombre_Plvmtro)";
 parent.__c.LogImpl("262062609","Nombre: "+parent._selectednombre_plvmtro,0);
- //BA.debugLineNum = 228;BA.debugLine="Log(\"NIT: \" & selectedNit_Plvmtro)";
+ //BA.debugLineNum = 233;BA.debugLine="Log(\"NIT: \" & selectedNit_Plvmtro)";
 parent.__c.LogImpl("262062610","NIT: "+parent._selectednit_plvmtro,0);
- //BA.debugLineNum = 229;BA.debugLine="Log(\"Hacienda: \" & selectedHda_Pvlmtro)";
+ //BA.debugLineNum = 234;BA.debugLine="Log(\"Hacienda: \" & selectedHda_Pvlmtro)";
 parent.__c.LogImpl("262062611","Hacienda: "+parent._selectedhda_pvlmtro,0);
  if (true) break;
 
 case 8:
 //C
 this.state = 9;
- //BA.debugLineNum = 231;BA.debugLine="Log(\"No se encontraron detalles para el código";
+ //BA.debugLineNum = 236;BA.debugLine="Log(\"No se encontraron detalles para el código";
 parent.__c.LogImpl("262062613","No se encontraron detalles para el código seleccionado.",0);
  if (true) break;
 
@@ -651,7 +651,7 @@ case 10:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 234;BA.debugLine="End Sub";
+ //BA.debugLineNum = 239;BA.debugLine="End Sub";
 if (true) break;
 
             }

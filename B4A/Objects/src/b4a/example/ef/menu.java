@@ -127,9 +127,11 @@ if (true) return this;
  //BA.debugLineNum = 23;BA.debugLine="End Sub";
 return null;
 }
-public String  _panel1precipitacion2_click() throws Exception{
- //BA.debugLineNum = 93;BA.debugLine="Private Sub Panel1Precipitacion2_Click";
- //BA.debugLineNum = 95;BA.debugLine="End Sub";
+public String  _panel3_click() throws Exception{
+ //BA.debugLineNum = 95;BA.debugLine="Private Sub Panel3_Click";
+ //BA.debugLineNum = 96;BA.debugLine="B4XPages.ShowPage(\"programa_labores\")";
+_b4xpages._showpage /*String*/ (ba,"programa_labores");
+ //BA.debugLineNum = 97;BA.debugLine="End Sub";
 return "";
 }
 public String  _pnlcosecha_click() throws Exception{

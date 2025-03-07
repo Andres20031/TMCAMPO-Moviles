@@ -1448,6 +1448,8 @@ C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed
 C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\main$_dbresult.dex
 C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\main.dex
 C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\menu.dex
+C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\programa_labores$ResumableSub_B4XPage_Appear.dex
+C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\programa_labores.dex
 C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\R$anim.dex
 C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\R$animator.dex
 C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\R$array.dex
@@ -1510,6 +1512,7 @@ C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed
 C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\designerscripts\LS_mainpage.dex
 C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\designerscripts\LS_maquinaria.dex
 C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\designerscripts\LS_menu.dex
+C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\designerscripts\LS_programa_labores.dex
 C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\designerscripts\LS_scrolluiperson.dex
 C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\designerscripts\LS_scroolui.dex
 C:\Users\andres carmona\OneDrive\Escritorio\TM\TMCAMPO-Moviles\B4A\Objects\dexed\b4a\example\ef\designerscripts\LS_searchtemplate.dex

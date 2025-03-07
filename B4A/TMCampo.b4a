@@ -45,12 +45,13 @@ File48=microscope.png
 File49=pack.png
 File5=addPrecipitacionUI.bal
 File50=paper-bag-with-seeds.png
-File51=scrolluiperson.bal
-File52=scroolui.bal
-File53=storm.png
-File54=tractor color.png
-File55=tractor.png
-File56=worker-female.png
+File51=programa_labores.bal
+File52=scrolluiperson.bal
+File53=scroolui.bal
+File54=storm.png
+File55=tractor color.png
+File56=tractor.png
+File57=worker-female.png
 File6=carddados.bal
 File7=Cardisumo.bal
 File8=cardMaquina.bal
@@ -107,6 +108,7 @@ FileGroup53=Default Group
 FileGroup54=Default Group
 FileGroup55=Default Group
 FileGroup56=Default Group
+FileGroup57=Default Group
 FileGroup6=Default Group
 FileGroup7=Default Group
 FileGroup8=Default Group
@@ -142,9 +144,10 @@ Module10=GifViewer
 Module11=ListDados
 Module12=ListPerson
 Module13=Menu
-Module14=Starter
-Module15=Table
-Module16=util
+Module14=programa_labores
+Module15=Starter
+Module16=Table
+Module17=util
 Module2=B4XProgressBar
 Module3=DBRequestManager
 Module4=DetailsPerson
@@ -153,9 +156,9 @@ Module6=FormLabores
 Module7=FormMaquinaria
 Module8=FormPerson
 Module9=FormPrecipitacion
-NumberOfFiles=56
+NumberOfFiles=57
 NumberOfLibraries=24
-NumberOfModules=16
+NumberOfModules=17
 Version=13
 @EndOfDesignText@
 #Region  Project Attributes 
@@ -213,6 +216,7 @@ End Sub
 Sub Activity_Create(FirstTime As Boolean)
 	Dim pm As B4XPagesManager
 	pm.Initialize(Activity)
+
 End Sub
 
 'Template version: B4A-1.01
@@ -259,3 +263,4 @@ public boolean _onCreateOptionsMenu(android.view.Menu menu) {
 'https://www.b4x.com/android/forum/threads/solved-what-do-i-need-to-modify-on-the-client-side-for-jrdc2-multi-to-work.134010/#post-847620
 'https://www.b4x.com/android/forum/threads/mysql-connector-for-b4i.116617/#post-729095
 'https://www.b4x.com/android/forum/threads/access-database-name-from-client-parameter-with-jrdc.140790/#post-892119
+
