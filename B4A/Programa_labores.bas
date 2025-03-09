@@ -32,7 +32,7 @@ Sub B4XPage_Appear
 	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
 	
 	
-	Dim cmd As DBCommand = CreateCommand("select_programa_labores", Null)
+	Dim cmd As DBCommand = CreateCommand("select_programaLabores", Null)
 	Wait For (Req.ExecuteQuery(cmd, 0, Null)) JobDone(j As HttpJob)
 	
 	If j.Success Then
@@ -46,7 +46,7 @@ Sub B4XPage_Appear
 			Next
 		Else
 			' ⚠ No hay datos en la consulta
-			Log("⚠ No se encontraron datos en 'select_programa_labores'.")
+			Log("⚠ No se encontraron datos en 'select_programaLabores'.")
 		End If
 	Else
 		' ❌ Error en la consulta

@@ -99,5 +99,5 @@ End Sub
 
 
 Private Sub Panel3_Click
-	B4XPages.ShowPage("programa_labores")
+	B4XPages.ShowPage("ListLabores")
 End Sub
