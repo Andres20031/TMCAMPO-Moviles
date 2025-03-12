@@ -246,13 +246,13 @@ End Sub
 'You can see the list of page related events in the B4XPagesManager object. The event name is B4XPage.
 
 Private Sub ButtonGrabar_Click
-	
+	B4XPages.ShowPage("FormProgramaCampo")
 End Sub
 
 Private Sub ButtonCancelar_Click
-	
+	B4XPages.ShowPage("FormProgramaCampoCancelar")
 End Sub
 
 Private Sub ButtonAplazar_Click
-	
+	B4XPages.ShowPage("FormProgramaCampoAplazar")
 End Sub

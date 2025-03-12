@@ -29,6 +29,9 @@ Sub Class_Globals
 	Private FormPrecipitacion_C As FormPrecipitacion
 	Private FormLabores_C As FormLabores
 	Private ListLabores_C As ListLabores
+	Private FormProgramaCampo_C As FormProgramaCampo
+	Private FormProgramaCampoCancelar_C As FormProgramaCampoCancelar
+    Private FormProgramaCampoAplazar_C As FormProgramaCampoAplazar
 
 	Private const rdcLink As String = "http://84.46.255.129:17178/rdc"
 	Dim parametrosUsuario As String=""
@@ -83,6 +86,9 @@ Private Sub B4XPage_Created(Root1 As B4XView)
 	FormPrecipitacion_C.Initialize
 	FormLabores_C.Initialize
 	ListLabores_C.Initialize
+	FormProgramaCampo_C.Initialize
+	FormProgramaCampoCancelar_C.Initialize
+	FormProgramaCampoAplazar_C.Initialize
 
 	' Agrega una nueva página llamada "menu" y la crea
 	B4XPages.AddPageAndCreate("menu", menu_C)
@@ -104,7 +110,12 @@ Private Sub B4XPage_Created(Root1 As B4XView)
 	B4XPages.AddPageAndCreate("FormLabores", FormLabores_C)
 	' Agregra una nueva página llamada "ListLabores" y la crea
 	B4XPages.AddPageAndCreate("ListLabores", ListLabores_C)
-	
+	' Agregra una nueva página llamada "FormProgramaCampo" y la crea
+	B4XPages.AddPageAndCreate("FormProgramaCampo", FormProgramaCampo_C)
+	' Agregra una nueva página llamada "FormProgramaCampoCancelar" y la crea
+	B4XPages.AddPageAndCreate("FormProgramaCampoCancelar", FormProgramaCampoCancelar_C)
+	' Agregra una nueva página llamada "FormProgramaCampoCancelar" y la crea
+	B4XPages.AddPageAndCreate("FormProgramaCampoAplazar", FormProgramaCampoAplazar_C)
 	
 
 'B4XPages.remove
