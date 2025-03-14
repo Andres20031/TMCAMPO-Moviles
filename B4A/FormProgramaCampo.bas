@@ -8,7 +8,7 @@ Sub Class_Globals
 	Private Root As B4XView 'ignore
 	Private xui As XUI 'ignore
 	Private Label8 As Label
-
+	Private const rdcLink As String = "http://84.46.255.129:17178/rdc"
 	Private Panel7 As Panel
 	Private Label9 As Label
 	Private MiConsecutivo As String
@@ -18,6 +18,7 @@ Sub Class_Globals
 	Dim Observacion As String
 	Private Panel8 As Panel
 	Private Label11 As Label
+	Private sf As StringFunctions
 End Sub
 
 'You can add more parameters here.
@@ -42,7 +43,47 @@ End Sub
 'You can see the list of page related events in the B4XPagesManager object. The event name is B4XPage.
 
 Private Sub Button1_Click
+	Dim horaSistema As String = DateTime.Time(DateTime.Now)
+	Dim fecha As Long = DateTime.Now
+	DateTime.DateFormat = "yyyy-MM-dd HH:mm:ss"
+	Dim fechaActual As String = DateTime.Date(fecha)
+		
+	DateTime.DateFormat = "yyyy-MM-dd HH:mm:ss"
+	Log ("FECHA DE INICIO: "&fechaInicio)
+	Log ("FECHA DE FIN: "&fechaFin)
+	Log ("AREA: "&area)
+	Log ("OBSERVACION: "&Observacion)
+	Log("fechaActual: " & fechaActual)
+	Log("horaSistema: " & horaSistema)
 	
+	sf.Initialize
+	If (sf.Trim(fechaInicio) = "" Or sf.Trim(fechaFin) = "" Or sf.Trim(area) = "") Then
+		MsgboxAsync("Tienes algun campo vacio","Error")
+		Else
+		If (sf.Trim(Observacion) = "") Then
+			Observacion = "N/A"
+		End If
+		'**************** INSERTAR ***********************
+		Dim Req As DBRequestManager
+		Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
+		
+		' Crear el comando con los parámetros
+		Dim cmd As DBCommand = CreateCommand("programa_labores_Update", Array(fechaInicio,fechaFin,area,Observacion,fechaActual,horaSistema,"Terminada",Label8.Text))
+		' Ejecutar el comando
+		Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
+		Wait For(j) JobDone(j As HttpJob)
+		' Manejar la respuesta
+		Try
+			If j.Success Then
+				MsgboxAsync("Se ha insertado correctamente.", "Éxito")
+			Else
+				Log("Error al ejecutar la consulta: " & j.ErrorMessage) ' Agregar más detalles si hay error en la solicitud
+			End If
+		Catch
+			Log("Error al agregar datos: " & LastException.Message) ' Log del error con más detalles
+		End Try
+		'**************** FIN INSERTAR ***********************
+	End If
 End Sub
 
 Private Sub Label1_Click

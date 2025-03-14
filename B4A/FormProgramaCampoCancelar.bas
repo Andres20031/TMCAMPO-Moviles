@@ -11,8 +11,7 @@ Sub Class_Globals
 	Private Label8 As Label
 	Private const rdcLink As String = "http://84.46.255.129:17178/rdc"
 	Dim observacion As String
-	Dim fechaActual As String
-	Dim horaActual As String
+	Private sf As StringFunctions
 End Sub
 
 'You can add more parameters here.
@@ -61,33 +60,48 @@ End Sub
 Private Sub Button1_Click
 	
 	Dim consecutivoInt As Int = MiConsecutivo
-	fechaActual = DateTime.Date(DateTime.Now)
-	horaActual = DateTime.Time(DateTime.Now)
+	Dim horaSistema As String = DateTime.Time(DateTime.Now)
+	Dim fecha As Long = DateTime.Now
+	DateTime.DateFormat = "yyyy-MM-dd HH:mm:ss"
+	Dim fechaActual As String = DateTime.Date(fecha)
 	
 
 	Log("Fecha actual: " & fechaActual)  ' Muestra la fecha en el log
-	Log("Hora actual: " & horaActual)  ' Muestra la hora en el log
+	Log("Hora actual: " & horaSistema)  ' Muestra la hora en el log
 	Log("Observacion: " & observacion)
 	Log("Cancelada")
 	Log("ID" & consecutivoInt)
-	Dim Req As DBRequestManager
-	Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
-
-	' Crear el comando con los parámetros
-	Dim cmd As DBCommand = CreateCommand("programa_labores_Cancelar", Array(fechaActual, horaActual,observacion,"Cancelada",consecutivoInt))
-
-	' Ejecutar el comando
-	Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
-	Wait For(j) JobDone(j As HttpJob)
-
-	' Manejar la respuesta
-	Try
-		If j.Success Then
-			MsgboxAsync("Se ha insertado correctamente.", "Éxito")
-		Else
-			Log("Error al ejecutar la consulta: " & j.ErrorMessage) ' Agregar más detalles si hay error en la solicitud
+	
+	sf.Initialize
+	If (sf.Trim(observacion) = "" ) Then
+		MsgboxAsync("Tienes algun campo vacio","Error")
+	Else
+		If (sf.Trim(observacion) = "") Then
+			observacion = "N/A"
 		End If
-	Catch
-		Log("Error al agregar datos: " & LastException.Message) ' Log del error con más detalles
-	End Try
+		
+		Dim Req As DBRequestManager
+		Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
+
+		' Crear el comando con los parámetros
+		Dim cmd As DBCommand = CreateCommand("programa_labores_Cancelar", Array(fechaActual, horaSistema,observacion,"Cancelada",Label8.Text))
+
+		' Ejecutar el comando
+		Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
+		Wait For(j) JobDone(j As HttpJob)
+
+		' Manejar la respuesta
+		Try
+			If j.Success Then
+				MsgboxAsync("Se ha cancelado correctamente.", "Éxito")
+			Else
+				Log("Error al ejecutar la consulta: " & j.ErrorMessage) ' Agregar más detalles si hay error en la solicitud
+			End If
+		Catch
+			Log("Error al agregar datos: " & LastException.Message) ' Log del error con más detalles
+		End Try
+	End If
+		
+	
+	
 End Sub

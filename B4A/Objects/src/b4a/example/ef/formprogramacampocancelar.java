@@ -10,7 +10,7 @@ public class formprogramacampocancelar extends B4AClass.ImplB4AClass implements 
     private static java.util.HashMap<String, java.lang.reflect.Method> htSubs;
     private void innerInitialize(BA _ba) throws Exception {
         if (ba == null) {
-            ba = new BA(_ba, this, htSubs, "b4a.example.ef.formprogramacampocancelar");
+            ba = new anywheresoftware.b4a.ShellBA(_ba, this, htSubs, "b4a.example.ef.formprogramacampocancelar");
             if (htSubs == null) {
                 ba.loadHtSubs(this.getClass());
                 htSubs = ba.htSubs;
@@ -23,15 +23,21 @@ public class formprogramacampocancelar extends B4AClass.ImplB4AClass implements 
             ba.raiseEvent2(null, true, "class_globals", false);
     }
 
- public anywheresoftware.b4a.keywords.Common __c = null;
+ 
+    public void  innerInitializeHelper(anywheresoftware.b4a.BA _ba) throws Exception{
+        innerInitialize(_ba);
+    }
+    public Object callSub(String sub, Object sender, Object[] args) throws Exception {
+        return BA.SubDelegator.SubNotFound;
+    }
+public anywheresoftware.b4a.keywords.Common __c = null;
 public anywheresoftware.b4a.objects.B4XViewWrapper _root = null;
 public anywheresoftware.b4a.objects.B4XViewWrapper.XUI _xui = null;
 public String _miconsecutivo = "";
 public anywheresoftware.b4a.objects.LabelWrapper _label8 = null;
 public String _rdclink = "";
 public String _observacion = "";
-public String _fechaactual = "";
-public String _horaactual = "";
+public ADR.stringdemo.stringfunctions _sf = null;
 public b4a.example.dateutils _dateutils = null;
 public b4a.example.ef.main _main = null;
 public b4a.example.ef.starter _starter = null;
@@ -39,31 +45,85 @@ public b4a.example.ef.b4xcollections _b4xcollections = null;
 public b4a.example.ef.b4xpages _b4xpages = null;
 public b4a.example.ef.httputils2service _httputils2service = null;
 public b4a.example.ef.xuiviewsutils _xuiviewsutils = null;
-public String  _b4xpage_created(anywheresoftware.b4a.objects.B4XViewWrapper _root1) throws Exception{
- //BA.debugLineNum = 26;BA.debugLine="Private Sub B4XPage_Created (Root1 As B4XView)";
- //BA.debugLineNum = 27;BA.debugLine="Root = Root1";
-_root = _root1;
- //BA.debugLineNum = 29;BA.debugLine="Root.LoadLayout(\"FormLaboresCampoCancelar\")";
-_root.LoadLayout("FormLaboresCampoCancelar",ba);
- //BA.debugLineNum = 30;BA.debugLine="End Sub";
+public Object  _initialize(b4a.example.ef.formprogramacampocancelar __ref,anywheresoftware.b4a.BA _ba) throws Exception{
+__ref = this;
+innerInitialize(_ba);
+RDebugUtils.currentModule="formprogramacampocancelar";
+if (Debug.shouldDelegate(ba, "initialize", false))
+	 {return ((Object) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
+RDebugUtils.currentLine=53411840;
+ //BA.debugLineNum = 53411840;BA.debugLine="Public Sub Initialize As Object";
+RDebugUtils.currentLine=53411841;
+ //BA.debugLineNum = 53411841;BA.debugLine="Return Me";
+if (true) return this;
+RDebugUtils.currentLine=53411842;
+ //BA.debugLineNum = 53411842;BA.debugLine="End Sub";
+return null;
+}
+public String  _setconsecutivo(b4a.example.ef.formprogramacampocancelar __ref,String _valor) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="formprogramacampocancelar";
+if (Debug.shouldDelegate(ba, "setconsecutivo", false))
+	 {return ((String) Debug.delegate(ba, "setconsecutivo", new Object[] {_valor}));}
+RDebugUtils.currentLine=53477376;
+ //BA.debugLineNum = 53477376;BA.debugLine="Public Sub SetConsecutivo(Valor As String)";
+RDebugUtils.currentLine=53477377;
+ //BA.debugLineNum = 53477377;BA.debugLine="MiConsecutivo = Valor";
+__ref._miconsecutivo /*String*/  = _valor;
+RDebugUtils.currentLine=53477378;
+ //BA.debugLineNum = 53477378;BA.debugLine="If Label8.IsInitialized Then";
+if (__ref._label8 /*anywheresoftware.b4a.objects.LabelWrapper*/ .IsInitialized()) { 
+RDebugUtils.currentLine=53477379;
+ //BA.debugLineNum = 53477379;BA.debugLine="Label8.Text = MiConsecutivo";
+__ref._label8 /*anywheresoftware.b4a.objects.LabelWrapper*/ .setText(BA.ObjectToCharSequence(__ref._miconsecutivo /*String*/ ));
+ };
+RDebugUtils.currentLine=53477381;
+ //BA.debugLineNum = 53477381;BA.debugLine="End Sub";
 return "";
 }
-public void  _button1_click() throws Exception{
-ResumableSub_Button1_Click rsub = new ResumableSub_Button1_Click(this);
+public String  _b4xpage_created(b4a.example.ef.formprogramacampocancelar __ref,anywheresoftware.b4a.objects.B4XViewWrapper _root1) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="formprogramacampocancelar";
+if (Debug.shouldDelegate(ba, "b4xpage_created", false))
+	 {return ((String) Debug.delegate(ba, "b4xpage_created", new Object[] {_root1}));}
+RDebugUtils.currentLine=53542912;
+ //BA.debugLineNum = 53542912;BA.debugLine="Private Sub B4XPage_Created (Root1 As B4XView)";
+RDebugUtils.currentLine=53542913;
+ //BA.debugLineNum = 53542913;BA.debugLine="Root = Root1";
+__ref._root /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = _root1;
+RDebugUtils.currentLine=53542915;
+ //BA.debugLineNum = 53542915;BA.debugLine="Root.LoadLayout(\"FormLaboresCampoCancelar\")";
+__ref._root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .LoadLayout("FormLaboresCampoCancelar",ba);
+RDebugUtils.currentLine=53542916;
+ //BA.debugLineNum = 53542916;BA.debugLine="End Sub";
+return "";
+}
+public void  _button1_click(b4a.example.ef.formprogramacampocancelar __ref) throws Exception{
+RDebugUtils.currentModule="formprogramacampocancelar";
+if (Debug.shouldDelegate(ba, "button1_click", false))
+	 {Debug.delegate(ba, "button1_click", null); return;}
+ResumableSub_Button1_Click rsub = new ResumableSub_Button1_Click(this,__ref);
 rsub.resume(ba, null);
 }
 public static class ResumableSub_Button1_Click extends BA.ResumableSub {
-public ResumableSub_Button1_Click(b4a.example.ef.formprogramacampocancelar parent) {
+public ResumableSub_Button1_Click(b4a.example.ef.formprogramacampocancelar parent,b4a.example.ef.formprogramacampocancelar __ref) {
 this.parent = parent;
+this.__ref = __ref;
+this.__ref = parent;
 }
+b4a.example.ef.formprogramacampocancelar __ref;
 b4a.example.ef.formprogramacampocancelar parent;
 int _consecutivoint = 0;
+String _horasistema = "";
+long _fecha = 0L;
+String _fechaactual = "";
 b4a.example.ef.dbrequestmanager _req = null;
 b4a.example.ef.main._dbcommand _cmd = null;
 b4a.example.ef.httpjob _j = null;
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
+RDebugUtils.currentModule="formprogramacampocancelar";
 
     while (true) {
 try {
@@ -75,100 +135,181 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 57;BA.debugLine="Dim consecutivoInt As Int = MiConsecutivo";
-_consecutivoint = (int)(Double.parseDouble(parent._miconsecutivo));
- //BA.debugLineNum = 58;BA.debugLine="fechaActual = DateTime.Date(DateTime.Now)";
-parent._fechaactual = parent.__c.DateTime.Date(parent.__c.DateTime.getNow());
- //BA.debugLineNum = 59;BA.debugLine="horaActual = DateTime.Time(DateTime.Now)";
-parent._horaactual = parent.__c.DateTime.Time(parent.__c.DateTime.getNow());
- //BA.debugLineNum = 62;BA.debugLine="Log(\"Fecha actual: \" & fechaActual)  ' Muestra la";
-parent.__c.LogImpl("753673991","Fecha actual: "+parent._fechaactual,0);
- //BA.debugLineNum = 63;BA.debugLine="Log(\"Hora actual: \" & horaActual)  ' Muestra la h";
-parent.__c.LogImpl("753673992","Hora actual: "+parent._horaactual,0);
- //BA.debugLineNum = 64;BA.debugLine="Log(\"Observacion: \" & observacion)";
-parent.__c.LogImpl("753673993","Observacion: "+parent._observacion,0);
- //BA.debugLineNum = 65;BA.debugLine="Log(\"Cancelada\")";
-parent.__c.LogImpl("753673994","Cancelada",0);
- //BA.debugLineNum = 66;BA.debugLine="Log(\"ID\" & consecutivoInt)";
-parent.__c.LogImpl("753673995","ID"+BA.NumberToString(_consecutivoint),0);
- //BA.debugLineNum = 67;BA.debugLine="Dim Req As DBRequestManager";
-_req = new b4a.example.ef.dbrequestmanager();
- //BA.debugLineNum = 68;BA.debugLine="Req.Initialize(Me, rdcLink & \"?DBName=\" & Main.pD";
-_req._initialize /*String*/ (ba,parent,parent._rdclink+"?DBName="+parent._main._pdbname /*String*/ );
- //BA.debugLineNum = 71;BA.debugLine="Dim cmd As DBCommand = CreateCommand(\"programa_la";
-_cmd = parent._createcommand("programa_labores_Cancelar",new Object[]{(Object)(parent._fechaactual),(Object)(parent._horaactual),(Object)(parent._observacion),(Object)("Cancelada"),(Object)(_consecutivoint)});
- //BA.debugLineNum = 74;BA.debugLine="Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)";
-_j = _req._executecommand /*b4a.example.ef.httpjob*/ (_cmd,parent.__c.Null);
- //BA.debugLineNum = 75;BA.debugLine="Wait For(j) JobDone(j As HttpJob)";
-parent.__c.WaitFor("jobdone", ba, this, (Object)(_j));
-this.state = 13;
-return;
-case 13:
-//C
-this.state = 1;
-_j = (b4a.example.ef.httpjob) result[0];
-;
- //BA.debugLineNum = 78;BA.debugLine="Try";
+RDebugUtils.currentLine=53805058;
+ //BA.debugLineNum = 53805058;BA.debugLine="Dim consecutivoInt As Int = MiConsecutivo";
+_consecutivoint = (int)(Double.parseDouble(__ref._miconsecutivo /*String*/ ));
+RDebugUtils.currentLine=53805059;
+ //BA.debugLineNum = 53805059;BA.debugLine="Dim horaSistema As String = DateTime.Time(DateTim";
+_horasistema = parent.__c.DateTime.Time(parent.__c.DateTime.getNow());
+RDebugUtils.currentLine=53805060;
+ //BA.debugLineNum = 53805060;BA.debugLine="Dim fecha As Long = DateTime.Now";
+_fecha = parent.__c.DateTime.getNow();
+RDebugUtils.currentLine=53805061;
+ //BA.debugLineNum = 53805061;BA.debugLine="DateTime.DateFormat = \"yyyy-MM-dd HH:mm:ss\"";
+parent.__c.DateTime.setDateFormat("yyyy-MM-dd HH:mm:ss");
+RDebugUtils.currentLine=53805062;
+ //BA.debugLineNum = 53805062;BA.debugLine="Dim fechaActual As String = DateTime.Date(fecha)";
+_fechaactual = parent.__c.DateTime.Date(_fecha);
+RDebugUtils.currentLine=53805065;
+ //BA.debugLineNum = 53805065;BA.debugLine="Log(\"Fecha actual: \" & fechaActual)  ' Muestra la";
+parent.__c.LogImpl("053805065","Fecha actual: "+_fechaactual,0);
+RDebugUtils.currentLine=53805066;
+ //BA.debugLineNum = 53805066;BA.debugLine="Log(\"Hora actual: \" & horaSistema)  ' Muestra la";
+parent.__c.LogImpl("053805066","Hora actual: "+_horasistema,0);
+RDebugUtils.currentLine=53805067;
+ //BA.debugLineNum = 53805067;BA.debugLine="Log(\"Observacion: \" & observacion)";
+parent.__c.LogImpl("053805067","Observacion: "+__ref._observacion /*String*/ ,0);
+RDebugUtils.currentLine=53805068;
+ //BA.debugLineNum = 53805068;BA.debugLine="Log(\"Cancelada\")";
+parent.__c.LogImpl("053805068","Cancelada",0);
+RDebugUtils.currentLine=53805069;
+ //BA.debugLineNum = 53805069;BA.debugLine="Log(\"ID\" & consecutivoInt)";
+parent.__c.LogImpl("053805069","ID"+BA.NumberToString(_consecutivoint),0);
+RDebugUtils.currentLine=53805071;
+ //BA.debugLineNum = 53805071;BA.debugLine="sf.Initialize";
+__ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvv1(ba);
+RDebugUtils.currentLine=53805072;
+ //BA.debugLineNum = 53805072;BA.debugLine="If (sf.Trim(observacion) = \"\" ) Then";
 if (true) break;
 
 case 1:
-//try
-this.state = 12;
-this.catchState = 11;
+//if
+this.state = 22;
+if (((__ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(__ref._observacion /*String*/ )).equals(""))) { 
 this.state = 3;
-if (true) break;
+}else {
+this.state = 5;
+}if (true) break;
 
 case 3:
 //C
-this.state = 4;
-this.catchState = 11;
- //BA.debugLineNum = 79;BA.debugLine="If j.Success Then";
+this.state = 22;
+RDebugUtils.currentLine=53805073;
+ //BA.debugLineNum = 53805073;BA.debugLine="MsgboxAsync(\"Tienes algun campo vacio\",\"Error\")";
+parent.__c.MsgboxAsync(BA.ObjectToCharSequence("Tienes algun campo vacio"),BA.ObjectToCharSequence("Error"),ba);
+ if (true) break;
+
+case 5:
+//C
+this.state = 6;
+RDebugUtils.currentLine=53805075;
+ //BA.debugLineNum = 53805075;BA.debugLine="If (sf.Trim(observacion) = \"\") Then";
 if (true) break;
 
-case 4:
+case 6:
 //if
 this.state = 9;
-if (_j._success /*boolean*/ ) { 
-this.state = 6;
-}else {
+if (((__ref._sf /*ADR.stringdemo.stringfunctions*/ ._vvvvv7(__ref._observacion /*String*/ )).equals(""))) { 
 this.state = 8;
 }if (true) break;
-
-case 6:
-//C
-this.state = 9;
- //BA.debugLineNum = 80;BA.debugLine="MsgboxAsync(\"Se ha insertado correctamente.\", \"";
-parent.__c.MsgboxAsync(BA.ObjectToCharSequence("Se ha insertado correctamente."),BA.ObjectToCharSequence("Éxito"),ba);
- if (true) break;
 
 case 8:
 //C
 this.state = 9;
- //BA.debugLineNum = 82;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
-parent.__c.LogImpl("753674011","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
+RDebugUtils.currentLine=53805076;
+ //BA.debugLineNum = 53805076;BA.debugLine="observacion = \"N/A\"";
+__ref._observacion /*String*/  = "N/A";
  if (true) break;
 
 case 9:
 //C
-this.state = 12;
+this.state = 10;
 ;
- if (true) break;
-
-case 11:
+RDebugUtils.currentLine=53805079;
+ //BA.debugLineNum = 53805079;BA.debugLine="Dim Req As DBRequestManager";
+_req = new b4a.example.ef.dbrequestmanager();
+RDebugUtils.currentLine=53805080;
+ //BA.debugLineNum = 53805080;BA.debugLine="Req.Initialize(Me, rdcLink & \"?DBName=\" & Main.p";
+_req._initialize /*String*/ (null,ba,parent,__ref._rdclink /*String*/ +"?DBName="+parent._main._pdbname /*String*/ );
+RDebugUtils.currentLine=53805083;
+ //BA.debugLineNum = 53805083;BA.debugLine="Dim cmd As DBCommand = CreateCommand(\"programa_l";
+_cmd = __ref._createcommand /*b4a.example.ef.main._dbcommand*/ (null,"programa_labores_Cancelar",new Object[]{(Object)(_fechaactual),(Object)(_horasistema),(Object)(__ref._observacion /*String*/ ),(Object)("Cancelada"),(Object)(__ref._label8 /*anywheresoftware.b4a.objects.LabelWrapper*/ .getText())});
+RDebugUtils.currentLine=53805086;
+ //BA.debugLineNum = 53805086;BA.debugLine="Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)";
+_j = _req._executecommand /*b4a.example.ef.httpjob*/ (null,_cmd,parent.__c.Null);
+RDebugUtils.currentLine=53805087;
+ //BA.debugLineNum = 53805087;BA.debugLine="Wait For(j) JobDone(j As HttpJob)";
+parent.__c.WaitFor("jobdone", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "formprogramacampocancelar", "button1_click"), (Object)(_j));
+this.state = 23;
+return;
+case 23:
 //C
+this.state = 10;
+_j = (b4a.example.ef.httpjob) result[1];
+;
+RDebugUtils.currentLine=53805090;
+ //BA.debugLineNum = 53805090;BA.debugLine="Try";
+if (true) break;
+
+case 10:
+//try
+this.state = 21;
+this.catchState = 20;
 this.state = 12;
-this.catchState = 0;
- //BA.debugLineNum = 85;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
-parent.__c.LogImpl("753674014","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
- if (true) break;
 if (true) break;
 
 case 12:
 //C
-this.state = -1;
+this.state = 13;
+this.catchState = 20;
+RDebugUtils.currentLine=53805091;
+ //BA.debugLineNum = 53805091;BA.debugLine="If j.Success Then";
+if (true) break;
+
+case 13:
+//if
+this.state = 18;
+if (_j._success /*boolean*/ ) { 
+this.state = 15;
+}else {
+this.state = 17;
+}if (true) break;
+
+case 15:
+//C
+this.state = 18;
+RDebugUtils.currentLine=53805092;
+ //BA.debugLineNum = 53805092;BA.debugLine="MsgboxAsync(\"Se ha cancelado correctamente.\",";
+parent.__c.MsgboxAsync(BA.ObjectToCharSequence("Se ha cancelado correctamente."),BA.ObjectToCharSequence("Éxito"),ba);
+ if (true) break;
+
+case 17:
+//C
+this.state = 18;
+RDebugUtils.currentLine=53805094;
+ //BA.debugLineNum = 53805094;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Erro";
+parent.__c.LogImpl("053805094","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
+ if (true) break;
+
+case 18:
+//C
+this.state = 21;
+;
+ if (true) break;
+
+case 20:
+//C
+this.state = 21;
+this.catchState = 0;
+RDebugUtils.currentLine=53805097;
+ //BA.debugLineNum = 53805097;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.";
+parent.__c.LogImpl("053805097","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
+ if (true) break;
+if (true) break;
+
+case 21:
+//C
+this.state = 22;
 this.catchState = 0;
 ;
- //BA.debugLineNum = 87;BA.debugLine="End Sub";
+ if (true) break;
+
+case 22:
+//C
+this.state = -1;
+;
+RDebugUtils.currentLine=53805103;
+ //BA.debugLineNum = 53805103;BA.debugLine="End Sub";
 if (true) break;
 }} 
        catch (Exception e0) {
@@ -182,86 +323,93 @@ ba.setLastException(e0);}
         }
     }
 }
-public void  _jobdone(b4a.example.ef.httpjob _j) throws Exception{
-}
-public String  _class_globals() throws Exception{
- //BA.debugLineNum = 1;BA.debugLine="Sub Class_Globals";
- //BA.debugLineNum = 2;BA.debugLine="Private Root As B4XView 'ignore";
-_root = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 3;BA.debugLine="Private xui As XUI 'ignore";
-_xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
- //BA.debugLineNum = 4;BA.debugLine="Private MiConsecutivo As String";
-_miconsecutivo = "";
- //BA.debugLineNum = 5;BA.debugLine="Private Label8 As Label";
-_label8 = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 6;BA.debugLine="Private const rdcLink As String = \"http://84.46.2";
-_rdclink = "http://84.46.255.129:17178/rdc";
- //BA.debugLineNum = 7;BA.debugLine="Dim observacion As String";
-_observacion = "";
- //BA.debugLineNum = 8;BA.debugLine="Dim fechaActual As String";
-_fechaactual = "";
- //BA.debugLineNum = 9;BA.debugLine="Dim horaActual As String";
-_horaactual = "";
- //BA.debugLineNum = 10;BA.debugLine="End Sub";
-return "";
-}
-public b4a.example.ef.main._dbcommand  _createcommand(String _name,Object[] _parameters) throws Exception{
+public b4a.example.ef.main._dbcommand  _createcommand(b4a.example.ef.formprogramacampocancelar __ref,String _name,Object[] _parameters) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="formprogramacampocancelar";
+if (Debug.shouldDelegate(ba, "createcommand", false))
+	 {return ((b4a.example.ef.main._dbcommand) Debug.delegate(ba, "createcommand", new Object[] {_name,_parameters}));}
 b4a.example.ef.main._dbcommand _cmd = null;
- //BA.debugLineNum = 47;BA.debugLine="Sub CreateCommand(Name As String, Parameters() As";
- //BA.debugLineNum = 48;BA.debugLine="Dim cmd As DBCommand";
+RDebugUtils.currentLine=53739520;
+ //BA.debugLineNum = 53739520;BA.debugLine="Sub CreateCommand(Name As String, Parameters() As";
+RDebugUtils.currentLine=53739521;
+ //BA.debugLineNum = 53739521;BA.debugLine="Dim cmd As DBCommand";
 _cmd = new b4a.example.ef.main._dbcommand();
- //BA.debugLineNum = 49;BA.debugLine="cmd.Initialize";
+RDebugUtils.currentLine=53739522;
+ //BA.debugLineNum = 53739522;BA.debugLine="cmd.Initialize";
 _cmd.Initialize();
- //BA.debugLineNum = 50;BA.debugLine="cmd.Name = Name";
+RDebugUtils.currentLine=53739523;
+ //BA.debugLineNum = 53739523;BA.debugLine="cmd.Name = Name";
 _cmd.Name /*String*/  = _name;
- //BA.debugLineNum = 51;BA.debugLine="If Parameters <> Null Then cmd.Parameters = Param";
+RDebugUtils.currentLine=53739524;
+ //BA.debugLineNum = 53739524;BA.debugLine="If Parameters <> Null Then cmd.Parameters = Param";
 if (_parameters!= null) { 
 _cmd.Parameters /*Object[]*/  = _parameters;};
- //BA.debugLineNum = 52;BA.debugLine="Return cmd";
+RDebugUtils.currentLine=53739525;
+ //BA.debugLineNum = 53739525;BA.debugLine="Return cmd";
 if (true) return _cmd;
- //BA.debugLineNum = 53;BA.debugLine="End Sub";
+RDebugUtils.currentLine=53739526;
+ //BA.debugLineNum = 53739526;BA.debugLine="End Sub";
 return null;
 }
-public String  _edittext3_textchanged(String _old,String _new) throws Exception{
- //BA.debugLineNum = 40;BA.debugLine="Private Sub EditText3_TextChanged (Old As String,";
- //BA.debugLineNum = 42;BA.debugLine="observacion = New";
-_observacion = _new;
- //BA.debugLineNum = 44;BA.debugLine="Log(observacion)";
-__c.LogImpl("753542916",_observacion,0);
- //BA.debugLineNum = 45;BA.debugLine="End Sub";
+public String  _class_globals(b4a.example.ef.formprogramacampocancelar __ref) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="formprogramacampocancelar";
+RDebugUtils.currentLine=53346304;
+ //BA.debugLineNum = 53346304;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=53346305;
+ //BA.debugLineNum = 53346305;BA.debugLine="Private Root As B4XView 'ignore";
+_root = new anywheresoftware.b4a.objects.B4XViewWrapper();
+RDebugUtils.currentLine=53346306;
+ //BA.debugLineNum = 53346306;BA.debugLine="Private xui As XUI 'ignore";
+_xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
+RDebugUtils.currentLine=53346307;
+ //BA.debugLineNum = 53346307;BA.debugLine="Private MiConsecutivo As String";
+_miconsecutivo = "";
+RDebugUtils.currentLine=53346308;
+ //BA.debugLineNum = 53346308;BA.debugLine="Private Label8 As Label";
+_label8 = new anywheresoftware.b4a.objects.LabelWrapper();
+RDebugUtils.currentLine=53346309;
+ //BA.debugLineNum = 53346309;BA.debugLine="Private const rdcLink As String = \"http://84.46.2";
+_rdclink = "http://84.46.255.129:17178/rdc";
+RDebugUtils.currentLine=53346310;
+ //BA.debugLineNum = 53346310;BA.debugLine="Dim observacion As String";
+_observacion = "";
+RDebugUtils.currentLine=53346311;
+ //BA.debugLineNum = 53346311;BA.debugLine="Private sf As StringFunctions";
+_sf = new ADR.stringdemo.stringfunctions();
+RDebugUtils.currentLine=53346312;
+ //BA.debugLineNum = 53346312;BA.debugLine="End Sub";
 return "";
 }
-public Object  _initialize(anywheresoftware.b4a.BA _ba) throws Exception{
-innerInitialize(_ba);
- //BA.debugLineNum = 13;BA.debugLine="Public Sub Initialize As Object";
- //BA.debugLineNum = 14;BA.debugLine="Return Me";
-if (true) return this;
- //BA.debugLineNum = 15;BA.debugLine="End Sub";
-return null;
+public String  _edittext3_textchanged(b4a.example.ef.formprogramacampocancelar __ref,String _old,String _new) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="formprogramacampocancelar";
+if (Debug.shouldDelegate(ba, "edittext3_textchanged", false))
+	 {return ((String) Debug.delegate(ba, "edittext3_textchanged", new Object[] {_old,_new}));}
+RDebugUtils.currentLine=53673984;
+ //BA.debugLineNum = 53673984;BA.debugLine="Private Sub EditText3_TextChanged (Old As String,";
+RDebugUtils.currentLine=53673986;
+ //BA.debugLineNum = 53673986;BA.debugLine="observacion = New";
+__ref._observacion /*String*/  = _new;
+RDebugUtils.currentLine=53673988;
+ //BA.debugLineNum = 53673988;BA.debugLine="Log(observacion)";
+__c.LogImpl("053673988",__ref._observacion /*String*/ ,0);
+RDebugUtils.currentLine=53673989;
+ //BA.debugLineNum = 53673989;BA.debugLine="End Sub";
+return "";
 }
-public String  _label1_click() throws Exception{
- //BA.debugLineNum = 34;BA.debugLine="Private Sub Label1_Click";
- //BA.debugLineNum = 35;BA.debugLine="B4XPages.ClosePage(Me)";
+public String  _label1_click(b4a.example.ef.formprogramacampocancelar __ref) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="formprogramacampocancelar";
+if (Debug.shouldDelegate(ba, "label1_click", false))
+	 {return ((String) Debug.delegate(ba, "label1_click", null));}
+RDebugUtils.currentLine=53608448;
+ //BA.debugLineNum = 53608448;BA.debugLine="Private Sub Label1_Click";
+RDebugUtils.currentLine=53608449;
+ //BA.debugLineNum = 53608449;BA.debugLine="B4XPages.ClosePage(Me)";
 _b4xpages._closepage /*String*/ (ba,this);
- //BA.debugLineNum = 36;BA.debugLine="End Sub";
+RDebugUtils.currentLine=53608450;
+ //BA.debugLineNum = 53608450;BA.debugLine="End Sub";
 return "";
-}
-public String  _setconsecutivo(String _valor) throws Exception{
- //BA.debugLineNum = 17;BA.debugLine="Public Sub SetConsecutivo(Valor As String)";
- //BA.debugLineNum = 18;BA.debugLine="MiConsecutivo = Valor";
-_miconsecutivo = _valor;
- //BA.debugLineNum = 19;BA.debugLine="If Label8.IsInitialized Then";
-if (_label8.IsInitialized()) { 
- //BA.debugLineNum = 20;BA.debugLine="Label8.Text = MiConsecutivo";
-_label8.setText(BA.ObjectToCharSequence(_miconsecutivo));
- };
- //BA.debugLineNum = 22;BA.debugLine="End Sub";
-return "";
-}
-public Object callSub(String sub, Object sender, Object[] args) throws Exception {
-BA.senderHolder.set(sender);
-if (BA.fastSubCompare(sub, "B4XPAGE_CREATED"))
-	return _b4xpage_created((anywheresoftware.b4a.objects.B4XViewWrapper) args[0]);
-return BA.SubDelegator.SubNotFound;
 }
 }
