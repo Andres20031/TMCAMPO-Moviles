@@ -199,7 +199,7 @@ parent._nitupdate = _cursor.GetString("Nit");
  //BA.debugLineNum = 116;BA.debugLine="haciendaUpdate=Cursor.GetString(\"hacienda\")";
 parent._haciendaupdate = _cursor.GetString("hacienda");
  //BA.debugLineNum = 118;BA.debugLine="Log(\"NIT: \"&nitUpdate)";
-parent.__c.LogImpl("76881309","NIT: "+parent._nitupdate,0);
+parent.__c.LogImpl("757606173","NIT: "+parent._nitupdate,0);
  if (true) break;
 if (true) break;
 
@@ -213,7 +213,7 @@ case 12:
 //C
 this.state = 13;
  //BA.debugLineNum = 121;BA.debugLine="Log(\"NIT: \"&nit)";
-parent.__c.LogImpl("76881312","NIT: "+parent._nit,0);
+parent.__c.LogImpl("757606176","NIT: "+parent._nit,0);
  if (true) break;
 
 case 13:
@@ -243,7 +243,7 @@ case 15:
 this.state = 16;
 this.catchState = 0;
  //BA.debugLineNum = 135;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("76881326",BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("757606190",BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 if (true) break;
 
@@ -287,7 +287,7 @@ _listinsumos();
  } 
        catch (Exception e7) {
 			ba.setLastException(e7); //BA.debugLineNum = 940;BA.debugLine="Log(LastException)";
-__c.LogImpl("79306120",BA.ObjectToString(__c.LastException(ba)),0);
+__c.LogImpl("760030984",BA.ObjectToString(__c.LastException(ba)),0);
  };
  //BA.debugLineNum = 943;BA.debugLine="End Sub";
 return "";
@@ -529,7 +529,7 @@ _selectsql(_id);
  } 
        catch (Exception e7) {
 			ba.setLastException(e7); //BA.debugLineNum = 977;BA.debugLine="Log(LastException)";
-__c.LogImpl("79437193",BA.ObjectToString(__c.LastException(ba)),0);
+__c.LogImpl("760162057",BA.ObjectToString(__c.LastException(ba)),0);
  };
  //BA.debugLineNum = 979;BA.debugLine="End Sub";
 return "";
@@ -615,7 +615,7 @@ this.state = 19;
  //BA.debugLineNum = 248;BA.debugLine="Cursor.Position = i";
 _cursor.setPosition(_i);
  //BA.debugLineNum = 249;BA.debugLine="Log(Cursor.GetString(\"name\"))";
-parent.__c.LogImpl("77143434",_cursor.GetString("name"),0);
+parent.__c.LogImpl("757868298",_cursor.GetString("name"),0);
  //BA.debugLineNum = 250;BA.debugLine="Spinner1NameInsumo.Add(Cursor.GetString(\"name\")";
 parent._spinner1nameinsumo.Add(_cursor.GetString("name"));
  if (true) break;
@@ -690,7 +690,7 @@ case 16:
 this.state = 17;
 this.catchState = 0;
  //BA.debugLineNum = 266;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("77143451",BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("757868315",BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 if (true) break;
 
@@ -899,7 +899,7 @@ case 13:
 //C
 this.state = 14;
  //BA.debugLineNum = 879;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("78912924","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("759637788","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 14:
@@ -1081,9 +1081,9 @@ case 10:
 this.state = 11;
 ;
  //BA.debugLineNum = 704;BA.debugLine="Log(\"cadena: \"&cadena)";
-parent.__c.LogImpl("78519706","cadena: "+_cadena,0);
+parent.__c.LogImpl("759244570","cadena: "+_cadena,0);
  //BA.debugLineNum = 705;BA.debugLine="Log(\"hacienda: \"&haciendaUpdate)";
-parent.__c.LogImpl("78519707","hacienda: "+parent._haciendaupdate,0);
+parent.__c.LogImpl("759244571","hacienda: "+parent._haciendaupdate,0);
  //BA.debugLineNum = 706;BA.debugLine="If cadena.Contains(haciendaUpdate) Then";
 if (true) break;
 
@@ -1137,7 +1137,7 @@ case 19:
 //C
 this.state = 20;
  //BA.debugLineNum = 720;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("78519722","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("759244586","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 20:
@@ -1331,7 +1331,7 @@ case 13:
 //C
 this.state = 14;
  //BA.debugLineNum = 846;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("78847389","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("759572253","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 14:
@@ -1513,7 +1513,7 @@ case 13:
 //C
 this.state = 14;
  //BA.debugLineNum = 764;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("78650775","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("759375639","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 14:
@@ -1699,7 +1699,7 @@ case 13:
 //C
 this.state = 14;
  //BA.debugLineNum = 811;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("78781851","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("759506715","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 14:
@@ -1901,7 +1901,7 @@ case 13:
 //C
 this.state = 16;
  //BA.debugLineNum = 660;BA.debugLine="Log(\"NIT: \"&nitUpdate)";
-parent.__c.LogImpl("78454174","NIT: "+parent._nitupdate,0);
+parent.__c.LogImpl("759179038","NIT: "+parent._nitupdate,0);
  //BA.debugLineNum = 663;BA.debugLine="SD_xComboBoxNit.Add(nitUpdate,INTRegistros)";
 parent._sd_xcomboboxnit._add /*String*/ (parent._nitupdate,(Object)(_intregistros));
  if (true) break;
@@ -1932,7 +1932,7 @@ case 19:
 //C
 this.state = 20;
  //BA.debugLineNum = 672;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("78454186","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("759179050","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 20:
@@ -2030,11 +2030,11 @@ this.state = 16;
  //BA.debugLineNum = 428;BA.debugLine="Cursor.Position = i";
 _cursor.setPosition(_i);
  //BA.debugLineNum = 429;BA.debugLine="Log(\"=====ITEM #\"&i&\"=====\")";
-parent.__c.LogImpl("77798792","=====ITEM #"+BA.NumberToString(_i)+"=====",0);
+parent.__c.LogImpl("758523656","=====ITEM #"+BA.NumberToString(_i)+"=====",0);
  //BA.debugLineNum = 430;BA.debugLine="Log(Cursor.GetString(\"idmaquina\"))";
-parent.__c.LogImpl("77798793",_cursor.GetString("idmaquina"),0);
+parent.__c.LogImpl("758523657",_cursor.GetString("idmaquina"),0);
  //BA.debugLineNum = 431;BA.debugLine="Log(Cursor.GetString(\"name\")&\"--\"&Cursor.GetStri";
-parent.__c.LogImpl("77798794",_cursor.GetString("name")+"--"+_cursor.GetString("qnt"),0);
+parent.__c.LogImpl("758523658",_cursor.GetString("name")+"--"+_cursor.GetString("qnt"),0);
  //BA.debugLineNum = 432;BA.debugLine="sb.Append(Cursor.GetString(\"name\")&\"--\"&Cursor.G";
 _sb.Append(_cursor.GetString("name")+"--"+_cursor.GetString("qnt")).Append(parent.__c.CRLF);
  if (true) break;
@@ -2045,7 +2045,7 @@ case 7:
 this.state = 8;
 ;
  //BA.debugLineNum = 435;BA.debugLine="Log(sb.ToString)";
-parent.__c.LogImpl("77798798",_sb.ToString(),0);
+parent.__c.LogImpl("758523662",_sb.ToString(),0);
  //BA.debugLineNum = 437;BA.debugLine="Dim Cursor As Cursor";
 _cursor = new anywheresoftware.b4a.sql.SQL.CursorWrapper();
  //BA.debugLineNum = 438;BA.debugLine="Cursor = Starter.SQL1.ExecQuery(\"SELECT * FROM m";
@@ -2080,9 +2080,9 @@ this.state = 18;
  //BA.debugLineNum = 440;BA.debugLine="Cursor.Position = i";
 _cursor.setPosition(_i);
  //BA.debugLineNum = 441;BA.debugLine="Log(\"=====Maquinas #\"&i&\"=====\")";
-parent.__c.LogImpl("77798804","=====Maquinas #"+BA.NumberToString(_i)+"=====",0);
+parent.__c.LogImpl("758523668","=====Maquinas #"+BA.NumberToString(_i)+"=====",0);
  //BA.debugLineNum = 442;BA.debugLine="Log(Cursor.GetString(\"id\"))'&\"--\"&Cursor.GetStr";
-parent.__c.LogImpl("77798805",_cursor.GetString("id"),0);
+parent.__c.LogImpl("758523669",_cursor.GetString("id"),0);
  if (true) break;
 if (true) break;
 
@@ -2103,7 +2103,7 @@ case 13:
 this.state = 14;
 this.catchState = 0;
  //BA.debugLineNum = 449;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("77798812",BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("758523676",BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 if (true) break;
 
@@ -2201,7 +2201,7 @@ case 3:
 //C
 this.state = 4;
  //BA.debugLineNum = 501;BA.debugLine="Log(\"Inserted successfully!\")";
-parent.__c.LogImpl("77995399","Inserted successfully!",0);
+parent.__c.LogImpl("758720263","Inserted successfully!",0);
  if (true) break;
 
 case 4:
@@ -2253,7 +2253,7 @@ int _id = 0;
  //BA.debugLineNum = 946;BA.debugLine="Label1RemoveInsumo=Sender";
 _label1removeinsumo = (anywheresoftware.b4a.objects.LabelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.LabelWrapper(), (android.widget.TextView)(__c.Sender(ba)));
  //BA.debugLineNum = 947;BA.debugLine="Log(Label1RemoveInsumo.Tag)";
-__c.LogImpl("79371650",BA.ObjectToString(_label1removeinsumo.getTag()),0);
+__c.LogImpl("760096514",BA.ObjectToString(_label1removeinsumo.getTag()),0);
  //BA.debugLineNum = 948;BA.debugLine="Dim id As Int=Label1RemoveInsumo.Tag";
 _id = (int)(BA.ObjectToNumber(_label1removeinsumo.getTag()));
  //BA.debugLineNum = 949;BA.debugLine="Starter.SQL1.ExecNonQuery2(\"DELETE from insumo wh";
@@ -2274,19 +2274,19 @@ _salario = "10";
  //BA.debugLineNum = 472;BA.debugLine="InsertRecord(Main.pDBName ,\"99\",salario)";
 _insertrecord(_main._pdbname /*String*/ ,"99",(int)(Double.parseDouble(_salario)));
  //BA.debugLineNum = 475;BA.debugLine="Log(Label10.text&\"----\"&Label13Time.text)";
-__c.LogImpl("77929864",_label10.getText()+"----"+_label13time.getText(),0);
+__c.LogImpl("758654728",_label10.getText()+"----"+_label13time.getText(),0);
  //BA.debugLineNum = 476;BA.debugLine="Log(\"HACIENDA: \"&haciendaUpdate)";
-__c.LogImpl("77929865","HACIENDA: "+_haciendaupdate,0);
+__c.LogImpl("758654729","HACIENDA: "+_haciendaupdate,0);
  //BA.debugLineNum = 477;BA.debugLine="If tipo=\"new\" Then";
 if ((_tipo).equals("new")) { 
  }else {
  //BA.debugLineNum = 484;BA.debugLine="Log(\"update\")";
-__c.LogImpl("77929873","update",0);
+__c.LogImpl("758654737","update",0);
  };
  } 
        catch (Exception e12) {
 			ba.setLastException(e12); //BA.debugLineNum = 488;BA.debugLine="Log(LastException)";
-__c.LogImpl("77929877",BA.ObjectToString(__c.LastException(ba)),0);
+__c.LogImpl("758654741",BA.ObjectToString(__c.LastException(ba)),0);
  };
  //BA.debugLineNum = 491;BA.debugLine="End Sub";
 return "";
@@ -2323,11 +2323,11 @@ _cursor.setPosition(_i);
  //BA.debugLineNum = 155;BA.debugLine="Dim	id As Int=Cursor.GetString(\"id\")";
 _id = (int)(Double.parseDouble(_cursor.GetString("id")));
  //BA.debugLineNum = 156;BA.debugLine="Log(Cursor.GetString(\"id\"))";
-__c.LogImpl("76946829",_cursor.GetString("id"),0);
+__c.LogImpl("757671693",_cursor.GetString("id"),0);
  //BA.debugLineNum = 157;BA.debugLine="Log(Cursor.GetString(\"name\"))";
-__c.LogImpl("76946830",_cursor.GetString("name"),0);
+__c.LogImpl("757671694",_cursor.GetString("name"),0);
  //BA.debugLineNum = 158;BA.debugLine="Log(Cursor.GetString(\"qnt\"))";
-__c.LogImpl("76946831",_cursor.GetString("qnt"),0);
+__c.LogImpl("757671695",_cursor.GetString("qnt"),0);
  //BA.debugLineNum = 159;BA.debugLine="CustomListView1Geral.Add(CreateItemInsumos(i+1,i";
 _customlistview1geral._add((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_createiteminsumos((int) (_i+1),_id,_cursor.GetString("name"),_cursor.GetString("qnt")).getObject())),(Object)("insumo"));
  }
@@ -2425,13 +2425,13 @@ for (;_iw >= limit1 ;_iw = _iw + step1 ) {
 if ((_customlistview1geral._getvalue(_iw)).equals((Object)("form1")) == false) { 
  //BA.debugLineNum = 190;BA.debugLine="Try";
 try { //BA.debugLineNum = 192;BA.debugLine="LogColor(\"REMOVE: \"&iw,Colors.Red)";
-__c.LogImpl("77012358","REMOVE: "+BA.NumberToString(_iw),__c.Colors.Red);
+__c.LogImpl("757737222","REMOVE: "+BA.NumberToString(_iw),__c.Colors.Red);
  //BA.debugLineNum = 193;BA.debugLine="CustomListView1Geral.RemoveAt(iw)";
 _customlistview1geral._removeat(_iw);
  } 
        catch (Exception e7) {
 			ba.setLastException(e7); //BA.debugLineNum = 196;BA.debugLine="Log(LastException)";
-__c.LogImpl("77012362",BA.ObjectToString(__c.LastException(ba)),0);
+__c.LogImpl("757737226",BA.ObjectToString(__c.LastException(ba)),0);
  };
  };
  }
@@ -2442,7 +2442,7 @@ return "";
 public String  _sd_xcomboboxhda_itemclick(int _position,Object _value) throws Exception{
  //BA.debugLineNum = 725;BA.debugLine="Sub SD_xComboBoxHda_ItemClick (Position As Int, Va";
  //BA.debugLineNum = 728;BA.debugLine="Log(Value)";
-__c.LogImpl("78585219",BA.ObjectToString(_value),0);
+__c.LogImpl("759310083",BA.ObjectToString(_value),0);
  //BA.debugLineNum = 730;BA.debugLine="SD_xComboBoxLote.Clear";
 _sd_xcomboboxlote._clear /*String*/ ();
  //BA.debugLineNum = 733;BA.debugLine="nit = \"800246222\"";
@@ -2454,7 +2454,7 @@ _hacienda = _sd_xcomboboxhda._getitem /*String*/ (_position);
  //BA.debugLineNum = 736;BA.debugLine="hacienda = hacienda.SubString2(0, 3)";
 _hacienda = _hacienda.substring((int) (0),(int) (3));
  //BA.debugLineNum = 737;BA.debugLine="Log(hacienda)";
-__c.LogImpl("78585228",_hacienda,0);
+__c.LogImpl("759310092",_hacienda,0);
  //BA.debugLineNum = 738;BA.debugLine="GetRecordLotes (Main.pDBName,Main.pNit, hacienda)";
 _getrecordlotes(_main._pdbname /*String*/ ,_main._pnit /*String*/ ,_hacienda);
  //BA.debugLineNum = 739;BA.debugLine="End Sub";
@@ -2468,11 +2468,11 @@ return "";
 public String  _sd_xcomboboxlote_itemclick(int _position,Object _value) throws Exception{
  //BA.debugLineNum = 770;BA.debugLine="Sub SD_xComboBoxLote_ItemClick (Position As Int, V";
  //BA.debugLineNum = 776;BA.debugLine="Log(Position & \" - \" & Value)";
-__c.LogImpl("78716294",BA.NumberToString(_position)+" - "+BA.ObjectToString(_value),0);
+__c.LogImpl("759441158",BA.NumberToString(_position)+" - "+BA.ObjectToString(_value),0);
  //BA.debugLineNum = 778;BA.debugLine="lote = Value";
 _lote = BA.ObjectToString(_value);
  //BA.debugLineNum = 780;BA.debugLine="Log(hacienda)";
-__c.LogImpl("78716298",_hacienda,0);
+__c.LogImpl("759441162",_hacienda,0);
  //BA.debugLineNum = 781;BA.debugLine="GetRecordLotesArea (Main.pDBName,nit, hacienda,lo";
 _getrecordlotesarea(_main._pdbname /*String*/ ,_nit,_hacienda,_lote);
  //BA.debugLineNum = 782;BA.debugLine="End Sub";
@@ -2568,7 +2568,7 @@ case 9:
 this.state = 10;
 this.catchState = 0;
  //BA.debugLineNum = 995;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("79502733",BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("760227597",BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 if (true) break;
 
@@ -2605,9 +2605,9 @@ int _id = 0;
  //BA.debugLineNum = 1002;BA.debugLine="Spinner1NameInsumo=Sender";
 _spinner1nameinsumo = (anywheresoftware.b4a.objects.SpinnerWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.SpinnerWrapper(), (anywheresoftware.b4a.objects.SpinnerWrapper.B4ASpinner)(__c.Sender(ba)));
  //BA.debugLineNum = 1003;BA.debugLine="Log(Spinner1NameInsumo.Tag)";
-__c.LogImpl("79568258",BA.ObjectToString(_spinner1nameinsumo.getTag()),0);
+__c.LogImpl("760293122",BA.ObjectToString(_spinner1nameinsumo.getTag()),0);
  //BA.debugLineNum = 1004;BA.debugLine="Log(Spinner1NameInsumo.SelectedItem)";
-__c.LogImpl("79568259",_spinner1nameinsumo.getSelectedItem(),0);
+__c.LogImpl("760293123",_spinner1nameinsumo.getSelectedItem(),0);
  //BA.debugLineNum = 1005;BA.debugLine="Dim id As Int=Spinner1NameInsumo.Tag";
 _id = (int)(BA.ObjectToNumber(_spinner1nameinsumo.getTag()));
  //BA.debugLineNum = 1006;BA.debugLine="Starter.updateInsumo(Spinner1NameInsumo.SelectedI";
@@ -2630,7 +2630,7 @@ return "";
 public String  _spinnernit_itemclick(int _position,Object _value) throws Exception{
  //BA.debugLineNum = 888;BA.debugLine="Private Sub SpinnerNit_ItemClick (Position As Int,";
  //BA.debugLineNum = 889;BA.debugLine="Log(Value)";
-__c.LogImpl("78978433",BA.ObjectToString(_value),0);
+__c.LogImpl("759703297",BA.ObjectToString(_value),0);
  //BA.debugLineNum = 890;BA.debugLine="End Sub";
 return "";
 }

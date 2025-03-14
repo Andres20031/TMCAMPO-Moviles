@@ -17,6 +17,10 @@ Sub Class_Globals
 	Private ButtonCancelar As Button
 	Private ButtonAplazar As Button
 	Private sf As StringFunctions
+	Private ConsecutivoSeleccionado As String
+    Private ConsecutivoSeleccionadoCancelar As String
+	Private Conse As String
+
 End Sub
 
 'You can add more parameters here.
@@ -92,15 +96,15 @@ Sub B4XPage_Appear
 			partesFecha = Regex.Split(" ", Fecha_Programa_Labor)
 			Fecha_Programa_Labor = partesFecha(0)
 			' Log para verificar los valores
-			Log("Contador: " & counter)
-			Log("Consecutivo: " & Consecutivo)
-			Log("Nit_Programa_Labor: " & Nit_Programa_Labor)
-			Log("Hacienda_Programa_Labor: " & Hacienda_Programa_Labor)
-			Log("Suerte_Programa_Labor: " & Suerte_Programa_Labor)
-			Log("Fecha_Programa_Labor: " & Fecha_Programa_Labor)
-			Log("Destino_Programa_Labor: " & Destino_Programa_Labor)
-			Log("Area_Programa_Labor: " & Area_Programa_Labor)
-			Log("Observacion: "& Observacion)
+'			Log("Contador: " & counter)
+'			Log("Consecutivo: " & Consecutivo)
+'			Log("Nit_Programa_Labor: " & Nit_Programa_Labor)
+'			Log("Hacienda_Programa_Labor: " & Hacienda_Programa_Labor)
+'			Log("Suerte_Programa_Labor: " & Suerte_Programa_Labor)
+'			Log("Fecha_Programa_Labor: " & Fecha_Programa_Labor)
+'			Log("Destino_Programa_Labor: " & Destino_Programa_Labor)
+'			Log("Area_Programa_Labor: " & Area_Programa_Labor)
+'			Log("Observacion: "& Observacion)
 			
 			
 			'******************* CONSULTAR NOMBRE DEL NIT ***********************
@@ -154,12 +158,12 @@ Sub B4XPage_Appear
 				DateTime.DateFormat = "yyyy-MM-dd"
 				Dim fecha As Long = DateTime.DateParse(Fecha_Programa_Labor)
 				Dim fechaUNIX As Long = DateUtils.TicksToUnixTime(fecha) 
-				Log("LA FECHA EN LONG: "&fechaUNIX)
+'				Log("LA FECHA EN LONG: "&fechaUNIX)
 				
 				' Obtener la fecha actual (en ticks)
 				Dim fechaActual As Long = DateTime.Now
 				Dim fechaUNIXACTUAL As Long = DateUtils.TicksToUnixTime(fechaActual)
-				Log("LA FECHA ACTUAL: "&fechaUNIXACTUAL)
+'				Log("LA FECHA ACTUAL: "&fechaUNIXACTUAL)
 				
 				' Calcular la diferencia en segundos
 				Dim diferenciaSegundos As Long = fechaUNIXACTUAL - fechaUNIX
@@ -168,7 +172,7 @@ Sub B4XPage_Appear
 				Dim diferenciaDias As Int = diferenciaSegundos / 86400 ' 86400 segundos = 1 día
 				
 				' Mostrar el resultado
-				Log("Días de diferencia: " & diferenciaDias)
+'				Log("Días de diferencia: " & diferenciaDias)
 				
 			Catch
 				Log("Error: Formato de fecha inválido o no se pudo parsear la fecha.")
@@ -230,7 +234,7 @@ Private Sub CreateItem(Position As String,Consecutivo As String, Nit As String, 
 	ButtonGrabar.Tag = Consecutivo
 	ButtonCancelar.Tag = Consecutivo
 	ButtonAplazar.Tag = Consecutivo
-	
+
 	Return panel
 	
 End Sub
@@ -246,13 +250,42 @@ End Sub
 'You can see the list of page related events in the B4XPagesManager object. The event name is B4XPage.
 
 Private Sub ButtonGrabar_Click
+	Dim btn As Button = Sender ' Obtiene el botón que disparó el evento
+	Dim consecutivo As Int = btn.Tag ' Extrae el Tag (Consecutivo)
+    
+	
+	Dim programaCampo As FormProgramaCampo = B4XPages.GetPage("FormProgramaCampo")
+	
+	' Enviamos el valor a la otra página
+	programaCampo.SetConsecutivo(consecutivo)
+	' Pasa el valor a la página de destino
 	B4XPages.ShowPage("FormProgramaCampo")
+	
 End Sub
 
 Private Sub ButtonCancelar_Click
+	
+	Dim btn As Button = Sender ' Obtiene el botón que disparó el evento
+	Dim consecutivo As Int = btn.Tag ' Extrae el Tag (Consecutivo)
+	
+	Dim programaCampoCancelar As FormProgramaCampoCancelar = B4XPages.GetPage("FormProgramaCampoCancelar")
+	
+	
+	programaCampoCancelar.SetConsecutivo(consecutivo)
+	
 	B4XPages.ShowPage("FormProgramaCampoCancelar")
 End Sub
 
 Private Sub ButtonAplazar_Click
+	
+	Dim btn As Button = Sender ' Obtiene el botón que disparó el evento
+	Dim consecutivo As Int = btn.Tag ' Extrae el Tag (Consecutivo)
+	
+	Dim programaCampoA As FormProgramaCampoAplazar = B4XPages.GetPage("FormProgramaCampoAplazar")
+	
+	
+	programaCampoA.SetConsecutivo(consecutivo)
+	
 	B4XPages.ShowPage("FormProgramaCampoAplazar")
 End Sub
+

@@ -145,7 +145,7 @@ this.state = 1;
  //BA.debugLineNum = 235;BA.debugLine="Button1agendar=	Sender";
 parent._button1agendar = (anywheresoftware.b4a.objects.ButtonWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ButtonWrapper(), (android.widget.Button)(parent.__c.Sender(ba)));
  //BA.debugLineNum = 236;BA.debugLine="Log(Button1agendar.Tag)";
-parent.__c.LogImpl("720316162",BA.ObjectToString(parent._button1agendar.getTag()),0);
+parent.__c.LogImpl("771041026",BA.ObjectToString(parent._button1agendar.getTag()),0);
  //BA.debugLineNum = 238;BA.debugLine="Dim	id As Int=Button1agendar.Tag";
 _id = (int)(BA.ObjectToNumber(parent._button1agendar.getTag()));
  //BA.debugLineNum = 240;BA.debugLine="Dim sf As Object = cd.ShowAsync(\"\", \"\", \"\", \"\", N";
@@ -192,15 +192,15 @@ case 3:
 //C
 this.state = 4;
  //BA.debugLineNum = 249;BA.debugLine="Log(\"DADOS:\")";
-parent.__c.LogImpl("720316175","DADOS:",0);
+parent.__c.LogImpl("771041039","DADOS:",0);
  //BA.debugLineNum = 251;BA.debugLine="Log(Label3Inicial.Text)";
-parent.__c.LogImpl("720316177",parent._label3inicial.getText(),0);
+parent.__c.LogImpl("771041041",parent._label3inicial.getText(),0);
  //BA.debugLineNum = 252;BA.debugLine="Log(Label4Final.Text)";
-parent.__c.LogImpl("720316178",parent._label4final.getText(),0);
+parent.__c.LogImpl("771041042",parent._label4final.getText(),0);
  //BA.debugLineNum = 253;BA.debugLine="Log(EditText1Area.Text)";
-parent.__c.LogImpl("720316179",parent._edittext1area.getText(),0);
+parent.__c.LogImpl("771041043",parent._edittext1area.getText(),0);
  //BA.debugLineNum = 254;BA.debugLine="Log(\"=======================\")";
-parent.__c.LogImpl("720316180","=======================",0);
+parent.__c.LogImpl("771041044","=======================",0);
  if (true) break;
 
 case 4:
@@ -260,7 +260,7 @@ this.state = 1;
  //BA.debugLineNum = 211;BA.debugLine="Button1Check=	Sender";
 parent._button1check = (anywheresoftware.b4a.objects.ButtonWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ButtonWrapper(), (android.widget.Button)(parent.__c.Sender(ba)));
  //BA.debugLineNum = 212;BA.debugLine="Log(Button1Check.Tag)";
-parent.__c.LogImpl("720250626",BA.ObjectToString(parent._button1check.getTag()),0);
+parent.__c.LogImpl("770975490",BA.ObjectToString(parent._button1check.getTag()),0);
  //BA.debugLineNum = 213;BA.debugLine="Dim	id As Int=Button1Check.Tag";
 _id = (int)(BA.ObjectToNumber(parent._button1check.getTag()));
  //BA.debugLineNum = 215;BA.debugLine="Dim sf As Object = cd.ShowAsync(\"\", \"\", \"\", \"\", N";
@@ -305,13 +305,13 @@ case 3:
 //C
 this.state = 4;
  //BA.debugLineNum = 224;BA.debugLine="Log(\"DADOS:\")";
-parent.__c.LogImpl("720250638","DADOS:",0);
+parent.__c.LogImpl("770975502","DADOS:",0);
  //BA.debugLineNum = 226;BA.debugLine="Log(Label3Inicial.Text)";
-parent.__c.LogImpl("720250640",parent._label3inicial.getText(),0);
+parent.__c.LogImpl("770975504",parent._label3inicial.getText(),0);
  //BA.debugLineNum = 227;BA.debugLine="Log(Label4Final.Text)";
-parent.__c.LogImpl("720250641",parent._label4final.getText(),0);
+parent.__c.LogImpl("770975505",parent._label4final.getText(),0);
  //BA.debugLineNum = 229;BA.debugLine="Log(\"=======================\")";
-parent.__c.LogImpl("720250643","=======================",0);
+parent.__c.LogImpl("770975507","=======================",0);
  if (true) break;
 
 case 4:
@@ -353,7 +353,7 @@ this.state = 1;
  //BA.debugLineNum = 172;BA.debugLine="Button2Del=	Sender";
 parent._button2del = (anywheresoftware.b4a.objects.ButtonWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ButtonWrapper(), (android.widget.Button)(parent.__c.Sender(ba)));
  //BA.debugLineNum = 173;BA.debugLine="Log(Button2Del.Tag)";
-parent.__c.LogImpl("720185090",BA.ObjectToString(parent._button2del.getTag()),0);
+parent.__c.LogImpl("770909954",BA.ObjectToString(parent._button2del.getTag()),0);
  //BA.debugLineNum = 174;BA.debugLine="Dim id As Int=Button2Del.Tag";
 _id = (int)(BA.ObjectToNumber(parent._button2del.getTag()));
  //BA.debugLineNum = 175;BA.debugLine="Button1agendar=	Sender";
@@ -402,11 +402,11 @@ case 3:
 //C
 this.state = 4;
  //BA.debugLineNum = 186;BA.debugLine="Log(\"DADOS:\")";
-parent.__c.LogImpl("720185103","DADOS:",0);
+parent.__c.LogImpl("770909967","DADOS:",0);
  //BA.debugLineNum = 187;BA.debugLine="Log(EditText1TextArea.Text)";
-parent.__c.LogImpl("720185104",parent._edittext1textarea.getText(),0);
+parent.__c.LogImpl("770909968",parent._edittext1textarea.getText(),0);
  //BA.debugLineNum = 188;BA.debugLine="Log(\"=======================\")";
-parent.__c.LogImpl("720185105","=======================",0);
+parent.__c.LogImpl("770909969","=======================",0);
  //BA.debugLineNum = 189;BA.debugLine="Starter.SQL1.ExecNonQuery2(\"DELETE from dados wh";
 parent._starter._sql1 /*anywheresoftware.b4a.sql.SQL*/ .ExecNonQuery2("DELETE from dados where Consecutivo=?",anywheresoftware.b4a.keywords.Common.ArrayToList(new Object[]{(Object)(_id)}));
  //BA.debugLineNum = 190;BA.debugLine="Sleep(300)";
@@ -507,7 +507,7 @@ case 0:
 //C
 this.state = -1;
  //BA.debugLineNum = 310;BA.debugLine="Log(Value)";
-parent.__c.LogImpl("720840449",BA.ObjectToString(_value),0);
+parent.__c.LogImpl("771565313",BA.ObjectToString(_value),0);
  //BA.debugLineNum = 311;BA.debugLine="B4XPages.ClosePage(B4XPages.GetPage(\"form\"))";
 parent._b4xpages._closepage /*String*/ (ba,parent._b4xpages._getpage /*Object*/ (ba,"form"));
  //BA.debugLineNum = 312;BA.debugLine="Sleep(90)";
@@ -704,9 +704,9 @@ for (;_i <= limit6 ;_i = _i + step6 ) {
  //BA.debugLineNum = 76;BA.debugLine="Cursor.Position = i";
 _cursor.setPosition(_i);
  //BA.debugLineNum = 77;BA.debugLine="Log(\"=====Maquinas #\"&i&\"=====\")";
-__c.LogImpl("719922952","=====Maquinas #"+BA.NumberToString(_i)+"=====",0);
+__c.LogImpl("770647816","=====Maquinas #"+BA.NumberToString(_i)+"=====",0);
  //BA.debugLineNum = 78;BA.debugLine="Log(Cursor.GetString(\"id\"))";
-__c.LogImpl("719922953",_cursor.GetString("id"),0);
+__c.LogImpl("770647817",_cursor.GetString("id"),0);
  //BA.debugLineNum = 80;BA.debugLine="Dim Hacienda As String=Cursor.GetString(\"haciend";
 _hacienda = _cursor.GetString("hacienda");
  //BA.debugLineNum = 81;BA.debugLine="Dim Lote As String=Cursor.GetString(\"Lote\")";
@@ -718,7 +718,7 @@ _clv_persons._add((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware
  }
 };
  //BA.debugLineNum = 85;BA.debugLine="Log(i)";
-__c.LogImpl("719922960",BA.NumberToString(_i),0);
+__c.LogImpl("770647824",BA.NumberToString(_i),0);
  //BA.debugLineNum = 86;BA.debugLine="If i=0 Then";
 if (_i==0) { 
  //BA.debugLineNum = 87;BA.debugLine="Dim p As Panel";
@@ -755,7 +755,7 @@ for (;_i <= limit4 ;_i = _i + step4 ) {
  //BA.debugLineNum = 54;BA.debugLine="Cursor.Position = i";
 _cursor.setPosition(_i);
  //BA.debugLineNum = 55;BA.debugLine="Log(Cursor.GetString(\"Consecutivo\"))";
-__c.LogImpl("719857414",_cursor.GetString("Consecutivo"),0);
+__c.LogImpl("770582278",_cursor.GetString("Consecutivo"),0);
  //BA.debugLineNum = 57;BA.debugLine="CLV_Persons.Add(CreateItem(Cursor.GetString(\"Con";
 _clv_persons._add((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_createitem(_cursor.GetString("Consecutivo"),_cursor.GetString("Fecha_programa"),_cursor.GetString("NIT"),_cursor.GetString("Hacienda"),_cursor.GetString("Lote"),_cursor.GetString("labor")).getObject())),(Object)(_i));
  }

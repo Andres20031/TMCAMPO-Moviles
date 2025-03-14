@@ -243,3 +243,4 @@ Private Sub SwiftButtonPluvimetro_Click
 		End If
 	End If
 End Sub
+

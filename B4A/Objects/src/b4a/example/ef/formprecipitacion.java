@@ -70,7 +70,7 @@ _panel12.setVisible(__c.False);
  //BA.debugLineNum = 173;BA.debugLine="fecha = formattedDate";
 _fecha = _formatteddate;
  //BA.debugLineNum = 176;BA.debugLine="Log(fecha)";
-__c.LogImpl("74390932",_fecha,0);
+__c.LogImpl("755640084",_fecha,0);
  //BA.debugLineNum = 177;BA.debugLine="End Sub";
 return "";
 }
@@ -238,7 +238,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 94;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j2.Err";
-parent.__c.LogImpl("73932209","Error en la consulta de Maquina: "+_j2._errormessage /*String*/ ,0);
+parent.__c.LogImpl("755181361","Error en la consulta de Maquina: "+_j2._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -353,7 +353,7 @@ case 8:
 //C
 this.state = 9;
  //BA.debugLineNum = 208;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
-parent.__c.LogImpl("74522000","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("755771152","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 9:
@@ -367,7 +367,7 @@ case 11:
 this.state = 12;
 this.catchState = 0;
  //BA.debugLineNum = 211;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
-parent.__c.LogImpl("74522003","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
+parent.__c.LogImpl("755771155","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
  if (true) break;
 if (true) break;
 
@@ -478,13 +478,13 @@ return null;
 public String  _edittexthorafin_textchanged(String _old,String _new) throws Exception{
  //BA.debugLineNum = 179;BA.debugLine="Private Sub EditTextHoraFin_TextChanged (Old As St";
  //BA.debugLineNum = 180;BA.debugLine="Log(\"Texto anterior: \" & Old)";
-__c.LogImpl("74456449","Texto anterior: "+_old,0);
+__c.LogImpl("755705601","Texto anterior: "+_old,0);
  //BA.debugLineNum = 181;BA.debugLine="Log(\"Texto nuevo: \" & New)";
-__c.LogImpl("74456450","Texto nuevo: "+_new,0);
+__c.LogImpl("755705602","Texto nuevo: "+_new,0);
  //BA.debugLineNum = 187;BA.debugLine="textoCapturado = New";
 _textocapturado = _new;
  //BA.debugLineNum = 188;BA.debugLine="Log(\"El texto es mayor de 5 caracteres: \" & texto";
-__c.LogImpl("74456457","El texto es mayor de 5 caracteres: "+_textocapturado,0);
+__c.LogImpl("755705609","El texto es mayor de 5 caracteres: "+_textocapturado,0);
  //BA.debugLineNum = 190;BA.debugLine="End Sub";
 return "";
 }
@@ -519,7 +519,7 @@ public String  _sd_xcomboboxpluviometro_itemclick(int _position,Object _value) t
 anywheresoftware.b4a.objects.collections.Map _detailsmap = null;
  //BA.debugLineNum = 134;BA.debugLine="Private Sub SD_xComboBoxPluviometro_ItemClick (Pos";
  //BA.debugLineNum = 135;BA.debugLine="Log(\"VALOR COMBOBOX: \" & Value)";
-__c.LogImpl("74325377","VALOR COMBOBOX: "+BA.ObjectToString(_value),0);
+__c.LogImpl("755574529","VALOR COMBOBOX: "+BA.ObjectToString(_value),0);
  //BA.debugLineNum = 137;BA.debugLine="If pluviometroMap.ContainsKey(Value) Then";
 if (_pluviometromap.ContainsKey(_value)) { 
  //BA.debugLineNum = 138;BA.debugLine="Dim detailsMap As Map = pluviometroMap.Get(Value";
@@ -534,16 +534,16 @@ _selectednit_plvmtro = BA.ObjectToString(_detailsmap.Get((Object)("Nit")));
  //BA.debugLineNum = 143;BA.debugLine="selectedHda_Pvlmtro = detailsMap.Get(\"Hda\")";
 _selectedhda_pvlmtro = BA.ObjectToString(_detailsmap.Get((Object)("Hda")));
  //BA.debugLineNum = 146;BA.debugLine="Log(\"Código: \" & selectedCdgo_Plvmtro)";
-__c.LogImpl("74325388","Código: "+_selectedcdgo_plvmtro,0);
+__c.LogImpl("755574540","Código: "+_selectedcdgo_plvmtro,0);
  //BA.debugLineNum = 147;BA.debugLine="Log(\"Nombre: \" & selectedNombre_Plvmtro)";
-__c.LogImpl("74325389","Nombre: "+_selectednombre_plvmtro,0);
+__c.LogImpl("755574541","Nombre: "+_selectednombre_plvmtro,0);
  //BA.debugLineNum = 148;BA.debugLine="Log(\"NIT: \" & selectedNit_Plvmtro)";
-__c.LogImpl("74325390","NIT: "+_selectednit_plvmtro,0);
+__c.LogImpl("755574542","NIT: "+_selectednit_plvmtro,0);
  //BA.debugLineNum = 149;BA.debugLine="Log(\"Hacienda: \" & selectedHda_Pvlmtro)";
-__c.LogImpl("74325391","Hacienda: "+_selectedhda_pvlmtro,0);
+__c.LogImpl("755574543","Hacienda: "+_selectedhda_pvlmtro,0);
  }else {
  //BA.debugLineNum = 151;BA.debugLine="Log(\"Error: No se encontraron detalles para el c";
-__c.LogImpl("74325393","Error: No se encontraron detalles para el código seleccionado.",0);
+__c.LogImpl("755574545","Error: No se encontraron detalles para el código seleccionado.",0);
  };
  //BA.debugLineNum = 153;BA.debugLine="End Sub";
 return "";
@@ -625,20 +625,20 @@ parent._selectednit_plvmtro = BA.ObjectToString(_details.Get((Object)("Nit")));
  //BA.debugLineNum = 228;BA.debugLine="selectedHda_Pvlmtro = details.Get(\"Hda\")";
 parent._selectedhda_pvlmtro = BA.ObjectToString(_details.Get((Object)("Hda")));
  //BA.debugLineNum = 231;BA.debugLine="Log(\"Código: \" & selectedCdgo_Plvmtro)";
-parent.__c.LogImpl("74587536","Código: "+parent._selectedcdgo_plvmtro,0);
+parent.__c.LogImpl("755836688","Código: "+parent._selectedcdgo_plvmtro,0);
  //BA.debugLineNum = 232;BA.debugLine="Log(\"Nombre: \" & selectedNombre_Plvmtro)";
-parent.__c.LogImpl("74587537","Nombre: "+parent._selectednombre_plvmtro,0);
+parent.__c.LogImpl("755836689","Nombre: "+parent._selectednombre_plvmtro,0);
  //BA.debugLineNum = 233;BA.debugLine="Log(\"NIT: \" & selectedNit_Plvmtro)";
-parent.__c.LogImpl("74587538","NIT: "+parent._selectednit_plvmtro,0);
+parent.__c.LogImpl("755836690","NIT: "+parent._selectednit_plvmtro,0);
  //BA.debugLineNum = 234;BA.debugLine="Log(\"Hacienda: \" & selectedHda_Pvlmtro)";
-parent.__c.LogImpl("74587539","Hacienda: "+parent._selectedhda_pvlmtro,0);
+parent.__c.LogImpl("755836691","Hacienda: "+parent._selectedhda_pvlmtro,0);
  if (true) break;
 
 case 8:
 //C
 this.state = 9;
  //BA.debugLineNum = 236;BA.debugLine="Log(\"No se encontraron detalles para el código";
-parent.__c.LogImpl("74587541","No se encontraron detalles para el código seleccionado.",0);
+parent.__c.LogImpl("755836693","No se encontraron detalles para el código seleccionado.",0);
  if (true) break;
 
 case 9:

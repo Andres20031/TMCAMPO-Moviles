@@ -495,7 +495,7 @@ case 18:
 //C
 this.state = 21;
  //BA.debugLineNum = 204;BA.debugLine="Log(\"Usuario: \"&parametrosUsuario)";
-parent.__c.LogImpl("7917554","Usuario: "+parent._parametrosusuario,0);
+parent.__c.LogImpl("7655410","Usuario: "+parent._parametrosusuario,0);
  if (true) break;
 
 case 20:
@@ -522,7 +522,7 @@ case 24:
 //C
 this.state = 25;
  //BA.debugLineNum = 211;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-parent.__c.LogImpl("7917561","ERROR: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("7655417","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 25:

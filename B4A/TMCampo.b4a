@@ -221,6 +221,7 @@ Sub Process_Globals
 	Public pUserOpcionPluviometros As String
 	Public pUserOpcionMonotoreo As String
 	Public GifsCache As Map
+	Public consecutivoLaboresGlobal As String 
 End Sub
 
 Sub Globals

@@ -351,6 +351,7 @@ public static String _puseropcionmaquinaria = "";
 public static String _puseropcionpluviometros = "";
 public static String _puseropcionmonotoreo = "";
 public static anywheresoftware.b4a.objects.collections.Map _gifscache = null;
+public static String _consecutivolaboresglobal = "";
 public b4a.example.dateutils _dateutils = null;
 public b4a.example.ef.starter _starter = null;
 public b4a.example.ef.b4xcollections _b4xcollections = null;
@@ -398,64 +399,64 @@ Parameters[i0] = new Object();
 			return BA.TypeToString(this, false);
 		}}
 public static String  _activity_actionbarhomeclick() throws Exception{
- //BA.debugLineNum = 62;BA.debugLine="Sub Activity_ActionBarHomeClick";
- //BA.debugLineNum = 63;BA.debugLine="ActionBarHomeClicked = True";
+ //BA.debugLineNum = 63;BA.debugLine="Sub Activity_ActionBarHomeClick";
+ //BA.debugLineNum = 64;BA.debugLine="ActionBarHomeClicked = True";
 _actionbarhomeclicked = anywheresoftware.b4a.keywords.Common.True;
- //BA.debugLineNum = 64;BA.debugLine="B4XPages.Delegate.Activity_ActionBarHomeClick";
+ //BA.debugLineNum = 65;BA.debugLine="B4XPages.Delegate.Activity_ActionBarHomeClick";
 mostCurrent._b4xpages._delegate /*b4a.example.ef.b4xpagesdelegator*/ ._activity_actionbarhomeclick /*String*/ ();
- //BA.debugLineNum = 65;BA.debugLine="ActionBarHomeClicked = False";
+ //BA.debugLineNum = 66;BA.debugLine="ActionBarHomeClicked = False";
 _actionbarhomeclicked = anywheresoftware.b4a.keywords.Common.False;
- //BA.debugLineNum = 66;BA.debugLine="End Sub";
+ //BA.debugLineNum = 67;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_create(boolean _firsttime) throws Exception{
 b4a.example.ef.b4xpagesmanager _pm = null;
- //BA.debugLineNum = 53;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
- //BA.debugLineNum = 54;BA.debugLine="Dim pm As B4XPagesManager";
+ //BA.debugLineNum = 54;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+ //BA.debugLineNum = 55;BA.debugLine="Dim pm As B4XPagesManager";
 _pm = new b4a.example.ef.b4xpagesmanager();
- //BA.debugLineNum = 55;BA.debugLine="pm.Initialize(Activity)";
+ //BA.debugLineNum = 56;BA.debugLine="pm.Initialize(Activity)";
 _pm._initialize /*String*/ (mostCurrent.activityBA,mostCurrent._activity);
- //BA.debugLineNum = 57;BA.debugLine="End Sub";
+ //BA.debugLineNum = 58;BA.debugLine="End Sub";
 return "";
 }
 public static boolean  _activity_keypress(int _keycode) throws Exception{
- //BA.debugLineNum = 68;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
- //BA.debugLineNum = 69;BA.debugLine="Return B4XPages.Delegate.Activity_KeyPress(KeyCod";
+ //BA.debugLineNum = 69;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
+ //BA.debugLineNum = 70;BA.debugLine="Return B4XPages.Delegate.Activity_KeyPress(KeyCod";
 if (true) return mostCurrent._b4xpages._delegate /*b4a.example.ef.b4xpagesdelegator*/ ._activity_keypress /*boolean*/ (_keycode);
- //BA.debugLineNum = 70;BA.debugLine="End Sub";
+ //BA.debugLineNum = 71;BA.debugLine="End Sub";
 return false;
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
- //BA.debugLineNum = 76;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
- //BA.debugLineNum = 77;BA.debugLine="B4XPages.Delegate.Activity_Pause";
+ //BA.debugLineNum = 77;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 78;BA.debugLine="B4XPages.Delegate.Activity_Pause";
 mostCurrent._b4xpages._delegate /*b4a.example.ef.b4xpagesdelegator*/ ._activity_pause /*String*/ ();
- //BA.debugLineNum = 78;BA.debugLine="End Sub";
+ //BA.debugLineNum = 79;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_permissionresult(String _permission,boolean _result) throws Exception{
- //BA.debugLineNum = 80;BA.debugLine="Sub Activity_PermissionResult (Permission As Strin";
- //BA.debugLineNum = 81;BA.debugLine="B4XPages.Delegate.Activity_PermissionResult(Permi";
+ //BA.debugLineNum = 81;BA.debugLine="Sub Activity_PermissionResult (Permission As Strin";
+ //BA.debugLineNum = 82;BA.debugLine="B4XPages.Delegate.Activity_PermissionResult(Permi";
 mostCurrent._b4xpages._delegate /*b4a.example.ef.b4xpagesdelegator*/ ._activity_permissionresult /*String*/ (_permission,_result);
- //BA.debugLineNum = 82;BA.debugLine="End Sub";
+ //BA.debugLineNum = 83;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
- //BA.debugLineNum = 72;BA.debugLine="Sub Activity_Resume";
- //BA.debugLineNum = 73;BA.debugLine="B4XPages.Delegate.Activity_Resume";
+ //BA.debugLineNum = 73;BA.debugLine="Sub Activity_Resume";
+ //BA.debugLineNum = 74;BA.debugLine="B4XPages.Delegate.Activity_Resume";
 mostCurrent._b4xpages._delegate /*b4a.example.ef.b4xpagesdelegator*/ ._activity_resume /*String*/ ();
- //BA.debugLineNum = 74;BA.debugLine="End Sub";
+ //BA.debugLineNum = 75;BA.debugLine="End Sub";
 return "";
 }
 public static String  _create_menu(Object _menu) throws Exception{
- //BA.debugLineNum = 84;BA.debugLine="Sub Create_Menu (Menu As Object)";
- //BA.debugLineNum = 85;BA.debugLine="B4XPages.Delegate.Create_Menu(Menu)";
+ //BA.debugLineNum = 85;BA.debugLine="Sub Create_Menu (Menu As Object)";
+ //BA.debugLineNum = 86;BA.debugLine="B4XPages.Delegate.Create_Menu(Menu)";
 mostCurrent._b4xpages._delegate /*b4a.example.ef.b4xpagesdelegator*/ ._create_menu /*String*/ (_menu);
- //BA.debugLineNum = 86;BA.debugLine="End Sub";
+ //BA.debugLineNum = 87;BA.debugLine="End Sub";
 return "";
 }
 public static String  _globals() throws Exception{
- //BA.debugLineNum = 49;BA.debugLine="Sub Globals";
- //BA.debugLineNum = 51;BA.debugLine="End Sub";
+ //BA.debugLineNum = 50;BA.debugLine="Sub Globals";
+ //BA.debugLineNum = 52;BA.debugLine="End Sub";
 return "";
 }
 
@@ -516,7 +517,9 @@ _puseropcionpluviometros = "";
 _puseropcionmonotoreo = "";
  //BA.debugLineNum = 46;BA.debugLine="Public GifsCache As Map";
 _gifscache = new anywheresoftware.b4a.objects.collections.Map();
- //BA.debugLineNum = 47;BA.debugLine="End Sub";
+ //BA.debugLineNum = 47;BA.debugLine="Public consecutivoLaboresGlobal As String";
+_consecutivolaboresglobal = "";
+ //BA.debugLineNum = 48;BA.debugLine="End Sub";
 return "";
 }
 public boolean _onCreateOptionsMenu(android.view.Menu menu) {

@@ -307,7 +307,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 138;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j2.Err";
-parent.__c.LogImpl("713828126","Error en la consulta de Maquina: "+_j2._errormessage /*String*/ ,0);
+parent.__c.LogImpl("764552990","Error en la consulta de Maquina: "+_j2._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -413,7 +413,7 @@ case 19:
 //C
 this.state = 20;
  //BA.debugLineNum = 165;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j3.Err";
-parent.__c.LogImpl("713828153","Error en la consulta de Maquina: "+_j3._errormessage /*String*/ ,0);
+parent.__c.LogImpl("764553017","Error en la consulta de Maquina: "+_j3._errormessage /*String*/ ,0);
  if (true) break;
 
 case 20:
@@ -519,7 +519,7 @@ case 29:
 //C
 this.state = 30;
  //BA.debugLineNum = 190;BA.debugLine="Log(\"Error en la consulta de NITs: \" & j.ErrorMe";
-parent.__c.LogImpl("713828178","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("764553042","Error en la consulta de NITs: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 30:
@@ -629,7 +629,7 @@ case 39:
 //C
 this.state = 40;
  //BA.debugLineNum = 217;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j4.Err";
-parent.__c.LogImpl("713828205","Error en la consulta de Maquina: "+_j4._errormessage /*String*/ ,0);
+parent.__c.LogImpl("764553069","Error en la consulta de Maquina: "+_j4._errormessage /*String*/ ,0);
  if (true) break;
 
 case 40:
@@ -741,7 +741,7 @@ case 49:
 //C
 this.state = 50;
  //BA.debugLineNum = 245;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j5.Err";
-parent.__c.LogImpl("713828233","Error en la consulta de Maquina: "+_j5._errormessage /*String*/ ,0);
+parent.__c.LogImpl("764553097","Error en la consulta de Maquina: "+_j5._errormessage /*String*/ ,0);
  if (true) break;
 
 case 50:
@@ -847,7 +847,7 @@ case 59:
 //C
 this.state = 60;
  //BA.debugLineNum = 269;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j6.Err";
-parent.__c.LogImpl("713828257","Error en la consulta de Maquina: "+_j6._errormessage /*String*/ ,0);
+parent.__c.LogImpl("764553121","Error en la consulta de Maquina: "+_j6._errormessage /*String*/ ,0);
  if (true) break;
 
 case 60:
@@ -945,43 +945,43 @@ parent._horaactual = parent.__c.DateTime.Time(parent.__c.DateTime.getNow());
  //BA.debugLineNum = 464;BA.debugLine="DeviceName = GetDeviceName";
 parent._devicename = parent._getdevicename();
  //BA.debugLineNum = 466;BA.debugLine="Log(\"Ascdo_Maq_Mvto_Maq: \" & Ascdo_Maq_Mvto_Maq)";
-parent.__c.LogImpl("714745617","Ascdo_Maq_Mvto_Maq: "+parent._ascdo_maq_mvto_maq,0);
+parent.__c.LogImpl("765470481","Ascdo_Maq_Mvto_Maq: "+parent._ascdo_maq_mvto_maq,0);
  //BA.debugLineNum = 467;BA.debugLine="Log(\"maquina: \" & maquina)";
-parent.__c.LogImpl("714745618","maquina: "+parent._maquina,0);
+parent.__c.LogImpl("765470482","maquina: "+parent._maquina,0);
  //BA.debugLineNum = 468;BA.debugLine="Log(\"fecha: \" & fecha)";
-parent.__c.LogImpl("714745619","fecha: "+parent._fecha,0);
+parent.__c.LogImpl("765470483","fecha: "+parent._fecha,0);
  //BA.debugLineNum = 469;BA.debugLine="Log(\"labor: \" & labor)";
-parent.__c.LogImpl("714745620","labor: "+parent._labor,0);
+parent.__c.LogImpl("765470484","labor: "+parent._labor,0);
  //BA.debugLineNum = 470;BA.debugLine="Log(\"nitEmpresaCBX: \" & nitEmpresaCBX)";
-parent.__c.LogImpl("714745621","nitEmpresaCBX: "+parent._nitempresacbx,0);
+parent.__c.LogImpl("765470485","nitEmpresaCBX: "+parent._nitempresacbx,0);
  //BA.debugLineNum = 471;BA.debugLine="Log(\"haciendaCBX: \" & haciendaCBX)";
-parent.__c.LogImpl("714745622","haciendaCBX: "+parent._haciendacbx,0);
+parent.__c.LogImpl("765470486","haciendaCBX: "+parent._haciendacbx,0);
  //BA.debugLineNum = 472;BA.debugLine="Log(\"Lote: \" & Lote)";
-parent.__c.LogImpl("714745623","Lote: "+parent._lote,0);
+parent.__c.LogImpl("765470487","Lote: "+parent._lote,0);
  //BA.debugLineNum = 473;BA.debugLine="Log(\"implemento: \" & implemento)";
-parent.__c.LogImpl("714745624","implemento: "+parent._implemento,0);
+parent.__c.LogImpl("765470488","implemento: "+parent._implemento,0);
  //BA.debugLineNum = 474;BA.debugLine="Log(\"horainicio: \" & horainicio)";
-parent.__c.LogImpl("714745625","horainicio: "+parent._horainicio,0);
+parent.__c.LogImpl("765470489","horainicio: "+parent._horainicio,0);
  //BA.debugLineNum = 475;BA.debugLine="Log(\"horafin: \" & horafin)";
-parent.__c.LogImpl("714745626","horafin: "+parent._horafin,0);
+parent.__c.LogImpl("765470490","horafin: "+parent._horafin,0);
  //BA.debugLineNum = 476;BA.debugLine="Log(\"combustible: \" & combustible)";
-parent.__c.LogImpl("714745627","combustible: "+parent._combustible,0);
+parent.__c.LogImpl("765470491","combustible: "+parent._combustible,0);
  //BA.debugLineNum = 477;BA.debugLine="Log(\"observaciones: \" & observaciones)";
-parent.__c.LogImpl("714745628","observaciones: "+parent._observaciones,0);
+parent.__c.LogImpl("765470492","observaciones: "+parent._observaciones,0);
  //BA.debugLineNum = 478;BA.debugLine="Log(\"operario: \" & operario)";
-parent.__c.LogImpl("714745629","operario: "+parent._operario,0);
+parent.__c.LogImpl("765470493","operario: "+parent._operario,0);
  //BA.debugLineNum = 479;BA.debugLine="Log(\"implemento2: \" & implemento2)";
-parent.__c.LogImpl("714745630","implemento2: "+parent._implemento2,0);
+parent.__c.LogImpl("765470494","implemento2: "+parent._implemento2,0);
  //BA.debugLineNum = 480;BA.debugLine="Log(\"area: \" & area)";
-parent.__c.LogImpl("714745631","area: "+parent._area,0);
+parent.__c.LogImpl("765470495","area: "+parent._area,0);
  //BA.debugLineNum = 481;BA.debugLine="Log(\"fechaHoy: \" & fechaHoy)";
-parent.__c.LogImpl("714745632","fechaHoy: "+parent._fechahoy,0);
+parent.__c.LogImpl("765470496","fechaHoy: "+parent._fechahoy,0);
  //BA.debugLineNum = 482;BA.debugLine="Log(\"horaActual: \" & horaActual)";
-parent.__c.LogImpl("714745633","horaActual: "+parent._horaactual,0);
+parent.__c.LogImpl("765470497","horaActual: "+parent._horaactual,0);
  //BA.debugLineNum = 483;BA.debugLine="Log(\"user: \" & user)";
-parent.__c.LogImpl("714745634","user: "+parent._user,0);
+parent.__c.LogImpl("765470498","user: "+parent._user,0);
  //BA.debugLineNum = 484;BA.debugLine="Log(\"DeviceName: \" & DeviceName)";
-parent.__c.LogImpl("714745635","DeviceName: "+parent._devicename,0);
+parent.__c.LogImpl("765470499","DeviceName: "+parent._devicename,0);
  //BA.debugLineNum = 487;BA.debugLine="Dim Req As DBRequestManager";
 _req = new b4a.example.ef.dbrequestmanager();
  //BA.debugLineNum = 488;BA.debugLine="Req.Initialize(Me, rdcLink & \"?DBName=\" & Main.pD";
@@ -1036,7 +1036,7 @@ case 8:
 //C
 this.state = 9;
  //BA.debugLineNum = 502;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
-parent.__c.LogImpl("714745653","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("765470517","Error al ejecutar la consulta: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 9:
@@ -1050,7 +1050,7 @@ case 11:
 this.state = 12;
 this.catchState = 0;
  //BA.debugLineNum = 505;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
-parent.__c.LogImpl("714745656","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
+parent.__c.LogImpl("765470520","Error al agregar datos: "+parent.__c.LastException(ba).getMessage(),0);
  if (true) break;
 if (true) break;
 
@@ -1403,7 +1403,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 345;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-parent.__c.LogImpl("713959196","Error: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("764684060","Error: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -1445,7 +1445,7 @@ public String  _sd_xcomboboxlote_itemclick(int _position,Object _value) throws E
  //BA.debugLineNum = 423;BA.debugLine="Lote = Value";
 _lote = BA.ObjectToString(_value);
  //BA.debugLineNum = 424;BA.debugLine="Log(Lote)";
-__c.LogImpl("714417922",_lote,0);
+__c.LogImpl("765142786",_lote,0);
  //BA.debugLineNum = 425;BA.debugLine="End Sub";
 return "";
 }
@@ -1584,7 +1584,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 310;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-parent.__c.LogImpl("713893660","Error: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("764618524","Error: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -1775,7 +1775,7 @@ case 12:
 //C
 this.state = 13;
  //BA.debugLineNum = 645;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-parent.__c.LogImpl("715073319","Error: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("765798183","Error: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 13:
@@ -1787,7 +1787,7 @@ parent._searchtemplatelote._setitems /*Object*/ (_itemslote);
  //BA.debugLineNum = 648;BA.debugLine="SwiftButtonLote.Enabled = True";
 parent._swiftbuttonlote._setenabled /*boolean*/ (parent.__c.True);
  //BA.debugLineNum = 650;BA.debugLine="Log(haciendaCBX)";
-parent.__c.LogImpl("715073324",parent._haciendacbx,0);
+parent.__c.LogImpl("765798188",parent._haciendacbx,0);
  //BA.debugLineNum = 651;BA.debugLine="j.Release";
 _j._release /*String*/ ();
  if (true) break;
@@ -1872,14 +1872,14 @@ _partes = parent.__c.Regex.Split(":",parent._searchtemplateimplemento._selectedi
  //BA.debugLineNum = 678;BA.debugLine="implemento = Partes(0) ' Asignar solo la primer";
 parent._implemento = _partes[(int) (0)];
  //BA.debugLineNum = 681;BA.debugLine="Log(\"Implemento seleccionado: \" & implemento)";
-parent.__c.LogImpl("715204364","Implemento seleccionado: "+parent._implemento,0);
+parent.__c.LogImpl("765929228","Implemento seleccionado: "+parent._implemento,0);
  if (true) break;
 
 case 8:
 //C
 this.state = 9;
  //BA.debugLineNum = 683;BA.debugLine="Log(\"El texto no contiene ':' por lo que no se";
-parent.__c.LogImpl("715204366","El texto no contiene ':' por lo que no se pudo dividir.",0);
+parent.__c.LogImpl("765929230","El texto no contiene ':' por lo que no se pudo dividir.",0);
  //BA.debugLineNum = 684;BA.debugLine="implemento = SearchTemplateImplemento.SelectedI";
 parent._implemento = parent._searchtemplateimplemento._selecteditem /*String*/ ;
  if (true) break;
@@ -1968,14 +1968,14 @@ _partes = parent.__c.Regex.Split(":",parent._searchtemplateimplemento2._selected
  //BA.debugLineNum = 699;BA.debugLine="implemento2 = Partes(0) ' Asignar solo la prime";
 parent._implemento2 = _partes[(int) (0)];
  //BA.debugLineNum = 701;BA.debugLine="Log(\"Implemento2 seleccionado: \" & implemento2)";
-parent.__c.LogImpl("715269899","Implemento2 seleccionado: "+parent._implemento2,0);
+parent.__c.LogImpl("765994763","Implemento2 seleccionado: "+parent._implemento2,0);
  if (true) break;
 
 case 8:
 //C
 this.state = 9;
  //BA.debugLineNum = 703;BA.debugLine="Log(\"El texto no contiene ':' por lo que no se";
-parent.__c.LogImpl("715269901","El texto no contiene ':' por lo que no se pudo dividir.",0);
+parent.__c.LogImpl("765994765","El texto no contiene ':' por lo que no se pudo dividir.",0);
  //BA.debugLineNum = 704;BA.debugLine="implemento2 = SearchTemplateImplemento2.Selecte";
 parent._implemento2 = parent._searchtemplateimplemento2._selecteditem /*String*/ ;
  if (true) break;
@@ -2064,16 +2064,16 @@ _partes = parent.__c.Regex.Split(":",parent._searchtemplatelabor._selecteditem /
  //BA.debugLineNum = 542;BA.debugLine="labor = Partes(0) ' Asignar solo la primera par";
 parent._labor = _partes[(int) (0)];
  //BA.debugLineNum = 545;BA.debugLine="Log(\"Texto completo: \" & SearchTemplateLabor.Se";
-parent.__c.LogImpl("714942220","Texto completo: "+parent._searchtemplatelabor._selecteditem /*String*/ ,0);
+parent.__c.LogImpl("765667084","Texto completo: "+parent._searchtemplatelabor._selecteditem /*String*/ ,0);
  //BA.debugLineNum = 546;BA.debugLine="Log(\"Labor seleccionada: \" & labor)";
-parent.__c.LogImpl("714942221","Labor seleccionada: "+parent._labor,0);
+parent.__c.LogImpl("765667085","Labor seleccionada: "+parent._labor,0);
  if (true) break;
 
 case 8:
 //C
 this.state = 9;
  //BA.debugLineNum = 548;BA.debugLine="Log(\"El texto no contiene ':' por lo que no se";
-parent.__c.LogImpl("714942223","El texto no contiene ':' por lo que no se pudo dividir.",0);
+parent.__c.LogImpl("765667087","El texto no contiene ':' por lo que no se pudo dividir.",0);
  //BA.debugLineNum = 549;BA.debugLine="labor = SearchTemplateLabor.SelectedItem ' Asig";
 parent._labor = parent._searchtemplatelabor._selecteditem /*String*/ ;
  if (true) break;
@@ -2089,7 +2089,7 @@ case 10:
 this.state = -1;
 ;
  //BA.debugLineNum = 552;BA.debugLine="Log(labor)";
-parent.__c.LogImpl("714942227",parent._labor,0);
+parent.__c.LogImpl("765667091",parent._labor,0);
  //BA.debugLineNum = 553;BA.debugLine="End Sub";
 if (true) break;
 
@@ -2155,7 +2155,7 @@ case 4:
 this.state = -1;
 ;
  //BA.debugLineNum = 665;BA.debugLine="Log(Lote)";
-parent.__c.LogImpl("715138825",parent._lote,0);
+parent.__c.LogImpl("765863689",parent._lote,0);
  //BA.debugLineNum = 666;BA.debugLine="End Sub";
 if (true) break;
 
@@ -2230,14 +2230,14 @@ _partes = parent.__c.Regex.Split(":",parent._searchtemplatemaquina._selecteditem
  //BA.debugLineNum = 522;BA.debugLine="maquina = Partes(0) ' Asignar solo la primera p";
 parent._maquina = _partes[(int) (0)];
  //BA.debugLineNum = 524;BA.debugLine="Log(\"Máquina seleccionada: \" & maquina)";
-parent.__c.LogImpl("714876683","Máquina seleccionada: "+parent._maquina,0);
+parent.__c.LogImpl("765601547","Máquina seleccionada: "+parent._maquina,0);
  if (true) break;
 
 case 8:
 //C
 this.state = 9;
  //BA.debugLineNum = 526;BA.debugLine="Log(\"El texto no contiene ':' por lo que no se";
-parent.__c.LogImpl("714876685","El texto no contiene ':' por lo que no se pudo dividir.",0);
+parent.__c.LogImpl("765601549","El texto no contiene ':' por lo que no se pudo dividir.",0);
  //BA.debugLineNum = 527;BA.debugLine="maquina = SearchTemplateMaquina.SelectedItem '";
 parent._maquina = parent._searchtemplatemaquina._selecteditem /*String*/ ;
  if (true) break;
@@ -2423,7 +2423,7 @@ case 12:
 //C
 this.state = 13;
  //BA.debugLineNum = 595;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-parent.__c.LogImpl("715007784","Error: "+_j._errormessage /*String*/ ,0);
+parent.__c.LogImpl("765732648","Error: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 13:
@@ -2435,7 +2435,7 @@ parent._searchtemplatehacienda._setitems /*Object*/ (_itemshacienda);
  //BA.debugLineNum = 598;BA.debugLine="SwiftButtonHacienda.Enabled = True";
 parent._swiftbuttonhacienda._setenabled /*boolean*/ (parent.__c.True);
  //BA.debugLineNum = 599;BA.debugLine="Log(nitEmpresaCBX)";
-parent.__c.LogImpl("715007788",parent._nitempresacbx,0);
+parent.__c.LogImpl("765732652",parent._nitempresacbx,0);
  //BA.debugLineNum = 601;BA.debugLine="j.Release";
 _j._release /*String*/ ();
  if (true) break;
@@ -2505,14 +2505,14 @@ _partes = parent.__c.Regex.Split(":",parent._searchtemplateobservaciones._select
  //BA.debugLineNum = 739;BA.debugLine="Dim observaciones As String = Partes(0) ' Guarda";
 parent._observaciones = _partes[(int) (0)];
  //BA.debugLineNum = 743;BA.debugLine="Log(\"Primera parte (observacionCBX): \" & observa";
-parent.__c.LogImpl("715400972","Primera parte (observacionCBX): "+parent._observaciones,0);
+parent.__c.LogImpl("766125836","Primera parte (observacionCBX): "+parent._observaciones,0);
  if (true) break;
 
 case 5:
 //C
 this.state = 6;
  //BA.debugLineNum = 745;BA.debugLine="Log(\"Operación cancelada por el usuario.\")";
-parent.__c.LogImpl("715400974","Operación cancelada por el usuario.",0);
+parent.__c.LogImpl("766125838","Operación cancelada por el usuario.",0);
  if (true) break;
 
 case 6:
@@ -2593,14 +2593,14 @@ _partes = parent.__c.Regex.Split(":",parent._searchtemplateoperario._selectedite
  //BA.debugLineNum = 719;BA.debugLine="operario = Partes(0) ' Asignar solo la primera";
 parent._operario = _partes[(int) (0)];
  //BA.debugLineNum = 722;BA.debugLine="Log(\"Operario seleccionado: \" & operario)";
-parent.__c.LogImpl("715335436","Operario seleccionado: "+parent._operario,0);
+parent.__c.LogImpl("766060300","Operario seleccionado: "+parent._operario,0);
  if (true) break;
 
 case 8:
 //C
 this.state = 9;
  //BA.debugLineNum = 724;BA.debugLine="Log(\"El texto no contiene ':' por lo que no se";
-parent.__c.LogImpl("715335438","El texto no contiene ':' por lo que no se pudo dividir.",0);
+parent.__c.LogImpl("766060302","El texto no contiene ':' por lo que no se pudo dividir.",0);
  //BA.debugLineNum = 725;BA.debugLine="operario = SearchTemplateOperario.SelectedItem";
 parent._operario = parent._searchtemplateoperario._selecteditem /*String*/ ;
  if (true) break;
