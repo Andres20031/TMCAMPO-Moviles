@@ -289,3 +289,8 @@ Private Sub ButtonAplazar_Click
 	B4XPages.ShowPage("FormProgramaCampoAplazar")
 End Sub
 
+
+
+Private Sub Label1_Click
+	B4XPages.ClosePage(Me)
+End Sub

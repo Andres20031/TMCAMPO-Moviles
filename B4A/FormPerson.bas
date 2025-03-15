@@ -311,19 +311,24 @@ Private Sub Label12Hinicio_Click
 End Sub
 
 Sub AS_DatePicker1_SelectedDateChanged(Date As Long)
-	' Convierte la fecha seleccionada a un formato legible
+	' Establecer formato de fecha correcto
+	DateTime.DateFormat = "yyyy-MM-dd"
 	Dim formattedDate As String = DateTime.Date(Date)
     
-	' Muestra la fecha en el Label (ya debería estar inicializado en el diseño o globalmente)
+	' Mostrar la fecha en el Label
 	Label12Hinicio.Text = formattedDate
     
+	' Asignar la fecha formateada a la variable
 	FechaInicio = formattedDate
-	' Oculta el Panel después de seleccionar la fecha
+    
+	' Ocultar el Panel después de seleccionar la fecha
 	Panel12.Visible = False
     
-	' Opcional: log para depuración
+	' Log para depuración
 	Log("Fecha seleccionada: " & FechaInicio)
 End Sub
+
+
 
 Sub AS_DatePicker1_DateChanged(Year As Int, Month As Int, Day As Int)
 	' Formateamos la fecha como un string y la asignamos al Label
@@ -781,6 +786,7 @@ Private Sub EditText2horas_TextChanged (Old As String, New As String)
 End Sub
 
 Private Sub EditText1percentage_TextChanged (Old As String, New As String)
+	    PorcentageText= New
 		Log(PorcentageText)
 End Sub
 
@@ -798,6 +804,7 @@ End Sub
 
 Private Sub Button1_Click
 	Dim id As String
+
 
 	' Obtener el nombre de la persona desde la página "DetailsPerson"
 	id = B4XPages.GetPage("DetailsPerson").As(DetailsPerson).namePerson
@@ -833,32 +840,58 @@ Private Sub Button1_Click
 			' Procesar los datos recuperados
 			Dim Req As DBRequestManager
 			Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
-			Dim cmd As DBCommand = CreateCommand("insert_Mvto_Trab_Propios", Array(id, FechaInicio, LaborCBX, 0, ConceptoCBX, nitEmpresaCBX, haciendaCBX, LoteCBX, HorasText, CantidadText, ObsvText, TurnoCBX, PorcentageText))
+			Dim cmd As DBCommand = CreateCommand("insert_Mvto_Trab_Propios", Array(id, FechaInicio, LaborCBX, 0, ConceptoCBX, nitEmpresaCBX, haciendaCBX, LoteCBX, HorasText, CantidadText, ObsvText, Null, PorcentageText))
 			Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
 			Wait For(j) JobDone(j As HttpJob)
-			' Ejecutar la consulta
-			Try
-				MsgboxAsync("Se ha insertado correctamente.", "Éxito")
-				Log("Se han recuperado datos: propios " & res.Rows.Size)
-				
-			Catch
-				Log("Error al agregar datos: " & LastException) ' Log del error
-			End Try
+			
+			If j.Success Then
+				MsgboxAsync("Inserción exitosa", "Éxito")
+			Else
+				Log("ID: " & id)
+				Log("FechaInicio: " & FechaInicio)
+				Log("LaborCBX: " & LaborCBX)
+				Log("Valor fijo: 0")
+				Log("ConceptoCBX: " & ConceptoCBX)
+				Log("nitEmpresaCBX: " & nitEmpresaCBX)
+				Log("haciendaCBX: " & haciendaCBX)
+				Log("LoteCBX: " & LoteCBX)
+				Log("HorasText: " & HorasText)
+				Log("CantidadText: " & CantidadText)
+				Log("ObsvText: " & ObsvText)
+				Log("TurnoCBX: " & TurnoCBX)
+				Log("PorcentageText: " & PorcentageText)
+				Log("Error en el job: " & j.ErrorMessage)
+				MsgboxAsync("Error al insertar: " & j.ErrorMessage, "Error")
+			End If
+			j.Release
     
 		Else
 			Dim Req As DBRequestManager
 			Req.Initialize(Me, rdcLink & "?DBName=" & Main.pDBName)
-			Dim cmd As DBCommand = CreateCommand("insert_Mvto_Trab_Tmprles", Array(id, FechaInicio, LaborCBX, 0, ConceptoCBX, nitEmpresaCBX, haciendaCBX, LoteCBX, HorasText, CantidadText, ObsvText, TurnoCBX, PorcentageText))
+			Dim cmd As DBCommand = CreateCommand("insert_Mvto_Trab_Tmprles", Array(id, FechaInicio, LaborCBX, 0, ConceptoCBX, nitEmpresaCBX, haciendaCBX, LoteCBX, HorasText, CantidadText, ObsvText, Null, PorcentageText))
 			Dim j As HttpJob = Req.ExecuteCommand(cmd, Null)
 			Wait For(j) JobDone(j As HttpJob)
 			' Ejecutar la consulta
-			Try
-				MsgboxAsync("Se ha insertado correctamente.", "Éxito")
-				Log("No se encontraron datos para el ID: " & id)
-				
-			Catch
-				Log("Error al agregar datos: " & LastException) ' Log del error
-			End Try
+			If j.Success Then
+				MsgboxAsync("Inserción exitosa", "Éxito")
+			Else
+				Log("ID: " & id)
+				Log("FechaInicio: " & FechaInicio)
+				Log("LaborCBX: " & LaborCBX)
+				Log("Valor fijo: 0")
+				Log("ConceptoCBX: " & ConceptoCBX)
+				Log("nitEmpresaCBX: " & nitEmpresaCBX)
+				Log("haciendaCBX: " & haciendaCBX)
+				Log("LoteCBX: " & LoteCBX)
+				Log("HorasText: " & HorasText)
+				Log("CantidadText: " & CantidadText)
+				Log("ObsvText: " & ObsvText)
+				Log("TurnoCBX: " & TurnoCBX)
+				Log("PorcentageText: " & PorcentageText)
+				Log("Error en el job: " & j.ErrorMessage)
+				MsgboxAsync("Error al insertar: " & j.ErrorMessage, "Error")
+			End If
+			j.Release
 		End If
 
 	Else
@@ -993,8 +1026,10 @@ End Sub
 Private Sub SwiftButtonLote_Click
 	Wait For (Dialog.ShowTemplate(SearchTemplateLote, "", "", "CANCEL")) Complete (Result As Int)
 	If Result = xui.DialogResponse_Positive Then
-	SwiftButtonLote.xLBL.Text = SearchTemplateLote.SelectedItem
-	LoteCBX = SearchTemplateNit.SelectedItem
+		SwiftButtonLote.xLBL.Text = SearchTemplateLote.SelectedItem
+		Dim LOTECOMPLETO As String = SearchTemplateLote.SelectedItem
+		Dim Partes() As String = Regex.Split(":", LOTECOMPLETO)
+		LoteCBX = Partes(0) ' Obtiene el valor antes del ":" (ej: "LoteA")
 	End If
 End Sub
 
