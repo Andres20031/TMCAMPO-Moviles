@@ -1,0 +1,286 @@
+﻿Build1=Default,b4a.example.ef
+File1=1e13b842-e49b-47c7-96fd-2e1abe7a3b8c.jpg
+File10=cardMaquina.bal
+File11=cardp.bal
+File12=carga.gif
+File13=cartdep.bal
+File14=config.properties
+File15=detaiaperson.bal
+File16=dialogagenda.bal
+File17=dialogdelete.bal
+File18=dialogdone.bal
+File19=EditPersons.bal
+File2=7bbd83ffa06131ba7d908d93371c3813.jpg
+File20=emptyimg.jpg
+File21=emptyInsumos.bal
+File22=engineer (1).png
+File23=engineer.png
+File24=errorLayout.bal
+File25=fomrperson.bal
+File26=form.bal
+File27=FormInsumo.bal
+File28=FormLaboresCampo.bal
+File29=FormLaboresCampoA.bal
+File3=addLaboresUI.bal
+File30=FormLaboresCampoCancelar.bal
+File31=FormRiego.bal
+File32=FormSiembra.bal
+File33=icons8-laboratory-50.png
+File34=icons8-tractor-50.png
+File35=icons8-worker-64.png
+File36=inter-black.ttf
+File37=inter-bold.ttf
+File38=inter-extrabold.ttf
+File39=inter-extralight.ttf
+File4=addMaquinariaUI.bal
+File40=inter-light.ttf
+File41=inter-medium.ttf
+File42=inter-regular.ttf
+File43=inter-semibold.ttf
+File44=inter-thin.ttf
+File45=laboratory.png
+File46=light-rain-2.png
+File47=ListLaboresCampo.bal
+File48=listperson.bal
+File49=login.bal
+File5=addPrecipitacionUI.bal
+File50=MainPage.bal
+File51=maintenance.png
+File52=maintenance--v1.png
+File53=Maquinaria.bal
+File54=menu.bal
+File55=microscope.png
+File56=pack.png
+File57=paper-bag-with-seeds.png
+File58=programa_labores.bal
+File59=scrolluiperson.bal
+File6=carddados.bal
+File60=scroolui.bal
+File61=storm.png
+File62=tractor color.png
+File63=tractor.png
+File64=worker-female.png
+File7=CardInputEditPerson.bal
+File8=Cardisumo.bal
+File9=CardLabores.bal
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup15=Default Group
+FileGroup16=Default Group
+FileGroup17=Default Group
+FileGroup18=Default Group
+FileGroup19=Default Group
+FileGroup2=Default Group
+FileGroup20=Default Group
+FileGroup21=Default Group
+FileGroup22=Default Group
+FileGroup23=Default Group
+FileGroup24=Default Group
+FileGroup25=Default Group
+FileGroup26=Default Group
+FileGroup27=Default Group
+FileGroup28=Default Group
+FileGroup29=Default Group
+FileGroup3=Default Group
+FileGroup30=Default Group
+FileGroup31=Default Group
+FileGroup32=Default Group
+FileGroup33=Default Group
+FileGroup34=Default Group
+FileGroup35=Default Group
+FileGroup36=Default Group
+FileGroup37=Default Group
+FileGroup38=Default Group
+FileGroup39=Default Group
+FileGroup4=Default Group
+FileGroup40=Default Group
+FileGroup41=Default Group
+FileGroup42=Default Group
+FileGroup43=Nuevo Grupo
+FileGroup44=Default Group
+FileGroup45=Default Group
+FileGroup46=Default Group
+FileGroup47=Default Group
+FileGroup48=Default Group
+FileGroup49=Default Group
+FileGroup5=Default Group
+FileGroup50=Default Group
+FileGroup51=Default Group
+FileGroup52=Default Group
+FileGroup53=Default Group
+FileGroup54=Default Group
+FileGroup55=Default Group
+FileGroup56=Default Group
+FileGroup57=Default Group
+FileGroup58=Default Group
+FileGroup59=Default Group
+FileGroup6=Default Group
+FileGroup60=Default Group
+FileGroup61=Default Group
+FileGroup62=Default Group
+FileGroup63=Default Group
+FileGroup64=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+Library1=appcompat
+Library10=ime
+Library11=intellvold_datepicker
+Library12=javaobject
+Library13=json
+Library14=okhttp
+Library15=okhttputils2
+Library16=phone
+Library17=randomaccessfile
+Library18=scrollview2d
+Library19=sd_xcombobox
+Library2=as_datepicker
+Library20=sql
+Library21=stringfunctions
+Library22=stringutils
+Library23=xcustomlistview
+Library24=xui views
+Library25=dateutils
+Library3=asviewpager
+Library4=b4xcollections
+Library5=b4xpages
+Library6=b4xtable
+Library7=core
+Library8=dialogs2
+Library9=gifdecoder
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="31"/>~\n~<supports-screens android:largeScreens="true" ~\n~android:normalScreens="true" ~\n~android:smallScreens="true" ~\n~android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.LightTheme)~\n~~\n~SetApplicationAttribute(android:usesCleartextTraffic, "true")~\n~'CreateResourceFromFile(Macro, Core.NetworkClearText)~\n~~\n~SetApplicationAttribute(android:theme, "@style/MyAppTheme")~\n~CreateResource(values, theme.xml,~\n~<resources>~\n~<style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">~\n~<item name="windowNoTitle">true</item>~\n~<item name="windowActionBar">false</item>~\n~<item name="android:windowTranslucentNavigation">false</item>~\n~		<item name="android:windowTranslucentStatus">false</item>~\n~		<item name="android:forceDarkAllowed">false</item>~\n~		<item name="android:windowLightStatusBar">true</item>~\n~		<item name="android:windowLightNavigationBar">false</item>~\n~</style>~\n~</resources>~\n~)~\n~'End of default text.<item name="android:navigationBarColor">#FF000000</item> <item name="colorAccent">#040925</item>~\n~		~\n~
+Module1=B4XMainPage
+Module10=FormPrecipitacion
+Module11=FormProgramaCampo
+Module12=FormProgramaCampoAplazar
+Module13=FormProgramaCampoCancelar
+Module14=GifViewer
+Module15=ListDados
+Module16=ListLabores
+Module17=ListPerson
+Module18=Menu
+Module19=Starter
+Module2=B4XProgressBar
+Module20=Table
+Module21=util
+Module3=DBRequestManager
+Module4=DetailsPerson
+Module5=EditPerson
+Module6=Form
+Module7=FormLabores
+Module8=FormMaquinaria
+Module9=FormPerson
+NumberOfFiles=64
+NumberOfLibraries=25
+NumberOfModules=21
+Version=13
+@EndOfDesignText@
+#Region  Project Attributes 
+	''B4A Example
+	#ApplicationLabel: TM Campo2
+	#VersionCode: 1
+	#VersionName: 
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: portrait
+	#CanInstallToExternalStorage: False
+#End Region
+#Extends : android.support.v4.app.FragmentActivity
+#MultiDex:true
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: false
+#End Region
+
+'#BridgeLogger: True
+
+Sub Process_Globals
+	Public ActionBarHomeClicked As Boolean
+
+	Type DBResult (Tag As Object, Columns As Map, Rows As List)
+	Type DBCommand (Name As String, Parameters() As Object)
+	Private const rdcLink As String = "http://84.46.255.129:17178/rdc"
+
+
+	Public pUser As String = "sa" ' Tu usuario de base de datos
+	Public pPassword As String = "AVE.0331" ' Tu contraseña de base de datos
+	Public pDBName As String = "BDCencerro" ' Nombre de la base de datos
+
+	Public pEmpresa = "Tool Manager" As String
+	'Public pDBName = "BDPichucho"  As String
+	'Public pDBName = "BDAlvalena"  As String
+	'Public pDBName = "BDCavi"  As String
+	Public pDBName = "BDCencerro"  As String
+	Public pDBNameSeguridad = "BDSeguridadTMApp"  As String
+
+	Public pUser As String
+	Public pNit As String
+	Public puserActivo As String
+	Public pUserOpcionLabores As String
+	Public pUserOpcionAgenda As String
+	Public pUserOpcionMaquinaria As String
+	Public pUserOpcionPluviometros As String
+	Public pUserOpcionMonotoreo As String
+	Public GifsCache As Map
+	Public consecutivoLaboresGlobal As String 
+End Sub
+
+Sub Globals
+
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	Dim pm As B4XPagesManager
+	pm.Initialize(Activity)
+
+End Sub
+
+'Template version: B4A-1.01
+#Region Delegates
+
+Sub Activity_ActionBarHomeClick
+	ActionBarHomeClicked = True
+	B4XPages.Delegate.Activity_ActionBarHomeClick
+	ActionBarHomeClicked = False
+End Sub
+
+Sub Activity_KeyPress (KeyCode As Int) As Boolean
+	Return B4XPages.Delegate.Activity_KeyPress(KeyCode)
+End Sub
+
+Sub Activity_Resume
+	B4XPages.Delegate.Activity_Resume
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+	B4XPages.Delegate.Activity_Pause
+End Sub
+
+Sub Activity_PermissionResult (Permission As String, Result As Boolean)
+	B4XPages.Delegate.Activity_PermissionResult(Permission, Result)
+End Sub
+
+Sub Create_Menu (Menu As Object)
+	B4XPages.Delegate.Create_Menu(Menu)
+End Sub
+
+#if Java
+public boolean _onCreateOptionsMenu(android.view.Menu menu) {
+	 processBA.raiseEvent(null, "create_menu", menu);
+	 return true;
+	
+}
+#End If
+#End Region
+
+'Program code should go into B4XMainPage and other pages.
+'Estos links ayudan indican como conectarse a una BD como parametro
+'https://www.b4x.com/android/forum/threads/connection-to-two-ms-sql-database-depending-on-the-registered-user.149903/#post-951186
+'https://www.b4x.com/android/forum/threads/solved-what-do-i-need-to-modify-on-the-client-side-for-jrdc2-multi-to-work.134010/#post-847620
+'https://www.b4x.com/android/forum/threads/mysql-connector-for-b4i.116617/#post-729095
+'https://www.b4x.com/android/forum/threads/access-database-name-from-client-parameter-with-jrdc.140790/#post-892119
+
