@@ -44,10 +44,10 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="util";
 if (Debug.shouldDelegate(ba, "initialize", false))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
-RDebugUtils.currentLine=36765696;
- //BA.debugLineNum = 36765696;BA.debugLine="Public Sub Initialize";
-RDebugUtils.currentLine=36765698;
- //BA.debugLineNum = 36765698;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37355520;
+ //BA.debugLineNum = 37355520;BA.debugLine="Public Sub Initialize";
+RDebugUtils.currentLine=37355522;
+ //BA.debugLineNum = 37355522;BA.debugLine="End Sub";
 return "";
 }
 public String  _setstatusbarcolor(b4a.example.ef.util __ref,int _clr,int _clr1) throws Exception{
@@ -58,59 +58,59 @@ if (Debug.shouldDelegate(ba, "setstatusbarcolor", false))
 anywheresoftware.b4a.phone.Phone _p = null;
 anywheresoftware.b4j.object.JavaObject _jo = null;
 anywheresoftware.b4j.object.JavaObject _window = null;
-RDebugUtils.currentLine=36831232;
- //BA.debugLineNum = 36831232;BA.debugLine="Sub SetStatusBarColor(clr As Int, clr1 As Int)";
-RDebugUtils.currentLine=36831233;
- //BA.debugLineNum = 36831233;BA.debugLine="clr1=0xB4008000";
+RDebugUtils.currentLine=37421056;
+ //BA.debugLineNum = 37421056;BA.debugLine="Sub SetStatusBarColor(clr As Int, clr1 As Int)";
+RDebugUtils.currentLine=37421057;
+ //BA.debugLineNum = 37421057;BA.debugLine="clr1=0xB4008000";
 _clr1 = ((int)0xb4008000);
-RDebugUtils.currentLine=36831234;
- //BA.debugLineNum = 36831234;BA.debugLine="Try";
-try {RDebugUtils.currentLine=36831235;
- //BA.debugLineNum = 36831235;BA.debugLine="Dim p As Phone";
+RDebugUtils.currentLine=37421058;
+ //BA.debugLineNum = 37421058;BA.debugLine="Try";
+try {RDebugUtils.currentLine=37421059;
+ //BA.debugLineNum = 37421059;BA.debugLine="Dim p As Phone";
 _p = new anywheresoftware.b4a.phone.Phone();
-RDebugUtils.currentLine=36831236;
- //BA.debugLineNum = 36831236;BA.debugLine="If p.SdkVersion >= 21 Then";
+RDebugUtils.currentLine=37421060;
+ //BA.debugLineNum = 37421060;BA.debugLine="If p.SdkVersion >= 21 Then";
 if (_p.getSdkVersion()>=21) { 
-RDebugUtils.currentLine=36831237;
- //BA.debugLineNum = 36831237;BA.debugLine="Dim jo As JavaObject";
+RDebugUtils.currentLine=37421061;
+ //BA.debugLineNum = 37421061;BA.debugLine="Dim jo As JavaObject";
 _jo = new anywheresoftware.b4j.object.JavaObject();
-RDebugUtils.currentLine=36831238;
- //BA.debugLineNum = 36831238;BA.debugLine="jo.InitializeContext";
+RDebugUtils.currentLine=37421062;
+ //BA.debugLineNum = 37421062;BA.debugLine="jo.InitializeContext";
 _jo.InitializeContext(ba);
-RDebugUtils.currentLine=36831239;
- //BA.debugLineNum = 36831239;BA.debugLine="Dim window As JavaObject = jo.RunMethodJO(\"getW";
+RDebugUtils.currentLine=37421063;
+ //BA.debugLineNum = 37421063;BA.debugLine="Dim window As JavaObject = jo.RunMethodJO(\"getW";
 _window = new anywheresoftware.b4j.object.JavaObject();
 _window = _jo.RunMethodJO("getWindow",(Object[])(__c.Null));
-RDebugUtils.currentLine=36831240;
- //BA.debugLineNum = 36831240;BA.debugLine="window.RunMethod(\"addFlags\", Array (0x80000000)";
+RDebugUtils.currentLine=37421064;
+ //BA.debugLineNum = 37421064;BA.debugLine="window.RunMethod(\"addFlags\", Array (0x80000000)";
 _window.RunMethod("addFlags",new Object[]{(Object)(((int)0x80000000))});
-RDebugUtils.currentLine=36831241;
- //BA.debugLineNum = 36831241;BA.debugLine="window.RunMethod(\"clearFlags\", Array (0x0400000";
+RDebugUtils.currentLine=37421065;
+ //BA.debugLineNum = 37421065;BA.debugLine="window.RunMethod(\"clearFlags\", Array (0x0400000";
 _window.RunMethod("clearFlags",new Object[]{(Object)(((int)0x04000000))});
-RDebugUtils.currentLine=36831242;
- //BA.debugLineNum = 36831242;BA.debugLine="window.RunMethod(\"setStatusBarColor\", Array(clr";
+RDebugUtils.currentLine=37421066;
+ //BA.debugLineNum = 37421066;BA.debugLine="window.RunMethod(\"setStatusBarColor\", Array(clr";
 _window.RunMethod("setStatusBarColor",new Object[]{(Object)(_clr)});
-RDebugUtils.currentLine=36831243;
- //BA.debugLineNum = 36831243;BA.debugLine="window.RunMethod(\"setNavigationBarColor\", Array";
+RDebugUtils.currentLine=37421067;
+ //BA.debugLineNum = 37421067;BA.debugLine="window.RunMethod(\"setNavigationBarColor\", Array";
 _window.RunMethod("setNavigationBarColor",new Object[]{(Object)(_clr1)});
  };
  } 
        catch (Exception e14) {
-			ba.setLastException(e14);RDebugUtils.currentLine=36831246;
- //BA.debugLineNum = 36831246;BA.debugLine="Log(LastException)";
-__c.LogImpl("436831246",BA.ObjectToString(__c.LastException(getActivityBA())),0);
+			ba.setLastException(e14);RDebugUtils.currentLine=37421070;
+ //BA.debugLineNum = 37421070;BA.debugLine="Log(LastException)";
+__c.LogImpl("337421070",BA.ObjectToString(__c.LastException(getActivityBA())),0);
  };
-RDebugUtils.currentLine=36831249;
- //BA.debugLineNum = 36831249;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37421073;
+ //BA.debugLineNum = 37421073;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals(b4a.example.ef.util __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="util";
-RDebugUtils.currentLine=36700160;
- //BA.debugLineNum = 36700160;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=36700162;
- //BA.debugLineNum = 36700162;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37289984;
+ //BA.debugLineNum = 37289984;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=37289986;
+ //BA.debugLineNum = 37289986;BA.debugLine="End Sub";
 return "";
 }
 }

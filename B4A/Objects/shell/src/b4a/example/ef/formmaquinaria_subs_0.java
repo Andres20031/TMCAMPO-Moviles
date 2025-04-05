@@ -8,7 +8,7 @@ public class formmaquinaria_subs_0 {
 
 public static RemoteObject  _as_datepicker1_selecteddatechanged(RemoteObject __ref,RemoteObject _date) throws Exception{
 try {
-		Debug.PushSubsStack("AS_DatePicker1_SelectedDateChanged (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,377);
+		Debug.PushSubsStack("AS_DatePicker1_SelectedDateChanged (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,377);
 if (RapidSub.canDelegate("as_datepicker1_selecteddatechanged")) { return __ref.runUserSub(false, "formmaquinaria","as_datepicker1_selecteddatechanged", __ref, _date);}
 RemoteObject _formatteddate = RemoteObject.createImmutable("");
 Debug.locals.put("Date", _date);
@@ -44,7 +44,7 @@ finally {
 		}}
 public static void  _b4xpage_appear(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("B4XPage_Appear (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,108);
+		Debug.PushSubsStack("B4XPage_Appear (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,108);
 if (RapidSub.canDelegate("b4xpage_appear")) { __ref.runUserSub(false, "formmaquinaria","b4xpage_appear", __ref); return;}
 ResumableSub_B4XPage_Appear rsub = new ResumableSub_B4XPage_Appear(null,__ref);
 rsub.resume(null, null);
@@ -130,7 +130,7 @@ int groupLen123;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("B4XPage_Appear (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,108);
+		Debug.PushSubsStack("B4XPage_Appear (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,108);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -279,7 +279,7 @@ case 9:
 this.state = 10;
  BA.debugLineNum = 138;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j2.Err";
 Debug.ShouldStop(512);
-parent.__c.runVoidMethod ("LogImpl","418153502",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de Maquina: "),_j2.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","312910622",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de Maquina: "),_j2.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 10:
@@ -405,7 +405,7 @@ case 19:
 this.state = 20;
  BA.debugLineNum = 165;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j3.Err";
 Debug.ShouldStop(16);
-parent.__c.runVoidMethod ("LogImpl","418153529",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de Maquina: "),_j3.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","312910649",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de Maquina: "),_j3.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 20:
@@ -531,7 +531,7 @@ case 29:
 this.state = 30;
  BA.debugLineNum = 190;BA.debugLine="Log(\"Error en la consulta de NITs: \" & j.ErrorMe";
 Debug.ShouldStop(536870912);
-parent.__c.runVoidMethod ("LogImpl","418153554",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de NITs: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","312910674",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de NITs: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 30:
@@ -663,7 +663,7 @@ case 39:
 this.state = 40;
  BA.debugLineNum = 217;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j4.Err";
 Debug.ShouldStop(16777216);
-parent.__c.runVoidMethod ("LogImpl","418153581",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de Maquina: "),_j4.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","312910701",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de Maquina: "),_j4.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 40:
@@ -798,7 +798,7 @@ case 49:
 this.state = 50;
  BA.debugLineNum = 245;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j5.Err";
 Debug.ShouldStop(1048576);
-parent.__c.runVoidMethod ("LogImpl","418153609",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de Maquina: "),_j5.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","312910729",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de Maquina: "),_j5.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 50:
@@ -924,7 +924,7 @@ case 59:
 this.state = 60;
  BA.debugLineNum = 269;BA.debugLine="Log(\"Error en la consulta de Maquina: \" & j6.Err";
 Debug.ShouldStop(4096);
-parent.__c.runVoidMethod ("LogImpl","418153633",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de Maquina: "),_j6.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","312910753",RemoteObject.concat(RemoteObject.createImmutable("Error en la consulta de Maquina: "),_j6.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 60:
@@ -973,7 +973,7 @@ public static void  _req_obser_result(RemoteObject __ref,RemoteObject _resobser)
 }
 public static RemoteObject  _b4xpage_created(RemoteObject __ref,RemoteObject _root1) throws Exception{
 try {
-		Debug.PushSubsStack("B4XPage_Created (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,93);
+		Debug.PushSubsStack("B4XPage_Created (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,93);
 if (RapidSub.canDelegate("b4xpage_created")) { return __ref.runUserSub(false, "formmaquinaria","b4xpage_created", __ref, _root1);}
 Debug.locals.put("Root1", _root1);
  BA.debugLineNum = 93;BA.debugLine="Private Sub B4XPage_Created (Root1 As B4XView)";
@@ -1002,7 +1002,7 @@ finally {
 		}}
 public static void  _button1_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Button1_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,449);
+		Debug.PushSubsStack("Button1_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,449);
 if (RapidSub.canDelegate("button1_click")) { __ref.runUserSub(false, "formmaquinaria","button1_click", __ref); return;}
 ResumableSub_Button1_Click rsub = new ResumableSub_Button1_Click(null,__ref);
 rsub.resume(null, null);
@@ -1028,7 +1028,7 @@ RemoteObject _j = RemoteObject.declareNull("b4a.example.ef.httpjob");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Button1_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,449);
+		Debug.PushSubsStack("Button1_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,449);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1077,61 +1077,61 @@ Debug.ShouldStop(32768);
 __ref.setField ("_devicename" /*RemoteObject*/ ,__ref.runClassMethod (b4a.example.ef.formmaquinaria.class, "_getdevicename" /*RemoteObject*/ ));
  BA.debugLineNum = 466;BA.debugLine="Log(\"Ascdo_Maq_Mvto_Maq: \" & Ascdo_Maq_Mvto_Maq)";
 Debug.ShouldStop(131072);
-parent.__c.runVoidMethod ("LogImpl","419070993",RemoteObject.concat(RemoteObject.createImmutable("Ascdo_Maq_Mvto_Maq: "),__ref.getField(true,"_ascdo_maq_mvto_maq" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828113",RemoteObject.concat(RemoteObject.createImmutable("Ascdo_Maq_Mvto_Maq: "),__ref.getField(true,"_ascdo_maq_mvto_maq" /*RemoteObject*/ )),0);
  BA.debugLineNum = 467;BA.debugLine="Log(\"maquina: \" & maquina)";
 Debug.ShouldStop(262144);
-parent.__c.runVoidMethod ("LogImpl","419070994",RemoteObject.concat(RemoteObject.createImmutable("maquina: "),__ref.getField(true,"_maquina" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828114",RemoteObject.concat(RemoteObject.createImmutable("maquina: "),__ref.getField(true,"_maquina" /*RemoteObject*/ )),0);
  BA.debugLineNum = 468;BA.debugLine="Log(\"fecha: \" & fecha)";
 Debug.ShouldStop(524288);
-parent.__c.runVoidMethod ("LogImpl","419070995",RemoteObject.concat(RemoteObject.createImmutable("fecha: "),__ref.getField(true,"_fecha" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828115",RemoteObject.concat(RemoteObject.createImmutable("fecha: "),__ref.getField(true,"_fecha" /*RemoteObject*/ )),0);
  BA.debugLineNum = 469;BA.debugLine="Log(\"labor: \" & labor)";
 Debug.ShouldStop(1048576);
-parent.__c.runVoidMethod ("LogImpl","419070996",RemoteObject.concat(RemoteObject.createImmutable("labor: "),__ref.getField(true,"_labor" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828116",RemoteObject.concat(RemoteObject.createImmutable("labor: "),__ref.getField(true,"_labor" /*RemoteObject*/ )),0);
  BA.debugLineNum = 470;BA.debugLine="Log(\"nitEmpresaCBX: \" & nitEmpresaCBX)";
 Debug.ShouldStop(2097152);
-parent.__c.runVoidMethod ("LogImpl","419070997",RemoteObject.concat(RemoteObject.createImmutable("nitEmpresaCBX: "),__ref.getField(true,"_nitempresacbx" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828117",RemoteObject.concat(RemoteObject.createImmutable("nitEmpresaCBX: "),__ref.getField(true,"_nitempresacbx" /*RemoteObject*/ )),0);
  BA.debugLineNum = 471;BA.debugLine="Log(\"haciendaCBX: \" & haciendaCBX)";
 Debug.ShouldStop(4194304);
-parent.__c.runVoidMethod ("LogImpl","419070998",RemoteObject.concat(RemoteObject.createImmutable("haciendaCBX: "),__ref.getField(true,"_haciendacbx" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828118",RemoteObject.concat(RemoteObject.createImmutable("haciendaCBX: "),__ref.getField(true,"_haciendacbx" /*RemoteObject*/ )),0);
  BA.debugLineNum = 472;BA.debugLine="Log(\"Lote: \" & Lote)";
 Debug.ShouldStop(8388608);
-parent.__c.runVoidMethod ("LogImpl","419070999",RemoteObject.concat(RemoteObject.createImmutable("Lote: "),__ref.getField(true,"_lote" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828119",RemoteObject.concat(RemoteObject.createImmutable("Lote: "),__ref.getField(true,"_lote" /*RemoteObject*/ )),0);
  BA.debugLineNum = 473;BA.debugLine="Log(\"implemento: \" & implemento)";
 Debug.ShouldStop(16777216);
-parent.__c.runVoidMethod ("LogImpl","419071000",RemoteObject.concat(RemoteObject.createImmutable("implemento: "),__ref.getField(true,"_implemento" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828120",RemoteObject.concat(RemoteObject.createImmutable("implemento: "),__ref.getField(true,"_implemento" /*RemoteObject*/ )),0);
  BA.debugLineNum = 474;BA.debugLine="Log(\"horainicio: \" & horainicio)";
 Debug.ShouldStop(33554432);
-parent.__c.runVoidMethod ("LogImpl","419071001",RemoteObject.concat(RemoteObject.createImmutable("horainicio: "),__ref.getField(true,"_horainicio" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828121",RemoteObject.concat(RemoteObject.createImmutable("horainicio: "),__ref.getField(true,"_horainicio" /*RemoteObject*/ )),0);
  BA.debugLineNum = 475;BA.debugLine="Log(\"horafin: \" & horafin)";
 Debug.ShouldStop(67108864);
-parent.__c.runVoidMethod ("LogImpl","419071002",RemoteObject.concat(RemoteObject.createImmutable("horafin: "),__ref.getField(true,"_horafin" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828122",RemoteObject.concat(RemoteObject.createImmutable("horafin: "),__ref.getField(true,"_horafin" /*RemoteObject*/ )),0);
  BA.debugLineNum = 476;BA.debugLine="Log(\"combustible: \" & combustible)";
 Debug.ShouldStop(134217728);
-parent.__c.runVoidMethod ("LogImpl","419071003",RemoteObject.concat(RemoteObject.createImmutable("combustible: "),__ref.getField(true,"_combustible" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828123",RemoteObject.concat(RemoteObject.createImmutable("combustible: "),__ref.getField(true,"_combustible" /*RemoteObject*/ )),0);
  BA.debugLineNum = 477;BA.debugLine="Log(\"observaciones: \" & observaciones)";
 Debug.ShouldStop(268435456);
-parent.__c.runVoidMethod ("LogImpl","419071004",RemoteObject.concat(RemoteObject.createImmutable("observaciones: "),__ref.getField(true,"_observaciones" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828124",RemoteObject.concat(RemoteObject.createImmutable("observaciones: "),__ref.getField(true,"_observaciones" /*RemoteObject*/ )),0);
  BA.debugLineNum = 478;BA.debugLine="Log(\"operario: \" & operario)";
 Debug.ShouldStop(536870912);
-parent.__c.runVoidMethod ("LogImpl","419071005",RemoteObject.concat(RemoteObject.createImmutable("operario: "),__ref.getField(true,"_operario" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828125",RemoteObject.concat(RemoteObject.createImmutable("operario: "),__ref.getField(true,"_operario" /*RemoteObject*/ )),0);
  BA.debugLineNum = 479;BA.debugLine="Log(\"implemento2: \" & implemento2)";
 Debug.ShouldStop(1073741824);
-parent.__c.runVoidMethod ("LogImpl","419071006",RemoteObject.concat(RemoteObject.createImmutable("implemento2: "),__ref.getField(true,"_implemento2" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828126",RemoteObject.concat(RemoteObject.createImmutable("implemento2: "),__ref.getField(true,"_implemento2" /*RemoteObject*/ )),0);
  BA.debugLineNum = 480;BA.debugLine="Log(\"area: \" & area)";
 Debug.ShouldStop(-2147483648);
-parent.__c.runVoidMethod ("LogImpl","419071007",RemoteObject.concat(RemoteObject.createImmutable("area: "),__ref.getField(true,"_area" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828127",RemoteObject.concat(RemoteObject.createImmutable("area: "),__ref.getField(true,"_area" /*RemoteObject*/ )),0);
  BA.debugLineNum = 481;BA.debugLine="Log(\"fechaHoy: \" & fechaHoy)";
 Debug.ShouldStop(1);
-parent.__c.runVoidMethod ("LogImpl","419071008",RemoteObject.concat(RemoteObject.createImmutable("fechaHoy: "),__ref.getField(true,"_fechahoy" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828128",RemoteObject.concat(RemoteObject.createImmutable("fechaHoy: "),__ref.getField(true,"_fechahoy" /*RemoteObject*/ )),0);
  BA.debugLineNum = 482;BA.debugLine="Log(\"horaActual: \" & horaActual)";
 Debug.ShouldStop(2);
-parent.__c.runVoidMethod ("LogImpl","419071009",RemoteObject.concat(RemoteObject.createImmutable("horaActual: "),__ref.getField(true,"_horaactual" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828129",RemoteObject.concat(RemoteObject.createImmutable("horaActual: "),__ref.getField(true,"_horaactual" /*RemoteObject*/ )),0);
  BA.debugLineNum = 483;BA.debugLine="Log(\"user: \" & user)";
 Debug.ShouldStop(4);
-parent.__c.runVoidMethod ("LogImpl","419071010",RemoteObject.concat(RemoteObject.createImmutable("user: "),__ref.getField(true,"_user" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828130",RemoteObject.concat(RemoteObject.createImmutable("user: "),__ref.getField(true,"_user" /*RemoteObject*/ )),0);
  BA.debugLineNum = 484;BA.debugLine="Log(\"DeviceName: \" & DeviceName)";
 Debug.ShouldStop(8);
-parent.__c.runVoidMethod ("LogImpl","419071011",RemoteObject.concat(RemoteObject.createImmutable("DeviceName: "),__ref.getField(true,"_devicename" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828131",RemoteObject.concat(RemoteObject.createImmutable("DeviceName: "),__ref.getField(true,"_devicename" /*RemoteObject*/ )),0);
  BA.debugLineNum = 487;BA.debugLine="Dim Req As DBRequestManager";
 Debug.ShouldStop(64);
 _req = RemoteObject.createNew ("b4a.example.ef.dbrequestmanager");Debug.locals.put("Req", _req);
@@ -1195,7 +1195,7 @@ case 8:
 this.state = 9;
  BA.debugLineNum = 502;BA.debugLine="Log(\"Error al ejecutar la consulta: \" & j.Error";
 Debug.ShouldStop(2097152);
-parent.__c.runVoidMethod ("LogImpl","419071029",RemoteObject.concat(RemoteObject.createImmutable("Error al ejecutar la consulta: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313828149",RemoteObject.concat(RemoteObject.createImmutable("Error al ejecutar la consulta: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 9:
@@ -1211,7 +1211,7 @@ this.state = 12;
 this.catchState = 0;
  BA.debugLineNum = 505;BA.debugLine="Log(\"Error al agregar datos: \" & LastException.M";
 Debug.ShouldStop(16777216);
-parent.__c.runVoidMethod ("LogImpl","419071032",RemoteObject.concat(RemoteObject.createImmutable("Error al agregar datos: "),parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba")).runMethod(true,"getMessage")),0);
+parent.__c.runVoidMethod ("LogImpl","313828152",RemoteObject.concat(RemoteObject.createImmutable("Error al agregar datos: "),parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba")).runMethod(true,"getMessage")),0);
  if (true) break;
 if (true) break;
 
@@ -1376,7 +1376,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _createcommand(RemoteObject __ref,RemoteObject _name,RemoteObject _parameters) throws Exception{
 try {
-		Debug.PushSubsStack("CreateCommand (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,403);
+		Debug.PushSubsStack("CreateCommand (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,403);
 if (RapidSub.canDelegate("createcommand")) { return __ref.runUserSub(false, "formmaquinaria","createcommand", __ref, _name, _parameters);}
 RemoteObject _cmd = RemoteObject.declareNull("b4a.example.ef.main._dbcommand");
 Debug.locals.put("Name", _name);
@@ -1411,7 +1411,7 @@ finally {
 		}}
 public static RemoteObject  _createitem(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("CreateItem (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,353);
+		Debug.PushSubsStack("CreateItem (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,353);
 if (RapidSub.canDelegate("createitem")) { return __ref.runUserSub(false, "formmaquinaria","createitem", __ref);}
 RemoteObject _panel = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
  BA.debugLineNum = 353;BA.debugLine="Private Sub CreateItem As Panel";
@@ -1444,7 +1444,7 @@ finally {
 		}}
 public static RemoteObject  _getdevicename(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("GetDeviceName (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,101);
+		Debug.PushSubsStack("GetDeviceName (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,101);
 if (RapidSub.canDelegate("getdevicename")) { return __ref.runUserSub(false, "formmaquinaria","getdevicename", __ref);}
 RemoteObject _p = RemoteObject.declareNull("anywheresoftware.b4a.phone.Phone");
 RemoteObject _manufacturer = RemoteObject.createImmutable("");
@@ -1475,7 +1475,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,88);
+		Debug.PushSubsStack("Initialize (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,88);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "formmaquinaria","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -1496,7 +1496,7 @@ finally {
 		}}
 public static RemoteObject  _label13time_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Label13Time_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,371);
+		Debug.PushSubsStack("Label13Time_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,371);
 if (RapidSub.canDelegate("label13time_click")) { return __ref.runUserSub(false, "formmaquinaria","label13time_click", __ref);}
  BA.debugLineNum = 371;BA.debugLine="Private Sub Label13Time_Click";
 Debug.ShouldStop(262144);
@@ -1515,7 +1515,7 @@ finally {
 		}}
 public static RemoteObject  _label1back_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Label1Back_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,509);
+		Debug.PushSubsStack("Label1Back_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,509);
 if (RapidSub.canDelegate("label1back_click")) { return __ref.runUserSub(false, "formmaquinaria","label1back_click", __ref);}
  BA.debugLineNum = 509;BA.debugLine="Private Sub Label1Back_Click";
 Debug.ShouldStop(268435456);
@@ -1534,7 +1534,7 @@ finally {
 		}}
 public static void  _sd_xcomboboxhacienda_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxHacienda_ItemClick (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,317);
+		Debug.PushSubsStack("SD_xComboBoxHacienda_ItemClick (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,317);
 if (RapidSub.canDelegate("sd_xcomboboxhacienda_itemclick")) { __ref.runUserSub(false, "formmaquinaria","sd_xcomboboxhacienda_itemclick", __ref, _position, _value); return;}
 ResumableSub_SD_xComboBoxHacienda_ItemClick rsub = new ResumableSub_SD_xComboBoxHacienda_ItemClick(null,__ref,_position,_value);
 rsub.resume(null, null);
@@ -1570,7 +1570,7 @@ int groupLen10;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxHacienda_ItemClick (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,317);
+		Debug.PushSubsStack("SD_xComboBoxHacienda_ItemClick (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,317);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1691,7 +1691,7 @@ case 9:
 this.state = 10;
  BA.debugLineNum = 345;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
 Debug.ShouldStop(16777216);
-parent.__c.runVoidMethod ("LogImpl","418284572",RemoteObject.concat(RemoteObject.createImmutable("Error: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313041692",RemoteObject.concat(RemoteObject.createImmutable("Error: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 10:
@@ -1717,7 +1717,7 @@ finally {
 }
 public static RemoteObject  _sd_xcomboboximplemento_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxImplemento_ItemClick (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,427);
+		Debug.PushSubsStack("SD_xComboBoxImplemento_ItemClick (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,427);
 if (RapidSub.canDelegate("sd_xcomboboximplemento_itemclick")) { return __ref.runUserSub(false, "formmaquinaria","sd_xcomboboximplemento_itemclick", __ref, _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -1738,7 +1738,7 @@ finally {
 		}}
 public static RemoteObject  _sd_xcomboboximplemento2_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxImplemento2_ItemClick (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,433);
+		Debug.PushSubsStack("SD_xComboBoxImplemento2_ItemClick (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,433);
 if (RapidSub.canDelegate("sd_xcomboboximplemento2_itemclick")) { return __ref.runUserSub(false, "formmaquinaria","sd_xcomboboximplemento2_itemclick", __ref, _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -1759,7 +1759,7 @@ finally {
 		}}
 public static RemoteObject  _sd_xcomboboxlabor_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxLabor_ItemClick (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,418);
+		Debug.PushSubsStack("SD_xComboBoxLabor_ItemClick (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,418);
 if (RapidSub.canDelegate("sd_xcomboboxlabor_itemclick")) { return __ref.runUserSub(false, "formmaquinaria","sd_xcomboboxlabor_itemclick", __ref, _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -1780,7 +1780,7 @@ finally {
 		}}
 public static RemoteObject  _sd_xcomboboxlote_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxLote_ItemClick (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,422);
+		Debug.PushSubsStack("SD_xComboBoxLote_ItemClick (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,422);
 if (RapidSub.canDelegate("sd_xcomboboxlote_itemclick")) { return __ref.runUserSub(false, "formmaquinaria","sd_xcomboboxlote_itemclick", __ref, _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -1791,7 +1791,7 @@ Debug.ShouldStop(64);
 __ref.setField ("_lote" /*RemoteObject*/ ,BA.ObjectToString(_value));
  BA.debugLineNum = 424;BA.debugLine="Log(Lote)";
 Debug.ShouldStop(128);
-formmaquinaria.__c.runVoidMethod ("LogImpl","418743298",__ref.getField(true,"_lote" /*RemoteObject*/ ),0);
+formmaquinaria.__c.runVoidMethod ("LogImpl","313500418",__ref.getField(true,"_lote" /*RemoteObject*/ ),0);
  BA.debugLineNum = 425;BA.debugLine="End Sub";
 Debug.ShouldStop(256);
 return RemoteObject.createImmutable("");
@@ -1804,7 +1804,7 @@ finally {
 		}}
 public static RemoteObject  _sd_xcomboboxmaquina_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxMaquina_ItemClick (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,412);
+		Debug.PushSubsStack("SD_xComboBoxMaquina_ItemClick (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,412);
 if (RapidSub.canDelegate("sd_xcomboboxmaquina_itemclick")) { return __ref.runUserSub(false, "formmaquinaria","sd_xcomboboxmaquina_itemclick", __ref, _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -1825,7 +1825,7 @@ finally {
 		}}
 public static void  _sd_xcomboboxnit_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxNit_ItemClick (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,282);
+		Debug.PushSubsStack("SD_xComboBoxNit_ItemClick (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,282);
 if (RapidSub.canDelegate("sd_xcomboboxnit_itemclick")) { __ref.runUserSub(false, "formmaquinaria","sd_xcomboboxnit_itemclick", __ref, _position, _value); return;}
 ResumableSub_SD_xComboBoxNit_ItemClick rsub = new ResumableSub_SD_xComboBoxNit_ItemClick(null,__ref,_position,_value);
 rsub.resume(null, null);
@@ -1862,7 +1862,7 @@ int groupLen10;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxNit_ItemClick (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,282);
+		Debug.PushSubsStack("SD_xComboBoxNit_ItemClick (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,282);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1986,7 +1986,7 @@ case 9:
 this.state = 10;
  BA.debugLineNum = 310;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
 Debug.ShouldStop(2097152);
-parent.__c.runVoidMethod ("LogImpl","418219036",RemoteObject.concat(RemoteObject.createImmutable("Error: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","312976156",RemoteObject.concat(RemoteObject.createImmutable("Error: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 10:
@@ -2012,7 +2012,7 @@ finally {
 }
 public static RemoteObject  _sd_xcomboboxobservaciones_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxObservaciones_ItemClick (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,443);
+		Debug.PushSubsStack("SD_xComboBoxObservaciones_ItemClick (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,443);
 if (RapidSub.canDelegate("sd_xcomboboxobservaciones_itemclick")) { return __ref.runUserSub(false, "formmaquinaria","sd_xcomboboxobservaciones_itemclick", __ref, _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -2033,7 +2033,7 @@ finally {
 		}}
 public static RemoteObject  _sd_xcomboboxoperario_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxOperario_ItemClick (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,438);
+		Debug.PushSubsStack("SD_xComboBoxOperario_ItemClick (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,438);
 if (RapidSub.canDelegate("sd_xcomboboxoperario_itemclick")) { return __ref.runUserSub(false, "formmaquinaria","sd_xcomboboxoperario_itemclick", __ref, _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -2054,7 +2054,7 @@ finally {
 		}}
 public static void  _swiftbuttonhacienda_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonHacienda_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,606);
+		Debug.PushSubsStack("SwiftButtonHacienda_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,606);
 if (RapidSub.canDelegate("swiftbuttonhacienda_click")) { __ref.runUserSub(false, "formmaquinaria","swiftbuttonhacienda_click", __ref); return;}
 ResumableSub_SwiftButtonHacienda_Click rsub = new ResumableSub_SwiftButtonHacienda_Click(null,__ref);
 rsub.resume(null, null);
@@ -2090,7 +2090,7 @@ int groupLen19;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonHacienda_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,606);
+		Debug.PushSubsStack("SwiftButtonHacienda_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,606);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -2254,7 +2254,7 @@ case 12:
 this.state = 13;
  BA.debugLineNum = 645;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
 Debug.ShouldStop(16);
-parent.__c.runVoidMethod ("LogImpl","419398695",RemoteObject.concat(RemoteObject.createImmutable("Error: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","314155815",RemoteObject.concat(RemoteObject.createImmutable("Error: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 13:
@@ -2269,7 +2269,7 @@ Debug.ShouldStop(128);
 __ref.getField(false,"_swiftbuttonlote" /*RemoteObject*/ ).runClassMethod (b4a.example.ef.swiftbutton.class, "_setenabled" /*RemoteObject*/ ,parent.__c.getField(true,"True"));
  BA.debugLineNum = 650;BA.debugLine="Log(haciendaCBX)";
 Debug.ShouldStop(512);
-parent.__c.runVoidMethod ("LogImpl","419398700",__ref.getField(true,"_haciendacbx" /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","314155820",__ref.getField(true,"_haciendacbx" /*RemoteObject*/ ),0);
  BA.debugLineNum = 651;BA.debugLine="j.Release";
 Debug.ShouldStop(1024);
 _j.runClassMethod (b4a.example.ef.httpjob.class, "_release" /*RemoteObject*/ );
@@ -2297,7 +2297,7 @@ public static void  _complete(RemoteObject __ref,RemoteObject _result) throws Ex
 }
 public static void  _swiftbuttonimplemento_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonImplemento_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,669);
+		Debug.PushSubsStack("SwiftButtonImplemento_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,669);
 if (RapidSub.canDelegate("swiftbuttonimplemento_click")) { __ref.runUserSub(false, "formmaquinaria","swiftbuttonimplemento_click", __ref); return;}
 ResumableSub_SwiftButtonImplemento_Click rsub = new ResumableSub_SwiftButtonImplemento_Click(null,__ref);
 rsub.resume(null, null);
@@ -2322,7 +2322,7 @@ RemoteObject _partes = null;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonImplemento_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,669);
+		Debug.PushSubsStack("SwiftButtonImplemento_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,669);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -2385,7 +2385,7 @@ Debug.ShouldStop(32);
 __ref.setField ("_implemento" /*RemoteObject*/ ,_partes.getArrayElement(true,BA.numberCast(int.class, 0)));
  BA.debugLineNum = 681;BA.debugLine="Log(\"Implemento seleccionado: \" & implemento)";
 Debug.ShouldStop(256);
-parent.__c.runVoidMethod ("LogImpl","419529740",RemoteObject.concat(RemoteObject.createImmutable("Implemento seleccionado: "),__ref.getField(true,"_implemento" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","314286860",RemoteObject.concat(RemoteObject.createImmutable("Implemento seleccionado: "),__ref.getField(true,"_implemento" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 8:
@@ -2393,7 +2393,7 @@ case 8:
 this.state = 9;
  BA.debugLineNum = 683;BA.debugLine="Log(\"El texto no contiene ':' por lo que no se";
 Debug.ShouldStop(1024);
-parent.__c.runVoidMethod ("LogImpl","419529742",RemoteObject.createImmutable("El texto no contiene ':' por lo que no se pudo dividir."),0);
+parent.__c.runVoidMethod ("LogImpl","314286862",RemoteObject.createImmutable("El texto no contiene ':' por lo que no se pudo dividir."),0);
  BA.debugLineNum = 684;BA.debugLine="implemento = SearchTemplateImplemento.SelectedI";
 Debug.ShouldStop(2048);
 __ref.setField ("_implemento" /*RemoteObject*/ ,__ref.getField(false,"_searchtemplateimplemento" /*RemoteObject*/ ).getField(true,"_selecteditem" /*RemoteObject*/ ));
@@ -2425,7 +2425,7 @@ finally {
 }
 public static void  _swiftbuttonimplemento2_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonImplemento2_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,690);
+		Debug.PushSubsStack("SwiftButtonImplemento2_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,690);
 if (RapidSub.canDelegate("swiftbuttonimplemento2_click")) { __ref.runUserSub(false, "formmaquinaria","swiftbuttonimplemento2_click", __ref); return;}
 ResumableSub_SwiftButtonImplemento2_Click rsub = new ResumableSub_SwiftButtonImplemento2_Click(null,__ref);
 rsub.resume(null, null);
@@ -2450,7 +2450,7 @@ RemoteObject _partes = null;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonImplemento2_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,690);
+		Debug.PushSubsStack("SwiftButtonImplemento2_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,690);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -2513,7 +2513,7 @@ Debug.ShouldStop(67108864);
 __ref.setField ("_implemento2" /*RemoteObject*/ ,_partes.getArrayElement(true,BA.numberCast(int.class, 0)));
  BA.debugLineNum = 701;BA.debugLine="Log(\"Implemento2 seleccionado: \" & implemento2)";
 Debug.ShouldStop(268435456);
-parent.__c.runVoidMethod ("LogImpl","419595275",RemoteObject.concat(RemoteObject.createImmutable("Implemento2 seleccionado: "),__ref.getField(true,"_implemento2" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","314352395",RemoteObject.concat(RemoteObject.createImmutable("Implemento2 seleccionado: "),__ref.getField(true,"_implemento2" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 8:
@@ -2521,7 +2521,7 @@ case 8:
 this.state = 9;
  BA.debugLineNum = 703;BA.debugLine="Log(\"El texto no contiene ':' por lo que no se";
 Debug.ShouldStop(1073741824);
-parent.__c.runVoidMethod ("LogImpl","419595277",RemoteObject.createImmutable("El texto no contiene ':' por lo que no se pudo dividir."),0);
+parent.__c.runVoidMethod ("LogImpl","314352397",RemoteObject.createImmutable("El texto no contiene ':' por lo que no se pudo dividir."),0);
  BA.debugLineNum = 704;BA.debugLine="implemento2 = SearchTemplateImplemento2.Selecte";
 Debug.ShouldStop(-2147483648);
 __ref.setField ("_implemento2" /*RemoteObject*/ ,__ref.getField(false,"_searchtemplateimplemento2" /*RemoteObject*/ ).getField(true,"_selecteditem" /*RemoteObject*/ ));
@@ -2553,7 +2553,7 @@ finally {
 }
 public static void  _swiftbuttonlabor_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonLabor_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,533);
+		Debug.PushSubsStack("SwiftButtonLabor_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,533);
 if (RapidSub.canDelegate("swiftbuttonlabor_click")) { __ref.runUserSub(false, "formmaquinaria","swiftbuttonlabor_click", __ref); return;}
 ResumableSub_SwiftButtonLabor_Click rsub = new ResumableSub_SwiftButtonLabor_Click(null,__ref);
 rsub.resume(null, null);
@@ -2578,7 +2578,7 @@ RemoteObject _partes = null;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonLabor_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,533);
+		Debug.PushSubsStack("SwiftButtonLabor_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,533);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -2641,10 +2641,10 @@ Debug.ShouldStop(536870912);
 __ref.setField ("_labor" /*RemoteObject*/ ,_partes.getArrayElement(true,BA.numberCast(int.class, 0)));
  BA.debugLineNum = 545;BA.debugLine="Log(\"Texto completo: \" & SearchTemplateLabor.Se";
 Debug.ShouldStop(1);
-parent.__c.runVoidMethod ("LogImpl","419267596",RemoteObject.concat(RemoteObject.createImmutable("Texto completo: "),__ref.getField(false,"_searchtemplatelabor" /*RemoteObject*/ ).getField(true,"_selecteditem" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","314024716",RemoteObject.concat(RemoteObject.createImmutable("Texto completo: "),__ref.getField(false,"_searchtemplatelabor" /*RemoteObject*/ ).getField(true,"_selecteditem" /*RemoteObject*/ )),0);
  BA.debugLineNum = 546;BA.debugLine="Log(\"Labor seleccionada: \" & labor)";
 Debug.ShouldStop(2);
-parent.__c.runVoidMethod ("LogImpl","419267597",RemoteObject.concat(RemoteObject.createImmutable("Labor seleccionada: "),__ref.getField(true,"_labor" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","314024717",RemoteObject.concat(RemoteObject.createImmutable("Labor seleccionada: "),__ref.getField(true,"_labor" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 8:
@@ -2652,7 +2652,7 @@ case 8:
 this.state = 9;
  BA.debugLineNum = 548;BA.debugLine="Log(\"El texto no contiene ':' por lo que no se";
 Debug.ShouldStop(8);
-parent.__c.runVoidMethod ("LogImpl","419267599",RemoteObject.createImmutable("El texto no contiene ':' por lo que no se pudo dividir."),0);
+parent.__c.runVoidMethod ("LogImpl","314024719",RemoteObject.createImmutable("El texto no contiene ':' por lo que no se pudo dividir."),0);
  BA.debugLineNum = 549;BA.debugLine="labor = SearchTemplateLabor.SelectedItem ' Asig";
 Debug.ShouldStop(16);
 __ref.setField ("_labor" /*RemoteObject*/ ,__ref.getField(false,"_searchtemplatelabor" /*RemoteObject*/ ).getField(true,"_selecteditem" /*RemoteObject*/ ));
@@ -2670,7 +2670,7 @@ this.state = -1;
 ;
  BA.debugLineNum = 552;BA.debugLine="Log(labor)";
 Debug.ShouldStop(128);
-parent.__c.runVoidMethod ("LogImpl","419267603",__ref.getField(true,"_labor" /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","314024723",__ref.getField(true,"_labor" /*RemoteObject*/ ),0);
  BA.debugLineNum = 553;BA.debugLine="End Sub";
 Debug.ShouldStop(256);
 if (true) break;
@@ -2687,7 +2687,7 @@ finally {
 }
 public static void  _swiftbuttonlote_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonLote_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,656);
+		Debug.PushSubsStack("SwiftButtonLote_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,656);
 if (RapidSub.canDelegate("swiftbuttonlote_click")) { __ref.runUserSub(false, "formmaquinaria","swiftbuttonlote_click", __ref); return;}
 ResumableSub_SwiftButtonLote_Click rsub = new ResumableSub_SwiftButtonLote_Click(null,__ref);
 rsub.resume(null, null);
@@ -2712,7 +2712,7 @@ RemoteObject _partes = null;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonLote_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,656);
+		Debug.PushSubsStack("SwiftButtonLote_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,656);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -2765,7 +2765,7 @@ this.state = -1;
 ;
  BA.debugLineNum = 665;BA.debugLine="Log(Lote)";
 Debug.ShouldStop(16777216);
-parent.__c.runVoidMethod ("LogImpl","419464201",__ref.getField(true,"_lote" /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","314221321",__ref.getField(true,"_lote" /*RemoteObject*/ ),0);
  BA.debugLineNum = 666;BA.debugLine="End Sub";
 Debug.ShouldStop(33554432);
 if (true) break;
@@ -2782,7 +2782,7 @@ finally {
 }
 public static void  _swiftbuttonmaquina_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonMaquina_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,513);
+		Debug.PushSubsStack("SwiftButtonMaquina_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,513);
 if (RapidSub.canDelegate("swiftbuttonmaquina_click")) { __ref.runUserSub(false, "formmaquinaria","swiftbuttonmaquina_click", __ref); return;}
 ResumableSub_SwiftButtonMaquina_Click rsub = new ResumableSub_SwiftButtonMaquina_Click(null,__ref);
 rsub.resume(null, null);
@@ -2807,7 +2807,7 @@ RemoteObject _partes = null;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonMaquina_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,513);
+		Debug.PushSubsStack("SwiftButtonMaquina_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,513);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -2870,7 +2870,7 @@ Debug.ShouldStop(512);
 __ref.setField ("_maquina" /*RemoteObject*/ ,_partes.getArrayElement(true,BA.numberCast(int.class, 0)));
  BA.debugLineNum = 524;BA.debugLine="Log(\"Máquina seleccionada: \" & maquina)";
 Debug.ShouldStop(2048);
-parent.__c.runVoidMethod ("LogImpl","419202059",RemoteObject.concat(RemoteObject.createImmutable("Máquina seleccionada: "),__ref.getField(true,"_maquina" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","313959179",RemoteObject.concat(RemoteObject.createImmutable("Máquina seleccionada: "),__ref.getField(true,"_maquina" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 8:
@@ -2878,7 +2878,7 @@ case 8:
 this.state = 9;
  BA.debugLineNum = 526;BA.debugLine="Log(\"El texto no contiene ':' por lo que no se";
 Debug.ShouldStop(8192);
-parent.__c.runVoidMethod ("LogImpl","419202061",RemoteObject.createImmutable("El texto no contiene ':' por lo que no se pudo dividir."),0);
+parent.__c.runVoidMethod ("LogImpl","313959181",RemoteObject.createImmutable("El texto no contiene ':' por lo que no se pudo dividir."),0);
  BA.debugLineNum = 527;BA.debugLine="maquina = SearchTemplateMaquina.SelectedItem '";
 Debug.ShouldStop(16384);
 __ref.setField ("_maquina" /*RemoteObject*/ ,__ref.getField(false,"_searchtemplatemaquina" /*RemoteObject*/ ).getField(true,"_selecteditem" /*RemoteObject*/ ));
@@ -2910,7 +2910,7 @@ finally {
 }
 public static void  _swiftbuttonnit_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonNit_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,555);
+		Debug.PushSubsStack("SwiftButtonNit_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,555);
 if (RapidSub.canDelegate("swiftbuttonnit_click")) { __ref.runUserSub(false, "formmaquinaria","swiftbuttonnit_click", __ref); return;}
 ResumableSub_SwiftButtonNit_Click rsub = new ResumableSub_SwiftButtonNit_Click(null,__ref);
 rsub.resume(null, null);
@@ -2947,7 +2947,7 @@ int groupLen19;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonNit_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,555);
+		Debug.PushSubsStack("SwiftButtonNit_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,555);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -3114,7 +3114,7 @@ case 12:
 this.state = 13;
  BA.debugLineNum = 595;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
 Debug.ShouldStop(262144);
-parent.__c.runVoidMethod ("LogImpl","419333160",RemoteObject.concat(RemoteObject.createImmutable("Error: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","314090280",RemoteObject.concat(RemoteObject.createImmutable("Error: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 13:
@@ -3129,7 +3129,7 @@ Debug.ShouldStop(2097152);
 __ref.getField(false,"_swiftbuttonhacienda" /*RemoteObject*/ ).runClassMethod (b4a.example.ef.swiftbutton.class, "_setenabled" /*RemoteObject*/ ,parent.__c.getField(true,"True"));
  BA.debugLineNum = 599;BA.debugLine="Log(nitEmpresaCBX)";
 Debug.ShouldStop(4194304);
-parent.__c.runVoidMethod ("LogImpl","419333164",__ref.getField(true,"_nitempresacbx" /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","314090284",__ref.getField(true,"_nitempresacbx" /*RemoteObject*/ ),0);
  BA.debugLineNum = 601;BA.debugLine="j.Release";
 Debug.ShouldStop(16777216);
 _j.runClassMethod (b4a.example.ef.httpjob.class, "_release" /*RemoteObject*/ );
@@ -3155,7 +3155,7 @@ finally {
 }
 public static void  _swiftbuttonobservaciones_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonObservaciones_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,731);
+		Debug.PushSubsStack("SwiftButtonObservaciones_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,731);
 if (RapidSub.canDelegate("swiftbuttonobservaciones_click")) { __ref.runUserSub(false, "formmaquinaria","swiftbuttonobservaciones_click", __ref); return;}
 ResumableSub_SwiftButtonObservaciones_Click rsub = new ResumableSub_SwiftButtonObservaciones_Click(null,__ref);
 rsub.resume(null, null);
@@ -3180,7 +3180,7 @@ RemoteObject _partes = null;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonObservaciones_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,731);
+		Debug.PushSubsStack("SwiftButtonObservaciones_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,731);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -3229,7 +3229,7 @@ Debug.ShouldStop(4);
 parent._observaciones = _partes.getArrayElement(true,BA.numberCast(int.class, 0));__ref.setField("_observaciones",parent._observaciones);
  BA.debugLineNum = 743;BA.debugLine="Log(\"Primera parte (observacionCBX): \" & observa";
 Debug.ShouldStop(64);
-parent.__c.runVoidMethod ("LogImpl","419726348",RemoteObject.concat(RemoteObject.createImmutable("Primera parte (observacionCBX): "),__ref.getField(true,"_observaciones" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","314483468",RemoteObject.concat(RemoteObject.createImmutable("Primera parte (observacionCBX): "),__ref.getField(true,"_observaciones" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 5:
@@ -3237,7 +3237,7 @@ case 5:
 this.state = 6;
  BA.debugLineNum = 745;BA.debugLine="Log(\"Operación cancelada por el usuario.\")";
 Debug.ShouldStop(256);
-parent.__c.runVoidMethod ("LogImpl","419726350",RemoteObject.createImmutable("Operación cancelada por el usuario."),0);
+parent.__c.runVoidMethod ("LogImpl","314483470",RemoteObject.createImmutable("Operación cancelada por el usuario."),0);
  if (true) break;
 
 case 6:
@@ -3260,7 +3260,7 @@ finally {
 }
 public static void  _swiftbuttonoperario_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonOperario_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,710);
+		Debug.PushSubsStack("SwiftButtonOperario_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,710);
 if (RapidSub.canDelegate("swiftbuttonoperario_click")) { __ref.runUserSub(false, "formmaquinaria","swiftbuttonoperario_click", __ref); return;}
 ResumableSub_SwiftButtonOperario_Click rsub = new ResumableSub_SwiftButtonOperario_Click(null,__ref);
 rsub.resume(null, null);
@@ -3285,7 +3285,7 @@ RemoteObject _partes = null;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("SwiftButtonOperario_Click (formmaquinaria) ","formmaquinaria",14,__ref.getField(false, "ba"),__ref,710);
+		Debug.PushSubsStack("SwiftButtonOperario_Click (formmaquinaria) ","formmaquinaria",11,__ref.getField(false, "ba"),__ref,710);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -3348,7 +3348,7 @@ Debug.ShouldStop(16384);
 __ref.setField ("_operario" /*RemoteObject*/ ,_partes.getArrayElement(true,BA.numberCast(int.class, 0)));
  BA.debugLineNum = 722;BA.debugLine="Log(\"Operario seleccionado: \" & operario)";
 Debug.ShouldStop(131072);
-parent.__c.runVoidMethod ("LogImpl","419660812",RemoteObject.concat(RemoteObject.createImmutable("Operario seleccionado: "),__ref.getField(true,"_operario" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","314417932",RemoteObject.concat(RemoteObject.createImmutable("Operario seleccionado: "),__ref.getField(true,"_operario" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 8:
@@ -3356,7 +3356,7 @@ case 8:
 this.state = 9;
  BA.debugLineNum = 724;BA.debugLine="Log(\"El texto no contiene ':' por lo que no se";
 Debug.ShouldStop(524288);
-parent.__c.runVoidMethod ("LogImpl","419660814",RemoteObject.createImmutable("El texto no contiene ':' por lo que no se pudo dividir."),0);
+parent.__c.runVoidMethod ("LogImpl","314417934",RemoteObject.createImmutable("El texto no contiene ':' por lo que no se pudo dividir."),0);
  BA.debugLineNum = 725;BA.debugLine="operario = SearchTemplateOperario.SelectedItem";
 Debug.ShouldStop(1048576);
 __ref.setField ("_operario" /*RemoteObject*/ ,__ref.getField(false,"_searchtemplateoperario" /*RemoteObject*/ ).getField(true,"_selecteditem" /*RemoteObject*/ ));

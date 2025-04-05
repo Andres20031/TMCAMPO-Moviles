@@ -8,7 +8,7 @@ public class gifviewer_subs_0 {
 
 public static RemoteObject  _callfromresume(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("CallFromResume (gifviewer) ","gifviewer",16,__ref.getField(false, "ba"),__ref,68);
+		Debug.PushSubsStack("CallFromResume (gifviewer) ","gifviewer",17,__ref.getField(false, "ba"),__ref,68);
 if (RapidSub.canDelegate("callfromresume")) { return __ref.runUserSub(false, "gifviewer","callfromresume", __ref);}
  BA.debugLineNum = 68;BA.debugLine="Public Sub CallFromResume";
 Debug.ShouldStop(8);
@@ -49,7 +49,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (gifviewer) ","gifviewer",16,__ref.getField(false, "ba"),__ref,19);
+		Debug.PushSubsStack("DesignerCreateView (gifviewer) ","gifviewer",17,__ref.getField(false, "ba"),__ref,19);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "gifviewer","designercreateview", __ref, _base, _lbl, _props);}
 Debug.locals.put("Base", _base);
 Debug.locals.put("Lbl", _lbl);
@@ -74,7 +74,7 @@ finally {
 		}}
 public static RemoteObject  _getbase(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("GetBase (gifviewer) ","gifviewer",16,__ref.getField(false, "ba"),__ref,85);
+		Debug.PushSubsStack("GetBase (gifviewer) ","gifviewer",17,__ref.getField(false, "ba"),__ref,85);
 if (RapidSub.canDelegate("getbase")) { return __ref.runUserSub(false, "gifviewer","getbase", __ref);}
  BA.debugLineNum = 85;BA.debugLine="Public Sub GetBase As Panel";
 Debug.ShouldStop(1048576);
@@ -93,7 +93,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (gifviewer) ","gifviewer",16,__ref.getField(false, "ba"),__ref,14);
+		Debug.PushSubsStack("Initialize (gifviewer) ","gifviewer",17,__ref.getField(false, "ba"),__ref,14);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "gifviewer","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -119,7 +119,7 @@ finally {
 		}}
 public static RemoteObject  _setgif(RemoteObject __ref,RemoteObject _dir,RemoteObject _filename) throws Exception{
 try {
-		Debug.PushSubsStack("SetGif (gifviewer) ","gifviewer",16,__ref.getField(false, "ba"),__ref,24);
+		Debug.PushSubsStack("SetGif (gifviewer) ","gifviewer",17,__ref.getField(false, "ba"),__ref,24);
 if (RapidSub.canDelegate("setgif")) { return __ref.runUserSub(false, "gifviewer","setgif", __ref, _dir, _filename);}
 RemoteObject _path = RemoteObject.createImmutable("");
 RemoteObject _gd = RemoteObject.declareNull("anywheresoftware.b4a.agraham.gifdecoder.GifDecoder");
@@ -224,7 +224,7 @@ finally {
 		}}
 public static void  _showimpl(RemoteObject __ref,RemoteObject _myworkindex) throws Exception{
 try {
-		Debug.PushSubsStack("ShowImpl (gifviewer) ","gifviewer",16,__ref.getField(false, "ba"),__ref,72);
+		Debug.PushSubsStack("ShowImpl (gifviewer) ","gifviewer",17,__ref.getField(false, "ba"),__ref,72);
 if (RapidSub.canDelegate("showimpl")) { __ref.runUserSub(false, "gifviewer","showimpl", __ref, _myworkindex); return;}
 ResumableSub_ShowImpl rsub = new ResumableSub_ShowImpl(null,__ref,_myworkindex);
 rsub.resume(null, null);
@@ -252,7 +252,7 @@ RemoteObject _bd = RemoteObject.declareNull("b4a.example.ef.gifviewer._bitmapand
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("ShowImpl (gifviewer) ","gifviewer",16,__ref.getField(false, "ba"),__ref,72);
+		Debug.PushSubsStack("ShowImpl (gifviewer) ","gifviewer",17,__ref.getField(false, "ba"),__ref,72);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -333,7 +333,7 @@ finally {
 }
 public static RemoteObject  _start(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Start (gifviewer) ","gifviewer",16,__ref.getField(false, "ba"),__ref,57);
+		Debug.PushSubsStack("Start (gifviewer) ","gifviewer",17,__ref.getField(false, "ba"),__ref,57);
 if (RapidSub.canDelegate("start")) { return __ref.runUserSub(false, "gifviewer","start", __ref);}
  BA.debugLineNum = 57;BA.debugLine="Public Sub Start";
 Debug.ShouldStop(16777216);
@@ -358,7 +358,7 @@ finally {
 		}}
 public static RemoteObject  _stop(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Stop (gifviewer) ","gifviewer",16,__ref.getField(false, "ba"),__ref,63);
+		Debug.PushSubsStack("Stop (gifviewer) ","gifviewer",17,__ref.getField(false, "ba"),__ref,63);
 if (RapidSub.canDelegate("stop")) { return __ref.runUserSub(false, "gifviewer","stop", __ref);}
  BA.debugLineNum = 63;BA.debugLine="Public Sub Stop";
 Debug.ShouldStop(1073741824);

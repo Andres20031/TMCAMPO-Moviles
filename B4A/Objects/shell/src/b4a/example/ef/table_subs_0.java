@@ -8,7 +8,7 @@ public class table_subs_0 {
 
 public static RemoteObject  _addrow(RemoteObject __ref,RemoteObject _values) throws Exception{
 try {
-		Debug.PushSubsStack("AddRow (table) ","table",19,__ref.getField(false, "ba"),__ref,1221);
+		Debug.PushSubsStack("AddRow (table) ","table",20,__ref.getField(false, "ba"),__ref,1221);
 if (RapidSub.canDelegate("addrow")) { return __ref.runUserSub(false, "table","addrow", __ref, _values);}
 RemoteObject _lastrow = RemoteObject.createImmutable(0);
 Debug.locals.put("Values", _values);
@@ -19,7 +19,7 @@ Debug.ShouldStop(32);
 if (RemoteObject.solveBoolean("!",_values.getField(true,"length"),BA.numberCast(double.class, __ref.getField(true,"_mnumberofcolumns" /*RemoteObject*/ )))) { 
  BA.debugLineNum = 1223;BA.debugLine="Log(\"Wrong number of values =\" & Values.Length &";
 Debug.ShouldStop(64);
-table.__c.runVoidMethod ("LogImpl","424379394",RemoteObject.concat(RemoteObject.createImmutable("Wrong number of values ="),_values.getField(true,"length"),RemoteObject.createImmutable(" col="),__ref.getField(true,"_mnumberofcolumns" /*RemoteObject*/ )),0);
+table.__c.runVoidMethod ("LogImpl","324969218",RemoteObject.concat(RemoteObject.createImmutable("Wrong number of values ="),_values.getField(true,"length"),RemoteObject.createImmutable(" col="),__ref.getField(true,"_mnumberofcolumns" /*RemoteObject*/ )),0);
  BA.debugLineNum = 1224;BA.debugLine="Return";
 Debug.ShouldStop(128);
 if (true) return RemoteObject.createImmutable("");
@@ -55,7 +55,7 @@ finally {
 		}}
 public static RemoteObject  _addrowautomaticwidth(RemoteObject __ref,RemoteObject _values) throws Exception{
 try {
-		Debug.PushSubsStack("AddRowAutomaticWidth (table) ","table",19,__ref.getField(false, "ba"),__ref,1244);
+		Debug.PushSubsStack("AddRowAutomaticWidth (table) ","table",20,__ref.getField(false, "ba"),__ref,1244);
 if (RapidSub.canDelegate("addrowautomaticwidth")) { return __ref.runUserSub(false, "table","addrowautomaticwidth", __ref, _values);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _lastrow = RemoteObject.createImmutable(0);
@@ -72,7 +72,7 @@ Debug.ShouldStop(1073741824);
 if (RemoteObject.solveBoolean("!",_values.getField(true,"length"),BA.numberCast(double.class, __ref.getField(true,"_mnumberofcolumns" /*RemoteObject*/ )))) { 
  BA.debugLineNum = 1248;BA.debugLine="Log(\"Wrong number of values =\" & Values.Length &";
 Debug.ShouldStop(-2147483648);
-table.__c.runVoidMethod ("LogImpl","424444932",RemoteObject.concat(RemoteObject.createImmutable("Wrong number of values ="),_values.getField(true,"length"),RemoteObject.createImmutable(" col="),__ref.getField(true,"_mnumberofcolumns" /*RemoteObject*/ )),0);
+table.__c.runVoidMethod ("LogImpl","325034756",RemoteObject.concat(RemoteObject.createImmutable("Wrong number of values ="),_values.getField(true,"length"),RemoteObject.createImmutable(" col="),__ref.getField(true,"_mnumberofcolumns" /*RemoteObject*/ )),0);
  BA.debugLineNum = 1249;BA.debugLine="Return";
 Debug.ShouldStop(1);
 if (true) return RemoteObject.createImmutable("");
@@ -200,7 +200,7 @@ finally {
 		}}
 public static RemoteObject  _addtoactivity(RemoteObject __ref,RemoteObject _act,RemoteObject _left,RemoteObject _top,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("AddToActivity (table) ","table",19,__ref.getField(false, "ba"),__ref,656);
+		Debug.PushSubsStack("AddToActivity (table) ","table",20,__ref.getField(false, "ba"),__ref,656);
 if (RapidSub.canDelegate("addtoactivity")) { return __ref.runUserSub(false, "table","addtoactivity", __ref, _act, _left, _top, _width, _height);}
 Debug.locals.put("Act", _act);
 Debug.locals.put("Left", _left);
@@ -245,7 +245,7 @@ finally {
 		}}
 public static RemoteObject  _addtoview(RemoteObject __ref,RemoteObject _v,RemoteObject _left,RemoteObject _top,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("AddToView (table) ","table",19,__ref.getField(false, "ba"),__ref,647);
+		Debug.PushSubsStack("AddToView (table) ","table",20,__ref.getField(false, "ba"),__ref,647);
 if (RapidSub.canDelegate("addtoview")) { return __ref.runUserSub(false, "table","addtoview", __ref, _v, _left, _top, _width, _height);}
 Debug.locals.put("v", _v);
 Debug.locals.put("Left", _left);
@@ -269,7 +269,7 @@ finally {
 		}}
 public static RemoteObject  _calcfastscroll(RemoteObject __ref,RemoteObject _pos) throws Exception{
 try {
-		Debug.PushSubsStack("CalcFastScroll (table) ","table",19,__ref.getField(false, "ba"),__ref,2597);
+		Debug.PushSubsStack("CalcFastScroll (table) ","table",20,__ref.getField(false, "ba"),__ref,2597);
 if (RapidSub.canDelegate("calcfastscroll")) { return __ref.runUserSub(false, "table","calcfastscroll", __ref, _pos);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _top = RemoteObject.createImmutable(0);
@@ -322,7 +322,7 @@ finally {
 		}}
 public static RemoteObject  _cell_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Cell_Click (table) ","table",19,__ref.getField(false, "ba"),__ref,1594);
+		Debug.PushSubsStack("Cell_Click (table) ","table",20,__ref.getField(false, "ba"),__ref,1594);
 if (RapidSub.canDelegate("cell_click")) { return __ref.runUserSub(false, "table","cell_click", __ref);}
 RemoteObject _rc = RemoteObject.declareNull("b4a.example.ef.table._rowcol");
 RemoteObject _l = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -362,7 +362,7 @@ finally {
 		}}
 public static RemoteObject  _cell_longclick(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Cell_LongClick (table) ","table",19,__ref.getField(false, "ba"),__ref,1571);
+		Debug.PushSubsStack("Cell_LongClick (table) ","table",20,__ref.getField(false, "ba"),__ref,1571);
 if (RapidSub.canDelegate("cell_longclick")) { return __ref.runUserSub(false, "table","cell_longclick", __ref);}
 RemoteObject _rc = RemoteObject.declareNull("b4a.example.ef.table._rowcol");
 RemoteObject _l = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -399,7 +399,7 @@ finally {
 		}}
 public static RemoteObject  _check1ddoubleallsame(RemoteObject __ref,RemoteObject _arrdouble,RemoteObject _istart,RemoteObject _iend) throws Exception{
 try {
-		Debug.PushSubsStack("Check1DDoubleAllSame (table) ","table",19,__ref.getField(false, "ba"),__ref,4585);
+		Debug.PushSubsStack("Check1DDoubleAllSame (table) ","table",20,__ref.getField(false, "ba"),__ref,4585);
 if (RapidSub.canDelegate("check1ddoubleallsame")) { return __ref.runUserSub(false, "table","check1ddoubleallsame", __ref, _arrdouble, _istart, _iend);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _dval = RemoteObject.createImmutable(0);
@@ -471,7 +471,7 @@ finally {
 		}}
 public static RemoteObject  _check1dlongallsame(RemoteObject __ref,RemoteObject _arrlong,RemoteObject _istart,RemoteObject _iend) throws Exception{
 try {
-		Debug.PushSubsStack("Check1DLongAllSame (table) ","table",19,__ref.getField(false, "ba"),__ref,4506);
+		Debug.PushSubsStack("Check1DLongAllSame (table) ","table",20,__ref.getField(false, "ba"),__ref,4506);
 if (RapidSub.canDelegate("check1dlongallsame")) { return __ref.runUserSub(false, "table","check1dlongallsame", __ref, _arrlong, _istart, _iend);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _lval = RemoteObject.createImmutable(0L);
@@ -543,7 +543,7 @@ finally {
 		}}
 public static RemoteObject  _check1dstringallsame(RemoteObject __ref,RemoteObject _arrstring,RemoteObject _bcaseinsensitive,RemoteObject _istart,RemoteObject _iend) throws Exception{
 try {
-		Debug.PushSubsStack("Check1DStringAllSame (table) ","table",19,__ref.getField(false, "ba"),__ref,4768);
+		Debug.PushSubsStack("Check1DStringAllSame (table) ","table",20,__ref.getField(false, "ba"),__ref,4768);
 if (RapidSub.canDelegate("check1dstringallsame")) { return __ref.runUserSub(false, "table","check1dstringallsame", __ref, _arrstring, _bcaseinsensitive, _istart, _iend);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _str = RemoteObject.createImmutable("");
@@ -642,7 +642,7 @@ finally {
 		}}
 public static RemoteObject  _checkcolumndatatypes(RemoteObject __ref,RemoteObject _mycurs) throws Exception{
 try {
-		Debug.PushSubsStack("CheckColumnDataTypes (table) ","table",19,__ref.getField(false, "ba"),__ref,3456);
+		Debug.PushSubsStack("CheckColumnDataTypes (table) ","table",20,__ref.getField(false, "ba"),__ref,3456);
 if (RapidSub.canDelegate("checkcolumndatatypes")) { return __ref.runUserSub(false, "table","checkcolumndatatypes", __ref, _mycurs);}
 RemoteObject _nbcols = RemoteObject.createImmutable(0);
 RemoteObject _nbrows = RemoteObject.createImmutable(0);
@@ -1040,7 +1040,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _clearall(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("ClearAll (table) ","table",19,__ref.getField(false, "ba"),__ref,907);
+		Debug.PushSubsStack("ClearAll (table) ","table",20,__ref.getField(false, "ba"),__ref,907);
 if (RapidSub.canDelegate("clearall")) { return __ref.runUserSub(false, "table","clearall", __ref);}
  BA.debugLineNum = 907;BA.debugLine="Public Sub ClearAll";
 Debug.ShouldStop(1024);
@@ -1062,7 +1062,7 @@ finally {
 		}}
 public static RemoteObject  _clearselection(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("clearSelection (table) ","table",19,__ref.getField(false, "ba"),__ref,2094);
+		Debug.PushSubsStack("clearSelection (table) ","table",20,__ref.getField(false, "ba"),__ref,2094);
 if (RapidSub.canDelegate("clearselection")) { return __ref.runUserSub(false, "table","clearselection", __ref);}
  BA.debugLineNum = 2094;BA.debugLine="Public Sub clearSelection";
 Debug.ShouldStop(8192);
@@ -1084,7 +1084,7 @@ finally {
 		}}
 public static RemoteObject  _createnewlabels(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("CreateNewLabels (table) ","table",19,__ref.getField(false, "ba"),__ref,1457);
+		Debug.PushSubsStack("CreateNewLabels (table) ","table",20,__ref.getField(false, "ba"),__ref,1457);
 if (RapidSub.canDelegate("createnewlabels")) { return __ref.runUserSub(false, "table","createnewlabels", __ref);}
 RemoteObject _lbls = null;
 int _i = 0;
@@ -1170,7 +1170,7 @@ finally {
 		}}
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (table) ","table",19,__ref.getField(false, "ba"),__ref,568);
+		Debug.PushSubsStack("DesignerCreateView (table) ","table",20,__ref.getField(false, "ba"),__ref,568);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "table","designercreateview", __ref, _base, _lbl, _props);}
 Debug.locals.put("Base", _base);
 Debug.locals.put("Lbl", _lbl);
@@ -1359,7 +1359,7 @@ finally {
 		}}
 public static RemoteObject  _drawfastscrollcursor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("DrawFastScrollCursor (table) ","table",19,__ref.getField(false, "ba"),__ref,855);
+		Debug.PushSubsStack("DrawFastScrollCursor (table) ","table",20,__ref.getField(false, "ba"),__ref,855);
 if (RapidSub.canDelegate("drawfastscrollcursor")) { return __ref.runUserSub(false, "table","drawfastscrollcursor", __ref);}
 RemoteObject _ptharrow = RemoteObject.declareNull("anywheresoftware.b4a.objects.drawable.CanvasWrapper.PathWrapper");
 RemoteObject _cvsfsc = RemoteObject.declareNull("anywheresoftware.b4a.objects.drawable.CanvasWrapper");
@@ -1514,7 +1514,7 @@ finally {
 		}}
 public static RemoteObject  _fastscrolltimer_tick(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("FastScrollTimer_Tick (table) ","table",19,__ref.getField(false, "ba"),__ref,2613);
+		Debug.PushSubsStack("FastScrollTimer_Tick (table) ","table",20,__ref.getField(false, "ba"),__ref,2613);
 if (RapidSub.canDelegate("fastscrolltimer_tick")) { return __ref.runUserSub(false, "table","fastscrolltimer_tick", __ref);}
  BA.debugLineNum = 2613;BA.debugLine="Private Sub FastScrollTimer_Tick";
 Debug.ShouldStop(1048576);
@@ -1539,7 +1539,7 @@ finally {
 		}}
 public static RemoteObject  _getallowselection(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getAllowSelection (table) ","table",19,__ref.getField(false, "ba"),__ref,2163);
+		Debug.PushSubsStack("getAllowSelection (table) ","table",20,__ref.getField(false, "ba"),__ref,2163);
 if (RapidSub.canDelegate("getallowselection")) { return __ref.runUserSub(false, "table","getallowselection", __ref);}
  BA.debugLineNum = 2163;BA.debugLine="Public Sub getAllowSelection As Boolean";
 Debug.ShouldStop(262144);
@@ -1558,7 +1558,7 @@ finally {
 		}}
 public static RemoteObject  _getcellalignment(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getCellAlignment (table) ","table",19,__ref.getField(false, "ba"),__ref,2653);
+		Debug.PushSubsStack("getCellAlignment (table) ","table",20,__ref.getField(false, "ba"),__ref,2653);
 if (RapidSub.canDelegate("getcellalignment")) { return __ref.runUserSub(false, "table","getcellalignment", __ref);}
  BA.debugLineNum = 2653;BA.debugLine="Public Sub getCellAlignment As Int";
 Debug.ShouldStop(268435456);
@@ -1577,7 +1577,7 @@ finally {
 		}}
 public static RemoteObject  _getcolumncolors(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("GetColumnColors (table) ","table",19,__ref.getField(false, "ba"),__ref,3564);
+		Debug.PushSubsStack("GetColumnColors (table) ","table",20,__ref.getField(false, "ba"),__ref,3564);
 if (RapidSub.canDelegate("getcolumncolors")) { return __ref.runUserSub(false, "table","getcolumncolors", __ref);}
  BA.debugLineNum = 3564;BA.debugLine="Public Sub GetColumnColors As Int()";
 Debug.ShouldStop(2048);
@@ -1596,7 +1596,7 @@ finally {
 		}}
 public static RemoteObject  _getcolumndatatype(RemoteObject __ref,RemoteObject _column) throws Exception{
 try {
-		Debug.PushSubsStack("GetColumnDataType (table) ","table",19,__ref.getField(false, "ba"),__ref,3940);
+		Debug.PushSubsStack("GetColumnDataType (table) ","table",20,__ref.getField(false, "ba"),__ref,3940);
 if (RapidSub.canDelegate("getcolumndatatype")) { return __ref.runUserSub(false, "table","getcolumndatatype", __ref, _column);}
 Debug.locals.put("Column", _column);
  BA.debugLineNum = 3940;BA.debugLine="Public Sub GetColumnDataType(Column As Int) As Str";
@@ -1626,7 +1626,7 @@ finally {
 		}}
 public static RemoteObject  _getcolumndatatypes(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("GetColumnDataTypes (table) ","table",19,__ref.getField(false, "ba"),__ref,3970);
+		Debug.PushSubsStack("GetColumnDataTypes (table) ","table",20,__ref.getField(false, "ba"),__ref,3970);
 if (RapidSub.canDelegate("getcolumndatatypes")) { return __ref.runUserSub(false, "table","getcolumndatatypes", __ref);}
  BA.debugLineNum = 3970;BA.debugLine="Public Sub GetColumnDataTypes As String()";
 Debug.ShouldStop(2);
@@ -1645,7 +1645,7 @@ finally {
 		}}
 public static RemoteObject  _getcolumnwidths(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("GetColumnWidths (table) ","table",19,__ref.getField(false, "ba"),__ref,1034);
+		Debug.PushSubsStack("GetColumnWidths (table) ","table",20,__ref.getField(false, "ba"),__ref,1034);
 if (RapidSub.canDelegate("getcolumnwidths")) { return __ref.runUserSub(false, "table","getcolumnwidths", __ref);}
  BA.debugLineNum = 1034;BA.debugLine="Public Sub GetColumnWidths As Int()";
 Debug.ShouldStop(512);
@@ -1664,7 +1664,7 @@ finally {
 		}}
 public static RemoteObject  _getcontrastcolor(RemoteObject __ref,RemoteObject _color) throws Exception{
 try {
-		Debug.PushSubsStack("GetContrastColor (table) ","table",19,__ref.getField(false, "ba"),__ref,4152);
+		Debug.PushSubsStack("GetContrastColor (table) ","table",20,__ref.getField(false, "ba"),__ref,4152);
 if (RapidSub.canDelegate("getcontrastcolor")) { return __ref.runUserSub(false, "table","getcontrastcolor", __ref, _color);}
 RemoteObject _a = RemoteObject.createImmutable(0);
 RemoteObject _r = RemoteObject.createImmutable(0);
@@ -1719,7 +1719,7 @@ finally {
 		}}
 public static RemoteObject  _getfastscroll(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getFastScroll (table) ","table",19,__ref.getField(false, "ba"),__ref,4172);
+		Debug.PushSubsStack("getFastScroll (table) ","table",20,__ref.getField(false, "ba"),__ref,4172);
 if (RapidSub.canDelegate("getfastscroll")) { return __ref.runUserSub(false, "table","getfastscroll", __ref);}
  BA.debugLineNum = 4172;BA.debugLine="Public Sub getFastScroll As Boolean";
 Debug.ShouldStop(2048);
@@ -1738,7 +1738,7 @@ finally {
 		}}
 public static RemoteObject  _getfastscrollcolumnindex(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getFastScrollColumnIndex (table) ","table",19,__ref.getField(false, "ba"),__ref,4196);
+		Debug.PushSubsStack("getFastScrollColumnIndex (table) ","table",20,__ref.getField(false, "ba"),__ref,4196);
 if (RapidSub.canDelegate("getfastscrollcolumnindex")) { return __ref.runUserSub(false, "table","getfastscrollcolumnindex", __ref);}
  BA.debugLineNum = 4196;BA.debugLine="Public Sub getFastScrollColumnIndex As Int";
 Debug.ShouldStop(8);
@@ -1757,7 +1757,7 @@ finally {
 		}}
 public static RemoteObject  _getfastscrollfixedlabel(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getFastScrollFixedLabel (table) ","table",19,__ref.getField(false, "ba"),__ref,4220);
+		Debug.PushSubsStack("getFastScrollFixedLabel (table) ","table",20,__ref.getField(false, "ba"),__ref,4220);
 if (RapidSub.canDelegate("getfastscrollfixedlabel")) { return __ref.runUserSub(false, "table","getfastscrollfixedlabel", __ref);}
  BA.debugLineNum = 4220;BA.debugLine="Public Sub getFastScrollFixedLabel As Boolean";
 Debug.ShouldStop(134217728);
@@ -1776,7 +1776,7 @@ finally {
 		}}
 public static RemoteObject  _getfastscrolllabelheight(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getFastScrollLabelHeight (table) ","table",19,__ref.getField(false, "ba"),__ref,4261);
+		Debug.PushSubsStack("getFastScrollLabelHeight (table) ","table",20,__ref.getField(false, "ba"),__ref,4261);
 if (RapidSub.canDelegate("getfastscrolllabelheight")) { return __ref.runUserSub(false, "table","getfastscrolllabelheight", __ref);}
  BA.debugLineNum = 4261;BA.debugLine="Public Sub getFastScrollLabelHeight As Int";
 Debug.ShouldStop(16);
@@ -1795,7 +1795,7 @@ finally {
 		}}
 public static RemoteObject  _getfastscrolllabelmaxchars(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getFastScrollLabelMaxChars (table) ","table",19,__ref.getField(false, "ba"),__ref,4237);
+		Debug.PushSubsStack("getFastScrollLabelMaxChars (table) ","table",20,__ref.getField(false, "ba"),__ref,4237);
 if (RapidSub.canDelegate("getfastscrolllabelmaxchars")) { return __ref.runUserSub(false, "table","getfastscrolllabelmaxchars", __ref);}
  BA.debugLineNum = 4237;BA.debugLine="Public Sub getFastScrollLabelMaxChars As Int";
 Debug.ShouldStop(4096);
@@ -1814,7 +1814,7 @@ finally {
 		}}
 public static RemoteObject  _getfastscrolllabelwidth(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getFastScrollLabelWidth (table) ","table",19,__ref.getField(false, "ba"),__ref,4246);
+		Debug.PushSubsStack("getFastScrollLabelWidth (table) ","table",20,__ref.getField(false, "ba"),__ref,4246);
 if (RapidSub.canDelegate("getfastscrolllabelwidth")) { return __ref.runUserSub(false, "table","getfastscrolllabelwidth", __ref);}
  BA.debugLineNum = 4246;BA.debugLine="Public Sub getFastScrollLabelWidth As Int";
 Debug.ShouldStop(2097152);
@@ -1833,7 +1833,7 @@ finally {
 		}}
 public static RemoteObject  _getfastscrollminitems(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getFastScrollMinItems (table) ","table",19,__ref.getField(false, "ba"),__ref,4185);
+		Debug.PushSubsStack("getFastScrollMinItems (table) ","table",20,__ref.getField(false, "ba"),__ref,4185);
 if (RapidSub.canDelegate("getfastscrollminitems")) { return __ref.runUserSub(false, "table","getfastscrollminitems", __ref);}
  BA.debugLineNum = 4185;BA.debugLine="Public Sub getFastScrollMinItems As Int";
 Debug.ShouldStop(16777216);
@@ -1852,7 +1852,7 @@ finally {
 		}}
 public static RemoteObject  _getfastscrollshowlabel(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getFastScrollShowLabel (table) ","table",19,__ref.getField(false, "ba"),__ref,4208);
+		Debug.PushSubsStack("getFastScrollShowLabel (table) ","table",20,__ref.getField(false, "ba"),__ref,4208);
 if (RapidSub.canDelegate("getfastscrollshowlabel")) { return __ref.runUserSub(false, "table","getfastscrollshowlabel", __ref);}
  BA.debugLineNum = 4208;BA.debugLine="Public Sub getFastScrollShowLabel As Boolean";
 Debug.ShouldStop(32768);
@@ -1871,7 +1871,7 @@ finally {
 		}}
 public static RemoteObject  _getfirstcolumnfixed(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getFirstColumnFixed (table) ","table",19,__ref.getField(false, "ba"),__ref,4147);
+		Debug.PushSubsStack("getFirstColumnFixed (table) ","table",20,__ref.getField(false, "ba"),__ref,4147);
 if (RapidSub.canDelegate("getfirstcolumnfixed")) { return __ref.runUserSub(false, "table","getfirstcolumnfixed", __ref);}
  BA.debugLineNum = 4147;BA.debugLine="Public Sub getFirstColumnFixed As Boolean";
 Debug.ShouldStop(262144);
@@ -1890,7 +1890,7 @@ finally {
 		}}
 public static RemoteObject  _getheadercolor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getHeaderColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2726);
+		Debug.PushSubsStack("getHeaderColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2726);
 if (RapidSub.canDelegate("getheadercolor")) { return __ref.runUserSub(false, "table","getheadercolor", __ref);}
  BA.debugLineNum = 2726;BA.debugLine="Public Sub getHeaderColor As Int";
 Debug.ShouldStop(32);
@@ -1909,7 +1909,7 @@ finally {
 		}}
 public static RemoteObject  _getheadercolors(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("GetHeaderColors (table) ","table",19,__ref.getField(false, "ba"),__ref,3638);
+		Debug.PushSubsStack("GetHeaderColors (table) ","table",20,__ref.getField(false, "ba"),__ref,3638);
 if (RapidSub.canDelegate("getheadercolors")) { return __ref.runUserSub(false, "table","getheadercolors", __ref);}
  BA.debugLineNum = 3638;BA.debugLine="Public Sub GetHeaderColors As Int()";
 Debug.ShouldStop(2097152);
@@ -1928,7 +1928,7 @@ finally {
 		}}
 public static RemoteObject  _getheaderheight(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getHeaderHeight (table) ","table",19,__ref.getField(false, "ba"),__ref,2695);
+		Debug.PushSubsStack("getHeaderHeight (table) ","table",20,__ref.getField(false, "ba"),__ref,2695);
 if (RapidSub.canDelegate("getheaderheight")) { return __ref.runUserSub(false, "table","getheaderheight", __ref);}
  BA.debugLineNum = 2695;BA.debugLine="Public Sub getHeaderHeight As Int";
 Debug.ShouldStop(64);
@@ -1947,7 +1947,7 @@ finally {
 		}}
 public static RemoteObject  _getheaderpanel(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getHeaderPanel (table) ","table",19,__ref.getField(false, "ba"),__ref,2177);
+		Debug.PushSubsStack("getHeaderPanel (table) ","table",20,__ref.getField(false, "ba"),__ref,2177);
 if (RapidSub.canDelegate("getheaderpanel")) { return __ref.runUserSub(false, "table","getheaderpanel", __ref);}
  BA.debugLineNum = 2177;BA.debugLine="Public Sub getHeaderPanel As Panel";
 Debug.ShouldStop(1);
@@ -1966,7 +1966,7 @@ finally {
 		}}
 public static RemoteObject  _getheadertextcolor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getHeaderTextColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2757);
+		Debug.PushSubsStack("getHeaderTextColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2757);
 if (RapidSub.canDelegate("getheadertextcolor")) { return __ref.runUserSub(false, "table","getheadertextcolor", __ref);}
  BA.debugLineNum = 2757;BA.debugLine="Public Sub getHeaderTextColor As Int";
 Debug.ShouldStop(16);
@@ -1985,7 +1985,7 @@ finally {
 		}}
 public static RemoteObject  _getheadertextcolors(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("GetHeaderTextColors (table) ","table",19,__ref.getField(false, "ba"),__ref,3759);
+		Debug.PushSubsStack("GetHeaderTextColors (table) ","table",20,__ref.getField(false, "ba"),__ref,3759);
 if (RapidSub.canDelegate("getheadertextcolors")) { return __ref.runUserSub(false, "table","getheadertextcolors", __ref);}
  BA.debugLineNum = 3759;BA.debugLine="Public Sub GetHeaderTextColors As Int()";
 Debug.ShouldStop(16384);
@@ -2004,7 +2004,7 @@ finally {
 		}}
 public static RemoteObject  _getheadertypeface(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getHeaderTypeFace (table) ","table",19,__ref.getField(false, "ba"),__ref,3669);
+		Debug.PushSubsStack("getHeaderTypeFace (table) ","table",20,__ref.getField(false, "ba"),__ref,3669);
 if (RapidSub.canDelegate("getheadertypeface")) { return __ref.runUserSub(false, "table","getheadertypeface", __ref);}
  BA.debugLineNum = 3669;BA.debugLine="Public Sub getHeaderTypeFace As Typeface";
 Debug.ShouldStop(1048576);
@@ -2023,7 +2023,7 @@ finally {
 		}}
 public static RemoteObject  _getheight(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getHeight (table) ","table",19,__ref.getField(false, "ba"),__ref,2301);
+		Debug.PushSubsStack("getHeight (table) ","table",20,__ref.getField(false, "ba"),__ref,2301);
 if (RapidSub.canDelegate("getheight")) { return __ref.runUserSub(false, "table","getheight", __ref);}
  BA.debugLineNum = 2301;BA.debugLine="Public Sub getHeight As Int";
 Debug.ShouldStop(268435456);
@@ -2042,7 +2042,7 @@ finally {
 		}}
 public static RemoteObject  _getinnertotalwidth(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getInnerTotalWidth (table) ","table",19,__ref.getField(false, "ba"),__ref,2270);
+		Debug.PushSubsStack("getInnerTotalWidth (table) ","table",20,__ref.getField(false, "ba"),__ref,2270);
 if (RapidSub.canDelegate("getinnertotalwidth")) { return __ref.runUserSub(false, "table","getinnertotalwidth", __ref);}
  BA.debugLineNum = 2270;BA.debugLine="Public Sub getInnerTotalWidth As Int";
 Debug.ShouldStop(536870912);
@@ -2069,7 +2069,7 @@ finally {
 		}}
 public static RemoteObject  _getlabels(RemoteObject __ref,RemoteObject _row) throws Exception{
 try {
-		Debug.PushSubsStack("GetLabels (table) ","table",19,__ref.getField(false, "ba"),__ref,1440);
+		Debug.PushSubsStack("GetLabels (table) ","table",20,__ref.getField(false, "ba"),__ref,1440);
 if (RapidSub.canDelegate("getlabels")) { return __ref.runUserSub(false, "table","getlabels", __ref, _row);}
 RemoteObject _lbls = null;
 int _i = 0;
@@ -2129,7 +2129,7 @@ finally {
 		}}
 public static RemoteObject  _getleft(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getLeft (table) ","table",19,__ref.getField(false, "ba"),__ref,2242);
+		Debug.PushSubsStack("getLeft (table) ","table",20,__ref.getField(false, "ba"),__ref,2242);
 if (RapidSub.canDelegate("getleft")) { return __ref.runUserSub(false, "table","getleft", __ref);}
  BA.debugLineNum = 2242;BA.debugLine="Public Sub getLeft As Int";
 Debug.ShouldStop(2);
@@ -2148,7 +2148,7 @@ finally {
 		}}
 public static RemoteObject  _getlinewidth(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getLineWidth (table) ","table",19,__ref.getField(false, "ba"),__ref,2319);
+		Debug.PushSubsStack("getLineWidth (table) ","table",20,__ref.getField(false, "ba"),__ref,2319);
 if (RapidSub.canDelegate("getlinewidth")) { return __ref.runUserSub(false, "table","getlinewidth", __ref);}
  BA.debugLineNum = 2319;BA.debugLine="Public Sub getLineWidth As Int";
 Debug.ShouldStop(16384);
@@ -2167,7 +2167,7 @@ finally {
 		}}
 public static RemoteObject  _getmulticolumnsort(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getMultiColumnSort (table) ","table",19,__ref.getField(false, "ba"),__ref,5026);
+		Debug.PushSubsStack("getMultiColumnSort (table) ","table",20,__ref.getField(false, "ba"),__ref,5026);
 if (RapidSub.canDelegate("getmulticolumnsort")) { return __ref.runUserSub(false, "table","getmulticolumnsort", __ref);}
  BA.debugLineNum = 5026;BA.debugLine="Public Sub getMultiColumnSort As Boolean";
 Debug.ShouldStop(2);
@@ -2186,7 +2186,7 @@ finally {
 		}}
 public static RemoteObject  _getmultiselect(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getMultiSelect (table) ","table",19,__ref.getField(false, "ba"),__ref,2151);
+		Debug.PushSubsStack("getMultiSelect (table) ","table",20,__ref.getField(false, "ba"),__ref,2151);
 if (RapidSub.canDelegate("getmultiselect")) { return __ref.runUserSub(false, "table","getmultiselect", __ref);}
  BA.debugLineNum = 2151;BA.debugLine="Public Sub getMultiSelect As Boolean";
 Debug.ShouldStop(64);
@@ -2205,7 +2205,7 @@ finally {
 		}}
 public static RemoteObject  _getnumberofcolumns(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getNumberOfColumns (table) ","table",19,__ref.getField(false, "ba"),__ref,3975);
+		Debug.PushSubsStack("getNumberOfColumns (table) ","table",20,__ref.getField(false, "ba"),__ref,3975);
 if (RapidSub.canDelegate("getnumberofcolumns")) { return __ref.runUserSub(false, "table","getnumberofcolumns", __ref);}
  BA.debugLineNum = 3975;BA.debugLine="Public Sub getNumberOfColumns As Int";
 Debug.ShouldStop(64);
@@ -2224,7 +2224,7 @@ finally {
 		}}
 public static RemoteObject  _getnumberoffixedcolumns(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getNumberOfFixedColumns (table) ","table",19,__ref.getField(false, "ba"),__ref,4124);
+		Debug.PushSubsStack("getNumberOfFixedColumns (table) ","table",20,__ref.getField(false, "ba"),__ref,4124);
 if (RapidSub.canDelegate("getnumberoffixedcolumns")) { return __ref.runUserSub(false, "table","getnumberoffixedcolumns", __ref);}
  BA.debugLineNum = 4124;BA.debugLine="Public Sub getNumberOfFixedColumns As Int";
 Debug.ShouldStop(134217728);
@@ -2243,7 +2243,7 @@ finally {
 		}}
 public static RemoteObject  _getnumberofrows(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getNumberOfRows (table) ","table",19,__ref.getField(false, "ba"),__ref,3996);
+		Debug.PushSubsStack("getNumberOfRows (table) ","table",20,__ref.getField(false, "ba"),__ref,3996);
 if (RapidSub.canDelegate("getnumberofrows")) { return __ref.runUserSub(false, "table","getnumberofrows", __ref);}
  BA.debugLineNum = 3996;BA.debugLine="Public Sub getNumberOfRows As Int";
 Debug.ShouldStop(134217728);
@@ -2262,7 +2262,7 @@ finally {
 		}}
 public static RemoteObject  _getpanel(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getPanel (table) ","table",19,__ref.getField(false, "ba"),__ref,3840);
+		Debug.PushSubsStack("getPanel (table) ","table",20,__ref.getField(false, "ba"),__ref,3840);
 if (RapidSub.canDelegate("getpanel")) { return __ref.runUserSub(false, "table","getpanel", __ref);}
  BA.debugLineNum = 3840;BA.debugLine="Public Sub getPanel As Panel";
 Debug.ShouldStop(-2147483648);
@@ -2281,7 +2281,7 @@ finally {
 		}}
 public static RemoteObject  _getrowcolor1(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getRowColor1 (table) ","table",19,__ref.getField(false, "ba"),__ref,2769);
+		Debug.PushSubsStack("getRowColor1 (table) ","table",20,__ref.getField(false, "ba"),__ref,2769);
 if (RapidSub.canDelegate("getrowcolor1")) { return __ref.runUserSub(false, "table","getrowcolor1", __ref);}
  BA.debugLineNum = 2769;BA.debugLine="Public Sub getRowColor1 As Int";
 Debug.ShouldStop(65536);
@@ -2300,7 +2300,7 @@ finally {
 		}}
 public static RemoteObject  _getrowcolor2(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getRowColor2 (table) ","table",19,__ref.getField(false, "ba"),__ref,2781);
+		Debug.PushSubsStack("getRowColor2 (table) ","table",20,__ref.getField(false, "ba"),__ref,2781);
 if (RapidSub.canDelegate("getrowcolor2")) { return __ref.runUserSub(false, "table","getrowcolor2", __ref);}
  BA.debugLineNum = 2781;BA.debugLine="Public Sub getRowColor2 As Int";
 Debug.ShouldStop(268435456);
@@ -2319,7 +2319,7 @@ finally {
 		}}
 public static RemoteObject  _getrowcolorn(RemoteObject __ref,RemoteObject _row) throws Exception{
 try {
-		Debug.PushSubsStack("GetRowColorN (table) ","table",19,__ref.getField(false, "ba"),__ref,2817);
+		Debug.PushSubsStack("GetRowColorN (table) ","table",20,__ref.getField(false, "ba"),__ref,2817);
 if (RapidSub.canDelegate("getrowcolorn")) { return __ref.runUserSub(false, "table","getrowcolorn", __ref, _row);}
 Debug.locals.put("Row", _row);
  BA.debugLineNum = 2817;BA.debugLine="Public Sub GetRowColorN(Row As Int) As Int";
@@ -2339,7 +2339,7 @@ finally {
 		}}
 public static RemoteObject  _getrowheight(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getRowHeight (table) ","table",19,__ref.getField(false, "ba"),__ref,2993);
+		Debug.PushSubsStack("getRowHeight (table) ","table",20,__ref.getField(false, "ba"),__ref,2993);
 if (RapidSub.canDelegate("getrowheight")) { return __ref.runUserSub(false, "table","getrowheight", __ref);}
  BA.debugLineNum = 2993;BA.debugLine="Public Sub getRowHeight As Int";
 Debug.ShouldStop(65536);
@@ -2358,7 +2358,7 @@ finally {
 		}}
 public static RemoteObject  _getselectedcellcolor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSelectedCellColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2863);
+		Debug.PushSubsStack("getSelectedCellColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2863);
 if (RapidSub.canDelegate("getselectedcellcolor")) { return __ref.runUserSub(false, "table","getselectedcellcolor", __ref);}
  BA.debugLineNum = 2863;BA.debugLine="Public Sub getSelectedCellColor As Int";
 Debug.ShouldStop(16384);
@@ -2377,7 +2377,7 @@ finally {
 		}}
 public static RemoteObject  _getselectedcelltextcolor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSelectedCellTextColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2875);
+		Debug.PushSubsStack("getSelectedCellTextColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2875);
 if (RapidSub.canDelegate("getselectedcelltextcolor")) { return __ref.runUserSub(false, "table","getselectedcelltextcolor", __ref);}
  BA.debugLineNum = 2875;BA.debugLine="Public Sub getSelectedCellTextColor As Int";
 Debug.ShouldStop(67108864);
@@ -2396,7 +2396,7 @@ finally {
 		}}
 public static RemoteObject  _getselectedrowcolor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSelectedRowColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2839);
+		Debug.PushSubsStack("getSelectedRowColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2839);
 if (RapidSub.canDelegate("getselectedrowcolor")) { return __ref.runUserSub(false, "table","getselectedrowcolor", __ref);}
  BA.debugLineNum = 2839;BA.debugLine="Public Sub getSelectedRowColor As Int";
 Debug.ShouldStop(4194304);
@@ -2415,7 +2415,7 @@ finally {
 		}}
 public static RemoteObject  _getselectedrows(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSelectedRows (table) ","table",19,__ref.getField(false, "ba"),__ref,2182);
+		Debug.PushSubsStack("getSelectedRows (table) ","table",20,__ref.getField(false, "ba"),__ref,2182);
 if (RapidSub.canDelegate("getselectedrows")) { return __ref.runUserSub(false, "table","getselectedrows", __ref);}
 RemoteObject _sr = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
  BA.debugLineNum = 2182;BA.debugLine="Public Sub getSelectedRows As List";
@@ -2444,7 +2444,7 @@ finally {
 		}}
 public static RemoteObject  _getselectedrowtextcolor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSelectedRowTextColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2851);
+		Debug.PushSubsStack("getSelectedRowTextColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2851);
 if (RapidSub.canDelegate("getselectedrowtextcolor")) { return __ref.runUserSub(false, "table","getselectedrowtextcolor", __ref);}
  BA.debugLineNum = 2851;BA.debugLine="Public Sub getSelectedRowTextColor As Int";
 Debug.ShouldStop(4);
@@ -2463,7 +2463,7 @@ finally {
 		}}
 public static RemoteObject  _getshowstatusline(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getShowStatusLine (table) ","table",19,__ref.getField(false, "ba"),__ref,3835);
+		Debug.PushSubsStack("getShowStatusLine (table) ","table",20,__ref.getField(false, "ba"),__ref,3835);
 if (RapidSub.canDelegate("getshowstatusline")) { return __ref.runUserSub(false, "table","getshowstatusline", __ref);}
  BA.debugLineNum = 3835;BA.debugLine="Public Sub getShowStatusLine As Boolean";
 Debug.ShouldStop(67108864);
@@ -2482,7 +2482,7 @@ finally {
 		}}
 public static RemoteObject  _getsingleline(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSingleLine (table) ","table",19,__ref.getField(false, "ba"),__ref,3783);
+		Debug.PushSubsStack("getSingleLine (table) ","table",20,__ref.getField(false, "ba"),__ref,3783);
 if (RapidSub.canDelegate("getsingleline")) { return __ref.runUserSub(false, "table","getsingleline", __ref);}
  BA.debugLineNum = 3783;BA.debugLine="Public Sub getSingleLine As Boolean";
 Debug.ShouldStop(64);
@@ -2501,7 +2501,7 @@ finally {
 		}}
 public static RemoteObject  _getsize(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSize (table) ","table",19,__ref.getField(false, "ba"),__ref,2232);
+		Debug.PushSubsStack("getSize (table) ","table",20,__ref.getField(false, "ba"),__ref,2232);
 if (RapidSub.canDelegate("getsize")) { return __ref.runUserSub(false, "table","getsize", __ref);}
  BA.debugLineNum = 2232;BA.debugLine="Public Sub getSize As Long";
 Debug.ShouldStop(8388608);
@@ -2520,7 +2520,7 @@ finally {
 		}}
 public static RemoteObject  _getsortbitmapcolor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSortBitmapColor (table) ","table",19,__ref.getField(false, "ba"),__ref,4044);
+		Debug.PushSubsStack("getSortBitmapColor (table) ","table",20,__ref.getField(false, "ba"),__ref,4044);
 if (RapidSub.canDelegate("getsortbitmapcolor")) { return __ref.runUserSub(false, "table","getsortbitmapcolor", __ref);}
  BA.debugLineNum = 4044;BA.debugLine="Public Sub getSortBitmapColor As Int";
 Debug.ShouldStop(2048);
@@ -2539,7 +2539,7 @@ finally {
 		}}
 public static RemoteObject  _getsortbitmapwidth(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSortBitmapWidth (table) ","table",19,__ref.getField(false, "ba"),__ref,4034);
+		Debug.PushSubsStack("getSortBitmapWidth (table) ","table",20,__ref.getField(false, "ba"),__ref,4034);
 if (RapidSub.canDelegate("getsortbitmapwidth")) { return __ref.runUserSub(false, "table","getsortbitmapwidth", __ref);}
  BA.debugLineNum = 4034;BA.debugLine="Public Sub getSortBitmapWidth As Int";
 Debug.ShouldStop(2);
@@ -2558,7 +2558,7 @@ finally {
 		}}
 public static RemoteObject  _getsortcaseinsensitive(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSortCaseInsensitive (table) ","table",19,__ref.getField(false, "ba"),__ref,5034);
+		Debug.PushSubsStack("getSortCaseInsensitive (table) ","table",20,__ref.getField(false, "ba"),__ref,5034);
 if (RapidSub.canDelegate("getsortcaseinsensitive")) { return __ref.runUserSub(false, "table","getsortcaseinsensitive", __ref);}
  BA.debugLineNum = 5034;BA.debugLine="Public Sub getSortCaseInsensitive As Boolean";
 Debug.ShouldStop(512);
@@ -2577,7 +2577,7 @@ finally {
 		}}
 public static RemoteObject  _getsortcolumn(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSortColumn (table) ","table",19,__ref.getField(false, "ba"),__ref,3501);
+		Debug.PushSubsStack("getSortColumn (table) ","table",20,__ref.getField(false, "ba"),__ref,3501);
 if (RapidSub.canDelegate("getsortcolumn")) { return __ref.runUserSub(false, "table","getsortcolumn", __ref);}
  BA.debugLineNum = 3501;BA.debugLine="Public Sub getSortColumn As Boolean";
 Debug.ShouldStop(4096);
@@ -2596,7 +2596,7 @@ finally {
 		}}
 public static RemoteObject  _getsortremoveaccents(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSortRemoveAccents (table) ","table",19,__ref.getField(false, "ba"),__ref,4004);
+		Debug.PushSubsStack("getSortRemoveAccents (table) ","table",20,__ref.getField(false, "ba"),__ref,4004);
 if (RapidSub.canDelegate("getsortremoveaccents")) { return __ref.runUserSub(false, "table","getsortremoveaccents", __ref);}
  BA.debugLineNum = 4004;BA.debugLine="Public Sub getSortRemoveAccents As Boolean";
 Debug.ShouldStop(8);
@@ -2615,7 +2615,7 @@ finally {
 		}}
 public static RemoteObject  _getstatuslineheight(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getStatusLineHeight (table) ","table",19,__ref.getField(false, "ba"),__ref,3002);
+		Debug.PushSubsStack("getStatusLineHeight (table) ","table",20,__ref.getField(false, "ba"),__ref,3002);
 if (RapidSub.canDelegate("getstatuslineheight")) { return __ref.runUserSub(false, "table","getstatuslineheight", __ref);}
  BA.debugLineNum = 3002;BA.debugLine="Public Sub getStatusLineHeight As Int";
 Debug.ShouldStop(33554432);
@@ -2634,7 +2634,7 @@ finally {
 		}}
 public static RemoteObject  _gettablecolor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getTableColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2892);
+		Debug.PushSubsStack("getTableColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2892);
 if (RapidSub.canDelegate("gettablecolor")) { return __ref.runUserSub(false, "table","gettablecolor", __ref);}
  BA.debugLineNum = 2892;BA.debugLine="Public Sub getTableColor As Int";
 Debug.ShouldStop(2048);
@@ -2653,7 +2653,7 @@ finally {
 		}}
 public static RemoteObject  _gettag(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getTag (table) ","table",19,__ref.getField(false, "ba"),__ref,3918);
+		Debug.PushSubsStack("getTag (table) ","table",20,__ref.getField(false, "ba"),__ref,3918);
 if (RapidSub.canDelegate("gettag")) { return __ref.runUserSub(false, "table","gettag", __ref);}
  BA.debugLineNum = 3918;BA.debugLine="Public Sub getTag As Object";
 Debug.ShouldStop(8192);
@@ -2672,7 +2672,7 @@ finally {
 		}}
 public static RemoteObject  _gettextcolor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getTextColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2926);
+		Debug.PushSubsStack("getTextColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2926);
 if (RapidSub.canDelegate("gettextcolor")) { return __ref.runUserSub(false, "table","gettextcolor", __ref);}
  BA.debugLineNum = 2926;BA.debugLine="Public Sub getTextColor As Int";
 Debug.ShouldStop(8192);
@@ -2691,7 +2691,7 @@ finally {
 		}}
 public static RemoteObject  _gettextcolors(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("GetTextColors (table) ","table",19,__ref.getField(false, "ba"),__ref,3607);
+		Debug.PushSubsStack("GetTextColors (table) ","table",20,__ref.getField(false, "ba"),__ref,3607);
 if (RapidSub.canDelegate("gettextcolors")) { return __ref.runUserSub(false, "table","gettextcolors", __ref);}
  BA.debugLineNum = 3607;BA.debugLine="Public Sub GetTextColors As Int()";
 Debug.ShouldStop(4194304);
@@ -2710,7 +2710,7 @@ finally {
 		}}
 public static RemoteObject  _gettextsize(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getTextSize (table) ","table",19,__ref.getField(false, "ba"),__ref,2981);
+		Debug.PushSubsStack("getTextSize (table) ","table",20,__ref.getField(false, "ba"),__ref,2981);
 if (RapidSub.canDelegate("gettextsize")) { return __ref.runUserSub(false, "table","gettextsize", __ref);}
  BA.debugLineNum = 2981;BA.debugLine="Public Sub getTextSize As Float";
 Debug.ShouldStop(16);
@@ -2729,7 +2729,7 @@ finally {
 		}}
 public static RemoteObject  _gettop(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getTop (table) ","table",19,__ref.getField(false, "ba"),__ref,2252);
+		Debug.PushSubsStack("getTop (table) ","table",20,__ref.getField(false, "ba"),__ref,2252);
 if (RapidSub.canDelegate("gettop")) { return __ref.runUserSub(false, "table","gettop", __ref);}
  BA.debugLineNum = 2252;BA.debugLine="Public Sub getTop As Int";
 Debug.ShouldStop(2048);
@@ -2748,7 +2748,7 @@ finally {
 		}}
 public static RemoteObject  _gettoprowindex(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getTopRowIndex (table) ","table",19,__ref.getField(false, "ba"),__ref,2325);
+		Debug.PushSubsStack("getTopRowIndex (table) ","table",20,__ref.getField(false, "ba"),__ref,2325);
 if (RapidSub.canDelegate("gettoprowindex")) { return __ref.runUserSub(false, "table","gettoprowindex", __ref);}
  BA.debugLineNum = 2325;BA.debugLine="Public Sub getTopRowIndex As Int";
 Debug.ShouldStop(1048576);
@@ -2767,7 +2767,7 @@ finally {
 		}}
 public static RemoteObject  _getusecolumncolors(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getUseColumnColors (table) ","table",19,__ref.getField(false, "ba"),__ref,3539);
+		Debug.PushSubsStack("getUseColumnColors (table) ","table",20,__ref.getField(false, "ba"),__ref,3539);
 if (RapidSub.canDelegate("getusecolumncolors")) { return __ref.runUserSub(false, "table","getusecolumncolors", __ref);}
  BA.debugLineNum = 3539;BA.debugLine="Public Sub getUseColumnColors As Boolean";
 Debug.ShouldStop(262144);
@@ -2786,7 +2786,7 @@ finally {
 		}}
 public static RemoteObject  _getvalue(RemoteObject __ref,RemoteObject _col,RemoteObject _row) throws Exception{
 try {
-		Debug.PushSubsStack("GetValue (table) ","table",19,__ref.getField(false, "ba"),__ref,1608);
+		Debug.PushSubsStack("GetValue (table) ","table",20,__ref.getField(false, "ba"),__ref,1608);
 if (RapidSub.canDelegate("getvalue")) { return __ref.runUserSub(false, "table","getvalue", __ref, _col, _row);}
 RemoteObject _values = null;
 Debug.locals.put("Col", _col);
@@ -2814,7 +2814,7 @@ finally {
 		}}
 public static RemoteObject  _getvalues(RemoteObject __ref,RemoteObject _row) throws Exception{
 try {
-		Debug.PushSubsStack("GetValues (table) ","table",19,__ref.getField(false, "ba"),__ref,1978);
+		Debug.PushSubsStack("GetValues (table) ","table",20,__ref.getField(false, "ba"),__ref,1978);
 if (RapidSub.canDelegate("getvalues")) { return __ref.runUserSub(false, "table","getvalues", __ref, _row);}
 RemoteObject _rowdata = null;
 RemoteObject _tmp = null;
@@ -2857,7 +2857,7 @@ finally {
 		}}
 public static RemoteObject  _getvisible(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getVisible (table) ","table",19,__ref.getField(false, "ba"),__ref,2310);
+		Debug.PushSubsStack("getVisible (table) ","table",20,__ref.getField(false, "ba"),__ref,2310);
 if (RapidSub.canDelegate("getvisible")) { return __ref.runUserSub(false, "table","getvisible", __ref);}
  BA.debugLineNum = 2310;BA.debugLine="Public Sub getVisible As Boolean";
 Debug.ShouldStop(32);
@@ -2876,7 +2876,7 @@ finally {
 		}}
 public static RemoteObject  _getwidth(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getWidth (table) ","table",19,__ref.getField(false, "ba"),__ref,2278);
+		Debug.PushSubsStack("getWidth (table) ","table",20,__ref.getField(false, "ba"),__ref,2278);
 if (RapidSub.canDelegate("getwidth")) { return __ref.runUserSub(false, "table","getwidth", __ref);}
  BA.debugLineNum = 2278;BA.debugLine="Public Sub getWidth As Int";
 Debug.ShouldStop(32);
@@ -2895,7 +2895,7 @@ finally {
 		}}
 public static RemoteObject  _header_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Header_Click (table) ","table",19,__ref.getField(false, "ba"),__ref,2330);
+		Debug.PushSubsStack("Header_Click (table) ","table",20,__ref.getField(false, "ba"),__ref,2330);
 if (RapidSub.canDelegate("header_click")) { return __ref.runUserSub(false, "table","header_click", __ref);}
 RemoteObject _l = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
 RemoteObject _col = RemoteObject.createImmutable(0);
@@ -2996,7 +2996,7 @@ finally {
 		}}
 public static RemoteObject  _header_longclick(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Header_LongClick (table) ","table",19,__ref.getField(false, "ba"),__ref,1583);
+		Debug.PushSubsStack("Header_LongClick (table) ","table",20,__ref.getField(false, "ba"),__ref,1583);
 if (RapidSub.canDelegate("header_longclick")) { return __ref.runUserSub(false, "table","header_longclick", __ref);}
 RemoteObject _l = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
 RemoteObject _col = RemoteObject.createImmutable(0);
@@ -3033,7 +3033,7 @@ finally {
 		}}
 public static RemoteObject  _hidecol(RemoteObject __ref,RemoteObject _col) throws Exception{
 try {
-		Debug.PushSubsStack("hideCol (table) ","table",19,__ref.getField(false, "ba"),__ref,2190);
+		Debug.PushSubsStack("hideCol (table) ","table",20,__ref.getField(false, "ba"),__ref,2190);
 if (RapidSub.canDelegate("hidecol")) { return __ref.runUserSub(false, "table","hidecol", __ref, _col);}
 RemoteObject _tmpwidths = null;
 int _i = 0;
@@ -3075,7 +3075,7 @@ finally {
 		}}
 public static RemoteObject  _hiderow(RemoteObject __ref,RemoteObject _row) throws Exception{
 try {
-		Debug.PushSubsStack("HideRow (table) ","table",19,__ref.getField(false, "ba"),__ref,1425);
+		Debug.PushSubsStack("HideRow (table) ","table",20,__ref.getField(false, "ba"),__ref,1425);
 if (RapidSub.canDelegate("hiderow")) { return __ref.runUserSub(false, "table","hiderow", __ref, _row);}
 RemoteObject _lbls = null;
 int _i = 0;
@@ -3127,7 +3127,7 @@ finally {
 		}}
 public static RemoteObject  _initfastscroll(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("InitFastScroll (table) ","table",19,__ref.getField(false, "ba"),__ref,2585);
+		Debug.PushSubsStack("InitFastScroll (table) ","table",20,__ref.getField(false, "ba"),__ref,2585);
 if (RapidSub.canDelegate("initfastscroll")) { return __ref.runUserSub(false, "table","initfastscroll", __ref);}
  BA.debugLineNum = 2585;BA.debugLine="Private Sub InitFastScroll";
 Debug.ShouldStop(16777216);
@@ -3168,7 +3168,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (table) ","table",19,__ref.getField(false, "ba"),__ref,560);
+		Debug.PushSubsStack("Initialize (table) ","table",20,__ref.getField(false, "ba"),__ref,560);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "table","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -3200,7 +3200,7 @@ finally {
 		}}
 public static RemoteObject  _initializesortingbitmaps(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("InitializeSortingBitmaps (table) ","table",19,__ref.getField(false, "ba"),__ref,818);
+		Debug.PushSubsStack("InitializeSortingBitmaps (table) ","table",20,__ref.getField(false, "ba"),__ref,818);
 if (RapidSub.canDelegate("initializesortingbitmaps")) { return __ref.runUserSub(false, "table","initializesortingbitmaps", __ref);}
 RemoteObject _pthasc = RemoteObject.declareNull("anywheresoftware.b4a.objects.drawable.CanvasWrapper.PathWrapper");
 RemoteObject _pthdes = RemoteObject.declareNull("anywheresoftware.b4a.objects.drawable.CanvasWrapper.PathWrapper");
@@ -3302,7 +3302,7 @@ finally {
 		}}
 public static RemoteObject  _initializetable(RemoteObject __ref,RemoteObject _numberofcolumns,RemoteObject _cellalignement,RemoteObject _showstatusline) throws Exception{
 try {
-		Debug.PushSubsStack("InitializeTable (table) ","table",19,__ref.getField(false, "ba"),__ref,792);
+		Debug.PushSubsStack("InitializeTable (table) ","table",20,__ref.getField(false, "ba"),__ref,792);
 if (RapidSub.canDelegate("initializetable")) { return __ref.runUserSub(false, "table","initializetable", __ref, _numberofcolumns, _cellalignement, _showstatusline);}
 int _i = 0;
 Debug.locals.put("NumberOfColumns", _numberofcolumns);
@@ -3378,7 +3378,7 @@ finally {
 		}}
 public static RemoteObject  _inittable(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("InitTable (table) ","table",19,__ref.getField(false, "ba"),__ref,669);
+		Debug.PushSubsStack("InitTable (table) ","table",20,__ref.getField(false, "ba"),__ref,669);
 if (RapidSub.canDelegate("inittable")) { return __ref.runUserSub(false, "table","inittable", __ref);}
 RemoteObject _jo = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
 RemoteObject _cdw = RemoteObject.declareNull("anywheresoftware.b4a.objects.drawable.ColorDrawable");
@@ -3665,7 +3665,7 @@ finally {
 		}}
 public static RemoteObject  _innerclearall(RemoteObject __ref,RemoteObject _vnumberofcolumns,RemoteObject _cleardata) throws Exception{
 try {
-		Debug.PushSubsStack("innerClearAll (table) ","table",19,__ref.getField(false, "ba"),__ref,1038);
+		Debug.PushSubsStack("innerClearAll (table) ","table",20,__ref.getField(false, "ba"),__ref,1038);
 if (RapidSub.canDelegate("innerclearall")) { return __ref.runUserSub(false, "table","innerclearall", __ref, _vnumberofcolumns, _cleardata);}
 int _i = 0;
 RemoteObject _cds = null;
@@ -4001,7 +4001,7 @@ finally {
 		}}
 public static RemoteObject  _insertrowat(RemoteObject __ref,RemoteObject _row,RemoteObject _values) throws Exception{
 try {
-		Debug.PushSubsStack("insertRowAt (table) ","table",19,__ref.getField(false, "ba"),__ref,1988);
+		Debug.PushSubsStack("insertRowAt (table) ","table",20,__ref.getField(false, "ba"),__ref,1988);
 if (RapidSub.canDelegate("insertrowat")) { return __ref.runUserSub(false, "table","insertrowat", __ref, _row, _values);}
 RemoteObject _l = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
 int _i = 0;
@@ -4234,7 +4234,7 @@ finally {
 		}}
 public static RemoteObject  _ip_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("IP_Click (table) ","table",19,__ref.getField(false, "ba"),__ref,2214);
+		Debug.PushSubsStack("IP_Click (table) ","table",20,__ref.getField(false, "ba"),__ref,2214);
 if (RapidSub.canDelegate("ip_click")) { return __ref.runUserSub(false, "table","ip_click", __ref);}
  BA.debugLineNum = 2214;BA.debugLine="Private Sub IP_Click";
 Debug.ShouldStop(32);
@@ -4257,7 +4257,7 @@ finally {
 		}}
 public static RemoteObject  _isrowvisible(RemoteObject __ref,RemoteObject _row) throws Exception{
 try {
-		Debug.PushSubsStack("IsRowVisible (table) ","table",19,__ref.getField(false, "ba"),__ref,1420);
+		Debug.PushSubsStack("IsRowVisible (table) ","table",20,__ref.getField(false, "ba"),__ref,1420);
 if (RapidSub.canDelegate("isrowvisible")) { return __ref.runUserSub(false, "table","isrowvisible", __ref, _row);}
 Debug.locals.put("Row", _row);
  BA.debugLineNum = 1420;BA.debugLine="Private Sub IsRowVisible(Row As Int) As Boolean		'";
@@ -4277,7 +4277,7 @@ finally {
 		}}
 public static void  _jumptorow(RemoteObject __ref,RemoteObject _row) throws Exception{
 try {
-		Debug.PushSubsStack("JumpToRow (table) ","table",19,__ref.getField(false, "ba"),__ref,1699);
+		Debug.PushSubsStack("JumpToRow (table) ","table",20,__ref.getField(false, "ba"),__ref,1699);
 if (RapidSub.canDelegate("jumptorow")) { __ref.runUserSub(false, "table","jumptorow", __ref, _row); return;}
 ResumableSub_JumpToRow rsub = new ResumableSub_JumpToRow(null,__ref,_row);
 rsub.resume(null, null);
@@ -4302,7 +4302,7 @@ RemoteObject _row;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("JumpToRow (table) ","table",19,__ref.getField(false, "ba"),__ref,1699);
+		Debug.PushSubsStack("JumpToRow (table) ","table",20,__ref.getField(false, "ba"),__ref,1699);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -4343,7 +4343,7 @@ finally {
 }
 public static void  _jumptorowandselect(RemoteObject __ref,RemoteObject _col,RemoteObject _row) throws Exception{
 try {
-		Debug.PushSubsStack("JumpToRowAndSelect (table) ","table",19,__ref.getField(false, "ba"),__ref,1705);
+		Debug.PushSubsStack("JumpToRowAndSelect (table) ","table",20,__ref.getField(false, "ba"),__ref,1705);
 if (RapidSub.canDelegate("jumptorowandselect")) { __ref.runUserSub(false, "table","jumptorowandselect", __ref, _col, _row); return;}
 ResumableSub_JumpToRowAndSelect rsub = new ResumableSub_JumpToRowAndSelect(null,__ref,_col,_row);
 rsub.resume(null, null);
@@ -4375,7 +4375,7 @@ int limit12;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("JumpToRowAndSelect (table) ","table",19,__ref.getField(false, "ba"),__ref,1705);
+		Debug.PushSubsStack("JumpToRowAndSelect (table) ","table",20,__ref.getField(false, "ba"),__ref,1705);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -4391,13 +4391,13 @@ Debug.locals.put("Col", _col);
 Debug.locals.put("Row", _row);
  BA.debugLineNum = 1706;BA.debugLine="Log(\"You may get this warning:\")";
 Debug.ShouldStop(512);
-parent.__c.runVoidMethod ("LogImpl","425427969",RemoteObject.createImmutable("You may get this warning:"),0);
+parent.__c.runVoidMethod ("LogImpl","326017793",RemoteObject.createImmutable("You may get this warning:"),0);
  BA.debugLineNum = 1707;BA.debugLine="Log(\"Unexpected event (missing RaiseSynchronousEv";
 Debug.ShouldStop(1024);
-parent.__c.runVoidMethod ("LogImpl","425427970",RemoteObject.createImmutable("Unexpected event (missing RaiseSynchronousEvents): sv_scrollchanged"),0);
+parent.__c.runVoidMethod ("LogImpl","326017794",RemoteObject.createImmutable("Unexpected event (missing RaiseSynchronousEvents): sv_scrollchanged"),0);
  BA.debugLineNum = 1708;BA.debugLine="Log(\"Ignore it, it is NOT harmful !\")";
 Debug.ShouldStop(2048);
-parent.__c.runVoidMethod ("LogImpl","425427971",RemoteObject.createImmutable("Ignore it, it is NOT harmful !"),0);
+parent.__c.runVoidMethod ("LogImpl","326017795",RemoteObject.createImmutable("Ignore it, it is NOT harmful !"),0);
  BA.debugLineNum = 1709;BA.debugLine="Dim rc As RowCol";
 Debug.ShouldStop(4096);
 _rc = RemoteObject.createNew ("b4a.example.ef.table._rowcol");Debug.locals.put("rc", _rc);
@@ -4509,7 +4509,7 @@ finally {
 }
 public static RemoteObject  _loadsqlitedb(RemoteObject __ref,RemoteObject _sqlite,RemoteObject _query,RemoteObject _automaticwidths) throws Exception{
 try {
-		Debug.PushSubsStack("LoadSQLiteDB (table) ","table",19,__ref.getField(false, "ba"),__ref,3040);
+		Debug.PushSubsStack("LoadSQLiteDB (table) ","table",20,__ref.getField(false, "ba"),__ref,3040);
 if (RapidSub.canDelegate("loadsqlitedb")) { return __ref.runUserSub(false, "table","loadsqlitedb", __ref, _sqlite, _query, _automaticwidths);}
 RemoteObject _curs = RemoteObject.declareNull("anywheresoftware.b4a.sql.SQL.CursorWrapper");
 RemoteObject _headers = null;
@@ -4709,7 +4709,7 @@ finally {
 		}}
 public static RemoteObject  _loadsqlitedb2(RemoteObject __ref,RemoteObject _sqlite,RemoteObject _query,RemoteObject _automaticwidths,RemoteObject _columndatatypes) throws Exception{
 try {
-		Debug.PushSubsStack("LoadSQLiteDB2 (table) ","table",19,__ref.getField(false, "ba"),__ref,3120);
+		Debug.PushSubsStack("LoadSQLiteDB2 (table) ","table",20,__ref.getField(false, "ba"),__ref,3120);
 if (RapidSub.canDelegate("loadsqlitedb2")) { return __ref.runUserSub(false, "table","loadsqlitedb2", __ref, _sqlite, _query, _automaticwidths, _columndatatypes);}
 RemoteObject _curs = RemoteObject.declareNull("anywheresoftware.b4a.sql.SQL.CursorWrapper");
 RemoteObject _headers = null;
@@ -4971,7 +4971,7 @@ finally {
 		}}
 public static RemoteObject  _loadsqlitedb3(RemoteObject __ref,RemoteObject _sqlite,RemoteObject _query,RemoteObject _values,RemoteObject _automaticwidths) throws Exception{
 try {
-		Debug.PushSubsStack("LoadSQLiteDB3 (table) ","table",19,__ref.getField(false, "ba"),__ref,3220);
+		Debug.PushSubsStack("LoadSQLiteDB3 (table) ","table",20,__ref.getField(false, "ba"),__ref,3220);
 if (RapidSub.canDelegate("loadsqlitedb3")) { return __ref.runUserSub(false, "table","loadsqlitedb3", __ref, _sqlite, _query, _values, _automaticwidths);}
 RemoteObject _curs = RemoteObject.declareNull("anywheresoftware.b4a.sql.SQL.CursorWrapper");
 RemoteObject _headers = null;
@@ -5172,7 +5172,7 @@ finally {
 		}}
 public static RemoteObject  _loadsqlitedb4(RemoteObject __ref,RemoteObject _sqlite,RemoteObject _query,RemoteObject _automaticwidths) throws Exception{
 try {
-		Debug.PushSubsStack("LoadSQLiteDB4 (table) ","table",19,__ref.getField(false, "ba"),__ref,3294);
+		Debug.PushSubsStack("LoadSQLiteDB4 (table) ","table",20,__ref.getField(false, "ba"),__ref,3294);
 if (RapidSub.canDelegate("loadsqlitedb4")) { return __ref.runUserSub(false, "table","loadsqlitedb4", __ref, _sqlite, _query, _automaticwidths);}
 RemoteObject _curs = RemoteObject.declareNull("anywheresoftware.b4a.sql.SQL.CursorWrapper");
 RemoteObject _headers = null;
@@ -5397,7 +5397,7 @@ finally {
 		}}
 public static RemoteObject  _loadsqlitedb5(RemoteObject __ref,RemoteObject _sqlite,RemoteObject _query,RemoteObject _values,RemoteObject _automaticwidths) throws Exception{
 try {
-		Debug.PushSubsStack("LoadSQLiteDB5 (table) ","table",19,__ref.getField(false, "ba"),__ref,3377);
+		Debug.PushSubsStack("LoadSQLiteDB5 (table) ","table",20,__ref.getField(false, "ba"),__ref,3377);
 if (RapidSub.canDelegate("loadsqlitedb5")) { return __ref.runUserSub(false, "table","loadsqlitedb5", __ref, _sqlite, _query, _values, _automaticwidths);}
 RemoteObject _curs = RemoteObject.declareNull("anywheresoftware.b4a.sql.SQL.CursorWrapper");
 RemoteObject _headers = null;
@@ -5623,7 +5623,7 @@ finally {
 		}}
 public static RemoteObject  _loadtablefromcsv(RemoteObject __ref,RemoteObject _dir,RemoteObject _filename,RemoteObject _headersexist) throws Exception{
 try {
-		Debug.PushSubsStack("LoadTableFromCSV (table) ","table",19,__ref.getField(false, "ba"),__ref,1730);
+		Debug.PushSubsStack("LoadTableFromCSV (table) ","table",20,__ref.getField(false, "ba"),__ref,1730);
 if (RapidSub.canDelegate("loadtablefromcsv")) { return __ref.runUserSub(false, "table","loadtablefromcsv", __ref, _dir, _filename, _headersexist);}
 RemoteObject _list1 = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
 RemoteObject _h = null;
@@ -5778,7 +5778,7 @@ finally {
 		}}
 public static RemoteObject  _loadtablefromcsv2(RemoteObject __ref,RemoteObject _dir,RemoteObject _filename,RemoteObject _headersexist,RemoteObject _separatorchar,RemoteObject _automaticwidths) throws Exception{
 try {
-		Debug.PushSubsStack("LoadTableFromCSV2 (table) ","table",19,__ref.getField(false, "ba"),__ref,1784);
+		Debug.PushSubsStack("LoadTableFromCSV2 (table) ","table",20,__ref.getField(false, "ba"),__ref,1784);
 if (RapidSub.canDelegate("loadtablefromcsv2")) { return __ref.runUserSub(false, "table","loadtablefromcsv2", __ref, _dir, _filename, _headersexist, _separatorchar, _automaticwidths);}
 RemoteObject _list1 = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
 RemoteObject _lstheaders = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -6053,7 +6053,7 @@ finally {
 		}}
 public static RemoteObject  _pnlfastscroll_touch(RemoteObject __ref,RemoteObject _action,RemoteObject _x,RemoteObject _y) throws Exception{
 try {
-		Debug.PushSubsStack("pnlFastScroll_Touch (table) ","table",19,__ref.getField(false, "ba"),__ref,2560);
+		Debug.PushSubsStack("pnlFastScroll_Touch (table) ","table",20,__ref.getField(false, "ba"),__ref,2560);
 if (RapidSub.canDelegate("pnlfastscroll_touch")) { return __ref.runUserSub(false, "table","pnlfastscroll_touch", __ref, _action, _x, _y);}
 RemoteObject _top = RemoteObject.createImmutable(0);
 RemoteObject _sv2top = RemoteObject.createImmutable(0);
@@ -6131,7 +6131,7 @@ finally {
 		}}
 public static RemoteObject  _refreshlabels(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("RefreshLabels (table) ","table",19,__ref.getField(false, "ba"),__ref,2110);
+		Debug.PushSubsStack("RefreshLabels (table) ","table",20,__ref.getField(false, "ba"),__ref,2110);
 if (RapidSub.canDelegate("refreshlabels")) { return __ref.runUserSub(false, "table","refreshlabels", __ref);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _j = RemoteObject.createImmutable(0);
@@ -6272,7 +6272,7 @@ finally {
 		}}
 public static RemoteObject  _refreshtable(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("RefreshTable (table) ","table",19,__ref.getField(false, "ba"),__ref,2101);
+		Debug.PushSubsStack("RefreshTable (table) ","table",20,__ref.getField(false, "ba"),__ref,2101);
 if (RapidSub.canDelegate("refreshtable")) { return __ref.runUserSub(false, "table","refreshtable", __ref);}
 int _i = 0;
  BA.debugLineNum = 2101;BA.debugLine="Public Sub RefreshTable";
@@ -6309,7 +6309,7 @@ finally {
 		}}
 public static RemoteObject  _removeaccents(RemoteObject __ref,RemoteObject _s) throws Exception{
 try {
-		Debug.PushSubsStack("RemoveAccents (table) ","table",19,__ref.getField(false, "ba"),__ref,4013);
+		Debug.PushSubsStack("RemoveAccents (table) ","table",20,__ref.getField(false, "ba"),__ref,4013);
 if (RapidSub.canDelegate("removeaccents")) { return __ref.runUserSub(false, "table","removeaccents", __ref, _s);}
 RemoteObject _normalizer = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
 RemoteObject _n = RemoteObject.createImmutable("");
@@ -6366,7 +6366,7 @@ finally {
 		}}
 public static RemoteObject  _removerow(RemoteObject __ref,RemoteObject _row) throws Exception{
 try {
-		Debug.PushSubsStack("RemoveRow (table) ","table",19,__ref.getField(false, "ba"),__ref,1922);
+		Debug.PushSubsStack("RemoveRow (table) ","table",20,__ref.getField(false, "ba"),__ref,1922);
 if (RapidSub.canDelegate("removerow")) { return __ref.runUserSub(false, "table","removerow", __ref, _row);}
 RemoteObject _previndex = RemoteObject.createImmutable(0);
 int _i = 0;
@@ -6490,7 +6490,7 @@ finally {
 		}}
 public static RemoteObject  _removerowcolorn(RemoteObject __ref,RemoteObject _row) throws Exception{
 try {
-		Debug.PushSubsStack("RemoveRowColorN (table) ","table",19,__ref.getField(false, "ba"),__ref,2822);
+		Debug.PushSubsStack("RemoveRowColorN (table) ","table",20,__ref.getField(false, "ba"),__ref,2822);
 if (RapidSub.canDelegate("removerowcolorn")) { return __ref.runUserSub(false, "table","removerowcolorn", __ref, _row);}
 Debug.locals.put("Row", _row);
  BA.debugLineNum = 2822;BA.debugLine="Public Sub RemoveRowColorN(Row As Int)";
@@ -6521,7 +6521,7 @@ finally {
 		}}
 public static RemoteObject  _removeview(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("RemoveView (table) ","table",19,__ref.getField(false, "ba"),__ref,3488);
+		Debug.PushSubsStack("RemoveView (table) ","table",20,__ref.getField(false, "ba"),__ref,3488);
 if (RapidSub.canDelegate("removeview")) { return __ref.runUserSub(false, "table","removeview", __ref);}
  BA.debugLineNum = 3488;BA.debugLine="Public Sub RemoveView";
 Debug.ShouldStop(-2147483648);
@@ -6540,7 +6540,7 @@ finally {
 		}}
 public static RemoteObject  _reverseindexdouble(RemoteObject __ref,RemoteObject _arrdouble,RemoteObject _arrindex,RemoteObject _bunique) throws Exception{
 try {
-		Debug.PushSubsStack("ReverseIndexDouble (table) ","table",19,__ref.getField(false, "ba"),__ref,4913);
+		Debug.PushSubsStack("ReverseIndexDouble (table) ","table",20,__ref.getField(false, "ba"),__ref,4913);
 if (RapidSub.canDelegate("reverseindexdouble")) { return __ref.runUserSub(false, "table","reverseindexdouble", __ref, _arrdouble, _arrindex, _bunique);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _c = RemoteObject.createImmutable(0);
@@ -6703,7 +6703,7 @@ finally {
 		}}
 public static RemoteObject  _reverseindexlong(RemoteObject __ref,RemoteObject _arrlong,RemoteObject _arrindex,RemoteObject _bunique) throws Exception{
 try {
-		Debug.PushSubsStack("ReverseIndexLong (table) ","table",19,__ref.getField(false, "ba"),__ref,4859);
+		Debug.PushSubsStack("ReverseIndexLong (table) ","table",20,__ref.getField(false, "ba"),__ref,4859);
 if (RapidSub.canDelegate("reverseindexlong")) { return __ref.runUserSub(false, "table","reverseindexlong", __ref, _arrlong, _arrindex, _bunique);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _c = RemoteObject.createImmutable(0);
@@ -6866,7 +6866,7 @@ finally {
 		}}
 public static RemoteObject  _reverseindexstring(RemoteObject __ref,RemoteObject _arrstring,RemoteObject _arrindex,RemoteObject _bunique) throws Exception{
 try {
-		Debug.PushSubsStack("ReverseIndexString (table) ","table",19,__ref.getField(false, "ba"),__ref,4967);
+		Debug.PushSubsStack("ReverseIndexString (table) ","table",20,__ref.getField(false, "ba"),__ref,4967);
 if (RapidSub.canDelegate("reverseindexstring")) { return __ref.runUserSub(false, "table","reverseindexstring", __ref, _arrstring, _arrindex, _bunique);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _c = RemoteObject.createImmutable(0);
@@ -7029,7 +7029,7 @@ finally {
 		}}
 public static RemoteObject  _savetabletocsv(RemoteObject __ref,RemoteObject _dir,RemoteObject _filename) throws Exception{
 try {
-		Debug.PushSubsStack("SaveTableToCSV (table) ","table",19,__ref.getField(false, "ba"),__ref,1869);
+		Debug.PushSubsStack("SaveTableToCSV (table) ","table",20,__ref.getField(false, "ba"),__ref,1869);
 if (RapidSub.canDelegate("savetabletocsv")) { return __ref.runUserSub(false, "table","savetabletocsv", __ref, _dir, _filename);}
 RemoteObject _headers = null;
 RemoteObject _i = RemoteObject.createImmutable(0);
@@ -7112,7 +7112,7 @@ finally {
 		}}
 public static RemoteObject  _savetabletocsv2(RemoteObject __ref,RemoteObject _dir,RemoteObject _filename,RemoteObject _separatorchar) throws Exception{
 try {
-		Debug.PushSubsStack("SaveTableToCSV2 (table) ","table",19,__ref.getField(false, "ba"),__ref,1894);
+		Debug.PushSubsStack("SaveTableToCSV2 (table) ","table",20,__ref.getField(false, "ba"),__ref,1894);
 if (RapidSub.canDelegate("savetabletocsv2")) { return __ref.runUserSub(false, "table","savetabletocsv2", __ref, _dir, _filename, _separatorchar);}
 RemoteObject _headers = null;
 RemoteObject _i = RemoteObject.createImmutable(0);
@@ -7199,7 +7199,7 @@ finally {
 		}}
 public static RemoteObject  _scaletable(RemoteObject __ref,RemoteObject _scalex,RemoteObject _scaley,RemoteObject _scalealldone) throws Exception{
 try {
-		Debug.PushSubsStack("ScaleTable (table) ","table",19,__ref.getField(false, "ba"),__ref,3851);
+		Debug.PushSubsStack("ScaleTable (table) ","table",20,__ref.getField(false, "ba"),__ref,3851);
 if (RapidSub.canDelegate("scaletable")) { return __ref.runUserSub(false, "table","scaletable", __ref, _scalex, _scaley, _scalealldone);}
 int _i = 0;
 Debug.locals.put("ScaleX", _scalex);
@@ -7215,7 +7215,7 @@ Debug.ShouldStop(4096);
 table.__c.runVoidMethod ("ToastMessageShow",(Object)(BA.ObjectToCharSequence("Table.ScaleTable must be called before filling the Table")),(Object)(table.__c.getField(true,"False")));
  BA.debugLineNum = 3854;BA.debugLine="Log(\"Table.ScaleTable must be called before fill";
 Debug.ShouldStop(8192);
-table.__c.runVoidMethod ("LogImpl","432833539",RemoteObject.createImmutable("Table.ScaleTable must be called before filling the Table"),0);
+table.__c.runVoidMethod ("LogImpl","333423363",RemoteObject.createImmutable("Table.ScaleTable must be called before filling the Table"),0);
  BA.debugLineNum = 3855;BA.debugLine="Return";
 Debug.ShouldStop(16384);
 if (true) return RemoteObject.createImmutable("");
@@ -7377,7 +7377,7 @@ finally {
 		}}
 public static RemoteObject  _scroll(RemoteObject __ref,RemoteObject _posx,RemoteObject _posy) throws Exception{
 try {
-		Debug.PushSubsStack("Scroll (table) ","table",19,__ref.getField(false, "ba"),__ref,1185);
+		Debug.PushSubsStack("Scroll (table) ","table",20,__ref.getField(false, "ba"),__ref,1185);
 if (RapidSub.canDelegate("scroll")) { return __ref.runUserSub(false, "table","scroll", __ref, _posx, _posy);}
 RemoteObject _currentmin = RemoteObject.createImmutable(0);
 RemoteObject _currentmax = RemoteObject.createImmutable(0);
@@ -7498,7 +7498,7 @@ finally {
 		}}
 public static RemoteObject  _selectrow(RemoteObject __ref,RemoteObject _rc) throws Exception{
 try {
-		Debug.PushSubsStack("SelectRow (table) ","table",19,__ref.getField(false, "ba"),__ref,1626);
+		Debug.PushSubsStack("SelectRow (table) ","table",20,__ref.getField(false, "ba"),__ref,1626);
 if (RapidSub.canDelegate("selectrow")) { return __ref.runUserSub(false, "table","selectrow", __ref, _rc);}
 RemoteObject _previndex = RemoteObject.createImmutable(0);
 RemoteObject _prev = RemoteObject.createImmutable(0);
@@ -7620,7 +7620,7 @@ finally {
 		}}
 public static RemoteObject  _setallowselection(RemoteObject __ref,RemoteObject _allowselection) throws Exception{
 try {
-		Debug.PushSubsStack("setAllowSelection (table) ","table",19,__ref.getField(false, "ba"),__ref,2169);
+		Debug.PushSubsStack("setAllowSelection (table) ","table",20,__ref.getField(false, "ba"),__ref,2169);
 if (RapidSub.canDelegate("setallowselection")) { return __ref.runUserSub(false, "table","setallowselection", __ref, _allowselection);}
 Debug.locals.put("AllowSelection", _allowselection);
  BA.debugLineNum = 2169;BA.debugLine="Public Sub setAllowSelection(AllowSelection As Boo";
@@ -7647,7 +7647,7 @@ finally {
 		}}
 public static RemoteObject  _setarrcolumnssorted(RemoteObject __ref,RemoteObject _icolumns) throws Exception{
 try {
-		Debug.PushSubsStack("SetArrColumnsSorted (table) ","table",19,__ref.getField(false, "ba"),__ref,4442);
+		Debug.PushSubsStack("SetArrColumnsSorted (table) ","table",20,__ref.getField(false, "ba"),__ref,4442);
 if (RapidSub.canDelegate("setarrcolumnssorted")) { return __ref.runUserSub(false, "table","setarrcolumnssorted", __ref, _icolumns);}
 Debug.locals.put("iColumns", _icolumns);
  BA.debugLineNum = 4442;BA.debugLine="Public Sub SetArrColumnsSorted(iColumns As Int)";
@@ -7682,7 +7682,7 @@ finally {
 		}}
 public static RemoteObject  _setautomaticwidths(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("SetAutomaticWidths (table) ","table",19,__ref.getField(false, "ba"),__ref,3789);
+		Debug.PushSubsStack("SetAutomaticWidths (table) ","table",20,__ref.getField(false, "ba"),__ref,3789);
 if (RapidSub.canDelegate("setautomaticwidths")) { return __ref.runUserSub(false, "table","setautomaticwidths", __ref);}
 RemoteObject _row = RemoteObject.createImmutable(0);
 RemoteObject _col = RemoteObject.createImmutable(0);
@@ -7774,7 +7774,7 @@ finally {
 		}}
 public static RemoteObject  _setcellalignment(RemoteObject __ref,RemoteObject _alignment) throws Exception{
 try {
-		Debug.PushSubsStack("setCellAlignment (table) ","table",19,__ref.getField(false, "ba"),__ref,2440);
+		Debug.PushSubsStack("setCellAlignment (table) ","table",20,__ref.getField(false, "ba"),__ref,2440);
 if (RapidSub.canDelegate("setcellalignment")) { return __ref.runUserSub(false, "table","setcellalignment", __ref, _alignment);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 Debug.locals.put("Alignment", _alignment);
@@ -7825,7 +7825,7 @@ finally {
 		}}
 public static RemoteObject  _setcellalignmentcoln(RemoteObject __ref,RemoteObject _col,RemoteObject _alignmentcoln) throws Exception{
 try {
-		Debug.PushSubsStack("SetCellAlignmentColN (table) ","table",19,__ref.getField(false, "ba"),__ref,2457);
+		Debug.PushSubsStack("SetCellAlignmentColN (table) ","table",20,__ref.getField(false, "ba"),__ref,2457);
 if (RapidSub.canDelegate("setcellalignmentcoln")) { return __ref.runUserSub(false, "table","setcellalignmentcoln", __ref, _col, _alignmentcoln);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 Debug.locals.put("Col", _col);
@@ -7897,7 +7897,7 @@ finally {
 		}}
 public static RemoteObject  _setcellalignments(RemoteObject __ref,RemoteObject _alignments) throws Exception{
 try {
-		Debug.PushSubsStack("SetCellAlignments (table) ","table",19,__ref.getField(false, "ba"),__ref,2422);
+		Debug.PushSubsStack("SetCellAlignments (table) ","table",20,__ref.getField(false, "ba"),__ref,2422);
 if (RapidSub.canDelegate("setcellalignments")) { return __ref.runUserSub(false, "table","setcellalignments", __ref, _alignments);}
 Debug.locals.put("Alignments", _alignments);
  BA.debugLineNum = 2422;BA.debugLine="Public Sub SetCellAlignments(Alignments() As Int)";
@@ -7940,7 +7940,7 @@ finally {
 		}}
 public static RemoteObject  _setcolumncolors(RemoteObject __ref,RemoteObject _columncolors) throws Exception{
 try {
-		Debug.PushSubsStack("SetColumnColors (table) ","table",19,__ref.getField(false, "ba"),__ref,3544);
+		Debug.PushSubsStack("SetColumnColors (table) ","table",20,__ref.getField(false, "ba"),__ref,3544);
 if (RapidSub.canDelegate("setcolumncolors")) { return __ref.runUserSub(false, "table","setcolumncolors", __ref, _columncolors);}
 int _i = 0;
 RemoteObject _cd = RemoteObject.declareNull("anywheresoftware.b4a.objects.drawable.ColorDrawable");
@@ -8003,7 +8003,7 @@ finally {
 		}}
 public static RemoteObject  _setcolumndatatype(RemoteObject __ref,RemoteObject _column,RemoteObject _datatype) throws Exception{
 try {
-		Debug.PushSubsStack("SetColumnDataType (table) ","table",19,__ref.getField(false, "ba"),__ref,3925);
+		Debug.PushSubsStack("SetColumnDataType (table) ","table",20,__ref.getField(false, "ba"),__ref,3925);
 if (RapidSub.canDelegate("setcolumndatatype")) { return __ref.runUserSub(false, "table","setcolumndatatype", __ref, _column, _datatype);}
 Debug.locals.put("Column", _column);
 Debug.locals.put("DataType", _datatype);
@@ -8042,7 +8042,7 @@ finally {
 		}}
 public static RemoteObject  _setcolumndatatypes(RemoteObject __ref,RemoteObject _datatype) throws Exception{
 try {
-		Debug.PushSubsStack("SetColumnDataTypes (table) ","table",19,__ref.getField(false, "ba"),__ref,3952);
+		Debug.PushSubsStack("SetColumnDataTypes (table) ","table",20,__ref.getField(false, "ba"),__ref,3952);
 if (RapidSub.canDelegate("setcolumndatatypes")) { return __ref.runUserSub(false, "table","setcolumndatatypes", __ref, _datatype);}
 int _col = 0;
 Debug.locals.put("DataType", _datatype);
@@ -8094,7 +8094,7 @@ finally {
 		}}
 public static RemoteObject  _setcolumnswidths(RemoteObject __ref,RemoteObject _widths) throws Exception{
 try {
-		Debug.PushSubsStack("SetColumnsWidths (table) ","table",19,__ref.getField(false, "ba"),__ref,914);
+		Debug.PushSubsStack("SetColumnsWidths (table) ","table",20,__ref.getField(false, "ba"),__ref,914);
 if (RapidSub.canDelegate("setcolumnswidths")) { return __ref.runUserSub(false, "table","setcolumnswidths", __ref, _widths);}
 RemoteObject _col = RemoteObject.createImmutable(0);
 RemoteObject _row = RemoteObject.createImmutable(0);
@@ -8492,7 +8492,7 @@ finally {
 		}}
 public static RemoteObject  _setfastscroll(RemoteObject __ref,RemoteObject _fastscroll) throws Exception{
 try {
-		Debug.PushSubsStack("setFastScroll (table) ","table",19,__ref.getField(false, "ba"),__ref,4176);
+		Debug.PushSubsStack("setFastScroll (table) ","table",20,__ref.getField(false, "ba"),__ref,4176);
 if (RapidSub.canDelegate("setfastscroll")) { return __ref.runUserSub(false, "table","setfastscroll", __ref, _fastscroll);}
 Debug.locals.put("FastScroll", _fastscroll);
  BA.debugLineNum = 4176;BA.debugLine="Public Sub setFastScroll (FastScroll As Boolean)";
@@ -8518,7 +8518,7 @@ finally {
 		}}
 public static RemoteObject  _setfastscrollcolumnindex(RemoteObject __ref,RemoteObject _fastscrollcolumnindex) throws Exception{
 try {
-		Debug.PushSubsStack("setFastScrollColumnIndex (table) ","table",19,__ref.getField(false, "ba"),__ref,4200);
+		Debug.PushSubsStack("setFastScrollColumnIndex (table) ","table",20,__ref.getField(false, "ba"),__ref,4200);
 if (RapidSub.canDelegate("setfastscrollcolumnindex")) { return __ref.runUserSub(false, "table","setfastscrollcolumnindex", __ref, _fastscrollcolumnindex);}
 Debug.locals.put("FastScrollColumnIndex", _fastscrollcolumnindex);
  BA.debugLineNum = 4200;BA.debugLine="Public Sub setFastScrollColumnIndex (FastScrollCol";
@@ -8541,7 +8541,7 @@ finally {
 		}}
 public static RemoteObject  _setfastscrollfixedlabel(RemoteObject __ref,RemoteObject _fastscrollfixedlabel) throws Exception{
 try {
-		Debug.PushSubsStack("setFastScrollFixedLabel (table) ","table",19,__ref.getField(false, "ba"),__ref,4224);
+		Debug.PushSubsStack("setFastScrollFixedLabel (table) ","table",20,__ref.getField(false, "ba"),__ref,4224);
 if (RapidSub.canDelegate("setfastscrollfixedlabel")) { return __ref.runUserSub(false, "table","setfastscrollfixedlabel", __ref, _fastscrollfixedlabel);}
 Debug.locals.put("FastScrollFixedLabel", _fastscrollfixedlabel);
  BA.debugLineNum = 4224;BA.debugLine="Public Sub setFastScrollFixedLabel (FastScrollFixe";
@@ -8581,7 +8581,7 @@ finally {
 		}}
 public static RemoteObject  _setfastscrolllabelheight(RemoteObject __ref,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("setFastScrollLabelHeight (table) ","table",19,__ref.getField(false, "ba"),__ref,4265);
+		Debug.PushSubsStack("setFastScrollLabelHeight (table) ","table",20,__ref.getField(false, "ba"),__ref,4265);
 if (RapidSub.canDelegate("setfastscrolllabelheight")) { return __ref.runUserSub(false, "table","setfastscrolllabelheight", __ref, _height);}
 Debug.locals.put("Height", _height);
  BA.debugLineNum = 4265;BA.debugLine="Public Sub setFastScrollLabelHeight(Height As Int)";
@@ -8618,7 +8618,7 @@ finally {
 		}}
 public static RemoteObject  _setfastscrolllabelmaxchars(RemoteObject __ref,RemoteObject _fastscrolllabelmaxchars) throws Exception{
 try {
-		Debug.PushSubsStack("setFastScrollLabelMaxChars (table) ","table",19,__ref.getField(false, "ba"),__ref,4241);
+		Debug.PushSubsStack("setFastScrollLabelMaxChars (table) ","table",20,__ref.getField(false, "ba"),__ref,4241);
 if (RapidSub.canDelegate("setfastscrolllabelmaxchars")) { return __ref.runUserSub(false, "table","setfastscrolllabelmaxchars", __ref, _fastscrolllabelmaxchars);}
 Debug.locals.put("FastScrollLabelMaxChars", _fastscrolllabelmaxchars);
  BA.debugLineNum = 4241;BA.debugLine="Public Sub setFastScrollLabelMaxChars(FastScrollLa";
@@ -8638,7 +8638,7 @@ finally {
 		}}
 public static RemoteObject  _setfastscrolllabelwidth(RemoteObject __ref,RemoteObject _width) throws Exception{
 try {
-		Debug.PushSubsStack("setFastScrollLabelWidth (table) ","table",19,__ref.getField(false, "ba"),__ref,4250);
+		Debug.PushSubsStack("setFastScrollLabelWidth (table) ","table",20,__ref.getField(false, "ba"),__ref,4250);
 if (RapidSub.canDelegate("setfastscrolllabelwidth")) { return __ref.runUserSub(false, "table","setfastscrolllabelwidth", __ref, _width);}
 Debug.locals.put("Width", _width);
  BA.debugLineNum = 4250;BA.debugLine="Public Sub setFastScrollLabelWidth(Width As Int)";
@@ -8672,7 +8672,7 @@ finally {
 		}}
 public static RemoteObject  _setfastscrollminitems(RemoteObject __ref,RemoteObject _fastscrollminitems) throws Exception{
 try {
-		Debug.PushSubsStack("setFastScrollMinItems (table) ","table",19,__ref.getField(false, "ba"),__ref,4189);
+		Debug.PushSubsStack("setFastScrollMinItems (table) ","table",20,__ref.getField(false, "ba"),__ref,4189);
 if (RapidSub.canDelegate("setfastscrollminitems")) { return __ref.runUserSub(false, "table","setfastscrollminitems", __ref, _fastscrollminitems);}
 Debug.locals.put("FastScrollMinItems", _fastscrollminitems);
  BA.debugLineNum = 4189;BA.debugLine="Public Sub setFastScrollMinItems (FastScrollMinIte";
@@ -8692,7 +8692,7 @@ finally {
 		}}
 public static RemoteObject  _setfastscrollshowlabel(RemoteObject __ref,RemoteObject _fastscrollshowlabel) throws Exception{
 try {
-		Debug.PushSubsStack("setFastScrollShowLabel (table) ","table",19,__ref.getField(false, "ba"),__ref,4212);
+		Debug.PushSubsStack("setFastScrollShowLabel (table) ","table",20,__ref.getField(false, "ba"),__ref,4212);
 if (RapidSub.canDelegate("setfastscrollshowlabel")) { return __ref.runUserSub(false, "table","setfastscrollshowlabel", __ref, _fastscrollshowlabel);}
 Debug.locals.put("FastScrollShowLabel", _fastscrollshowlabel);
  BA.debugLineNum = 4212;BA.debugLine="Public Sub setFastScrollShowLabel (FastScrollShowL";
@@ -8715,7 +8715,7 @@ finally {
 		}}
 public static RemoteObject  _setfirstcolumnfixed(RemoteObject __ref,RemoteObject _firstcolumnfixed) throws Exception{
 try {
-		Debug.PushSubsStack("setFirstColumnFixed (table) ","table",19,__ref.getField(false, "ba"),__ref,4135);
+		Debug.PushSubsStack("setFirstColumnFixed (table) ","table",20,__ref.getField(false, "ba"),__ref,4135);
 if (RapidSub.canDelegate("setfirstcolumnfixed")) { return __ref.runUserSub(false, "table","setfirstcolumnfixed", __ref, _firstcolumnfixed);}
 Debug.locals.put("FirstColumnFixed", _firstcolumnfixed);
  BA.debugLineNum = 4135;BA.debugLine="Public Sub setFirstColumnFixed(FirstColumnFixed As";
@@ -8751,7 +8751,7 @@ finally {
 		}}
 public static RemoteObject  _setheader(RemoteObject __ref,RemoteObject _values) throws Exception{
 try {
-		Debug.PushSubsStack("SetHeader (table) ","table",19,__ref.getField(false, "ba"),__ref,1490);
+		Debug.PushSubsStack("SetHeader (table) ","table",20,__ref.getField(false, "ba"),__ref,1490);
 if (RapidSub.canDelegate("setheader")) { return __ref.runUserSub(false, "table","setheader", __ref, _values);}
 RemoteObject _col = RemoteObject.createImmutable(0);
 RemoteObject _left = RemoteObject.createImmutable(0);
@@ -8954,7 +8954,7 @@ finally {
 		}}
 public static RemoteObject  _setheaderalignment(RemoteObject __ref,RemoteObject _alignment) throws Exception{
 try {
-		Debug.PushSubsStack("setHeaderAlignment (table) ","table",19,__ref.getField(false, "ba"),__ref,2622);
+		Debug.PushSubsStack("setHeaderAlignment (table) ","table",20,__ref.getField(false, "ba"),__ref,2622);
 if (RapidSub.canDelegate("setheaderalignment")) { return __ref.runUserSub(false, "table","setheaderalignment", __ref, _alignment);}
 RemoteObject _col = RemoteObject.createImmutable(0);
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -9058,7 +9058,7 @@ finally {
 		}}
 public static RemoteObject  _setheaderalignmentcoln(RemoteObject __ref,RemoteObject _col,RemoteObject _alignmentcoln) throws Exception{
 try {
-		Debug.PushSubsStack("SetHeaderAlignmentColN (table) ","table",19,__ref.getField(false, "ba"),__ref,2522);
+		Debug.PushSubsStack("SetHeaderAlignmentColN (table) ","table",20,__ref.getField(false, "ba"),__ref,2522);
 if (RapidSub.canDelegate("setheaderalignmentcoln")) { return __ref.runUserSub(false, "table","setheaderalignmentcoln", __ref, _col, _alignmentcoln);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -9173,7 +9173,7 @@ finally {
 		}}
 public static RemoteObject  _setheaderalignments(RemoteObject __ref,RemoteObject _alignments) throws Exception{
 try {
-		Debug.PushSubsStack("SetHeaderAlignments (table) ","table",19,__ref.getField(false, "ba"),__ref,2485);
+		Debug.PushSubsStack("SetHeaderAlignments (table) ","table",20,__ref.getField(false, "ba"),__ref,2485);
 if (RapidSub.canDelegate("setheaderalignments")) { return __ref.runUserSub(false, "table","setheaderalignments", __ref, _alignments);}
 RemoteObject _col = RemoteObject.createImmutable(0);
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -9286,7 +9286,7 @@ finally {
 		}}
 public static RemoteObject  _setheadercolor(RemoteObject __ref,RemoteObject _color) throws Exception{
 try {
-		Debug.PushSubsStack("setHeaderColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2700);
+		Debug.PushSubsStack("setHeaderColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2700);
 if (RapidSub.canDelegate("setheadercolor")) { return __ref.runUserSub(false, "table","setheadercolor", __ref, _color);}
 RemoteObject _col = RemoteObject.createImmutable(0);
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -9380,7 +9380,7 @@ finally {
 		}}
 public static RemoteObject  _setheadercolors(RemoteObject __ref,RemoteObject _headercolors) throws Exception{
 try {
-		Debug.PushSubsStack("SetHeaderColors (table) ","table",19,__ref.getField(false, "ba"),__ref,3612);
+		Debug.PushSubsStack("SetHeaderColors (table) ","table",20,__ref.getField(false, "ba"),__ref,3612);
 if (RapidSub.canDelegate("setheadercolors")) { return __ref.runUserSub(false, "table","setheadercolors", __ref, _headercolors);}
 RemoteObject _col = RemoteObject.createImmutable(0);
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -9474,7 +9474,7 @@ finally {
 		}}
 public static RemoteObject  _setheaderheight(RemoteObject __ref,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("setHeaderHeight (table) ","table",19,__ref.getField(false, "ba"),__ref,2658);
+		Debug.PushSubsStack("setHeaderHeight (table) ","table",20,__ref.getField(false, "ba"),__ref,2658);
 if (RapidSub.canDelegate("setheaderheight")) { return __ref.runUserSub(false, "table","setheaderheight", __ref, _height);}
 int _col = 0;
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -9598,7 +9598,7 @@ finally {
 		}}
 public static RemoteObject  _setheadertextcolor(RemoteObject __ref,RemoteObject _color) throws Exception{
 try {
-		Debug.PushSubsStack("setHeaderTextColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2731);
+		Debug.PushSubsStack("setHeaderTextColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2731);
 if (RapidSub.canDelegate("setheadertextcolor")) { return __ref.runUserSub(false, "table","setheadertextcolor", __ref, _color);}
 RemoteObject _col = RemoteObject.createImmutable(0);
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -9692,7 +9692,7 @@ finally {
 		}}
 public static RemoteObject  _setheadertextcolors(RemoteObject __ref,RemoteObject _headertextcolors) throws Exception{
 try {
-		Debug.PushSubsStack("SetHeaderTextColors (table) ","table",19,__ref.getField(false, "ba"),__ref,3643);
+		Debug.PushSubsStack("SetHeaderTextColors (table) ","table",20,__ref.getField(false, "ba"),__ref,3643);
 if (RapidSub.canDelegate("setheadertextcolors")) { return __ref.runUserSub(false, "table","setheadertextcolors", __ref, _headertextcolors);}
 RemoteObject _col = RemoteObject.createImmutable(0);
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -9786,7 +9786,7 @@ finally {
 		}}
 public static RemoteObject  _setheadertypeface(RemoteObject __ref,RemoteObject _headertypeface) throws Exception{
 try {
-		Debug.PushSubsStack("setHeaderTypeFace (table) ","table",19,__ref.getField(false, "ba"),__ref,3674);
+		Debug.PushSubsStack("setHeaderTypeFace (table) ","table",20,__ref.getField(false, "ba"),__ref,3674);
 if (RapidSub.canDelegate("setheadertypeface")) { return __ref.runUserSub(false, "table","setheadertypeface", __ref, _headertypeface);}
 int _col = 0;
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -9880,7 +9880,7 @@ finally {
 		}}
 public static RemoteObject  _setheadertypefaces(RemoteObject __ref,RemoteObject _headertypefaces) throws Exception{
 try {
-		Debug.PushSubsStack("SetHeaderTypeFaces (table) ","table",19,__ref.getField(false, "ba"),__ref,3700);
+		Debug.PushSubsStack("SetHeaderTypeFaces (table) ","table",20,__ref.getField(false, "ba"),__ref,3700);
 if (RapidSub.canDelegate("setheadertypefaces")) { return __ref.runUserSub(false, "table","setheadertypefaces", __ref, _headertypefaces);}
 RemoteObject _col = RemoteObject.createImmutable(0);
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -9977,7 +9977,7 @@ Debug.ShouldStop(32768);
 table.__c.runVoidMethod ("ToastMessageShow",(Object)(BA.ObjectToCharSequence("Invalid number of columns")),(Object)(table.__c.getField(true,"False")));
  BA.debugLineNum = 3729;BA.debugLine="Log(\"SetHeaderTypeFaces: Invalid number of colu";
 Debug.ShouldStop(65536);
-table.__c.runVoidMethod ("LogImpl","432309277",RemoteObject.createImmutable("SetHeaderTypeFaces: Invalid number of columns"),0);
+table.__c.runVoidMethod ("LogImpl","332899101",RemoteObject.createImmutable("SetHeaderTypeFaces: Invalid number of columns"),0);
  BA.debugLineNum = 3730;BA.debugLine="Return";
 Debug.ShouldStop(131072);
 if (true) return RemoteObject.createImmutable("");
@@ -10074,7 +10074,7 @@ finally {
 		}}
 public static RemoteObject  _setheight(RemoteObject __ref,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("setHeight (table) ","table",19,__ref.getField(false, "ba"),__ref,2283);
+		Debug.PushSubsStack("setHeight (table) ","table",20,__ref.getField(false, "ba"),__ref,2283);
 if (RapidSub.canDelegate("setheight")) { return __ref.runUserSub(false, "table","setheight", __ref, _height);}
 Debug.locals.put("Height", _height);
  BA.debugLineNum = 2283;BA.debugLine="Public Sub setHeight(Height As Int)";
@@ -10129,7 +10129,7 @@ finally {
 		}}
 public static RemoteObject  _setleft(RemoteObject __ref,RemoteObject _left) throws Exception{
 try {
-		Debug.PushSubsStack("setLeft (table) ","table",19,__ref.getField(false, "ba"),__ref,2237);
+		Debug.PushSubsStack("setLeft (table) ","table",20,__ref.getField(false, "ba"),__ref,2237);
 if (RapidSub.canDelegate("setleft")) { return __ref.runUserSub(false, "table","setleft", __ref, _left);}
 Debug.locals.put("Left", _left);
  BA.debugLineNum = 2237;BA.debugLine="Public Sub setLeft(Left As Int)";
@@ -10152,7 +10152,7 @@ finally {
 		}}
 public static RemoteObject  _setlinewidth(RemoteObject __ref,RemoteObject _linewidth) throws Exception{
 try {
-		Debug.PushSubsStack("setLineWidth (table) ","table",19,__ref.getField(false, "ba"),__ref,2315);
+		Debug.PushSubsStack("setLineWidth (table) ","table",20,__ref.getField(false, "ba"),__ref,2315);
 if (RapidSub.canDelegate("setlinewidth")) { return __ref.runUserSub(false, "table","setlinewidth", __ref, _linewidth);}
 Debug.locals.put("LineWidth", _linewidth);
  BA.debugLineNum = 2315;BA.debugLine="Public Sub setLineWidth(LineWidth As Int)";
@@ -10172,7 +10172,7 @@ finally {
 		}}
 public static RemoteObject  _setmulticolumnsort(RemoteObject __ref,RemoteObject _bdo) throws Exception{
 try {
-		Debug.PushSubsStack("setMultiColumnSort (table) ","table",19,__ref.getField(false, "ba"),__ref,5022);
+		Debug.PushSubsStack("setMultiColumnSort (table) ","table",20,__ref.getField(false, "ba"),__ref,5022);
 if (RapidSub.canDelegate("setmulticolumnsort")) { return __ref.runUserSub(false, "table","setmulticolumnsort", __ref, _bdo);}
 Debug.locals.put("bDo", _bdo);
  BA.debugLineNum = 5022;BA.debugLine="Public Sub setMultiColumnSort(bDo As Boolean)";
@@ -10192,7 +10192,7 @@ finally {
 		}}
 public static RemoteObject  _setmultiselect(RemoteObject __ref,RemoteObject _multiselect) throws Exception{
 try {
-		Debug.PushSubsStack("setMultiSelect (table) ","table",19,__ref.getField(false, "ba"),__ref,2158);
+		Debug.PushSubsStack("setMultiSelect (table) ","table",20,__ref.getField(false, "ba"),__ref,2158);
 if (RapidSub.canDelegate("setmultiselect")) { return __ref.runUserSub(false, "table","setmultiselect", __ref, _multiselect);}
 Debug.locals.put("MultiSelect", _multiselect);
  BA.debugLineNum = 2158;BA.debugLine="Public Sub setMultiSelect(MultiSelect As Boolean)";
@@ -10215,7 +10215,7 @@ finally {
 		}}
 public static RemoteObject  _setnumberofcolumns(RemoteObject __ref,RemoteObject _numberofcolumns) throws Exception{
 try {
-		Debug.PushSubsStack("setNumberOfColumns (table) ","table",19,__ref.getField(false, "ba"),__ref,3979);
+		Debug.PushSubsStack("setNumberOfColumns (table) ","table",20,__ref.getField(false, "ba"),__ref,3979);
 if (RapidSub.canDelegate("setnumberofcolumns")) { return __ref.runUserSub(false, "table","setnumberofcolumns", __ref, _numberofcolumns);}
 int _col = 0;
 Debug.locals.put("NumberOfColumns", _numberofcolumns);
@@ -10271,7 +10271,7 @@ finally {
 		}}
 public static RemoteObject  _setnumberoffixedcolumns(RemoteObject __ref,RemoteObject _numberoffixedcolumns) throws Exception{
 try {
-		Debug.PushSubsStack("setNumberOfFixedColumns (table) ","table",19,__ref.getField(false, "ba"),__ref,4071);
+		Debug.PushSubsStack("setNumberOfFixedColumns (table) ","table",20,__ref.getField(false, "ba"),__ref,4071);
 if (RapidSub.canDelegate("setnumberoffixedcolumns")) { return __ref.runUserSub(false, "table","setnumberoffixedcolumns", __ref, _numberoffixedcolumns);}
 RemoteObject _col = RemoteObject.createImmutable(0);
 RemoteObject _headers = null;
@@ -10426,7 +10426,7 @@ finally {
 		}}
 public static RemoteObject  _setpadding(RemoteObject __ref,RemoteObject _v,RemoteObject _left,RemoteObject _top,RemoteObject _right,RemoteObject _bottom) throws Exception{
 try {
-		Debug.PushSubsStack("SetPadding (table) ","table",19,__ref.getField(false, "ba"),__ref,3492);
+		Debug.PushSubsStack("SetPadding (table) ","table",20,__ref.getField(false, "ba"),__ref,3492);
 if (RapidSub.canDelegate("setpadding")) { return __ref.runUserSub(false, "table","setpadding", __ref, _v, _left, _top, _right, _bottom);}
 Debug.locals.put("v", _v);
 Debug.locals.put("Left", _left);
@@ -10450,7 +10450,7 @@ finally {
 		}}
 public static RemoteObject  _setrowcolor1(RemoteObject __ref,RemoteObject _color) throws Exception{
 try {
-		Debug.PushSubsStack("setRowColor1 (table) ","table",19,__ref.getField(false, "ba"),__ref,2762);
+		Debug.PushSubsStack("setRowColor1 (table) ","table",20,__ref.getField(false, "ba"),__ref,2762);
 if (RapidSub.canDelegate("setrowcolor1")) { return __ref.runUserSub(false, "table","setrowcolor1", __ref, _color);}
 Debug.locals.put("Color", _color);
  BA.debugLineNum = 2762;BA.debugLine="Public Sub setRowColor1(Color As Int)";
@@ -10477,7 +10477,7 @@ finally {
 		}}
 public static RemoteObject  _setrowcolor2(RemoteObject __ref,RemoteObject _color) throws Exception{
 try {
-		Debug.PushSubsStack("setRowColor2 (table) ","table",19,__ref.getField(false, "ba"),__ref,2774);
+		Debug.PushSubsStack("setRowColor2 (table) ","table",20,__ref.getField(false, "ba"),__ref,2774);
 if (RapidSub.canDelegate("setrowcolor2")) { return __ref.runUserSub(false, "table","setrowcolor2", __ref, _color);}
 Debug.locals.put("Color", _color);
  BA.debugLineNum = 2774;BA.debugLine="Public Sub setRowColor2(Color As Int)";
@@ -10504,7 +10504,7 @@ finally {
 		}}
 public static RemoteObject  _setrowcolorn(RemoteObject __ref,RemoteObject _row,RemoteObject _color) throws Exception{
 try {
-		Debug.PushSubsStack("SetRowColorN (table) ","table",19,__ref.getField(false, "ba"),__ref,2786);
+		Debug.PushSubsStack("SetRowColorN (table) ","table",20,__ref.getField(false, "ba"),__ref,2786);
 if (RapidSub.canDelegate("setrowcolorn")) { return __ref.runUserSub(false, "table","setrowcolorn", __ref, _row, _color);}
 RemoteObject _col = RemoteObject.createImmutable(0);
 RemoteObject _new = RemoteObject.createImmutable(false);
@@ -10590,7 +10590,7 @@ finally {
 		}}
 public static RemoteObject  _setrowheight(RemoteObject __ref,RemoteObject _rowheight) throws Exception{
 try {
-		Debug.PushSubsStack("setRowHeight (table) ","table",19,__ref.getField(false, "ba"),__ref,2986);
+		Debug.PushSubsStack("setRowHeight (table) ","table",20,__ref.getField(false, "ba"),__ref,2986);
 if (RapidSub.canDelegate("setrowheight")) { return __ref.runUserSub(false, "table","setrowheight", __ref, _rowheight);}
 Debug.locals.put("RowHeight", _rowheight);
  BA.debugLineNum = 2986;BA.debugLine="Public Sub setRowHeight(RowHeight As Int)";
@@ -10617,7 +10617,7 @@ finally {
 		}}
 public static RemoteObject  _setselectedcellcolor(RemoteObject __ref,RemoteObject _color) throws Exception{
 try {
-		Debug.PushSubsStack("setSelectedCellColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2856);
+		Debug.PushSubsStack("setSelectedCellColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2856);
 if (RapidSub.canDelegate("setselectedcellcolor")) { return __ref.runUserSub(false, "table","setselectedcellcolor", __ref, _color);}
 Debug.locals.put("Color", _color);
  BA.debugLineNum = 2856;BA.debugLine="Public Sub setSelectedCellColor(Color As Int)";
@@ -10644,7 +10644,7 @@ finally {
 		}}
 public static RemoteObject  _setselectedcelltextcolor(RemoteObject __ref,RemoteObject _textcolor) throws Exception{
 try {
-		Debug.PushSubsStack("setSelectedCellTextColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2868);
+		Debug.PushSubsStack("setSelectedCellTextColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2868);
 if (RapidSub.canDelegate("setselectedcelltextcolor")) { return __ref.runUserSub(false, "table","setselectedcelltextcolor", __ref, _textcolor);}
 Debug.locals.put("TextColor", _textcolor);
  BA.debugLineNum = 2868;BA.debugLine="Public Sub setSelectedCellTextColor(TextColor As I";
@@ -10671,7 +10671,7 @@ finally {
 		}}
 public static RemoteObject  _setselectedrowcolor(RemoteObject __ref,RemoteObject _color) throws Exception{
 try {
-		Debug.PushSubsStack("setSelectedRowColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2832);
+		Debug.PushSubsStack("setSelectedRowColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2832);
 if (RapidSub.canDelegate("setselectedrowcolor")) { return __ref.runUserSub(false, "table","setselectedrowcolor", __ref, _color);}
 Debug.locals.put("Color", _color);
  BA.debugLineNum = 2832;BA.debugLine="Public Sub setSelectedRowColor(Color As Int)";
@@ -10698,7 +10698,7 @@ finally {
 		}}
 public static RemoteObject  _setselectedrowtextcolor(RemoteObject __ref,RemoteObject _textcolor) throws Exception{
 try {
-		Debug.PushSubsStack("setSelectedRowTextColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2844);
+		Debug.PushSubsStack("setSelectedRowTextColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2844);
 if (RapidSub.canDelegate("setselectedrowtextcolor")) { return __ref.runUserSub(false, "table","setselectedrowtextcolor", __ref, _textcolor);}
 Debug.locals.put("TextColor", _textcolor);
  BA.debugLineNum = 2844;BA.debugLine="Public Sub setSelectedRowTextColor(TextColor As In";
@@ -10725,7 +10725,7 @@ finally {
 		}}
 public static RemoteObject  _setshowstatusline(RemoteObject __ref,RemoteObject _showstatusline) throws Exception{
 try {
-		Debug.PushSubsStack("setShowStatusLine (table) ","table",19,__ref.getField(false, "ba"),__ref,3819);
+		Debug.PushSubsStack("setShowStatusLine (table) ","table",20,__ref.getField(false, "ba"),__ref,3819);
 if (RapidSub.canDelegate("setshowstatusline")) { return __ref.runUserSub(false, "table","setshowstatusline", __ref, _showstatusline);}
 Debug.locals.put("ShowStatusLine", _showstatusline);
  BA.debugLineNum = 3819;BA.debugLine="Public Sub setShowStatusLine(ShowStatusLine As Boo";
@@ -10775,7 +10775,7 @@ finally {
 		}}
 public static RemoteObject  _setsingleline(RemoteObject __ref,RemoteObject _singleline) throws Exception{
 try {
-		Debug.PushSubsStack("setSingleLine (table) ","table",19,__ref.getField(false, "ba"),__ref,3764);
+		Debug.PushSubsStack("setSingleLine (table) ","table",20,__ref.getField(false, "ba"),__ref,3764);
 if (RapidSub.canDelegate("setsingleline")) { return __ref.runUserSub(false, "table","setsingleline", __ref, _singleline);}
 RemoteObject _row = RemoteObject.createImmutable(0);
 RemoteObject _col = RemoteObject.createImmutable(0);
@@ -10844,7 +10844,7 @@ finally {
 		}}
 public static RemoteObject  _setsortbitmapcolor(RemoteObject __ref,RemoteObject _color) throws Exception{
 try {
-		Debug.PushSubsStack("setSortBitmapColor (table) ","table",19,__ref.getField(false, "ba"),__ref,4039);
+		Debug.PushSubsStack("setSortBitmapColor (table) ","table",20,__ref.getField(false, "ba"),__ref,4039);
 if (RapidSub.canDelegate("setsortbitmapcolor")) { return __ref.runUserSub(false, "table","setsortbitmapcolor", __ref, _color);}
 Debug.locals.put("Color", _color);
  BA.debugLineNum = 4039;BA.debugLine="Public Sub setSortBitmapColor(Color As Int)";
@@ -10867,7 +10867,7 @@ finally {
 		}}
 public static RemoteObject  _setsortbitmapwidth(RemoteObject __ref,RemoteObject _width) throws Exception{
 try {
-		Debug.PushSubsStack("setSortBitmapWidth (table) ","table",19,__ref.getField(false, "ba"),__ref,4029);
+		Debug.PushSubsStack("setSortBitmapWidth (table) ","table",20,__ref.getField(false, "ba"),__ref,4029);
 if (RapidSub.canDelegate("setsortbitmapwidth")) { return __ref.runUserSub(false, "table","setsortbitmapwidth", __ref, _width);}
 Debug.locals.put("Width", _width);
  BA.debugLineNum = 4029;BA.debugLine="Public Sub setSortBitmapWidth(Width As Int)";
@@ -10890,7 +10890,7 @@ finally {
 		}}
 public static RemoteObject  _setsortcaseinsensitive(RemoteObject __ref,RemoteObject _bdo) throws Exception{
 try {
-		Debug.PushSubsStack("setSortCaseInsensitive (table) ","table",19,__ref.getField(false, "ba"),__ref,5030);
+		Debug.PushSubsStack("setSortCaseInsensitive (table) ","table",20,__ref.getField(false, "ba"),__ref,5030);
 if (RapidSub.canDelegate("setsortcaseinsensitive")) { return __ref.runUserSub(false, "table","setsortcaseinsensitive", __ref, _bdo);}
 Debug.locals.put("bDo", _bdo);
  BA.debugLineNum = 5030;BA.debugLine="Public Sub setSortCaseInsensitive(bDo As Boolean)";
@@ -10910,7 +10910,7 @@ finally {
 		}}
 public static RemoteObject  _setsortcolumn(RemoteObject __ref,RemoteObject _sortcolumn) throws Exception{
 try {
-		Debug.PushSubsStack("setSortColumn (table) ","table",19,__ref.getField(false, "ba"),__ref,3497);
+		Debug.PushSubsStack("setSortColumn (table) ","table",20,__ref.getField(false, "ba"),__ref,3497);
 if (RapidSub.canDelegate("setsortcolumn")) { return __ref.runUserSub(false, "table","setsortcolumn", __ref, _sortcolumn);}
 Debug.locals.put("SortColumn", _sortcolumn);
  BA.debugLineNum = 3497;BA.debugLine="Public Sub setSortColumn(SortColumn As Boolean)";
@@ -10930,7 +10930,7 @@ finally {
 		}}
 public static RemoteObject  _setsortingbitmaps(RemoteObject __ref,RemoteObject _bitmapascfilename,RemoteObject _bitmapdesfilename) throws Exception{
 try {
-		Debug.PushSubsStack("SetSortingBitmaps (table) ","table",19,__ref.getField(false, "ba"),__ref,4054);
+		Debug.PushSubsStack("SetSortingBitmaps (table) ","table",20,__ref.getField(false, "ba"),__ref,4054);
 if (RapidSub.canDelegate("setsortingbitmaps")) { return __ref.runUserSub(false, "table","setsortingbitmaps", __ref, _bitmapascfilename, _bitmapdesfilename);}
 Debug.locals.put("BitmapAscFilename", _bitmapascfilename);
 Debug.locals.put("BitmapDesFilename", _bitmapdesfilename);
@@ -10957,7 +10957,7 @@ finally {
 		}}
 public static RemoteObject  _setsortremoveaccents(RemoteObject __ref,RemoteObject _sortremoveaccents) throws Exception{
 try {
-		Debug.PushSubsStack("setSortRemoveAccents (table) ","table",19,__ref.getField(false, "ba"),__ref,4008);
+		Debug.PushSubsStack("setSortRemoveAccents (table) ","table",20,__ref.getField(false, "ba"),__ref,4008);
 if (RapidSub.canDelegate("setsortremoveaccents")) { return __ref.runUserSub(false, "table","setsortremoveaccents", __ref, _sortremoveaccents);}
 Debug.locals.put("SortRemoveAccents", _sortremoveaccents);
  BA.debugLineNum = 4008;BA.debugLine="Public Sub setSortRemoveAccents(SortRemoveAccents";
@@ -10977,7 +10977,7 @@ finally {
 		}}
 public static RemoteObject  _setstatusline(RemoteObject __ref,RemoteObject _text) throws Exception{
 try {
-		Debug.PushSubsStack("setStatusLine (table) ","table",19,__ref.getField(false, "ba"),__ref,2210);
+		Debug.PushSubsStack("setStatusLine (table) ","table",20,__ref.getField(false, "ba"),__ref,2210);
 if (RapidSub.canDelegate("setstatusline")) { return __ref.runUserSub(false, "table","setstatusline", __ref, _text);}
 Debug.locals.put("Text", _text);
  BA.debugLineNum = 2210;BA.debugLine="Public Sub setStatusLine(Text As String)";
@@ -10998,7 +10998,7 @@ finally {
 		}}
 public static RemoteObject  _setstatuslineheight(RemoteObject __ref,RemoteObject _statuslineheight) throws Exception{
 try {
-		Debug.PushSubsStack("setStatusLineHeight (table) ","table",19,__ref.getField(false, "ba"),__ref,2998);
+		Debug.PushSubsStack("setStatusLineHeight (table) ","table",20,__ref.getField(false, "ba"),__ref,2998);
 if (RapidSub.canDelegate("setstatuslineheight")) { return __ref.runUserSub(false, "table","setstatuslineheight", __ref, _statuslineheight);}
 Debug.locals.put("StatusLineHeight", _statuslineheight);
  BA.debugLineNum = 2998;BA.debugLine="Public Sub setStatusLineHeight(StatusLineHeight As";
@@ -11018,7 +11018,7 @@ finally {
 		}}
 public static RemoteObject  _settablecolor(RemoteObject __ref,RemoteObject _color) throws Exception{
 try {
-		Debug.PushSubsStack("setTableColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2880);
+		Debug.PushSubsStack("setTableColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2880);
 if (RapidSub.canDelegate("settablecolor")) { return __ref.runUserSub(false, "table","settablecolor", __ref, _color);}
 Debug.locals.put("Color", _color);
  BA.debugLineNum = 2880;BA.debugLine="Public Sub setTableColor(Color As Int)";
@@ -11058,7 +11058,7 @@ finally {
 		}}
 public static RemoteObject  _settag(RemoteObject __ref,RemoteObject _tag) throws Exception{
 try {
-		Debug.PushSubsStack("setTag (table) ","table",19,__ref.getField(false, "ba"),__ref,3914);
+		Debug.PushSubsStack("setTag (table) ","table",20,__ref.getField(false, "ba"),__ref,3914);
 if (RapidSub.canDelegate("settag")) { return __ref.runUserSub(false, "table","settag", __ref, _tag);}
 Debug.locals.put("Tag", _tag);
  BA.debugLineNum = 3914;BA.debugLine="Public Sub setTag(Tag As Object)";
@@ -11078,7 +11078,7 @@ finally {
 		}}
 public static RemoteObject  _settextcolor(RemoteObject __ref,RemoteObject _color) throws Exception{
 try {
-		Debug.PushSubsStack("setTextColor (table) ","table",19,__ref.getField(false, "ba"),__ref,2897);
+		Debug.PushSubsStack("setTextColor (table) ","table",20,__ref.getField(false, "ba"),__ref,2897);
 if (RapidSub.canDelegate("settextcolor")) { return __ref.runUserSub(false, "table","settextcolor", __ref, _color);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -11182,7 +11182,7 @@ finally {
 		}}
 public static RemoteObject  _settextcolors(RemoteObject __ref,RemoteObject _textcolors) throws Exception{
 try {
-		Debug.PushSubsStack("SetTextColors (table) ","table",19,__ref.getField(false, "ba"),__ref,3569);
+		Debug.PushSubsStack("SetTextColors (table) ","table",20,__ref.getField(false, "ba"),__ref,3569);
 if (RapidSub.canDelegate("settextcolors")) { return __ref.runUserSub(false, "table","settextcolors", __ref, _textcolors);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _col = RemoteObject.createImmutable(0);
@@ -11312,7 +11312,7 @@ finally {
 		}}
 public static RemoteObject  _settextsize(RemoteObject __ref,RemoteObject _size) throws Exception{
 try {
-		Debug.PushSubsStack("setTextSize (table) ","table",19,__ref.getField(false, "ba"),__ref,2931);
+		Debug.PushSubsStack("setTextSize (table) ","table",20,__ref.getField(false, "ba"),__ref,2931);
 if (RapidSub.canDelegate("settextsize")) { return __ref.runUserSub(false, "table","settextsize", __ref, _size);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -11478,7 +11478,7 @@ finally {
 		}}
 public static RemoteObject  _settop(RemoteObject __ref,RemoteObject _top) throws Exception{
 try {
-		Debug.PushSubsStack("setTop (table) ","table",19,__ref.getField(false, "ba"),__ref,2247);
+		Debug.PushSubsStack("setTop (table) ","table",20,__ref.getField(false, "ba"),__ref,2247);
 if (RapidSub.canDelegate("settop")) { return __ref.runUserSub(false, "table","settop", __ref, _top);}
 Debug.locals.put("Top", _top);
  BA.debugLineNum = 2247;BA.debugLine="Public Sub setTop(Top As Int)";
@@ -11501,7 +11501,7 @@ finally {
 		}}
 public static RemoteObject  _settypefaces(RemoteObject __ref,RemoteObject _typefaces) throws Exception{
 try {
-		Debug.PushSubsStack("SetTypeFaces (table) ","table",19,__ref.getField(false, "ba"),__ref,3013);
+		Debug.PushSubsStack("SetTypeFaces (table) ","table",20,__ref.getField(false, "ba"),__ref,3013);
 if (RapidSub.canDelegate("settypefaces")) { return __ref.runUserSub(false, "table","settypefaces", __ref, _typefaces);}
 Debug.locals.put("TypeFaces", _typefaces);
  BA.debugLineNum = 3013;BA.debugLine="Public Sub SetTypeFaces(TypeFaces() As Typeface)";
@@ -11555,7 +11555,7 @@ finally {
 		}}
 public static RemoteObject  _setusecolumncolors(RemoteObject __ref,RemoteObject _usecolumncolors) throws Exception{
 try {
-		Debug.PushSubsStack("setUseColumnColors (table) ","table",19,__ref.getField(false, "ba"),__ref,3506);
+		Debug.PushSubsStack("setUseColumnColors (table) ","table",20,__ref.getField(false, "ba"),__ref,3506);
 if (RapidSub.canDelegate("setusecolumncolors")) { return __ref.runUserSub(false, "table","setusecolumncolors", __ref, _usecolumncolors);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 Debug.locals.put("UseColumnColors", _usecolumncolors);
@@ -11662,7 +11662,7 @@ finally {
 		}}
 public static RemoteObject  _setvalue(RemoteObject __ref,RemoteObject _col,RemoteObject _row,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SetValue (table) ","table",19,__ref.getField(false, "ba"),__ref,1615);
+		Debug.PushSubsStack("SetValue (table) ","table",20,__ref.getField(false, "ba"),__ref,1615);
 if (RapidSub.canDelegate("setvalue")) { return __ref.runUserSub(false, "table","setvalue", __ref, _col, _row, _value);}
 RemoteObject _values = null;
 RemoteObject _lbls = null;
@@ -11705,7 +11705,7 @@ finally {
 		}}
 public static RemoteObject  _setvisible(RemoteObject __ref,RemoteObject _visible) throws Exception{
 try {
-		Debug.PushSubsStack("setVisible (table) ","table",19,__ref.getField(false, "ba"),__ref,2306);
+		Debug.PushSubsStack("setVisible (table) ","table",20,__ref.getField(false, "ba"),__ref,2306);
 if (RapidSub.canDelegate("setvisible")) { return __ref.runUserSub(false, "table","setvisible", __ref, _visible);}
 Debug.locals.put("Visible", _visible);
  BA.debugLineNum = 2306;BA.debugLine="Public Sub setVisible(Visible As Boolean)";
@@ -11725,7 +11725,7 @@ finally {
 		}}
 public static RemoteObject  _setwidth(RemoteObject __ref,RemoteObject _width) throws Exception{
 try {
-		Debug.PushSubsStack("setWidth (table) ","table",19,__ref.getField(false, "ba"),__ref,2257);
+		Debug.PushSubsStack("setWidth (table) ","table",20,__ref.getField(false, "ba"),__ref,2257);
 if (RapidSub.canDelegate("setwidth")) { return __ref.runUserSub(false, "table","setwidth", __ref, _width);}
 Debug.locals.put("Width", _width);
  BA.debugLineNum = 2257;BA.debugLine="Public Sub setWidth(Width As Int)";
@@ -11762,7 +11762,7 @@ finally {
 		}}
 public static RemoteObject  _setzeroselection(RemoteObject __ref,RemoteObject _zeroselection) throws Exception{
 try {
-		Debug.PushSubsStack("setZeroSelection (table) ","table",19,__ref.getField(false, "ba"),__ref,4063);
+		Debug.PushSubsStack("setZeroSelection (table) ","table",20,__ref.getField(false, "ba"),__ref,4063);
 if (RapidSub.canDelegate("setzeroselection")) { return __ref.runUserSub(false, "table","setzeroselection", __ref, _zeroselection);}
 Debug.locals.put("ZeroSelection", _zeroselection);
  BA.debugLineNum = 4063;BA.debugLine="Public Sub setZeroSelection(ZeroSelection As Boole";
@@ -11782,7 +11782,7 @@ finally {
 		}}
 public static RemoteObject  _showheadersorting(RemoteObject __ref,RemoteObject _col,RemoteObject _dir) throws Exception{
 try {
-		Debug.PushSubsStack("showHeaderSorting (table) ","table",19,__ref.getField(false, "ba"),__ref,2375);
+		Debug.PushSubsStack("showHeaderSorting (table) ","table",20,__ref.getField(false, "ba"),__ref,2375);
 if (RapidSub.canDelegate("showheadersorting")) { return __ref.runUserSub(false, "table","showheadersorting", __ref, _col, _dir);}
 RemoteObject _l = RemoteObject.createImmutable(0);
 RemoteObject _t = RemoteObject.createImmutable(0);
@@ -11886,7 +11886,7 @@ finally {
 		}}
 public static void  _showrow(RemoteObject __ref,RemoteObject _row) throws Exception{
 try {
-		Debug.PushSubsStack("ShowRow (table) ","table",19,__ref.getField(false, "ba"),__ref,1302);
+		Debug.PushSubsStack("ShowRow (table) ","table",20,__ref.getField(false, "ba"),__ref,1302);
 if (RapidSub.canDelegate("showrow")) { __ref.runUserSub(false, "table","showrow", __ref, _row); return;}
 ResumableSub_ShowRow rsub = new ResumableSub_ShowRow(null,__ref,_row);
 rsub.resume(null, null);
@@ -11921,7 +11921,7 @@ int limit53;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("ShowRow (table) ","table",19,__ref.getField(false, "ba"),__ref,1302);
+		Debug.PushSubsStack("ShowRow (table) ","table",20,__ref.getField(false, "ba"),__ref,1302);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -12651,7 +12651,7 @@ finally {
 }
 public static RemoteObject  _snapshot(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("SnapShot (table) ","table",19,__ref.getField(false, "ba"),__ref,4276);
+		Debug.PushSubsStack("SnapShot (table) ","table",20,__ref.getField(false, "ba"),__ref,4276);
 if (RapidSub.canDelegate("snapshot")) { return __ref.runUserSub(false, "table","snapshot", __ref);}
 RemoteObject _bmpsnapshot = RemoteObject.declareNull("anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper");
 RemoteObject _xpnltable = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
@@ -12684,7 +12684,7 @@ finally {
 		}}
 public static RemoteObject  _sortomdoubleidx(RemoteObject __ref,RemoteObject _arrdouble,RemoteObject _bascending,RemoteObject _istart,RemoteObject _iend) throws Exception{
 try {
-		Debug.PushSubsStack("SortOMDoubleIDX (table) ","table",19,__ref.getField(false, "ba"),__ref,4614);
+		Debug.PushSubsStack("SortOMDoubleIDX (table) ","table",20,__ref.getField(false, "ba"),__ref,4614);
 if (RapidSub.canDelegate("sortomdoubleidx")) { return __ref.runUserSub(false, "table","sortomdoubleidx", __ref, _arrdouble, _bascending, _istart, _iend);}
 RemoteObject _i = RemoteObject.createImmutable(0L);
 RemoteObject _c = RemoteObject.createImmutable(0L);
@@ -12827,7 +12827,7 @@ finally {
 		}}
 public static RemoteObject  _sortomdoubleidx2(RemoteObject __ref,RemoteObject _arrdouble,RemoteObject _arrindex,RemoteObject _bascending,RemoteObject _istart,RemoteObject _iend) throws Exception{
 try {
-		Debug.PushSubsStack("SortOMDoubleIDX2 (table) ","table",19,__ref.getField(false, "ba"),__ref,4664);
+		Debug.PushSubsStack("SortOMDoubleIDX2 (table) ","table",20,__ref.getField(false, "ba"),__ref,4664);
 if (RapidSub.canDelegate("sortomdoubleidx2")) { return __ref.runUserSub(false, "table","sortomdoubleidx2", __ref, _arrdouble, _arrindex, _bascending, _istart, _iend);}
 RemoteObject _i = RemoteObject.createImmutable(0L);
 RemoteObject _c = RemoteObject.createImmutable(0L);
@@ -12970,7 +12970,7 @@ finally {
 		}}
 public static RemoteObject  _sortomlongidx(RemoteObject __ref,RemoteObject _arrlong,RemoteObject _bascending,RemoteObject _istart,RemoteObject _iend) throws Exception{
 try {
-		Debug.PushSubsStack("SortOMLongIDX (table) ","table",19,__ref.getField(false, "ba"),__ref,4456);
+		Debug.PushSubsStack("SortOMLongIDX (table) ","table",20,__ref.getField(false, "ba"),__ref,4456);
 if (RapidSub.canDelegate("sortomlongidx")) { return __ref.runUserSub(false, "table","sortomlongidx", __ref, _arrlong, _bascending, _istart, _iend);}
 RemoteObject _i = RemoteObject.createImmutable(0L);
 RemoteObject _c = RemoteObject.createImmutable(0L);
@@ -13113,7 +13113,7 @@ finally {
 		}}
 public static RemoteObject  _sortomlongidx2(RemoteObject __ref,RemoteObject _arrlong,RemoteObject _arrindex,RemoteObject _bascending,RemoteObject _istart,RemoteObject _iend) throws Exception{
 try {
-		Debug.PushSubsStack("SortOMLongIDX2 (table) ","table",19,__ref.getField(false, "ba"),__ref,4535);
+		Debug.PushSubsStack("SortOMLongIDX2 (table) ","table",20,__ref.getField(false, "ba"),__ref,4535);
 if (RapidSub.canDelegate("sortomlongidx2")) { return __ref.runUserSub(false, "table","sortomlongidx2", __ref, _arrlong, _arrindex, _bascending, _istart, _iend);}
 RemoteObject _i = RemoteObject.createImmutable(0L);
 RemoteObject _c = RemoteObject.createImmutable(0L);
@@ -13256,7 +13256,7 @@ finally {
 		}}
 public static RemoteObject  _sortomstringidx(RemoteObject __ref,RemoteObject _arrstring,RemoteObject _bascending,RemoteObject _bcaseinsensitive,RemoteObject _istart,RemoteObject _iend) throws Exception{
 try {
-		Debug.PushSubsStack("SortOMStringIDX (table) ","table",19,__ref.getField(false, "ba"),__ref,4714);
+		Debug.PushSubsStack("SortOMStringIDX (table) ","table",20,__ref.getField(false, "ba"),__ref,4714);
 if (RapidSub.canDelegate("sortomstringidx")) { return __ref.runUserSub(false, "table","sortomstringidx", __ref, _arrstring, _bascending, _bcaseinsensitive, _istart, _iend);}
 RemoteObject _i = RemoteObject.createImmutable(0L);
 RemoteObject _c = RemoteObject.createImmutable(0L);
@@ -13408,7 +13408,7 @@ finally {
 		}}
 public static RemoteObject  _sortomstringidx2(RemoteObject __ref,RemoteObject _arrstring,RemoteObject _arrindex,RemoteObject _bascending,RemoteObject _bcaseinsensitive,RemoteObject _istart,RemoteObject _iend) throws Exception{
 try {
-		Debug.PushSubsStack("SortOMStringIDX2 (table) ","table",19,__ref.getField(false, "ba"),__ref,4805);
+		Debug.PushSubsStack("SortOMStringIDX2 (table) ","table",20,__ref.getField(false, "ba"),__ref,4805);
 if (RapidSub.canDelegate("sortomstringidx2")) { return __ref.runUserSub(false, "table","sortomstringidx2", __ref, _arrstring, _arrindex, _bascending, _bcaseinsensitive, _istart, _iend);}
 RemoteObject _i = RemoteObject.createImmutable(0L);
 RemoteObject _c = RemoteObject.createImmutable(0L);
@@ -13560,7 +13560,7 @@ finally {
 		}}
 public static RemoteObject  _sorttable2(RemoteObject __ref,RemoteObject _col,RemoteObject _bascending) throws Exception{
 try {
-		Debug.PushSubsStack("SortTable2 (table) ","table",19,__ref.getField(false, "ba"),__ref,4289);
+		Debug.PushSubsStack("SortTable2 (table) ","table",20,__ref.getField(false, "ba"),__ref,4289);
 if (RapidSub.canDelegate("sorttable2")) { return __ref.runUserSub(false, "table","sorttable2", __ref, _col, _bascending);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _iub = RemoteObject.createImmutable(0);
@@ -13632,7 +13632,7 @@ Debug.ShouldStop(1);
 if (RemoteObject.solveBoolean("=",__ref.getField(false,"_arrdatasorted" /*RemoteObject*/ ).getArrayElement(true,_col),table.__c.getField(true,"False"))) { 
  BA.debugLineNum = 4322;BA.debugLine="Log(\"SortTable2, cColumnDataType(\" & Col & \"): \"";
 Debug.ShouldStop(2);
-table.__c.runVoidMethod ("LogImpl","435520545",RemoteObject.concat(RemoteObject.createImmutable("SortTable2, cColumnDataType("),_col,RemoteObject.createImmutable("): "),__ref.getField(false,"_ccolumndatatype" /*RemoteObject*/ ).getArrayElement(true,_col)),0);
+table.__c.runVoidMethod ("LogImpl","336110369",RemoteObject.concat(RemoteObject.createImmutable("SortTable2, cColumnDataType("),_col,RemoteObject.createImmutable("): "),__ref.getField(false,"_ccolumndatatype" /*RemoteObject*/ ).getArrayElement(true,_col)),0);
  BA.debugLineNum = 4323;BA.debugLine="Select Case cColumnDataType(Col)";
 Debug.ShouldStop(4);
 switch (BA.switchObjectToInt(__ref.getField(false,"_ccolumndatatype" /*RemoteObject*/ ).getArrayElement(true,_col),BA.ObjectToString("I"),BA.ObjectToString("L"),BA.ObjectToString("R"),BA.ObjectToString("T"),BA.ObjectToString("N"),BA.ObjectToString("B"))) {
@@ -13738,7 +13738,7 @@ Debug.ShouldStop(16384);
 if (RemoteObject.solveBoolean("=",__ref.getField(false,"_arrdatasorted" /*RemoteObject*/ ).getArrayElement(true,_col),table.__c.getField(true,"False"))) { 
  BA.debugLineNum = 4368;BA.debugLine="Log(\"SortTable2, cColumnDataType(\" & Col & \"): \"";
 Debug.ShouldStop(32768);
-table.__c.runVoidMethod ("LogImpl","435520591",RemoteObject.concat(RemoteObject.createImmutable("SortTable2, cColumnDataType("),_col,RemoteObject.createImmutable("): "),__ref.getField(false,"_ccolumndatatype" /*RemoteObject*/ ).getArrayElement(true,_col)),0);
+table.__c.runVoidMethod ("LogImpl","336110415",RemoteObject.concat(RemoteObject.createImmutable("SortTable2, cColumnDataType("),_col,RemoteObject.createImmutable("): "),__ref.getField(false,"_ccolumndatatype" /*RemoteObject*/ ).getArrayElement(true,_col)),0);
  BA.debugLineNum = 4369;BA.debugLine="Select Case cColumnDataType(Col)";
 Debug.ShouldStop(65536);
 switch (BA.switchObjectToInt(__ref.getField(false,"_ccolumndatatype" /*RemoteObject*/ ).getArrayElement(true,_col),BA.ObjectToString("I"),BA.ObjectToString("L"),BA.ObjectToString("R"),BA.ObjectToString("T"),BA.ObjectToString("N"),BA.ObjectToString("B"))) {
@@ -13880,7 +13880,7 @@ finally {
 		}}
 public static RemoteObject  _sv2_scrollchanged(RemoteObject __ref,RemoteObject _posx,RemoteObject _posy) throws Exception{
 try {
-		Debug.PushSubsStack("SV2_ScrollChanged (table) ","table",19,__ref.getField(false, "ba"),__ref,1165);
+		Debug.PushSubsStack("SV2_ScrollChanged (table) ","table",20,__ref.getField(false, "ba"),__ref,1165);
 if (RapidSub.canDelegate("sv2_scrollchanged")) { return __ref.runUserSub(false, "table","sv2_scrollchanged", __ref, _posx, _posy);}
 Debug.locals.put("PosX", _posx);
 Debug.locals.put("PosY", _posy);
@@ -13940,7 +13940,7 @@ finally {
 		}}
 public static RemoteObject  _svf_scrollchanged(RemoteObject __ref,RemoteObject _position) throws Exception{
 try {
-		Debug.PushSubsStack("SVF_ScrollChanged (table) ","table",19,__ref.getField(false, "ba"),__ref,1156);
+		Debug.PushSubsStack("SVF_ScrollChanged (table) ","table",20,__ref.getField(false, "ba"),__ref,1156);
 if (RapidSub.canDelegate("svf_scrollchanged")) { return __ref.runUserSub(false, "table","svf_scrollchanged", __ref, _position);}
 Debug.locals.put("Position", _position);
  BA.debugLineNum = 1156;BA.debugLine="Private Sub SVF_ScrollChanged(Position As Int)";
@@ -13973,7 +13973,7 @@ finally {
 		}}
 public static RemoteObject  _unhidecol(RemoteObject __ref,RemoteObject _col,RemoteObject _newsize) throws Exception{
 try {
-		Debug.PushSubsStack("unHideCol (table) ","table",19,__ref.getField(false, "ba"),__ref,2201);
+		Debug.PushSubsStack("unHideCol (table) ","table",20,__ref.getField(false, "ba"),__ref,2201);
 if (RapidSub.canDelegate("unhidecol")) { return __ref.runUserSub(false, "table","unhidecol", __ref, _col, _newsize);}
 RemoteObject _tmpwidths = null;
 int _i = 0;
@@ -14016,7 +14016,7 @@ finally {
 		}}
 public static RemoteObject  _unselectrow(RemoteObject __ref,RemoteObject _row) throws Exception{
 try {
-		Debug.PushSubsStack("UnselectRow (table) ","table",19,__ref.getField(false, "ba"),__ref,1681);
+		Debug.PushSubsStack("UnselectRow (table) ","table",20,__ref.getField(false, "ba"),__ref,1681);
 if (RapidSub.canDelegate("unselectrow")) { return __ref.runUserSub(false, "table","unselectrow", __ref, _row);}
 RemoteObject _previndex = RemoteObject.createImmutable(0);
 Debug.locals.put("Row", _row);
@@ -14064,7 +14064,7 @@ finally {
 		}}
 public static RemoteObject  _updatecell(RemoteObject __ref,RemoteObject _col,RemoteObject _row,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("UpdateCell (table) ","table",19,__ref.getField(false, "ba"),__ref,2086);
+		Debug.PushSubsStack("UpdateCell (table) ","table",20,__ref.getField(false, "ba"),__ref,2086);
 if (RapidSub.canDelegate("updatecell")) { return __ref.runUserSub(false, "table","updatecell", __ref, _col, _row, _value);}
 Debug.locals.put("Col", _col);
 Debug.locals.put("Row", _row);
@@ -14096,7 +14096,7 @@ finally {
 		}}
 public static RemoteObject  _updateiplocation(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("updateIPLocation (table) ","table",19,__ref.getField(false, "ba"),__ref,2222);
+		Debug.PushSubsStack("updateIPLocation (table) ","table",20,__ref.getField(false, "ba"),__ref,2222);
 if (RapidSub.canDelegate("updateiplocation")) { return __ref.runUserSub(false, "table","updateiplocation", __ref);}
  BA.debugLineNum = 2222;BA.debugLine="Private Sub updateIPLocation";
 Debug.ShouldStop(8192);
@@ -14126,7 +14126,7 @@ finally {
 		}}
 public static RemoteObject  _updaterow(RemoteObject __ref,RemoteObject _row,RemoteObject _values) throws Exception{
 try {
-		Debug.PushSubsStack("UpdateRow (table) ","table",19,__ref.getField(false, "ba"),__ref,2072);
+		Debug.PushSubsStack("UpdateRow (table) ","table",20,__ref.getField(false, "ba"),__ref,2072);
 if (RapidSub.canDelegate("updaterow")) { return __ref.runUserSub(false, "table","updaterow", __ref, _row, _values);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 Debug.locals.put("Row", _row);

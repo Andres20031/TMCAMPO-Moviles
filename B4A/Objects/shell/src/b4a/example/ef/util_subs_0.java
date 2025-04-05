@@ -13,7 +13,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (util) ","util",20,__ref.getField(false, "ba"),__ref,6);
+		Debug.PushSubsStack("Initialize (util) ","util",21,__ref.getField(false, "ba"),__ref,6);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "util","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -31,7 +31,7 @@ finally {
 		}}
 public static RemoteObject  _setstatusbarcolor(RemoteObject __ref,RemoteObject _clr,RemoteObject _clr1) throws Exception{
 try {
-		Debug.PushSubsStack("SetStatusBarColor (util) ","util",20,__ref.getField(false, "ba"),__ref,10);
+		Debug.PushSubsStack("SetStatusBarColor (util) ","util",21,__ref.getField(false, "ba"),__ref,10);
 if (RapidSub.canDelegate("setstatusbarcolor")) { return __ref.runUserSub(false, "util","setstatusbarcolor", __ref, _clr, _clr1);}
 RemoteObject _p = RemoteObject.declareNull("anywheresoftware.b4a.phone.Phone");
 RemoteObject _jo = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
@@ -79,7 +79,7 @@ _window.runVoidMethod ("RunMethod",(Object)(BA.ObjectToString("setNavigationBarC
        catch (Exception e14) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e14.toString()); BA.debugLineNum = 24;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(8388608);
-util.__c.runVoidMethod ("LogImpl","436831246",BA.ObjectToString(util.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
+util.__c.runVoidMethod ("LogImpl","337421070",BA.ObjectToString(util.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
  };
  BA.debugLineNum = 27;BA.debugLine="End Sub";
 Debug.ShouldStop(67108864);

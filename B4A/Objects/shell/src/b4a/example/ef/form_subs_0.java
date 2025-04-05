@@ -8,7 +8,7 @@ public class form_subs_0 {
 
 public static void  _b4xpage_appear(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("B4XPage_Appear (form) ","form",12,__ref.getField(false, "ba"),__ref,89);
+		Debug.PushSubsStack("B4XPage_Appear (form) ","form",10,__ref.getField(false, "ba"),__ref,89);
 if (RapidSub.canDelegate("b4xpage_appear")) { __ref.runUserSub(false, "form","b4xpage_appear", __ref); return;}
 ResumableSub_B4XPage_Appear rsub = new ResumableSub_B4XPage_Appear(null,__ref);
 rsub.resume(null, null);
@@ -36,7 +36,7 @@ int limit14;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("B4XPage_Appear (form) ","form",12,__ref.getField(false, "ba"),__ref,89);
+		Debug.PushSubsStack("B4XPage_Appear (form) ","form",10,__ref.getField(false, "ba"),__ref,89);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -173,7 +173,7 @@ Debug.ShouldStop(524288);
 __ref.setField ("_haciendaupdate" /*RemoteObject*/ ,_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("hacienda"))));
  BA.debugLineNum = 118;BA.debugLine="Log(\"NIT: \"&nitUpdate)";
 Debug.ShouldStop(2097152);
-parent.__c.runVoidMethod ("LogImpl","411206685",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_nitupdate" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","39895965",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_nitupdate" /*RemoteObject*/ )),0);
  if (true) break;
 if (true) break;
 
@@ -189,7 +189,7 @@ case 12:
 this.state = 13;
  BA.debugLineNum = 121;BA.debugLine="Log(\"NIT: \"&nit)";
 Debug.ShouldStop(16777216);
-parent.__c.runVoidMethod ("LogImpl","411206688",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_nit" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","39895968",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_nit" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 13:
@@ -229,7 +229,7 @@ this.state = 16;
 this.catchState = 0;
  BA.debugLineNum = 135;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(64);
-parent.__c.runVoidMethod ("LogImpl","411206702",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+parent.__c.runVoidMethod ("LogImpl","39895982",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  if (true) break;
 if (true) break;
 
@@ -261,7 +261,7 @@ finally {
 }
 public static RemoteObject  _b4xpage_created(RemoteObject __ref,RemoteObject _root1) throws Exception{
 try {
-		Debug.PushSubsStack("B4XPage_Created (form) ","form",12,__ref.getField(false, "ba"),__ref,70);
+		Debug.PushSubsStack("B4XPage_Created (form) ","form",10,__ref.getField(false, "ba"),__ref,70);
 if (RapidSub.canDelegate("b4xpage_created")) { return __ref.runUserSub(false, "form","b4xpage_created", __ref, _root1);}
 Debug.locals.put("Root1", _root1);
  BA.debugLineNum = 70;BA.debugLine="Private Sub B4XPage_Created (Root1 As B4XView)";
@@ -281,7 +281,7 @@ finally {
 		}}
 public static RemoteObject  _button1addisumo_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Button1AddIsumo_Click (form) ","form",12,__ref.getField(false, "ba"),__ref,932);
+		Debug.PushSubsStack("Button1AddIsumo_Click (form) ","form",10,__ref.getField(false, "ba"),__ref,932);
 if (RapidSub.canDelegate("button1addisumo_click")) { return __ref.runUserSub(false, "form","button1addisumo_click", __ref);}
  BA.debugLineNum = 932;BA.debugLine="Private Sub Button1AddIsumo_Click";
 Debug.ShouldStop(8);
@@ -304,7 +304,7 @@ __ref.runClassMethod (b4a.example.ef.form.class, "_listinsumos" /*RemoteObject*/
        catch (Exception e7) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e7.toString()); BA.debugLineNum = 940;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(2048);
-form.__c.runVoidMethod ("LogImpl","413631496",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+form.__c.runVoidMethod ("LogImpl","312320776",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  };
  BA.debugLineNum = 943;BA.debugLine="End Sub";
 Debug.ShouldStop(16384);
@@ -318,7 +318,7 @@ finally {
 		}}
 public static RemoteObject  _can_oncanceldate(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("can_OnCancelDate (form) ","form",12,__ref.getField(false, "ba"),__ref,357);
+		Debug.PushSubsStack("can_OnCancelDate (form) ","form",10,__ref.getField(false, "ba"),__ref,357);
 if (RapidSub.canDelegate("can_oncanceldate")) { return __ref.runUserSub(false, "form","can_oncanceldate", __ref);}
  BA.debugLineNum = 357;BA.debugLine="Sub can_OnCancelDate ()";
 Debug.ShouldStop(16);
@@ -428,7 +428,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _configtime(RemoteObject __ref,RemoteObject _tag) throws Exception{
 try {
-		Debug.PushSubsStack("configTime (form) ","form",12,__ref.getField(false, "ba"),__ref,390);
+		Debug.PushSubsStack("configTime (form) ","form",10,__ref.getField(false, "ba"),__ref,390);
 if (RapidSub.canDelegate("configtime")) { return __ref.runUserSub(false, "form","configtime", __ref, _tag);}
 Debug.locals.put("tag", _tag);
  BA.debugLineNum = 390;BA.debugLine="Sub configTime(tag As String)";
@@ -484,7 +484,7 @@ finally {
 		}}
 public static RemoteObject  _createcommand(RemoteObject __ref,RemoteObject _name,RemoteObject _parameters) throws Exception{
 try {
-		Debug.PushSubsStack("CreateCommand (form) ","form",12,__ref.getField(false, "ba"),__ref,578);
+		Debug.PushSubsStack("CreateCommand (form) ","form",10,__ref.getField(false, "ba"),__ref,578);
 if (RapidSub.canDelegate("createcommand")) { return __ref.runUserSub(false, "form","createcommand", __ref, _name, _parameters);}
 RemoteObject _cmd = RemoteObject.declareNull("b4a.example.ef.main._dbcommand");
 Debug.locals.put("Name", _name);
@@ -519,7 +519,7 @@ finally {
 		}}
 public static RemoteObject  _createitem(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("CreateItem (form) ","form",12,__ref.getField(false, "ba"),__ref,315);
+		Debug.PushSubsStack("CreateItem (form) ","form",10,__ref.getField(false, "ba"),__ref,315);
 if (RapidSub.canDelegate("createitem")) { return __ref.runUserSub(false, "form","createitem", __ref);}
 RemoteObject _panel = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
  BA.debugLineNum = 315;BA.debugLine="Private Sub CreateItem As Panel";
@@ -552,7 +552,7 @@ finally {
 		}}
 public static RemoteObject  _createiteminsumos(RemoteObject __ref,RemoteObject _i,RemoteObject _id,RemoteObject _name,RemoteObject _qnt) throws Exception{
 try {
-		Debug.PushSubsStack("CreateItemInsumos (form) ","form",12,__ref.getField(false, "ba"),__ref,203);
+		Debug.PushSubsStack("CreateItemInsumos (form) ","form",10,__ref.getField(false, "ba"),__ref,203);
 if (RapidSub.canDelegate("createiteminsumos")) { return __ref.runUserSub(false, "form","createiteminsumos", __ref, _i, _id, _name, _qnt);}
 RemoteObject _panel = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
 Debug.locals.put("i", _i);
@@ -613,7 +613,7 @@ finally {
 		}}
 public static RemoteObject  _createrequest(RemoteObject __ref,RemoteObject _db) throws Exception{
 try {
-		Debug.PushSubsStack("CreateRequest (form) ","form",12,__ref.getField(false, "ba"),__ref,572);
+		Debug.PushSubsStack("CreateRequest (form) ","form",10,__ref.getField(false, "ba"),__ref,572);
 if (RapidSub.canDelegate("createrequest")) { return __ref.runUserSub(false, "form","createrequest", __ref, _db);}
 RemoteObject _req = RemoteObject.declareNull("b4a.example.ef.dbrequestmanager");
 Debug.locals.put("Db", _db);
@@ -640,7 +640,7 @@ finally {
 		}}
 public static RemoteObject  _date_ondateset(RemoteObject __ref,RemoteObject _year,RemoteObject _monthofyear,RemoteObject _dayofmonth) throws Exception{
 try {
-		Debug.PushSubsStack("Date_OnDateSet (form) ","form",12,__ref.getField(false, "ba"),__ref,352);
+		Debug.PushSubsStack("Date_OnDateSet (form) ","form",10,__ref.getField(false, "ba"),__ref,352);
 if (RapidSub.canDelegate("date_ondateset")) { return __ref.runUserSub(false, "form","date_ondateset", __ref, _year, _monthofyear, _dayofmonth);}
 Debug.locals.put("year", _year);
 Debug.locals.put("monthOfYear", _monthofyear);
@@ -665,7 +665,7 @@ finally {
 		}}
 public static RemoteObject  _deleterecord(RemoteObject __ref,RemoteObject _nombre) throws Exception{
 try {
-		Debug.PushSubsStack("DeleteRecord (form) ","form",12,__ref.getField(false, "ba"),__ref,507);
+		Debug.PushSubsStack("DeleteRecord (form) ","form",10,__ref.getField(false, "ba"),__ref,507);
 if (RapidSub.canDelegate("deleterecord")) { return __ref.runUserSub(false, "form","deleterecord", __ref, _nombre);}
 Debug.locals.put("Nombre", _nombre);
  BA.debugLineNum = 507;BA.debugLine="Sub DeleteRecord (Nombre As String)";
@@ -682,7 +682,7 @@ finally {
 		}}
 public static RemoteObject  _edittext2qntinsumo_textchanged(RemoteObject __ref,RemoteObject _old,RemoteObject _new) throws Exception{
 try {
-		Debug.PushSubsStack("EditText2QntInsumo_TextChanged (form) ","form",12,__ref.getField(false, "ba"),__ref,968);
+		Debug.PushSubsStack("EditText2QntInsumo_TextChanged (form) ","form",10,__ref.getField(false, "ba"),__ref,968);
 if (RapidSub.canDelegate("edittext2qntinsumo_textchanged")) { return __ref.runUserSub(false, "form","edittext2qntinsumo_textchanged", __ref, _old, _new);}
 RemoteObject _id = RemoteObject.createImmutable(0);
 Debug.locals.put("Old", _old);
@@ -708,7 +708,7 @@ __ref.runClassMethod (b4a.example.ef.form.class, "_selectsql" /*void*/ ,(Object)
        catch (Exception e7) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e7.toString()); BA.debugLineNum = 977;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(65536);
-form.__c.runVoidMethod ("LogImpl","413762569",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+form.__c.runVoidMethod ("LogImpl","312451849",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  };
  BA.debugLineNum = 979;BA.debugLine="End Sub";
 Debug.ShouldStop(262144);
@@ -722,7 +722,7 @@ finally {
 		}}
 public static void  _fillspinner(RemoteObject __ref,RemoteObject _name) throws Exception{
 try {
-		Debug.PushSubsStack("FillSpinner (form) ","form",12,__ref.getField(false, "ba"),__ref,239);
+		Debug.PushSubsStack("FillSpinner (form) ","form",10,__ref.getField(false, "ba"),__ref,239);
 if (RapidSub.canDelegate("fillspinner")) { __ref.runUserSub(false, "form","fillspinner", __ref, _name); return;}
 ResumableSub_FillSpinner rsub = new ResumableSub_FillSpinner(null,__ref,_name);
 rsub.resume(null, null);
@@ -753,7 +753,7 @@ int limit15;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("FillSpinner (form) ","form",12,__ref.getField(false, "ba"),__ref,239);
+		Debug.PushSubsStack("FillSpinner (form) ","form",10,__ref.getField(false, "ba"),__ref,239);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -827,7 +827,7 @@ Debug.ShouldStop(8388608);
 _cursor.runMethod(true,"setPosition",BA.numberCast(int.class, _i));
  BA.debugLineNum = 249;BA.debugLine="Log(Cursor.GetString(\"name\"))";
 Debug.ShouldStop(16777216);
-parent.__c.runVoidMethod ("LogImpl","411468810",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name"))),0);
+parent.__c.runVoidMethod ("LogImpl","310158090",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name"))),0);
  BA.debugLineNum = 250;BA.debugLine="Spinner1NameInsumo.Add(Cursor.GetString(\"name\")";
 Debug.ShouldStop(33554432);
 __ref.getField(false,"_spinner1nameinsumo" /*RemoteObject*/ ).runVoidMethod ("Add",(Object)(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name")))));
@@ -916,7 +916,7 @@ this.state = 17;
 this.catchState = 0;
  BA.debugLineNum = 266;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(512);
-parent.__c.runVoidMethod ("LogImpl","411468827",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+parent.__c.runVoidMethod ("LogImpl","310158107",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  if (true) break;
 if (true) break;
 
@@ -957,7 +957,7 @@ finally {
 }
 public static void  _getrecordelegasto(RemoteObject __ref,RemoteObject _usedb) throws Exception{
 try {
-		Debug.PushSubsStack("GetRecordElegasto (form) ","form",12,__ref.getField(false, "ba"),__ref,851);
+		Debug.PushSubsStack("GetRecordElegasto (form) ","form",10,__ref.getField(false, "ba"),__ref,851);
 if (RapidSub.canDelegate("getrecordelegasto")) { __ref.runUserSub(false, "form","getrecordelegasto", __ref, _usedb); return;}
 ResumableSub_GetRecordElegasto rsub = new ResumableSub_GetRecordElegasto(null,__ref,_usedb);
 rsub.resume(null, null);
@@ -998,7 +998,7 @@ int groupLen14;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("GetRecordElegasto (form) ","form",12,__ref.getField(false, "ba"),__ref,851);
+		Debug.PushSubsStack("GetRecordElegasto (form) ","form",10,__ref.getField(false, "ba"),__ref,851);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1176,7 +1176,7 @@ case 13:
 this.state = 14;
  BA.debugLineNum = 879;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(16384);
-parent.__c.runVoidMethod ("LogImpl","413238300",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","311927580",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 14:
@@ -1206,7 +1206,7 @@ public static void  _req_result(RemoteObject __ref,RemoteObject _res) throws Exc
 }
 public static void  _getrecordhaciendas(RemoteObject __ref,RemoteObject _usedb,RemoteObject _estado) throws Exception{
 try {
-		Debug.PushSubsStack("GetRecordHaciendas (form) ","form",12,__ref.getField(false, "ba"),__ref,678);
+		Debug.PushSubsStack("GetRecordHaciendas (form) ","form",10,__ref.getField(false, "ba"),__ref,678);
 if (RapidSub.canDelegate("getrecordhaciendas")) { __ref.runUserSub(false, "form","getrecordhaciendas", __ref, _usedb, _estado); return;}
 ResumableSub_GetRecordHaciendas rsub = new ResumableSub_GetRecordHaciendas(null,__ref,_usedb,_estado);
 rsub.resume(null, null);
@@ -1249,7 +1249,7 @@ int groupLen15;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("GetRecordHaciendas (form) ","form",12,__ref.getField(false, "ba"),__ref,678);
+		Debug.PushSubsStack("GetRecordHaciendas (form) ","form",10,__ref.getField(false, "ba"),__ref,678);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1406,10 +1406,10 @@ Debug.locals.put("record", _record);
 ;
  BA.debugLineNum = 704;BA.debugLine="Log(\"cadena: \"&cadena)";
 Debug.ShouldStop(-2147483648);
-parent.__c.runVoidMethod ("LogImpl","412845082",RemoteObject.concat(RemoteObject.createImmutable("cadena: "),_cadena),0);
+parent.__c.runVoidMethod ("LogImpl","311534362",RemoteObject.concat(RemoteObject.createImmutable("cadena: "),_cadena),0);
  BA.debugLineNum = 705;BA.debugLine="Log(\"hacienda: \"&haciendaUpdate)";
 Debug.ShouldStop(1);
-parent.__c.runVoidMethod ("LogImpl","412845083",RemoteObject.concat(RemoteObject.createImmutable("hacienda: "),__ref.getField(true,"_haciendaupdate" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","311534363",RemoteObject.concat(RemoteObject.createImmutable("hacienda: "),__ref.getField(true,"_haciendaupdate" /*RemoteObject*/ )),0);
  BA.debugLineNum = 706;BA.debugLine="If cadena.Contains(haciendaUpdate) Then";
 Debug.ShouldStop(2);
 if (true) break;
@@ -1473,7 +1473,7 @@ case 19:
 this.state = 20;
  BA.debugLineNum = 720;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(32768);
-parent.__c.runVoidMethod ("LogImpl","412845098",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","311534378",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 20:
@@ -1499,7 +1499,7 @@ finally {
 }
 public static void  _getrecordlabores(RemoteObject __ref,RemoteObject _usedb) throws Exception{
 try {
-		Debug.PushSubsStack("GetRecordLabores (form) ","form",12,__ref.getField(false, "ba"),__ref,817);
+		Debug.PushSubsStack("GetRecordLabores (form) ","form",10,__ref.getField(false, "ba"),__ref,817);
 if (RapidSub.canDelegate("getrecordlabores")) { __ref.runUserSub(false, "form","getrecordlabores", __ref, _usedb); return;}
 ResumableSub_GetRecordLabores rsub = new ResumableSub_GetRecordLabores(null,__ref,_usedb);
 rsub.resume(null, null);
@@ -1540,7 +1540,7 @@ int groupLen14;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("GetRecordLabores (form) ","form",12,__ref.getField(false, "ba"),__ref,817);
+		Debug.PushSubsStack("GetRecordLabores (form) ","form",10,__ref.getField(false, "ba"),__ref,817);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1718,7 +1718,7 @@ case 13:
 this.state = 14;
  BA.debugLineNum = 846;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(8192);
-parent.__c.runVoidMethod ("LogImpl","413172765",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","311862045",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 14:
@@ -1744,7 +1744,7 @@ finally {
 }
 public static void  _getrecordlotes(RemoteObject __ref,RemoteObject _usedb,RemoteObject _nitlote,RemoteObject _hda) throws Exception{
 try {
-		Debug.PushSubsStack("GetRecordLotes (form) ","form",12,__ref.getField(false, "ba"),__ref,741);
+		Debug.PushSubsStack("GetRecordLotes (form) ","form",10,__ref.getField(false, "ba"),__ref,741);
 if (RapidSub.canDelegate("getrecordlotes")) { __ref.runUserSub(false, "form","getrecordlotes", __ref, _usedb, _nitlote, _hda); return;}
 ResumableSub_GetRecordLotes rsub = new ResumableSub_GetRecordLotes(null,__ref,_usedb,_nitlote,_hda);
 rsub.resume(null, null);
@@ -1787,7 +1787,7 @@ int groupLen10;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("GetRecordLotes (form) ","form",12,__ref.getField(false, "ba"),__ref,741);
+		Debug.PushSubsStack("GetRecordLotes (form) ","form",10,__ref.getField(false, "ba"),__ref,741);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1946,7 +1946,7 @@ case 13:
 this.state = 14;
  BA.debugLineNum = 764;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(134217728);
-parent.__c.runVoidMethod ("LogImpl","412976151",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","311665431",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 14:
@@ -1972,7 +1972,7 @@ finally {
 }
 public static void  _getrecordlotesarea(RemoteObject __ref,RemoteObject _usedb,RemoteObject _nitlote,RemoteObject _hda,RemoteObject _lotearea) throws Exception{
 try {
-		Debug.PushSubsStack("GetRecordLotesArea (form) ","form",12,__ref.getField(false, "ba"),__ref,784);
+		Debug.PushSubsStack("GetRecordLotesArea (form) ","form",10,__ref.getField(false, "ba"),__ref,784);
 if (RapidSub.canDelegate("getrecordlotesarea")) { __ref.runUserSub(false, "form","getrecordlotesarea", __ref, _usedb, _nitlote, _hda, _lotearea); return;}
 ResumableSub_GetRecordLotesArea rsub = new ResumableSub_GetRecordLotesArea(null,__ref,_usedb,_nitlote,_hda,_lotearea);
 rsub.resume(null, null);
@@ -2017,7 +2017,7 @@ int groupLen10;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("GetRecordLotesArea (form) ","form",12,__ref.getField(false, "ba"),__ref,784);
+		Debug.PushSubsStack("GetRecordLotesArea (form) ","form",10,__ref.getField(false, "ba"),__ref,784);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -2180,7 +2180,7 @@ case 13:
 this.state = 14;
  BA.debugLineNum = 811;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(1024);
-parent.__c.runVoidMethod ("LogImpl","413107227",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","311796507",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 14:
@@ -2206,7 +2206,7 @@ finally {
 }
 public static void  _getrecordnits(RemoteObject __ref,RemoteObject _usedb,RemoteObject _estado) throws Exception{
 try {
-		Debug.PushSubsStack("GetRecordNits (form) ","form",12,__ref.getField(false, "ba"),__ref,630);
+		Debug.PushSubsStack("GetRecordNits (form) ","form",10,__ref.getField(false, "ba"),__ref,630);
 if (RapidSub.canDelegate("getrecordnits")) { __ref.runUserSub(false, "form","getrecordnits", __ref, _usedb, _estado); return;}
 ResumableSub_GetRecordNits rsub = new ResumableSub_GetRecordNits(null,__ref,_usedb,_estado);
 rsub.resume(null, null);
@@ -2250,7 +2250,7 @@ int groupLen16;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("GetRecordNits (form) ","form",12,__ref.getField(false, "ba"),__ref,630);
+		Debug.PushSubsStack("GetRecordNits (form) ","form",10,__ref.getField(false, "ba"),__ref,630);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -2435,7 +2435,7 @@ case 13:
 this.state = 16;
  BA.debugLineNum = 660;BA.debugLine="Log(\"NIT: \"&nitUpdate)";
 Debug.ShouldStop(524288);
-parent.__c.runVoidMethod ("LogImpl","412779550",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_nitupdate" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","311468830",RemoteObject.concat(RemoteObject.createImmutable("NIT: "),__ref.getField(true,"_nitupdate" /*RemoteObject*/ )),0);
  BA.debugLineNum = 663;BA.debugLine="SD_xComboBoxNit.Add(nitUpdate,INTRegistros)";
 Debug.ShouldStop(4194304);
 __ref.getField(false,"_sd_xcomboboxnit" /*RemoteObject*/ ).runClassMethod (b4a.example.ef.sd_xcombobox.class, "_add" /*RemoteObject*/ ,(Object)(__ref.getField(true,"_nitupdate" /*RemoteObject*/ )),(Object)((_intregistros)));
@@ -2471,7 +2471,7 @@ case 19:
 this.state = 20;
  BA.debugLineNum = 672;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(-2147483648);
-parent.__c.runVoidMethod ("LogImpl","412779562",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","311468842",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 20:
@@ -2497,7 +2497,7 @@ finally {
 }
 public static void  _getvaluesintheedittexts(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getValuesINTheEdittexts (form) ","form",12,__ref.getField(false, "ba"),__ref,421);
+		Debug.PushSubsStack("getValuesINTheEdittexts (form) ","form",10,__ref.getField(false, "ba"),__ref,421);
 if (RapidSub.canDelegate("getvaluesintheedittexts")) { __ref.runUserSub(false, "form","getvaluesintheedittexts", __ref); return;}
 ResumableSub_getValuesINTheEdittexts rsub = new ResumableSub_getValuesINTheEdittexts(null,__ref);
 rsub.resume(null, null);
@@ -2527,7 +2527,7 @@ int limit16;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("getValuesINTheEdittexts (form) ","form",12,__ref.getField(false, "ba"),__ref,421);
+		Debug.PushSubsStack("getValuesINTheEdittexts (form) ","form",10,__ref.getField(false, "ba"),__ref,421);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -2603,13 +2603,13 @@ Debug.ShouldStop(2048);
 _cursor.runMethod(true,"setPosition",BA.numberCast(int.class, _i));
  BA.debugLineNum = 429;BA.debugLine="Log(\"=====ITEM #\"&i&\"=====\")";
 Debug.ShouldStop(4096);
-parent.__c.runVoidMethod ("LogImpl","412124168",RemoteObject.concat(RemoteObject.createImmutable("=====ITEM #"),RemoteObject.createImmutable(_i),RemoteObject.createImmutable("=====")),0);
+parent.__c.runVoidMethod ("LogImpl","310813448",RemoteObject.concat(RemoteObject.createImmutable("=====ITEM #"),RemoteObject.createImmutable(_i),RemoteObject.createImmutable("=====")),0);
  BA.debugLineNum = 430;BA.debugLine="Log(Cursor.GetString(\"idmaquina\"))";
 Debug.ShouldStop(8192);
-parent.__c.runVoidMethod ("LogImpl","412124169",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("idmaquina"))),0);
+parent.__c.runVoidMethod ("LogImpl","310813449",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("idmaquina"))),0);
  BA.debugLineNum = 431;BA.debugLine="Log(Cursor.GetString(\"name\")&\"--\"&Cursor.GetStri";
 Debug.ShouldStop(16384);
-parent.__c.runVoidMethod ("LogImpl","412124170",RemoteObject.concat(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name"))),RemoteObject.createImmutable("--"),_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("qnt")))),0);
+parent.__c.runVoidMethod ("LogImpl","310813450",RemoteObject.concat(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name"))),RemoteObject.createImmutable("--"),_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("qnt")))),0);
  BA.debugLineNum = 432;BA.debugLine="sb.Append(Cursor.GetString(\"name\")&\"--\"&Cursor.G";
 Debug.ShouldStop(32768);
 _sb.runMethod(false,"Append",(Object)(RemoteObject.concat(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name"))),RemoteObject.createImmutable("--"),_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("qnt")))))).runVoidMethod ("Append",(Object)(parent.__c.getField(true,"CRLF")));
@@ -2623,7 +2623,7 @@ Debug.locals.put("i", _i);
 ;
  BA.debugLineNum = 435;BA.debugLine="Log(sb.ToString)";
 Debug.ShouldStop(262144);
-parent.__c.runVoidMethod ("LogImpl","412124174",_sb.runMethod(true,"ToString"),0);
+parent.__c.runVoidMethod ("LogImpl","310813454",_sb.runMethod(true,"ToString"),0);
  BA.debugLineNum = 437;BA.debugLine="Dim Cursor As Cursor";
 Debug.ShouldStop(1048576);
 _cursor = RemoteObject.createNew ("anywheresoftware.b4a.sql.SQL.CursorWrapper");Debug.locals.put("Cursor", _cursor);
@@ -2665,10 +2665,10 @@ Debug.ShouldStop(8388608);
 _cursor.runMethod(true,"setPosition",BA.numberCast(int.class, _i));
  BA.debugLineNum = 441;BA.debugLine="Log(\"=====Maquinas #\"&i&\"=====\")";
 Debug.ShouldStop(16777216);
-parent.__c.runVoidMethod ("LogImpl","412124180",RemoteObject.concat(RemoteObject.createImmutable("=====Maquinas #"),RemoteObject.createImmutable(_i),RemoteObject.createImmutable("=====")),0);
+parent.__c.runVoidMethod ("LogImpl","310813460",RemoteObject.concat(RemoteObject.createImmutable("=====Maquinas #"),RemoteObject.createImmutable(_i),RemoteObject.createImmutable("=====")),0);
  BA.debugLineNum = 442;BA.debugLine="Log(Cursor.GetString(\"id\"))'&\"--\"&Cursor.GetStr";
 Debug.ShouldStop(33554432);
-parent.__c.runVoidMethod ("LogImpl","412124181",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("id"))),0);
+parent.__c.runVoidMethod ("LogImpl","310813461",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("id"))),0);
  if (true) break;
 if (true) break;
 
@@ -2695,7 +2695,7 @@ this.state = 14;
 this.catchState = 0;
  BA.debugLineNum = 449;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(1);
-parent.__c.runVoidMethod ("LogImpl","412124188",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+parent.__c.runVoidMethod ("LogImpl","310813468",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  if (true) break;
 if (true) break;
 
@@ -2736,7 +2736,7 @@ finally {
 }
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (form) ","form",12,__ref.getField(false, "ba"),__ref,65);
+		Debug.PushSubsStack("Initialize (form) ","form",10,__ref.getField(false, "ba"),__ref,65);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "form","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -2757,7 +2757,7 @@ finally {
 		}}
 public static void  _insertrecord(RemoteObject __ref,RemoteObject _usedb,RemoteObject _nombre,RemoteObject _salario) throws Exception{
 try {
-		Debug.PushSubsStack("InsertRecord (form) ","form",12,__ref.getField(false, "ba"),__ref,494);
+		Debug.PushSubsStack("InsertRecord (form) ","form",10,__ref.getField(false, "ba"),__ref,494);
 if (RapidSub.canDelegate("insertrecord")) { __ref.runUserSub(false, "form","insertrecord", __ref, _usedb, _nombre, _salario); return;}
 ResumableSub_InsertRecord rsub = new ResumableSub_InsertRecord(null,__ref,_usedb,_nombre,_salario);
 rsub.resume(null, null);
@@ -2789,7 +2789,7 @@ RemoteObject _j = RemoteObject.declareNull("b4a.example.ef.httpjob");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("InsertRecord (form) ","form",12,__ref.getField(false, "ba"),__ref,494);
+		Debug.PushSubsStack("InsertRecord (form) ","form",10,__ref.getField(false, "ba"),__ref,494);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -2839,7 +2839,7 @@ case 3:
 this.state = 4;
  BA.debugLineNum = 501;BA.debugLine="Log(\"Inserted successfully!\")";
 Debug.ShouldStop(1048576);
-parent.__c.runVoidMethod ("LogImpl","412320775",RemoteObject.createImmutable("Inserted successfully!"),0);
+parent.__c.runVoidMethod ("LogImpl","311010055",RemoteObject.createImmutable("Inserted successfully!"),0);
  if (true) break;
 
 case 4:
@@ -2865,7 +2865,7 @@ finally {
 }
 public static RemoteObject  _label10_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Label10_Click (form) ","form",12,__ref.getField(false, "ba"),__ref,377);
+		Debug.PushSubsStack("Label10_Click (form) ","form",10,__ref.getField(false, "ba"),__ref,377);
 if (RapidSub.canDelegate("label10_click")) { return __ref.runUserSub(false, "form","label10_click", __ref);}
  BA.debugLineNum = 377;BA.debugLine="Private Sub Label10_Click";
 Debug.ShouldStop(16777216);
@@ -2884,7 +2884,7 @@ finally {
 		}}
 public static RemoteObject  _label13time_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Label13Time_Click (form) ","form",12,__ref.getField(false, "ba"),__ref,541);
+		Debug.PushSubsStack("Label13Time_Click (form) ","form",10,__ref.getField(false, "ba"),__ref,541);
 if (RapidSub.canDelegate("label13time_click")) { return __ref.runUserSub(false, "form","label13time_click", __ref);}
  BA.debugLineNum = 541;BA.debugLine="Private Sub Label13Time_Click";
 Debug.ShouldStop(268435456);
@@ -2903,7 +2903,7 @@ finally {
 		}}
 public static RemoteObject  _label13time_ondateset(RemoteObject __ref,RemoteObject _year,RemoteObject _monthofyear,RemoteObject _dayofmonth) throws Exception{
 try {
-		Debug.PushSubsStack("Label13Time_OnDateSet (form) ","form",12,__ref.getField(false, "ba"),__ref,545);
+		Debug.PushSubsStack("Label13Time_OnDateSet (form) ","form",10,__ref.getField(false, "ba"),__ref,545);
 if (RapidSub.canDelegate("label13time_ondateset")) { return __ref.runUserSub(false, "form","label13time_ondateset", __ref, _year, _monthofyear, _dayofmonth);}
 Debug.locals.put("year", _year);
 Debug.locals.put("monthOfYear", _monthofyear);
@@ -2928,7 +2928,7 @@ finally {
 		}}
 public static RemoteObject  _label1back_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Label1Back_Click (form) ","form",12,__ref.getField(false, "ba"),__ref,418);
+		Debug.PushSubsStack("Label1Back_Click (form) ","form",10,__ref.getField(false, "ba"),__ref,418);
 if (RapidSub.canDelegate("label1back_click")) { return __ref.runUserSub(false, "form","label1back_click", __ref);}
  BA.debugLineNum = 418;BA.debugLine="Private Sub Label1Back_Click";
 Debug.ShouldStop(2);
@@ -2947,7 +2947,7 @@ finally {
 		}}
 public static RemoteObject  _label1removeinsumo_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Label1RemoveInsumo_Click (form) ","form",12,__ref.getField(false, "ba"),__ref,945);
+		Debug.PushSubsStack("Label1RemoveInsumo_Click (form) ","form",10,__ref.getField(false, "ba"),__ref,945);
 if (RapidSub.canDelegate("label1removeinsumo_click")) { return __ref.runUserSub(false, "form","label1removeinsumo_click", __ref);}
 RemoteObject _id = RemoteObject.createImmutable(0);
  BA.debugLineNum = 945;BA.debugLine="Private Sub Label1RemoveInsumo_Click";
@@ -2957,7 +2957,7 @@ Debug.ShouldStop(131072);
 __ref.getField(false,"_label1removeinsumo" /*RemoteObject*/ ).setObject (form.__c.runMethod(false,"Sender",__ref.getField(false, "ba")));
  BA.debugLineNum = 947;BA.debugLine="Log(Label1RemoveInsumo.Tag)";
 Debug.ShouldStop(262144);
-form.__c.runVoidMethod ("LogImpl","413697026",BA.ObjectToString(__ref.getField(false,"_label1removeinsumo" /*RemoteObject*/ ).runMethod(false,"getTag")),0);
+form.__c.runVoidMethod ("LogImpl","312386306",BA.ObjectToString(__ref.getField(false,"_label1removeinsumo" /*RemoteObject*/ ).runMethod(false,"getTag")),0);
  BA.debugLineNum = 948;BA.debugLine="Dim id As Int=Label1RemoveInsumo.Tag";
 Debug.ShouldStop(524288);
 _id = BA.numberCast(int.class, __ref.getField(false,"_label1removeinsumo" /*RemoteObject*/ ).runMethod(false,"getTag"));Debug.locals.put("id", _id);Debug.locals.put("id", _id);
@@ -2979,7 +2979,7 @@ finally {
 		}}
 public static RemoteObject  _label2save_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Label2Save_Click (form) ","form",12,__ref.getField(false, "ba"),__ref,467);
+		Debug.PushSubsStack("Label2Save_Click (form) ","form",10,__ref.getField(false, "ba"),__ref,467);
 if (RapidSub.canDelegate("label2save_click")) { return __ref.runUserSub(false, "form","label2save_click", __ref);}
 RemoteObject _salario = RemoteObject.createImmutable("");
  BA.debugLineNum = 467;BA.debugLine="Private Sub Label2Save_Click";
@@ -2997,24 +2997,24 @@ Debug.ShouldStop(8388608);
 __ref.runClassMethod (b4a.example.ef.form.class, "_insertrecord" /*void*/ ,(Object)(form._main._pdbname /*RemoteObject*/ ),(Object)(BA.ObjectToString("99")),(Object)(BA.numberCast(int.class, _salario)));
  BA.debugLineNum = 475;BA.debugLine="Log(Label10.text&\"----\"&Label13Time.text)";
 Debug.ShouldStop(67108864);
-form.__c.runVoidMethod ("LogImpl","412255240",RemoteObject.concat(__ref.getField(false,"_label10" /*RemoteObject*/ ).runMethod(true,"getText"),RemoteObject.createImmutable("----"),__ref.getField(false,"_label13time" /*RemoteObject*/ ).runMethod(true,"getText")),0);
+form.__c.runVoidMethod ("LogImpl","310944520",RemoteObject.concat(__ref.getField(false,"_label10" /*RemoteObject*/ ).runMethod(true,"getText"),RemoteObject.createImmutable("----"),__ref.getField(false,"_label13time" /*RemoteObject*/ ).runMethod(true,"getText")),0);
  BA.debugLineNum = 476;BA.debugLine="Log(\"HACIENDA: \"&haciendaUpdate)";
 Debug.ShouldStop(134217728);
-form.__c.runVoidMethod ("LogImpl","412255241",RemoteObject.concat(RemoteObject.createImmutable("HACIENDA: "),__ref.getField(true,"_haciendaupdate" /*RemoteObject*/ )),0);
+form.__c.runVoidMethod ("LogImpl","310944521",RemoteObject.concat(RemoteObject.createImmutable("HACIENDA: "),__ref.getField(true,"_haciendaupdate" /*RemoteObject*/ )),0);
  BA.debugLineNum = 477;BA.debugLine="If tipo=\"new\" Then";
 Debug.ShouldStop(268435456);
 if (RemoteObject.solveBoolean("=",__ref.getField(true,"_tipo" /*RemoteObject*/ ),BA.ObjectToString("new"))) { 
  }else {
  BA.debugLineNum = 484;BA.debugLine="Log(\"update\")";
 Debug.ShouldStop(8);
-form.__c.runVoidMethod ("LogImpl","412255249",RemoteObject.createImmutable("update"),0);
+form.__c.runVoidMethod ("LogImpl","310944529",RemoteObject.createImmutable("update"),0);
  };
  Debug.CheckDeviceExceptions();
 } 
        catch (Exception e12) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e12.toString()); BA.debugLineNum = 488;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(128);
-form.__c.runVoidMethod ("LogImpl","412255253",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+form.__c.runVoidMethod ("LogImpl","310944533",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  };
  BA.debugLineNum = 491;BA.debugLine="End Sub";
 Debug.ShouldStop(1024);
@@ -3028,7 +3028,7 @@ finally {
 		}}
 public static RemoteObject  _listinsumos(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("listInsumos (form) ","form",12,__ref.getField(false, "ba"),__ref,143);
+		Debug.PushSubsStack("listInsumos (form) ","form",10,__ref.getField(false, "ba"),__ref,143);
 if (RapidSub.canDelegate("listinsumos")) { return __ref.runUserSub(false, "form","listinsumos", __ref);}
 RemoteObject _numberofmatches = RemoteObject.createImmutable(0);
 RemoteObject _cursor = RemoteObject.declareNull("anywheresoftware.b4a.sql.SQL.CursorWrapper");
@@ -3074,13 +3074,13 @@ Debug.ShouldStop(67108864);
 _id = BA.numberCast(int.class, _cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("id"))));Debug.locals.put("id", _id);Debug.locals.put("id", _id);
  BA.debugLineNum = 156;BA.debugLine="Log(Cursor.GetString(\"id\"))";
 Debug.ShouldStop(134217728);
-form.__c.runVoidMethod ("LogImpl","411272205",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("id"))),0);
+form.__c.runVoidMethod ("LogImpl","39961485",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("id"))),0);
  BA.debugLineNum = 157;BA.debugLine="Log(Cursor.GetString(\"name\"))";
 Debug.ShouldStop(268435456);
-form.__c.runVoidMethod ("LogImpl","411272206",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name"))),0);
+form.__c.runVoidMethod ("LogImpl","39961486",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name"))),0);
  BA.debugLineNum = 158;BA.debugLine="Log(Cursor.GetString(\"qnt\"))";
 Debug.ShouldStop(536870912);
-form.__c.runVoidMethod ("LogImpl","411272207",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("qnt"))),0);
+form.__c.runVoidMethod ("LogImpl","39961487",_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("qnt"))),0);
  BA.debugLineNum = 159;BA.debugLine="CustomListView1Geral.Add(CreateItemInsumos(i+1,i";
 Debug.ShouldStop(1073741824);
 __ref.getField(false,"_customlistview1geral" /*RemoteObject*/ ).runVoidMethod ("_add",RemoteObject.declareNull("anywheresoftware.b4a.AbsObjectWrapper").runMethod(false, "ConvertToWrapper", RemoteObject.createNew("anywheresoftware.b4a.objects.B4XViewWrapper"), __ref.runClassMethod (b4a.example.ef.form.class, "_createiteminsumos" /*RemoteObject*/ ,(Object)(RemoteObject.solve(new RemoteObject[] {RemoteObject.createImmutable(_i),RemoteObject.createImmutable(1)}, "+",1, 1)),(Object)(_id),(Object)(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("name")))),(Object)(_cursor.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("qnt"))))).getObject()),(Object)((RemoteObject.createImmutable("insumo"))));
@@ -3135,7 +3135,7 @@ finally {
 		}}
 public static RemoteObject  _panel10horainicio_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Panel10Horainicio_Click (form) ","form",12,__ref.getField(false, "ba"),__ref,385);
+		Debug.PushSubsStack("Panel10Horainicio_Click (form) ","form",10,__ref.getField(false, "ba"),__ref,385);
 if (RapidSub.canDelegate("panel10horainicio_click")) { return __ref.runUserSub(false, "form","panel10horainicio_click", __ref);}
  BA.debugLineNum = 385;BA.debugLine="Private Sub Panel10Horainicio_Click";
 Debug.ShouldStop(1);
@@ -3154,7 +3154,7 @@ finally {
 		}}
 public static RemoteObject  _panel11horafim_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Panel11horaFim_Click (form) ","form",12,__ref.getField(false, "ba"),__ref,381);
+		Debug.PushSubsStack("Panel11horaFim_Click (form) ","form",10,__ref.getField(false, "ba"),__ref,381);
 if (RapidSub.canDelegate("panel11horafim_click")) { return __ref.runUserSub(false, "form","panel11horafim_click", __ref);}
  BA.debugLineNum = 381;BA.debugLine="Private Sub Panel11horaFim_Click";
 Debug.ShouldStop(268435456);
@@ -3173,7 +3173,7 @@ finally {
 		}}
 public static RemoteObject  _panel2time_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Panel2Time_Click (form) ","form",12,__ref.getField(false, "ba"),__ref,521);
+		Debug.PushSubsStack("Panel2Time_Click (form) ","form",10,__ref.getField(false, "ba"),__ref,521);
 if (RapidSub.canDelegate("panel2time_click")) { return __ref.runUserSub(false, "form","panel2time_click", __ref);}
  BA.debugLineNum = 521;BA.debugLine="Private Sub Panel2Time_Click";
 Debug.ShouldStop(256);
@@ -3192,7 +3192,7 @@ finally {
 		}}
 public static RemoteObject  _panel9_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Panel9_Click (form) ","form",12,__ref.getField(false, "ba"),__ref,361);
+		Debug.PushSubsStack("Panel9_Click (form) ","form",10,__ref.getField(false, "ba"),__ref,361);
 if (RapidSub.canDelegate("panel9_click")) { return __ref.runUserSub(false, "form","panel9_click", __ref);}
  BA.debugLineNum = 361;BA.debugLine="Private Sub Panel9_Click";
 Debug.ShouldStop(256);
@@ -3247,7 +3247,7 @@ finally {
 		}}
 public static RemoteObject  _removeallexcelpfist(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("removeAllExcelpFist (form) ","form",12,__ref.getField(false, "ba"),__ref,186);
+		Debug.PushSubsStack("removeAllExcelpFist (form) ","form",10,__ref.getField(false, "ba"),__ref,186);
 if (RapidSub.canDelegate("removeallexcelpfist")) { return __ref.runUserSub(false, "form","removeallexcelpfist", __ref);}
 int _iw = 0;
  BA.debugLineNum = 186;BA.debugLine="Sub removeAllExcelpFist";
@@ -3267,7 +3267,7 @@ if (RemoteObject.solveBoolean("!",__ref.getField(false,"_customlistview1geral" /
 Debug.ShouldStop(536870912);
 try { BA.debugLineNum = 192;BA.debugLine="LogColor(\"REMOVE: \"&iw,Colors.Red)";
 Debug.ShouldStop(-2147483648);
-form.__c.runVoidMethod ("LogImpl","411337734",RemoteObject.concat(RemoteObject.createImmutable("REMOVE: "),RemoteObject.createImmutable(_iw)),form.__c.getField(false,"Colors").getField(true,"Red"));
+form.__c.runVoidMethod ("LogImpl","310027014",RemoteObject.concat(RemoteObject.createImmutable("REMOVE: "),RemoteObject.createImmutable(_iw)),form.__c.getField(false,"Colors").getField(true,"Red"));
  BA.debugLineNum = 193;BA.debugLine="CustomListView1Geral.RemoveAt(iw)";
 Debug.ShouldStop(1);
 __ref.getField(false,"_customlistview1geral" /*RemoteObject*/ ).runVoidMethod ("_removeat",(Object)(BA.numberCast(int.class, _iw)));
@@ -3276,7 +3276,7 @@ __ref.getField(false,"_customlistview1geral" /*RemoteObject*/ ).runVoidMethod ("
        catch (Exception e7) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e7.toString()); BA.debugLineNum = 196;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(8);
-form.__c.runVoidMethod ("LogImpl","411337738",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+form.__c.runVoidMethod ("LogImpl","310027018",BA.ObjectToString(form.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  };
  };
  }
@@ -3294,7 +3294,7 @@ finally {
 		}}
 public static RemoteObject  _sd_xcomboboxhda_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxHda_ItemClick (form) ","form",12,__ref.getField(false, "ba"),__ref,725);
+		Debug.PushSubsStack("SD_xComboBoxHda_ItemClick (form) ","form",10,__ref.getField(false, "ba"),__ref,725);
 if (RapidSub.canDelegate("sd_xcomboboxhda_itemclick")) { return __ref.runUserSub(false, "form","sd_xcomboboxhda_itemclick", __ref, _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -3302,7 +3302,7 @@ Debug.locals.put("Value", _value);
 Debug.ShouldStop(1048576);
  BA.debugLineNum = 728;BA.debugLine="Log(Value)";
 Debug.ShouldStop(8388608);
-form.__c.runVoidMethod ("LogImpl","412910595",BA.ObjectToString(_value),0);
+form.__c.runVoidMethod ("LogImpl","311599875",BA.ObjectToString(_value),0);
  BA.debugLineNum = 730;BA.debugLine="SD_xComboBoxLote.Clear";
 Debug.ShouldStop(33554432);
 __ref.getField(false,"_sd_xcomboboxlote" /*RemoteObject*/ ).runClassMethod (b4a.example.ef.sd_xcombobox.class, "_clear" /*RemoteObject*/ );
@@ -3320,7 +3320,7 @@ Debug.ShouldStop(-2147483648);
 __ref.setField ("_hacienda" /*RemoteObject*/ ,__ref.getField(true,"_hacienda" /*RemoteObject*/ ).runMethod(true,"substring",(Object)(BA.numberCast(int.class, 0)),(Object)(BA.numberCast(int.class, 3))));
  BA.debugLineNum = 737;BA.debugLine="Log(hacienda)";
 Debug.ShouldStop(1);
-form.__c.runVoidMethod ("LogImpl","412910604",__ref.getField(true,"_hacienda" /*RemoteObject*/ ),0);
+form.__c.runVoidMethod ("LogImpl","311599884",__ref.getField(true,"_hacienda" /*RemoteObject*/ ),0);
  BA.debugLineNum = 738;BA.debugLine="GetRecordLotes (Main.pDBName,Main.pNit, hacienda)";
 Debug.ShouldStop(2);
 __ref.runClassMethod (b4a.example.ef.form.class, "_getrecordlotes" /*void*/ ,(Object)(form._main._pdbname /*RemoteObject*/ ),(Object)(form._main._pnit /*RemoteObject*/ ),(Object)(__ref.getField(true,"_hacienda" /*RemoteObject*/ )));
@@ -3336,7 +3336,7 @@ finally {
 		}}
 public static RemoteObject  _sd_xcomboboxlabor_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxLabor_ItemClick (form) ","form",12,__ref.getField(false, "ba"),__ref,893);
+		Debug.PushSubsStack("SD_xComboBoxLabor_ItemClick (form) ","form",10,__ref.getField(false, "ba"),__ref,893);
 if (RapidSub.canDelegate("sd_xcomboboxlabor_itemclick")) { return __ref.runUserSub(false, "form","sd_xcomboboxlabor_itemclick", __ref, _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -3354,7 +3354,7 @@ finally {
 		}}
 public static RemoteObject  _sd_xcomboboxlote_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SD_xComboBoxLote_ItemClick (form) ","form",12,__ref.getField(false, "ba"),__ref,770);
+		Debug.PushSubsStack("SD_xComboBoxLote_ItemClick (form) ","form",10,__ref.getField(false, "ba"),__ref,770);
 if (RapidSub.canDelegate("sd_xcomboboxlote_itemclick")) { return __ref.runUserSub(false, "form","sd_xcomboboxlote_itemclick", __ref, _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -3362,13 +3362,13 @@ Debug.locals.put("Value", _value);
 Debug.ShouldStop(2);
  BA.debugLineNum = 776;BA.debugLine="Log(Position & \" - \" & Value)";
 Debug.ShouldStop(128);
-form.__c.runVoidMethod ("LogImpl","413041670",RemoteObject.concat(_position,RemoteObject.createImmutable(" - "),_value),0);
+form.__c.runVoidMethod ("LogImpl","311730950",RemoteObject.concat(_position,RemoteObject.createImmutable(" - "),_value),0);
  BA.debugLineNum = 778;BA.debugLine="lote = Value";
 Debug.ShouldStop(512);
 __ref.setField ("_lote" /*RemoteObject*/ ,BA.ObjectToString(_value));
  BA.debugLineNum = 780;BA.debugLine="Log(hacienda)";
 Debug.ShouldStop(2048);
-form.__c.runVoidMethod ("LogImpl","413041674",__ref.getField(true,"_hacienda" /*RemoteObject*/ ),0);
+form.__c.runVoidMethod ("LogImpl","311730954",__ref.getField(true,"_hacienda" /*RemoteObject*/ ),0);
  BA.debugLineNum = 781;BA.debugLine="GetRecordLotesArea (Main.pDBName,nit, hacienda,lo";
 Debug.ShouldStop(4096);
 __ref.runClassMethod (b4a.example.ef.form.class, "_getrecordlotesarea" /*void*/ ,(Object)(form._main._pdbname /*RemoteObject*/ ),(Object)(__ref.getField(true,"_nit" /*RemoteObject*/ )),(Object)(__ref.getField(true,"_hacienda" /*RemoteObject*/ )),(Object)(__ref.getField(true,"_lote" /*RemoteObject*/ )));
@@ -3384,7 +3384,7 @@ finally {
 		}}
 public static void  _selectsql(RemoteObject __ref,RemoteObject _id) throws Exception{
 try {
-		Debug.PushSubsStack("selectSQl (form) ","form",12,__ref.getField(false, "ba"),__ref,982);
+		Debug.PushSubsStack("selectSQl (form) ","form",10,__ref.getField(false, "ba"),__ref,982);
 if (RapidSub.canDelegate("selectsql")) { __ref.runUserSub(false, "form","selectsql", __ref, _id); return;}
 ResumableSub_selectSQl rsub = new ResumableSub_selectSQl(null,__ref,_id);
 rsub.resume(null, null);
@@ -3413,7 +3413,7 @@ int limit4;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("selectSQl (form) ","form",12,__ref.getField(false, "ba"),__ref,982);
+		Debug.PushSubsStack("selectSQl (form) ","form",10,__ref.getField(false, "ba"),__ref,982);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -3499,7 +3499,7 @@ this.state = 10;
 this.catchState = 0;
  BA.debugLineNum = 995;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(4);
-parent.__c.runVoidMethod ("LogImpl","413828109",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+parent.__c.runVoidMethod ("LogImpl","312517389",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  if (true) break;
 if (true) break;
 
@@ -3540,7 +3540,7 @@ finally {
 }
 public static RemoteObject  _spinner1nameinsumo_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("Spinner1NameInsumo_ItemClick (form) ","form",12,__ref.getField(false, "ba"),__ref,1001);
+		Debug.PushSubsStack("Spinner1NameInsumo_ItemClick (form) ","form",10,__ref.getField(false, "ba"),__ref,1001);
 if (RapidSub.canDelegate("spinner1nameinsumo_itemclick")) { return __ref.runUserSub(false, "form","spinner1nameinsumo_itemclick", __ref, _position, _value);}
 RemoteObject _id = RemoteObject.createImmutable(0);
 Debug.locals.put("Position", _position);
@@ -3552,10 +3552,10 @@ Debug.ShouldStop(512);
 __ref.getField(false,"_spinner1nameinsumo" /*RemoteObject*/ ).setObject (form.__c.runMethod(false,"Sender",__ref.getField(false, "ba")));
  BA.debugLineNum = 1003;BA.debugLine="Log(Spinner1NameInsumo.Tag)";
 Debug.ShouldStop(1024);
-form.__c.runVoidMethod ("LogImpl","413893634",BA.ObjectToString(__ref.getField(false,"_spinner1nameinsumo" /*RemoteObject*/ ).runMethod(false,"getTag")),0);
+form.__c.runVoidMethod ("LogImpl","312582914",BA.ObjectToString(__ref.getField(false,"_spinner1nameinsumo" /*RemoteObject*/ ).runMethod(false,"getTag")),0);
  BA.debugLineNum = 1004;BA.debugLine="Log(Spinner1NameInsumo.SelectedItem)";
 Debug.ShouldStop(2048);
-form.__c.runVoidMethod ("LogImpl","413893635",__ref.getField(false,"_spinner1nameinsumo" /*RemoteObject*/ ).runMethod(true,"getSelectedItem"),0);
+form.__c.runVoidMethod ("LogImpl","312582915",__ref.getField(false,"_spinner1nameinsumo" /*RemoteObject*/ ).runMethod(true,"getSelectedItem"),0);
  BA.debugLineNum = 1005;BA.debugLine="Dim id As Int=Spinner1NameInsumo.Tag";
 Debug.ShouldStop(4096);
 _id = BA.numberCast(int.class, __ref.getField(false,"_spinner1nameinsumo" /*RemoteObject*/ ).runMethod(false,"getTag"));Debug.locals.put("id", _id);Debug.locals.put("id", _id);
@@ -3577,7 +3577,7 @@ finally {
 		}}
 public static RemoteObject  _spinner7_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("Spinner7_ItemClick (form) ","form",12,__ref.getField(false, "ba"),__ref,897);
+		Debug.PushSubsStack("Spinner7_ItemClick (form) ","form",10,__ref.getField(false, "ba"),__ref,897);
 if (RapidSub.canDelegate("spinner7_itemclick")) { return __ref.runUserSub(false, "form","spinner7_itemclick", __ref, _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -3595,7 +3595,7 @@ finally {
 		}}
 public static RemoteObject  _spinner8_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("Spinner8_ItemClick (form) ","form",12,__ref.getField(false, "ba"),__ref,901);
+		Debug.PushSubsStack("Spinner8_ItemClick (form) ","form",10,__ref.getField(false, "ba"),__ref,901);
 if (RapidSub.canDelegate("spinner8_itemclick")) { return __ref.runUserSub(false, "form","spinner8_itemclick", __ref, _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -3613,7 +3613,7 @@ finally {
 		}}
 public static RemoteObject  _spinnernit_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SpinnerNit_ItemClick (form) ","form",12,__ref.getField(false, "ba"),__ref,888);
+		Debug.PushSubsStack("SpinnerNit_ItemClick (form) ","form",10,__ref.getField(false, "ba"),__ref,888);
 if (RapidSub.canDelegate("spinnernit_itemclick")) { return __ref.runUserSub(false, "form","spinnernit_itemclick", __ref, _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -3621,7 +3621,7 @@ Debug.locals.put("Value", _value);
 Debug.ShouldStop(8388608);
  BA.debugLineNum = 889;BA.debugLine="Log(Value)";
 Debug.ShouldStop(16777216);
-form.__c.runVoidMethod ("LogImpl","413303809",BA.ObjectToString(_value),0);
+form.__c.runVoidMethod ("LogImpl","311993089",BA.ObjectToString(_value),0);
  BA.debugLineNum = 890;BA.debugLine="End Sub";
 Debug.ShouldStop(33554432);
 return RemoteObject.createImmutable("");
@@ -3634,7 +3634,7 @@ finally {
 		}}
 public static RemoteObject  _spinnernit0_itemclick(RemoteObject __ref,RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("SpinnerNit0_ItemClick (form) ","form",12,__ref.getField(false, "ba"),__ref,905);
+		Debug.PushSubsStack("SpinnerNit0_ItemClick (form) ","form",10,__ref.getField(false, "ba"),__ref,905);
 if (RapidSub.canDelegate("spinnernit0_itemclick")) { return __ref.runUserSub(false, "form","spinnernit0_itemclick", __ref, _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -3652,7 +3652,7 @@ finally {
 		}}
 public static void  _validation(RemoteObject __ref,RemoteObject _edt) throws Exception{
 try {
-		Debug.PushSubsStack("validation (form) ","form",12,__ref.getField(false, "ba"),__ref,456);
+		Debug.PushSubsStack("validation (form) ","form",10,__ref.getField(false, "ba"),__ref,456);
 if (RapidSub.canDelegate("validation")) { __ref.runUserSub(false, "form","validation", __ref, _edt); return;}
 ResumableSub_validation rsub = new ResumableSub_validation(null,__ref,_edt);
 rsub.resume(null, null);
@@ -3677,7 +3677,7 @@ RemoteObject _edt;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("validation (form) ","form",12,__ref.getField(false, "ba"),__ref,456);
+		Debug.PushSubsStack("validation (form) ","form",10,__ref.getField(false, "ba"),__ref,456);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

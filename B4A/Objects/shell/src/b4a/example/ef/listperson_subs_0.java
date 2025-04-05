@@ -8,7 +8,7 @@ public class listperson_subs_0 {
 
 public static void  _b4xpage_appear(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("B4XPage_Appear (listperson) ","listperson",18,__ref.getField(false, "ba"),__ref,35);
+		Debug.PushSubsStack("B4XPage_Appear (listperson) ","listperson",4,__ref.getField(false, "ba"),__ref,35);
 if (RapidSub.canDelegate("b4xpage_appear")) { __ref.runUserSub(false, "listperson","b4xpage_appear", __ref); return;}
 ResumableSub_B4XPage_Appear rsub = new ResumableSub_B4XPage_Appear(null,__ref);
 rsub.resume(null, null);
@@ -44,7 +44,7 @@ int groupLen11;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("B4XPage_Appear (listperson) ","listperson",18,__ref.getField(false, "ba"),__ref,35);
+		Debug.PushSubsStack("B4XPage_Appear (listperson) ","listperson",4,__ref.getField(false, "ba"),__ref,35);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -181,7 +181,7 @@ case 9:
 this.state = 10;
  BA.debugLineNum = 68;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(8);
-parent.__c.runVoidMethod ("LogImpl","423003169",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","32621473",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 10:
@@ -208,7 +208,7 @@ public static void  _req_result(RemoteObject __ref,RemoteObject _res) throws Exc
 }
 public static RemoteObject  _b4xpage_created(RemoteObject __ref,RemoteObject _root1) throws Exception{
 try {
-		Debug.PushSubsStack("B4XPage_Created (listperson) ","listperson",18,__ref.getField(false, "ba"),__ref,25);
+		Debug.PushSubsStack("B4XPage_Created (listperson) ","listperson",4,__ref.getField(false, "ba"),__ref,25);
 if (RapidSub.canDelegate("b4xpage_created")) { return __ref.runUserSub(false, "listperson","b4xpage_created", __ref, _root1);}
 Debug.locals.put("Root1", _root1);
  BA.debugLineNum = 25;BA.debugLine="Private Sub B4XPage_Created (Root1 As B4XView)";
@@ -267,7 +267,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _clv_persons_itemclick(RemoteObject __ref,RemoteObject _index,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("CLV_Persons_ItemClick (listperson) ","listperson",18,__ref.getField(false, "ba"),__ref,111);
+		Debug.PushSubsStack("CLV_Persons_ItemClick (listperson) ","listperson",4,__ref.getField(false, "ba"),__ref,111);
 if (RapidSub.canDelegate("clv_persons_itemclick")) { return __ref.runUserSub(false, "listperson","clv_persons_itemclick", __ref, _index, _value);}
 Debug.locals.put("Index", _index);
 Debug.locals.put("Value", _value);
@@ -291,7 +291,7 @@ finally {
 		}}
 public static RemoteObject  _createcommand(RemoteObject __ref,RemoteObject _name,RemoteObject _parameters) throws Exception{
 try {
-		Debug.PushSubsStack("CreateCommand (listperson) ","listperson",18,__ref.getField(false, "ba"),__ref,121);
+		Debug.PushSubsStack("CreateCommand (listperson) ","listperson",4,__ref.getField(false, "ba"),__ref,121);
 if (RapidSub.canDelegate("createcommand")) { return __ref.runUserSub(false, "listperson","createcommand", __ref, _name, _parameters);}
 RemoteObject _cmd = RemoteObject.declareNull("b4a.example.ef.main._dbcommand");
 Debug.locals.put("Name", _name);
@@ -326,7 +326,7 @@ finally {
 		}}
 public static RemoteObject  _createitem(RemoteObject __ref,RemoteObject _nombreelemento,RemoteObject _diasreportados,RemoteObject _horasextras) throws Exception{
 try {
-		Debug.PushSubsStack("CreateItem (listperson) ","listperson",18,__ref.getField(false, "ba"),__ref,74);
+		Debug.PushSubsStack("CreateItem (listperson) ","listperson",4,__ref.getField(false, "ba"),__ref,74);
 if (RapidSub.canDelegate("createitem")) { return __ref.runUserSub(false, "listperson","createitem", __ref, _nombreelemento, _diasreportados, _horasextras);}
 RemoteObject _panel = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
 RemoteObject _etiquetahorasextras = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -418,7 +418,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (listperson) ","listperson",18,__ref.getField(false, "ba"),__ref,18);
+		Debug.PushSubsStack("Initialize (listperson) ","listperson",4,__ref.getField(false, "ba"),__ref,18);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "listperson","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -439,7 +439,7 @@ finally {
 		}}
 public static RemoteObject  _label1_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Label1_Click (listperson) ","listperson",18,__ref.getField(false, "ba"),__ref,117);
+		Debug.PushSubsStack("Label1_Click (listperson) ","listperson",4,__ref.getField(false, "ba"),__ref,117);
 if (RapidSub.canDelegate("label1_click")) { return __ref.runUserSub(false, "listperson","label1_click", __ref);}
  BA.debugLineNum = 117;BA.debugLine="Private Sub Label1_Click";
 Debug.ShouldStop(1048576);
@@ -458,7 +458,7 @@ finally {
 		}}
 public static RemoteObject  _label2_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Label2_Click (listperson) ","listperson",18,__ref.getField(false, "ba"),__ref,130);
+		Debug.PushSubsStack("Label2_Click (listperson) ","listperson",4,__ref.getField(false, "ba"),__ref,130);
 if (RapidSub.canDelegate("label2_click")) { return __ref.runUserSub(false, "listperson","label2_click", __ref);}
  BA.debugLineNum = 130;BA.debugLine="Private Sub Label2_Click";
 Debug.ShouldStop(2);

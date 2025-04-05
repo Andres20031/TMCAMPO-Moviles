@@ -63,19 +63,19 @@ __ref = this;
 RDebugUtils.currentModule="gifviewer";
 if (Debug.shouldDelegate(ba, "start", false))
 	 {return ((String) Debug.delegate(ba, "start", null));}
-RDebugUtils.currentLine=20971520;
- //BA.debugLineNum = 20971520;BA.debugLine="Public Sub Start";
-RDebugUtils.currentLine=20971521;
- //BA.debugLineNum = 20971521;BA.debugLine="mBase.Visible = True";
+RDebugUtils.currentLine=21430272;
+ //BA.debugLineNum = 21430272;BA.debugLine="Public Sub Start";
+RDebugUtils.currentLine=21430273;
+ //BA.debugLineNum = 21430273;BA.debugLine="mBase.Visible = True";
 __ref._mbase /*anywheresoftware.b4a.objects.PanelWrapper*/ .setVisible(__c.True);
-RDebugUtils.currentLine=20971522;
- //BA.debugLineNum = 20971522;BA.debugLine="WorkIndex = WorkIndex + 1";
+RDebugUtils.currentLine=21430274;
+ //BA.debugLineNum = 21430274;BA.debugLine="WorkIndex = WorkIndex + 1";
 __ref._workindex /*int*/  = (int) (__ref._workindex /*int*/ +1);
-RDebugUtils.currentLine=20971523;
- //BA.debugLineNum = 20971523;BA.debugLine="ShowImpl(WorkIndex)";
+RDebugUtils.currentLine=21430275;
+ //BA.debugLineNum = 21430275;BA.debugLine="ShowImpl(WorkIndex)";
 __ref._showimpl /*void*/ (null,__ref._workindex /*int*/ );
-RDebugUtils.currentLine=20971524;
- //BA.debugLineNum = 20971524;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21430276;
+ //BA.debugLineNum = 21430276;BA.debugLine="End Sub";
 return "";
 }
 public String  _stop(b4a.example.ef.gifviewer __ref) throws Exception{
@@ -83,16 +83,16 @@ __ref = this;
 RDebugUtils.currentModule="gifviewer";
 if (Debug.shouldDelegate(ba, "stop", false))
 	 {return ((String) Debug.delegate(ba, "stop", null));}
-RDebugUtils.currentLine=21037056;
- //BA.debugLineNum = 21037056;BA.debugLine="Public Sub Stop";
-RDebugUtils.currentLine=21037057;
- //BA.debugLineNum = 21037057;BA.debugLine="mBase.Visible = False";
+RDebugUtils.currentLine=21495808;
+ //BA.debugLineNum = 21495808;BA.debugLine="Public Sub Stop";
+RDebugUtils.currentLine=21495809;
+ //BA.debugLineNum = 21495809;BA.debugLine="mBase.Visible = False";
 __ref._mbase /*anywheresoftware.b4a.objects.PanelWrapper*/ .setVisible(__c.False);
-RDebugUtils.currentLine=21037058;
- //BA.debugLineNum = 21037058;BA.debugLine="WorkIndex = WorkIndex + 1";
+RDebugUtils.currentLine=21495810;
+ //BA.debugLineNum = 21495810;BA.debugLine="WorkIndex = WorkIndex + 1";
 __ref._workindex /*int*/  = (int) (__ref._workindex /*int*/ +1);
-RDebugUtils.currentLine=21037059;
- //BA.debugLineNum = 21037059;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21495811;
+ //BA.debugLineNum = 21495811;BA.debugLine="End Sub";
 return "";
 }
 public String  _setgif(b4a.example.ef.gifviewer __ref,String _dir,String _filename) throws Exception{
@@ -106,89 +106,89 @@ int _i = 0;
 b4a.example.ef.gifviewer._bitmapanddelay _bd = null;
 b4a.example.ef.gifviewer._bitmapanddelay _firstframe = null;
 anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _firstbmp = null;
-RDebugUtils.currentLine=20905984;
- //BA.debugLineNum = 20905984;BA.debugLine="Public Sub SetGif (Dir As String, FileName As Stri";
-RDebugUtils.currentLine=20905985;
- //BA.debugLineNum = 20905985;BA.debugLine="If Dir = File.DirAssets Then";
+RDebugUtils.currentLine=21364736;
+ //BA.debugLineNum = 21364736;BA.debugLine="Public Sub SetGif (Dir As String, FileName As Stri";
+RDebugUtils.currentLine=21364737;
+ //BA.debugLineNum = 21364737;BA.debugLine="If Dir = File.DirAssets Then";
 if ((_dir).equals(__c.File.getDirAssets())) { 
-RDebugUtils.currentLine=20905986;
- //BA.debugLineNum = 20905986;BA.debugLine="File.Copy(File.DirAssets, FileName, File.DirInte";
+RDebugUtils.currentLine=21364738;
+ //BA.debugLineNum = 21364738;BA.debugLine="File.Copy(File.DirAssets, FileName, File.DirInte";
 __c.File.Copy(__c.File.getDirAssets(),_filename,__c.File.getDirInternal(),_filename);
-RDebugUtils.currentLine=20905987;
- //BA.debugLineNum = 20905987;BA.debugLine="Dir = File.DirInternal";
+RDebugUtils.currentLine=21364739;
+ //BA.debugLineNum = 21364739;BA.debugLine="Dir = File.DirInternal";
 _dir = __c.File.getDirInternal();
  };
-RDebugUtils.currentLine=20905989;
- //BA.debugLineNum = 20905989;BA.debugLine="Dim path As String = File.Combine(Dir, FileName)";
+RDebugUtils.currentLine=21364741;
+ //BA.debugLineNum = 21364741;BA.debugLine="Dim path As String = File.Combine(Dir, FileName)";
 _path = __c.File.Combine(_dir,_filename);
-RDebugUtils.currentLine=20905990;
- //BA.debugLineNum = 20905990;BA.debugLine="If Main.GifsCache.IsInitialized = False Then Main";
+RDebugUtils.currentLine=21364742;
+ //BA.debugLineNum = 21364742;BA.debugLine="If Main.GifsCache.IsInitialized = False Then Main";
 if (_main._gifscache /*anywheresoftware.b4a.objects.collections.Map*/ .IsInitialized()==__c.False) { 
 _main._gifscache /*anywheresoftware.b4a.objects.collections.Map*/ .Initialize();};
-RDebugUtils.currentLine=20905991;
- //BA.debugLineNum = 20905991;BA.debugLine="If Main.GifsCache.ContainsKey(path) Then";
+RDebugUtils.currentLine=21364743;
+ //BA.debugLineNum = 21364743;BA.debugLine="If Main.GifsCache.ContainsKey(path) Then";
 if (_main._gifscache /*anywheresoftware.b4a.objects.collections.Map*/ .ContainsKey((Object)(_path))) { 
-RDebugUtils.currentLine=20905992;
- //BA.debugLineNum = 20905992;BA.debugLine="bitmaps = Main.GifsCache.Get(path)";
+RDebugUtils.currentLine=21364744;
+ //BA.debugLineNum = 21364744;BA.debugLine="bitmaps = Main.GifsCache.Get(path)";
 __ref._bitmaps /*anywheresoftware.b4a.objects.collections.List*/  = (anywheresoftware.b4a.objects.collections.List) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.List(), (java.util.List)(_main._gifscache /*anywheresoftware.b4a.objects.collections.Map*/ .Get((Object)(_path))));
  }else {
-RDebugUtils.currentLine=20905994;
- //BA.debugLineNum = 20905994;BA.debugLine="Dim gd As GifDecoder";
+RDebugUtils.currentLine=21364746;
+ //BA.debugLineNum = 21364746;BA.debugLine="Dim gd As GifDecoder";
 _gd = new anywheresoftware.b4a.agraham.gifdecoder.GifDecoder();
-RDebugUtils.currentLine=20905995;
- //BA.debugLineNum = 20905995;BA.debugLine="gd.Load(Dir, FileName)";
+RDebugUtils.currentLine=21364747;
+ //BA.debugLineNum = 21364747;BA.debugLine="gd.Load(Dir, FileName)";
 _gd.Load(_dir,_filename);
-RDebugUtils.currentLine=20905996;
- //BA.debugLineNum = 20905996;BA.debugLine="bitmaps.Initialize";
+RDebugUtils.currentLine=21364748;
+ //BA.debugLineNum = 21364748;BA.debugLine="bitmaps.Initialize";
 __ref._bitmaps /*anywheresoftware.b4a.objects.collections.List*/ .Initialize();
-RDebugUtils.currentLine=20905997;
- //BA.debugLineNum = 20905997;BA.debugLine="For i = 0 To gd.FrameCount - 1";
+RDebugUtils.currentLine=21364749;
+ //BA.debugLineNum = 21364749;BA.debugLine="For i = 0 To gd.FrameCount - 1";
 {
 final int step13 = 1;
 final int limit13 = (int) (_gd.getFrameCount()-1);
 _i = (int) (0) ;
 for (;_i <= limit13 ;_i = _i + step13 ) {
-RDebugUtils.currentLine=20905998;
- //BA.debugLineNum = 20905998;BA.debugLine="Dim bd As BitmapAndDelay";
+RDebugUtils.currentLine=21364750;
+ //BA.debugLineNum = 21364750;BA.debugLine="Dim bd As BitmapAndDelay";
 _bd = new b4a.example.ef.gifviewer._bitmapanddelay();
-RDebugUtils.currentLine=20905999;
- //BA.debugLineNum = 20905999;BA.debugLine="bd.Initialize";
+RDebugUtils.currentLine=21364751;
+ //BA.debugLineNum = 21364751;BA.debugLine="bd.Initialize";
 _bd.Initialize();
-RDebugUtils.currentLine=20906000;
- //BA.debugLineNum = 20906000;BA.debugLine="bd.bmp = gd.Frame(i)";
+RDebugUtils.currentLine=21364752;
+ //BA.debugLineNum = 21364752;BA.debugLine="bd.bmp = gd.Frame(i)";
 _bd.bmp /*anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper*/  = (anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper(), (android.graphics.Bitmap)(_gd.Frame(_i)));
-RDebugUtils.currentLine=20906001;
- //BA.debugLineNum = 20906001;BA.debugLine="bd.Delay = gd.Delay(i)";
+RDebugUtils.currentLine=21364753;
+ //BA.debugLineNum = 21364753;BA.debugLine="bd.Delay = gd.Delay(i)";
 _bd.Delay /*int*/  = _gd.Delay(_i);
-RDebugUtils.currentLine=20906002;
- //BA.debugLineNum = 20906002;BA.debugLine="bitmaps.Add(bd)";
+RDebugUtils.currentLine=21364754;
+ //BA.debugLineNum = 21364754;BA.debugLine="bitmaps.Add(bd)";
 __ref._bitmaps /*anywheresoftware.b4a.objects.collections.List*/ .Add((Object)(_bd));
  }
 };
-RDebugUtils.currentLine=20906004;
- //BA.debugLineNum = 20906004;BA.debugLine="Main.GifsCache.Put(path, bitmaps)";
+RDebugUtils.currentLine=21364756;
+ //BA.debugLineNum = 21364756;BA.debugLine="Main.GifsCache.Put(path, bitmaps)";
 _main._gifscache /*anywheresoftware.b4a.objects.collections.Map*/ .Put((Object)(_path),(Object)(__ref._bitmaps /*anywheresoftware.b4a.objects.collections.List*/ .getObject()));
  };
-RDebugUtils.currentLine=20906007;
- //BA.debugLineNum = 20906007;BA.debugLine="Dim FirstFrame As BitmapAndDelay = bitmaps.Get(0)";
+RDebugUtils.currentLine=21364759;
+ //BA.debugLineNum = 21364759;BA.debugLine="Dim FirstFrame As BitmapAndDelay = bitmaps.Get(0)";
 _firstframe = (b4a.example.ef.gifviewer._bitmapanddelay)(__ref._bitmaps /*anywheresoftware.b4a.objects.collections.List*/ .Get((int) (0)));
-RDebugUtils.currentLine=20906008;
- //BA.debugLineNum = 20906008;BA.debugLine="Dim FirstBmp As Bitmap = FirstFrame.bmp";
+RDebugUtils.currentLine=21364760;
+ //BA.debugLineNum = 21364760;BA.debugLine="Dim FirstBmp As Bitmap = FirstFrame.bmp";
 _firstbmp = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
 _firstbmp = _firstframe.bmp /*anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper*/ ;
-RDebugUtils.currentLine=20906009;
- //BA.debugLineNum = 20906009;BA.debugLine="If FirstBmp.Width < mBase.Width Or FirstBmp.Heigh";
+RDebugUtils.currentLine=21364761;
+ //BA.debugLineNum = 21364761;BA.debugLine="If FirstBmp.Width < mBase.Width Or FirstBmp.Heigh";
 if (_firstbmp.getWidth()<__ref._mbase /*anywheresoftware.b4a.objects.PanelWrapper*/ .getWidth() || _firstbmp.getHeight()<__ref._mbase /*anywheresoftware.b4a.objects.PanelWrapper*/ .getHeight()) { 
-RDebugUtils.currentLine=20906010;
- //BA.debugLineNum = 20906010;BA.debugLine="BDGravity = Gravity.CENTER";
+RDebugUtils.currentLine=21364762;
+ //BA.debugLineNum = 21364762;BA.debugLine="BDGravity = Gravity.CENTER";
 __ref._bdgravity /*int*/  = __c.Gravity.CENTER;
  }else {
-RDebugUtils.currentLine=20906012;
- //BA.debugLineNum = 20906012;BA.debugLine="BDGravity = Gravity.FILL";
+RDebugUtils.currentLine=21364764;
+ //BA.debugLineNum = 21364764;BA.debugLine="BDGravity = Gravity.FILL";
 __ref._bdgravity /*int*/  = __c.Gravity.FILL;
  };
-RDebugUtils.currentLine=20906015;
- //BA.debugLineNum = 20906015;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21364767;
+ //BA.debugLineNum = 21364767;BA.debugLine="End Sub";
 return "";
 }
 public String  _callfromresume(b4a.example.ef.gifviewer __ref) throws Exception{
@@ -196,47 +196,47 @@ __ref = this;
 RDebugUtils.currentModule="gifviewer";
 if (Debug.shouldDelegate(ba, "callfromresume", false))
 	 {return ((String) Debug.delegate(ba, "callfromresume", null));}
-RDebugUtils.currentLine=21102592;
- //BA.debugLineNum = 21102592;BA.debugLine="Public Sub CallFromResume";
-RDebugUtils.currentLine=21102593;
- //BA.debugLineNum = 21102593;BA.debugLine="If mBase.Visible Then Start";
+RDebugUtils.currentLine=21561344;
+ //BA.debugLineNum = 21561344;BA.debugLine="Public Sub CallFromResume";
+RDebugUtils.currentLine=21561345;
+ //BA.debugLineNum = 21561345;BA.debugLine="If mBase.Visible Then Start";
 if (__ref._mbase /*anywheresoftware.b4a.objects.PanelWrapper*/ .getVisible()) { 
 __ref._start /*String*/ (null);};
-RDebugUtils.currentLine=21102594;
- //BA.debugLineNum = 21102594;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21561346;
+ //BA.debugLineNum = 21561346;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals(b4a.example.ef.gifviewer __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="gifviewer";
-RDebugUtils.currentLine=20709376;
- //BA.debugLineNum = 20709376;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=20709377;
- //BA.debugLineNum = 20709377;BA.debugLine="Private mEventName As String 'ignore";
+RDebugUtils.currentLine=21168128;
+ //BA.debugLineNum = 21168128;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=21168129;
+ //BA.debugLineNum = 21168129;BA.debugLine="Private mEventName As String 'ignore";
 _meventname = "";
-RDebugUtils.currentLine=20709378;
- //BA.debugLineNum = 20709378;BA.debugLine="Private mCallBack As Object 'ignore";
+RDebugUtils.currentLine=21168130;
+ //BA.debugLineNum = 21168130;BA.debugLine="Private mCallBack As Object 'ignore";
 _mcallback = new Object();
-RDebugUtils.currentLine=20709379;
- //BA.debugLineNum = 20709379;BA.debugLine="Private mBase As Panel";
+RDebugUtils.currentLine=21168131;
+ //BA.debugLineNum = 21168131;BA.debugLine="Private mBase As Panel";
 _mbase = new anywheresoftware.b4a.objects.PanelWrapper();
-RDebugUtils.currentLine=20709380;
- //BA.debugLineNum = 20709380;BA.debugLine="Private Const DefaultColorConstant As Int = -9848";
+RDebugUtils.currentLine=21168132;
+ //BA.debugLineNum = 21168132;BA.debugLine="Private Const DefaultColorConstant As Int = -9848";
 _defaultcolorconstant = (int) (-984833);
-RDebugUtils.currentLine=20709381;
- //BA.debugLineNum = 20709381;BA.debugLine="Private WorkIndex As Int";
+RDebugUtils.currentLine=21168133;
+ //BA.debugLineNum = 21168133;BA.debugLine="Private WorkIndex As Int";
 _workindex = 0;
-RDebugUtils.currentLine=20709382;
- //BA.debugLineNum = 20709382;BA.debugLine="Private BDGravity As Int";
+RDebugUtils.currentLine=21168134;
+ //BA.debugLineNum = 21168134;BA.debugLine="Private BDGravity As Int";
 _bdgravity = 0;
-RDebugUtils.currentLine=20709383;
- //BA.debugLineNum = 20709383;BA.debugLine="Private bitmaps As List";
+RDebugUtils.currentLine=21168135;
+ //BA.debugLineNum = 21168135;BA.debugLine="Private bitmaps As List";
 _bitmaps = new anywheresoftware.b4a.objects.collections.List();
-RDebugUtils.currentLine=20709384;
- //BA.debugLineNum = 20709384;BA.debugLine="Type BitmapAndDelay (bmp As Bitmap, Delay As Int)";
+RDebugUtils.currentLine=21168136;
+ //BA.debugLineNum = 21168136;BA.debugLine="Type BitmapAndDelay (bmp As Bitmap, Delay As Int)";
 ;
-RDebugUtils.currentLine=20709385;
- //BA.debugLineNum = 20709385;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21168137;
+ //BA.debugLineNum = 21168137;BA.debugLine="End Sub";
 return "";
 }
 public String  _designercreateview(b4a.example.ef.gifviewer __ref,anywheresoftware.b4a.objects.PanelWrapper _base,anywheresoftware.b4a.objects.LabelWrapper _lbl,anywheresoftware.b4a.objects.collections.Map _props) throws Exception{
@@ -244,16 +244,16 @@ __ref = this;
 RDebugUtils.currentModule="gifviewer";
 if (Debug.shouldDelegate(ba, "designercreateview", false))
 	 {return ((String) Debug.delegate(ba, "designercreateview", new Object[] {_base,_lbl,_props}));}
-RDebugUtils.currentLine=20840448;
- //BA.debugLineNum = 20840448;BA.debugLine="Public Sub DesignerCreateView (Base As Panel, Lbl";
-RDebugUtils.currentLine=20840449;
- //BA.debugLineNum = 20840449;BA.debugLine="mBase = Base";
+RDebugUtils.currentLine=21299200;
+ //BA.debugLineNum = 21299200;BA.debugLine="Public Sub DesignerCreateView (Base As Panel, Lbl";
+RDebugUtils.currentLine=21299201;
+ //BA.debugLineNum = 21299201;BA.debugLine="mBase = Base";
 __ref._mbase /*anywheresoftware.b4a.objects.PanelWrapper*/  = _base;
-RDebugUtils.currentLine=20840450;
- //BA.debugLineNum = 20840450;BA.debugLine="mBase.Visible = False";
+RDebugUtils.currentLine=21299202;
+ //BA.debugLineNum = 21299202;BA.debugLine="mBase.Visible = False";
 __ref._mbase /*anywheresoftware.b4a.objects.PanelWrapper*/ .setVisible(__c.False);
-RDebugUtils.currentLine=20840451;
- //BA.debugLineNum = 20840451;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21299203;
+ //BA.debugLineNum = 21299203;BA.debugLine="End Sub";
 return "";
 }
 public anywheresoftware.b4a.objects.PanelWrapper  _getbase(b4a.example.ef.gifviewer __ref) throws Exception{
@@ -261,13 +261,13 @@ __ref = this;
 RDebugUtils.currentModule="gifviewer";
 if (Debug.shouldDelegate(ba, "getbase", false))
 	 {return ((anywheresoftware.b4a.objects.PanelWrapper) Debug.delegate(ba, "getbase", null));}
-RDebugUtils.currentLine=21233664;
- //BA.debugLineNum = 21233664;BA.debugLine="Public Sub GetBase As Panel";
-RDebugUtils.currentLine=21233665;
- //BA.debugLineNum = 21233665;BA.debugLine="Return mBase";
+RDebugUtils.currentLine=21692416;
+ //BA.debugLineNum = 21692416;BA.debugLine="Public Sub GetBase As Panel";
+RDebugUtils.currentLine=21692417;
+ //BA.debugLineNum = 21692417;BA.debugLine="Return mBase";
 if (true) return __ref._mbase /*anywheresoftware.b4a.objects.PanelWrapper*/ ;
-RDebugUtils.currentLine=21233666;
- //BA.debugLineNum = 21233666;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21692418;
+ //BA.debugLineNum = 21692418;BA.debugLine="End Sub";
 return null;
 }
 public String  _initialize(b4a.example.ef.gifviewer __ref,anywheresoftware.b4a.BA _ba,Object _callback,String _eventname) throws Exception{
@@ -276,16 +276,16 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="gifviewer";
 if (Debug.shouldDelegate(ba, "initialize", false))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba,_callback,_eventname}));}
-RDebugUtils.currentLine=20774912;
- //BA.debugLineNum = 20774912;BA.debugLine="Public Sub Initialize (Callback As Object, EventNa";
-RDebugUtils.currentLine=20774913;
- //BA.debugLineNum = 20774913;BA.debugLine="mEventName = EventName";
+RDebugUtils.currentLine=21233664;
+ //BA.debugLineNum = 21233664;BA.debugLine="Public Sub Initialize (Callback As Object, EventNa";
+RDebugUtils.currentLine=21233665;
+ //BA.debugLineNum = 21233665;BA.debugLine="mEventName = EventName";
 __ref._meventname /*String*/  = _eventname;
-RDebugUtils.currentLine=20774914;
- //BA.debugLineNum = 20774914;BA.debugLine="mCallBack = Callback";
+RDebugUtils.currentLine=21233666;
+ //BA.debugLineNum = 21233666;BA.debugLine="mCallBack = Callback";
 __ref._mcallback /*Object*/  = _callback;
-RDebugUtils.currentLine=20774915;
- //BA.debugLineNum = 20774915;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21233667;
+ //BA.debugLineNum = 21233667;BA.debugLine="End Sub";
 return "";
 }
 public void  _showimpl(b4a.example.ef.gifviewer __ref,int _myworkindex) throws Exception{
@@ -321,11 +321,11 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=21168129;
- //BA.debugLineNum = 21168129;BA.debugLine="Dim FrameIndex As Int = 0";
+RDebugUtils.currentLine=21626881;
+ //BA.debugLineNum = 21626881;BA.debugLine="Dim FrameIndex As Int = 0";
 _frameindex = (int) (0);
-RDebugUtils.currentLine=21168130;
- //BA.debugLineNum = 21168130;BA.debugLine="Do While MyWorkIndex = WorkIndex";
+RDebugUtils.currentLine=21626882;
+ //BA.debugLineNum = 21626882;BA.debugLine="Do While MyWorkIndex = WorkIndex";
 if (true) break;
 
 case 1:
@@ -340,26 +340,26 @@ if (true) break;
 case 3:
 //C
 this.state = 1;
-RDebugUtils.currentLine=21168131;
- //BA.debugLineNum = 21168131;BA.debugLine="FrameIndex = (FrameIndex + 1) Mod bitmaps.Size";
+RDebugUtils.currentLine=21626883;
+ //BA.debugLineNum = 21626883;BA.debugLine="FrameIndex = (FrameIndex + 1) Mod bitmaps.Size";
 _frameindex = (int) ((_frameindex+1)%__ref._bitmaps /*anywheresoftware.b4a.objects.collections.List*/ .getSize());
-RDebugUtils.currentLine=21168132;
- //BA.debugLineNum = 21168132;BA.debugLine="Dim bdrawable As BitmapDrawable";
+RDebugUtils.currentLine=21626884;
+ //BA.debugLineNum = 21626884;BA.debugLine="Dim bdrawable As BitmapDrawable";
 _bdrawable = new anywheresoftware.b4a.objects.drawable.BitmapDrawable();
-RDebugUtils.currentLine=21168133;
- //BA.debugLineNum = 21168133;BA.debugLine="Dim bd As BitmapAndDelay = bitmaps.Get(FrameInde";
+RDebugUtils.currentLine=21626885;
+ //BA.debugLineNum = 21626885;BA.debugLine="Dim bd As BitmapAndDelay = bitmaps.Get(FrameInde";
 _bd = (b4a.example.ef.gifviewer._bitmapanddelay)(__ref._bitmaps /*anywheresoftware.b4a.objects.collections.List*/ .Get(_frameindex));
-RDebugUtils.currentLine=21168134;
- //BA.debugLineNum = 21168134;BA.debugLine="bdrawable.Initialize(bd.bmp)";
+RDebugUtils.currentLine=21626886;
+ //BA.debugLineNum = 21626886;BA.debugLine="bdrawable.Initialize(bd.bmp)";
 _bdrawable.Initialize((android.graphics.Bitmap)(_bd.bmp /*anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper*/ .getObject()));
-RDebugUtils.currentLine=21168135;
- //BA.debugLineNum = 21168135;BA.debugLine="bdrawable.Gravity = BDGravity";
+RDebugUtils.currentLine=21626887;
+ //BA.debugLineNum = 21626887;BA.debugLine="bdrawable.Gravity = BDGravity";
 _bdrawable.setGravity(__ref._bdgravity /*int*/ );
-RDebugUtils.currentLine=21168136;
- //BA.debugLineNum = 21168136;BA.debugLine="mBase.Background = bdrawable";
+RDebugUtils.currentLine=21626888;
+ //BA.debugLineNum = 21626888;BA.debugLine="mBase.Background = bdrawable";
 __ref._mbase /*anywheresoftware.b4a.objects.PanelWrapper*/ .setBackground((android.graphics.drawable.Drawable)(_bdrawable.getObject()));
-RDebugUtils.currentLine=21168137;
- //BA.debugLineNum = 21168137;BA.debugLine="Sleep(bd.Delay)";
+RDebugUtils.currentLine=21626889;
+ //BA.debugLineNum = 21626889;BA.debugLine="Sleep(bd.Delay)";
 parent.__c.Sleep(ba,new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "gifviewer", "showimpl"),_bd.Delay /*int*/ );
 this.state = 5;
 return;
@@ -373,8 +373,8 @@ case 4:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=21168139;
- //BA.debugLineNum = 21168139;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21626891;
+ //BA.debugLineNum = 21626891;BA.debugLine="End Sub";
 if (true) break;
 
             }

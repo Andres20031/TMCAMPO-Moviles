@@ -8,7 +8,7 @@ public class b4xprogressbar_subs_0 {
 
 public static void  _animatevalueto(RemoteObject __ref,RemoteObject _newvalue) throws Exception{
 try {
-		Debug.PushSubsStack("AnimateValueTo (b4xprogressbar) ","b4xprogressbar",9,__ref.getField(false, "ba"),__ref,50);
+		Debug.PushSubsStack("AnimateValueTo (b4xprogressbar) ","b4xprogressbar",7,__ref.getField(false, "ba"),__ref,50);
 if (RapidSub.canDelegate("animatevalueto")) { __ref.runUserSub(false, "b4xprogressbar","animatevalueto", __ref, _newvalue); return;}
 ResumableSub_AnimateValueTo rsub = new ResumableSub_AnimateValueTo(null,__ref,_newvalue);
 rsub.resume(null, null);
@@ -37,7 +37,7 @@ RemoteObject _tempvalue = RemoteObject.createImmutable(0f);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("AnimateValueTo (b4xprogressbar) ","b4xprogressbar",9,__ref.getField(false, "ba"),__ref,50);
+		Debug.PushSubsStack("AnimateValueTo (b4xprogressbar) ","b4xprogressbar",7,__ref.getField(false, "ba"),__ref,50);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -142,7 +142,7 @@ finally {
 }
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (b4xprogressbar) ","b4xprogressbar",9,__ref.getField(false, "ba"),__ref,37);
+		Debug.PushSubsStack("Base_Resize (b4xprogressbar) ","b4xprogressbar",7,__ref.getField(false, "ba"),__ref,37);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "b4xprogressbar","base_resize", __ref, _width, _height);}
 Debug.locals.put("Width", _width);
 Debug.locals.put("Height", _height);
@@ -194,7 +194,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl1,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (b4xprogressbar) ","b4xprogressbar",9,__ref.getField(false, "ba"),__ref,26);
+		Debug.PushSubsStack("DesignerCreateView (b4xprogressbar) ","b4xprogressbar",7,__ref.getField(false, "ba"),__ref,26);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "b4xprogressbar","designercreateview", __ref, _base, _lbl1, _props);}
 Debug.locals.put("Base", _base);
 Debug.locals.put("lbl1", _lbl1);
@@ -234,7 +234,7 @@ finally {
 		}}
 public static RemoteObject  _drawvalue(RemoteObject __ref,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("DrawValue (b4xprogressbar) ","b4xprogressbar",9,__ref.getField(false, "ba"),__ref,76);
+		Debug.PushSubsStack("DrawValue (b4xprogressbar) ","b4xprogressbar",7,__ref.getField(false, "ba"),__ref,76);
 if (RapidSub.canDelegate("drawvalue")) { return __ref.runUserSub(false, "b4xprogressbar","drawvalue", __ref, _value);}
 Debug.locals.put("Value", _value);
  BA.debugLineNum = 76;BA.debugLine="Private Sub DrawValue(Value As Float)";
@@ -274,7 +274,7 @@ finally {
 		}}
 public static RemoteObject  _getprogress(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getProgress (b4xprogressbar) ","b4xprogressbar",9,__ref.getField(false, "ba"),__ref,42);
+		Debug.PushSubsStack("getProgress (b4xprogressbar) ","b4xprogressbar",7,__ref.getField(false, "ba"),__ref,42);
 if (RapidSub.canDelegate("getprogress")) { return __ref.runUserSub(false, "b4xprogressbar","getprogress", __ref);}
  BA.debugLineNum = 42;BA.debugLine="Public Sub getProgress As Float";
 Debug.ShouldStop(512);
@@ -293,7 +293,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4xprogressbar) ","b4xprogressbar",9,__ref.getField(false, "ba"),__ref,20);
+		Debug.PushSubsStack("Initialize (b4xprogressbar) ","b4xprogressbar",7,__ref.getField(false, "ba"),__ref,20);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4xprogressbar","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -319,7 +319,7 @@ finally {
 		}}
 public static RemoteObject  _setprogress(RemoteObject __ref,RemoteObject _v) throws Exception{
 try {
-		Debug.PushSubsStack("setProgress (b4xprogressbar) ","b4xprogressbar",9,__ref.getField(false, "ba"),__ref,46);
+		Debug.PushSubsStack("setProgress (b4xprogressbar) ","b4xprogressbar",7,__ref.getField(false, "ba"),__ref,46);
 if (RapidSub.canDelegate("setprogress")) { return __ref.runUserSub(false, "b4xprogressbar","setprogress", __ref, _v);}
 Debug.locals.put("v", _v);
  BA.debugLineNum = 46;BA.debugLine="Public Sub setProgress(v As Float)";
@@ -339,7 +339,7 @@ finally {
 		}}
 public static RemoteObject  _valuefromtimeeaseinout(RemoteObject __ref,RemoteObject _time,RemoteObject _start,RemoteObject _changeinvalue,RemoteObject _duration) throws Exception{
 try {
-		Debug.PushSubsStack("ValueFromTimeEaseInOut (b4xprogressbar) ","b4xprogressbar",9,__ref.getField(false, "ba"),__ref,66);
+		Debug.PushSubsStack("ValueFromTimeEaseInOut (b4xprogressbar) ","b4xprogressbar",7,__ref.getField(false, "ba"),__ref,66);
 if (RapidSub.canDelegate("valuefromtimeeaseinout")) { return __ref.runUserSub(false, "b4xprogressbar","valuefromtimeeaseinout", __ref, _time, _start, _changeinvalue, _duration);}
 Debug.locals.put("Time", _time);
 Debug.locals.put("Start", _start);

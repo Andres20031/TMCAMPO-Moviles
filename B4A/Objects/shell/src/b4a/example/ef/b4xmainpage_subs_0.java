@@ -619,7 +619,7 @@ case 18:
 this.state = 21;
  BA.debugLineNum = 208;BA.debugLine="Log(\"Usuario: \"&parametrosUsuario)";
 Debug.ShouldStop(32768);
-parent.__c.runVoidMethod ("LogImpl","4917554",RemoteObject.concat(RemoteObject.createImmutable("Usuario: "),__ref.getField(true,"_parametrosusuario" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","3917554",RemoteObject.concat(RemoteObject.createImmutable("Usuario: "),__ref.getField(true,"_parametrosusuario" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 20:
@@ -649,7 +649,7 @@ case 24:
 this.state = 25;
  BA.debugLineNum = 215;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(4194304);
-parent.__c.runVoidMethod ("LogImpl","4917561",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","3917561",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 25:

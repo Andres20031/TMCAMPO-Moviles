@@ -166,7 +166,7 @@ case 3:
 this.state = 20;
  BA.debugLineNum = 77;BA.debugLine="Log(\"JA EXISTEM ITENS\")";
 Debug.ShouldStop(4096);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","41245189",RemoteObject.createImmutable("JA EXISTEM ITENS"),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","31245189",RemoteObject.createImmutable("JA EXISTEM ITENS"),0);
  if (true) break;
 
 case 5:
@@ -331,7 +331,7 @@ case 18:
 this.state = 19;
  BA.debugLineNum = 108;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
 Debug.ShouldStop(2048);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","41245220",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","31245220",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_j.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  if (true) break;
 
 case 19:
@@ -408,7 +408,7 @@ _insertnamesinsumos(starter.mostCurrent._main._pdbname /*RemoteObject*/ );
        catch (Exception e10) {
 			BA.rdebugUtils.runVoidMethod("setLastException",starter.processBA, e10.toString()); BA.debugLineNum = 30;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(536870912);
-starter.mostCurrent.__c.runVoidMethod ("LogImpl","41179663",BA.ObjectToString(starter.mostCurrent.__c.runMethod(false,"LastException",starter.processBA)),0);
+starter.mostCurrent.__c.runVoidMethod ("LogImpl","31179663",BA.ObjectToString(starter.mostCurrent.__c.runMethod(false,"LastException",starter.processBA)),0);
  };
  BA.debugLineNum = 32;BA.debugLine="End Sub";
 Debug.ShouldStop(-2147483648);
@@ -503,7 +503,7 @@ starter._sql1.runVoidMethod ("ExecNonQuery2",(Object)(BA.ObjectToString("UPDATE 
        catch (Exception e9) {
 			BA.rdebugUtils.runVoidMethod("setLastException",starter.processBA, e9.toString()); BA.debugLineNum = 138;BA.debugLine="Log(\"Erro 0005: \"&LastException)";
 Debug.ShouldStop(512);
-starter.mostCurrent.__c.runVoidMethod ("LogImpl","41310731",RemoteObject.concat(RemoteObject.createImmutable("Erro 0005: "),starter.mostCurrent.__c.runMethod(false,"LastException",starter.processBA)),0);
+starter.mostCurrent.__c.runVoidMethod ("LogImpl","31310731",RemoteObject.concat(RemoteObject.createImmutable("Erro 0005: "),starter.mostCurrent.__c.runMethod(false,"LastException",starter.processBA)),0);
  };
  BA.debugLineNum = 141;BA.debugLine="End Sub";
 Debug.ShouldStop(4096);

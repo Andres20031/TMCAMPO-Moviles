@@ -272,7 +272,7 @@ case 3:
 this.state = 20;
 RDebugUtils.currentLine=1245189;
  //BA.debugLineNum = 1245189;BA.debugLine="Log(\"JA EXISTEM ITENS\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("41245189","JA EXISTEM ITENS",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("31245189","JA EXISTEM ITENS",0);
  if (true) break;
 
 case 5:
@@ -431,7 +431,7 @@ case 18:
 this.state = 19;
 RDebugUtils.currentLine=1245220;
  //BA.debugLineNum = 1245220;BA.debugLine="Log(\"ERROR: \" & j.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("41245220","ERROR: "+_j._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("31245220","ERROR: "+_j._errormessage /*String*/ ,0);
  if (true) break;
 
 case 19:
@@ -488,7 +488,7 @@ _insertnamesinsumos(mostCurrent._main._pdbname /*String*/ );
        catch (Exception e10) {
 			processBA.setLastException(e10);RDebugUtils.currentLine=1179663;
  //BA.debugLineNum = 1179663;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("41179663",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(processBA)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("31179663",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(processBA)),0);
  };
 RDebugUtils.currentLine=1179665;
  //BA.debugLineNum = 1179665;BA.debugLine="End Sub";
@@ -553,7 +553,7 @@ _sql1.ExecNonQuery2("UPDATE insumo set  qnt= ?, idMaquina=? where id=?",anywhere
        catch (Exception e9) {
 			processBA.setLastException(e9);RDebugUtils.currentLine=1310731;
  //BA.debugLineNum = 1310731;BA.debugLine="Log(\"Erro 0005: \"&LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("41310731","Erro 0005: "+BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(processBA)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("31310731","Erro 0005: "+BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(processBA)),0);
  };
 RDebugUtils.currentLine=1310734;
  //BA.debugLineNum = 1310734;BA.debugLine="End Sub";

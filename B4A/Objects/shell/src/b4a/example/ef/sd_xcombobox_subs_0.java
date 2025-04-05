@@ -867,7 +867,7 @@ _pnl = _pnl.runMethod(false,"getParent");Debug.locals.put("pnl", _pnl);
        catch (Exception e15) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e15.toString()); BA.debugLineNum = 616;BA.debugLine="Log(LastException.Message)";
 Debug.JustUpdateDeviceLine();
-sd_xcombobox.__c.runVoidMethod ("LogImpl","965470481",sd_xcombobox.__c.runMethod(false,"LastException",__ref.getField(false, "ba")).runMethod(true,"getMessage"),0);
+sd_xcombobox.__c.runVoidMethod ("LogImpl","966060305",sd_xcombobox.__c.runMethod(false,"LastException",__ref.getField(false, "ba")).runMethod(true,"getMessage"),0);
  };
  BA.debugLineNum = 618;BA.debugLine="If xui.IsB4i Then pnl=prec";
 Debug.JustUpdateDeviceLine();

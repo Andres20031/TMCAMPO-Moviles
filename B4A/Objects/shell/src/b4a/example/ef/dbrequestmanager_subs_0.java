@@ -8,7 +8,7 @@ public class dbrequestmanager_subs_0 {
 
 public static RemoteObject  _bytestoimage(RemoteObject __ref,RemoteObject _bytes) throws Exception{
 try {
-		Debug.PushSubsStack("BytesToImage (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,125);
+		Debug.PushSubsStack("BytesToImage (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,125);
 if (RapidSub.canDelegate("bytestoimage")) { return __ref.runUserSub(false, "dbrequestmanager","bytestoimage", __ref, _bytes);}
 RemoteObject _in = RemoteObject.declareNull("anywheresoftware.b4a.objects.streams.File.InputStreamWrapper");
 RemoteObject _bmp = RemoteObject.declareNull("anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper");
@@ -53,7 +53,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _createjob(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("CreateJob (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,45);
+		Debug.PushSubsStack("CreateJob (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,45);
 if (RapidSub.canDelegate("createjob")) { return __ref.runUserSub(false, "dbrequestmanager","createjob", __ref);}
 RemoteObject _j = RemoteObject.declareNull("b4a.example.ef.httpjob");
  BA.debugLineNum = 45;BA.debugLine="Private Sub CreateJob As HttpJob";
@@ -79,7 +79,7 @@ finally {
 		}}
 public static RemoteObject  _executebatch(RemoteObject __ref,RemoteObject _listofcommands,RemoteObject _tag) throws Exception{
 try {
-		Debug.PushSubsStack("ExecuteBatch (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,54);
+		Debug.PushSubsStack("ExecuteBatch (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,54);
 if (RapidSub.canDelegate("executebatch")) { return __ref.runUserSub(false, "dbrequestmanager","executebatch", __ref, _listofcommands, _tag);}
 RemoteObject _j = RemoteObject.declareNull("b4a.example.ef.httpjob");
 Debug.locals.put("ListOfCommands", _listofcommands);
@@ -107,7 +107,7 @@ finally {
 		}}
 public static void  _executebatchimpl(RemoteObject __ref,RemoteObject _job,RemoteObject _listofcommands,RemoteObject _tag) throws Exception{
 try {
-		Debug.PushSubsStack("ExecuteBatchImpl (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,60);
+		Debug.PushSubsStack("ExecuteBatchImpl (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,60);
 if (RapidSub.canDelegate("executebatchimpl")) { __ref.runUserSub(false, "dbrequestmanager","executebatchimpl", __ref, _job, _listofcommands, _tag); return;}
 ResumableSub_ExecuteBatchImpl rsub = new ResumableSub_ExecuteBatchImpl(null,__ref,_job,_listofcommands,_tag);
 rsub.resume(null, null);
@@ -139,7 +139,7 @@ RemoteObject _bytes = null;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("ExecuteBatchImpl (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,60);
+		Debug.PushSubsStack("ExecuteBatchImpl (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,60);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -187,7 +187,7 @@ case 3:
 this.state = 4;
  BA.debugLineNum = 65;BA.debugLine="Log(\"Error building command: \" & LastException)";
 Debug.ShouldStop(1);
-parent.__c.runVoidMethod ("LogImpl","49764869",RemoteObject.concat(RemoteObject.createImmutable("Error building command: "),parent.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
+parent.__c.runVoidMethod ("LogImpl","38454149",RemoteObject.concat(RemoteObject.createImmutable("Error building command: "),parent.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
  BA.debugLineNum = 66;BA.debugLine="Return";
 Debug.ShouldStop(2);
 if (true) return ;
@@ -221,7 +221,7 @@ public static void  _ser_objecttobytes(RemoteObject __ref,RemoteObject _success,
 }
 public static RemoteObject  _executecommand(RemoteObject __ref,RemoteObject _command,RemoteObject _tag) throws Exception{
 try {
-		Debug.PushSubsStack("ExecuteCommand (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,74);
+		Debug.PushSubsStack("ExecuteCommand (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,74);
 if (RapidSub.canDelegate("executecommand")) { return __ref.runUserSub(false, "dbrequestmanager","executecommand", __ref, _command, _tag);}
 Debug.locals.put("Command", _command);
 Debug.locals.put("Tag", _tag);
@@ -242,7 +242,7 @@ finally {
 		}}
 public static RemoteObject  _executequery(RemoteObject __ref,RemoteObject _command,RemoteObject _limit,RemoteObject _tag) throws Exception{
 try {
-		Debug.PushSubsStack("ExecuteQuery (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,21);
+		Debug.PushSubsStack("ExecuteQuery (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,21);
 if (RapidSub.canDelegate("executequery")) { return __ref.runUserSub(false, "dbrequestmanager","executequery", __ref, _command, _limit, _tag);}
 RemoteObject _ser = RemoteObject.declareNull("anywheresoftware.b4a.randomaccessfile.B4XSerializator");
 RemoteObject _data = null;
@@ -272,7 +272,7 @@ finally {
 		}}
 public static RemoteObject  _filetobytes(RemoteObject __ref,RemoteObject _dir,RemoteObject _filename) throws Exception{
 try {
-		Debug.PushSubsStack("FileToBytes (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,107);
+		Debug.PushSubsStack("FileToBytes (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,107);
 if (RapidSub.canDelegate("filetobytes")) { return __ref.runUserSub(false, "dbrequestmanager","filetobytes", __ref, _dir, _filename);}
 RemoteObject _out = RemoteObject.declareNull("anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper");
 RemoteObject _in = RemoteObject.declareNull("anywheresoftware.b4a.objects.streams.File.InputStreamWrapper");
@@ -311,7 +311,7 @@ finally {
 		}}
 public static RemoteObject  _handlejob(RemoteObject __ref,RemoteObject _job) throws Exception{
 try {
-		Debug.PushSubsStack("HandleJob (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,80);
+		Debug.PushSubsStack("HandleJob (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,80);
 if (RapidSub.canDelegate("handlejob")) { return __ref.runUserSub(false, "dbrequestmanager","handlejob", __ref, _job);}
 RemoteObject _ser = RemoteObject.declareNull("anywheresoftware.b4a.randomaccessfile.B4XSerializator");
 RemoteObject _data = null;
@@ -346,7 +346,7 @@ finally {
 		}}
 public static void  _handlejobasync(RemoteObject __ref,RemoteObject _job,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("HandleJobAsync (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,89);
+		Debug.PushSubsStack("HandleJobAsync (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,89);
 if (RapidSub.canDelegate("handlejobasync")) { __ref.runUserSub(false, "dbrequestmanager","handlejobasync", __ref, _job, _eventname); return;}
 ResumableSub_HandleJobAsync rsub = new ResumableSub_HandleJobAsync(null,__ref,_job,_eventname);
 rsub.resume(null, null);
@@ -378,7 +378,7 @@ RemoteObject _res = RemoteObject.declareNull("b4a.example.ef.main._dbresult");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("HandleJobAsync (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,89);
+		Debug.PushSubsStack("HandleJobAsync (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,89);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -428,7 +428,7 @@ case 3:
 this.state = 4;
  BA.debugLineNum = 95;BA.debugLine="Log(\"Error reading response: \" & LastException)";
 Debug.ShouldStop(1073741824);
-parent.__c.runVoidMethod ("LogImpl","49961478",RemoteObject.concat(RemoteObject.createImmutable("Error reading response: "),parent.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
+parent.__c.runVoidMethod ("LogImpl","38650758",RemoteObject.concat(RemoteObject.createImmutable("Error reading response: "),parent.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
  BA.debugLineNum = 96;BA.debugLine="Return";
 Debug.ShouldStop(-2147483648);
 if (true) return ;
@@ -465,7 +465,7 @@ public static void  _ser_bytestoobject(RemoteObject __ref,RemoteObject _success,
 }
 public static RemoteObject  _imagetobytes(RemoteObject __ref,RemoteObject _image) throws Exception{
 try {
-		Debug.PushSubsStack("ImageToBytes (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,117);
+		Debug.PushSubsStack("ImageToBytes (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,117);
 if (RapidSub.canDelegate("imagetobytes")) { return __ref.runUserSub(false, "dbrequestmanager","imagetobytes", __ref, _image);}
 RemoteObject _out = RemoteObject.declareNull("anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper");
 Debug.locals.put("Image", _image);
@@ -498,7 +498,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _target,RemoteObject _connectorlink) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,12);
+		Debug.PushSubsStack("Initialize (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,12);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "dbrequestmanager","initialize", __ref, _ba, _target, _connectorlink);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -524,7 +524,7 @@ finally {
 		}}
 public static RemoteObject  _printtable(RemoteObject __ref,RemoteObject _table) throws Exception{
 try {
-		Debug.PushSubsStack("PrintTable (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,135);
+		Debug.PushSubsStack("PrintTable (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,135);
 if (RapidSub.canDelegate("printtable")) { return __ref.runUserSub(false, "dbrequestmanager","printtable", __ref, _table);}
 RemoteObject _sb = RemoteObject.declareNull("anywheresoftware.b4a.keywords.StringBuilderWrapper");
 RemoteObject _col = RemoteObject.declareNull("Object");
@@ -535,7 +535,7 @@ Debug.locals.put("Table", _table);
 Debug.ShouldStop(64);
  BA.debugLineNum = 136;BA.debugLine="Log(\"Tag: \" & Table.Tag & \", Columns: \" & Table.C";
 Debug.ShouldStop(128);
-dbrequestmanager.__c.runVoidMethod ("LogImpl","410223617",RemoteObject.concat(RemoteObject.createImmutable("Tag: "),_table.getField(false,"Tag" /*RemoteObject*/ ),RemoteObject.createImmutable(", Columns: "),_table.getField(false,"Columns" /*RemoteObject*/ ).runMethod(true,"getSize"),RemoteObject.createImmutable(", Rows: "),_table.getField(false,"Rows" /*RemoteObject*/ ).runMethod(true,"getSize")),0);
+dbrequestmanager.__c.runVoidMethod ("LogImpl","38912897",RemoteObject.concat(RemoteObject.createImmutable("Tag: "),_table.getField(false,"Tag" /*RemoteObject*/ ),RemoteObject.createImmutable(", Columns: "),_table.getField(false,"Columns" /*RemoteObject*/ ).runMethod(true,"getSize"),RemoteObject.createImmutable(", Rows: "),_table.getField(false,"Rows" /*RemoteObject*/ ).runMethod(true,"getSize")),0);
  BA.debugLineNum = 137;BA.debugLine="Dim sb As StringBuilder";
 Debug.ShouldStop(256);
 _sb = RemoteObject.createNew ("anywheresoftware.b4a.keywords.StringBuilderWrapper");Debug.locals.put("sb", _sb);
@@ -560,7 +560,7 @@ _sb.runMethod(false,"Append",(Object)(BA.ObjectToString(_col))).runVoidMethod ("
 ;
  BA.debugLineNum = 142;BA.debugLine="Log(sb.ToString)";
 Debug.ShouldStop(8192);
-dbrequestmanager.__c.runVoidMethod ("LogImpl","410223623",_sb.runMethod(true,"ToString"),0);
+dbrequestmanager.__c.runVoidMethod ("LogImpl","38912903",_sb.runMethod(true,"ToString"),0);
  BA.debugLineNum = 143;BA.debugLine="For Each row() As Object In Table.Rows";
 Debug.ShouldStop(16384);
 {
@@ -595,7 +595,7 @@ _sb.runMethod(false,"Append",(Object)(BA.ObjectToString(_record))).runVoidMethod
 ;
  BA.debugLineNum = 149;BA.debugLine="Log(sb.ToString)";
 Debug.ShouldStop(1048576);
-dbrequestmanager.__c.runVoidMethod ("LogImpl","410223630",_sb.runMethod(true,"ToString"),0);
+dbrequestmanager.__c.runVoidMethod ("LogImpl","38912910",_sb.runMethod(true,"ToString"),0);
  }
 }Debug.locals.put("row", _row);
 ;
@@ -611,7 +611,7 @@ finally {
 		}}
 public static RemoteObject  _sendjob(RemoteObject __ref,RemoteObject _j,RemoteObject _data,RemoteObject _tag,RemoteObject _method) throws Exception{
 try {
-		Debug.PushSubsStack("SendJob (dbrequestmanager) ","dbrequestmanager",10,__ref.getField(false, "ba"),__ref,38);
+		Debug.PushSubsStack("SendJob (dbrequestmanager) ","dbrequestmanager",8,__ref.getField(false, "ba"),__ref,38);
 if (RapidSub.canDelegate("sendjob")) { return __ref.runUserSub(false, "dbrequestmanager","sendjob", __ref, _j, _data, _tag, _method);}
 Debug.locals.put("j", _j);
 Debug.locals.put("Data", _data);
